@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="funakogi-undo">
   <glossterm>funakogi undo</glossterm>
-  <glossdef>, rowing exercise, also called <term keyref="glossary.torifune">torifune</term>
+  <glossdef>, rowing exercise, also called <term keyref="torifune">torifune</term>
    </glossdef>
 </glossentry>

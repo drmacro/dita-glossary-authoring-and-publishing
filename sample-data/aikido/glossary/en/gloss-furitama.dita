@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="furitama">
   <glossterm>furitama</glossterm>
-  <glossdef> exercise to still <term keyref="glossary.ki">ki</term>
+  <glossdef> exercise to still <term keyref="ki">ki</term>
 
    </glossdef>
 </glossentry>

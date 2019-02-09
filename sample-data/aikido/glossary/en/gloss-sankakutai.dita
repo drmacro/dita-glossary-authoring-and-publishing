@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="sankakutai">
   <glossterm>sankakutai</glossterm>
-  <glossdef> triangle shape, position of the feet in <term keyref="glossary.hanmi">hanmi</term>
+  <glossdef> triangle shape, position of the feet in <term keyref="hanmi">hanmi</term>
    </glossdef>
 </glossentry>

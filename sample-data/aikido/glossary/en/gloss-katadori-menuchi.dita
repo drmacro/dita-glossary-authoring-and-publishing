@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="katadori-menuchi">
   <glossterm>katadori menuchi</glossterm>
-  <glossdef> shoulder grip followed by <term keyref="glossary.shomenuchi">shomenuchi</term>
+  <glossdef> shoulder grip followed by <term keyref="shomenuchi">shomenuchi</term>
    </glossdef>
 </glossentry>

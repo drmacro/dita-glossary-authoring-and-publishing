@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kimusubi">
   <glossterm>kimusubi</glossterm>
-  <glossdef> tying one's <term keyref="glossary.ki">ki</term> to that of the partner
+  <glossdef> tying one's <term keyref="ki">ki</term> to that of the partner
 </glossdef>
 </glossentry>

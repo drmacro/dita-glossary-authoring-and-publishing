@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="ryutai">
   <glossterm>ryutai</glossterm>
-  <glossdef> flowing body, fluid training, compare <term keyref="glossary.gotai">gotai</term>, <term keyref="glossary.jutai">jutai</term> and <term>kinagare</term>
+  <glossdef> flowing body, fluid training, compare <term keyref="gotai">gotai</term>, <term keyref="jutai">jutai</term> and <term>kinagare</term>
 
 
    </glossdef>

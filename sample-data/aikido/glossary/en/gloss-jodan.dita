@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="jodan">
   <glossterm>jodan</glossterm>
-  <glossdef> high, compare <term keyref="glossary.chudan">chudan</term> and <term keyref="glossary.gedan">gedan</term>
+  <glossdef> high, compare <term keyref="chudan">chudan</term> and <term keyref="gedan">gedan</term>
    </glossdef>
 </glossentry>

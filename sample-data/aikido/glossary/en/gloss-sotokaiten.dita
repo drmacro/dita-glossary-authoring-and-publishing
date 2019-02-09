@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="sotokaiten">
   <glossterm>sotokaiten</glossterm>
-  <glossdef> outer rotation, compare <term keyref="glossary.uchikaiten">uchikaiten</term>
+  <glossdef> outer rotation, compare <term keyref="uchikaiten">uchikaiten</term>
 
    </glossdef>
 </glossentry>

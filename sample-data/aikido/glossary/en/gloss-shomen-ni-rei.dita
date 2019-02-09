@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="shomen-ni-rei">
   <glossterm>shomen ni rei</glossterm>
-  <glossdef> bow to head place of the <term keyref="glossary.dojo">dojo</term>
+  <glossdef> bow to head place of the <term keyref="dojo">dojo</term>
 
    </glossdef>
 </glossentry>

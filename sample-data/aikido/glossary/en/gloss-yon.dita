@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="yon">
   <glossterm>yon</glossterm>
-  <glossdef> four, also pronounced <term keyref="glossary.shi">shi</term>
+  <glossdef> four, also pronounced <term keyref="shi">shi</term>
    </glossdef>
 </glossentry>

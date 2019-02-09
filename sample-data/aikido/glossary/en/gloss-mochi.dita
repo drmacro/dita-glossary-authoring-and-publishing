@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="mochi">
   <glossterm>mochi</glossterm>
-  <glossdef> hold/grip, also called <term keyref="glossary.dori">dori</term>
+  <glossdef> hold/grip, also called <term keyref="dori">dori</term>
    </glossdef>
 </glossentry>

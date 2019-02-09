@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="ninindori">
   <glossterm>ninindori</glossterm>
-  <glossdef> two attackers, also called <term keyref="glossary.futaridori-futarigake"
+  <glossdef> two attackers, also called <term keyref="futaridori-futarigake"
       >futaridori</term>.</glossdef>
 </glossentry>

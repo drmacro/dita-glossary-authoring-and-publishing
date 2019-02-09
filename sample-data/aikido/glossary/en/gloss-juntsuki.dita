@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="juntsuki">
   <glossterm>juntsuki</glossterm>
-  <glossdef> strike with the same arm and leg forward, also called <term keyref="glossary.oitsuki">oitsuki</term>, compare <term keyref="glossary.gyakutsuki">gyakutsuki</term>
+  <glossdef> strike with the same arm and leg forward, also called <term keyref="oitsuki">oitsuki</term>, compare <term keyref="gyakutsuki">gyakutsuki</term>
    </glossdef>
 </glossentry>

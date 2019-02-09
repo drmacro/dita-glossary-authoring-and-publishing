@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="uchiuke">
   <glossterm>uchiuke</glossterm>
-  <glossdef> block from inside, compare <term keyref="glossary.sotouke">sotouke</term>
+  <glossdef> block from inside, compare <term keyref="sotouke">sotouke</term>
    </glossdef>
 </glossentry>

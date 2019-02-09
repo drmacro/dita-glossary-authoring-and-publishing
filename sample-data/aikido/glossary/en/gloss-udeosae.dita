@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="udeosae">
   <glossterm>udeosae</glossterm>
-  <glossdef> pinned arm, <term keyref="glossary.ikkyo">ikkyo</term>
+  <glossdef> pinned arm, <term keyref="ikkyo">ikkyo</term>
    </glossdef>
 </glossentry>

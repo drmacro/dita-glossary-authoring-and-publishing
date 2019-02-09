@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="waka-sensei">
    <glossterm>waka sensei</glossterm>
-   <glossdef> young teacher, used in aikido for successor of <term keyref="glossary.doshu"
+   <glossdef> young teacher, used in aikido for successor of <term keyref="doshu"
       >Doshu</term>
   </glossdef>
 </glossentry>

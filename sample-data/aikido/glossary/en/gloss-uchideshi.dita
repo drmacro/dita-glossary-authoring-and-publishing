@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="uchideshi">
   <glossterm>uchideshi</glossterm>
-  <glossdef> student living in the <term keyref="glossary.dojo">dojo</term>, compare <term keyref="glossary.sotodeshi">sotodeshi</term>
+  <glossdef> student living in the <term keyref="dojo">dojo</term>, compare <term keyref="sotodeshi">sotodeshi</term>
 
    </glossdef>
 </glossentry>

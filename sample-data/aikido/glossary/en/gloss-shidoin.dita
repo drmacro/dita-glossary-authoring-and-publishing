@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="shidoin">
   <glossterm>shidoin</glossterm>
-  <glossdef> instructor, middle title for aikido teacher, 4-5 <term keyref="glossary.dan">dan</term>, compare <term keyref="glossary.fukushidoin">fukushidoin </term>and <term keyref="glossary.shihan">shihan</term>
+  <glossdef> instructor, middle title for aikido teacher, 4-5 <term keyref="dan">dan</term>, compare <term keyref="fukushidoin">fukushidoin </term>and <term keyref="shihan">shihan</term>
 
    </glossdef>
 </glossentry>

@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kobudo">
   <glossterm>kobudo</glossterm>
-  <glossdef> older <term keyref="glossary.budo">budo</term>
+  <glossdef> older <term keyref="budo">budo</term>
 
    </glossdef>
 </glossentry>

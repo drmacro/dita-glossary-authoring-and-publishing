@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="suwate">
   <glossterm>suwate</glossterm>
-  <glossdef> seated training, also called <term keyref="glossary.suwariwaza">suwariwaza</term>
+  <glossdef> seated training, also called <term keyref="suwariwaza">suwariwaza</term>
 
    </glossdef>
 </glossentry>

@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="bokuto">
   <glossterm>bokuto</glossterm>
-  <glossdef> same as <term keyref="glossary.bokken">bokken</term>
+  <glossdef> same as <term keyref="bokken">bokken</term>
    </glossdef>
 </glossentry>

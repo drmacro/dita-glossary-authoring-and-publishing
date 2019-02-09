@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kinagare-ki-no-nagare">
   <glossterm>kinagare/ki no nagare</glossterm>
-  <glossdef> streaming <term keyref="glossary.ki">ki</term>, flowing training, compare <term keyref="glossary.gotai">gotai</term>, <term keyref="glossary.jutai">jutai</term> and <term keyref="glossary.ryutai">ryutai</term>
+  <glossdef> streaming <term keyref="ki">ki</term>, flowing training, compare <term keyref="gotai">gotai</term>, <term keyref="jutai">jutai</term> and <term keyref="ryutai">ryutai</term>
 
    </glossdef>
 </glossentry>

@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="tai-no-henko">
   <glossterm>tai no henko</glossterm>
-  <glossdef> body turn, also called <term keyref="glossary.tai-no-tenkan">tai no tenkan</term>
+  <glossdef> body turn, also called <term keyref="tai-no-tenkan">tai no tenkan</term>
 
    </glossdef>
 </glossentry>

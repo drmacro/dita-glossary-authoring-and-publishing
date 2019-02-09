@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="hito-e-mi">
   <glossterm>hito e mi</glossterm>
-  <glossdef> making the body small, guard position with more of an angle than <term keyref="glossary.hanmi">hanmi</term>
+  <glossdef> making the body small, guard position with more of an angle than <term keyref="hanmi">hanmi</term>
    </glossdef>
 </glossentry>

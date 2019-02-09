@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="chukyusha">
   <glossterm>chukyusha</glossterm>
-  <glossdef> continuing student, with a mid-level <term keyref="glossary.kyu">kyu</term> grade (j&amp;auml;mf&amp;ouml;r <term keyref="glossary.jokyusha">jokyusha</term>)
+  <glossdef> continuing student, with a mid-level <term keyref="kyu">kyu</term> grade (j&amp;auml;mf&amp;ouml;r <term keyref="jokyusha">jokyusha</term>)
 
 
 </glossdef>

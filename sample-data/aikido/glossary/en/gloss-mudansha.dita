@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="mudansha">
   <glossterm>mudansha</glossterm>
-  <glossdef> trainee without dan grade, compare <term keyref="glossary.yudansha">yudansha</term>
+  <glossdef> trainee without dan grade, compare <term keyref="yudansha">yudansha</term>
    </glossdef>
 </glossentry>

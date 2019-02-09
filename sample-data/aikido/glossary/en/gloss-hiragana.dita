@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="hiragana">
   <glossterm>hiragana</glossterm>
-  <glossdef> Japanese phonetic writing, compare <term keyref="glossary.katakana">katakana</term>
+  <glossdef> Japanese phonetic writing, compare <term keyref="katakana">katakana</term>
 
    </glossdef>
 </glossentry>

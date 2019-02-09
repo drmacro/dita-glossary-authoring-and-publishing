@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="yang">
   <glossterm>yang</glossterm>
-  <glossdef> sunny side, heavenly, in Japanese <term keyref="glossary.yo">yo</term>, compare <term keyref="glossary.yin">yin</term>
+  <glossdef> sunny side, heavenly, in Japanese <term keyref="yo">yo</term>, compare <term keyref="yin">yin</term>
 
    </glossdef>
 </glossentry>

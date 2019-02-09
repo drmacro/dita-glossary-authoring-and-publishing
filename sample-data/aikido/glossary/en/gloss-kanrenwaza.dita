@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kanrenwaza">
   <glossterm>kanrenwaza</glossterm>
-  <glossdef> linked techniques, one technique followed by another, compare <term keyref="glossary.renzokuwaza">renzokuwaza</term>
+  <glossdef> linked techniques, one technique followed by another, compare <term keyref="renzokuwaza">renzokuwaza</term>
 
    </glossdef>
 </glossentry>

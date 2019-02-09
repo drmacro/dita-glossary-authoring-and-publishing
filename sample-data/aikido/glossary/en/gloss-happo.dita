@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="happo">
   <glossterm>happo</glossterm>
-  <glossdef> eight directions, compare <term keyref="glossary.shiho">shiho</term>
+  <glossdef> eight directions, compare <term keyref="shiho">shiho</term>
    </glossdef>
 </glossentry>
