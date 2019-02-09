@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xt:extensions xmlns:xt="http://www.oxygenxml.com/ns/extension"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
+  <xt:extension id="glossary-support-workspace">
+    <xt:location href="glossary-support-oxygen-add-on.jar"/>
+    <xt:version>^oxygen-add-on-version^</xt:version>
+    <xt:oxy_version>19.0+</xt:oxy_version>
+    <xt:type>plugin</xt:type>
+    <xt:author>Eliot Kimber</xt:author>
+    <xt:name>Glossary Support Frameworks</xt:name>
+    <xt:description xmlns="http://www.w3.org/1999/xhtml">Extends base DITA frameworks to add additional support for glossary authoring and publishing.</xt:description>
+    <xt:license>
+      <![CDATA[
+Apache 2.0 License.
+]]></xt:license>
+  </xt:extension>
+</xt:extensions>
