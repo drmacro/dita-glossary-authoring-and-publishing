@@ -3,7 +3,7 @@
 <map keyscope="glossary">
     <title>Aikido Glossary Navigation Structure</title>
    <topicref href="en/glossary-title.dita">
-      <topicref href="en/letter-group-A.dita">
+      <topicref toc="no" href="en/letter-group-A.dita">
          <topicref keys="ai" keyref="gloss-res.ai"/>
          <topicref keys="aihanmi" keyref="gloss-res.aihanmi"/>
          <topicref keys="aihanmi-katatedori" keyref="gloss-res.aihanmi-katatedori"/>
@@ -32,7 +32,7 @@
          <topicref keys="awase" keyref="gloss-res.awase"/>
          <topicref keys="ayumiashi" keyref="gloss-res.ayumiashi"/>
       </topicref>
-     <topicref href="en/letter-group-B.dita">
+     <topicref toc="no" href="en/letter-group-B.dita">
          <topicref keys="barai-harai" keyref="gloss-res.barai-harai"/>
          <topicref keys="batto" keyref="gloss-res.batto"/>
          <topicref keys="bo" keyref="gloss-res.bo"/>
@@ -46,7 +46,7 @@
          <topicref keys="bushi" keyref="gloss-res.bushi"/>
          <topicref keys="bushido" keyref="gloss-res.bushido"/>
      </topicref>
-      <topicref href="en/letter-group-C.dita">
+      <topicref toc="no" href="en/letter-group-C.dita">
          <topicref keys="chado" keyref="gloss-res.chado"/>
          <topicref keys="chikara" keyref="gloss-res.chikara"/>
          <topicref keys="choku" keyref="gloss-res.choku"/>
@@ -56,7 +56,7 @@
          <topicref keys="chudan-tsuki" keyref="gloss-res.chudan-tsuki"/>
          <topicref keys="chukyusha" keyref="gloss-res.chukyusha"/>
       </topicref>
-      <topicref href="en/letter-group-D.dita">
+      <topicref toc="no" href="en/letter-group-D.dita">
          <topicref keys="dai" keyref="gloss-res.dai"/>
          <topicref keys="daisho" keyref="gloss-res.daisho"/>
          <topicref keys="Daito-ryu" keyref="gloss-res.Daito-ryu"/>
@@ -79,19 +79,19 @@
          <topicref keys="doshu" keyref="gloss-res.doshu"/>
          <topicref keys="dozo" keyref="gloss-res.dozo"/>
       </topicref>
-      <topicref href="en/letter-group-E.dita">
+      <topicref toc="no" href="en/letter-group-E.dita">
          <topicref keys="embukai" keyref="gloss-res.embukai"/>
          <topicref keys="empi" keyref="gloss-res.empi"/>
          <topicref keys="eri" keyref="gloss-res.eri"/>
          <topicref keys="eridori" keyref="gloss-res.eridori"/>
       </topicref>
-      <topicref href="en/letter-group-F.dita">
+      <topicref toc="no" href="en/letter-group-F.dita">
          <topicref keys="fukushidoin" keyref="gloss-res.fukushidoin"/>
          <topicref keys="funakogi-undo" keyref="gloss-res.funakogi-undo"/>
          <topicref keys="furitama" keyref="gloss-res.furitama"/>
          <topicref keys="futaridori-futarigake" keyref="gloss-res.futaridori-futarigake"/>
       </topicref>
-      <topicref href="en/letter-group-G.dita">
+      <topicref toc="no" href="en/letter-group-G.dita">
          <topicref keys="gaeshi-kaeshi" keyref="gloss-res.gaeshi-kaeshi"/>
          <topicref keys="gamae-kamae" keyref="gloss-res.gamae-kamae"/>
          <topicref keys="gasshuku" keyref="gloss-res.gasshuku"/>
@@ -111,7 +111,7 @@
          <topicref keys="gyakuhanmi-katatedori" keyref="gloss-res.gyakuhanmi-katatedori"/>
          <topicref keys="gyakutsuki" keyref="gloss-res.gyakutsuki"/>
       </topicref>
-      <topicref href="en/letter-group-H.dita">
+      <topicref toc="no" href="en/letter-group-H.dita">
          <topicref keys="hachi" keyref="gloss-res.hachi"/>
          <topicref keys="Hagakure" keyref="gloss-res.Hagakure"/>
          <topicref keys="hai" keyref="gloss-res.hai"/>
@@ -144,7 +144,7 @@
          <topicref keys="hombu" keyref="gloss-res.hombu"/>
          <topicref keys="Hombu-dojo" keyref="gloss-res.Hombu-dojo"/>
       </topicref>
-      <topicref href="en/letter-group-I.dita">
+      <topicref toc="no" href="en/letter-group-I.dita">
          <topicref keys="iaido" keyref="gloss-res.iaido"/>
          <topicref keys="iaito" keyref="gloss-res.iaito"/>
          <topicref keys="ichi" keyref="gloss-res.ichi"/>
@@ -163,7 +163,7 @@
          <topicref keys="Iwama" keyref="gloss-res.Iwama"/>
          <topicref keys="Iwama-ryu" keyref="gloss-res.Iwama-ryu"/>
       </topicref>
-      <topicref href="en/letter-group-J.dita">
+      <topicref toc="no" href="en/letter-group-J.dita">
          <topicref keys="jiyuwaza" keyref="gloss-res.jiyuwaza"/>
          <topicref keys="jo" keyref="gloss-res.jo"/>
          <topicref keys="jo-awase" keyref="gloss-res.jo-awase"/>
@@ -184,7 +184,7 @@
          <topicref keys="jutai" keyref="gloss-res.jutai"/>
          <topicref keys="jutsu" keyref="gloss-res.jutsu"/>
       </topicref>
-      <topicref href="en/letter-group-K.dita">
+      <topicref toc="no" href="en/letter-group-K.dita">
          <topicref keys="kaeshi-gaeshi" keyref="gloss-res.kaeshi-gaeshi"/>
          <topicref keys="kaeshitsuki" keyref="gloss-res.kaeshitsuki"/>
          <topicref keys="kaeshiwaza" keyref="gloss-res.kaeshiwaza"/>
@@ -271,7 +271,7 @@
          <topicref keys="kyu" keyref="gloss-res.kyu"/>
          <topicref keys="kyudo" keyref="gloss-res.kyudo"/>
       </topicref>
-      <topicref href="en/letter-group-M.dita">
+      <topicref toc="no" href="en/letter-group-M.dita">
          <topicref keys="ma" keyref="gloss-res.ma"/>
          <topicref keys="ma-ai" keyref="gloss-res.ma-ai"/>
          <topicref keys="mae" keyref="gloss-res.mae"/>
@@ -300,7 +300,7 @@
          <topicref keys="munedori" keyref="gloss-res.munedori"/>
          <topicref keys="musubi" keyref="gloss-res.musubi"/>
       </topicref>
-      <topicref href="en/letter-group-N.dita">
+      <topicref toc="no" href="en/letter-group-N.dita">
          <topicref keys="nagare" keyref="gloss-res.nagare"/>
          <topicref keys="nage" keyref="gloss-res.nage"/>
          <topicref keys="nagewaza" keyref="gloss-res.nagewaza"/>
@@ -323,7 +323,7 @@
          <topicref keys="nuki" keyref="gloss-res.nuki"/>
          <topicref keys="nukite" keyref="gloss-res.nukite"/>
       </topicref>
-      <topicref href="en/letter-group-O.dita">
+      <topicref toc="no" href="en/letter-group-O.dita">
          <topicref keys="o" keyref="gloss-res.o"/>
          <topicref keys="obi" keyref="gloss-res.obi"/>
          <topicref keys="ocha" keyref="gloss-res.ocha"/>
@@ -337,7 +337,7 @@
          <topicref keys="otoshi" keyref="gloss-res.otoshi"/>
          <topicref keys="oyowaza" keyref="gloss-res.oyowaza"/>
       </topicref>
-      <topicref href="en/letter-group-R.dita">
+      <topicref toc="no" href="en/letter-group-R.dita">
          <topicref keys="randori" keyref="gloss-res.randori"/>
          <topicref keys="rei" keyref="gloss-res.rei"/>
          <topicref keys="reigi" keyref="gloss-res.reigi"/>
@@ -354,7 +354,7 @@
          <topicref keys="ryu" keyref="gloss-res.ryu"/>
          <topicref keys="ryutai" keyref="gloss-res.ryutai"/>
       </topicref>
-      <topicref href="en/letter-group-S.dita">
+      <topicref toc="no" href="en/letter-group-S.dita">
          <topicref keys="sabaki" keyref="gloss-res.sabaki"/>
          <topicref keys="sake" keyref="gloss-res.sake"/>
          <topicref keys="samurai" keyref="gloss-res.samurai"/>
@@ -426,7 +426,7 @@
          <topicref keys="suwariwaza" keyref="gloss-res.suwariwaza"/>
          <topicref keys="suwate" keyref="gloss-res.suwate"/>
       </topicref>
-      <topicref href="en/letter-group-T.dita">
+      <topicref toc="no" href="en/letter-group-T.dita">
          <topicref keys="tachi-1" keyref="gloss-res.tachi-1"/>
          <topicref keys="tachi-2" keyref="gloss-res.tachi-2"/>
          <topicref keys="tachidori" keyref="gloss-res.tachidori"/>
@@ -470,7 +470,7 @@
          <topicref keys="tsuka" keyref="gloss-res.tsuka"/>
          <topicref keys="tsuki" keyref="gloss-res.tsuki"/>
       </topicref>
-      <topicref href="en/letter-group-U.dita">
+      <topicref toc="no" href="en/letter-group-U.dita">
          <topicref keys="uchi-1" keyref="gloss-res.uchi-1"/>
          <topicref keys="uchi-2" keyref="gloss-res.uchi-2"/>
          <topicref keys="uchideshi" keyref="gloss-res.uchideshi"/>
@@ -494,14 +494,14 @@
          <topicref keys="ushiro-ukemi" keyref="gloss-res.ushiro-ukemi"/>
          <topicref keys="ushirowaza" keyref="gloss-res.ushirowaza"/>
       </topicref>
-      <topicref href="en/letter-group-W.dita">
+      <topicref toc="no" href="en/letter-group-W.dita">
          <topicref keys="waka-sensei" keyref="gloss-res.waka-sensei"/>
          <topicref keys="waki" keyref="gloss-res.waki"/>
          <topicref keys="wakizashi" keyref="gloss-res.wakizashi"/>
          <topicref keys="ware" keyref="gloss-res.ware"/>
          <topicref keys="waza" keyref="gloss-res.waza"/>
       </topicref>
-      <topicref href="en/letter-group-Y.dita">
+      <topicref toc="no" href="en/letter-group-Y.dita">
          <topicref keys="yame" keyref="gloss-res.yame"/>
          <topicref keys="yang" keyref="gloss-res.yang"/>
          <topicref keys="yari" keyref="gloss-res.yari"/>
@@ -521,7 +521,7 @@
          <topicref keys="Yoshinkan" keyref="gloss-res.Yoshinkan"/>
          <topicref keys="yudansha" keyref="gloss-res.yudansha"/>
       </topicref>
-     <topicref href="en/letter-group-Z.dita">
+     <topicref toc="no" href="en/letter-group-Z.dita">
          <topicref keys="za" keyref="gloss-res.za"/>
          <topicref keys="Zaidan-Hojin-Aikikai" keyref="gloss-res.Zaidan-Hojin-Aikikai"/>
          <topicref keys="zanshin" keyref="gloss-res.zanshin"/>
