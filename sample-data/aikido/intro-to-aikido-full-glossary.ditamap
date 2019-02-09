@@ -39,7 +39,7 @@
       <topicref
         href="intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>
     </topicref>
-    <mapref
+    <mapref keyscope="glossary"
       href="glossary/aikido-glossary-navigation-en.ditamap"
     />
   </topicref>
