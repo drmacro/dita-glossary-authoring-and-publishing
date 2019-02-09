@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="aikijo">
   <glossterm>aikijo</glossterm>
-  <glossdef> aikido <term>jo</term>-staff exercises
+  <glossdef> aikido <term keyref="glossary.jo">jo</term>-staff exercises
 </glossdef>
 </glossentry>

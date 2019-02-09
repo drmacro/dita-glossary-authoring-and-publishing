@@ -4,6 +4,6 @@
 <glossentry id="shinai">
   <glossterm>shinai</glossterm>
   <glossdef> 
-      <term>kendo</term> sword of bamboo
+      <term keyref="glossary.kendo">kendo</term> sword of bamboo
 </glossdef>
 </glossentry>

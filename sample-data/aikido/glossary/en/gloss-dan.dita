@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="dan">
   <glossterm>dan</glossterm>
-  <glossdef> level, black belt grade in <term>budo</term>
+  <glossdef> level, black belt grade in <term keyref="glossary.budo">budo</term>
    </glossdef>
 </glossentry>

@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="nuki">
   <glossterm>nuki</glossterm>
-  <glossdef> draw the sword, also called <term>batto</term>
+  <glossdef> draw the sword, also called <term keyref="glossary.batto">batto</term>
    </glossdef>
 </glossentry>

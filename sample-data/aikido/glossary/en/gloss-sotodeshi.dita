@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="sotodeshi">
   <glossterm>sotodeshi</glossterm>
-  <glossdef> student who lives outside the <term>dojo</term>, compare <term>uchideshi</term>
+  <glossdef> student who lives outside the <term keyref="glossary.dojo">dojo</term>, compare <term keyref="glossary.uchideshi">uchideshi</term>
    </glossdef>
 </glossentry>

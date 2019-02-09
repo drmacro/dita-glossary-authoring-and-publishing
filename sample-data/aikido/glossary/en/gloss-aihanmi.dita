@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="aihanmi">
   <glossterm>aihanmi</glossterm>
-  <glossdef> basic relation between partners: both have same foot forward (left or right), compare <term>gyakuhanmi</term>
+  <glossdef> basic relation between partners: both have same foot forward (left or right), compare <term keyref="glossary.gyakuhanmi">gyakuhanmi</term>
    </glossdef>
 </glossentry>

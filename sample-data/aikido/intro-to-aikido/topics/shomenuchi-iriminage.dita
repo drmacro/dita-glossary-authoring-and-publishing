@@ -3,8 +3,8 @@
 <reference id="referenceId">
   <title>Shomenuchi iriminage</title>
   <shortdesc>Entering throw
-    (<term>iriminage</term>) for
-    <term>Shomenuchi</term>
+    (<term keyref="glossary.iriminage">iriminage</term>) for
+    <term keyref="glossary.shomenuchi">Shomenuchi</term>
     attack.</shortdesc>
   <prolog>
     <metadata>
@@ -26,12 +26,12 @@
         time placing his other hand on
         Uke's rear shoulder. Nage
         extends his blocking hand and
-        performs a <term>tenkan</term>,
+        performs a <term keyref="glossary.tenkan">tenkan</term>,
         pulling slightly on Uke's
         shoulder to take his balance. As
         Uke's rotational momentum
         carries him around, Nage
-        performs a <term>tenkai</term>,
+        performs a <term keyref="glossary.tenkai">tenkai</term>,
         pulls Uke's shoulder in closer
         to maintain connection, and
         raises his blocking hand up and

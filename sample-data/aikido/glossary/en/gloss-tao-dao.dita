@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="tao-dao">
   <glossterm>tao/dao</glossterm>
-  <glossdef> Chinese for <term>do</term>
+  <glossdef> Chinese for <term keyref="glossary.do">do</term>
 
    </glossdef>
 </glossentry>

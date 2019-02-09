@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kikai-tanden">
   <glossterm>kikai tanden</glossterm>
-  <glossdef> the ocean of <term>ki </term>in the body's center
+  <glossdef> the ocean of <term keyref="glossary.ki">ki </term>in the body's center
 </glossdef>
 </glossentry>

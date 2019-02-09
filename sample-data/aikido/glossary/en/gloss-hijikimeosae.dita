@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="hijikimeosae">
   <glossterm>hijikimeosae</glossterm>
-  <glossdef> pinning technique, sometimes called <term>rokkyo</term>
+  <glossdef> pinning technique, sometimes called <term keyref="glossary.rokkyo">rokkyo</term>
    </glossdef>
 </glossentry>

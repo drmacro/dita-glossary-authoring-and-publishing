@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="doshu">
   <glossterm>doshu</glossterm>
-  <glossdef> way leader, head of a <term>budo</term>
+  <glossdef> way leader, head of a <term keyref="glossary.budo">budo</term>
 
    </glossdef>
 </glossentry>

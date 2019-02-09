@@ -4,6 +4,6 @@
 <glossentry id="hassogaeshi">
   <glossterm>hassogaeshi</glossterm>
   <glossdef> 
-      <term>jo</term>-staff technique
+      <term keyref="glossary.jo">jo</term>-staff technique
 </glossdef>
 </glossentry>

@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="nage">
   <glossterm>nage</glossterm>
-  <glossdef> throw, also used for the one doing the aikido technique, compare <term>tori</term>
+  <glossdef> throw, also used for the one doing the aikido technique, compare <term keyref="glossary.tori">tori</term>
    </glossdef>
 </glossentry>

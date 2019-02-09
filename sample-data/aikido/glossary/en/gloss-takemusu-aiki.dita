@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="takemusu-aiki">
   <glossterm>takemusu aiki</glossterm>
-  <glossdef> improvised Martial art through the principle of <term>aiki</term>
+  <glossdef> improvised Martial art through the principle of <term keyref="glossary.aiki">aiki</term>
 
    </glossdef>
 </glossentry>

@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="shin">
   <glossterm>shin</glossterm>
-  <glossdef> heart, will, mind, also pronounced <term>kokoro</term>
+  <glossdef> heart, will, mind, also pronounced <term keyref="glossary.kokoro">kokoro</term>
 
    </glossdef>
 </glossentry>

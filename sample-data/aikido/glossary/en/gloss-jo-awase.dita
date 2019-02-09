@@ -4,6 +4,6 @@
 <glossentry id="jo-awase">
   <glossterm>jo awase</glossterm>
   <glossdef> 
-      <term>jo</term>-staff exercises
+      <term keyref="glossary.jo">jo</term>-staff exercises
 </glossdef>
 </glossentry>

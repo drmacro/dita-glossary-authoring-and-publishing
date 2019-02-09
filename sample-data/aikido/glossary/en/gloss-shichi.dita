@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="shichi">
   <glossterm>shichi</glossterm>
-  <glossdef> seven, also pronounced <term>nana</term>
+  <glossdef> seven, also pronounced <term keyref="glossary.nana">nana</term>
    </glossdef>
 </glossentry>

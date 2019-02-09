@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="jodori">
   <glossterm>jodori</glossterm>
-  <glossdef> defense against <term>jo</term>-staff
+  <glossdef> defense against <term keyref="glossary.jo">jo</term>-staff
 </glossdef>
 </glossentry>

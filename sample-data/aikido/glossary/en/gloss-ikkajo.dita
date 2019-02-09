@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="ikkajo">
   <glossterm>ikkajo</glossterm>
-  <glossdef> older term for <term>ikkyo</term>
+  <glossdef> older term for <term keyref="glossary.ikkyo">ikkyo</term>
    </glossdef>
 </glossentry>

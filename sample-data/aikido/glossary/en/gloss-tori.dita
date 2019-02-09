@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="tori">
   <glossterm>tori</glossterm>
-  <glossdef> the one who takes, defender in aikido, also called <term>nage </term>and <term>shite</term>
+  <glossdef> the one who takes, defender in aikido, also called <term keyref="glossary.nage">nage </term>and <term keyref="glossary.shite">shite</term>
 
    </glossdef>
 </glossentry>

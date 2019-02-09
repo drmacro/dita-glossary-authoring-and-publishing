@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="ura">
   <glossterm>ura</glossterm>
-  <glossdef> backside, inside, reverse side, compare <term>omote</term>
+  <glossdef> backside, inside, reverse side, compare <term keyref="glossary.omote">omote</term>
    </glossdef>
 </glossentry>

@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="tekubiosae">
   <glossterm>tekubiosae</glossterm>
-  <glossdef> pinned wrist, <term>yonkyo</term>
+  <glossdef> pinned wrist, <term keyref="glossary.yonkyo">yonkyo</term>
 
    </glossdef>
 </glossentry>

@@ -3,21 +3,21 @@
 <reference id="referenceId">
   <title>Yokomenuchi shihonage</title>
   <shortdesc>Four direction throw
-    (<term>shihonage</term>) in response
+    (<term keyref="glossary.shihonage">shihonage</term>) in response
     to strike to the side of the head
-    (<term>yokomenuchi</term>).</shortdesc>
+    (<term keyref="glossary.yokomenuchi">yokomenuchi</term>).</shortdesc>
   <refbody>
     <section spectitle="Description">
       <p>May be performed
-        <term>omote</term> or
-        <term>ura</term>.</p>
+        <term keyref="glossary.omote">omote</term> or
+        <term keyref="glossary.ura">ura</term>.</p>
 <!--      <p
         audience="expert">Expert
         paragraph</p>
       <p
         audience="beginner">Beginner
         paragraph.</p>
---><p><term>Omote</term>: Uke strikes
+--><p><term keyref="glossary.omote">Omote</term>: Uke strikes
   toward the near side of Nage's
   head. <ph
   conkeyref="res-technique-comps/shihonage"/><ph

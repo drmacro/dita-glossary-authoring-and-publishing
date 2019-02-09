@@ -4,6 +4,6 @@
 <glossentry id="aikibudo">
   <glossterm>aikibudo</glossterm>
   <glossdef> 
-      <term>budo</term> based on the <term>aiki</term> principle, earlier name for aikido
+      <term keyref="glossary.budo">budo</term> based on the <term keyref="glossary.aiki">aiki</term> principle, earlier name for aikido
 </glossdef>
 </glossentry>

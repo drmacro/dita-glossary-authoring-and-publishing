@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kyu">
   <glossterm>kyu</glossterm>
-  <glossdef> grade before blackbelt, compare <term>dan</term>
+  <glossdef> grade before blackbelt, compare <term keyref="glossary.dan">dan</term>
 
    </glossdef>
 </glossentry>

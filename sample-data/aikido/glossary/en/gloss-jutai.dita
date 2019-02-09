@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="jutai">
   <glossterm>jutai</glossterm>
-  <glossdef> soft body, smooth training, compare <term>gotai</term>, <term>ryutai</term> and <term>kinagare</term>
+  <glossdef> soft body, smooth training, compare <term keyref="glossary.gotai">gotai</term>, <term keyref="glossary.ryutai">ryutai</term> and <term>kinagare</term>
 
    </glossdef>
 </glossentry>

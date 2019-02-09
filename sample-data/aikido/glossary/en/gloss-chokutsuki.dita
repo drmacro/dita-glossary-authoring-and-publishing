@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="chokutsuki">
   <glossterm>chokutsuki</glossterm>
-  <glossdef> direct strike with the <term>jo</term>
+  <glossdef> direct strike with the <term keyref="glossary.jo">jo</term>
    </glossdef>
 </glossentry>

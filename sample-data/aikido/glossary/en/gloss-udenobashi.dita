@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="udenobashi">
   <glossterm>udenobashi</glossterm>
-  <glossdef> extended arm, <term>gokyo</term>
+  <glossdef> extended arm, <term keyref="glossary.gokyo">gokyo</term>
    </glossdef>
 </glossentry>

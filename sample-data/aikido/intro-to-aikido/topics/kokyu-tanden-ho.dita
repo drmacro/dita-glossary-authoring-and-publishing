@@ -2,36 +2,20 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="referenceId">
   <title>Kokyu tanden ho</title>
-  <shortdesc>Breath power
-    (<term>kokyu</term>) throw or
-    exercise (<term>ho</term>) from
-    kneeling position
-    (<term>seiza</term>)</shortdesc>
+  <shortdesc>Breath power (<term keyref="glossary.kokyu">kokyu</term>) throw or exercise (<term
+      keyref="glossary.ho-1">ho</term>) from kneeling position (<term keyref="glossary.seiza"
+      >seiza</term>)</shortdesc>
   <refbody>
     <section
       spectitle="Description">
-      <p>Nage and Uke sit opposite each
-        other in <term>seiza</term>,
-        about a fists-width apart. Nage
-        presents both wrists to Uke, who
-        grabs both wrists and pushes
-        them toward Nage in an attempt
-        to push him over backward. Nage
-        resists and then raises his arms
-        up and toward Uke's head. Nage
-        spreads his hands, cutting
-        upward with one hand and down
-        and back with the other, drawing
-        Uke sideways. Nage raises into
-        <term>keiza</term> and draws Uke
-        onto his back and pins Uke by
-        the wrist and outside shoulder.
-        Nage maintains a straight back
-        and projects his <term>ki</term>
-        through his arms to maintain the
-        pin. Uke attempts to rise and
-        taps when he feels his is
-        completely immobilized.</p>
+      <p>Nage and Uke sit opposite each other in <term keyref="glossary.seiza">seiza</term>, about a
+        fists-width apart. Nage presents both wrists to Uke, who grabs both wrists and pushes them
+        toward Nage in an attempt to push him over backward. Nage resists and then raises his arms
+        up and toward Uke's head. Nage spreads his hands, cutting upward with one hand and down and
+        back with the other, drawing Uke sideways. Nage raises into <term>keiza</term> and draws Uke
+        onto his back and pins Uke by the wrist and outside shoulder. Nage maintains a straight back
+        and projects his <term keyref="glossary.ki">ki</term> through his arms to maintain the pin.
+        Uke attempts to rise and taps when he feels his is completely immobilized.</p>
     </section>
     <section
       spectitle="Diagram">
@@ -40,7 +24,7 @@
           href="graphics/kokyu-tanden-ho-01.jpg"
           id="image_cue_utr_kd">
           <alt>Uke seated in
-            <term>seiza</term>, Nage in
+            <term keyref="glossary.seiza">seiza</term>, Nage in
             <term>keiza</term>, Nage
             beginning to throw Uke
             sideways.</alt>

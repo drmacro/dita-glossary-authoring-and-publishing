@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="michi">
   <glossterm>michi</glossterm>
-  <glossdef> way, also <term>do</term>
+  <glossdef> way, also <term keyref="glossary.do">do</term>
 
    </glossdef>
 </glossentry>

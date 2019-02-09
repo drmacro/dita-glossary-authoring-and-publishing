@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="koan">
   <glossterm>koan</glossterm>
-  <glossdef> riddle in <term>zen</term>
+  <glossdef> riddle in <term keyref="glossary.zen">zen</term>
    </glossdef>
 </glossentry>

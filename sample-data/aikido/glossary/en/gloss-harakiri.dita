@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="harakiri">
   <glossterm>harakiri</glossterm>
-  <glossdef> cut belly, ritual suicide, also called <term>seppuku</term>
+  <glossdef> cut belly, ritual suicide, also called <term keyref="glossary.seppuku">seppuku</term>
 
    </glossdef>
 </glossentry>

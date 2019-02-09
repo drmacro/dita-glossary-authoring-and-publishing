@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="yo">
   <glossterm>yo</glossterm>
-  <glossdef> Japanese for <term>yang</term>
+  <glossdef> Japanese for <term keyref="glossary.yang">yang</term>
 
    </glossdef>
 </glossentry>

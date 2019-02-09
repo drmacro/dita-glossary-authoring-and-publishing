@@ -20,29 +20,29 @@
     />
   <mapref
     href="common/techniques/aikido-technique-resources.ditamap"
-    format="ditamap"/>
-  <topicref
+  />
+  <topicref keys="introduction"
     href="intro-to-aikido/topics/chapter-intro.dita">
-    <topicref
+    <topicref keys="rokyu-requirements"
       href="intro-to-aikido/topics/rokyu-requirements.dita"/>
-    <topichead
+    <topichead keys="aikido-techniques"
       chunk="to-content"
       copy-to="aikido-techniques.dita"
       collection-type="sequence">
       <topicmeta>
         <navtitle>Aikido Techniques</navtitle>
       </topicmeta>
-      <topicref
+      <topicref keys="kokyu-tanden-ho"
         href="intro-to-aikido/topics/kokyu-tanden-ho.dita"/>
-      <topicref
+      <topicref keys="katatedori-shihonage"
         href="intro-to-aikido/topics/katatedori-shihonage.dita"/>
-      <topicref
+      <topicref keys="munetsuki-kotegaeshi"
         href="intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>
-      <topicref
+      <topicref keys="shomenuchi-ikkyo"
         href="intro-to-aikido/topics/shomenuchi-ikkyo.dita"/>
-      <topicref
+      <topicref keys="shomenuchi-iriminage"
         href="intro-to-aikido/topics/shomenuchi-iriminage.dita"/>
-      <topicref
+      <topicref keys="yokomenuchi-shihonage"
         href="intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>
     </topichead>
     <mapref href="glossary/aikido-glossary-navigation-en.ditamap"/>
@@ -69,16 +69,12 @@
     </relheader>
     <relrow>
       <relcell>
-        <topicref
-          href="intro-to-aikido/topics/rokyu-requirements.dita"/>
+        <topicref keyref="rokyu-requirements"/>
       </relcell>
       <relcell>
-        <topicref
-          href="intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>
-        <topicref
-          href="intro-to-aikido/topics/shomenuchi-ikkyo.dita"/>
-        <topicref
-          href="intro-to-aikido/topics/shomenuchi-iriminage.dita"/>
+        <topicref keyref="munetsuki-kotegaeshi"/>
+        <topicref keyref="shomenuchi-ikkyo"/>
+        <topicref keyref="shomenuchi-iriminage"/>
       </relcell>
     </relrow>
   </reltable>

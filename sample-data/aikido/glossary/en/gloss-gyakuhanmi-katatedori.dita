@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="gyakuhanmi-katatedori">
   <glossterm>gyakuhanmi katatedori</glossterm>
-  <glossdef> wrist grip, right on left or left on right, compare <term>aihanmi katatedori</term>
+  <glossdef> wrist grip, right on left or left on right, compare <term keyref="glossary.aihanmi-katatedori">aihanmi katatedori</term>
    </glossdef>
 </glossentry>

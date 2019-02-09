@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kyoshi">
   <glossterm>kyoshi</glossterm>
-  <glossdef> title in <term>kendo</term>, 6-7 <term>dan</term>
+  <glossdef> title in <term keyref="glossary.kendo">kendo</term>, 6-7 <term keyref="glossary.dan">dan</term>
    </glossdef>
 </glossentry>

@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kosadori">
   <glossterm>kosadori</glossterm>
-  <glossdef> cross-over grip, same as <term>aihanmi katatedori</term>
+  <glossdef> cross-over grip, same as <term keyref="glossary.aihanmi-katatedori">aihanmi katatedori</term>
 
    </glossdef>
 </glossentry>

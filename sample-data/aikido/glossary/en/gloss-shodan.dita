@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="shodan">
   <glossterm>shodan</glossterm>
-  <glossdef> first <term>dan</term> grade
+  <glossdef> first <term keyref="glossary.dan">dan</term> grade
 </glossdef>
 </glossentry>

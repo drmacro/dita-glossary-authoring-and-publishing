@@ -3,6 +3,8 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="shinzen">
   <glossterm>shinzen</glossterm>
-  <glossdef> seat of the gods, in a dojo usually a position on the wall farthest from the entrance, compare <term>kamiza </term>and <term>shomen</term>
-   </glossdef>
+  <glossdef> seat of the gods, in a dojo usually a position on the wall farthest from the entrance,
+    compare <term keyref="glossary.kamiza">kamiza </term>and <term keyref="glossary.shomen-2"
+      >shomen</term>
+  </glossdef>
 </glossentry>

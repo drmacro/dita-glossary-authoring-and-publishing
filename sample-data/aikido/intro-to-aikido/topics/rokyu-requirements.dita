@@ -26,20 +26,20 @@
     <p>For 6th Kyu you must demonstrate
       the following techniques:<ul>
       <li><term
-        keyref="gloss-tenkan">Tenkan</term></li>
-      <li><term>Shomenuchi</term>
-        <term>ikkyo</term> and
-        <term>iriminage</term> </li>
+        keyref="glossary.tenkan">Tenkan</term></li>
+      <li><term keyref="glossary.shomenuchi">Shomenuchi</term>
+        <term keyref="glossary.ikkyo">ikkyo</term> and
+        <term keyref="glossary.iriminage">iriminage</term> </li>
       <li><term>Munetsuki</term>
-        <term>kotegaeshi</term> </li>
-      <li><term>Katate</term>
-        <term>dori</term>
-        <term>shihonage</term> </li>
-      <li><term>Yokomenuchi</term>
-        <term>shihonage</term> </li>
-      <li><term>Kokyu</term>
-        <term>tanden</term>
-        <term>ho</term></li>
+        <term keyref="glossary.kotegaeshi">kotegaeshi</term> </li>
+      <li><term keyref="glossary.katate">Katate</term>
+        <term keyref="glossary.dori">dori</term>
+        <term keyref="glossary.shihonage">shihonage</term> </li>
+      <li><term keyref="glossary.yokomenuchi">Yokomenuchi</term>
+        <term keyref="glossary.shihonage">shihonage</term> </li>
+      <li><term keyref="glossary.kokyu">Kokyu</term>
+        <term keyref="glossary.tanden">tanden</term>
+        <term keyref="glossary.ho-1">ho</term></li>
       </ul></p>
   </conbody>
 </concept>

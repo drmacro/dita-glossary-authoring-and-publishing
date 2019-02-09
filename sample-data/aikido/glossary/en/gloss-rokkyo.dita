@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="rokkyo">
   <glossterm>rokkyo</glossterm>
-  <glossdef> sixth teaching, pinning technique, see <term>hijikime osae</term>
+  <glossdef> sixth teaching, pinning technique, see <term keyref="glossary.hijikimeosae">hijikime osae</term>
 
    </glossdef>
 </glossentry>

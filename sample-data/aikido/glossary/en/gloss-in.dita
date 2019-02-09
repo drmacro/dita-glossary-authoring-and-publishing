@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="in">
   <glossterm>in</glossterm>
-  <glossdef> Japanese for the Chinese concept <term>yin</term>, compare <term>yo</term>
+  <glossdef> Japanese for the Chinese concept <term keyref="glossary.yin">yin</term>, compare <term keyref="glossary.yo">yo</term>
    </glossdef>
 </glossentry>

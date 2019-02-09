@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="dai">
    <glossterm>dai</glossterm>
-   <glossdef> big, also <term>o</term>
+   <glossdef> big, also <term keyref="glossary.o">o</term>
    </glossdef>
 </glossentry>
