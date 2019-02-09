@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept
+  id="conceptId">
+  <title>Rokyu (6th Kyu)
+    Requirements</title>
+  <shortdesc>6th Kyu is the first level
+    of white belt earned by Aikido
+    beginners.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>rokyu</keyword>
+        <indexterm>belt
+          exams<indexterm>Rokyu</indexterm></indexterm>
+        <indexterm>belt
+          exams<indexterm>6th
+          Kyu</indexterm></indexterm>
+        <indexterm>Kyu
+          exams<indexterm>6th
+          Kyu</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>For 6th Kyu you must demonstrate
+      the following techniques:<ul>
+      <li><term
+        keyref="gloss-tenkan">Tenkan</term></li>
+      <li><term>Shomenuchi</term>
+        <term>ikkyo</term> and
+        <term>iriminage</term> </li>
+      <li><term>Munetsuki</term>
+        <term>kotegaeshi</term> </li>
+      <li><term>Katate</term>
+        <term>dori</term>
+        <term>shihonage</term> </li>
+      <li><term>Yokomenuchi</term>
+        <term>shihonage</term> </li>
+      <li><term>Kokyu</term>
+        <term>tanden</term>
+        <term>ho</term></li>
+      </ul></p>
+  </conbody>
+</concept>

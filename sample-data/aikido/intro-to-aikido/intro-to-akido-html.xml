@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="doc-one-toolkit" default="html" basedir=".">
+  <property file="build.properties"/>                       
+  <property file="${user.home}/.build.properties"/>
+  <property file="${user.home}/build.properties"/>
+  
+  <property name="dita-ot-dir" location="c:\DITA-OT"/>      
+  
+  <property name="source.dir" location="${basedir}"/>     
+  <property name="map.filename" value="intro-to-aikido"/>           
+  <property name="base.output.dir" 
+    location="${basedir}/output"/>   
+  
+  <property name="output.dir.html" 
+    location="${base.output.dir}/html"/>   
+  
+  
+  <target name="html"                                       
+    description="build the map to HTML">
+    <mkdir dir="${output.dir.html}"/>
+    <ant antfile="${dita-ot-dir}/build.xml"     
+      inheritAll="false"
+      >
+      <property name="transtype" value="xhtml"/>
+      <property name="args.input"
+        location="${source.dir}/${map.filename}.ditamap"/>
+      <property name="output.dir"
+        location="${output.dir.html}/${map.filename}"/>
+      <property name="generate.copy.outer" value="3"/>      
+    </ant>
+  </target>
+  
+</project>

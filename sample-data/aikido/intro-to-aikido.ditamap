@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>Introduction to Aikido</title>
+  <topicmeta>
+    <prodinfo>
+      <prodname>Introduction to Aikido</prodname>
+      <vrmlist>
+        <vrm
+          version="1"
+          release="0"/>
+      </vrmlist>
+    </prodinfo>
+  </topicmeta>
+  <mapref
+    href="glossary/aikido-master-glossary-keydefs-en.ditamap"
+    />
+  <mapref
+    href="intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+    />
+  <mapref
+    href="common/techniques/aikido-technique-resources.ditamap"
+    format="ditamap"/>
+  <topicref
+    href="intro-to-aikido/topics/chapter-intro.dita">
+    <topicref
+      href="intro-to-aikido/topics/rokyu-requirements.dita"/>
+    <topichead
+      chunk="to-content"
+      copy-to="aikido-techniques.dita"
+      collection-type="sequence">
+      <topicmeta>
+        <navtitle>Aikido Techniques</navtitle>
+      </topicmeta>
+      <topicref
+        href="intro-to-aikido/topics/kokyu-tanden-ho.dita"/>
+      <topicref
+        href="intro-to-aikido/topics/katatedori-shihonage.dita"/>
+      <topicref
+        href="intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>
+      <topicref
+        href="intro-to-aikido/topics/shomenuchi-ikkyo.dita"/>
+      <topicref
+        href="intro-to-aikido/topics/shomenuchi-iriminage.dita"/>
+      <topicref
+        href="intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>
+    </topichead>
+    <mapref href="glossary/aikido-glossary-navigation-en.ditamap"/>
+  </topicref>
+  <reltable
+    title="Exam requirements to techniques">
+    <relheader>
+      <relcolspec
+        type="topic">
+        <topichead>
+          <topicmeta>
+            <navtitle>Belt Examination Requirements</navtitle>
+          </topicmeta>
+        </topichead>
+      </relcolspec>
+      <relcolspec
+        type="topic">
+        <topichead>
+          <topicmeta>
+            <navtitle>Technique Descriptions</navtitle>
+          </topicmeta>
+        </topichead>
+      </relcolspec>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref
+          href="intro-to-aikido/topics/rokyu-requirements.dita"/>
+      </relcell>
+      <relcell>
+        <topicref
+          href="intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>
+        <topicref
+          href="intro-to-aikido/topics/shomenuchi-ikkyo.dita"/>
+        <topicref
+          href="intro-to-aikido/topics/shomenuchi-iriminage.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

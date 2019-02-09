@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+  <prop
+    action="flag"
+    att="audience"
+    val="beginner"
+    >
+    <startflag imageref="icons/beginner-icon-01.gif">
+      <alt-text> Beginner form: </alt-text>
+    </startflag>
+  </prop>
+  <prop
+    action="flag"
+    att="audience"
+    val="expert"
+    >
+    <startflag imageref="icons/expert-icon-01.gif">
+      <alt-text> Export form: </alt-text>
+    </startflag>
+  </prop>
+</val>

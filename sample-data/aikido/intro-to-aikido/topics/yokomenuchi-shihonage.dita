@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Yokomenuchi shihonage</title>
+  <shortdesc>Four direction throw
+    (<term>shihonage</term>) in response
+    to strike to the side of the head
+    (<term>yokomenuchi</term>).</shortdesc>
+  <refbody>
+    <section spectitle="Description">
+      <p>May be performed
+        <term>omote</term> or
+        <term>ura</term>.</p>
+<!--      <p
+        audience="expert">Expert
+        paragraph</p>
+      <p
+        audience="beginner">Beginner
+        paragraph.</p>
+--><p><term>Omote</term>: Uke strikes
+  toward the near side of Nage's
+  head. <ph
+  conkeyref="res-technique-comps/shihonage"/><ph
+  conkeyref="res-technique-comps/shihonage-expert"/></p>
+    </section>
+    <section
+      spectitle="Diagram">
+      <fig>
+        <image
+          href="graphics/yokomenuchi-01.jpg"
+          id="image_kfg_zsr_kd">
+          <alt>Yokomenuchi strike to the
+            side of the head. Nage is
+            beginning to raise his hands
+            to block the strike as he
+            steps off the line of attack
+            to avoid the strike.</alt>
+        </image>
+      </fig>
+    </section>
+    <section spectitle="Video">
+      <p>No video available.</p>
+    </section>
+  </refbody>
+</reference>

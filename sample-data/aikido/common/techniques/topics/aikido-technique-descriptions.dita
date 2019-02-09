@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic
+  id="topic_rqw_bjz_kd">
+  <title>Aikido Technique Components</title>
+  <body>
+    <p>Contains reusable parts of Aikido technique descriptions.</p>
+    <section> <title>Attacks</title> <dl>
+      <dlentry>
+        <dt>shomenuchi</dt>
+        <dd> <p><ph
+          id="shomenuchi">Uke strikes to the top of Nage's head</ph></p> </dd>
+      </dlentry>
+      </dl> </section>
+    <section><title>Throws</title> <dl>
+      <dlentry>
+        <dt>shihonage</dt>
+        <dd> <p><ph
+          id="shihonage"
+          audience="beginner">Nage grab's Uke's wrist with the arm of the
+          grabbed hand. As Nage steps across Uke's front, he grab's Uke's arm
+          with his other hand just above the wrist, holding the arm much as he
+          would hold a sword, twisting the arm slightly toward Nage's body (that
+          is, rotating away from Nage's direction of forward movement). Nage
+          takes another forward step with his back foot, raising Uke's arm above
+          Nage's head. Nage lowers his hips to slide under Uke's raised arm,
+          locking Uke's held arm against Nage's shoulder. Nage performs a
+          <term>tenkai</term> away from Uke, bending Uke's wrist down toward the
+          ground along the direction of Uke's spine. Nage performs a
+          <term>tsugiashi</term> and throws Uke's wrist down (not away), forcing
+Uke into a backward roll.</ph></p> <p><ph
+id="shihonage-expert"
+audience="expert">Nage grab's Uke's wrist with the arm of the grabbed
+hand. Nage slides deeply across Uke's front. As he slides he grab's
+Uke's arm with his other hand just above the wrist, holding the arm
+much as he would hold a sword, twisting the arm slightly toward Nage's
+body and raising Uke's arm above Nage's head. Nage lowers his hips to
+slide under Uke's raised arm, locking Uke's held arm against Nage's
+shoulder. Nage performs a <term>tenkai</term> away from Uke, bending
+Uke's wrist down toward the ground along the direction of Uke's spine.
+Nage performs a <term>tsugiashi</term> and throws Uke's wrist down
+(not away), forcing Uke into a backward roll.</ph></p> </dd>
+      </dlentry>
+      </dl> </section>
+  </body>
+</topic>

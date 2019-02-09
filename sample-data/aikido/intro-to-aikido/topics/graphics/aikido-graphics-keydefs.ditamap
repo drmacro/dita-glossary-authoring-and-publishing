@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>Aikido Graphics Key Definitions</title>
+  <keydef keys="munetsuki-kotegaeshi-01"
+    href="munetsuki-kotegaeshi-01.jpg"
+    format="jpg"
+  >
+    <topicmeta>
+      <keywords>
+        <keyword>munetsuki</keyword>
+        <keyword>kotegaeshi</keyword>
+        <keyword>strike</keyword>
+        <keyword>pin</keyword>        
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="shomenuchi-ikkyo-01"
+    href="shomenuchi-ikkyo-01.jpg"
+    format="jpg"
+  />
+  <keydef keys="shomenuchi-iriminage-01"
+    href="shomenuchi-iriminage-01.jpg"
+    format="jpg"
+  />
+</map>

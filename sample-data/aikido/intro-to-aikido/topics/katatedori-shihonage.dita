@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Katatedori shihonage</title>
+  <shortdesc>Four direction throw
+    (<term>shihonage</term>) from
+    opposite hand grab
+    (<term>katatedori</term>).</shortdesc>
+  <refbody>
+    <section spectitle="Description">
+      <p>May be performed
+        <term>omote</term> or
+        <term>ura</term>.</p>
+<p><term>Omote</term>: Uke grabs Nage's
+        opposite hand. <ph
+        conkeyref="res-technique-comps/shihonage"/></p>
+    </section>
+    <section
+      spectitle="Diagram">
+      <fig>
+        <image
+          href="graphics/katatedori-shihonage-01.jpg"
+          id="image_pii_nqr_kd">
+          <alt>Shows the beginning of
+            katatedori shihonage omote,
+            where Nage has grabbed Uke's
+            arm above the wrist and is
+            making his initial step
+            across the front of Uke's
+            body.</alt>
+        </image>
+      </fig>
+    </section>
+    <section spectitle="Video">
+      <p>No video available.</p>
+    </section>
+  </refbody>
+</reference>

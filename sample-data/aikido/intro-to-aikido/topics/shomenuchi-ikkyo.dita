@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="referenceId">
+  <title>Shomenuchi ikkyo</title>
+  <shortdesc>First principle (<term>ikkyo</term>) for <term>Shomenuchi</term> attack.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <keyword>shomenuchi</keyword>
+        <keyword>ikkyo</keyword>
+        <keyword>strike</keyword>
+        <keyword>pin</keyword>
+        <indexterm>strikes<indexterm>shomenuchi</indexterm></indexterm>
+        <indexterm>shomenuchi<indexterm>to
+          ikkyo
+          response</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section spectitle="Description">
+      <p>As <ph
+        conkeyref="res-technique-comps/shomenuchi"/>,
+        Nage slides in and catches Uke's
+        arm with both hands, catching
+        the arm at wrist and above the
+        elbow. Nage sweeps Nage's arm
+        down and around in normal
+        <term>ikkyo</term> fashion. The
+        technique may be completed
+        <term>omote</term> or
+        <term>ura</term>. </p>
+    </section>
+    <section
+      spectitle="Diagram">
+      <fig>
+        <image
+          keyref="shomenuchi-ikkyo-01">
+          <alt>Shomenuchi ikkyo showing initial response to the attack.</alt>
+        </image>
+      </fig>
+    </section>
+    <section spectitle="Video">
+      <p>No video available.</p>
+    </section>
+  </refbody>
+</reference>

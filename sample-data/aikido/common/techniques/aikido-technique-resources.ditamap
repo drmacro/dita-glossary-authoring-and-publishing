@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>Aikido Technique
+    Resources</title>
+  <keydef
+    href="topics/aikido-technique-descriptions.dita"
+    keys="res-technique-comps"/>
+</map>

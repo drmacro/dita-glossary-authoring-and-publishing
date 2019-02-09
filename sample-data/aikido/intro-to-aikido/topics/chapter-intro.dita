@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="conceptId">
+ <title>Aikido, The Gentle Martial Art</title>
+ <shortdesc>Aikido is a purely defensive martial art in which 
+ you train cooperatively with a partner with the goal of achieving 
+ harmony between attacker and defender.</shortdesc>
+ <conbody>
+   <p>The practice of Aikido is based a set of basic principles 
+taken from the movements of traditional Japanese sword fighting.</p>
+<p>Beginners typically start with learning just the 
+first two or three principles:
+<ul>
+<li><term>ikkyo</term>, First Principle</li>
+<li><term>nikyo</term>, Second Principle</li>
+<li><term>sankyo</term>, Third Principle</li>
+</ul></p>
+ </conbody>
+</concept>
