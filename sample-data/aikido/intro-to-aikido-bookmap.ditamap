@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-  <title>Introduction to Aikido</title>
-  <topicmeta>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "map.dtd">
+<bookmap>
+  <booktitle>
+    <mainbooktitle>Introduction to Aikido</mainbooktitle>
+  </booktitle>
+  <bookmeta>
     <prodinfo>
       <prodname>Introduction to Aikido</prodname>
       <vrmlist>
@@ -11,7 +13,8 @@
           release="0"/>
       </vrmlist>
     </prodinfo>
-  </topicmeta>
+  </bookmeta>
+  <frontmatter>
   <mapref
     href="glossary/aikido-master-glossary-keydefs-en.ditamap"
     />
@@ -21,7 +24,8 @@
   <mapref
     href="common/techniques/aikido-technique-resources.ditamap"
   />
-  <topicref keys="introduction"
+  </frontmatter>
+  <chapter keys="introduction"
     href="intro-to-aikido/topics/chapter-intro.dita">
     <topicref keys="rokyu-requirements"
       href="intro-to-aikido/topics/rokyu-requirements.dita"/>
@@ -45,7 +49,12 @@
       <topicref keys="yokomenuchi-shihonage"
         href="intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>
     </topichead>
-    <mapref keyscope="glossary" href="glossary/aikido-glossary-navigation-en.ditamap"/>
-  </topicref>
-  <topicref href="exam-requirements-reltable.ditamap" format="ditamap"/>
-</map>
+  </chapter>
+  <backmatter>
+    <booklists>
+      <glossarylist href="glossary/aikido-glossary-navigation-en.ditamap"
+        keyscope="glossary"
+        format="ditamap"/>
+    </booklists>
+  </backmatter>
+</bookmap>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>Exam Requirements Mapping</title>
+  <reltable title="Exam requirements to techniques">
+    <relheader>
+      <relcolspec type="topic">
+        <topichead>
+          <topicmeta>
+            <navtitle>Belt Examination Requirements</navtitle>
+          </topicmeta>
+        </topichead>
+      </relcolspec>
+      <relcolspec type="topic">
+        <topichead>
+          <topicmeta>
+            <navtitle>Technique Descriptions</navtitle>
+          </topicmeta>
+        </topichead>
+      </relcolspec>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref keyref="rokyu-requirements"/>
+      </relcell>
+      <relcell>
+        <topicref keyref="munetsuki-kotegaeshi"/>
+        <topicref keyref="shomenuchi-ikkyo"/>
+        <topicref keyref="shomenuchi-iriminage"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>
