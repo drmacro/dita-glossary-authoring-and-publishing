@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="zazen">
   <glossterm>zazen</glossterm>
-  <glossdef> sitting meditation, also called <term keyref="mokuso">mokuso</term>
+  <glossdef> sitting meditation, also called <term keyref="mokuso"/>
    </glossdef>
 </glossentry>

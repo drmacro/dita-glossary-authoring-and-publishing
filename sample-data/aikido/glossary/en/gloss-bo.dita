@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="bo">
   <glossterm>bo</glossterm>
-  <glossdef> staff, longer than the <term keyref="jo">jo</term>
+  <glossdef> staff, longer than the <term keyref="jo"/>
    </glossdef>
 </glossentry>

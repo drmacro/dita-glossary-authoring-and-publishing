@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="tanden">
   <glossterm>tanden</glossterm>
-  <glossdef> body center, compare <term keyref="seika-no-itten">seika no itten</term>
+  <glossdef> body center, compare <term keyref="seika-no-itten"/>
 
    </glossdef>
 </glossentry>

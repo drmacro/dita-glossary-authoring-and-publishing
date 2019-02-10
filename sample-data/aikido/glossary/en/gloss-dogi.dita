@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="dogi">
   <glossterm>dogi</glossterm>
-  <glossdef> training dress, also <term keyref="keikogi">keikogi</term>
+  <glossdef> training dress, also <term keyref="keikogi"/>
    </glossdef>
 </glossentry>

@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="ken">
   <glossterm>ken</glossterm>
-  <glossdef> sword, also <term keyref="katana">katana</term>, <term keyref="to">to
-    </term>and <term keyref="tachi-1">tachi</term>
+  <glossdef> sword, also <term keyref="katana"/>, <term keyref="to">to
+    </term>and <term keyref="tachi-1"/>
   </glossdef>
 </glossentry>

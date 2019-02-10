@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="jumbitaiso">
   <glossterm>jumbitaiso</glossterm>
-  <glossdef> warm-up exercises, also called <term keyref="aikitaiso">aikitaiso</term>
+  <glossdef> warm-up exercises, also called <term keyref="aikitaiso"/>
 
    </glossdef>
 </glossentry>

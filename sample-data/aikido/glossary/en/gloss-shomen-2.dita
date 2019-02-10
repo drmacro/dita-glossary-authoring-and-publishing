@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="shomen-2">
   <glossterm>shomen</glossterm>
-  <glossdef> head place of the <term keyref="dojo">dojo</term>, compare <term keyref="shinzen">shinzen </term>and <term keyref="kamiza">kamiza</term>
+  <glossdef> head place of the <term keyref="dojo"/>, compare <term keyref="shinzen"/>and <term keyref="kamiza"/>
    </glossdef>
 </glossentry>

@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="hanshi">
   <glossterm>hanshi</glossterm>
-  <glossdef> title in <term keyref="kendo">kendo</term>, from 8th <term keyref="dan">dan</term>
+  <glossdef> title in <term keyref="kendo"/>, from 8th <term keyref="dan"/>
 
    </glossdef>
 </glossentry>

@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="yonkajo">
   <glossterm>yonkajo</glossterm>
-  <glossdef> older term for <term keyref="yonkyo">yonkyo</term>
+  <glossdef> older term for <term keyref="yonkyo"/>
    </glossdef>
 </glossentry>

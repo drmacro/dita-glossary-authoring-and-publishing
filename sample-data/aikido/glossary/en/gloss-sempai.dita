@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="sempai">
   <glossterm>sempai</glossterm>
-  <glossdef> one's senior, compare <term keyref="kohai">kohai</term>
+  <glossdef> one's senior, compare <term keyref="kohai"/>
    </glossdef>
 </glossentry>

@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kiai">
   <glossterm>kiai</glossterm>
-  <glossdef> gathered <term keyref="ki">ki</term>, usually used for shout in <term keyref="budo">budo</term>
+  <glossdef> gathered <term keyref="ki"/>, usually used for shout in <term keyref="budo"/>
    </glossdef>
 </glossentry>

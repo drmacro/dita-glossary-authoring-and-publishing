@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kotehineri">
   <glossterm>kotehineri</glossterm>
-  <glossdef> twisted wrist, <term keyref="sankyo">sankyo</term>
+  <glossdef> twisted wrist, <term keyref="sankyo"/>
 
    </glossdef>
 </glossentry>

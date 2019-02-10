@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="uchi-2">
   <glossterm>uchi</glossterm>
-  <glossdef> inside, within, inner, compare <term keyref="soto">soto</term>
+  <glossdef> inside, within, inner, compare <term keyref="soto"/>
    </glossdef>
 </glossentry>

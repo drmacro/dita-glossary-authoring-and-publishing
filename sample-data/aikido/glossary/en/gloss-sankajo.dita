@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="sankajo">
   <glossterm>sankajo</glossterm>
-  <glossdef> older term for <term keyref="sankyo">sankyo</term>
+  <glossdef> older term for <term keyref="sankyo"/>
 
    </glossdef>
 </glossentry>

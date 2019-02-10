@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="hidari">
   <glossterm>hidari</glossterm>
-  <glossdef> left (right: <term keyref="migi">migi</term>)
+  <glossdef> left (right: <term keyref="migi"/>)
 </glossdef>
 </glossentry>

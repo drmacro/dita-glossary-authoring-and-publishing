@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="katate-ryotedori">
   <glossterm>katate ryotedori</glossterm>
-  <glossdef> grip with both hands, also called <term keyref="morotedori">morotedori</term>
+  <glossdef> grip with both hands, also called <term keyref="morotedori"/>
    </glossdef>
 </glossentry>

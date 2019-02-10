@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="jokyusha">
   <glossterm>jokyusha</glossterm>
-  <glossdef> advanced student, with a higher kyu grade, compare <term keyref="chukyusha">chukyusha</term>
+  <glossdef> advanced student, with a higher kyu grade, compare <term keyref="chukyusha"/>
    </glossdef>
 </glossentry>

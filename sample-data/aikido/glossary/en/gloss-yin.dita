@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="yin">
   <glossterm>yin</glossterm>
-  <glossdef> shady side, earthly, in Japanese <term keyref="in">in</term>, compare <term keyref="yang">yang</term>
+  <glossdef> shady side, earthly, in Japanese <term keyref="in"/>, compare <term keyref="yang"/>
    </glossdef>
 </glossentry>

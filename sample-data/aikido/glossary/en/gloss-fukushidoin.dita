@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="fukushidoin">
    <glossterm>fukushidoin</glossterm>
-   <glossdef> assisting instructor, title for aikido teacher, 2-3 dan, compare <term keyref="shidoin">shidoin </term>and <term keyref="shihan">shihan</term>
+   <glossdef> assisting instructor, title for aikido teacher, 2-3 dan, compare <term keyref="shidoin"/>and <term keyref="shihan"/>
    </glossdef>
 </glossentry>

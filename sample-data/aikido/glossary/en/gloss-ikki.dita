@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="ikki">
   <glossterm>ikki</glossterm>
-  <glossdef> one <term keyref="ki">ki</term>, bottoms up, toast
+  <glossdef> one <term keyref="ki"/>, bottoms up, toast
 </glossdef>
 </glossentry>

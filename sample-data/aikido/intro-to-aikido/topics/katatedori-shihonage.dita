@@ -3,15 +3,15 @@
 <reference id="referenceId">
   <title>Katatedori shihonage</title>
   <shortdesc>Four direction throw
-    (<term keyref="glossary.shihonage">shihonage</term>) from
+    (<term keyref="glossary.shihonage"/>) from
     opposite hand grab
-    (<term keyref="glossary.katatedori">katatedori</term>).</shortdesc>
+    (<term keyref="glossary.katatedori"/>).</shortdesc>
   <refbody>
     <section spectitle="Description">
       <p>May be performed
-        <term keyref="glossary.omote">omote</term> or
-        <term keyref="glossary.ura">ura</term>.</p>
-<p><term keyref="glossary.omote">Omote</term>: Uke grabs Nage's
+        <term keyref="glossary.omote"/> or
+        <term keyref="glossary.ura"/>.</p>
+<p><term keyref="glossary.omote"/>: Uke grabs Nage's
         opposite hand. <ph
         conkeyref="res-technique-comps/shihonage"/></p>
     </section>

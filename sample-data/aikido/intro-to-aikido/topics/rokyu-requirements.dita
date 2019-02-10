@@ -27,19 +27,19 @@
       the following techniques:<ul>
       <li><term
         keyref="glossary.tenkan">Tenkan</term></li>
-      <li><term keyref="glossary.shomenuchi">Shomenuchi</term>
-        <term keyref="glossary.ikkyo">ikkyo</term> and
-        <term keyref="glossary.iriminage">iriminage</term> </li>
+      <li><term keyref="glossary.shomenuchi"/>
+        <term keyref="glossary.ikkyo"/> and
+        <term keyref="glossary.iriminage"/> </li>
       <li><term>Munetsuki</term>
-        <term keyref="glossary.kotegaeshi">kotegaeshi</term> </li>
-      <li><term keyref="glossary.katate">Katate</term>
-        <term keyref="glossary.dori">dori</term>
-        <term keyref="glossary.shihonage">shihonage</term> </li>
-      <li><term keyref="glossary.yokomenuchi">Yokomenuchi</term>
-        <term keyref="glossary.shihonage">shihonage</term> </li>
-      <li><term keyref="glossary.kokyu">Kokyu</term>
-        <term keyref="glossary.tanden">tanden</term>
-        <term keyref="glossary.ho-1">ho</term></li>
+        <term keyref="glossary.kotegaeshi"/> </li>
+      <li><term keyref="glossary.katate"/>
+        <term keyref="glossary.dori"/>
+        <term keyref="glossary.shihonage"/> </li>
+      <li><term keyref="glossary.yokomenuchi"/>
+        <term keyref="glossary.shihonage"/> </li>
+      <li><term keyref="glossary.kokyu"/>
+        <term keyref="glossary.tanden"/>
+        <term keyref="glossary.ho-1"/></li>
       </ul></p>
   </conbody>
 </concept>

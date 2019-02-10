@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="kamiza">
   <glossterm>kamiza</glossterm>
-  <glossdef> honorary place in a <term keyref="dojo">dojo</term>, compare <term
-      keyref="shomen-2">shomen </term>and <term keyref="shinzen">shinzen</term>
+  <glossdef> honorary place in a <term keyref="dojo"/>, compare <term
+      keyref="shomen-2">shomen </term>and <term keyref="shinzen"/>
   </glossdef>
 </glossentry>

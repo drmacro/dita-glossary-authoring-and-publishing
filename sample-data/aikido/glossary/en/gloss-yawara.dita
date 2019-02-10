@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="yawara">
   <glossterm>yawara</glossterm>
-  <glossdef> old <term keyref="jujutsu">jujutsu</term>
+  <glossdef> old <term keyref="jujutsu"/>
    </glossdef>
 </glossentry>

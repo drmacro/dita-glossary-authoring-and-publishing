@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="satori">
   <glossterm>satori</glossterm>
-  <glossdef> enlightenment in <term keyref="zen">zen</term>
+  <glossdef> enlightenment in <term keyref="zen"/>
    </glossdef>
 </glossentry>

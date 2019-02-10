@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="Ki-no-kenkyukai">
   <glossterm>Ki no kenkyukai</glossterm>
-  <glossdef> Tohei sensei's aikido school, also <term keyref="Shinshin-toitsu">Shinshin toitsu</term>
+  <glossdef> Tohei sensei's aikido school, also <term keyref="Shinshin-toitsu"/>
    </glossdef>
 </glossentry>

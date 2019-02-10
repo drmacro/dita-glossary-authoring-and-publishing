@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="mae">
   <glossterm>mae</glossterm>
-  <glossdef> front, forward, compare <term keyref="ushiro">ushiro</term>
+  <glossdef> front, forward, compare <term keyref="ushiro"/>
    </glossdef>
 </glossentry>

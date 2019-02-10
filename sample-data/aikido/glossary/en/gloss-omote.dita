@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="omote">
   <glossterm>omote</glossterm>
-  <glossdef> front, surface, compare <term keyref="ura">ura</term>
+  <glossdef> front, surface, compare <term keyref="ura"/>
    </glossdef>
 </glossentry>

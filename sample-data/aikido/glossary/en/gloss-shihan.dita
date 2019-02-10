@@ -3,6 +3,6 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="shihan">
   <glossterm>shihan</glossterm>
-  <glossdef> expert example, high title for aikido teacher, from 6 <term keyref="dan">dan</term>, compare <term keyref="fukushidoin">fukushidoin </term>and <term keyref="shidoin">shidoin</term>
+  <glossdef> expert example, high title for aikido teacher, from 6 <term keyref="dan"/>, compare <term keyref="fukushidoin"/>and <term keyref="shidoin"/>
    </glossdef>
 </glossentry>

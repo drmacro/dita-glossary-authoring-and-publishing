@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="referenceId">
   <title>Shomenuchi ikkyo</title>
-  <shortdesc>First principle (<term keyref="glossary.ikkyo">ikkyo</term>) for <term keyref="glossary.shomenuchi">Shomenuchi</term> attack.</shortdesc>
+  <shortdesc>First principle (<term keyref="glossary.ikkyo"/>) for <term keyref="glossary.shomenuchi"/> attack.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -26,10 +26,10 @@
         the arm at wrist and above the
         elbow. Nage sweeps Nage's arm
         down and around in normal
-        <term keyref="glossary.ikkyo">ikkyo</term> fashion. The
+        <term keyref="glossary.ikkyo"/> fashion. The
         technique may be completed
-        <term keyref="glossary.omote">omote</term> or
-        <term keyref="glossary.ura">ura</term>. </p>
+        <term keyref="glossary.omote"/> or
+        <term keyref="glossary.ura"/>. </p>
     </section>
     <section
       spectitle="Diagram">

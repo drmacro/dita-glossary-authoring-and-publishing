@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="yudansha">
   <glossterm>yudansha</glossterm>
-  <glossdef> dan graded, compare <term keyref="mudansha">mudansha</term>
+  <glossdef> dan graded, compare <term keyref="mudansha"/>
 
    </glossdef>
 </glossentry>

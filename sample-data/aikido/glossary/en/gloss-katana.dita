@@ -3,7 +3,7 @@
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
 <glossentry id="katana">
   <glossterm>katana</glossterm>
-  <glossdef> the Japanese sword, also <term keyref="ken">ken</term>, <term
-      keyref="to">to </term>and <term keyref="tachi-1">tachi</term>
+  <glossdef> the Japanese sword, also <term keyref="ken"/>, <term
+      keyref="to">to </term>and <term keyref="tachi-1"/>
   </glossdef>
 </glossentry>
