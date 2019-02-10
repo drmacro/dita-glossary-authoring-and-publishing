@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "map.dtd">
+<bookmap>
+  <booktitle>
+    <mainbooktitle>Introduction to Aikido</mainbooktitle>
+  </booktitle>
+  <bookmeta>
+    <prodinfo>
+      <prodname>Introduction to Aikido</prodname>
+      <vrmlist>
+        <vrm
+          version="1"
+          release="0"/>
+      </vrmlist>
+    </prodinfo>
+  </bookmeta>
+  <frontmatter>
+  <mapref keyscope="glossary"
+    href="glossary/aikido-master-glossary-keydefs-en.ditamap"
+    />
+  <mapref
+    href="intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+    />
+  <mapref
+    href="common/techniques/aikido-technique-resources.ditamap"
+  />
+  </frontmatter>
+  <chapter keys="introduction"
+    href="intro-to-aikido/topics/chapter-intro.dita">
+    <topicref keys="rokyu-requirements"
+      href="intro-to-aikido/topics/rokyu-requirements.dita"/>
+    <topichead keys="aikido-techniques"
+      chunk="to-content"
+      copy-to="aikido-techniques.dita"
+      collection-type="sequence">
+      <topicmeta>
+        <navtitle>Aikido Techniques</navtitle>
+      </topicmeta>
+      <topicref keys="kokyu-tanden-ho"
+        href="intro-to-aikido/topics/kokyu-tanden-ho.dita"/>
+      <topicref keys="katatedori-shihonage"
+        href="intro-to-aikido/topics/katatedori-shihonage.dita"/>
+      <topicref keys="munetsuki-kotegaeshi"
+        href="intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>
+      <topicref keys="shomenuchi-ikkyo"
+        href="intro-to-aikido/topics/shomenuchi-ikkyo.dita"/>
+      <topicref keys="shomenuchi-iriminage"
+        href="intro-to-aikido/topics/shomenuchi-iriminage.dita"/>
+      <topicref keys="yokomenuchi-shihonage"
+        href="intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>
+    </topichead>
+  </chapter>
+  <backmatter>
+    <booklists>
+      <glossarylist/>
+    </booklists>
+  </backmatter>
+</bookmap>
