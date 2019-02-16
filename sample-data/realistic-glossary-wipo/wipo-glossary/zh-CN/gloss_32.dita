@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry
+  PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss_32">
+   <glossterm>国际专利分类</glossterm>
+   <glossdef>
+      <p>国际专利分类(IPC)是“把整个技术领域分为部、大类、小类及组等不同层次的系统。分类是一个语言独立的工具，对于‘现有技术’检索中检索专利文件不可缺少”<fn> WIPO PATENTSCOPE词汇表。</fn>。</p>
+      <p>IPC是关于《国际专利分类斯特拉斯堡协定》(1971年)建立的。第2条第(1)款(a)项规定：“本分类法包括：(i)
+        依据1954年12月19日的发明专利国际分类欧洲公约(以下简称“欧洲公约”)的规定而制订的、1968年9月1日生效并由欧洲理事会秘书长公布的分类法正文；(ii)
+        在本协定生效之前依据欧洲公约第二条第(2)款生效的修正案；(iii) 此后依据本协定第五条制订并依据本协定第六条生效的修正案。”</p>
+   </glossdef>
+</glossentry>

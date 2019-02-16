@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap
+  PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+   <booktitle>
+      <mainbooktitle>WIPO Glossary zh-CN</mainbooktitle>
+   </booktitle>
+   <frontmatter>
+      <booklists>
+         <glossarylist>
+            <topicref keys="gloss_1" href="gloss_1.dita"/>
+            <topicref keys="gloss_2" href="gloss_2.dita"/>
+            <topicref keys="gloss_3" href="gloss_3.dita"/>
+            <topicref keys="gloss_4" href="gloss_4.dita"/>
+            <topicref keys="gloss_5" href="gloss_5.dita"/>
+            <topicref keys="gloss_6" href="gloss_6.dita"/>
+            <topicref keys="gloss_7" href="gloss_7.dita"/>
+            <topicref keys="gloss_8" href="gloss_8.dita"/>
+            <topicref keys="gloss_9" href="gloss_9.dita"/>
+            <topicref keys="gloss_10" href="gloss_10.dita"/>
+            <topicref keys="gloss_11" href="gloss_11.dita"/>
+            <topicref keys="gloss_12" href="gloss_12.dita"/>
+            <topicref keys="gloss_13" href="gloss_13.dita"/>
+            <topicref keys="gloss_14" href="gloss_14.dita"/>
+            <topicref keys="gloss_15" href="gloss_15.dita"/>
+            <topicref keys="gloss_16" href="gloss_16.dita"/>
+            <topicref keys="gloss_17" href="gloss_17.dita"/>
+            <topicref keys="gloss_18" href="gloss_18.dita"/>
+            <topicref keys="gloss_19" href="gloss_19.dita"/>
+            <topicref keys="gloss_20" href="gloss_20.dita"/>
+            <topicref keys="gloss_21" href="gloss_21.dita"/>
+            <topicref keys="gloss_22" href="gloss_22.dita"/>
+            <topicref keys="gloss_23" href="gloss_23.dita"/>
+            <topicref keys="gloss_24" href="gloss_24.dita"/>
+            <topicref keys="gloss_25" href="gloss_25.dita"/>
+            <topicref keys="gloss_26" href="gloss_26.dita"/>
+            <topicref keys="gloss_27" href="gloss_27.dita"/>
+            <topicref keys="gloss_28" href="gloss_28.dita"/>
+            <topicref keys="gloss_29" href="gloss_29.dita"/>
+            <topicref keys="gloss_30" href="gloss_30.dita"/>
+            <topicref keys="gloss_31" href="gloss_31.dita"/>
+            <topicref keys="gloss_32" href="gloss_32.dita"/>
+            <topicref keys="gloss_33" href="gloss_33.dita"/>
+            <topicref keys="gloss_34" href="gloss_34.dita"/>
+            <topicref keys="gloss_35" href="gloss_35.dita"/>
+            <topicref keys="gloss_36" href="gloss_36.dita"/>
+            <topicref keys="gloss_37" href="gloss_37.dita"/>
+            <topicref keys="gloss_38" href="gloss_38.dita"/>
+            <topicref keys="gloss_39" href="gloss_39.dita"/>
+            <topicref keys="gloss_40" href="gloss_40.dita"/>
+            <topicref keys="gloss_41" href="gloss_41.dita"/>
+            <topicref keys="gloss_42" href="gloss_42.dita"/>
+            <topicref keys="gloss_43" href="gloss_43.dita"/>
+            <topicref keys="gloss_44" href="gloss_44.dita"/>
+            <topicref keys="gloss_45" href="gloss_45.dita"/>
+            <topicref keys="gloss_46" href="gloss_46.dita"/>
+            <topicref keys="gloss_47" href="gloss_47.dita"/>
+            <topicref keys="gloss_48" href="gloss_48.dita"/>
+            <topicref keys="gloss_49" href="gloss_49.dita"/>
+            <topicref keys="gloss_50" href="gloss_50.dita"/>
+            <topicref keys="gloss_51" href="gloss_51.dita"/>
+            <topicref keys="gloss_52" href="gloss_52.dita"/>
+            <topicref keys="gloss_53" href="gloss_53.dita"/>
+            <topicref keys="gloss_54" href="gloss_54.dita"/>
+            <topicref keys="gloss_55" href="gloss_55.dita"/>
+            <topicref keys="gloss_56" href="gloss_56.dita"/>
+            <topicref keys="gloss_57" href="gloss_57.dita"/>
+            <topicref keys="gloss_58" href="gloss_58.dita"/>
+            <topicref keys="gloss_59" href="gloss_59.dita"/>
+            <topicref keys="gloss_60" href="gloss_60.dita"/>
+            <topicref keys="gloss_61" href="gloss_61.dita"/>
+            <topicref keys="gloss_62" href="gloss_62.dita"/>
+            <topicref keys="gloss_63" href="gloss_63.dita"/>
+            <topicref keys="gloss_64" href="gloss_64.dita"/>
+            <topicref keys="gloss_65" href="gloss_65.dita"/>
+            <topicref keys="gloss_66" href="gloss_66.dita"/>
+            <topicref keys="gloss_67" href="gloss_67.dita"/>
+            <topicref keys="gloss_68" href="gloss_68.dita"/>
+            <topicref keys="gloss_69" href="gloss_69.dita"/>
+            <topicref keys="gloss_70" href="gloss_70.dita"/>
+            <topicref keys="gloss_71" href="gloss_71.dita"/>
+            <topicref keys="gloss_72" href="gloss_72.dita"/>
+            <topicref keys="gloss_73" href="gloss_73.dita"/>
+            <topicref keys="gloss_74" href="gloss_74.dita"/>
+            <topicref keys="gloss_75" href="gloss_75.dita"/>
+            <topicref keys="gloss_76" href="gloss_76.dita"/>
+            <topicref keys="gloss_77" href="gloss_77.dita"/>
+            <topicref keys="gloss_78" href="gloss_78.dita"/>
+            <topicref keys="gloss_79" href="gloss_79.dita"/>
+            <topicref keys="gloss_80" href="gloss_80.dita"/>
+            <topicref keys="gloss_81" href="gloss_81.dita"/>
+            <topicref keys="gloss_82" href="gloss_82.dita"/>
+            <topicref keys="gloss_83" href="gloss_83.dita"/>
+            <topicref keys="gloss_84" href="gloss_84.dita"/>
+            <topicref keys="gloss_85" href="gloss_85.dita"/>
+            <topicref keys="gloss_86" href="gloss_86.dita"/>
+            <topicref keys="gloss_87" href="gloss_87.dita"/>
+            <topicref keys="gloss_88" href="gloss_88.dita"/>
+            <topicref keys="gloss_89" href="gloss_89.dita"/>
+            <topicref keys="gloss_90" href="gloss_90.dita"/>
+            <topicref keys="gloss_91" href="gloss_91.dita"/>
+            <topicref keys="gloss_92" href="gloss_92.dita"/>
+            <topicref keys="gloss_93" href="gloss_93.dita"/>
+            <topicref keys="gloss_94" href="gloss_94.dita"/>
+            <topicref keys="gloss_95" href="gloss_95.dita"/>
+            <topicref keys="gloss_96" href="gloss_96.dita"/>
+            <topicref keys="gloss_97" href="gloss_97.dita"/>
+            <topicref keys="gloss_98" href="gloss_98.dita"/>
+            <topicref keys="gloss_99" href="gloss_99.dita"/>
+         </glossarylist>
+      </booklists>
+   </frontmatter>
+</bookmap>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry
+  PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
+<glossentry id="gloss_16">
+   <glossterm>传统知识资源分类</glossterm>
+   <glossdef>
+      <p>传统知识资源分类(TKRC)是一个创新的系统整理、传播和检索用结构化分类体系，在国际专利分类(IPC)的一个大组下划分了约5,000个传统知识小组<fn> The Role of Registers &amp; Databases in the Protection of
+        Traditional Knowledge: A Comparative Analysis。UNU-IAS Report，January 2004，第18页。</fn>。TKRC是为印度医学体系(阿育吠陀、尤那尼、悉达和瑜伽)制定的。TKRC已获得国际承认，已与国际专利分类建立连接。它可以利用现代传播技术，即信息技术，特别是互联网和网页技术，促进对传统知识体系的认识。对那些关心防止对与传统知识体系有关的非原创发现授予错误专利的国家来说，预计TKRC的结构和详细内容会引起它们的兴趣<fn>
+        更多信息可见：http://www.tkdl.res.in/tkdl/langdefault/common/TKRC.asp?GL=Eng。</fn>。</p>
+   </glossdef>
+</glossentry>
