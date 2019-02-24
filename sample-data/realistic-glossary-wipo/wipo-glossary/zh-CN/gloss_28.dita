@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
-<glossentry id="gloss_28">
+<glossentry xml:lang="zh-CN" id="gloss_28">
    <glossterm>公有领域</glossterm>
    <glossdef>
       <p>一般而言，如果公众使用一部作品不受任何法律限制，该作品就视为已进入公有领域<fn> 见文件SCP/13/5。</fn>。</p>

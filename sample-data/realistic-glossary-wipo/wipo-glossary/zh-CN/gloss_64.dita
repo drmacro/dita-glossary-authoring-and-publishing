@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
-<glossentry id="gloss_64">
+<glossentry xml:lang="zh-CN" id="gloss_64">
    <glossterm>提供遗传资源的国家</glossterm>
    <glossdef>
       <p>根据《生物多样性公约》(1992年)第2条：“提供遗传资源的国家”是指“供应遗传资源的国家，此种遗传资源可能是取自原地来源，包括野生物种和驯化物种的种群，或取自移地保护来源，不论是否原产于该国。”</p>

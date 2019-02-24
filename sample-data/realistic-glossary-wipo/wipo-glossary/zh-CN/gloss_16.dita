@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
-<glossentry id="gloss_16">
+<glossentry xml:lang="zh-CN" id="gloss_16">
    <glossterm>传统知识资源分类</glossterm>
    <glossdef>
       <p>传统知识资源分类(TKRC)是一个创新的系统整理、传播和检索用结构化分类体系，在国际专利分类(IPC)的一个大组下划分了约5,000个传统知识小组<fn> The Role of Registers &amp; Databases in the Protection of

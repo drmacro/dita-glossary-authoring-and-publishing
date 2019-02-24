@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
-<glossentry id="gloss_32">
+<glossentry xml:lang="zh-CN" id="gloss_32">
    <glossterm>国际专利分类</glossterm>
    <glossdef>
       <p>国际专利分类(IPC)是“把整个技术领域分为部、大类、小类及组等不同层次的系统。分类是一个语言独立的工具，对于‘现有技术’检索中检索专利文件不可缺少”<fn> WIPO PATENTSCOPE词汇表。</fn>。</p>

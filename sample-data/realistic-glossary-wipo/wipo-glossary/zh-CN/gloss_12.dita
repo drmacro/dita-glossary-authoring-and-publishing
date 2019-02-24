@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
-<glossentry id="gloss_12">
+<glossentry xml:lang="zh-CN" id="gloss_12">
    <glossterm>传统知识</glossterm>
    <glossdef>
       <p>国际上尚没有传统知识(TK)的公认定义。</p>

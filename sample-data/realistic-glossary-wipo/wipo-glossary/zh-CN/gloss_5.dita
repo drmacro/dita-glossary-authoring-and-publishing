@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
-<glossentry id="gloss_5">
+<glossentry xml:lang="zh-CN" id="gloss_5">
    <glossterm>材料转让协议</glossterm>
    <glossdef>
       <p>材料转让协议(MTA)是商业和学术研究合作伙伴关系中的协议，涉及诸如种质、微生物和细胞培养等生物材料的转让，以使提供者和接受者能交换材料，同时为获得公共种质收藏、种子库或原生境遗传资源规定条件<fn> 见文件WIPO/GRTKF/IC/17/INF/12。</fn>。WIPO开发了“与生物多样性相关的获取和惠益分享协议数据库”，其中含有涉及遗传资源转让和使用的合同条款<fn> 网址：http://www.wipo.int/tk/en/databases/contracts/index.html。</fn>。2006年粮食及农业组织(FAO)制定和通过了一项《标准材料转让协议》(SMTA)<fn> 网址：ftp://ftp.fao.org/ag/cgrfa/gb1/SMTAe.pdf。</fn>，以满足落实《粮食和农业植物遗传资源国际条约》的要求。《关于获取遗传资源并公正和公平分享通过其利用所产生惠益的波恩准则》附录一提出了材料转让协议的要素。</p>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry
   PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "glossentry.dtd">
-<glossentry id="gloss_27">
+<glossentry xml:lang="zh-CN" id="gloss_27">
    <glossterm>公开要求</glossterm>
    <glossdef>
       <p>公开要求是专利法的核心理念部分<fn> 见文件WIPO/GA/32/8英文版附件第32页。</fn>。专利法对专利申请人规定了一项一般性义务，按《专利合作条约》(PCT)第5条所述，即“<i>应对发明做出清楚和完整的说明，足以使本技术领域的技术人员能实施该项发明</i>”。但是，“公开要求”也作为一项一般用语用于地区或国家层面的专利法改革，并用于国际专利法的改革建议，其中明确要求专利申请人如果在开发专利或专利申请中要求保护的发明时使用了传统知识和/或遗传资源，要公开与之相关的几类信息<fn>
