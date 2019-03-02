@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en">
+  <title>Aikido Master Glossary</title>
+  <topicmeta>
+    <author>W. Eliot Kimber</author>
+    <prodinfo>
+      <prodname>Aikido Master Glossary</prodname>
+      <vrmlist>
+        <vrm
+          version="1"
+          release="0"/>
+      </vrmlist>
+    </prodinfo>
+  </topicmeta>
+  <mapref href="aikido-master-glossary-keydefs-en.ditamap"/>
+  <mapref href="aikido-glossary-navigation-autosorted-en.ditamap"/>
+</map>
