@@ -55,20 +55,45 @@
     select="matches($dita-community:generate-glossary, 'yes|true|on|1', 'i')"
   />
   
+  <xsl:import href="plugin:org.dita-community.common.xslt:xsl/relpath_util.xsl"/>
+  <xsl:import href="plugin:org.dita-community.common.xslt:xsl/dita-support-lib.xsl"/>   
+  <xsl:import href="plugin:org.dita-community.i18n:xsl/i18n-utils.xsl"/>
   
+  <xsl:import href="glossary-utils.xsl"/>
   <xsl:import href="glossary-sorter.xsl"/>
   
   <xsl:template match="/">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     
+    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    
     <xsl:message>+ [INFO] DITA Community glossary preprocessing:</xsl:message>
     <xsl:message>+ [INFO]   filter-glossary: <xsl:value-of select="$gloss:filter-glossary"/> (<xsl:value-of select="$dita-community:filter-glossary"/>)</xsl:message>
     <xsl:message>+ [INFO]   generate-glossary: <xsl:value-of select="$gloss:generate-glossary"/> (<xsl:value-of select="$dita-community:generate-glossary"/>)</xsl:message>
     <xsl:message>+ [INFO]   sort-glossary: <xsl:value-of select="$gloss:sort-glossary"/> (<xsl:value-of select="$dita-community:sort-glossary"/>)</xsl:message>
+        
+    <xsl:choose>
+      <xsl:when test="$gloss:sort-glossary">
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] #default: glossary-sorter: Applying templates in mode dita-community:glossary-sort...</xsl:message>
+        </xsl:if>
+        <xsl:apply-templates select="." mode="dita-community:glossary-sort">
+          <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
+        </xsl:apply-templates>
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] #default: glossary-sorter: After mode dita-community:glossary-sort.</xsl:message>
+        </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] #default: glossary-sorter: gloss:sort-glossary is false, calling next-match in #default mode...</xsl:message>
+        </xsl:if>
+        <xsl:next-match>
+          <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+        </xsl:next-match>
+      </xsl:otherwise>
+    </xsl:choose>
     
-    <xsl:next-match>
-      <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-    </xsl:next-match>
   </xsl:template>
 
 </xsl:stylesheet>

@@ -9,7 +9,16 @@
          automatically.
       -->
   </topicmeta>
-  <topicref href="en/glossary-title.dita" chunk="to-content select-branch">
+  <!-- The @outputclass of "glossarylist" should trigger the same glossary list processing as
+       for BookMap <glossarylist>
+    -->
+  <!-- 
+  <topicref href="en/glossary-title.dita" chunk="to-content select-branch" outputclass="glossarylist">
+  -->
+  <topicref href="en/glossary-title.dita" outputclass="glossarylist">
+    <topicmeta>
+      <navtitle>Glossary List</navtitle>
+    </topicmeta>
     <topicref keys="yokomenuchi" keyref="gloss-res.yokomenuchi"/>
     <topicref keys="yoko-ukemi" keyref="gloss-res.yoko-ukemi"/>
     <topicref keys="yon" keyref="gloss-res.yon"/>
@@ -135,7 +144,7 @@
     <topicref keys="juntsuki" keyref="gloss-res.juntsuki"/>
     <topicref keys="jutai" keyref="gloss-res.jutai"/>
     <topicref keys="iaido" keyref="gloss-res.iaido"/>
-    <topicref keys="iaito" keyref="gloss-res.iaito"/>
+<!--    <topicref keys="iaito" keyref="gloss-res.iaito"/>
     <topicref keys="ichi" keyref="gloss-res.ichi"/>
     <topicref keys="ichiban" keyref="gloss-res.ichiban"/>
     <topicref keys="iie" keyref="gloss-res.iie"/>
@@ -495,5 +504,5 @@
     <topicref keys="gasshuku" keyref="gloss-res.gasshuku"/>
     <topicref keys="gedan" keyref="gloss-res.gedan"/>
     <topicref keys="gedanbarai" keyref="gloss-res.gedanbarai"/>
-  </topicref>
+-->  </topicref>
 </map>
