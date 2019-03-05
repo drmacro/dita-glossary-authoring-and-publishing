@@ -37,7 +37,7 @@
   <xsl:template mode="dita-community:glossary-filter" match="/" as="document-node()+">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
     <xsl:variable name="normalRoleTopicrefs" as="element()*"
       select="/*//*[df:isNormalRoleTopicRef(.)]"
@@ -93,7 +93,7 @@
       <xsl:message>+ [DEBUG] dita-community:glossary-filter: Calling make-link-report...</xsl:message>
     </xsl:if>
     <xsl:call-template name="dita-community:make-link-report">
-      <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+      <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
       <xsl:with-param name="links" as="element()*" select="$links"/>
     </xsl:call-template>
     <xsl:if test="$localDebug">

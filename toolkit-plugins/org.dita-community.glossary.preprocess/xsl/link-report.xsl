@@ -44,13 +44,41 @@
     <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
         
     <xsl:variable name="mapName" as="xs:string" select="relpath:getName(base-uri(.))"/>
+    
+    <xsl:document>
+      <topic id="link-report">
+        <title>Link Report for <xsl:value-of select="$mapName"/></title>
+        <body>
+          <xsl:choose>
+            <xsl:when test="exists($links)">
+              <xsl:call-template name="dita-community:make-link-report-body">
+                <xsl:with-param name="links" as="element()+" select="$links"/>
+                <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+              </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+              <p>No links found.</p>
+            </xsl:otherwise>
+          </xsl:choose>          
+        </body>
+      </topic>
+    </xsl:document>    
+  </xsl:template>
+  
+  <xsl:template name="dita-community:make-link-report-body">
+    <xsl:param name="links" as="element()*"/>
+    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
+
+    <xsl:variable name="mapName" as="xs:string" select="relpath:getName(base-uri(.))"/>
     <xsl:variable name="mapDir" as="xs:string" select="relpath:getParent(base-uri(.))"/>
     
     <xsl:variable name="linkTypes" as="xs:string*"
       select="distinct-values(for $link in $links return name($link))"
     />
     <xsl:variable name="targetUris" as="xs:string*"
-    >
+      >
       <xsl:variable name="normalized-uris" as="xs:string*">
         <xsl:for-each select="$links">          
           <xsl:variable name="link" as="element()" select="."/>
@@ -68,76 +96,126 @@
     <xsl:variable name="targetKeys" as="xs:string*"
       select="sort(distinct-values(for $link in $links return tokenize(string($link/@keyref), '/')[1]))"
     />
-    <xsl:document>
-      <topic id="link-report">
-        <title>Link Report for <xsl:value-of select="$mapName"/></title>
-        <body>
-          <section spectitle="Summary">
-            <simpletable>
-              <strow>
-                <stentry>Total Links:</stentry>
-                <stentry><xsl:value-of select="count($links)"/></stentry>
-              </strow>
-              <strow>
-                <stentry>Link Types</stentry>
-                <stentry>
-                  <xsl:choose>
-                    <xsl:when test="exists($links)">
-                      <dl>
-                        <xsl:for-each select="$linkTypes">
-                          <xsl:variable name="linktype" as="xs:string" select="."/>
-                          <dlentry>
-                            <dt><xsl:value-of select="."/></dt>
-                            <dd><xsl:value-of select="count($links[name(.) eq $linktype])"/></dd>
-                          </dlentry>
-                        </xsl:for-each>                    
-                      </dl>
-                    </xsl:when>
-                    <xsl:otherwise>
-                      <p>No links found</p>
-                    </xsl:otherwise>
-                  </xsl:choose>
-                </stentry>
-              </strow>
-              <strow>
-                <stentry>Target URIs</stentry>
-                <stentry>
-                  <xsl:choose>
-                    <xsl:when test="exists($links)">
-                      <ul>
-                        <xsl:for-each select="$targetUris">
-                          <li><xsl:value-of select="."/></li>
-                        </xsl:for-each>                    
-                      </ul>
-                    </xsl:when>
-                    <xsl:otherwise>
-                      <p>No links found</p>
-                    </xsl:otherwise>
-                  </xsl:choose>
-                </stentry>
-              </strow>
-              <strow>
-                <stentry>Target Keys</stentry>
-                <stentry>
-                  <xsl:choose>
-                    <xsl:when test="exists($links)">
-                      <ul>
-                        <xsl:for-each select="$targetKeys">
-                          <li><xsl:value-of select="."/></li>
-                        </xsl:for-each>                    
-                      </ul>
-                    </xsl:when>
-                    <xsl:otherwise>
-                      <p>No links found</p>
-                    </xsl:otherwise>
-                  </xsl:choose>
-                </stentry>
-              </strow>
-            </simpletable>
-          </section>
-        </body>
-      </topic>
-    </xsl:document>    
+    
+    <xsl:variable name="topicURIs" as="xs:string*"
+      select="distinct-values(for $e in $links return document-uri(root($e)))"
+    />
+    
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] dita-community:make-link-report-body:  topicURIs: <xsl:value-of select="string-join($topicURIs, ', ')"/></xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="topics" as="document-node()*"
+        select="
+        $links/root()
+        "
+    />
+
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] dita-community:make-link-report-body:  Have: <xsl:value-of select="count($topics)"/> unique topics</xsl:message>
+    </xsl:if>
+    
+    <section spectitle="Summary">
+      <simpletable>
+        <strow>
+          <stentry>Total Links:</stentry>
+          <stentry><xsl:value-of select="count($links)"/></stentry>
+        </strow>
+        <strow>
+          <stentry>Link Types</stentry>
+          <stentry>
+            <dl>
+              <xsl:for-each select="$linkTypes">
+                <xsl:variable name="linktype" as="xs:string" select="."/>
+                <dlentry>
+                  <dt><xsl:value-of select="."/></dt>
+                  <dd><xsl:value-of select="count($links[name(.) eq $linktype])"/></dd>
+                </dlentry>
+              </xsl:for-each>                    
+            </dl>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>Target URIs</stentry>
+          <stentry>
+            <ul>
+              <xsl:for-each select="$targetUris">
+                <li><xsl:value-of select="."/></li>
+              </xsl:for-each>                    
+            </ul>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>Target Keys</stentry>
+          <stentry>
+            <ul>
+              <xsl:for-each select="$targetKeys">
+                <li><xsl:value-of select="."/></li>
+              </xsl:for-each>                    
+            </ul>
+          </stentry>
+        </strow>
+      </simpletable>
+    </section>
+    <section spectitle="Links By Referencing Topic">
+      <table>
+        <tgroup cols="5">   
+          <colspec/>
+          <colspec colwidth="6em"/>
+          <colspec colwidth="20em"/>
+          <colspec colwidth="8em"/>
+          <colspec/>
+          <thead>
+            <row>
+              <entry>Topic</entry>
+              <entry>Link Type</entry>
+              <entry>Link Text</entry>
+              <entry>Keyref</entry>
+              <entry>HREF</entry>
+            </row>
+          </thead>
+          <tbody>
+            <xsl:for-each select="$topics">
+              <xsl:variable name="topic" as="element()" select="./*"/>
+              <xsl:variable name="linksInTopic" as="element()+"
+                select="$links[root(.) is root($topic)]"
+              />
+              <row>
+                <entry morerows="{count($linksInTopic) - 1}">
+                  <xsl:value-of select="df:getNavtitleForTopic($topic)"/>
+                  <p><xsl:value-of select="relpath:getRelativePath($mapDir, base-uri($topic))"/></p>
+                </entry>
+                <entry>
+                  <xsl:value-of select="name($linksInTopic[1])"/>
+                </entry>
+                <entry>
+                  <xsl:value-of select="$linksInTopic[1]"/>
+                </entry>
+                <entry>
+                  <xsl:value-of select="$linksInTopic[1]/@keyref"/>
+                </entry>
+                <entry>
+                  <xsl:value-of select="$linksInTopic[1]/@href"/>
+                </entry>
+              </row>
+              <xsl:for-each select="$linksInTopic[position() gt 1]">
+                <row>
+                  <entry><xsl:value-of select="name(.)"/></entry>
+                  <entry><xsl:value-of select="."/></entry>
+                  <entry><xsl:value-of select="@keyref"/></entry>
+                  <entry><xsl:value-of select="./@href"/></entry>
+                </row>
+              </xsl:for-each>
+            </xsl:for-each>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>    
+    
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] dita-community:make-link-report-body: Done</xsl:message>
+    </xsl:if>
+    
   </xsl:template>
   
   <!--

@@ -82,7 +82,7 @@
             <xsl:message>+ [DEBUG] glossary preprocess: gloss:filter-glossary is true, applying templates in mode dita-community:glossary-filter....</xsl:message>
           </xsl:if>
           <xsl:apply-templates select="." mode="dita-community:glossary-filter">
-            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
+            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
           </xsl:apply-templates>
         </xsl:when>
         <xsl:otherwise>
