@@ -43,7 +43,7 @@
     >
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
     <xsl:if test="$localDebug">
       <xsl:message>+ [DEBUG] dita-community:glossary-sort: Have a glossary list topicref (<xsl:value-of select="concat(name(..), '/', name(.))"/>) starting...</xsl:message>

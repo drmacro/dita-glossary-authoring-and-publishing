@@ -61,6 +61,8 @@
   
   <xsl:import href="glossary-utils.xsl"/>
   <xsl:import href="glossary-sorter.xsl"/>
+  <xsl:import href="glossary-filter.xsl"/>
+  <xsl:import href="link-report.xsl"/>
   
   <xsl:template match="/">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
@@ -71,13 +73,46 @@
     <xsl:message>+ [INFO]   filter-glossary: <xsl:value-of select="$gloss:filter-glossary"/> (<xsl:value-of select="$dita-community:filter-glossary"/>)</xsl:message>
     <xsl:message>+ [INFO]   generate-glossary: <xsl:value-of select="$gloss:generate-glossary"/> (<xsl:value-of select="$dita-community:generate-glossary"/>)</xsl:message>
     <xsl:message>+ [INFO]   sort-glossary: <xsl:value-of select="$gloss:sort-glossary"/> (<xsl:value-of select="$dita-community:sort-glossary"/>)</xsl:message>
+    
+    <!-- Generate the filtered map and, optionally, a link report -->
+    <xsl:variable name="filteredMapDocs" as="document-node()+">
+      <xsl:choose>
+        <xsl:when test="$gloss:filter-glossary">
+          <xsl:if test="$localDebug">
+            <xsl:message>+ [DEBUG] glossary preprocess: gloss:filter-glossary is true, applying templates in mode dita-community:glossary-filter....</xsl:message>
+          </xsl:if>
+          <xsl:apply-templates select="." mode="dita-community:glossary-filter">
+            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
+          </xsl:apply-templates>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:if test="$localDebug">
+            <xsl:message>+ [DEBUG] glossary preprocess: gloss:filter-glossary is false, using original input map.</xsl:message>
+          </xsl:if>
+          <xsl:sequence select="."/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    
+    <xsl:variable name="filteredMap" as="document-node()" select="$filteredMapDocs[1]"/>
+    <xsl:variable name="linkReport" as="document-node()?" select="$filteredMapDocs[2]"/>
+    
+    <xsl:if test="exists($linkReport)">
+      <xsl:if test="$localDebug">
+        <xsl:message>+ [DEBUG] glossary preprocess: Have a link report, calling dita-community:save-link-report...</xsl:message>
+      </xsl:if>
+      <xsl:call-template name="dita-community:save-link-report">
+        <xsl:with-param name="linkReport" as="document-node()" select="$linkReport"/>
+        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
+      </xsl:call-template>
+    </xsl:if>
         
     <xsl:choose>
       <xsl:when test="$gloss:sort-glossary">
         <xsl:if test="$localDebug">
           <xsl:message>+ [DEBUG] #default: glossary-sorter: Applying templates in mode dita-community:glossary-sort...</xsl:message>
         </xsl:if>
-        <xsl:apply-templates select="." mode="dita-community:glossary-sort">
+        <xsl:apply-templates select="$filteredMap" mode="dita-community:glossary-sort">
           <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
         </xsl:apply-templates>
         <xsl:if test="$localDebug">
@@ -86,11 +121,12 @@
       </xsl:when>
       <xsl:otherwise>
         <xsl:if test="$localDebug">
-          <xsl:message>+ [DEBUG] #default: glossary-sorter: gloss:sort-glossary is false, calling next-match in #default mode...</xsl:message>
+          <xsl:message>+ [DEBUG] #default: glossary-sorter: gloss:sort-glossary is false, applying templates in #default mode to the filtered map...</xsl:message>
         </xsl:if>
-        <xsl:next-match>
-          <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-        </xsl:next-match>
+        <!-- NOTE: This is a replacement for what would otherwise be an xsl:next-match -->
+        <xsl:apply-templates select="$filteredMap/node()">
+          <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
+        </xsl:apply-templates>
       </xsl:otherwise>
     </xsl:choose>
     

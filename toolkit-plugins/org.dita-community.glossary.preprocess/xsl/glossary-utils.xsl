@@ -21,18 +21,45 @@
        
     -->
   <xsl:template mode="gloss:get-topics-for-topicrefs" 
-    match="*[contains(@class, ' map/topicref ')][@href ne ''][empty(@format) or (@format eq 'dita')]" as="element()?">
+    match="*[df:isTopicRefToTopic(.)]" as="element()?">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>    
+    <xsl:param name="processDescendantTopicrefs" as="xs:boolean" tunnel="yes" select="true()"/>
+    <xsl:param name="excludeClass" as="xs:string?" tunnel="yes" select="()"/>
+    
     <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
-    <xsl:variable name="topic" as="element()?"
-      select="df:resolveTopicRef(.)"
-    />
-    <xsl:sequence select="$topic"/>
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Handling topicref with href "<xsl:value-of select="@href"/>"</xsl:message>
+    </xsl:if>
     
-    <xsl:next-match>
-      <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-    </xsl:next-match>
+    <xsl:variable name="topic" as="element()?"
+      select="df:resolveTopicRef(., false())"
+    />
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Got a topic: <xsl:value-of select="exists($topic)"/> (<xsl:value-of select="$topic/@class"/>)</xsl:message>
+    </xsl:if>
+    
+    <xsl:choose>
+      <xsl:when test="contains($topic/@class, $excludeClass)">
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Excluding the topic</xsl:message>
+        </xsl:if>
+        <!-- Excluding this topic -->
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Returning the topic</xsl:message>
+        </xsl:if>
+        <!-- Not excluded -->
+        <xsl:sequence select="$topic"/>    
+      </xsl:otherwise>
+    </xsl:choose>    
+    
+    <xsl:if test="$processDescendantTopicrefs">
+      <xsl:next-match>
+        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+      </xsl:next-match>
+    </xsl:if>
     
   </xsl:template>
   
@@ -40,11 +67,58 @@
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>    
     <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
-    <xsl:apply-templates mode="#current">
+    <xsl:apply-templates mode="#current" select="*[contains(@class, ' map/topicref ')]">
       <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
     </xsl:apply-templates>
   </xsl:template>
   
+  
+  <!-- ============================================
+       Get links from topics
+       ============================================ -->
+  
+  <xsl:template mode="gloss:get-links-from-topics" match="*[contains(@class, ' topic/topic ')]">
+    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    
+    <xsl:apply-templates mode="#current" select="*">
+      <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+    </xsl:apply-templates>
+  </xsl:template>
+  
+  <xsl:template mode="gloss:get-links-from-topics" 
+    match="
+    *[contains(@class, ' topic/body ')] |
+    *[contains(@class, ' topic/title ')] |
+    *[contains(@class, ' topic/shortdesc ')] |
+    *[contains(@class, ' topic/abstract ')]
+    ">
+    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    
+    <xsl:apply-templates mode="#current" 
+      select=".//*[@keyref or @href]">
+      <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+    </xsl:apply-templates>
+  </xsl:template>
+  
+  <!-- If an element within a link-allowing context has @keyref or @href it
+       must be a link of some sort.
+    -->
+  <xsl:template mode="gloss:get-links-from-topics" match="*[@keyref or @href]">
+    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    
+    <xsl:sequence select="."/>
+    <xsl:next-match>
+      <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+    </xsl:next-match>
+  </xsl:template>
+  
+  <xsl:template mode="gloss:get-links-from-topics" match="*" priority="-1">
+    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+
+    <xsl:apply-templates mode="#current" select="*">
+      <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+    </xsl:apply-templates>
+  </xsl:template>
   
   <!-- Get the grouping key for a topic.
        @param context Topic to get the grouping key for
