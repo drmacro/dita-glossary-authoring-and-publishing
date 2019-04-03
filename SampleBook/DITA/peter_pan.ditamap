@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap>
-    <booktitle>
-        <mainbooktitle>Peter Pan</mainbooktitle>
-    </booktitle>
-    <chapter href="PeterandWendy.dita"/>
-    <chapter href="the_shadow.dita" />
-    <chapter href="come_come_away.dita" />
-    <chapter href="the_flight.dita" />
-    <chapter href="the_island_come_true.dita"/>
-    <chapter href="the_little_house.dita" />
-    <chapter href="the_home_underground.dita" />
-    <chapter href="the_mermaids__lagoon.dita"/>
-    <chapter href="the_neverbird.dita"/>
-    <chapter href="the_happy_home.dita" />
-    <chapter href="wendy_s_story.dita" />
-    <chapter href="the_children_are_carried_off.dita" />
-    <chapter href="do_you_believe_in_faries.dita" />
-    <chapter href="the_pirate_ship.dita" />
-    <chapter href="hook_or_me_this_time.dita" />
-    <chapter href="the_return_home.dita" />
-    <chapter href="when_wendy_grew_up.dita" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Peter Pan</title>
+
+    <topicref href="PeterandWendy.dita"/>
+    <topicref href="the_shadow.dita" />
+    <topicref href="come_come_away.dita" />
+    <topicref href="the_flight.dita" />
+    <topicref href="the_island_come_true.dita"/>
+    <topicref href="the_little_house.dita" />
+    <topicref href="the_home_underground.dita" />
+    <topicref href="the_mermaids__lagoon.dita"/>
+    <topicref href="the_neverbird.dita"/>
+    <topicref href="the_happy_home.dita" />
+    <topicref href="wendy_s_story.dita" />
+    <topicref href="the_children_are_carried_off.dita" />
+    <topicref href="do_you_believe_in_faries.dita" />
+    <topicref href="the_pirate_ship.dita" />
+    <topicref href="hook_or_me_this_time.dita" />
+    <topicref href="the_return_home.dita" />
+    <topicref href="when_wendy_grew_up.dita" />
     
-</bookmap>
+</map>
