@@ -4,6 +4,6 @@
     <title>Why A glossary?</title>
     <shortdesc>Glossaries can explain words that readers don't understand. </shortdesc>
     <refbody><section>
-        <p>The idea behind a <term keyref="glossterm">glossary</term> is a sound idea. </p>
+        <p>The idea behind a <term keyref="glossterm" /> is a sound idea. </p>
     </section> </refbody>
 </reference>

@@ -7,6 +7,9 @@
     <chapter>
         <mapref href="glossentry.ditamap" />
     </chapter>
+    <part>
+        <mapref href="terms.ditamap" />       
+    </part>
     <appendix>
         <topicref href="glossentryTerm.dita" ></topicref>
     </appendix>
