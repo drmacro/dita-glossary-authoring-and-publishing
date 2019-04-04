@@ -18,6 +18,18 @@ end
 @terms = Array.new
 
 
+def glosswrap(para)
+  @terms.each do |singleterm|
+    read_buffer = para.to_s
+    if read_buffer.include? singleterm
+      read_buffer.gsub! singleterm, "<term keyref=\"#{singleterm}\" />"
+    end
+    para = read_buffer
+  end
+  return para
+end
+
+
 
 xlsheet = ARGV[0]
 @map = ARGV[1]
@@ -45,10 +57,22 @@ links.each do |link|
   filetype = file.xpath("/*").first.name # get type of file
   if filetype == "reference"
     body = file.xpath("//refbody")
-    p body.to_s
+    replacedText = glosswrap(body)
+    xml = Nokogiri::XML replacedText
+    xml_replacement = xml.xpath("//refbody")
+    body.content(xml_replacement)
 
+
+    file.replace(body)
+
+   #body.replace(xml_replacement)
+
+    p body
+    p file
+   #body.send(:native_content=,glosswrap(body.to_s))
 
   end
+  p body
 end
 
 
