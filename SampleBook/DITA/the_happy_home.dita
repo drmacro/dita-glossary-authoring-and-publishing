@@ -2,14 +2,14 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="the_happy_home">
     <title>The happy home</title>
-    <shortdesc></shortdesc>
+    <shortdesc/>
     <refbody> <section>
-        <p>One important result of the brush [with the pirates] on the
+        <p>One important result of the brush [with the <term keyref="pirate" />s] on the
             lagoon was that it made the redskins their friends. Peter had saved
             Tiger Lily from a dreadful fate, and now there was nothing she and
             her braves would not do for him. All night they sat above, keeping
             watch over the home under the ground and awaiting the big attack by
-            the pirates which obviously could not be much longer delayed. Even
+            the <term keyref="pirate" />s which obviously could not be much longer delayed. Even
             by day they hung about, smoking the pipe of peace, and looking
             almost as if they wanted tit-bits to eat.</p>
         <p>They called Peter the Great White Father, prostrating themselves
@@ -17,9 +17,9 @@
             was not really good for him.</p>
         <p>"The great white father," he would say to them in a very lordly
             manner, as they grovelled at his feet, "is glad to see the
-            Piccaninny warriors protecting his wigwam from the pirates."</p>
+            Piccaninny warriors protecting his wigwam from the <term keyref="pirate" />s."</p>
         <p>"Me Tiger Lily," that lovely creature would reply. "Peter Pan
-            save me, me his velly nice friend. Me no let pirates hurt him."</p>
+            save me, me his velly nice friend. Me no let <term keyref="pirate" />s hurt him."</p>
         <p>She was far too pretty to cringe in this way, but Peter thought
             it his due, and he would answer condescendingly, "It is good. Peter
             Pan has spoken."</p>

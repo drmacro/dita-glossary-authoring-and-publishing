@@ -20,5 +20,5 @@
     <topicref href="hook_or_me_this_time.dita" />
     <topicref href="the_return_home.dita" />
     <topicref href="when_wendy_grew_up.dita" />
-    
+    <mapref href="glossaryentries.ditamap" />
 </map>

@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="come_come_away">
     <title>Come Away Come Away!</title>
-    <shortdesc></shortdesc>
+    <shortdesc/>
     <refbody><section>
         <p>For a moment after Mr. and Mrs. Darling left the house the
 night-lights by the beds of the three children continued to burn
@@ -431,7 +431,7 @@ word.</p>
 billion miles. But Wendy hesitated.</p>
 <p>"Mermaids!" said Peter again.</p>
 <p>"Oo!"</p>
-<p>"And there are pirates."</p>
+<p>"And there are <term keyref="pirate" />s."</p>
 <p>"Pirates," cried John, seizing his Sunday hat, "let us go at
 once."</p>
 <p>It was just at this moment that Mr. and Mrs. Darling hurried

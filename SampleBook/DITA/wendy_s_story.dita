@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="wendy_s_story">
     <title>Wendy’s Story</title>
-    <shortdesc></shortdesc>
+    <shortdesc/>
     <refbody><section>
         <p>"Listen, then," said Wendy, settling down to her story, with
             Michael at her feet and seven boys in the bed. "There was once a
@@ -268,7 +268,7 @@
         <p>"Ay, ay."</p>
         <p>"Then lead the way."</p>
         <p>Tink darted up the nearest tree; but no one followed her, for it
-            was at this moment that the pirates made their dreadful attack upon
+            was at this moment that the <term keyref="pirate" />s made their dreadful attack upon
             the redskins. Above, where all had been so still, the air was rent
             with shrieks and the clash of steel. Below, there was dead silence.
             Mouths opened and remained open. Wendy fell on her knees, but her

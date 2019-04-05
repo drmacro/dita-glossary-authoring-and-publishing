@@ -2,14 +2,14 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="when_wendy_grew_up">
     <title>When Wendy grew up</title>
-    <shortdesc></shortdesc>
+    <shortdesc/>
     <refbody><section>
        <p>I hope you want to know what became of the other boys. They were
 waiting below to give Wendy time to explain about them; and when
 they had counted five hundred they went up. They went up by the
 stair, because they thought this would make a better impression.
 They stood in a row in front of Mrs. Darling, with their hats off,
-and wishing they were not wearing their pirate clothes. They said
+and wishing they were not wearing their <term keyref="pirate" /> clothes. They said
 nothing, but their eyes asked her to have them. They ought to have
 looked at Mr. Darling also, but they forgot about him.</p>
 <p>Of course Mrs. Darling said at once that she would have them;
@@ -247,7 +247,7 @@ floor crying, what did you say?"</p>
 <p>"I sat up in bed and I said, 'Boy, why are you crying?'"</p>
 <p>"Yes, that was it," says Jane, with a big breath.</p>
 <p>"And then he flew us all away to the Neverland and the fairies
-and the pirates and the redskins and the mermaid's lagoon, and the
+and the <term keyref="pirate" />s and the redskins and the mermaid's lagoon, and the
 home under the ground, and the little house."</p>
 <p>"Yes! which did you like best of all?"</p>
 <p>"I think I liked the home under the ground best of all."</p>

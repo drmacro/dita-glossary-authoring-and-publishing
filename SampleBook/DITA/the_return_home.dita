@@ -2,17 +2,17 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="the_return_home">
     <title>The return home</title>
-    <shortdesc></shortdesc>
+    <shortdesc/>
     <refbody><section>
         <p>By three bells that morning they were all stirring their stumps
             [legs]; for there was a big sea running; and Tootles, the bo'sun,
             was among them, with a rope's end in his hand and chewing tobacco.
-            They all donned pirate clothes cut off at the knee, shaved smartly,
+            They all donned <term keyref="pirate" /> clothes cut off at the knee, shaved smartly,
             and tumbled up, with the true nautical roll and hitching their
             trousers.</p>
         <p>It need not be said who was the captain. Nibs and John were
             first and second mate. There was a woman aboard. The rest were tars
-            [sailors] before the mast, and lived in the fo'c'sle. Peter had
+            [sailors] before the mast, and lived in the <term keyref="fo'c'sle" />. Peter had
             already lashed himself to the wheel; but he piped all hands and
             delivered a short address to them; said he hoped they would do
             their duty like gallant hearties, but that he knew they were the
@@ -25,7 +25,7 @@
             if this weather lasted they should strike the Azores about the 21st
             of June, after which it would save time to fly.</p>
         <p>Some of them wanted it to be an honest ship and others were in
-            favour of keeping it a pirate; but the captain treated them as
+            favour of keeping it a <term keyref="pirate" />; but the captain treated them as
             dogs, and they dared not express their wishes to him even in a
             round robin [one person after another, as they had to Cpt. Hook].
             Instant obedience was the only safe thing. Slightly got a dozen for
@@ -128,7 +128,7 @@
             added, "Do come in the kennel."</p>
         <p>On that eventful Thursday week, Mrs. Darling was in the
             night-nursery awaiting George's return home; a very sad-eyed woman.
-            Now that we look at her closely and remember the gaiety of her in
+            Now that we look at her closely and remember the <term keyref="gaiety" /> of her in
             the old days, all gone now just because she has lost her babes, I
             find I won't be able to say nasty things about her after all. If
             she was too fond of her rubbishy children, she couldn't help it.
@@ -190,7 +190,7 @@
             comes she will think her mother has barred her out; and she will
             have to go back with me."</p>
         <p>Now I understand what had hitherto puzzled me, why when Peter
-            had exterminated the pirates he did not return to the island and
+            had exterminated the <term keyref="pirate" />s he did not return to the island and
             leave Tink to escort the children to the mainland. This trick had
             been in his head all the time.</p>
         <p>Instead of feeling that he was behaving badly he danced with
@@ -238,7 +238,7 @@
             it."</p>
         <p>"It's father!" exclaimed Wendy.</p>
         <p>"Let me see father," Michael begged eagerly, and he took a good
-            look. "He is not so big as the pirate I killed," he said with such
+            look. "He is not so big as the <term keyref="pirate" /> I killed," he said with such
             frank disappointment that I am glad Mr. Darling was asleep; it
             would have been sad if those had been the first words he heard his
             little Michael say.</p>

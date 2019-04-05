@@ -10,6 +10,7 @@ def writeFile (file)
 end
 
 @topics = Array.new
+@keys = Array.new
 
 
 xlsheet = ARGV[0]
@@ -26,6 +27,7 @@ sheet.rows.each.with_index do |row, idx|
   if idx != 0
     @filename = "#{row["A#{idx+1}"].downcase.delete(' ').gsub(/[(,)']/ , '_')}.xml"
     @topics.push(@filename)
+    @keys.push("#{row["A#{idx+1}"].downcase.delete(' ').gsub(/[(,)']/ , '_')}")
     begin
         builder = Nokogiri::XML::Builder.new do |xml|
           xml.doc.create_internal_subset(
@@ -58,8 +60,8 @@ builder = Nokogiri::XML::Builder.new do |ditamap|
   )
   ditamap.map('id' =>'glossary_entries')do
     ditamap.title 'Glossary Map'
-    @topics.each do |indfile|
-      ditamap.topicref('href' => indfile, 'key' => indfile)
+    @topics.each.with_index do |indfile, idx|
+      ditamap.topicref('href' => indfile, 'keys' => @keys[idx])
     end
   end
 end

@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="the_home_underground">
     <title>The Home Underground</title>
-    <shortdesc></shortdesc>
+    <shortdesc/>
     <refbody><section>
         <p>One of the first things Peter did next day was to measure Wendy
             and John and Michael for hollow trees. Hook, you remember, had
@@ -186,7 +186,7 @@
             and had to be pulled out like corks. Or we might tell how Peter
             saved Tiger Lily's life in the Mermaids' Lagoon, and so made her
             his ally.</p>
-        <p>Or we could tell of that cake the pirates cooked so that the
+        <p>Or we could tell of that cake the <term keyref="pirate" />s cooked so that the
             boys might eat it and perish; and how they placed it in one cunning
             spot after another; but always Wendy snatched it from the hands of
             her children, so that in time it lost its succulence, and became as
