@@ -2,11 +2,6 @@ require 'bundler'
 require 'nokogiri'
 require 'creek'
 
-def writeFile (file)
-  # Need path for map
-  File.open("#{@directory}/#{@ditafile}", "w") { |f| f.write file }
-  puts "Wrote: #{@directory}/#{@ditafile}"
-end
 
 def checklist (xmlbody)
 
@@ -19,14 +14,21 @@ end
 @ditafiles = Array.new
 
 
-def glosswrap(para)
+def glosswrap(para)                # Wraps glossary entries.
   @terms.each do |singleterm|
     read_buffer = para.to_s
-    if read_buffer.include? singleterm
-      read_buffer.gsub! singleterm, "<term keyref=\"#{singleterm}\" />"
-      @writeme = true
+    if read_buffer.include? "\s#{singleterm}"
+      all = read_buffer.split(singleterm)  # only want first instance in topic
+      all.each.each_with_index do |text, idx|
+        if idx.eql?(0)
+          @writeme = true
+          all[0] = (text + "<term keyref=\"#{singleterm}\">#{singleterm}</term>")
+        else
+          all[idx] = (text)
+        end
+      end
+     para = all.join("")
     end
-    para = read_buffer
   end
   return para
 end
@@ -57,14 +59,25 @@ links.each do |link|
   @ditafile = (link.attr('href').to_s)
   file = Nokogiri::XML(open("#{@directory}/#{link.attr('href').to_s}"))
   filetype = file.xpath("/*").first.name # get type of file
-  if filetype == "reference"
-    txtfile = file.to_s
-    filesplit = txtfile.split('<refbody>')
-    filesplit[1] = glosswrap(filesplit[1])
-    txtfile = filesplit.join("<refbody>")
+  if filetype.eql?("reference")
+    topictype = 'refbody'
+  elsif filetype.eql?('topic')
+    topictype = 'body'
+  elsif filetype.eql?('concept')
+    topictype = 'conbody'
+  elsif filetype.eql?('troubleshooting')
+    topictype = 'troublebody'
+  elsif filetype.eql?('task')
+    topictype = 'taskbody'
   end
+  body = file.xpath("//#{topictype}")[0] # Only process the body. No processing short description or title.
+  nextelements = body.element_children
+  body.children = (glosswrap(nextelements))
   if @writeme
-    writeFile(txtfile)
+    File.write("#{@directory}/#{@ditafile}", file)
+    p "Modified : #{@directory}/#{@ditafile}"
+  else
+    p "No Changes in: #{@directory}/#{@ditafile}"
   end
 end
 
