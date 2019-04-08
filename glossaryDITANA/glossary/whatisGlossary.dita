@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="whyaGlossaryTopic">
+    <title>Why A glossary?</title>
+    <shortdesc>Glossaries can explain words that readers don't understand. </shortdesc>
+    <refbody><section>
+        <p>The idea behind a <term keyref="glossterm" /> is a sound idea. </p>
+    </section> </refbody>
+</reference>
