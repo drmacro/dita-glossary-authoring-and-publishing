@@ -85,13 +85,19 @@
       </xsl:apply-templates>
     </xsl:variable>       
     
-    <xsl:if test="$localDebug">
+    <xsl:if test="$localDebug or true()">
       <xsl:message>
-+ [DEBUG] dita-community:glossary-filter: Have <xsl:value-of select="count($links)"/> links:</xsl:message>
-<!--      <xsl:for-each select="$links">
-        <xsl:message>+ [DEBUG]   [<xsl:value-of select="position()"/>] <xsl:sequence select="."/></xsl:message>
++ [DEBUG] dita-community:glossary-filter: Have {count($links)} links:</xsl:message>
+      <xsl:for-each select="$links">
+        <xsl:message>+ [DEBUG]   [{position()}] {name(.)} {if (exists(@keyref)) 
+          then ' keyref=&quot;' || @keyref || '&quot;'
+          else ()} href="{@href}" {
+          if (not(matches(., '^\s*$'))) 
+          then '&quot;' || normalize-space(.) || '&quot;'  
+          else ''}</xsl:message>
       </xsl:for-each>        
--->    
+
+    
     </xsl:if>
     
     <xsl:variable name="directlyUsedGlossaryEntries" as="element()*">
