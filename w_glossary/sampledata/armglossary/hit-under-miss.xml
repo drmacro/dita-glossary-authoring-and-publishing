@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="hit-under-miss">
+  <glossterm>Hit-Under-Miss</glossterm>
+  <glossdef>A buffer that means a memory access can hit in the cache, even though there has been a data miss in the cache.</glossdef>
+</glossentry>

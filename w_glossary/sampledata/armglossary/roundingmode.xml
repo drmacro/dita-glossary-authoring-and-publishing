@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="roundingmode">
+  <glossterm>rounding mode</glossterm>
+  <glossdef>In floating-point operation, specifies how the exact result of a floating-point operation is rounded to a value that is representable in the destination format. The IEEE 754 standard defines the required rounding modes for compliant floating-point implementations, and Arm implementations support these rounding modes. See the appropriate Arm Architecture Reference manual for more information about support for the different rounding modes. Note The IEEE 754-2008 standard changes the term Rounding mode to Rounding-direction attribute. Arm documentation continues to use the term Rounding mode, as defined in the IEEE 754-1985 standard.</glossdef>
+</glossentry>

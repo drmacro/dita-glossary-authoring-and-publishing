@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="load_storearchitecture">
+  <glossterm>load/store architecture</glossterm>
+  <glossdef>A processor architecture where data-processing operations only operate on register contents, not directly on memory contents. The ARM architecture is a Load/Store architecture.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="elr">
+  <glossterm>ELR</glossterm>
+  <glossdef>In AArch64 state, there is a dedicated LR for each implemented Exception level, called the Exception Link Register (ELR) for that Exception level, for example, ELR_EL1. The Exception Link Register holds the exception return address. </glossdef>
+</glossentry>

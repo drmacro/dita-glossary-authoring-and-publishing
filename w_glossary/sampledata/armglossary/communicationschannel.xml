@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="communicationschannel">
+  <glossterm>Communications channel</glossterm>
+  <glossdef>The hardware used for communicating between the software running on the processor, and an external host, using the debug interface. When this communication is for debug purposes, it is called the Debug Communications Channel (DCC).See Also Debug Communications Channel (DCC).</glossdef>
+</glossentry>

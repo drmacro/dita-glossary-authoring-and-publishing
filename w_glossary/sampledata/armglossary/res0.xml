@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="res0">
+  <glossterm>RES0</glossterm>
+  <glossdef>A reserved bit or field with Should-Be-Zero-or-Preserved (SBZP) behavior. Used for fields in register descriptions, and for fields in architecturally-defined data structures that are held in memory, for example in translation table descriptors. Note res0 is not used in descriptions of instruction encodings. Within the architecture, there are some cases where a register bit or bitfield: * Is res0 in some defined architectural context. * Has different defined behavior in a different architectural context.</glossdef>
+</glossentry>

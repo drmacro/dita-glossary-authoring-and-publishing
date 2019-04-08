@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1b44efe-e12a-469f-84ec-16ff9c1c3693" name="Default Changelist" comment="Currently working.">
+    <list default="true" id="a1b44efe-e12a-469f-84ec-16ff9c1c3693" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/readXL/htmlExcel.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/PeterandWendy.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/PeterandWendy.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/come_come_away.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/come_come_away.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/do_you_believe_in_faries.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/do_you_believe_in_faries.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/hook_or_me_this_time.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/hook_or_me_this_time.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_children_are_carried_off.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_children_are_carried_off.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_flight.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_flight.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_happy_home.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_happy_home.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_home_underground.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_home_underground.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_island_come_true.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_island_come_true.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_little_house.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_little_house.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_mermaids__lagoon.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_mermaids__lagoon.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_pirate_ship.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_pirate_ship.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/the_return_home.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/the_return_home.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/wendy_s_story.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/wendy_s_story.dita" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleBook/DITA/when_wendy_grew_up.dita" beforeDir="false" afterPath="$PROJECT_DIR$/SampleBook/DITA/when_wendy_grew_up.dita" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readXL/markentries.rb" beforeDir="false" afterPath="$PROJECT_DIR$/readXL/markentries.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readXL/readXLFile.rb" beforeDir="false" afterPath="$PROJECT_DIR$/readXL/readXLFile.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,13 +25,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readXL/markentries.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="558">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -66,8 +60,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/SampleBook/DITA/peter_pan.ditamap" />
-        <option value="$PROJECT_DIR$/readXL/readXLFile.rb" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.rb" />
+        <option value="$PROJECT_DIR$/readXL/htmlExcel.rb" />
+        <option value="$PROJECT_DIR$/readXL/readXLFile.rb" />
         <option value="$PROJECT_DIR$/readXL/markentries.rb" />
       </list>
     </option>
@@ -75,7 +70,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="144" />
     <option name="y" value="65" />
     <option name="width" value="2107" />
@@ -142,6 +137,11 @@
     <property name="project.structure.side.proportion" value="0.22764976" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/readXL" />
+    </key>
+  </component>
   <component name="Regex">
     <option name="pos1" value="218" />
     <option name="pos2" value="218" />
@@ -165,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.markentries">
+  <component name="RunManager" selected="Ruby.htmlExcel">
     <configuration name="ReadXML" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="dita-glossary-authoring-and-publishing" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -182,6 +182,26 @@
       </EXTENSION>
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/readXL/readXLFile.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="$PROJECT_DIR$/readXL/glossary.xlsx $PROJECT_DIR$/readXL/testoutput" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="htmlExcel" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="dita-glossary-authoring-and-publishing" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/readXL" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/readXL/htmlExcel.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="$PROJECT_DIR$/readXL/ArmGlossary.html" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,6 +242,7 @@
     </configuration>
     <list>
       <item itemvalue="Ruby.markentries" />
+      <item itemvalue="Ruby.htmlExcel" />
       <item itemvalue="Ruby.ReadXML" />
       <item itemvalue="Ruby.scratch" />
     </list>
@@ -253,7 +274,7 @@
       <workItem from="1554423620513" duration="5473000" />
       <workItem from="1554429860825" duration="496000" />
       <workItem from="1554541804783" duration="8205000" />
-      <workItem from="1554575492398" duration="2966000" />
+      <workItem from="1554575492398" duration="6773000" />
     </task>
     <task id="LOCAL-00001" summary="updated for markentries">
       <created>1554323406215</created>
@@ -269,14 +290,21 @@
       <option name="project" value="LOCAL" />
       <updated>1554429920820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Working branch">
+      <created>1554579629770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554579629770</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32955000" />
+    <option name="totallyTimeSpent" value="36762000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="144" y="65" width="2107" height="1270" extended-state="0" />
+    <frame x="144" y="65" width="2107" height="1270" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22324455" />
@@ -288,7 +316,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32852292" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32852292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41171476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,7 +328,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32894737" />
       <window_info anchor="bottom" id="Bucklescript" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32894737" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32852292" />
       <window_info anchor="bottom" id="Regex" order="15" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -320,9 +348,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated for markentries" />
     <MESSAGE value="Currently working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Currently working." />
+    <MESSAGE value="Working branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working branch" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/readXL/htmlExcel.rb</url>
+          <line>14</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="RubyRunConfigurationType">
         <watch expression="body" language="ruby" />
@@ -339,6 +377,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dita_glossary_authoring_and_publishing@htmlExcel.rcov" NAME="htmlExcel Coverage Results" MODIFIED="1554587487672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/readXL" MODULE_NAME="dita-glossary-authoring-and-publishing" />
     <SUITE FILE_PATH="coverage/dita_glossary_authoring_and_publishing@ReadXML.rcov" NAME="ReadXML Coverage Results" MODIFIED="1554429436060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="dita-glossary-authoring-and-publishing" />
     <SUITE FILE_PATH="coverage/dita_glossary_authoring_and_publishing@markentries.rcov" NAME="markentries Coverage Results" MODIFIED="1554579110823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="dita-glossary-authoring-and-publishing" />
   </component>
@@ -419,13 +458,6 @@
     <entry file="file://$PROJECT_DIR$/readXL/testoutput/glossaryentries.ditamap">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/readXL/readXLFile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.rvm/gems/ruby-2.6.2/gems/ruby-debug-ide-0.7.0.beta7/bin/rdebug-ide">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -496,10 +528,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readXL/htmlExcel.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readXL/readXLFile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="37" column="83" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readXL/markentries.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="558">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>

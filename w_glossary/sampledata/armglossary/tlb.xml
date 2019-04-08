@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="tlb">
+  <glossterm>TLB</glossterm>
+  <glossdef>A memory structure containing the results of translation table walks. TLBs help to reduce the average cost of memory accesses.</glossdef>
+</glossentry>

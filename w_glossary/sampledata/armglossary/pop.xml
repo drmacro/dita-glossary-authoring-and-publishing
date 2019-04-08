@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="pop">
+  <glossterm>POP</glossterm>
+  <glossdef>A performance optimization package for the implementation of an ARM processor using ARM Artisan optimized logic and memory physical IP.See Also G-POP.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="contextsynchronizationevent">
+  <glossterm>Context synchronization event</glossterm>
+  <glossdef>Depending on the context, using 'Context synchronization event' or 'Context synchronization instruction'. One of: &#x201A;&#xC4;&#xA2; Performing an ISB operation. An ISB operation is performed when an ISB instruction is executed and does not fail its condition code check. &#x201A;&#xC4;&#xA2; Taking an exception. &#x201A;&#xC4;&#xA2; Returning from an exception. &#x201A;&#xC4;&#xA2; Exit from Debug state. &#x201A;&#xC4;&#xA2; Executing a DCPS instruction. &#x201A;&#xC4;&#xA2; Executing a DRPS instruction. The architecture requires a Context synchronization event to guarantee visibility of any change to a System register.</glossdef>
+</glossentry>

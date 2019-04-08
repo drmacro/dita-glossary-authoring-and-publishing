@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="esslcompiler">
+  <glossterm>ESSL compiler</glossterm>
+  <glossdef>The compiler that translates shaders written in ESSL, into binary code for the shader units in the Mali GPU. There are two versions of the ESSL compiler:the on-target compilerthe offline compiler.</glossdef>
+</glossentry>

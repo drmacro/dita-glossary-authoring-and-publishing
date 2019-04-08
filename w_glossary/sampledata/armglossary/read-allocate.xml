@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="read-allocate">
+  <glossterm>Read-Allocate</glossterm>
+  <glossdef>Read-allocation is a technique that is used to deal with data store accesses to caches. In a Read-Allocate cache, the data is simply stored to main memory. Cache lines are only allocated to memory location when data is read or loaded, not when it is written or stored. See also Write-Allocate.</glossdef>
+</glossentry>

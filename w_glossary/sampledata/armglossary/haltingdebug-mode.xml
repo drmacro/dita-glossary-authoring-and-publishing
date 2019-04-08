@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="haltingdebug-mode">
+  <glossterm>halting debug-mode</glossterm>
+  <glossdef>In ARM A-profile and R-profile processors, in AArch32 state, one of two mutually exclusive debug modes. When Halting debug is enabled, core execution halts when a breakpoint or watchpoint is encountered. You can use the debug interface to examine and alter all core state, memory, input and output locations.</glossdef>
+</glossentry>

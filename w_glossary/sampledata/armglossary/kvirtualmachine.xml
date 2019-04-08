@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="kvirtualmachine">
+  <glossterm>K Virtual Machine</glossterm>
+  <glossdef>A small implementation of a Java Virtual Machine. It was originally derived from the Sun Spotless Virtual Machine.</glossdef>
+</glossentry>

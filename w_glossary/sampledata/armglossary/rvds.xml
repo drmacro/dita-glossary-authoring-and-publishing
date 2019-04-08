@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="rvds">
+  <glossterm>RVDS</glossterm>
+  <glossdef>The suite of software development tools, together with supporting documentation and examples, that enable you to write and debug applications for the Arm family of processors.See Also Arm Compiler for DS-5, Arm profiler, Eclipse for DS-5, Development Studio 5 (DS-5), RealView ICE, and RealView Trace and RealView Trace 2.</glossdef>
+</glossentry>

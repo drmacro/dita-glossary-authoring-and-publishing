@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="t32">
+  <glossterm>T32</glossterm>
+  <glossdef>An instruction set that can be used by an Armv8 processor that is in AArch32 execution state. T32 is a variable-length instruction set that uses both 16-bit and 32-bit instruction encodings. It is compatible with the Armv7 Thumb instruction set.See Also AArch32, A32.</glossdef>
+</glossentry>

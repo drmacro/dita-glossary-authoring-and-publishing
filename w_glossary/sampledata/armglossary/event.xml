@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="event">
+  <glossterm>Event</glossterm>
+  <glossdef>In the context of an ARM trace macrocell, events can be: *Simple -An observable condition that a trace macrocell can use to control aspects of a trace. *Complex -A boolean combination of simple events that a trace macrocell can use to control aspects of a trace.</glossdef>
+</glossentry>

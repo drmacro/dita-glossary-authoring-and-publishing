@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="implementationspecific">
+  <glossterm>IMPLEMENTATION SPECIFIC</glossterm>
+  <glossdef>In the context of ARM trace macrocells, behavior that is not architecturally defined, and might not be documented by an individual implementation. Used when there are a number of implementation options available and the option chosen does not affect software compatibility. When implementation specific is used with this meaning in body text, it is always in small capitals. Used in Trace documentation only.</glossdef>
+</glossentry>

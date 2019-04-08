@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="ntrst">
+  <glossterm>nTRST</glossterm>
+  <glossdef>Abbreviation of TAP Reset. The electronic signal that causes the target system TAP controller to be reset. This signal is known as nICERST in some documentation.See Also nSRST and Joint Test Action Group (JTAG).</glossdef>
+</glossentry>

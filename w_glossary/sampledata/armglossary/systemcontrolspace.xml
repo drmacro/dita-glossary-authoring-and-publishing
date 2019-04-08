@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="systemcontrolspace">
+  <glossterm>System Control Space</glossterm>
+  <glossdef>On Cortex-M series processors, a memory-mapped region from 0xE000E000 to 0xE000EFFF that provides system control and configuration registers, including control of the Nested Vectored Interrupt Controller (NVIC) and debug functions.</glossdef>
+</glossentry>

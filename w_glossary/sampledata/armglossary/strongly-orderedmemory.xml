@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="strongly-orderedmemory">
+  <glossterm>Strongly-ordered memory</glossterm>
+  <glossdef>In descriptions before the introduction of Armv8, memory regions with the strongest ordering requirement. From the introduction of Armv8, these regions are described as Device-nGnRnE, indicating that the region is: * non-Gathering - Multiple memory accesses must not be merged into a single access. * non-Reordering - Multiple memory accesses must not be reordered. * no Early Write Acknowledge - A hint to the memory system that only the endpoint of a write access should return an acknowledge for that write access. For more information see the Armv8 Architecture Reference Manual.</glossdef>
+</glossentry>

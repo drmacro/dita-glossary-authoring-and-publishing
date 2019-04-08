@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serialized version="16.1" xml:space="preserve">
+	<map>
+		<entry>
+			<String>code-templates</String>
+			<codeTemplateItem-array>
+				<codeTemplateItem>
+					<field name="contentType">
+						<String>text/xml</String>
+					</field>
+					<field name="unparsedInsertString">
+						<String>&lt;term keyref="${ask('provide the keyref name.')}">${selection}&lt;/term></String>
+					</field>
+					<field name="descriptionString">
+						<String>Wrap selection as a glossary entry</String>
+					</field>
+					<field name="renderString">
+						<String>glossary (ask keyref)</String>
+					</field>
+					<field name="enabled">
+						<Boolean>true</Boolean>
+					</field>
+				</codeTemplateItem>
+			</codeTemplateItem-array>
+		</entry>
+	</map>
+</serialized>

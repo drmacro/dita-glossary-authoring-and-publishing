@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="systemtracemacrocell">
+  <glossterm>System Trace Macrocell</glossterm>
+  <glossdef>System Trace Macrocell - A trace source designed primarily for high-bandwidth trace of instrumentation embedded into software. This instrumentation is made up of memory-mapped writes to the STM, which carry information about the behavior of the software.</glossdef>
+</glossentry>

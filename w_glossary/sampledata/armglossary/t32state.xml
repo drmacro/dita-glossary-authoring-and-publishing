@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="t32state">
+  <glossterm>T32 state</glossterm>
+  <glossdef>When a core is executing in AArch32 state, if it is in T32 Instruction set state then it executes T32 instructions.</glossdef>
+</glossentry>

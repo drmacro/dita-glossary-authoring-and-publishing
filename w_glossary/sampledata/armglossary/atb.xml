@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="atb">
+  <glossterm>ATB</glossterm>
+  <glossdef>An AMBA bus protocol for trace data. A trace device can use an ATB to share CoreSight capture resources. Use AMBA ATB on first use, and ATB thereafter.</glossdef>
+</glossentry>

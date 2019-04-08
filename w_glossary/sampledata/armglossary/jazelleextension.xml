@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="jazelleextension">
+  <glossterm>Jazelle Extension</glossterm>
+  <glossdef>Some ARM processors before ARMv8 included the Jazelle Extension, to provide hardware execution of some Java bytecodes in AArch32 state, as part of a Java Virtual Machine (JVM) implementation. From ARMv8, the architecture supports only an AArch32 Trivial Jazelle implementation, meaning a JVM must be implemented entirely in software. The Jazelle Extension technology is called Jazelle DBX.</glossdef>
+</glossentry>

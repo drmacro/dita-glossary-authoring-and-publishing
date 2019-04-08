@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="dsm">
+  <glossterm>DSM</glossterm>
+  <glossdef>A functional simulation model of the device derived from the Register Transfer Level (RTL) but that does not reveal its internal structure. The DSM does not model any features added during synthesis such as internal scan chains.</glossdef>
+</glossentry>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serialized version="16.1" xml:space="preserve">
+	<map>
+		<entry>
+			<String>code-templates</String>
+			<codeTemplateItem-array>
+				<codeTemplateItem>
+					<field name="contentType">
+						<String>text/xml</String>
+					</field>
+					<field name="unparsedInsertString">
+						<String>&lt;xref href="${ask('provide the URI.')}" scope="${ask('set the scope:', radio, ('external':'external link';'local':'link within document'),'external')}">${selection}&lt;/xref></String>
+					</field>
+					<field name="descriptionString">
+						<String>Wrap selection with xref for external entry</String>
+					</field>
+					<field name="renderString">
+						<String>xref (ask href)</String>
+					</field>
+					<field name="enabled">
+						<Boolean>true</Boolean>
+					</field>
+				</codeTemplateItem>
+			</codeTemplateItem-array>
+		</entry>
+	</map>
+</serialized>

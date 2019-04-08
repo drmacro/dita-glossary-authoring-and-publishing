@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="dirty">
+  <glossterm>dirty</glossterm>
+  <glossdef>A line in a Write-Back cache that has been modified while it is in the cache. Typically, a cache line is marked as dirty by setting the dirty bit to 1.</glossdef>
+</glossentry>

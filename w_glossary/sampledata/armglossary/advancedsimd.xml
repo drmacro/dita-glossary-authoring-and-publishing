@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="advancedsimd">
+  <glossterm>Advanced SIMD</glossterm>
+  <glossdef>A feature of the ARM architecture that provides Single Instruction Multiple Data (SIMD) operations on a dedicated bank of registers. If an implementation also supports scalar floating-point instructions, the floating-point and Advanced SIMD instructions use a common register bank. ARM NEON technology provides the Advanced SIMD instructions, and therefore these are sometimes called the NEON instructions.</glossdef>
+</glossentry>
