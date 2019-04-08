@@ -8,7 +8,8 @@
   xmlns:dci18n="http://org.dita-community/i18n"
   xmlns:dci18nfunc="http://org.dita-community/i18n/saxon-extensions"  
   exclude-result-prefixes="xs df relpath dita-ot gloss"
-  version="2.0">
+  expand-text="yes"
+  version="3.0">
   <!-- ===========================================================
        Glossary Processing Utilities
        
@@ -18,40 +19,55 @@
   <!-- For a topicref that has an @href value and that has a format of "dita",
        attempt to resolve it to a topic and return the topic element.
        
-       
+       If excludeClass is specified, include all topics except those excluded.
+       If includeClass is specified (and excludeClass is not), include only
+       those topics with the specified class.
     -->
   <xsl:template mode="gloss:get-topics-for-topicrefs" 
-    match="*[df:isTopicRefToTopic(.)]" as="element()?">
+    match="*[df:isTopicRefToTopic(.)]" as="element()*">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>    
     <xsl:param name="processDescendantTopicrefs" as="xs:boolean" tunnel="yes" select="true()"/>
     <xsl:param name="excludeClass" as="xs:string?" tunnel="yes" select="()"/>
+    <xsl:param name="includeClass" as="xs:string?" tunnel="yes" select="()"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() and $doDebug"/>
     
     <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Handling topicref with href "<xsl:value-of select="@href"/>"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Handling topicref with href "{@href}"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs:   processDescendantTopicrefs="{$processDescendantTopicrefs}"</xsl:message>
     </xsl:if>
     
     <xsl:variable name="topic" as="element()?"
       select="df:resolveTopicRef(., false())"
     />
     <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Got a topic: <xsl:value-of select="exists($topic)"/> (<xsl:value-of select="$topic/@class"/>)</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs:   Got a topic: {exists($topic)} ({$topic/@class})</xsl:message>
     </xsl:if>
     
     <xsl:choose>
-      <xsl:when test="contains($topic/@class, $excludeClass)">
+      <xsl:when test="exists($excludeClass) and contains($topic/@class, $excludeClass)">
         <xsl:if test="$localDebug">
-          <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Excluding the topic</xsl:message>
+          <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs:   Excluding the topic with class "{$excludeClass}"</xsl:message>
         </xsl:if>
         <!-- Excluding this topic -->
       </xsl:when>
-      <xsl:otherwise>
+      <xsl:when test="exists($includeClass) and contains($topic/@class, $includeClass)">
         <xsl:if test="$localDebug">
-          <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs: Returning the topic</xsl:message>
+          <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs:   Including the topic with class "{$includeClass}"</xsl:message>
+        </xsl:if>
+        <!-- Including this topic -->
+        <xsl:sequence select="$topic"/>
+      </xsl:when>
+      <xsl:when test="empty($includeClass)">
+        <!-- If no includeClass and we get here, then topic was neither explicitly excluded or included -->
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs:   Returning the topic</xsl:message>
         </xsl:if>
         <!-- Not excluded -->
         <xsl:sequence select="$topic"/>    
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- Must not be explicitly included -->
       </xsl:otherwise>
     </xsl:choose>    
     
@@ -101,9 +117,14 @@
   </xsl:template>
   
   <!-- If an element within a link-allowing context has @keyref or @href it
-       must be a link of some sort.
+       must be a link of some sort to a local-scope DITA topic.
+       
     -->
-  <xsl:template mode="gloss:get-links-from-topics" match="*[@keyref or @href]">
+  <xsl:template mode="gloss:get-links-from-topics" match="*[@keyref or @href]
+                      [not(contains(@class, ' topic/image '))]
+                      [not(contains(@class, ' topic/object '))]
+                      [empty(@format) or (@format = ('dita'))]
+                      [not(@scope = ('peer', 'external'))]">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     
     <xsl:sequence select="."/>
@@ -140,11 +161,11 @@
     <xsl:variable name="navtitle" as="xs:string" select="df:getNavtitleForTopicref($context)"/>
    
     <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] gloss:getGroupingKey(): navtitle="<xsl:value-of select="$navtitle"/>"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:getGroupingKey(): navtitle="{$navtitle}"</xsl:message>
     </xsl:if>
     <xsl:variable name="firstChar" as="xs:string" select="substring($navtitle, 1, 1)"/>
     <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] gloss:getGroupingKey(): firstChar="<xsl:value-of select="$firstChar"/>"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:getGroupingKey(): firstChar="{$firstChar}"</xsl:message>
     </xsl:if>
     <xsl:variable name="result" as="xs:string">
       <xsl:choose>
@@ -157,7 +178,7 @@
       </xsl:choose>
     </xsl:variable>
     <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] gloss:getGroupingKey(): returning "<xsl:value-of select="$result"/>"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:getGroupingKey(): returning "{$result}s"</xsl:message>
     </xsl:if>
     <xsl:sequence select="$result"/>
   </xsl:function>
@@ -223,7 +244,7 @@
       select="df:getNavtitleForTopicref($topicref)"
     />
     <xsl:if test="$doDebug">
-      <xsl:message>+ [DEBUG] gloss:getPrimarySortKeyForTopicref(): navtitle="<xsl:value-of select="$navtitle"/>"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:getPrimarySortKeyForTopicref(): navtitle="{$navtitle}"</xsl:message>
     </xsl:if>
     <xsl:variable name="sortKey"
       select="
@@ -233,10 +254,47 @@
       "
     />
     <xsl:if test="$doDebug">
-      <xsl:message>+ [DEBUG] gloss:getPrimarySortKeyForTopicref(): returning "<xsl:value-of select="$sortKey"/>"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:getPrimarySortKeyForTopicref(): returning "{$sortKey}"</xsl:message>
     </xsl:if>
     <xsl:sequence select="$sortKey"/>
   </xsl:function>
   
+  <!--
+    Determine of the specified topicref is a topicref to a glossary entry topic.
+    @param context topicref to be evaluated
+    @return true() if the topicref is to a glossary entry topic.
+    -->
+  <xsl:function name="gloss:isTopicrefToGlossaryEntry" as="xs:boolean">
+    <xsl:param name="context" as="element()"/>
+    <xsl:sequence select="gloss:isTopicrefToGlossaryEntry($context, false())"/>
+  </xsl:function>
+  
+  <!--
+    Determine of the specified topicref is a topicref to a glossary entry topic.
+    @param context topicref to be evaluated
+    @param doDebug turn debugging on or off
+    @return true() if the topicref is to a glossary entry topic.
+    -->
+  <xsl:function name="gloss:isTopicrefToGlossaryEntry" as="xs:boolean">
+    <xsl:param name="context" as="element()"/>
+    <xsl:param name="doDebug" as="xs:boolean"/>
+    
+    <xsl:variable name="topic" as="element()?" select="df:resolveTopicRef($context, $doDebug)"/>
+    <xsl:if test="$doDebug">
+      <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): keyref="{$context/@keyref}", href="<xsl:value-of
+        select="$context/@href"/>"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): topic exists: {exists($topic)}</xsl:message>
+      <xsl:if test="exists($topic)">
+        <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): topic class: {$topic/@class}</xsl:message>        
+      </xsl:if>
+    </xsl:if>
+    <xsl:variable name="result" as="xs:boolean"
+      select="
+       exists($topic) and
+       contains($topic/@class, ' glossentry/glossentry ')
+      "
+    />        
+    <xsl:sequence select="$result"/>
+  </xsl:function>
   
 </xsl:stylesheet>
