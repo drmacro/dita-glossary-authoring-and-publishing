@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="halfword-aligned">
+  <glossterm>halfword-aligned</glossterm>
+  <glossdef>Hyphenate halfword-aligned. A data item having a memory address that is divisible by 2.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="boardandchipdefinitionfile">
+  <glossterm>Board and Chip Definition file</glossterm>
+  <glossdef>In the context of RealView Debugger, a BCD file enables you to define the memory map and memory-mapped registers for a target development board or processor. ARM provides various BCD files with RVDS for ARM development boards.See Also Board file and Debug configuration.</glossdef>
+</glossentry>

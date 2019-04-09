@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="debugconfiguration">
+  <glossterm>debug configuration</glossterm>
+  <glossdef>In the context of an ARM debugger, a debug configuration defines a debugging environment for the development platform that is accessed through a particular Debug Interface. Multiple debug configurations can be created for a debug interface, each providing a separate debugging environment to different development platforms, or different debugging environments to the same development platform.All debug configurations are stored in the main debugger board file. Each configuration might reference one or more BCD files.See Also Board file and Target.</glossdef>
+</glossentry>

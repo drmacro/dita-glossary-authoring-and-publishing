@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="conditionalbreakpoint">
+  <glossterm>conditional breakpoint</glossterm>
+  <glossdef>A breakpoint that has one or more condition qualifiers assigned. The breakpoint is activated when all assigned conditions are met, and either stops or continues execution depending on the action qualifiers that are assigned. The condition normally references the values of program variables that are in scope at the breakpoint location.See Also Chained breakpoint and Software breakpoint.</glossdef>
+</glossentry>

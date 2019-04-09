@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="semihosting">
+  <glossterm>semihosting</glossterm>
+  <glossdef>A mechanism to communicate Input/Output (I/O) requests from application code to a host workstation running a debugger. For example, you can use semihosting to enable functions in the C library, such as printf() and scanf(), to use the screen and keyboard on the host workstation instead of having a screen and keyboard on the target system.</glossdef>
+</glossentry>

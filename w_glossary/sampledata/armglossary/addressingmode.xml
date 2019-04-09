@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="addressingmode">
+  <glossterm>addressing mode</glossterm>
+  <glossdef>A method of generating the memory address that a load or store instruction uses.The addressing modes mechanism can generate values for data-processing instructions to use as operands.</glossdef>
+</glossentry>

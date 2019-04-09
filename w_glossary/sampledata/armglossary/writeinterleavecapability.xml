@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="writeinterleavecapability">
+  <glossterm>write interleave capability</glossterm>
+  <glossdef>For an interface to an interconnect, the number of data-active write transactions for which the interface can transmit data. This is counted from the earliest transaction.</glossdef>
+</glossentry>

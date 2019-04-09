@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="eventasynchronousbridge">
+  <glossterm>event asynchronous bridge</glossterm>
+  <glossdef>A fixed component that synchronizes events on a single channel from the slave domain to the master domain. In addition, the event acknowledge from the master domain is synchronized and signaled to the slave domain.</glossdef>
+</glossentry>

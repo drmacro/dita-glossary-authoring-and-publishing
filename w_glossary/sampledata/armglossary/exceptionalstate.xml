@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="exceptionalstate">
+  <glossterm>exceptional state</glossterm>
+  <glossdef>In an ARMv7 implementation that includes a VFP subarchitecture, in floating-point operation, if the floating-point hardware detects an exceptional condition, the ARM floating-point implementation sets the FPEXC bit and loads a copy of the exceptional instruction to the FPINST register. When in the exceptional state, the issue of a trigger instruction to the floating-point extension causes a bounce.</glossdef>
+</glossentry>

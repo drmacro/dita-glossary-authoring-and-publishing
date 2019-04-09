@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="unk">
+  <glossterm>UNK</glossterm>
+  <glossdef>An abbreviation indicating that software must treat a field as containing an UNKNOWN value.In any implementation, the bit must read as 0, or all 0s for a bit field. Software must not rely on the field reading as zero.</glossdef>
+</glossentry>

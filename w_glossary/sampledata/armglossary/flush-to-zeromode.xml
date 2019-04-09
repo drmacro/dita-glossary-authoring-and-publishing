@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="flush-to-zeromode">
+  <glossterm>Flush-to-zero mode</glossterm>
+  <glossdef>In floating-point operation, a special processing mode that optimizes the performance of some floating-point algorithms by replacing the denormalized operands and intermediate results with zeros, without significantly affecting the accuracy of their final results. Capitalize the F.</glossdef>
+</glossentry>

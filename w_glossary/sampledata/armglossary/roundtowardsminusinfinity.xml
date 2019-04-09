@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="roundtowardsminusinfinity">
+  <glossterm>Round towards Minus Infinity</glossterm>
+  <glossdef>An Arm abbreviation for "Round towards Minus Infinity" rounding mode. Take care to include the capitalizations.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="vectorization">
+  <glossterm>vectorization</glossterm>
+  <glossdef>Using multiword registers to hold multiple values of the same type for SIMD processing. For example, software might use doubleword registers to hold four 16-bit unsigned integers. Vectorization also describes the process of adapting software to use SIMD processing. Vector operations are provided by: The VFP instructions in Armv6. The Advanced SIMD instructions from Armv7.</glossdef>
+</glossentry>

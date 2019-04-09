@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="ual">
+  <glossterm>UAL</glossterm>
+  <glossdef>A common assembler language for the A32 and T32 instruction sets. See the appropriate Arm Architecture Reference Manual for more information.</glossdef>
+</glossentry>

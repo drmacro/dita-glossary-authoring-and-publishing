@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="nsrst">
+  <glossterm>nSRST</glossterm>
+  <glossdef>Abbreviation of System Reset. The electronic signal that causes the target system other than the TAP controller to be reset. This signal is known as nSYSRST in some documentation.See Also nTRST and Joint Test Action Group (JTAG).</glossdef>
+</glossentry>

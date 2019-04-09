@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="aarch64">
+  <glossterm>AArch64</glossterm>
+  <glossdef>The ARM 64-bit Execution state that uses 64-bit general purpose registers, and a 64-bit program counter (PC), stack pointer (SP), and exception link registers (ELR). AArch64 Execution state provides a single instruction set, A64. AArch64 state is supported only in the ARMv8-A architecture profile.</glossdef>
+</glossentry>

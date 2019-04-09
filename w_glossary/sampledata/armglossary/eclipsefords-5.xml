@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="eclipsefords-5">
+  <glossterm>Eclipse for DS-5</glossterm>
+  <glossdef>Eclipse for DS-5 is based around the Eclipse IDE, and provides additional features to support the ARM development tools provided in DS-5.See Also Development Studio 5 (DS-5).</glossdef>
+</glossentry>

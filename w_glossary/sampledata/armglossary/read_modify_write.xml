@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="read_modify_write">
+  <glossterm>read, modify, write</glossterm>
+  <glossdef>In a read, modify, write sequence, a value is read to a general-purpose register, the relevant fields updated in that register, and the new value written back.</glossdef>
+</glossentry>

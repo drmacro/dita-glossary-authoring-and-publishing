@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="spsr">
+  <glossterm>SPSR</glossterm>
+  <glossdef>A register used to save the state of the core on taking an exception.</glossdef>
+</glossentry>

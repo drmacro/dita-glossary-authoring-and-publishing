@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="fiq">
+  <glossterm>FIQ</glossterm>
+  <glossdef>FIQ interrupt. nFIQ is one of two interrupt signals on many ARM processors. See Also IRQ.</glossdef>
+</glossentry>

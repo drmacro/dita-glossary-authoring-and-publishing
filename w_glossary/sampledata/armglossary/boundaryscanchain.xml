@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="boundaryscanchain">
+  <glossterm>boundary scan chain</glossterm>
+  <glossdef>A boundary scan chain is made up of serially-connected devices that implement boundary scan technology using a standard JTAG TAP interface. Each device contains at least one TAP controller containing shift registers that form the chain, connected between TDI and TDO, through which test data is shifted. A processor can contain several shift registers, enabling you to access selected parts of the device.</glossdef>
+</glossentry>

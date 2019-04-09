@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="bankedregister">
+  <glossterm>banked register</glossterm>
+  <glossdef>A register that has multiple instances. A property of the state of the device determines which instance is in use. For example, the Security state might determine which instance is in use.</glossdef>
+</glossentry>

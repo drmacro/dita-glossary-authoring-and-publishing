@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="sign-offmodel">
+  <glossterm>Sign-Off Model</glossterm>
+  <glossdef>An opaque, compiled simulation model generated from a technology-specific netlist of an Arm processor, derived after gate level synthesis and timing annotation, that you can use in back-annotated gate-level simulations to prove the function and timing behavior of the device. A SOM provides accurate timing simulation of a SoC, and supports simulation using production test vectors from the Automatic Test Pattern Generation (ATPG) tool. It only supports back-annotation using SDF files. The SOM includes timing information but provides slower simulation than a DSM.</glossdef>
+</glossentry>

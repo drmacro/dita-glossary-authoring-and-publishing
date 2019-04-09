@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="denormalizedvalue">
+  <glossterm>denormalized value</glossterm>
+  <glossdef>The IEEE 754-2008 standard term for a floating-point operand with a zero exponent and a nonzero fraction field. ARM documentation describes these operands as denormal or denormalized, as defined by the IEEE 754-1985 standard. Note ARM floating-point implementations comply with the IEEE 754 requirement that denormalized operands are generated and manipulated with the same precision as normal operands. Plus or minus 0 have zero exponent fields, but are not denormals because there is no loss of accuracy.</glossdef>
+</glossentry>

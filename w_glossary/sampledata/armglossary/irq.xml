@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="irq">
+  <glossterm>IRQ</glossterm>
+  <glossdef>IRQ interrupt. nIRQ is one of two interrupt signals on many ARM processors.See Also FIQ.</glossdef>
+</glossentry>

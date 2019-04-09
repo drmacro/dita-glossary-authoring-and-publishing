@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="rp">
+  <glossterm>RP</glossterm>
+  <glossdef>This is the Arm equivalent term for the IEEE 754-2008 term "round Towards Positive Infinity". Take care to include the capitalizations.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="exception">
+  <glossterm>exception</glossterm>
+  <glossdef>A mechanism to handle a fault, error event, or external notification. For example, exceptions handle external interrupts and undefined instructions.</glossdef>
+</glossentry>

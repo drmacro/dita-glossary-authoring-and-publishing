@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="openglesshadinglanguage">
+  <glossterm>OpenGL ES Shading Language</glossterm>
+  <glossdef>A programming language used to create custom shader programs that can be used in a programmable pipeline, on the Mali GPU. You can also use pre-defined library shaders, written in ESSL.</glossdef>
+</glossentry>

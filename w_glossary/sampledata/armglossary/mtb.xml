@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="mtb">
+  <glossterm>MTB</glossterm>
+  <glossdef>The Micro Trace Buffer provides a simple execution trace capability to M-series processors. The MTB provides a lighter option for instruction trace requirements for software development. Unlike the Embedded Trace Macrocell(ETM) or the Program Trace Macrocell(PTM) trace solutions, the MTB does not require dedicated trace connection. However, the amount of trace history provided by the MTB is limited by the size of SRAM allocated for trace operations.</glossdef>
+</glossentry>

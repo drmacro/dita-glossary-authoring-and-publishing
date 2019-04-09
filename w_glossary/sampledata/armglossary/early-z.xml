@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="early-z">
+  <glossterm>Early-Z</glossterm>
+  <glossdef>A Z-testing scheme that performs the actual Z-test before texturing or fragment shading when it is safe to do so. This increases the performance of the Mali GPU and reduces the required bandwidth.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="coprocessor">
+  <glossterm>coprocessor</glossterm>
+  <glossdef>A processor, or conceptual processor, that supplements the main processor to carry out additional functions. In AArch32 Execution state, the ARM architecture defines an interface to up to 16 coprocessors, CP0-CP15. In ARMv8, AArch32 state supports only conceptual coprocessors CP10, CP11, CP14, and CP15. In previous versions of the architecture, coprocessors CP0-CP7 are available for implementation defined features, and coprocessors CP8-CP15 are reserved for use by ARM. In all architecture versions for the A and R architecture profiles, in AArch32 state: CP15 instructions access the System registers. Some documentation describes this set of registers as the System Control Coprocessor. CP14 instructions access System registers for debug, trace, and execution environment features. The CP10 and CP11 instruction space is for floating-point and Advanced SIMD instructions if supported, including the instructions for accessing the floating-point and Advanced SIMD System registers.</glossdef>
+</glossentry>

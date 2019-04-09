@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="captivethread">
+  <glossterm>captive thread</glossterm>
+  <glossdef>Captive threads are all threads that can be brought under the control of RVDS. Special threads, called non-captive threads, are essential to the operation of Running System Debug (RSD) and so are not under debugger control.See Also Running System Debug (RSD).</glossdef>
+</glossentry>
