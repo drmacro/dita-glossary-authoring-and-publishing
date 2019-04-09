@@ -37,6 +37,7 @@
     -->
   <xsl:template mode="dita-community:glossary-filter" match="/" as="document-node()+">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    <xsl:param name="df:keySpaces" as="map(*)" tunnel="yes"/>
     
     <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
     

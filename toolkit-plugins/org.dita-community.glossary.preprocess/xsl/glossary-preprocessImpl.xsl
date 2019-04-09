@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:df="http://dita2indesign.org/dita/functions"  
   xmlns:dita-community="http://org.dita-community"
   xmlns:gloss="http://org.dita-community/glossary"
-  exclude-result-prefixes="xs dita-community gloss"
+  xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot"
+  xmlns:map="http://www.w3.org/2005/xpath-functions/map"  
+  exclude-result-prefixes="xs dita-community gloss dita-ot map df"
   version="2.0">
   <!-- ========================================================
        Glossary preprocessing extension.
@@ -63,6 +66,7 @@
   <xsl:import href="glossary-sorter.xsl"/>
   <xsl:import href="glossary-filter.xsl"/>
   <xsl:import href="link-report.xsl"/>
+  <xsl:import href="construct-key-spaces.xsl"/>
   
   <xsl:template match="/">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
@@ -79,10 +83,19 @@
       <xsl:choose>
         <xsl:when test="$gloss:filter-glossary">
           <xsl:if test="$localDebug">
-            <xsl:message>+ [DEBUG] glossary preprocess: gloss:filter-glossary is true, applying templates in mode dita-community:glossary-filter....</xsl:message>
+            <xsl:message>+ [DEBUG] glossary preprocess: gloss:filter-glossary is true, constructing key spaces...</xsl:message>
+          </xsl:if>
+          <xsl:variable name="df:keySpaces" as="map(*)">
+            <xsl:call-template name="df:construct-key-spaces">
+              <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+            </xsl:call-template>
+          </xsl:variable>
+          <xsl:if test="$localDebug">
+            <xsl:message>+ [DEBUG] glossary preprocess: Applying templates in mode dita-community:glossary-filter....</xsl:message>
           </xsl:if>
           <xsl:apply-templates select="." mode="dita-community:glossary-filter">
             <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+            <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>
           </xsl:apply-templates>
         </xsl:when>
         <xsl:otherwise>
