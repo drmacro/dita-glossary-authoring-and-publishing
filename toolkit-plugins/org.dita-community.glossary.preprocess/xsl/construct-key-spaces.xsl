@@ -70,9 +70,8 @@
   
   <xsl:template name="df:construct-key-spaces" as="map(*)">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    
-    
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+        
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
     <xsl:if test="$localDebug">
       <xsl:message>+ [DEBUG] df:construct-key-spaces: Starting...</xsl:message>
@@ -114,7 +113,7 @@
   <xsl:template name="df:construct-key-space" as="map(*)">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
     <xsl:if test="$localDebug">
       <xsl:message>+ [DEBUG] df:construct-key-space: Starting..., context is {name(.)}</xsl:message>
@@ -174,7 +173,7 @@
         <xsl:map-entry key="'scope-names'" select="$scopeNames"/>
         <xsl:map-entry key="'fully-qualified-scope-names'" select="df:get-qualified-key-scope-names($this, $doDebug)"/>
         <xsl:map-entry key="'keyspace'">
-          <xsl:map>
+          <xsl:variable name="mapEntries" as="map(*)*">
             <!-- Construct a map of key names to key-defining elements.
               
                  The key name is the key name qualified relative to this key space,
@@ -190,8 +189,10 @@
               <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
               <xsl:with-param name="keyScopeQualifier" as="xs:string?" tunnel="yes" select="()"/>
             </xsl:apply-templates>
-          </xsl:map>
+          </xsl:variable>
+          <xsl:sequence select="map:merge($mapEntries, map{'duplicates' : 'combine'})"/>
         </xsl:map-entry>
+        
       </xsl:map>
     </xsl:map-entry>
     
@@ -201,7 +202,7 @@
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     <xsl:param name="keyScopeQualifier" as="xs:string?" tunnel="yes"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
     <xsl:if test="$localDebug">
       <xsl:message>+ [DEBUG] df:construct-key-space: keyscope-definer: @keyscope="{@keyscope}"</xsl:message>
@@ -226,6 +227,10 @@
     Create map entry for each @keys value, qualified by the key scope qualifier,
     that maps the qualified key name to this element.
     
+    The value is actually a sequence of key defining elements. This allows
+    for both reporting duplicate definitions and selection of definitions
+    based on filtering.
+    
     @param keyScopeQualifier The qualified name, starting at the root scope of
     the key space. Does not end in ".".
     -->
@@ -233,11 +238,11 @@
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     <xsl:param name="keyScopeQualifier" as="xs:string?" tunnel="yes"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
 
     <xsl:if test="$localDebug">
       <xsl:message>+ [DEBUG] df:construct-key-space: Topicref with @keys: keys="{@keys}"</xsl:message>
-      <xsl:message>+ [DEBUG] df:construct-key-space: keyScopeQualifier="{$keyScopeQualifier}"</xsl:message>
+      <xsl:message>+ [DEBUG] df:construct-key-space: keyScopeQualifer="{$keyScopeQualifier}"</xsl:message>
     </xsl:if>            
     
     <xsl:variable name="this" as="element()" select="."/>
@@ -260,7 +265,7 @@
 
     <xsl:if test="$localDebug">
       <xsl:message>+ [DEBUG] df:construct-key-space:   qualified key names: "{$qualifiedKeyNames => string-join('", "')}"</xsl:message>
-    </xsl:if>            
+    </xsl:if>        
     
     <xsl:sequence 
       select="
@@ -280,15 +285,10 @@
   </xsl:template>
   
   <!--
-    Create map entry for each @keys value, qualified by the key scope qualifier,
-    that maps the qualified key name to this element.
-    
-    @param keyScopeQualifier The qualified name, starting at the root scope of
-    the key space. Does not end in ".".
+    Fallback for non-key-defining topicrefs.
     -->
   <xsl:template mode="df:construct-key-space" match="*" priority="-1">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    <xsl:param name="keyScopeQualifier" as="xs:string?" tunnel="yes"/>
     
     <xsl:variable name="localDebug" as="xs:boolean" select="false() and $doDebug"/>
     
@@ -347,6 +347,185 @@
   </xsl:function>
   
   <!-- 
+    Gets the ultimate effective key-defining topicref for a key.
+    @param keySpaces The keyspaces map to use in resolving the key.
+    @param mapContext The topicref that establishes the map context of the 
+    key reference. If the reference is from a topicref then this is the 
+    topicref making the reference, otherwise it is the topicref that
+    references the topic (or descendant topic of the referenced topic)
+    that contains the key reference. Automatically recurses through
+    intermediate key references.
+    @param keyName The key name to resolve
+    @return The key-defining topicref, if found, otherwise an empty sequence.
+    -->
+  <xsl:function name="df:resolveScopedKey" as="element()?">
+    <xsl:param name="keySpaces" as="map(*)"/>
+    <xsl:param name="mapContext" as="element()"/>
+    <xsl:param name="keyName" as="xs:string"/>
+    
+    <xsl:sequence select="df:resolveScopedKey($keySpaces, $mapContext, $keyName, false())"/>
+  </xsl:function>
+  
+  <!-- 
+    Gets the ultimate effective key-defining topicref for a key.
+    @param keySpaces The keyspaces map to use in resolving the key.
+    @param mapContext The topicref that establishes the map context of the 
+    key reference. If the reference is from a topicref then this is the 
+    topicref making the reference, otherwise it is the topicref that
+    references the topic (or descendant topic of the referenced topic)
+    that contains the key reference. Automatically recurses through
+    intermediate key references.
+    @param keyName The key name to resolve
+    @param doDebug Turn debugging on or off
+    @return The key-defining topicref, if found, otherwise an empty sequence.
+    -->
+  <xsl:function name="df:resolveScopedKey" as="element()?">
+    <xsl:param name="keySpaces" as="map(*)"/>
+    <xsl:param name="mapContext" as="element()"/>
+    <xsl:param name="keyName" as="xs:string"/>
+    <xsl:param name="doDebug" as="xs:boolean"/>
+    
+    <xsl:if test="$doDebug">
+      <xsl:message>+ [DEBUG] df:resolveScopedKey(): keyName="{$keyName}"</xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="parentScopeDefiner" as="element()"
+      select="(root($mapContext)/*, $mapContext/ancestor-or-self::*[@keyscope][1])[last()]"
+    />
+    
+    <xsl:variable name="scopeID" as="xs:string"
+      select="generate-id($parentScopeDefiner)"
+    />
+    <xsl:if test="$doDebug">
+      <xsl:message>+ [DEBUG] df:resolveScopedKey(): scopeID="{$scopeID}"</xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="scopeIDs" as="xs:string+"
+      select="df:getAncestorKeyScopeIDs($keySpaces, $scopeID, (), $doDebug and false())"
+    />
+    <xsl:if test="$doDebug">
+      <xsl:message>+ [DEBUG] df:resolveScopedKey(): scopeIDs="{$scopeIDs => string-join(', ')}"</xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="result" as="element()?"
+      select="df:resolveScopedKeyForScopeID($keySpaces, $scopeIDs, $keyName, $doDebug)"
+    />
+    
+    <xsl:sequence select="$result"/>
+    
+  </xsl:function>
+  
+  <!-- 
+    Gets the list, from highest to nearest, of ancestor scope IDs. The ID 
+    of the root scope is always first and the specified ID is always last.
+    @param keySpaces
+    @param scopeID
+    @param doDebug
+    @return List of scope IDs, from highest to nearest
+    -->
+  <xsl:function name="df:getAncestorKeyScopeIDs" as="xs:string+">
+    <xsl:param name="keySpaces" as="map(*)"/>
+    <xsl:param name="scopeID" as="xs:string"/>
+    <xsl:param name="accumulatedIDs" as="xs:string*"/>
+    <xsl:param name="doDebug" as="xs:boolean"/>
+
+    <xsl:if test="$doDebug">
+      <xsl:message>+ [DEBUG] df:getAncestorKeyScopeIDs(): scopeID="{$scopeID}"</xsl:message>
+      <xsl:message>+ [DEBUG] df:getAncestorKeyScopeIDs(): accumulatedIDs="{$accumulatedIDs => string-join(', ')}"</xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="keySpace" as="map(*)"
+      select="map:get($keySpaces, $scopeID)"
+    />
+    <xsl:variable name="parentScopeID" as="xs:string?"
+      select="map:get($keySpace, 'parent-keyscope-id')"
+    />
+    <xsl:if test="$doDebug">
+      <xsl:message>+ [DEBUG] df:getAncestorKeyScopeIDs(): parentScopeID="{$parentScopeID}"</xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="result" as="xs:string*"
+      select="
+      if (exists($parentScopeID))
+      then df:getAncestorKeyScopeIDs($keySpaces, $parentScopeID, ($scopeID, $accumulatedIDs), $doDebug)
+      else ($scopeID, $accumulatedIDs)
+      "
+    />
+    
+    <xsl:if test="$doDebug">
+      <xsl:message>+ [DEBUG] df:getAncestorKeyScopeIDs(): returning="{$result => string-join(', ')}"</xsl:message>
+    </xsl:if>
+    <xsl:sequence select="$result"/>
+    
+  </xsl:function>
+  
+  <!-- 
+    Attempts to resolve the spified key name in the specified
+    key scope. If the key is not found, calls itself recursively
+    with the next key scope ID.
+    @param keySpaces The keyspaces map to use in resolving the key.
+    @param scopeID The unique ID of the key scope to resolve against.
+    @param keyName The key name to resolve
+    @param remainingScopes List, possibly empty, of key scope IDs
+    @param doDebug Turn debugging on or off
+    @return The key-defining topicref, if found, otherwise an empty sequence.
+    -->
+  <xsl:function name="df:resolveScopedKeyForScopeID" as="element()?">
+    <xsl:param name="keySpaces" as="map(*)"/>
+    <xsl:param name="scopeIDs" as="xs:string*"/>
+    <xsl:param name="keyName" as="xs:string"/>
+    <xsl:param name="doDebug" as="xs:boolean"/>
+    
+    <xsl:if test="$doDebug">
+      <xsl:message>+ [DEBUG] df:resolveScopedKeyForScopeID(): keyName="{$keyName}"</xsl:message>
+      <xsl:message>+ [DEBUG] df:resolveScopedKeyForScopeID(): scopeIDs={$scopeIDs => string-join(', ')}</xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="result" as="element()?">
+    <xsl:choose>
+      <xsl:when test="empty($scopeIDs)">
+        <xsl:if test="$doDebug">
+          <xsl:message>+ [DEBUG] df:resolveScopedKeyForScopeID(): No more scopes to check, returning ()</xsl:message>
+        </xsl:if>
+        <xsl:sequence select="()"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="scopeID" as="xs:string"
+          select="head($scopeIDs)"
+        />
+        <xsl:if test="$doDebug">
+          <xsl:message>+ [DEBUG] df:resolveScopedKeyForScopeID(): scopeID="{$scopeID}"</xsl:message>
+        </xsl:if>
+        <xsl:variable name="keySpace" as="map(*)"
+          select="map:get($keySpaces, $scopeID)"
+        />
+        <xsl:if test="$doDebug">
+          <xsl:message>+ [DEBUG] df:resolveScopedKeyForScopeID(): have key space for ID {$scopeID}: {exists($keySpace)}</xsl:message>
+        </xsl:if>
+        
+        <xsl:variable name="keyDefs" as="map(*)"
+          select="map:get($keySpace, 'keyspace')"
+        />
+        
+        <xsl:variable name="keyDefinition" as="element()?"
+          select="map:get($keyDefs, $keyName)[1]"
+        />
+        <xsl:sequence
+          select="
+          if (exists($keyDefinition))
+          then $keyDefinition
+          else df:resolveScopedKeyForScopeID($keySpaces, tail($scopeIDs), $keyName, $doDebug)
+          "
+        />
+      </xsl:otherwise>
+    </xsl:choose>    
+    </xsl:variable>
+    
+    <xsl:sequence select="$result"/>
+    
+  </xsl:function>
+  
+  <!-- 
     Contructs a report of the key spaces in the specified key scapes map.
     @param keyspaces Map of scope names to key spaces.
     @return The report
@@ -394,14 +573,20 @@
     <xsl:text>Fully-qualified scope names:: {$keyspace?fully-qualified-scope-names => string-join(', ')}&#x0a;</xsl:text>
     <xsl:text>Key definitions:&#x0a;</xsl:text>
     <xsl:for-each select="map:keys($keyspace?keyspace)">
+      <xsl:variable name="position" as="xs:integer" select="position()"/>
       <xsl:variable name="keySpaceMap" as="map(*)" select="$keyspace?keyspace"/>
       <xsl:variable name="keyName" as="xs:string" select="."/>
-      <xsl:variable name="keyDef" as="element()" select="map:get($keySpaceMap, $keyName)"/>
-      <xsl:text>[{format-integer(position(), '###')}] {$keyName} : {name($keyDef)}&#x0a;</xsl:text>
-      <xsl:text>         href="{$keyDef/@href}"&#x0a;</xsl:text>
-      <xsl:text>         keys="{$keyDef/@keys}"&#x0a;</xsl:text>
-      <xsl:text>         linktext="{normalize-space($keyDef//linktext)}"&#x0a;</xsl:text>
+      <xsl:variable name="keyDefs" as="element()+" select="map:get($keySpaceMap, $keyName)"/>
+      <xsl:text>[{format-integer($position, '###')}] {$keyName}:&#x0a;</xsl:text>
+      <xsl:for-each select="$keyDefs">
+        <xsl:text>      [{position()}] {name(.)}&#x0a;</xsl:text>
+        <xsl:text>            href="{@href}"&#x0a;</xsl:text>
+        <xsl:text>            keys="{@keys}"&#x0a;</xsl:text>
+        <xsl:text>            linktext="{normalize-space(.//linktext)}"&#x0a;</xsl:text>
+      </xsl:for-each>
     </xsl:for-each>
   </xsl:function>
+  
+  
   
 </xsl:stylesheet>

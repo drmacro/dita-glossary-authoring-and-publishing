@@ -2060,6 +2060,30 @@
             </topicmeta>
          </keydef>
          <keydef class="+ map/topicref mapgroup-d/keydef " format="jpg"
+            href="intro-to-aikido/topics/graphics/munetsuki-kotegaeshi-01.jpg"
+            keys="munetsuki-kotegaeshi-01" processing-role="resource-only" xtrc="keydef:1;8:4"
+            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap">
+            <topicmeta class="- map/topicmeta " xtrc="topicmeta:1;9:16"
+               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap">
+               <keywords class="- topic/keywords " xtrc="keywords:1;10:17"
+                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap">
+                  <keyword class="- topic/keyword " xtrc="keyword:1;11:18"
+                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+                     >munetsuki</keyword>
+                  <keyword class="- topic/keyword " xtrc="keyword:2;12:18"
+                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+                     >kotegaeshi</keyword>
+                  <keyword class="- topic/keyword " xtrc="keyword:3;13:18"
+                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+                     >strike</keyword>
+                  <keyword class="- topic/keyword " xtrc="keyword:4;14:18"
+                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+                     >pin</keyword>
+               </keywords>
+               <linktext>Munetski gotegaishi image</linktext>
+            </topicmeta>
+         </keydef>
+         <keydef class="+ map/topicref mapgroup-d/keydef " format="jpg"
             href="intro-to-aikido/topics/graphics/shomenuchi-ikkyo-01.jpg"
             keys="shomenuchi-ikkyo-01" processing-role="resource-only" xtrc="keydef:2;21:5"
             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"/>
