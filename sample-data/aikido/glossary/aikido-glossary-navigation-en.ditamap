@@ -2,7 +2,7 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Aikido Glossary Navigation Structure</title>
-   <topicref href="en/glossary-title.dita">
+   <topicref href="en/glossary-title.dita" chunk="to-content select-branch">
       <topicref toc="no" href="en/letter-group-A.dita">
          <topicref keys="ai" keyref="gloss-res.ai"/>
          <topicref keys="aihanmi" keyref="gloss-res.aihanmi"/>
