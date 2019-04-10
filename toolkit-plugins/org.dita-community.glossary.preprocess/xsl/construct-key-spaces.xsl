@@ -30,7 +30,7 @@
           of ancestor key scopes.
        3. Walk the list of key scopes, starting with the root,
           and attempt to resolve the key. The first resolution
-          result is the effective key definition.
+          result is the effective key definition.                 
        
        TO DO: Add the ability to do condition-aware lookup,
        where an additional parameter is the set of active
@@ -63,7 +63,6 @@
 
         So the key scope names are captured here for submap topicrefs and
         the maps they reference.
-
        
        ============================================================= -->
   

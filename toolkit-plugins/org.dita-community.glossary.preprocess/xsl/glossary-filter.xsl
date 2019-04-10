@@ -6,8 +6,9 @@
   xmlns:dci18n="http://org.dita-community/i18n"
   xmlns:dci18nfunc="http://org.dita-community/i18n/saxon-extensions"
   xmlns:df="http://dita2indesign.org/dita/functions"
+  xmlns:map="http://www.w3.org/2005/xpath-functions/map"  
   
-  exclude-result-prefixes="xs dita-community gloss dci18n dci18nfunc df"
+  exclude-result-prefixes="xs dita-community gloss dci18n dci18nfunc df map"
   expand-text="yes"
   version="3.0">
   <!-- ========================================================
@@ -51,19 +52,24 @@
       <xsl:message>+ [DEBUG] dita-community:glossary-filter: Have <xsl:value-of select="count($normalRoleTopicrefs)"/> normal-role topicrefs.</xsl:message>
     </xsl:if>
     
-    <xsl:variable name="normalRoleTopics" as="element()*">
+    <!--
+      Sequence of maps that contain the topicref and the target topic.
+      -->
+    <xsl:variable name="normalRoleTopics" as="map(*)*">
       <xsl:apply-templates select="$normalRoleTopicrefs" mode="gloss:get-topics-for-topicrefs">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
         <xsl:with-param name="processDescendantTopicrefs" as="xs:boolean" tunnel="yes" select="false()"/>
         <xsl:with-param name="excludeClass" as="xs:string?" tunnel="yes" select="' glossentry/glossentry '"/>
+        <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>          
       </xsl:apply-templates>
     </xsl:variable>
 
-    <xsl:variable name="glossaryTopics" as="element()*">
+    <xsl:variable name="glossaryTopics" as="map(*)*">
       <xsl:apply-templates select="$normalRoleTopicrefs" mode="gloss:get-topics-for-topicrefs">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
         <xsl:with-param name="processDescendantTopicrefs" as="xs:boolean" tunnel="yes" select="false()"/>
         <xsl:with-param name="includeClass" as="xs:string?" tunnel="yes" select="' glossentry/glossentry '"/>
+        <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>          
       </xsl:apply-templates>
     </xsl:variable>
     
@@ -80,48 +86,61 @@
       </xsl:for-each>
 -->    </xsl:if>
     
-    <xsl:variable name="links" as="element()*">
-      <xsl:apply-templates mode="gloss:get-links-from-topics" select="$normalRoleTopics">
-        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>        
-      </xsl:apply-templates>
+    <!-- 
+      Sequence of maps, one for each link, containing the link element
+      and the topicref that establishes the map context.
+      
+      map{
+        'link'       : element(),
+        'mapContext' : element()
+      }
+      -->
+    <xsl:variable name="links" as="map(*)*">
+      <xsl:call-template name="gloss:get-links-from-topics">
+        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+        <xsl:with-param name="topics" as="map(*)*"/>
+        <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>
+      </xsl:call-template>
     </xsl:variable>       
     
     <xsl:if test="$localDebug or true()">
       <xsl:message>
 + [DEBUG] dita-community:glossary-filter: Have {count($links)} links:</xsl:message>
       <xsl:for-each select="$links">
-        <xsl:message>+ [DEBUG]   [{position()}] {name(.)} {if (exists(@keyref)) 
-          then ' keyref=&quot;' || @keyref || '&quot;'
-          else ()} href="{@href}" {
-          if (not(matches(., '^\s*$'))) 
-          then '&quot;' || normalize-space(.) || '&quot;'  
+        <xsl:variable name="map" as="map(*)" select="."/>
+        <xsl:variable name="link" as="element()" select="map:get($map, 'link')"/>
+        <xsl:message>+ [DEBUG]   [{position()}] {name($link)} {if (exists($link/@keyref)) 
+          then ' keyref=&quot;' || $link/@keyref || '&quot;'
+          else ()} href="{$link/@href}" {
+          if (not(matches($link, '^\s*$'))) 
+          then '&quot;' || normalize-space($link) || '&quot;'  
           else ''}</xsl:message>
       </xsl:for-each>        
-
     
     </xsl:if>
     
-    <xsl:variable name="directlyUsedGlossaryEntries" as="element()*">
-      <xsl:apply-templates select="$links" mode="gloss:get-glossary-entries-for-links">
+    <xsl:variable name="directlyUsedGlossaryEntries" as="map(*)*">
+      <xsl:call-template name="gloss:get-topics-for-links">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-        <xsl:with-param name="rootmap" as="element()" tunnel="yes" select="/*"/>        
-      </xsl:apply-templates>
+        <xsl:with-param name="links" as="map(*)*" select="$links"/>
+        <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>                  
+      </xsl:call-template>
     </xsl:variable>    
 
     <xsl:message>+ [INFO] dita-community:glossary-filter: Have {count($directlyUsedGlossaryEntries)} directly-used glossary entries</xsl:message>
     
-    <xsl:variable name="indirectlyUsedGlossaryEntries" as="element()*">
+    <xsl:variable name="indirectlyUsedGlossaryEntries" as="map(*)*">
       <xsl:call-template name="gloss:getIndirectlyUsedGlossaryEntries">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-        <xsl:with-param name="directlyUsedGlossaryEntries" as="element()*" select="$directlyUsedGlossaryEntries"/>
-        <xsl:with-param name="rootmap" as="element()" tunnel="yes" select="/*"/>        
+        <xsl:with-param name="directlyUsedGlossaryEntries" as="map(*)*" select="$directlyUsedGlossaryEntries"/>
+        <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>                  
       </xsl:call-template>
     </xsl:variable>
     
     <xsl:message>+ [DEBUG] dita-community:glossary-filter: Have {count($indirectlyUsedGlossaryEntries)} indirectly-used glossary entries</xsl:message>
 
-    <xsl:variable name="usedGlossaryEntries" as="element()*"
-      select="($directlyUsedGlossaryEntries | $indirectlyUsedGlossaryEntries)"
+    <xsl:variable name="usedGlossaryEntries" as="map(*)*"
+      select="($directlyUsedGlossaryEntries, $indirectlyUsedGlossaryEntries)"
     />
     
     <xsl:message>+ [DEBUG] dita-community:glossary-filter: Have {count($usedGlossaryEntries)} used glossary entries</xsl:message>
@@ -132,7 +151,7 @@
       <xsl:comment>[DEBUG] applying templates to map in mode dita-community:glossary-filter</xsl:comment>
       <xsl:apply-templates mode="#current">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug or $localDebug"/>
-        <xsl:with-param name="usedGlossaryEntries" as="element()*" tunnel="yes" 
+        <xsl:with-param name="usedGlossaryEntries" as="map(*)*" tunnel="yes" 
           select="$usedGlossaryEntries"
         />
       </xsl:apply-templates>
@@ -153,6 +172,51 @@
       <xsl:message>+ [DEBUG] dita-community:glossary-filter: After make-link-report.</xsl:message>
     </xsl:if>
 -->    
+    
+  </xsl:template>
+  
+  <!-- 
+    Given a set of topics, find all links in those topics that point outside
+    the topics that contain them.
+    @param topics sequence of maps with the topic elements and their map contexts
+    @param doDebug Turn debugging on or off.
+    @return Sequence of maps, one for each link, with the link and its map context.
+    -->
+  <xsl:template name="gloss:get-links-from-topics" as="map(*)*">
+    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    <xsl:param name="topics" as="map(*)*"/>
+    
+    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    
+    <xsl:for-each select="$topics">
+      <xsl:variable name="map" as="map(*)" select="."/>
+      <xsl:apply-templates mode="gloss:get-links-from-topics" select="map:get($map, 'topic')">
+        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+        <xsl:with-param name="mapContext" as="element()" select="map:get($map, 'mapContext')"/>
+      </xsl:apply-templates>        
+    </xsl:for-each>
+    
+  </xsl:template>
+  
+  <!-- 
+    Given a set of links, resolve them to their topics.
+    @param links sequence of maps with the link elements and their map contexts
+    @param doDebug Turn debugging on or off.
+    @return Sequence of maps, one for each resolved topic, with the topic and its map
+    context (normally the key definition that points directly to the topic, if it's
+    initially referenced by key, or the map element if it's a direct URI reference).
+    -->  
+  <xsl:template name="gloss:get-topics-for-links">
+    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    <xsl:param name="links" as="map(*)*"/>    
+    
+    <xsl:for-each select="$links">
+      <xsl:variable name="map" as="map(*)" select="."/>
+      <xsl:apply-templates select="map:get($map, 'link')" mode="gloss:get-glossary-entries-for-links">
+        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+        <xsl:with-param name="mapContext" as="element()" tunnel="yes" select="map:get($map, 'mapContext')"/>
+      </xsl:apply-templates>
+    </xsl:for-each>
     
   </xsl:template>
   
@@ -250,38 +314,48 @@
        
        Repeat until no more links are found.
     -->
-  <xsl:template name="gloss:getIndirectlyUsedGlossaryEntries" as="element()*">
+  <xsl:template name="gloss:getIndirectlyUsedGlossaryEntries" as="map(*)*">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    <xsl:param name="directlyUsedGlossaryEntries" as="element()*"/>
+    <xsl:param name="directlyUsedGlossaryEntries" as="map(*)*"/>
     
     <xsl:call-template name="gloss:_getIndirectlyUsedGlossaryEntries">
       <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-      <xsl:with-param name="directlyUsedGlossaryEntries" as="element()*" select="$directlyUsedGlossaryEntries"/>
+      <xsl:with-param name="directlyUsedGlossaryEntries" as="map(*)*" select="$directlyUsedGlossaryEntries"/>
     </xsl:call-template>
   </xsl:template>
   
   <!-- Recursive template to get references to glossary entries from the directly-used glossary entries -->
-  <xsl:template name="gloss:_getIndirectlyUsedGlossaryEntries" as="element()*">
+  <xsl:template name="gloss:_getIndirectlyUsedGlossaryEntries" as="map(*)*">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    <xsl:param name="directlyUsedGlossaryEntries" as="element()*"/>
+    <xsl:param name="directlyUsedGlossaryEntries" as="map(*)*"/>
     
     <!-- Get the links from the directly-used glossary entires, get the glossary
          entries from those, and recurse.
       -->
     
-    <xsl:variable name="links" as="element()*">
-      <xsl:apply-templates mode="gloss:get-links-from-topics" select="$directlyUsedGlossaryEntries">
+    <xsl:variable name="links" as="map(*)*">
+      <xsl:call-template name="gloss:get-links-from-topics">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-      </xsl:apply-templates>
+        <xsl:with-param name="topics" as="map(*)*" select="$directlyUsedGlossaryEntries"/>
+      </xsl:call-template>
+      
     </xsl:variable>
-    <xsl:variable name="newIndirectGlossaryEntries" as="element()*">
+    <xsl:variable name="newIndirectGlossaryEntries" as="map(*)*">      
       <xsl:apply-templates select="$links" mode="gloss:get-glossary-entries-for-links">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
       </xsl:apply-templates>
     </xsl:variable>
-    <xsl:variable name="newTopics" as="element()*"
+    <xsl:variable name="directGlossaryTopics" as="element()*"
+      select="$directlyUsedGlossaryEntries?topic"
+    />
+    <xsl:variable name="newTopics" as="map(*)*"
       select="
-        $newIndirectGlossaryEntries except ($directlyUsedGlossaryEntries)
+      for $map in $newIndirectGlossaryEntries
+      return 
+      let $newTopic := map:get($map, 'topic')
+      return if (exists($newTopic except $directGlossaryTopics))
+      then $map
+      else ()
       "
     />
     <xsl:choose>
@@ -291,7 +365,7 @@
       <xsl:otherwise>
         <xsl:call-template name="gloss:_getIndirectlyUsedGlossaryEntries">
           <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-          <xsl:with-param name="directlyUsedGlossaryEntries" as="element()*" select="$directlyUsedGlossaryEntries, $newTopics"/>
+          <xsl:with-param name="directlyUsedGlossaryEntries" as="map(*)*" select="$directlyUsedGlossaryEntries, $newTopics"/>
         </xsl:call-template>
       </xsl:otherwise>
     </xsl:choose>

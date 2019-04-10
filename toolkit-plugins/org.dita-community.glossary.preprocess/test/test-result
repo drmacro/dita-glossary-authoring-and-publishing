@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-result xmlns:xs="http://www.w3.org/2001/XMLSchema"
+             xmlns:gloss="http://org.dita-community/glossary">
+   <filtered-map><?workdir /Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/temp/html5?><?workdir-uri file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/temp/html5/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><!--[DEBUG] applying templates to map in mode dita-community:glossary-filter--><?workdir /Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/temp/html5?><?workdir-uri file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/temp/html5/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?>
+      <bookmap xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+               cascade="merge"
+               class="- map/map bookmap/bookmap "
+               ditaarch:DITAArchVersion="1.3"
+               domains="(map mapgroup-d) (map bookmap) (topic abbrev-d) (topic delay-d) a(props deliveryTarget) (map ditavalref-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic ui-d) (topic ut-d) (topic xnal-d) (topic markup-d xml-d)"
+               xtrc="bookmap:1;3:10"
+               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+         <booktitle class="- topic/title bookmap/booktitle "
+                    xtrc="booktitle:1;4:14"
+                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+            <mainbooktitle class="- topic/ph bookmap/mainbooktitle "
+                           xtrc="mainbooktitle:1;5:20"
+                           xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</mainbooktitle>
+         </booktitle>
+         <bookmeta class="- map/topicmeta bookmap/bookmeta "
+                   xtrc="bookmeta:1;7:13"
+                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+            <prodinfo class="- topic/prodinfo "
+                      xtrc="prodinfo:1;8:15"
+                      xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+               <prodname class="- topic/prodname "
+                         xtrc="prodname:1;9:17"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+               <vrmlist class="- topic/vrmlist "
+                        xtrc="vrmlist:1;10:16"
+                        xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                  <vrm class="- topic/vrm "
+                       release="0"
+                       version="1"
+                       xtrc="vrm:1;13:24"
+                       xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+               </vrmlist>
+            </prodinfo>
+         </bookmeta>
+         <frontmatter class="- map/topicref bookmap/frontmatter "
+                      xtrc="frontmatter:1;17:16"
+                      xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+            <topicgroup class="+ map/topicref mapgroup-d/topicgroup "
+                        processing-role="resource-only"
+                        xtrc="topicgroup:1;6:48"
+                        xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:1;7:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:1;8:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:1;9:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">A</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:2;39:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:2;40:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:2;41:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">B</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:3;56:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:3;57:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:3;58:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">C</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:4;69:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:4;70:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:4;71:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">D</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:5;95:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:5;96:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:5;97:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">E</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:6;104:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:6;105:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:6;106:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">F</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:7;113:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:7;114:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:7;115:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">G</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:8;136:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:8;137:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:8;138:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">H</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:9;172:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:9;173:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:9;174:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">I</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:10;194:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:10;195:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:10;196:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">J</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:11;218:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:11;219:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:11;220:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">K</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:12;308:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:12;309:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:12;310:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">M</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:13;340:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:13;341:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:13;342:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">N</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:14;366:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:14;367:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:14;368:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">O</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:15;383:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:15;384:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:15;385:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">R</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:16;403:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:16;404:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:16;405:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">S</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:17;478:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:17;479:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:17;480:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">T</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:18;525:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:18;526:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:18;527:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">U</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:19;552:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:19;553:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:19;554:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">W</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:20;562:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:20;563:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:20;564:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">Y</navtitle>
+                  </topicmeta>
+               </topichead>
+               <topichead class="+ map/topicref mapgroup-d/topichead "
+                          xtrc="topichead:21;585:18"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap"
+                          processing-role="resource-only">
+                  <topicmeta class="- map/topicmeta "
+                             xtrc="topicmeta:21;586:21"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">
+                     <navtitle class="- topic/navtitle "
+                               xtrc="navtitle:21;587:23"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-master-glossary-keydefs-en.ditamap">Z</navtitle>
+                  </topicmeta>
+               </topichead>
+            </topicgroup>
+            <keydef class="+ map/topicref mapgroup-d/keydef "
+                    format="jpg"
+                    keys="munetsuki-kotegaeshi-01"
+                    processing-role="resource-only"
+                    xtrc="keydef:1;8:4"
+                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+                    href="intro-to-aikido/topics/graphics/munetsuki-kotegaeshi-01.jpg">
+               <topicmeta class="- map/topicmeta ">
+                  <navtitle class="- topic/navtitle "/>
+                  <?ditaot gentext?>
+                  <linktext class="- map/linktext "/>
+                  <keywords class="- topic/keywords "
+                            xtrc="keywords:1;10:17"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap">
+                     <keyword class="- topic/keyword "
+                              xtrc="keyword:1;11:18"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap">munetsuki</keyword>
+                     <keyword class="- topic/keyword "
+                              xtrc="keyword:2;12:18"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap">kotegaeshi</keyword>
+                     <keyword class="- topic/keyword "
+                              xtrc="keyword:3;13:18"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap">strike</keyword>
+                     <keyword class="- topic/keyword "
+                              xtrc="keyword:4;14:18"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap">pin</keyword>
+                  </keywords>
+               </topicmeta>
+            </keydef>
+            <keydef class="+ map/topicref mapgroup-d/keydef "
+                    format="jpg"
+                    keys="shomenuchi-ikkyo-01"
+                    processing-role="resource-only"
+                    xtrc="keydef:2;21:5"
+                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+                    href="intro-to-aikido/topics/graphics/shomenuchi-ikkyo-01.jpg">
+               <topicmeta class="- map/topicmeta ">
+                  <navtitle class="- topic/navtitle "/>
+                  <?ditaot gentext?>
+                  <linktext class="- map/linktext "/>
+               </topicmeta>
+            </keydef>
+            <keydef class="+ map/topicref mapgroup-d/keydef "
+                    format="jpg"
+                    keys="shomenuchi-iriminage-01"
+                    processing-role="resource-only"
+                    xtrc="keydef:3;25:5"
+                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/graphics/aikido-graphics-keydefs.ditamap"
+                    href="intro-to-aikido/topics/graphics/shomenuchi-iriminage-01.jpg">
+               <topicmeta class="- map/topicmeta ">
+                  <navtitle class="- topic/navtitle "/>
+                  <?ditaot gentext?>
+                  <linktext class="- map/linktext "/>
+               </topicmeta>
+            </keydef>
+            <keydef class="+ map/topicref mapgroup-d/keydef "
+                    keys="res-technique-comps"
+                    processing-role="resource-only"
+                    xtrc="keydef:1;8:33"
+                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/common/techniques/aikido-technique-resources.ditamap"
+                    href="common/techniques/topics/aikido-technique-descriptions.dita"
+                    type="topic">
+               <topicmeta class="- map/topicmeta ">
+                  <navtitle class="- topic/navtitle ">Aikido Technique Components</navtitle>
+                  <?ditaot gentext?>
+                  <linktext class="- map/linktext ">Aikido Technique Components</linktext>
+                  <prodinfo class="- topic/prodinfo "
+                            xtrc="prodinfo:1;8:15"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                     <prodname class="- topic/prodname "
+                               xtrc="prodname:1;9:17"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                     <vrmlist class="- topic/vrmlist "
+                              xtrc="vrmlist:1;10:16"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <vrm class="- topic/vrm "
+                             release="0"
+                             version="1"
+                             xtrc="vrm:1;13:24"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                     </vrmlist>
+                  </prodinfo>
+               </topicmeta>
+            </keydef>
+         </frontmatter>
+         <chapter class="- map/topicref bookmap/chapter "
+                  keys="introduction"
+                  xtrc="chapter:1;29:54"
+                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                  href="intro-to-aikido/topics/chapter-intro.dita"
+                  type="concept">
+            <topicmeta class="- map/topicmeta ">
+               <navtitle class="- topic/navtitle ">Aikido, The Gentle Martial Art</navtitle>
+               <?ditaot gentext?>
+               <linktext class="- map/linktext ">Aikido, The Gentle Martial Art</linktext>
+               <?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Aikido is a purely defensive martial art in which   you train cooperatively with a partner with the goal of achieving   harmony between attacker and defender.</shortdesc>
+               <prodinfo class="- topic/prodinfo "
+                         xtrc="prodinfo:1;8:15"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                  <prodname class="- topic/prodname "
+                            xtrc="prodname:1;9:17"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                  <vrmlist class="- topic/vrmlist "
+                           xtrc="vrmlist:1;10:16"
+                           xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                     <vrm class="- topic/vrm "
+                          release="0"
+                          version="1"
+                          xtrc="vrm:1;13:24"
+                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                  </vrmlist>
+               </prodinfo>
+            </topicmeta>
+            <topicref class="- map/topicref "
+                      keys="rokyu-requirements"
+                      xtrc="topicref:1;31:62"
+                      xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                      href="intro-to-aikido/topics/rokyu-requirements.dita"
+                      type="concept">
+               <topicmeta class="- map/topicmeta ">
+                  <navtitle class="- topic/navtitle ">Rokyu (6th Kyu) Requirements</navtitle>
+                  <?ditaot gentext?>
+                  <linktext class="- map/linktext ">Rokyu (6th Kyu) Requirements</linktext>
+                  <?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">6th Kyu is the first level     of white belt earned by Aikido     beginners.</shortdesc>
+                  <prodinfo class="- topic/prodinfo "
+                            xtrc="prodinfo:1;8:15"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                     <prodname class="- topic/prodname "
+                               xtrc="prodname:1;9:17"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                     <vrmlist class="- topic/vrmlist "
+                              xtrc="vrmlist:1;10:16"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <vrm class="- topic/vrm "
+                             release="0"
+                             version="1"
+                             xtrc="vrm:1;13:24"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                     </vrmlist>
+                  </prodinfo>
+               </topicmeta>
+            </topicref>
+            <topichead chunk="to-content"
+                       class="+ map/topicref mapgroup-d/topichead "
+                       collection-type="sequence"
+                       copy-to="aikido-techniques.dita"
+                       keys="aikido-techniques"
+                       xtrc="topichead:1;35:34"
+                       xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                       href="aikido-techniques.dita#aikido-techniques"
+                       type="topic">
+               <topicmeta class="- map/topicmeta ">
+                  <navtitle class="- topic/navtitle ">Aikido Techniques</navtitle>
+                  <?ditaot gentext?>
+                  <linktext class="- map/linktext ">Aikido Techniques</linktext>
+                  <prodinfo class="- topic/prodinfo "
+                            xtrc="prodinfo:1;8:15"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                     <prodname class="- topic/prodname "
+                               xtrc="prodname:1;9:17"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                     <vrmlist class="- topic/vrmlist "
+                              xtrc="vrmlist:1;10:16"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <vrm class="- topic/vrm "
+                             release="0"
+                             version="1"
+                             xtrc="vrm:1;13:24"
+                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                     </vrmlist>
+                  </prodinfo>
+               </topicmeta>
+               <topicref class="- map/topicref "
+                         keys="kokyu-tanden-ho"
+                         xtrc="topicref:2;40:61"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                         href="aikido-techniques.dita#referenceId"
+                         type="reference">
+                  <topicmeta class="- map/topicmeta ">
+                     <navtitle class="- topic/navtitle ">Kokyu tanden ho</navtitle>
+                     <?ditaot gentext?>
+                     <linktext class="- map/linktext ">Kokyu tanden ho</linktext>
+                     <?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Breath power (<term class="- topic/term "
+                              href="glossary/en/gloss-kokyu.dita"
+                              keyref="glossary.kokyu"
+                              xtrc="term:1;5:59"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/kokyu-tanden-ho.dita"/>) throw or exercise (<term class="- topic/term "
+                              href="glossary/en/gloss-ho-1.dita"
+                              keyref="glossary.ho-1"
+                              xtrc="term:2;6:30"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/kokyu-tanden-ho.dita">ho</term>) from kneeling position (<term class="- topic/term "
+                              href="glossary/en/gloss-seiza.dita"
+                              keyref="glossary.seiza"
+                              xtrc="term:3;7:8"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/kokyu-tanden-ho.dita">seiza</term>)</shortdesc>
+                     <prodinfo class="- topic/prodinfo "
+                               xtrc="prodinfo:1;8:15"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <prodname class="- topic/prodname "
+                                  xtrc="prodname:1;9:17"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                        <vrmlist class="- topic/vrmlist "
+                                 xtrc="vrmlist:1;10:16"
+                                 xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <vrm class="- topic/vrm "
+                                release="0"
+                                version="1"
+                                xtrc="vrm:1;13:24"
+                                xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                        </vrmlist>
+                     </prodinfo>
+                  </topicmeta>
+               </topicref>
+               <topicref class="- map/topicref "
+                         keys="katatedori-shihonage"
+                         xtrc="topicref:3;42:66"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                         href="aikido-techniques.dita#unique_1253726691"
+                         type="reference">
+                  <topicmeta class="- map/topicmeta ">
+                     <navtitle class="- topic/navtitle ">Katatedori shihonage</navtitle>
+                     <?ditaot gentext?>
+                     <linktext class="- map/linktext ">Katatedori shihonage</linktext>
+                     <?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Four direction throw     (<term class="- topic/term "
+                              href="glossary/en/gloss-shihonage.dita"
+                              keyref="glossary.shihonage"
+                              xtrc="term:1;6:41"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/katatedori-shihonage.dita"/>) from     opposite hand grab     (<term class="- topic/term "
+                              href="glossary/en/gloss-katatedori.dita"
+                              keyref="glossary.katatedori"
+                              xtrc="term:2;8:42"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/katatedori-shihonage.dita"/>).</shortdesc>
+                     <prodinfo class="- topic/prodinfo "
+                               xtrc="prodinfo:1;8:15"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <prodname class="- topic/prodname "
+                                  xtrc="prodname:1;9:17"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                        <vrmlist class="- topic/vrmlist "
+                                 xtrc="vrmlist:1;10:16"
+                                 xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <vrm class="- topic/vrm "
+                                release="0"
+                                version="1"
+                                xtrc="vrm:1;13:24"
+                                xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                        </vrmlist>
+                     </prodinfo>
+                  </topicmeta>
+               </topicref>
+               <topicref class="- map/topicref "
+                         keys="munetsuki-kotegaeshi"
+                         xtrc="topicref:4;44:66"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                         href="aikido-techniques.dita#unique_409306213"
+                         type="reference">
+                  <topicmeta class="- map/topicmeta ">
+                     <navtitle class="- topic/navtitle ">Munetsuki kotegaeshi</navtitle>
+                     <?ditaot gentext?>
+                     <linktext class="- map/linktext ">Munetsuki kotegaeshi</linktext>
+                     <?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Wrist out turn     (<term class="- topic/term "
+                              href="glossary/en/gloss-kotegaeshi.dita"
+                              keyref="glossary.kotegaeshi"
+                              xtrc="term:1;6:42"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>) for strike     to the abdomen (<term class="- topic/term "
+                              href="glossary/en/gloss-mune.dita"
+                              keyref="glossary.mune"
+                              xtrc="term:2;7:51"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>
+                        <term class="- topic/term "
+                              href="glossary/en/gloss-tsuki.dita"
+                              keyref="glossary.tsuki"
+                              xtrc="term:3;8:36"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>) attack.</shortdesc>
+                     <prodinfo class="- topic/prodinfo "
+                               xtrc="prodinfo:1;8:15"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <prodname class="- topic/prodname "
+                                  xtrc="prodname:1;9:17"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                        <vrmlist class="- topic/vrmlist "
+                                 xtrc="vrmlist:1;10:16"
+                                 xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <vrm class="- topic/vrm "
+                                release="0"
+                                version="1"
+                                xtrc="vrm:1;13:24"
+                                xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                        </vrmlist>
+                     </prodinfo>
+                  </topicmeta>
+               </topicref>
+               <topicref class="- map/topicref "
+                         keys="shomenuchi-ikkyo"
+                         xtrc="topicref:5;46:62"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                         href="aikido-techniques.dita#unique_2105298200"
+                         type="reference">
+                  <topicmeta class="- map/topicmeta ">
+                     <navtitle class="- topic/navtitle ">Shomenuchi ikkyo</navtitle>
+                     <?ditaot gentext?>
+                     <linktext class="- map/linktext ">Shomenuchi ikkyo</linktext>
+                     <?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">First principle (<term class="- topic/term "
+                              href="glossary/en/gloss-ikkyo.dita"
+                              keyref="glossary.ikkyo"
+                              xtrc="term:1;5:62"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/shomenuchi-ikkyo.dita"/>) for <term class="- topic/term "
+                              href="glossary/en/gloss-shomenuchi.dita"
+                              keyref="glossary.shomenuchi"
+                              xtrc="term:2;5:104"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/shomenuchi-ikkyo.dita"/> attack.</shortdesc>
+                     <prodinfo class="- topic/prodinfo "
+                               xtrc="prodinfo:1;8:15"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <prodname class="- topic/prodname "
+                                  xtrc="prodname:1;9:17"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                        <vrmlist class="- topic/vrmlist "
+                                 xtrc="vrmlist:1;10:16"
+                                 xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <vrm class="- topic/vrm "
+                                release="0"
+                                version="1"
+                                xtrc="vrm:1;13:24"
+                                xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                        </vrmlist>
+                     </prodinfo>
+                  </topicmeta>
+               </topicref>
+               <topicref class="- map/topicref "
+                         keys="shomenuchi-iriminage"
+                         xtrc="topicref:6;48:66"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                         href="aikido-techniques.dita#unique_930767934"
+                         type="reference">
+                  <topicmeta class="- map/topicmeta ">
+                     <navtitle class="- topic/navtitle ">Shomenuchi iriminage</navtitle>
+                     <?ditaot gentext?>
+                     <linktext class="- map/linktext ">Shomenuchi iriminage</linktext>
+                     <?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Entering throw     (<term class="- topic/term "
+                              href="glossary/en/gloss-iriminage.dita"
+                              keyref="glossary.iriminage"
+                              xtrc="term:1;6:41"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/shomenuchi-iriminage.dita"/>) for     <term class="- topic/term "
+                              href="glossary/en/gloss-shomenuchi.dita"
+                              keyref="glossary.shomenuchi"
+                              xtrc="term:2;7:41"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/shomenuchi-iriminage.dita"/>     attack.</shortdesc>
+                     <prodinfo class="- topic/prodinfo "
+                               xtrc="prodinfo:1;8:15"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <prodname class="- topic/prodname "
+                                  xtrc="prodname:1;9:17"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                        <vrmlist class="- topic/vrmlist "
+                                 xtrc="vrmlist:1;10:16"
+                                 xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <vrm class="- topic/vrm "
+                                release="0"
+                                version="1"
+                                xtrc="vrm:1;13:24"
+                                xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                        </vrmlist>
+                     </prodinfo>
+                  </topicmeta>
+               </topicref>
+               <topicref class="- map/topicref "
+                         keys="yokomenuchi-shihonage"
+                         xtrc="topicref:7;50:67"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"
+                         href="aikido-techniques.dita#unique_313880054"
+                         type="reference">
+                  <topicmeta class="- map/topicmeta ">
+                     <navtitle class="- topic/navtitle ">Yokomenuchi shihonage</navtitle>
+                     <?ditaot gentext?>
+                     <linktext class="- map/linktext ">Yokomenuchi shihonage</linktext>
+                     <?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Four direction throw     (<term class="- topic/term "
+                              href="glossary/en/gloss-shihonage.dita"
+                              keyref="glossary.shihonage"
+                              xtrc="term:1;6:41"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>) in response     to strike to the side of the head     (<term class="- topic/term "
+                              href="glossary/en/gloss-yokomenuchi.dita"
+                              keyref="glossary.yokomenuchi"
+                              xtrc="term:2;8:43"
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>).</shortdesc>
+                     <prodinfo class="- topic/prodinfo "
+                               xtrc="prodinfo:1;8:15"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <prodname class="- topic/prodname "
+                                  xtrc="prodname:1;9:17"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                        <vrmlist class="- topic/vrmlist "
+                                 xtrc="vrmlist:1;10:16"
+                                 xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <vrm class="- topic/vrm "
+                                release="0"
+                                version="1"
+                                xtrc="vrm:1;13:24"
+                                xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                        </vrmlist>
+                     </prodinfo>
+                  </topicmeta>
+               </topicref>
+            </topichead>
+         </chapter>
+         <backmatter class="- map/topicref bookmap/backmatter "
+                     xtrc="backmatter:1;53:15"
+                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+            <booklists class="- map/topicref bookmap/booklists "
+                       xtrc="booklists:1;54:16"
+                       xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+               <topicref chunk="to-content select-branch"
+                         class="- map/topicref bookmap/glossarylist "
+                         xtrc="topicref:1;5:77"
+                         xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                         href="topic_grs_rmg_ld.dita#topic_grs_rmg_ld"
+                         type="topic">
+                  <topicmeta class="- map/topicmeta ">
+                     <navtitle class="- topic/navtitle ">Glossary of Aikido Terminology</navtitle>
+                     <?ditaot gentext?>
+                     <linktext class="- map/linktext ">Glossary of Aikido Terminology</linktext>
+                     <prodinfo class="- topic/prodinfo "
+                               xtrc="prodinfo:1;8:15"
+                               xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                        <prodname class="- topic/prodname "
+                                  xtrc="prodname:1;9:17"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                        <vrmlist class="- topic/vrmlist "
+                                 xtrc="vrmlist:1;10:16"
+                                 xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <vrm class="- topic/vrm "
+                                release="0"
+                                version="1"
+                                xtrc="vrm:1;13:24"
+                                xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                        </vrmlist>
+                     </prodinfo>
+                  </topicmeta>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:2;6:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-A"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">A</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">A</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:30;35:55"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-B"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">B</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">B</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:43;49:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-C"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">C</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">C</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:52;59:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-D"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">D</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">D</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:73;82:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-E"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">E</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">E</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:78;88:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-F"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">F</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">F</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:83;94:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-G"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">G</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">G</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:102;114:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-H"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">H</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">H</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:134;147:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-I"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">I</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">I</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:152;166:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-J"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">J</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">J</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:172;187:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-K"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">K</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">K</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:258;274:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-M"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">M</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">M</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:286;303:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-N"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">N</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">N</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:307;326:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-O"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">O</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">O</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:320;340:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-R"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">R</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">R</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:336;357:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-S"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">S</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">S</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:407;429:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-T"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">T</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">T</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:450;473:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-U"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">U</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">U</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:473;497:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-W"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">W</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">W</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:479;504:56"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-Y"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">Y</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">Y</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+                  <topicref class="- map/topicref "
+                            toc="no"
+                            xtrc="topicref:498;524:55"
+                            xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/glossary/aikido-glossary-navigation-en.ditamap"
+                            href="topic_grs_rmg_ld.dita#letter-group-Z"
+                            type="glossgroup">
+                     <topicmeta class="- map/topicmeta ">
+                        <navtitle class="- topic/navtitle ">Z</navtitle>
+                        <?ditaot gentext?>
+                        <linktext class="- map/linktext ">Z</linktext>
+                        <prodinfo class="- topic/prodinfo "
+                                  xtrc="prodinfo:1;8:15"
+                                  xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                           <prodname class="- topic/prodname "
+                                     xtrc="prodname:1;9:17"
+                                     xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">Introduction to Aikido</prodname>
+                           <vrmlist class="- topic/vrmlist "
+                                    xtrc="vrmlist:1;10:16"
+                                    xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
+                              <vrm class="- topic/vrm "
+                                   release="0"
+                                   version="1"
+                                   xtrc="vrm:1;13:24"
+                                   xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap"/>
+                           </vrmlist>
+                        </prodinfo>
+                     </topicmeta>
+                  </topicref>
+               </topicref>
+            </booklists>
+         </backmatter>
+      </bookmap>
+      <!--[DEBUG] After applying templates in mode dita-community:glossary-filter-->
+   </filtered-map>
+</test-result>

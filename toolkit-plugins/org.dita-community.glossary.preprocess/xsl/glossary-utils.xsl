@@ -7,7 +7,8 @@
   xmlns:gloss="http://org.dita-community/glossary"
   xmlns:dci18n="http://org.dita-community/i18n"
   xmlns:dci18nfunc="http://org.dita-community/i18n/saxon-extensions"  
-  exclude-result-prefixes="xs df relpath dita-ot gloss"
+  xmlns:map="http://www.w3.org/2005/xpath-functions/map"
+  exclude-result-prefixes="xs df relpath dita-ot gloss map"
   expand-text="yes"
   version="3.0">
   <!-- ===========================================================
@@ -22,9 +23,17 @@
        If excludeClass is specified, include all topics except those excluded.
        If includeClass is specified (and excludeClass is not), include only
        those topics with the specified class.
+       
+       For each topicref that can be resolved, constructs a map with the
+       topicref and the topic.
+       
+       map{
+         'topicref' : element(),
+         'topic' : element()?
+       }
     -->
   <xsl:template mode="gloss:get-topics-for-topicrefs" 
-    match="*[df:isTopicRefToTopic(.)]" as="element()*">
+    match="*[df:isTopicRefToTopic(.)]" as="map(*)*">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>    
     <xsl:param name="processDescendantTopicrefs" as="xs:boolean" tunnel="yes" select="true()"/>
     <xsl:param name="excludeClass" as="xs:string?" tunnel="yes" select="()"/>
@@ -37,6 +46,9 @@
       <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs:   processDescendantTopicrefs="{$processDescendantTopicrefs}"</xsl:message>
     </xsl:if>
     
+    <xsl:variable name="topicref" as="element()" select="."/>
+    
+    <!-- FIXME: Probably need to use the keyspaces to resolve the topicrefs -->
     <xsl:variable name="topic" as="element()?"
       select="df:resolveTopicRef(., false())"
     />
@@ -56,7 +68,7 @@
           <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs:   Including the topic with class "{$includeClass}"</xsl:message>
         </xsl:if>
         <!-- Including this topic -->
-        <xsl:sequence select="$topic"/>
+        <xsl:sequence select="map{'topic' : $topic, 'mapContext' : $topicref}"/>
       </xsl:when>
       <xsl:when test="empty($includeClass)">
         <!-- If no includeClass and we get here, then topic was neither explicitly excluded or included -->
@@ -64,7 +76,7 @@
           <xsl:message>+ [DEBUG] gloss:get-topics-for-topicrefs:   Returning the topic</xsl:message>
         </xsl:if>
         <!-- Not excluded -->
-        <xsl:sequence select="$topic"/>    
+        <xsl:sequence select="map{'mapContext' : $topicref, 'topic' : $topic}"/>    
       </xsl:when>
       <xsl:otherwise>
         <!-- Must not be explicitly included -->
