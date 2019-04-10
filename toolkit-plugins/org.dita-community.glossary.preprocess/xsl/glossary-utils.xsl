@@ -330,4 +330,51 @@
     <xsl:sequence select="$result"/>
   </xsl:function>
   
+  <!--
+    Determine of the specified topicref is a topicref to a glossary group topic.
+    @param context topicref to be evaluated
+    @return true() if the topicref is to a glossary group topic.
+    -->
+  <xsl:function name="gloss:isTopicrefToGlossaryGroup" as="xs:boolean">
+    <xsl:param name="context" as="element()"/>
+    <xsl:sequence select="gloss:isTopicrefToGlossaryGroup($context, false())"/>
+  </xsl:function>
+  
+  <!--
+    Determine of the specified topicref is a topicref to a glossary group topic.
+    @param context topicref to be evaluated
+    @param doDebug turn debugging on or off
+    @return true() if the topicref is to a glossary group topic.
+    -->
+  <xsl:function name="gloss:isTopicrefToGlossaryGroup" as="xs:boolean">
+    <xsl:param name="context" as="element()"/>
+    <xsl:param name="doDebug" as="xs:boolean"/>
+    
+    <xsl:variable name="result" as="xs:boolean">
+      <xsl:choose>
+        <xsl:when test="df:isTopicRef($context)">
+          <xsl:variable name="topic" as="element()?" select="df:resolveTopicRef($context, $doDebug)"/>
+          <xsl:if test="$doDebug">
+            <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryGroup(): keyref="{$context/@keyref}", href="<xsl:value-of
+              select="$context/@href"/>"</xsl:message>
+            <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryGroup(): topic exists: {exists($topic)}</xsl:message>
+            <xsl:if test="exists($topic)">
+              <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryGroup(): topic class: {$topic/@class}</xsl:message>        
+            </xsl:if>
+          </xsl:if>
+          <xsl:sequence
+            select="
+            exists($topic) and
+            contains($topic/@class, ' glossgroup/glossgroup ')
+            "
+          />                  
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:sequence select="false()"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:sequence select="$result"/>
+  </xsl:function>
+  
 </xsl:stylesheet>

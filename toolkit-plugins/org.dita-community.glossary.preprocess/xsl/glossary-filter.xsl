@@ -250,7 +250,7 @@
   </xsl:template>
   
   <!-- If the topicref is to a used glossary entry, keep it, otherwise ignore it. -->
-  <xsl:template mode="dita-community:glossary-filter" match="*[gloss:isTopicrefToGlossaryEntry(.)]">
+  <xsl:template mode="dita-community:glossary-filter" match="*[gloss:isTopicrefToGlossaryEntry(.)]" priority="10">  
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     <xsl:param name="usedGlossaryEntries" as="map(*)*" tunnel="yes"/>
     
@@ -277,6 +277,48 @@
         <xsl:apply-templates select="*[contains(@class, ' map/topicref ')]" mode="#current">
           <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>                  
         </xsl:apply-templates>
+      </xsl:otherwise>
+    </xsl:choose>  </xsl:template>
+  
+  <!--
+    If the glossary group is empty after filtering then filter it out too.
+   -->
+  <xsl:template mode="dita-community:glossary-filter" match="*[gloss:isTopicrefToGlossaryGroup(.)]">
+    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
+        
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] dita-community:glossary-filter: Glossary group "{df:getNavtitleForTopicref(.)}"</xsl:message>
+    </xsl:if>    
+
+    <xsl:variable name="descendantTopicrefs" as="element()*">
+      <xsl:apply-templates mode="#current" select="*[contains(@class, ' map/topicref ')]">
+        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+      </xsl:apply-templates>
+    </xsl:variable>
+
+    <xsl:choose>
+      <xsl:when test="empty($descendantTopicrefs)">
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] dita-community:glossary-filter: topicref to glossary group - All descendants filtered out, filtering group out too.</xsl:message>
+        </xsl:if>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] dita-community:glossary-filter: topicref to glossary group - Have descendants filtered out, keeping the group.</xsl:message>
+        </xsl:if>
+        
+        <xsl:copy copy-namespaces="false">
+          <!-- Handle non-topicref descendants normally -->
+          <xsl:apply-templates mode="#current" select="@*, node()[not(contains(@class, ' map/topicref '))]">
+            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+          </xsl:apply-templates>
+          <xsl:sequence select="$descendantTopicrefs"/>
+          <!-- NOTE: This will not preserve any non-element nodes that follow the child topicrefs, i.e., processing instructions,
+                     but there shouldn't be any of those anyway.
+            -->
+        </xsl:copy>
       </xsl:otherwise>
     </xsl:choose>
     
