@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="ppg1476729408479" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Ares Memory Management Unit</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Memory Management Unit</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+    <topicref href="ste1440492642242.xml" class="- map/topicref " navtitle="about the mmu" outputclass="nolist">
+        <topicref href="xkn1476729556026.xml" class="- map/topicref " navtitle="Main functions"/>
+        <topicref href="xuo1477579095010.xml" class="- map/topicref " navtitle="AAarch32 and AArch64 behavior differences"/>        
+    </topicref>
+    <topicref href="etz1477585331163.xml" class="- map/topicref " navtitle="TLB org">
+        <topicref href="fbf1477585445698.xml" class="- map/topicref " navtitle="instruction micro TLB"/>
+        <topicref href="clm1477585597992.xml" class="- map/topicref " navtitle="data micro TLB"/>
+        <topicref href="blh1477585707279.xml" class="- map/topicref " navtitle="main TLB"/>
+    </topicref>
+    
+    <topicref href="siy1480519308825.xml" class="- map/topicref " navtitle="TLB match proces"/>
+    
+    <topicref href="lvk1477657616206.xml" class="- map/topicref " keys="lvk1477657616206">
+        <topicref href="fof1473690676831.xml" class="- map/topicref " keys="fof1473690676831"/>
+    </topicref>
+    
+    
+    <topicref href="coj1473337690216.xml" class="- map/topicref " navtitle="MMU memory accesses" outputclass="nolist"> 
+        <topicref href="mnh1473691255020.xml" class="- map/topicref " navtitle="Configuring MMU accesses"/>
+        <topicref href="ggb1473691529883.xml" class="- map/topicref " navtitle="Descriptor hardware update"/>  
+    </topicref>
+    <topicref href="lau1465225243151.xml" class="- map/topicref " navtitle="Specific behaviors on aborts and memory attributes" outputclass="nolist">
+        <topicref href="ksp1473707823413.xml" class="- map/topicref " navtitle="External aborts"/>
+        <topicref href="fge1473708290149.xml" class="- map/topicref " navtitle="Mis-programming contiguous hints"/>  
+             
+        <topicref href="tzl1473708582320.xml" class="- map/topicref " navtitle="Memory attributes"/>          
+    <topicref href="smf1554201061027.xml" class="- map/topicref " keys="PageBasedHardwareAttributes"/></topicref>
+
+
+<topicref href="smf1554201061027.xml" class="- map/topicref " keys="smf1554201061027"/></map>

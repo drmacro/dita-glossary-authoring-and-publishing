@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1465225243151" xml:lang="en-us">
+	<title class="- topic/title ">Specific behaviors on aborts and memory attributes</title>
+	<shortdesc class="- topic/shortdesc ">This section describes specific behaviors caused by aborts and also
+		describes memory attributes.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">MMU responses</title>
+			<p class="- topic/p ">When one of the following translation is completed, the MMU
+				generates a response to the requester:</p>
+			<ul class="- topic/ul ">
+				
+				
+				<li class="- topic/li ">A L1 TLB hit.</li>
+				<li class="- topic/li ">A L2 TLB hit.</li>
+				<li class="- topic/li ">A translation table walk.</li>
+			</ul>
+			<p class="- topic/p ">The response from the MMU contains the following information:</p>
+			
+			
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The PA corresponding to the translation.</li>
+				<li class="- topic/li ">A set of permissions.</li>
+				<li class="- topic/li ">Secure or Non-secure.</li>
+				<li class="- topic/li ">All the information required to report aborts. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more details.</li>
+			</ul>
+		</section>
+		
+		
+		
+
+		
+	</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="ksp1473707823413.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">External aborts</linktext><desc class="- topic/desc ">External aborts are defined as those that occur in the memory system 		rather than those that the MMU detects. Normally, external memory aborts are rare. External 		aborts are caused by errors flagged to the external interface.</desc></link><link class="- topic/link " format="dita" href="fge1473708290149.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Mis-programming contiguous hints</linktext><desc class="- topic/desc ">In the case of a mis-programming contiguous hint, when there is a 				descriptor that contains a set CH bit, all contiguous VAs contained in this block 				should be included in the input VA address space that is defined for stage 1 by TxSZ 				for TTBx or for stage 2 by {SL0, T0SZ}.</desc></link><link class="- topic/link " format="dita" href="tzl1473708582320.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Memory attributes</linktext><desc class="- topic/desc ">The memory region attributes specified in the TLB entry, or in the 		descriptor in case of translation table walk, determine if the access is:</desc></link><link class="- topic/link " format="dita" href="smf1554201061027.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Page Based Hardware Attributes</linktext><desc class="- topic/desc "><term class="- topic/term ">Page Based Hardware Attributes</term> (PBHA) is an optional, implementation defined feature.</desc></link></linkpool></linkpool></related-links></reference>

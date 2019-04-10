@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="deb1356102801769" xml:lang="en-us">
+	<title class="- topic/title ">Glossary</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Glossary</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Glossary is a list of terms used in <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> documentation, together
+				with definitions for those terms. The <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+				Glossary does not contain terms that are industry standard unless the <keyword class="- topic/keyword ">Arm</keyword> meaning
+				differs from the generally accepted meaning.</p>
+			<p class="- topic/p ">See the <ph class="- topic/ph "><xref class="- topic/xref " format="html" href="http://infocenter.arm.com/help/topic/com.arm.doc.aeg0014-/index.html" scope="external"><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Glossary</xref></ph> for more information.</p>
+		</section>
+	</refbody>
+</reference>

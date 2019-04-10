@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440674845060" xml:lang="en-us">
+  <title class="- topic/title ">Interaction with the PMU and Debug</title>
+  <shortdesc class="- topic/shortdesc ">This section describes the interaction with the PMU and the effect of
+    debug double lock on trace register access.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Interaction with the PMU</title>
+      <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core
+        includes a PMU that enables events, such as cache misses and instructions executed, to be
+        counted over a period of time.</p>
+      <p class="- topic/p ">The PMU and ETM trace unit function together.</p>
+    </section>
+    <section class="- topic/section ">
+
+
+      <title class="- topic/title ">Use of PMU events by the ETM trace unit</title>
+      <p class="- topic/p ">The PMU architectural events described in <xref class="- topic/xref " href="tgw1477591342487.xml" keyref="PmuEvents" type="reference">PMU events (Ares/Enyo/Deimos Specific)<desc class="- topic/desc ">The following table shows the events that are generated and the numbers     that the PMU uses to reference the events. The table also shows the bit position of each event     on the event bus. Event reference numbers that are not listed are reserved.</desc></xref> are available to the ETM trace unit through the extended input
+        facility.</p>
+      <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more information about PMU events.</p>
+      <p class="- topic/p "><ph class="- topic/ph ">The ETM</ph> trace unit uses four extended external
+        input selectors to access the PMU events. Each selector can independently select one of the
+        PMU events, that are then active for the cycles where the relevant events occur. These
+        selected events can then be accessed by any of the event registers within the ETM trace
+        unit. The PMU event table describes the PMU events.</p>
+
+
+    </section>
+    
+
+
+
+
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><link class="- topic/link " format="dita" href="tgw1477591342487.xml" role="friend" scope="local" type="reference"><linktext class="- topic/linktext ">PMU events (Ares/Enyo/Deimos Specific)</linktext><desc class="- topic/desc ">The following table shows the events that are generated and the numbers     that the PMU uses to reference the events. The table also shows the bit position of each event     on the event bus. Event reference numbers that are not listed are reserved.</desc></link></linkpool></related-links></reference>

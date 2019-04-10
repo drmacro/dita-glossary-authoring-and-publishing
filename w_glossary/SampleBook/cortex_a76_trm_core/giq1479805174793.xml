@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="giq1479805174793" xml:lang="en-us">
+  <title class="- topic/title ">About the core</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">About the core</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+    core is a high-performance and low-power <keyword class="- topic/keyword ">Arm</keyword> product that implements the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8‑A</keyword></ph> architecture.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      
+      
+      
+      <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core supports:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.2‑A</keyword></ph> extension.</li>
+        
+        <li class="- topic/li ">The RAS extension.</li>
+        
+        
+        
+        <li class="- topic/li ">The Load acquire (<codeph class="+ topic/ph pr-d/codeph ">LDAPR</codeph>) instructions introduced in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.3‑A</keyword></ph> extension</li>
+        <li class="- topic/li ">The Dot Product support instructions introduced in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.4‑A</keyword></ph> extension.</li>
+        
+        
+        
+        <li class="- topic/li ">The PSTATE <term class="- topic/term ">Speculative Store Bypass Safe</term> (SSBS) bit and the speculation barriers (CSDB, SSBB, PSSBB) instructions introduced in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.5‑A</keyword></ph> extension.</li>        
+        
+        
+      </ul>
+      <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+        core has a <term class="- topic/term ">Level 1</term> (L1) memory system and
+        a private, integrated <term class="- topic/term ">Level 2</term> (L2) cache. It also includes a
+        superscalar, variable-length, out-of-order pipeline. </p>
+      <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core is implemented inside the <term class="- topic/term "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm> Shared Unit</term> (<keyword class="- topic/keyword ">DSU</keyword>) cluster. For more information, see the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite>.</p>
+      
+      
+      
+      <p class="- topic/p ">The following figure shows an example of a configuration with four <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> cores.</p>
+      
+      <fig class="- topic/fig " id="fig_v1v_zsv_2fb">
+        <title class="- topic/title ">Example <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> configuration</title>
+        <image class="- topic/image " href="ste1441025446101.svg" id="image_w1v_zsv_2fb" placement="inline">
+          <alt class="- topic/alt ">Figure 1 Example  <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core configuration</alt>
+        </image>
+      </fig>
+      
+      
+      
+      
+      
+
+    </section>
+  </refbody>
+</reference>

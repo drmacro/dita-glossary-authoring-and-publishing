@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="tgw1477591342487" xml:lang="en-us">
+  <title class="- topic/title ">PMU events</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">PMU events</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">The following table shows the events that are generated and the numbers
+    that the PMU uses to reference the events. The table also shows the bit position of each event
+    on the event bus. Event reference numbers that are not listed are reserved.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      
+      <table class="- topic/table " id="table_vxj_2h2_vp">
+        <title class="- topic/title ">PMU Events</title>
+        <tgroup class="- topic/tgroup " cols="4">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Event number</entry>
+              <entry class="- topic/entry " colname="col2">PMU event bus (to trace)</entry>
+              <entry class="- topic/entry " colname="col3">Event mnemonic</entry>
+              <entry class="- topic/entry " colname="col4">Event description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x0</ph></entry>
+              <entry class="- topic/entry " colname="col2">[00] </entry>
+              <entry class="- topic/entry " colname="col3">SW_INCR</entry>
+              <entry class="- topic/entry " colname="col4">Software increment. Instruction architecturally executed (condition code check pass). </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x1</ph></entry>
+              <entry class="- topic/entry " colname="col2">[01] </entry>
+              <entry class="- topic/entry " colname="col3">L1I_CACHE_REFILL</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 instruction cache refill. This event counts any instruction fetch which misses in the cache.</p> <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_jvv_tjw_jdb">
+                <li class="- topic/li ">Cache maintenance instructions.</li>
+                <li class="- topic/li ">Non-cacheable accesses.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x2</ph></entry>
+              <entry class="- topic/entry " colname="col2">[02] </entry>
+              <entry class="- topic/entry " colname="col3">L1I_TLB_REFILL</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 instruction TLB refill. This event counts any refill of the instruction L1 TLB from the L2 TLB. This includes refills that result in a translation fault.</p> <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_n4g_jhw_jdb">
+                <li class="- topic/li "> TLB maintenance instructions.</li>
+                </ul> <p class="- topic/p ">This event counts regardless of whether the MMU is enabled.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x3</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[167]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_REFILL</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache refill. This event counts any load or store operation or page table walk access which causes data to be read from outside the L1, including accesses which do not allocate into L1. </p>
+                <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_m5f_jnw_jdb">
+                <li class="- topic/li ">Cache maintenance instructions and prefetches.</li>
+                <li class="- topic/li ">Stores of an entire cache line, even if they make a coherency request outside the L1.</li>
+                <li class="- topic/li ">Partial cache line writes which do not allocate into the L1 cache.</li>
+                <li class="- topic/li ">Non-cacheable accesses.</li>
+                </ul> <p class="- topic/p ">This event counts the sum of L1D_CACHE_REFILL_RD and L1D_CACHE_REFILL_WR.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x4</ph></entry>
+              <entry class="- topic/entry " colname="col2">[05:03] </entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache access. This event counts any load or store operation or page table walk access which looks up in the L1 data cache. In particular, any access which could count the L1D_CACHE_REFILL event causes this event to count.</p>
+                <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_yc4_snw_jdb">
+                <li class="- topic/li ">Cache maintenance instructions and prefetches.</li>
+                <li class="- topic/li ">Non-cacheable accesses.</li>
+                </ul> <p class="- topic/p ">This event counts the sum of L1D_CACHE_RD and L1D_CACHE_WR.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x5</ph></entry>
+              <entry class="- topic/entry " colname="col2">[07:06] </entry>
+              <entry class="- topic/entry " colname="col3">L1D_TLB_REFILL</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data TLB refill. This event counts any refill of the data L1 TLB from the L2 TLB. This includes refills that result in a translation fault. The following instructions are not counted:</p>
+                <ul class="- topic/ul " id="ul_t4j_14w_jdb">
+                <li class="- topic/li ">TLB maintenance instructions.</li>
+                </ul> <p class="- topic/p ">This event counts regardless of whether the MMU is enabled.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x8</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[11:08]</ph></entry>
+              <entry class="- topic/entry " colname="col3">INST_RETIRED</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Instruction architecturally executed. This event counts all retired instructions, including those that fail their condition check.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x9</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[12]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">EXC_TAKEN</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x0A</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[13]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_RETURN</entry>
+              <entry class="- topic/entry " colname="col4">Instruction architecturally executed, condition code check pass, exception return.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x0B</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[156]</ph></entry>
+              <entry class="- topic/entry " colname="col3">CID_WRITE_RETIRED</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Instruction architecturally executed, condition code check pass, write to CONTEXTIDR. This event only counts writes to CONTEXTIDR in AArch32 state, and via the CONTEXTIDR_EL1 mnemonic in AArch64 state.</p>
+                <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_nmb_lkw_jdb">
+                <li class="- topic/li ">Writes to CONTEXTIDR_EL12 and CONTEXTIDR_EL2.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x10</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[14]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">BR_MIS_PRED</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Mispredicted or not predicted branch speculatively executed. This event counts any predictable branch instruction which is mispredicted either due to dynamic misprediction or because the MMU is off and the branches are statically predicted not taken.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x11</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[15]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">CPU_CYCLES</entry>
+              <entry class="- topic/entry " colname="col4">Cycle</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x12</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[16]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">BR_PRED</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Predictable branch speculatively executed. This event counts all predictable branches.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x13</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[19:17]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">MEM_ACCESS</entry>
+              <entry class="- topic/entry " colname="col4"><p class="- topic/p ">Data memory access. This event counts memory accesses due to load or store instructions.</p><p class="- topic/p ">The following instructions are not counted:</p><ul class="- topic/ul " id="ul_rmq_nkw_jdb">
+                <li class="- topic/li ">Instruction fetches.</li>
+                <li class="- topic/li ">Cache maintenance instructions.</li>
+                <li class="- topic/li ">Translation table walks or prefetches.</li>
+                </ul>This event counts the sum of MEM_ACCESS_RD and MEM_ACCESS_WR.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x14</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[20]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L1I_CACHE</entry>
+              <entry class="- topic/entry " colname="col4"><p class="- topic/p ">Level 1 instruction cache access or Level 0 Macro-op cache access. This event counts any instruction fetch which accesses the L1 instruction cache or L0 Macro-op cache.</p>The following instructions are not counted:<ul class="- topic/ul " id="ul_gsf_skw_jdb">
+                <li class="- topic/li ">Cache maintenance instructions.</li>
+                <li class="- topic/li ">Non-cacheable accesses.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x15</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[21]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_WB</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache Write-Back. This event counts any write-back of data from the L1 data cache to L2 or L3. This counts both victim line evictions and snoops, including cache maintenance operations.</p>
+                <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_hw3_clw_jdb">
+                <li class="- topic/li ">Invalidations which do not result in data being transferred out of the L1.</li>
+                <li class="- topic/li ">Full-line writes which write to L2 without writing L1, such as write streaming mode.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x16</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[24:22]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L2 data cache access. This event counts any transaction from L1 which looks up in the L2 cache, and any write-back from the L1 to the L2. Snoops from outside the core and cache maintenance operations are not counted.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x17</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[27:25]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_REFILL</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L2 data cache refill. This event counts any cacheable transaction from L1 which causes data to be read from outside the core. L2 refills caused by stashes into L2 should not be counted.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x18</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[30:28]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_WB</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L2 data cache write-back. This event counts any write-back of data from the L2 cache to outside the core. This includes snoops to the L2 which return data, regardless of whether they cause an invalidation. Invalidations from the L2 which do not write data outside of the core and snoops which return data from the L1 are not counted.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x19</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[32:31]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">BUS_ACCESS</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Bus access. This event counts for every beat of data transferred over the data channels between the core and the SCU. If both read and write data beats are transferred on a given cycle, this event is counted twice on that cycle. This event counts the sum of BUS_ACCESS_RD and BUS_ACCESS_WR.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x1A</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[33]</ph></entry>
+              <entry class="- topic/entry " colname="col3">MEMORY_ERROR</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Local memory error. This event counts any correctable or uncorrectable memory error (ECC or parity) in the protected core RAMs.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x1B</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[36:34]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">INST_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Operation speculatively executed</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x1C</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[37]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">TTBR_WRITE_RETIRED</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Instruction architecturally executed, condition code check pass, write to TTBR.This event only counts writes to TTBR0/TTBR1 in AArch32 state and TTBR0_EL1/TTBR1_EL1 in AArch64 state. </p>
+                <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_j1f_4lw_jdb">
+                <li class="- topic/li ">Accesses to TTBR0_EL12/TTBR1_EL12 or TTBR0_EL2/TTBR1_EL2.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x1D</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[38]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">BUS_CYCLES</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Bus cycles. This event duplicates CPU_CYCLES.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x1E</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[39]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">CHAIN</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">For odd-numbered counters, increments the count by one for each overflow of the preceding even-numbered counter. For even-numbered counters, there is no increment.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x20</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[41:40]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_ALLOCATE</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L2 data cache allocation without refill. This event counts any full cache line write into the L2 cache which does not cause a linefill, including write-backs from L1 to L2 and full-line writes which do not allocate into L1.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x21</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[42]</ph></entry>
+              <entry class="- topic/entry " colname="col3">BR_RETIRED</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Instruction architecturally executed, branch. This event counts all branches, taken or not. This excludes exception entries, debug entries and CCFAIL branches.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x22</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[43]</ph></entry>
+              <entry class="- topic/entry " colname="col3">BR_MIS_PRED_RETIRED</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Instruction architecturally executed, mispredicted branch. This event counts any branch counted by BR_RETIRED which is not correctly predicted and causes a pipeline flush.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x23</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[44]</ph></entry>
+              <entry class="- topic/entry " colname="col3">STALL_FRONTEND</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">No operation issued because of the frontend. The counter counts on any cycle when there are no fetched instructions available to dispatch.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x24</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[45]</ph></entry>
+              <entry class="- topic/entry " colname="col3">STALL_BACKEND</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">No operation issued because of the backend. The counter counts on any cycle fetched instructions are not dispatched due to resource constraints.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x25</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[48:46]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_TLB</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Level 1 data TLB access. This event counts any load or store operation which accesses the data L1 TLB. If both a load and a store are executed on a cycle, this event counts twice. This event counts regardless of whether the MMU is enabled.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x26</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[168]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1I_TLB</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Level 1 instruction TLB access. This event counts any instruction fetch which accesses the instruction L1 TLB.This event counts regardless of whether the MMU is enabled.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x29</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[157]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L3D_CACHE_ALLOCATE</entry>
+              <entry class="- topic/entry " colname="col4">Attributable L3 data or unified cache allocation without refill. This event counts any full cache line write into the L3 cache which does not cause a linefill, including write-backs from L2 to L3 and full-line writes which do not allocate into L2.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x2A</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[159:158]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L3D_CACHE_REFILL</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Attributable Level 3 unified cache refill.</p> <p class="- topic/p ">This event counts for any cacheable read transaction returning data from the SCU for which the data source was outside the cluster. Transactions such as ReadUnique are counted here as 'read' transactions, even though they can be generated by store instructions.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x2B</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[160]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L3D_CACHE</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Attributable Level 3 unified cache access.</p> <p class="- topic/p ">This event counts for any cacheable read transaction returning data from the SCU, or for any cacheable write to the SCU.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x2D</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[49]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_TLB_REFILL</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Attributable L2 data or unified TLB refill. This event counts on any refill of the L2 TLB, caused by either an instruction or data access. This event does not count if the MMU is disabled.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x2F</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[51:50]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_TLB</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Attributable L2 data or unified TLB access. This event counts on any access to the L2 TLB (caused by a refill of any of the L1 TLBs). This event does not count if the MMU is disabled.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x31</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[161]</ph></entry>
+              <entry class="- topic/entry " colname="col3">REMOTE_ACCESS</entry>
+              <entry class="- topic/entry " colname="col4">Access to another socket in a multi-socket system.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x34</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[52]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">DTLB_WALK</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Access to data TLB that caused a page table walk. This event counts on any data access which causes L2D_TLB_REFILL to count.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x35</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[53]</ph></entry>
+              <entry class="- topic/entry " colname="col3">ITLB_WALK</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Access to instruction TLB that caused a page table walk. This event counts on any instruction access which causes L2D_TLB_REFILL to count.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x36</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[163:162]</ph></entry>
+              <entry class="- topic/entry " colname="col3">LL_CACHE_RD</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "> Last level cache access, read.</p> <ul class="- topic/ul " id="ul_g1p_pmw_jdb">
+                <li class="- topic/li ">If CPUECTLR.EXTLLC is set: This event counts any cacheable read transaction which returns a data source of 'interconnect cache'.</li>
+                <li class="- topic/li ">If CPUECTLR.EXTLLC is not set: This event is a duplicate of the L*D_CACHE_RD event corresponding to the last level of cache implemented – L3D_CACHE_RD if both per-core L2 and cluster L3 are implemented, L2D_CACHE_RD if only one is implemented, or L1D_CACHE_RD if neither is implemented.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x37</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[165:164]</ph></entry>
+              <entry class="- topic/entry " colname="col3">LL_CACHE_MISS_RD</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Last level cache miss, read.</p> <ul class="- topic/ul " id="ul_bn2_mpw_jdb">
+                <li class="- topic/li "> If CPUECTLR.EXTLLC is set: This event counts any cacheable read transaction which returns a data source of 'DRAM', 'remote' or 'inter-cluster peer'.</li>
+                <li class="- topic/li "> <p class="- topic/p ">If CPUECTLR.EXTLLC is not set: This event is a duplicate of the L*D_CACHE_REFILL_RD event corresponding to the last level of cache implemented – L3D_CACHE_REFILL_RD if both per-core L2 and cluster L3 are implemented, L2D_CACHE_REFILL_RD if only one is implemented, or L1D_CACHE_REFILL_RD if neither is implemented.</p>
+                </li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x40</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_RD</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache access, read. This event counts any load operation or page table walk access which looks up in the L1 data cache. In particular, any access which could count the L1D_CACHE_REFILL_RD event causes this event to count.</p>
+                <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_ndr_5pw_jdb">
+                <li class="- topic/li ">Cache maintenance instructions and prefetches.</li>
+                <li class="- topic/li ">Non-cacheable accesses.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x41</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[57:56]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_WR</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache access, write. This event counts any store operation which looks up in the L1 data cache. In particular, any access which could count the L1D_CACHE_REFILL_WR event causes this event to count.</p>
+                <p class="- topic/p "> The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_u23_xpw_jdb">
+                <li class="- topic/li ">Cache maintenance instructions and prefetches.</li>
+                <li class="- topic/li ">Non-cacheable accesses.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x42</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[58]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_REFILL_RD</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache refill, read. This event counts any load operation or page table walk access which causes data to be read from outside the L1, including accesses which do not allocate into L1. </p>
+                <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_ntr_bqw_jdb">
+                <li class="- topic/li ">Cache maintenance instructions and prefetches.</li>
+                <li class="- topic/li ">Non-cacheable accesses.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x43</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[59]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_REFILL_WR</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache refill, write. This event counts any store operation which causes data to be read from outside the L1, including accesses which do not allocate into L1. </p> <p class="- topic/p ">The following instructions are not counted:</p> <ul class="- topic/ul " id="ul_bmp_2qw_jdb">
+                <li class="- topic/li ">Cache maintenance instructions and prefetches.</li>
+                <li class="- topic/li "> <p class="- topic/p ">Stores of an entire cache line, even if they make a coherency request outside the L1.</p> </li>
+                <li class="- topic/li ">Partial cache line writes which do not allocate into the L1 cache.</li>
+                <li class="- topic/li ">Non-cacheable accesses.</li>
+                </ul> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x44</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[60]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_REFILL_INNER</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache refill, inner. This event counts any L1 D-cache linefill (as counted by L1D_CACHE_REFILL) which hits in the L2 cache, L3 cache or another core in the cluster.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x45</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[61]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_REFILL_OUTER</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L1 data cache refill, outer. This event counts any L1 D-cache linefill (as counted by L1D_CACHE_REFILL) which does not hit in the L2 cache, L3 cache or another core in the cluster, and instead obtains data from outside the cluster.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x46</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[62]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_WB_VICTIM</entry>
+              <entry class="- topic/entry " colname="col4">L1 data cache write-back, victim</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x47</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[63]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_WB_CLEAN</entry>
+              <entry class="- topic/entry " colname="col4">L1 data cache write-back cleaning and coherency</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x48</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[64]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_CACHE_INVAL</entry>
+              <entry class="- topic/entry " colname="col4">L1 data cache invalidate.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x4C</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[65]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_TLB_REFILL_RD</entry>
+              <entry class="- topic/entry " colname="col4">L1 data TLB refill, read.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x4D</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[66]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L1D_TLB_REFILL_WR</entry>
+              <entry class="- topic/entry " colname="col4">L1 data TLB refill, write.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x4E</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[68:67]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_TLB_RD</entry>
+              <entry class="- topic/entry " colname="col4">L1 data TLB access, read.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x4F</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[70:69]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L1D_TLB_WR</entry>
+              <entry class="- topic/entry " colname="col4">L1 data TLB access, write.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x50</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[72:71]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_RD</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L2 data cache access, read. This event counts any read transaction from L1 which looks up in the L2 cache. </p> <p class="- topic/p ">Snoops from outside the core are not counted.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x51</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[74:73]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_WR</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L2 data cache access, write. This event counts any write transaction from L1 which looks up in the L2 cache or any write-back from L1 which allocates into the L2 cache.</p> <p class="- topic/p ">Snoops from outside the core are not counted.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x52</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[76:75]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_REFILL_RD</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L2 data cache refill, read. This event counts any cacheable read transaction from L1 which causes data to be read from outside the core. L2 refills caused by stashes into L2 should not be counted. Transactions such as ReadUnique are counted here as 'read' transactions, even though they can be generated by store instructions.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x53</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[78:77]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_REFILL_WR</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">L2 data cache refill, write. This event counts any write transaction from L1 which causes data to be read from outside the core. L2 refills caused by stashes into L2 should not be counted. Transactions such as ReadUnique are not counted as write transactions.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x56</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[80:79]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_WB_VICTIM</entry>
+              <entry class="- topic/entry " colname="col4">L2 data cache write-back, victim.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x57</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[82:81]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_WB_CLEAN</entry>
+              <entry class="- topic/entry " colname="col4">L2 data cache write-back, cleaning and coherency.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x58</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[84:83]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_CACHE_INVAL</entry>
+              <entry class="- topic/entry " colname="col4">L2 data cache invalidate.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x5C</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[85]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_TLB_REFILL_RD</entry>
+              <entry class="- topic/entry " colname="col4">L2 data or unified TLB refill, read.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x5D</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[86]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_TLB_REFILL_WR</entry>
+              <entry class="- topic/entry " colname="col4">L2 data or unified TLB refill, write.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x5E</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[88:87]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_TLB_RD</entry>
+              <entry class="- topic/entry " colname="col4">L2 data or unified TLB access, read.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x5F</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[89]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L2D_TLB_WR</entry>
+              <entry class="- topic/entry " colname="col4">L2 data or unified TLB access, write.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x60</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[90]</ph></entry>
+              <entry class="- topic/entry " colname="col3">BUS_ACCESS_RD</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Bus access read. This event counts for every beat of data transferred over the read data channel between the core and the SCU.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x61</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[91]</ph></entry>
+              <entry class="- topic/entry " colname="col3">BUS_ACCESS_WR</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Bus access write. This event counts for every beat of data transferred over the write data channel between the core and the SCU.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x66</ph></entry>
+              <entry class="- topic/entry " colname="col2"><ph class="- topic/ph ">[93:92]</ph> </entry>
+              <entry class="- topic/entry " colname="col3">MEM_ACCESS_RD</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Data memory access, read. This event counts memory accesses due to load instructions. The following instructions are not counted:</p> <p class="- topic/p "> • Instruction fetches.</p> <p class="- topic/p "> • Cache maintenance instructions.</p> <p class="- topic/p "> • Translation table walks.</p> <p class="- topic/p "> • Prefetches.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x67</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[95:94]</ph></entry>
+              <entry class="- topic/entry " colname="col3">MEM_ACCESS_WR</entry>
+              <entry class="- topic/entry " colname="col4"><p class="- topic/p ">Data memory access, write. This event counts memory accesses due to store instructions.</p>The following instructions are not counted:<p class="- topic/p "> • Instruction fetches.</p><p class="- topic/p "> • Cache maintenance instructions.</p><p class="- topic/p "> • Translation table walks.</p><p class="- topic/p "> • Prefetches.</p></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x68</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[97:96]</ph></entry>
+              <entry class="- topic/entry " colname="col3">UNALIGNED_LD_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Unaligned access, read</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x69</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[99:98]</ph></entry>
+              <entry class="- topic/entry " colname="col3">UNALIGNED_ST_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Unaligned access, write</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x6A</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[102:100]</ph></entry>
+              <entry class="- topic/entry " colname="col3">UNALIGNED_LDST_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Unaligned access</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x6C</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[103]</ph></entry>
+              <entry class="- topic/entry " colname="col3">LDREX_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Exclusive operation speculatively executed, LDREX or LDX.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x6D</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[104]</ph></entry>
+              <entry class="- topic/entry " colname="col3">STREX_PASS_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Exclusive operation speculatively executed, STREX or STX pass.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x6E</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[105]</ph></entry>
+              <entry class="- topic/entry " colname="col3">STREX_FAIL_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Exclusive operation speculatively executed, STREX or STX fail.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x6F</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[106]</ph></entry>
+              <entry class="- topic/entry " colname="col3">STREX_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Exclusive operation speculatively executed, STREX or STX.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x70</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[109:107]</ph></entry>
+              <entry class="- topic/entry " colname="col3">LD_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Operation speculatively executed, load.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x71</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[112:110]</ph></entry>
+              <entry class="- topic/entry " colname="col3">ST_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Operation speculatively executed, store.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x72</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[114:113]</ph></entry>
+              <entry class="- topic/entry " colname="col3">LDST_SPEC</entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Operation speculatively executed, load or store. This event counts the sum of LD_SPEC and ST_SPEC.</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x73</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[117:115]</ph></entry>
+              <entry class="- topic/entry " colname="col3">DP_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Operation speculatively executed, integer data-processing. </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x74</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[120:118]</ph></entry>
+              <entry class="- topic/entry " colname="col3">ASE_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Operation speculatively executed, Advanced SIMD instruction. </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x75</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[123:121]</ph></entry>
+              <entry class="- topic/entry " colname="col3">VFP_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Operation speculatively executed, floating-point instruction.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x76</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[125:124]</ph></entry>
+              <entry class="- topic/entry " colname="col3">PC_WRITE_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Operation speculatively executed, software change of the PC.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x77</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[128:126]</ph></entry>
+              <entry class="- topic/entry " colname="col3">CRYPTO_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Operation speculatively executed, Cryptographic instruction.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x78</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[129]</ph></entry>
+              <entry class="- topic/entry " colname="col3">BR_IMMED_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Branch speculatively executed, immediate branch.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x79</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[130]</ph></entry>
+              <entry class="- topic/entry " colname="col3">BR_RETURN_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Branch speculatively executed, procedure return.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x7A</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[131]</ph></entry>
+              <entry class="- topic/entry " colname="col3">BR_INDIRECT_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Branch speculatively executed, indirect branch.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x7C</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[132]</ph></entry>
+              <entry class="- topic/entry " colname="col3">ISB_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Barrier speculatively executed, ISB.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x7D</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[134:133]</ph></entry>
+              <entry class="- topic/entry " colname="col3">DSB_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Barrier speculatively executed, DSB.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x7E</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[136:135]</ph></entry>
+              <entry class="- topic/entry " colname="col3">DMB_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Barrier speculatively executed, DMB.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x81</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[137]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_UNDEF</entry>
+              <entry class="- topic/entry " colname="col4">Counts the number of undefined exceptions taken locally.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x82</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[138]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_SVC</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken locally, Supervisor Call.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x83</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[139]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_PABORT</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken locally, Instruction Abort.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x84</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[140]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_DABORT</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken locally, Data Abort and SError.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x86</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[141]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_IRQ</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken locally, IRQ.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x87</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[142]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_FIQ</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken locally, FIQ.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x88</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[143]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_SMC</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken locally, Secure Monitor Call.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x8A</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[144]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_HVC</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken locally, Hypervisor Call.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x8B</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[145]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_TRAP_PABORT</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken, Instruction Abort not taken locally.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x8C</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[146]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_TRAP_DABORT</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken, Data Abort or SError not taken locally.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x8D</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[147]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_TRAP_OTHER</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken, Other traps not taken locally.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x8E</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[148]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_TRAP_IRQ</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken, IRQ not taken locally.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x8F</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[149]</ph></entry>
+              <entry class="- topic/entry " colname="col3">EXC_TRAP_FIQ</entry>
+              <entry class="- topic/entry " colname="col4">Exception taken, FIQ not taken locally.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x90</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[152:150]</ph></entry>
+              <entry class="- topic/entry " colname="col3">RC_LD_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Release consistency operation speculatively executed, load-acquire.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0x91</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[155:153]</ph></entry>
+              <entry class="- topic/entry " colname="col3">RC_ST_SPEC</entry>
+              <entry class="- topic/entry " colname="col4">Release consistency operation speculatively executed, store-release.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">0xA0</ph></entry>
+              <entry class="- topic/entry " colname="col2"> <ph class="- topic/ph ">[166]</ph></entry>
+              <entry class="- topic/entry " colname="col3">L3_CACHE_RD</entry>
+              <entry class="- topic/entry " colname="col4">L3 cache read.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

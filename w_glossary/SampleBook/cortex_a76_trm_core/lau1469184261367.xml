@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1469184261367" xml:lang="en-us">
+	
+	
+	<title class="- topic/title ">ICC_CTLR_EL1, Interrupt Controller Control Register, EL1</title>
+	<shortdesc class="- topic/shortdesc ">ICC_CTLR_EL1 controls aspects of the behavior of the GIC CPU interface
+		and provides information about the features implemented.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ICC_CTLR_EL1 is a 32-bit register and is part of:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The GIC system registers functional group.</li>
+				<li class="- topic/li ">The GIC control registers functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_tlq_z3j_5v">
+				<title class="- topic/title ">ICC_CTLR_EL1 bit assignments</title>
+				<image class="- topic/image " href="lau1468939527824.svg" id="image_nmq_z3j_5v" placement="inline">
+					<alt class="- topic/alt ">ICC_CTLR_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [31:16]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">A3V, [15]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Affinity 3 Valid. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">1</ph></dt>
+								<dd class="- topic/dd ">The CPU interface logic supports non-zero values of Affinity 3
+									in SGI generation System registers.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">SEIS, [14]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">SEI Support. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">0</ph></dt>
+								<dd class="- topic/dd ">The CPU interface logic does not support local generation of SEIs.</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">IDbits, [13:11]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Identifier bits. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">0</ph></dt>
+								<dd class="- topic/dd ">The number of physical interrupt identifier bits supported is 16 bits.</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p ">This field is an
+							alias of ICC_CTLR_EL3.IDbits.</p></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PRIbits, [10:8]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Priority bits. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">4</ph></dt>
+								<dd class="- topic/dd ">The core supports 32 levels of physical priority with 5 priority bits. </dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [7]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PMHE, [6]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Priority Mask Hint Enable. This bit is read only and is an alias of ICC_CTLR_EL3.PMHE. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">0</ph></dt>
+								<dd class="- topic/dd ">Disables use of ICC_PMR as a hint for interrupt distribution.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">1</ph></dt>
+								<dd class="- topic/dd ">Enables use of ICC_PMR as a hint for interrupt distribution.</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [5:2]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">EOImode, [1]</dt>
+					<dd class="- topic/dd ">End of interrupt mode for the current security state. The possible values
+						are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">0</ph></dt>
+								<dd class="- topic/dd ">ICC_EOIR0 and ICC_EOIR1 provide both priority
+									drop and interrupt deactivation functionality. Accesses to
+									ICC_DIR are <term class="- topic/term " outputclass="archterm">UNPREDICTABLE</term>.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">1</ph></dt>
+								<dd class="- topic/dd ">ICC_EOIR0 and ICC_EOIR1 provide priority drop
+									functionality only. ICC_DIR provides interrupt deactivation
+									functionality.</dd>
+							</dlentry>
+						</dl></dd>
+					
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">CBPR, [0]</dt>
+					<dd class="- topic/dd ">Common Binary Point Register. Control whether the same register is used for
+						interrupt preemption of both Group 0 and Group 1 interrupt. The possible
+						values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">ICC_BPR0 determines the preemption group
+										for Group 0 interrupts.</p>
+									<p class="- topic/p ">ICC_BPR1 determines the preemption group
+										for Group 1 interrupts.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.any">1</ph></dt>
+								<dd class="- topic/dd ">ICC_BPR0 determines the preemption group for
+									Group 0 and Group 1 interrupts.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			
+			<p class="- topic/p ">Bit fields and details that are not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Generic Interrupt Controller Architecture Specification</ph></cite>.</p>
+		</section>
+	</refbody>
+</reference>

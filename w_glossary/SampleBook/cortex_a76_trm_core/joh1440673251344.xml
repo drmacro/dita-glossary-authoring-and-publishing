@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673251344" xml:lang="en-us">
+  <title class="- topic/title ">External access permissions to debug registers</title>
+  <shortdesc class="- topic/shortdesc ">External access permission to the debug registers is subject to the
+    conditions at the time of the access.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">The following table describes the core response to accesses through the
+        external debug interface.</p>
+      <table class="- topic/table " colsep="0" frame="topbot" id="ext.reg.access.to.debug.reg" rowsep="0">
+        <title class="- topic/title ">External access conditions to registers</title>
+        <tgroup class="- topic/tgroup " cols="3" colsep="0" rowsep="0">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Condition</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Off</entry>
+              <entry class="- topic/entry " colname="col2">EDPRSR.PU is 0</entry>
+              <entry class="- topic/entry " colname="col3"><p class="- topic/p ">Core power domain is
+                completely off, or in a low-power state where the core power domain registers
+                cannot be accessed.</p><p class="- topic/p ">If debug power is off, then all external debug and memory-mapped register
+                  accesses return an error. </p></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">DLK</entry>
+              <entry class="- topic/entry " colname="col2"><codeph class="+ topic/ph pr-d/codeph ">DoubleLockStatus() ==
+                TRUE</codeph> (EDPRSR.DLK is 1)</entry>
+              <entry class="- topic/entry " colname="col3">OS Double Lock is locked.</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">OSLK</entry>
+              <entry class="- topic/entry " colname="col2">OSLSR_EL1.OSLK is 1</entry>
+              <entry class="- topic/entry " colname="col3">OS Lock is locked.</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">EDAD</entry>
+              <entry class="- topic/entry " colname="col2"><codeph class="+ topic/ph pr-d/codeph ">AllowExternalDebugAccess()
+                ==FALSE</codeph></entry>
+              <entry class="- topic/entry " colname="col3">External debug access is disabled. When an error is
+                returned because of an EDAD condition code, and this is the highest priority error
+                condition, EDPRSR.SDAD is set to 1. Otherwise SDAD is unchanged.</entry>
+            </row>
+            <row class="- topic/row " rowsep="0">
+              <entry class="- topic/entry " colname="col1">Default</entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">None of the conditions apply, normal
+                access.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p class="- topic/p ">The following table shows an example of external register access condition
+        codes for access to a performance monitor register. To determine the access permission for
+        the register, scan the columns from left to right. Stop at the first column a condition is
+        true, the entry gives the access permission of the register and scanning stops.</p>
+      <table class="- topic/table " colsep="0" frame="topbot" rowsep="0">
+        <title class="- topic/title ">External register condition code example</title>
+        <tgroup class="- topic/tgroup " cols="5" colsep="0" rowsep="0">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col5" colnum="5" colsep="0"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Off</entry>
+              <entry class="- topic/entry " colname="col2">DLK</entry>
+              <entry class="- topic/entry " colname="col3">OSLK</entry>
+              <entry class="- topic/entry " colname="col4">EDAD</entry>
+              <entry class="- topic/entry " colname="col5">Default</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row " rowsep="0">
+              <entry class="- topic/entry " colname="col1">-</entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">RO</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

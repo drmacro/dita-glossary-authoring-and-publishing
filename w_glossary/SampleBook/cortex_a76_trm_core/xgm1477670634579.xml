@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="xgm1477670634579" xml:lang="en-us">
+  <title class="- topic/title ">Accessing the feature identification registers</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">Accessing the feature identification registers</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">Software can identify the Advanced SIMD and floating-point features
+    using the feature identification registers in the AArch64 Execution state only.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core only supports AArch32 in EL0, therefore none of the feature identification registers are accessible in the AArch32 Execution state.</p>
+    <p class="- topic/p ">You can access the feature identification registers in the AArch64 Execution
+      state using the <codeph class="+ topic/ph pr-d/codeph ">MRS</codeph> instruction, for example:</p>
+    <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">      MRS &lt;Xt&gt;, ID_AA64PFR0_EL1 ; Read ID_AA64PFR0_EL1 into Xt
+      MRS &lt;Xt&gt;, MVFR0_EL1       ; Read MVFR0_EL1 into Xt
+      MRS &lt;Xt&gt;, MVFR1_EL1       ; Read MVFR1_EL1 into Xt
+      MRS &lt;Xt&gt;, MVFR2_EL1       ; Read MVFR2_EL1 into Xt</codeblock>
+    
+    <table class="- topic/table " colsep="0" frame="topbot" rowsep="0">
+      <title class="- topic/title ">AArch64 Advanced SIMD and scalar floating-point feature identification
+        registers</title>
+      <tgroup class="- topic/tgroup " cols="3" colsep="0" rowsep="0">
+        <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+        <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+        <colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+        <thead class="- topic/thead ">
+          <row class="- topic/row " rowsep="1">
+            <entry class="- topic/entry " colname="col1">Register name</entry>
+            <entry class="- topic/entry " colname="col3">Description</entry>
+          </row>
+        </thead>
+        <tbody class="- topic/tbody ">
+          
+          <row class="- topic/row " rowsep="1">
+            <entry class="- topic/entry " colname="col1">ID_AA64PFR0_EL1</entry>
+            <entry class="- topic/entry " colname="col3"><p class="- topic/p ">See <xref class="- topic/xref " href="erd1531743484728.xml" keyref="IdAa64pfr1El1Aarch64ProcessorFeatureRegister1El1" type="reference">ID_AA64PFR1_EL1, AArch64 Processor Feature Register 1, EL1<desc class="- topic/desc ">The ID_AA64PFR1_EL1 provides additional information about implemented 		core features in AArch64.</desc></xref>.</p></entry>
+          </row>
+          <row class="- topic/row " rowsep="1">
+            <entry class="- topic/entry " colname="col1">MVFR0_EL1</entry>
+            <entry class="- topic/entry " colname="col3">See <xref class="- topic/xref " href="lau1442502550390.xml" type="reference">MVFR0_EL1, Media and VFP Feature Register 0, EL1<desc class="- topic/desc ">The MVFR0_EL1 describes the features provided by the AArch64 Advanced     SIMD and floating-point implementation.</desc></xref>.</entry>
+          </row>
+          <row class="- topic/row " rowsep="1">
+            <entry class="- topic/entry " colname="col1">MVFR1_EL1</entry>
+            <entry class="- topic/entry " colname="col3">See <xref class="- topic/xref " href="lau1442502572526.xml" type="reference">MVFR1_EL1, Media and VFP Feature Register 1, EL1<desc class="- topic/desc ">The MVFR1_EL1 describes the features provided by the AArch64 Advanced     SIMD and floating-point implementation.</desc></xref>.</entry>
+          </row>
+          <row class="- topic/row " rowsep="0">
+            <entry class="- topic/entry " colname="col1">MVFR2_EL1</entry>
+            <entry class="- topic/entry " colname="col3">See <xref class="- topic/xref " href="lau1442502600944.xml" type="reference">MVFR2_EL1, Media and VFP Feature Register 2, EL1<desc class="- topic/desc ">The MVFR2_EL1 describes the features provided by the AArch64 Advanced     SIMD and floating-point implementation.</desc></xref>. </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

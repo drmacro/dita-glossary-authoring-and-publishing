@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="pat1464966166223" xml:lang="en-us">
+  <title class="- topic/title ">TRCAUXCTLR, Auxiliary Control Register</title>
+  <titlealts class="- topic/titlealts "><navtitle class="- topic/navtitle ">TRCAUXCTLR, Auxiliary Control Register</navtitle></titlealts>
+  <shortdesc class="- topic/shortdesc ">The TRCAUXCTLR provides <term class="- topic/term " outputclass="archterm">implementation defined</term> configuration and control options.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCAUXCTLR bit assignments</title>
+        <image class="- topic/image " href="pat1464966833168.svg" placement="inline">
+          <alt class="- topic/alt ">TRCAUXCTLR bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:8]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CIFOVERRIDE, [7]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Override core interface register repeater clock enable. The possible values
+              are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Core interface clock gate is enabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Core interface clock gate is disabled.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">INOVFLOWEN, [6]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Allow overflows of the core interface buffer, removing any rare impact that the
+              trace unit might have on the core's speculation when enabled. The possible values
+              are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Core interface buffer overflows are disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Core interface buffer overflows are enabled.</dd>
+              </dlentry>
+              </dl><p class="- topic/p ">When this bit is set to 1, the trace start/stop logic might deviate from architecturally-specified
+                behavior.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">FLUSHOVERRIDE, [5]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Override ETM flush behavior. The possible values are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">ETM trace unit FIFO is flushed and ETM trace unit enters idle
+                  state when <keyword class="- topic/keyword " otherprops="g.signal.name">DBGEN</keyword> or
+                    <keyword class="- topic/keyword " otherprops="g.signal.name">NIDEN</keyword> is LOW.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">ETM trace unit FIFO is not flushed and ETM trace unit does not
+                  enter idle state when <keyword class="- topic/keyword " otherprops="g.signal.name">DBGEN</keyword> or <keyword class="- topic/keyword " otherprops="g.signal.name">NIDEN</keyword> is LOW.</dd>
+              </dlentry>
+            </dl><p class="- topic/p ">When this bit is set to 1, the trace unit behavior deviates from
+              architecturally-specified behavior.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TSIOVERRIDE, [4]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Override TS packet insertion behavior. The possible values are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Timestamp packets are inserted into FIFO only when trace
+                  activity is LOW.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Timestamp packets are inserted into FIFO irrespective of trace
+                  activity.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SYNCOVERRIDE, [3]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Override SYNC packet insertion behavior. The possible values are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">SYNC packets are inserted into FIFO only when trace activity is
+                  low.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">SYNC packets are inserted into FIFO irrespective of trace
+                  activity.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">FRSYNCOVFLOW, [2]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Force overflows to output synchronization packets. The possible values are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">No FIFO overflow when SYNC packets are delayed.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Forces FIFO overflow when SYNC packets are delayed.</dd>
+              </dlentry>
+            </dl><p class="- topic/p ">When this bit is set to 1, the trace unit behavior deviates from
+              architecturally-specified behavior.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IDLEACKOVERRIDE, [1]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Force ETM idle acknowledge. The possible values are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">ETM trace unit idle acknowledge is asserted only when the ETM
+                  trace unit is in idle state.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">ETM trace unit idle acknowledge is asserted irrespective of the
+                  ETM trace unit idle state.</dd>
+              </dlentry>
+            </dl><p class="- topic/p ">When this bit is set to 1, trace unit behavior deviates from
+              architecturally-specified behavior.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">AFREADYOVERRIDE, [0]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Force assertion of <keyword class="- topic/keyword " otherprops="g.signal.name">AFREADYM</keyword> output. The possible values are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">ETM trace unit <keyword class="- topic/keyword " otherprops="g.signal.name">AFREADYM</keyword> output is asserted only when the
+                  ETM trace unit is in idle state or when all the trace bytes in FIFO before a flush
+                  request are output.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">ETM trace unit <keyword class="- topic/keyword " otherprops="g.signal.name">AFREADYM</keyword> output is always asserted HIGH.</dd>
+              </dlentry>
+                </dl><p class="- topic/p ">
+                  When this bit is set to 1, trace unit behavior deviates from
+                  architecturally-specified behavior.</p></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">The TRCAUXCTLR can be accessed through the internal memory-mapped
+        interface and the external debug interface, offset <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">018</ph></codeph>.</p>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">Available in all configurations.</dd>
+        </dlentry>
+      </dl>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443702362625" xml:lang="en-us">
+  <title class="- topic/title ">TRCRSCTLRn, Resource Selection Control Registers 2-16</title>
+  <shortdesc class="- topic/shortdesc ">The TRCRSCTLRn controls the trace resources. There are eight resource
+    pairs, the first pair is predefined as {0,1,pair=0} and having reserved select registers. This
+    leaves seven pairs to be implemented as programmable selectors.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The TRCRSCTLRn is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCRSCTLRn bit assignments</title>
+        <image class="- topic/image " href="lau1443702417881.svg" placement="inline">
+          <alt class="- topic/alt ">TRCRSCTLRn bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:22]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">PAIRINV, [21]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Inverts the result of a combined pair of
+              resources.</p><p class="- topic/p ">This bit is implemented only on the lower register
+              for a pair of resource selectors.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">INV, [20]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Inverts the selected resources:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Resource is not inverted.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Resource is inverted.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [19]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">GROUP, [18:16]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Selects a group of resources. See the <cite class="- topic/cite ">
+                <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> ETM
+                Architecture Specification, ETMv4</cite> for more information.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [15:8]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SELECT, [7:0]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Selects one or more resources from the required
+              group. One bit is provided for each resource from the group.</p></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The TRCRSCTLRn can be accessed through the external debug interface, offset <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">208</ph>-<ph class="- topic/ph " otherprops="g.number.hex">023C</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

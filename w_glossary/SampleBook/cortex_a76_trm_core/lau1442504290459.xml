@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1442504290459" xml:lang="en-us">
+  
+  <title class="- topic/title ">FPSCR, Floating-Point Status and Control Register</title>
+  <shortdesc class="- topic/shortdesc ">The FPSCR provides floating-point system status information and
+    control.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+        <p class="- topic/p ">FPSCR is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">FPSCR bit assignments</title>
+        <image class="- topic/image " href="lau1456830422672.svg" placement="inline">
+          <alt class="- topic/alt ">FPSCR bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">N, [31]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Floating-point Negative condition code flag.</p>
+            <p class="- topic/p ">Set to 1 if a floating-point comparison operation produces a less
+              than result.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Z, [30]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Floating-point Zero condition code flag.</p>
+            <p class="- topic/p ">Set to 1 if a floating-point comparison operation produces an equal
+              result.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">C, [29]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Floating-point Carry condition code flag.</p>
+            <p class="- topic/p ">Set to 1 if a floating-point comparison operation produces an equal,
+              greater than, or unordered result.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">V, [28]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Floating-point Overflow condition code flag.</p>
+            <p class="- topic/p ">Set to 1 if a floating-point comparison operation produces an
+              unordered result.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">QC, [27]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Cumulative saturation bit.</p>
+            <p class="- topic/p ">This bit is set to 1 to indicate that an Advanced SIMD integer
+              operation has saturated after 0 was last written to this bit.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">AHP, [26]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Alternative Half-Precision control bit:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">IEEE half-precision format selected. This is the reset
+                  value.</dd>
+              </dlentry>
+            </dl>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Alternative half-precision format selected.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">DN, [25]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Default NaN mode control bit:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">NaN operands propagate through to the output of a
+                  floating-point operation. This is the reset value.</dd>
+              </dlentry>
+            </dl>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Any operation involving one or more NaNs returns the Default
+                  NaN.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">The value of this bit only controls floating-point arithmetic.
+              AArch32 Advanced SIMD arithmetic always uses the Default NaN setting, regardless of
+              the value of the DN bit.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt "> FZ, [24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Flush-to-zero mode control bit:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Flush-to-zero mode disabled. Behavior of the floating-point
+                  system is fully compliant with the IEEE 754 standard. This is the reset
+                  value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Flush-to-zero mode enabled.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">The value of this bit only controls floating-point arithmetic.
+              AArch32 Advanced SIMD arithmetic always uses the Flush-to-zero setting, regardless of
+              the value of the FZ bit.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RMode, [23:22]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Rounding Mode control field:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">00</ph></dt>
+                <dd class="- topic/dd "><term class="- topic/term ">Round to Nearest</term> (RN) mode. This
+                  is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">01</ph></dt>
+                <dd class="- topic/dd "><term class="- topic/term ">Round towards Plus Infinity</term> (RP)
+                  mode.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">10</ph></dt>
+                <dd class="- topic/dd "><term class="- topic/term ">Round towards Minus Infinity</term> (RM)
+                  mode.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">11</ph></dt>
+                <dd class="- topic/dd "><term class="- topic/term ">Round towards Zero</term> (RZ)
+                  mode.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">The specified rounding mode is used by almost all floating-point
+              instructions. AArch32 Advanced SIMD arithmetic always uses the Round to Nearest
+              setting, regardless of the value of the RMode bits.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Stride, [21:20]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">FZ16, [19]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Flush-to-zero mode control bit on half-precision data-processing
+              instructions:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+                <dlentry class="- topic/dlentry ">
+                  <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                  <dd class="- topic/dd ">Flush-to-zero mode disabled. Behavior of the floating-point
+                  system is fully compliant with the IEEE 754 standard.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry ">
+                  <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                  <dd class="- topic/dd ">Flush-to-zero mode enabled.</dd>
+                </dlentry>
+              </dl>
+          </dd>
+          
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Len, [18:16]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [15:8]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IDC, [7]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Input Denormal cumulative exception bit. This bit is set to 1 to
+              indicate that the Input Denormal exception has occurred since 0 was last written to
+              this bit.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [6:5]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IXC, [4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Inexact cumulative exception bit. This bit is set to 1 to indicate
+              that the Inexact exception has occurred since 0 was last written to this bit.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">UFC, [3]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Underflow cumulative exception bit. This bit is set to 1 to indicate
+              that the Underflow exception has occurred since 0 was last written to this bit.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">OFC, [2]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Overflow cumulative exception bit. This bit is set to 1 to indicate
+              that the Overflow exception has occurred since 0 was last written to this bit.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">DZC, [1]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Division by Zero cumulative exception bit. This bit is set to 1 to
+              indicate that the Division by Zero exception has occurred since 0 was last written to
+              this bit.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IOC, [0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Invalid Operation cumulative exception bit. This bit is set to 1 to
+              indicate that the Invalid Operation exception has occurred since 0 was last written to
+              this bit.</p>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd "> <p class="- topic/p ">There is one copy of this register that is used in both Secure and
+            Non-secure states.</p>
+            <p class="- topic/p ">The named fields in this register map to the equivalent fields in
+              the AArch64 FPCR and FPSR. See <xref class="- topic/xref " href="lau1442502503726.xml" type="reference">FPCR, Floating-point Control Register<desc class="- topic/desc ">The FPCR controls floating-point behavior.</desc></xref>
+              and <xref class="- topic/xref " href="lau1442502526288.xml" type="reference">FPSR, Floating-point Status Register<desc class="- topic/desc ">The FPSR provides floating-point system status information.</desc></xref></p>.</dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Usage constraints</title>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Accessing the FPSCR</dt>
+          <dd class="- topic/dd ">  <p class="- topic/p ">To access the FPSCR:</p>
+            <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">VMRS &lt;Rt&gt;, FPSCR ; Read FPSCR into Rt
+VMSR FPSCR, &lt;Rt&gt; ; Write Rt to FPSCR</codeblock></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Register access is encoded as follows:</p>
+        <table class="- topic/table ">
+          <title class="- topic/title ">FPSCR access encoding</title>
+          <tgroup class="- topic/tgroup " cols="1">
+            <colspec class="- topic/colspec " colname="col1" colnum="1"/><thead class="- topic/thead ">
+              <row class="- topic/row ">
+                <entry class="- topic/entry " colname="col1">spec_reg</entry>
+              </row>
+            </thead>
+            <tbody class="- topic/tbody ">
+              <row class="- topic/row ">
+                <entry class="- topic/entry " colname="col1">0001</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <note class="- topic/note " type="note"> The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implementation does not support the deprecated VFP short
+        vector feature. Attempts to execute the associated VFP data-processing instructions result
+        in an <term class="- topic/term " outputclass="archterm">UNDEFINED</term> Instruction exception. </note>
+        <dl class="- topic/dl ">
+          <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">Accessibility</dt>
+            <dd class="- topic/dd ">This register is accessible as follows:</dd>
+          </dlentry>
+        </dl>
+        
+      <table class="- topic/table " colsep="0" frame="topbot" rowsep="0">
+        <tgroup class="- topic/tgroup " cols="7" colsep="0" rowsep="0">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col5" colnum="5" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col6" colnum="6" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col7" colnum="7" colsep="0"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">
+                <p class="- topic/p ">EL0</p>
+                <p class="- topic/p ">(NS)</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">EL0</p>
+                <p class="- topic/p ">(S)</p>
+              </entry>
+              <entry class="- topic/entry " colname="col3">
+                <p class="- topic/p ">EL1</p>
+                <p class="- topic/p ">(NS)</p>
+              </entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p ">EL1</p>
+                <p class="- topic/p ">(S)</p>
+              </entry>
+              <entry class="- topic/entry " colname="col5">EL2</entry>
+              <entry class="- topic/entry " colname="col6">
+                <p class="- topic/p ">EL3</p>
+                <p class="- topic/p ">(SCR.NS = 1)</p>
+              </entry>
+              <entry class="- topic/entry " colname="col7">
+                <p class="- topic/p ">EL3</p>
+                <p class="- topic/p ">(SCR.NS = 0)</p>
+              </entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row " rowsep="0">
+              <entry class="- topic/entry " colname="col1">Config</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+              <entry class="- topic/entry " colname="col6">-</entry>
+              <entry class="- topic/entry " colname="col7">-</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+        
+      <p class="- topic/p ">Access to this register depends on the values of CPACR_EL1.FPEN, CPTR_EL2.FPEN, CPTR_EL2.TFP, CPTR_EL3.TFP, and HCR_EL2.{E2H, TGE}. For details of which values of these fields allow access at which Exception levels, see the <cite class="- topic/cite "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual Armv8, for Armv8-A architecture profile</cite>.</p>
+
+    </section>
+  </refbody>
+</reference>

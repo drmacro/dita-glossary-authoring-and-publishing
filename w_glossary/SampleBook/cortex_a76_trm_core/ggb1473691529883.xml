@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ggb1473691529883" xml:lang="en-us">
+	<title class="- topic/title ">Descriptor hardware update</title>
+	<shortdesc class="- topic/shortdesc ">The core supports hardware update in AArch64 state using hardware
+		management of the access flag and hardware management of dirty state.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">These features are enabled in registers TCR_ELx and VTCR_EL2.</p>
+			<p class="- topic/p ">Hardware management of the Access flag is enabled by the following configuration
+				fields:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">TCR_ELx.HA for stage 1 translations.</li>
+				<li class="- topic/li ">VTCR_EL2.HA for stage 2 translations.</li>
+			</ul>
+			<p class="- topic/p ">Hardware management of dirty state is enabled by the following configuration fields:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">TCR_ELx.HD for stage 1 translations.</li>
+				<li class="- topic/li ">VTCR_EL2.HD for stage 2 translations.</li>
+			</ul>
+			<note class="- topic/note ">Hardware management of dirty state can only be enabled if hardware management of the Access
+				flag is enabled.</note>
+			<p class="- topic/p ">To support the hardware management of dirty state, the DBM field is added to
+				the translation table descriptors as part of Armv8.1 architecture.</p>
+			<p class="- topic/p ">The core supports hardware update only in outer Write-Back and inner
+				Write-Back memory regions.</p>
+			<p class="- topic/p ">If software requests a hardware update in a memory region that is not
+				inner Write-Back or not outer Write-Back, then the core returns an abort with the
+				following encoding:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">ESR.ELx.DFSC = <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.bin">110001</ph></codeph> for Data Aborts in AArch64.</li>
+				<li class="- topic/li ">ESR.ELx.IFSC = <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.bin">110001</ph></codeph> for Instruction Aborts in
+					AArch64.</li>
+			</ul>
+		</section>
+	</refbody>
+</reference>

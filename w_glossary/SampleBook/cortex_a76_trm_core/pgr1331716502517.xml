@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="pgr1331716502517" xml:lang="en-us">
+	<title class="- topic/title ">Feedback on this product</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Feedback on this product</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">Information about how to give feedback on the product.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">If you have any comments or suggestions about this product, contact your supplier and
+				give:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The product name.</li>
+				<li class="- topic/li ">The product revision or version.</li>
+				<li class="- topic/li ">An explanation with as much information as you can provide. Include symptoms and
+					diagnostic procedures if appropriate.</li>
+			</ul>
+		</section>
+	</refbody>
+</reference>

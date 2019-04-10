@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="lau1442502201562" xml:lang="en-us">
+  
+  <title class="- topic/title ">About the Advanced SIMD and floating-point support</title>
+  <abstract class="- topic/abstract "><shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core supports the Advanced SIMD and scalar floating-point instructions in the A64 instruction set and the Advanced SIMD and floating-point instructions in the A32 and T32 instruction sets.</shortdesc>
+  </abstract>
+    <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    
+    <section class="- topic/section ">
+      
+      <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> floating-point implementation:</p>
+      <ul class="- topic/ul "><li class="- topic/li ">Does not generate floating-point exceptions.</li>
+        <li class="- topic/li "><p class="- topic/p ">Implements all scalar operations in hardware with support for all combinations
+          of:</p><ul class="- topic/ul "><li class="- topic/li "><p class="- topic/p ">Rounding
+            modes.</p></li>
+            <li class="- topic/li ">Flush-to-zero.</li>
+            <li class="- topic/li ">Default <term class="- topic/term ">Not a Number</term> (NaN) modes.</li></ul></li></ul>
+      
+      <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8‑A</keyword></ph>
+        architecture does not define a separate version number for its Advanced SIMD and
+        floating-point support in the AArch64 execution state because the instructions are always
+        implicitly present.</p>
+    </section>
+    
+    
+    
+  </conbody>
+</concept>

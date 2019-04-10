@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="vqo1478786262966" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Ares Reltable - GIC CPU Interface</title>
+    <topicmeta class="- map/topicmeta ">
+        <shortdesc class="- map/shortdesc ">Contains the reltable for the GIC CPU Interface chapter of the
+            Ares Core TRM bookmap id oua1475073415717</shortdesc>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+    <reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="normal" class="- map/relcell ">
+                <topicref href="xil1477667346785.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="ste1440662768724.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable>
+    
+    
+</map>

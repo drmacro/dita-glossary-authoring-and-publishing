@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440674598602" xml:lang="en-us">
+  <title class="- topic/title ">ETM trace unit generation options and resources</title>
+  <shortdesc class="- topic/shortdesc ">The following table shows the trace generation options implemented in
+    the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> ETM trace
+    unit.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <table class="- topic/table " colsep="0" frame="topbot" rowsep="0">
+        <title class="- topic/title ">ETM trace unit generation options implemented</title>
+        <tgroup class="- topic/tgroup " cols="2" colsep="0" rowsep="0">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Description</entry>
+              <entry class="- topic/entry " colname="col2">Configuration</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Instruction address size in bytes</entry>
+              <entry class="- topic/entry " colname="col2">8</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Data address size in bytes</entry>
+              <entry class="- topic/entry " colname="col2">0</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Data value size in bytes</entry>
+              <entry class="- topic/entry " colname="col2">0</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Virtual Machine ID size in bytes</entry>
+              <entry class="- topic/entry " colname="col2">4</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Context ID size in bytes</entry>
+              <entry class="- topic/entry " colname="col2">4</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Support for conditional instruction tracing</entry>
+              <entry class="- topic/entry " colname="col2">Not implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Support for tracing of data</entry>
+              <entry class="- topic/entry " colname="col2">Not implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Support for tracing of load and store instructions
+                as P0 elements</entry>
+              <entry class="- topic/entry " colname="col2">Not implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Support for cycle counting in the instruction
+                trace</entry>
+              <entry class="- topic/entry " colname="col2">Implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Support for branch broadcast tracing</entry>
+              <entry class="- topic/entry " colname="col2">Implemented</entry>
+            </row>
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of events supported in the trace</entry>
+              <entry class="- topic/entry " colname="col2">4</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Return stack support</entry>
+              <entry class="- topic/entry " colname="col2">Implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Tracing of SError exception support</entry>
+              <entry class="- topic/entry " colname="col2">Implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Instruction trace cycle counting minimum
+                threshold</entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">1</p></entry>
+            </row>
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Size of Trace ID</entry>
+              <entry class="- topic/entry " colname="col2">7 bits</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Synchronization period support</entry>
+              <entry class="- topic/entry " colname="col2">Read-write</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Global timestamp size</entry>
+              <entry class="- topic/entry " colname="col2">64 bits</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of cores available for tracing</entry>
+              <entry class="- topic/entry " colname="col2">1</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">ATB trigger support</entry>
+              <entry class="- topic/entry " colname="col2">Implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Low power behavior override</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">Not implemented</p></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Stall control support</entry>
+              <entry class="- topic/entry " colname="col2">Implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="0">
+              <entry class="- topic/entry " colname="col1">Support for overflow avoidance</entry>
+              <entry class="- topic/entry " colname="col2">Not implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="0">
+              <entry class="- topic/entry " colname="col1">Support for using CONTEXTIDR_EL2 in VMID
+                comparator</entry>
+              <entry class="- topic/entry " colname="col2">Implemented</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p class="- topic/p ">The following table shows the resources implemented in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> ETM trace unit.</p>
+      <table class="- topic/table " colsep="0" frame="topbot" rowsep="0">
+        <title class="- topic/title ">ETM trace unit resources implemented</title>
+        <tgroup class="- topic/tgroup " cols="2" colsep="0" rowsep="0">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Description</entry>
+              <entry class="- topic/entry " colname="col2">Configuration</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of resource selection pairs
+                implemented</entry>
+              <entry class="- topic/entry " colname="col2">8</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of external input selectors
+                implemented</entry>
+              <entry class="- topic/entry " colname="col2">4</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of external inputs implemented</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">165, 4 CTI + 161 PMU</p></entry>
+            </row>
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of counters implemented</entry>
+              <entry class="- topic/entry " colname="col2">2</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Reduced function counter implemented</entry>
+              <entry class="- topic/entry " colname="col2">Not implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of sequencer states implemented</entry>
+              <entry class="- topic/entry " colname="col2">4</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of Virtual Machine ID comparators
+                implemented</entry>
+              <entry class="- topic/entry " colname="col2">1</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of Context ID comparators
+                implemented</entry>
+              <entry class="- topic/entry " colname="col2">1</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of address comparator pairs
+                implemented</entry>
+              <entry class="- topic/entry " colname="col2">4</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of single-shot comparator controls</entry>
+              <entry class="- topic/entry " colname="col2">1</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Number of core comparator inputs
+                implemented</entry>
+              <entry class="- topic/entry " colname="col2">0</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Data address comparisons implemented</entry>
+              <entry class="- topic/entry " colname="col2">Not implemented</entry>
+            </row>
+            <row class="- topic/row " rowsep="0">
+              <entry class="- topic/entry " colname="col1">Number of data value comparators
+                implemented</entry>
+              <entry class="- topic/entry " colname="col2">0</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

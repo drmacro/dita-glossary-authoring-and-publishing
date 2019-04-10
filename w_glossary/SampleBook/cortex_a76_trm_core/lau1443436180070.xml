@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443436180070" xml:lang="en-us">
+  
+  <title class="- topic/title " id="TitleExceptionSyndromeRegister_EL2">ESR_EL2, Exception Syndrome
+    Register, EL2</title>
+  <shortdesc class="- topic/shortdesc ">The ESR_EL2 holds syndrome information for an exception taken to
+    EL2.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ESR_EL2 is a 32-bit register, and is part of:</p>
+      <ul class="- topic/ul " id="ul_mh5_22p_rv">
+        <li class="- topic/li ">The Virtualization registers functional group.</li>
+        <li class="- topic/li ">The Exception and fault handling registers functional group.</li>
+      </ul>
+      <fig class="- topic/fig " id="fig_vtw_v2p_rv">
+        <title class="- topic/title ">ESR_EL2 bit assignments</title>
+        <image class="- topic/image " href="joh1447944434472.svg" id="image_xww_v2p_rv" placement="inline">
+          <alt class="- topic/alt ">ESR_EL2 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">EC, [31:26]</dt>
+          <dd class="- topic/dd ">Exception Class. Indicates the reason for the exception that this
+            register holds information about. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more information.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IL, [25]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Instruction Length for synchronous exceptions. The possible values
+              are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">16-bit.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">32-bit.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more information.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ISS, [24:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Syndrome information. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more information.</p>
+            <p class="- topic/p ">When reporting a virtual SEI, bits[24:0] take the value of VSESRL_EL2[24:0].</p>
+            <p class="- topic/p ">When reporting a physical SEI, the following occurs:</p>
+            <ul class="- topic/ul ">
+              <li class="- topic/li ">IDS==0 (architectural syndrome).</li>
+              <li class="- topic/li ">AET always reports an uncontainable error (UC) with value <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">000</codeph> or an unrecoverable error (UEU)
+                with value <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">001</codeph>.</li>
+              <li class="- topic/li ">EA is <term class="- topic/term " outputclass="archterm">RES0</term>.</li>
+            </ul>
+            <p class="- topic/p ">When reporting a synchronous Data Abort, EA is <term class="- topic/term " outputclass="archterm">RES0</term>.</p>
+            <p class="- topic/p ">See <xref class="- topic/xref " href="mnw1478964168395.xml" keyref="VsesrEl2VirtualSerrorExceptionSyndromeRegisterEl2" type="reference">VSESR_EL2, Virtual SError Exception Syndrome Register (Ares Specific)<desc class="- topic/desc ">The VSESR_EL2 provides the syndrome value reported to software on taking 		a virtual SError interrupt exception.</desc></xref>.</p>
+            
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            
+            <p class="- topic/p ">RW fields in this register reset to architecturally
+              <term class="- topic/term " outputclass="archterm">UNKNOWN</term> values.</p>
+            <p class="- topic/p ">Bit fields and details not provided in this description are
+              architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+   
+  </refbody>
+</reference>

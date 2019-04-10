@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443447162708" xml:lang="en-us">
+  <title class="- topic/title " id="TitleMonitorDebugConfigurationRegister_EL3">MDCR_EL3, Monitor Debug
+    Configuration Register, EL3</title>
+  <shortdesc class="- topic/shortdesc ">The MDCR_EL3 provides configuration options for Security to self-hosted
+    debug.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "><title class="- topic/title ">Bit field descriptions</title><p class="- topic/p ">MDCR_EL3 is a 32-bit register, and is part of:</p><ul class="- topic/ul " id="ul_mh5_22p_rv">
+        <li class="- topic/li ">The Debug registers functional group.</li>
+        <li class="- topic/li ">The Security registers functional group.</li>
+      </ul><fig class="- topic/fig ">
+        <title class="- topic/title ">MDCR_EL3 bit assignments</title>
+        <image class="- topic/image " href="kue1480696266742.svg" placement="inline">
+          <alt class="- topic/alt ">MDCR_EL3 bit assignments</alt>
+        </image>
+      </fig>
+      
+      
+      
+      <dl class="- topic/dl ">
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:22]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Reserved.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+         
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">EPMAD, [21]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">External debugger access to Performance Monitors registers
+              disabled. This disables access to these registers by an external debugger. The
+              possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">Access to Performance Monitors registers from external
+                  debugger is permitted.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Access to Performance Monitors registers from external
+                  debugger is disabled, unless overridden by authentication interface.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">EDAD, [20]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">External debugger access to breakpoint and watchpoint registers
+              disabled. This disables access to these registers by an external debugger. The
+              possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">Access to breakpoint and watchpoint registers from external
+                  debugger is permitted.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Access to breakpoint and watchpoint registers from external
+                  debugger is disabled, unless overridden by authentication interface.</dd>
+              </dlentry>              
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        
+        
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SPME, [17]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Secure performance monitors enable. This enables event counting
+              exceptions from Secure state. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">Event counting prohibited in Secure state.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Event counting allowed in Secure state.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SPD32, [15:14]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl ">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TDOSA, [10]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Trap accesses to the OS debug system registers, OSLAR_EL1,
+              OSLSR_EL1, OSDLR_EL1, and DBGPRCR_EL1 OS.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">Accesses are not trapped.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Accesses to the OS debug system registers are trapped to
+                  EL3.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">The reset value is <term class="- topic/term " outputclass="archterm">UNKNOWN</term>.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TDA, [9]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Trap accesses to the remaining sets of debug registers to EL3.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">Accesses are not trapped.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Accesses to the remaining debug system registers are trapped
+                  to EL3.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">The reset value is <term class="- topic/term " outputclass="archterm">UNKNOWN</term>.</p>
+          </dd>
+        </dlentry>
+        
+        
+        
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            
+            <p class="- topic/p ">There are no configuration notes.</p>
+            <p class="- topic/p ">Bit fields and details that are not provided in this description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    
+  </refbody>
+</reference>

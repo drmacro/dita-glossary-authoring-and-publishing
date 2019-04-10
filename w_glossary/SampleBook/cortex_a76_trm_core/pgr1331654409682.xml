@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="pgr1331654409682" xml:lang="en-us">
+    <title class="- topic/title ">Using this book</title>
+    <titlealts class="- topic/titlealts ">
+        <navtitle class="- topic/navtitle ">Using this book</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc ">Information about the chapters in this book.</shortdesc>
+    <prolog class="- topic/prolog ">
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+    <refbody class="- topic/body        reference/refbody ">
+        <section class="- topic/section ">
+            <p class="- topic/p ">This book is organized into the following chapters:</p>
+            <p class="- topic/p " outputclass="booklist">This text will be replaced by output generator with the chapter list.</p>
+        </section>
+    </refbody>
+</reference>

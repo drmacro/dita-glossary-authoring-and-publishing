@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443437809604" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32InstructionSetAttributeRegister0_EL1">ID_ISAR0_EL1, AArch32 Instruction Set Attribute
+		Register 0, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_ISAR0_EL1 provides information about the instruction sets implemented by the core in
+		AArch32.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_ISAR0_EL1 is a 32-bit register, and is part of the Identification
+        registers functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_drc_nnx_nv">
+        <title class="- topic/title ">ID_ISAR0_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1442579622002.svg" id="image_stc_nnx_nv" placement="inline">
+          <alt class="- topic/alt ">ID_ISAR0_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:28]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc14">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Divide, [27:24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Divide instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <ul class="- topic/ul " id="ul_vvc_nnx_nv">
+                    <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">SDIV</codeph> and <codeph class="+ topic/ph pr-d/codeph ">UDIV</codeph> in the T32 instruction set.</li>
+                    <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">SDIV</codeph> and <codeph class="+ topic/ph pr-d/codeph ">UDIV</codeph> in the A32 instruction set.</li>
+                  </ul>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Debug, [23:20]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Debug instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">BKPT</codeph>.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Coproc, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Coprocessor instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">None implemented, except for instructions separately attributed
+                  by the architecture to provide access to AArch32 System registers and System
+                  instructions.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CmpBranch, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented combined Compare and Branch instructions in
+              the T32 instruction set:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">CBNZ</codeph> and <codeph class="+ topic/ph pr-d/codeph ">CBZ</codeph>.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Bitfield, [11:8]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented bit field instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">BFC</codeph>, <codeph class="+ topic/ph pr-d/codeph ">BFI</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SBFX</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">UBFX</codeph>.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">BitCount, [7:4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Bit Counting instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">CLZ</codeph>.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Swap, [3:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Swap instructions in the A32 instruction
+              set:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">None implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">In an AArch64-only implementation, this register is <term class="- topic/term " outputclass="archterm">UNKNOWN</term>.</p>
+            
+            <p class="- topic/p ">Must be interpreted with ID_ISAR1_EL1, ID_ISAR2_EL1, ID_ISAR3_EL1, ID_ISAR4_EL1, ID_ISAR5_EL1, and ID_ISAR6_EL1. See:</p>
+            <ul class="- topic/ul " id="ul_op4_gvs_2v">
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443437895509.xml" keyref="IdIsar1El1Aarch32InstructionSetAttributeRegister1El1" type="reference">ID_ISAR1_EL1, AArch32 Instruction Set Attribute Register 1, EL1<desc class="- topic/desc ">The ID_ISAR1_EL1 provides information about the instruction sets     implemented by the core in AArch32.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445407754.xml" keyref="IdIsar2El1Aarch32InstructionSetAttributeRegister2El1" type="reference">ID_ISAR2_EL1, AArch32 Instruction Set Attribute Register 2, EL1<desc class="- topic/desc ">The ID_ISAR2_EL1 provides information about the instruction sets     implemented by the core in AArch32.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445482819.xml" keyref="IdIsar3El1Aarch32InstructionSetAttributeRegister3El1" type="reference">ID_ISAR3_EL1, AArch32 Instruction Set Attribute Register 3, EL1<desc class="- topic/desc ">The ID_ISAR3_EL1 provides information about the instruction sets     implemented by the core in AArch32.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445566298.xml" keyref="IdIsar4El1Aarch32InstructionSetAttributeRegister4El1" type="reference">ID_ISAR4_EL1, AArch32 Instruction Set Attribute Register 4, EL1<desc class="- topic/desc ">The ID_ISAR4_EL1 provides information about the instruction sets     implemented by the core in AArch32.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445664210.xml" keyref="IdIsar5El1Aarch32InstructionSetAttributeRegister5El1" type="reference">ID_ISAR5_EL1, AArch32 Instruction Set Attribute Register 5, EL1<desc class="- topic/desc ">The ID_ISAR5_EL1 provides information about the instruction sets that     the core implements.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="nwd1493817464437.xml" keyref="IdIsar6El1Aarch32InstructionSetAttributeRegister6El1" type="reference">ID_ISAR6_EL1, AArch32 Instruction Set Attribute Register 6, EL1<desc class="- topic/desc ">The ID_ISAR6_EL1 provides information about the instruction sets that     the core implements.</desc></xref>.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

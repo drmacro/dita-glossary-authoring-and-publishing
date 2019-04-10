@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="tcg1478870816052" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Advanced SIMD and Floating-point Registers for Ares</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Advanced SIMD and Floating-point</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+
+
+    <topicref href="lau1442502469232.xml" class="- map/topicref "/>
+    <topicref href="lau1442502503726.xml" class="- map/topicref "/><topicref href="lau1442502526288.xml" class="- map/topicref "/><topicref href="lau1442502550390.xml" class="- map/topicref "/><topicref href="lau1442502572526.xml" class="- map/topicref "/><topicref href="lau1442502600944.xml" class="- map/topicref "/>
+    <topicref href="lau1442504225429.xml" class="- map/topicref "/>
+    <topicref href="lau1442504290459.xml" class="- map/topicref "/>
+</map>

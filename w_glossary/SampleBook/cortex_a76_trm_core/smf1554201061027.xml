@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="smf1554201061027" xml:lang="en-us">
+	<title class="- topic/title ">Page Based Hardware Attributes</title>
+	<shortdesc class="- topic/shortdesc "><term class="- topic/term ">Page Based Hardware Attributes</term> (PBHA) is an optional, implementation defined feature.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<p class="- topic/p ">It allows software to set up to two bits in the translation tables, which are then propagated though the memory system with transactions, and can be used in the system to control system components. The meaning of the bits is specific to the system design.</p>
+		<p class="- topic/p ">For information on how to set and enable the PBHA bits in the translation tables, see the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>. When disabled, the PBHA value that is propagated on the bus is 0.</p>
+		<p class="- topic/p ">For memory accesses caused by a translation table walk, the AHTCR, ATTBCR, and AVTCR registers control the PBHA values.</p>
+	
+	<section class="- topic/section ">
+		<title class="- topic/title ">PBHA combination between stage 1 and stage 2 on memory accesses</title>
+			<p class="- topic/p ">PBHA should always be considered as an attribute of the physical address.</p>
+			<p class="- topic/p ">When stage 1 and stage 2 are enabled:</p>
+			<ul class="- topic/ul " id="ul_pmw_bjf_wfb">
+				<li class="- topic/li ">If both stage 1 PBHA and stage 2 PBHA are enabled, the final PBHA is stage 2 PBHA.</li>
+				<li class="- topic/li ">If stage 1 PBHA is enabled and stage 2 PBHA is disabled, the final PBHA is stage 1 PBHA.</li>
+				<li class="- topic/li ">If stage 1 PBHA is disabled and stage 2 PBHA is enabled, the final PBHA is stage 2 PBHA.</li>
+				<li class="- topic/li ">If both stage 1 PBHA and stage 2 PBHA are disabled, the final PBHA is defined to 0.</li>
+			</ul>
+			<p class="- topic/p ">Enable of PBHA has granularity of one bit, so this property is applied independently on each PBHA bit.</p>
+	</section>
+	
+	<section class="- topic/section ">
+		<title class="- topic/title ">Mismatched aliases</title>
+		<p class="- topic/p ">If the same physical address is accessed through more than one virtual address mapping, and the PBHA bits are different in the mappings, then the results are <term class="- topic/term " outputclass="archterm">unpredictable</term>. The PBHA value sent on the bus could be for either mapping.</p>
+	</section>
+	
+	</conbody>
+</concept>

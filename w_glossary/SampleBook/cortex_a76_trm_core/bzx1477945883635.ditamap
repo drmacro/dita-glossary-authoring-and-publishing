@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="bzx1477945883635" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Ares Reltable - Power Management</title>
+    <topicmeta class="- map/topicmeta ">
+        <shortdesc class="- map/shortdesc ">Contains the reltable for the Power Management chapter of the Ares Core TRM</shortdesc>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+    
+    
+    
+    <reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="lau1465393370075.xml" class="- map/topicref "/> 
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="vyz1474288642391.xml" class="- map/topicref "/> 
+                <topicref href="joh1441894748225.xml" class="- map/topicref "/> 
+            </relcell>
+        </relrow>  
+        
+    </reltable>
+</map>

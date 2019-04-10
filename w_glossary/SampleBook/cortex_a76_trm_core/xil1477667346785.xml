@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="xil1477667346785" outputclass="nolist" xml:lang="en-us">
+  <title class="- topic/title ">About the Generic Interrupt Controller CPU interface</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">About the Generic Interrupt Controller CPU interface</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+    core implements the GIC CPU interface as described in the <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+    <term class="- topic/term "> Generic Interrupt Controller Architecture
+      Specification.</term></shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">This interfaces with an external GICv3 or GICv4 distributor component within the cluster
+        system and is a resource for supporting and managing interrupts. The GIC CPU interface hosts
+        registers to mask, identify and control states of interrupts forwarded to that core. Each
+        core in the cluster system has a GIC CPU interface component and connects to a common
+        external distributor component.</p>
+      <note class="- topic/note "> This chapter describes only features that are specific to the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implementation.
+        Additional information specific to the cluster can be found in <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite>.</note>
+      <p class="- topic/p ">The GICv4 architecture supports:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Two security states.</li>
+        <li class="- topic/li ">Interrupt virtualization.</li>
+        <li class="- topic/li "><term class="- topic/term ">Software-generated Interrupts</term> (SGIs).</li>
+        <li class="- topic/li ">Message Based Interrupts.</li>
+        <li class="- topic/li ">System register access for the CPU interface.</li>
+        <li class="- topic/li ">Interrupt masking and prioritization.</li>
+        <li class="- topic/li ">Cluster environments, including systems that contain more than eight
+          cores.</li>
+        <li class="- topic/li ">Wake-up events in power management environments.</li>
+        
+      </ul>
+      <p class="- topic/p ">The GIC includes interrupt grouping functionality that supports:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Configuring each interrupt to belong to an interrupt group.</li>
+        <li class="- topic/li ">Signaling Group 1 interrupts to the target core using either the
+          IRQ or the FIQ exception request. Group 1 interrupts can be Secure or Non-secure. </li>
+        <li class="- topic/li ">Signaling Group 0 interrupts to the target core using the FIQ
+          exception request only.</li>
+        <li class="- topic/li ">A unified scheme for handling the priority of Group 0 and Group 1
+          interrupts.</li>
+        
+      </ul>
+      <p class="- topic/p ">This chapter describes only features that are specific to the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core
+        implementation.</p>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><link class="- topic/link " format="dita" href="ste1440662768724.xml" role="friend" scope="local" type="reference"><linktext class="- topic/linktext ">GIC registers</linktext><desc class="- topic/desc ">This chapter describes the GIC registers.</desc></link></linkpool></related-links></reference>

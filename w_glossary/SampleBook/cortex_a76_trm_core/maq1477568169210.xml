@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="maq1477568169210" xml:lang="en-us">
+	<title class="- topic/title ">Register rename</title>
+	<shortdesc class="- topic/shortdesc ">The register rename unit performs register renaming to facilitate
+		out-of-order execution and dispatches decoded instructions to various issue queues. </shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<p class="- topic/p "/>
+	</conbody>
+</concept>

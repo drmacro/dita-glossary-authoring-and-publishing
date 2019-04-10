@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="tip1476903851664" xml:lang="en-us">
+  
+  <title class="- topic/title ">L1 instruction-side memory system</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">L1 instruction-side memory system</navtitle>
+  </titlealts>
+
+  <shortdesc class="- topic/shortdesc ">The L1 instruction memory system has the following key
+    features:</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+
+  <conbody class="- topic/body  concept/conbody ">
+    <section class="- topic/section ">
+      <ul class="- topic/ul ">
+        <li class="- topic/li "><term class="- topic/term ">Virtually Indexed, Physically Tagged</term> (VIPT), which behaves as a <term class="- topic/term ">Physically Indexed, Physically Tagged</term> (PIPT) 4-way set-associative L1 data cache.</li> 
+          <li class="- topic/li ">Fixed cache line length of 64 bytes.</li>
+          <li class="- topic/li ">Pseudo-LRU cache replacement policy.</li>
+        <li class="- topic/li ">256-bit read interface from the L2 memory system.</li>
+        
+      </ul>
+           
+      
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443448377025" xml:lang="en-us">
+  <title class="- topic/title " id="TitleTranslationControlRegister_EL1">TCR_EL1, Translation Control Register, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The TCR_EL1 determines which Translation Base registers define the base
+    address register for a translation table walk required for stage 1 translation of a memory
+    access from EL0 or EL1 and holds cacheability and shareability information.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">TCR_EL1 is a 64-bit register, and is part of the Virtual memory control registers functional
+				group.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TCR_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1443448414613.svg" placement="inline">
+          <alt class="- topic/alt ">TCR_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      
+      
+      
+      
+      
+      
+      
+      <note class="- topic/note ">
+        <p class="- topic/p ">Bits[50:39], architecturally defined, are implemented in the core.</p>
+      </note>
+      <dl class="- topic/dl ">
+        
+      
+        
+        
+        
+        
+        
+
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">HD, [40]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Hardware management of dirty state in stage 1 translations from EL0 and EL1. The
+							possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">Stage 1 hardware management of dirty state disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Stage 1 hardware management of dirty state enabled, only if the HA bit is
+									also set to 1.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">HA, [39]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Hardware Access flag update in stage 1 translations from EL0 and EL1. The possible
+							values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">Stage 1 Access flag update disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Stage 1 Access flag update enabled.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </dl>
+
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">RW fields in this register reset to <term class="- topic/term " outputclass="archterm">UNKNOWN</term> values.</p>
+            <p class="- topic/p ">Bit fields and details that are not provided in this description
+              are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    
+    
+  </refbody>
+</reference>

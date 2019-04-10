@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="ste1440492905695" outputclass="nolist" xml:lang="en-us">
+  
+  <title class="- topic/title ">About the L1 memory system</title>
+
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+    L1 memory system is designed to enhance core performance and save power.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">The L1 memory system consists of separate instruction and data caches. Both have a fixed size of 64KB.</p>
+      
+      
+      
+    </section>
+
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="tip1476903851664.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Ares L1 instruction-side memory system</linktext><desc class="- topic/desc ">The L1 instruction memory system has the following key     features:</desc></link><link class="- topic/link " format="dita" href="aum1476822476683.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">L1 data-side memory system</linktext><desc class="- topic/desc ">The L1 data memory system has the following features:</desc></link></linkpool></linkpool></related-links></concept>

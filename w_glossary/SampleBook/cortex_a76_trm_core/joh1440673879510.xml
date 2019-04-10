@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673879510" xml:lang="en-us">
+  <title class="- topic/title ">AArch64 PMU register summary</title>
+    <shortdesc class="- topic/shortdesc ">The PMU counters and their
+      associated control registers are accessible in the AArch64 Execution state with <codeph class="+ topic/ph pr-d/codeph ">MRS</codeph> and <codeph class="+ topic/ph pr-d/codeph ">MSR</codeph>
+      instructions.</shortdesc>
+  
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">The following table gives a summary of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> PMU registers in the AArch64 Execution state. For those registers not described in this chapter,
+        see the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <table class="- topic/table " colsep="0" frame="topbot" rowsep="0">
+        <title class="- topic/title ">PMU register summary in the AArch64 Execution state</title>
+        <tgroup class="- topic/tgroup " cols="5" colsep="0" rowsep="0">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="1*"/>
+          <colspec class="- topic/colspec " colname="col5" colnum="5" colsep="0"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Width</entry>
+              <entry class="- topic/entry " colname="col4">Reset</entry>
+              <entry class="- topic/entry " colname="col5">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMCR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">   <ph class="- topic/ph " otherprops="g.number.any">0x410B30XX</ph> </entry>
+
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="evu1477587576653.xml" keyref="PmcrEl0PerformanceMonitorsControlRegisterEL0" type="reference">PMCR_EL0, Performance Monitors Control Register, EL0<desc class="- topic/desc ">The PMCR_EL0 provides details of the Performance Monitors     implementation, including the number of counters implemented, and configures and controls the     counters.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMCNTENSET_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Count Enable Set Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMCNTENCLR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Count Enable Clear Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMOVSCLR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Overflow Flag Status Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMSWINC_EL0</entry>
+              <entry class="- topic/entry " colname="col2">WO</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Software Increment Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMSELR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Event Counter Selection Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMCEID0_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3">64</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">F7FF0F3F</ph></p>
+                
+                
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="ehx1477942842064.xml" keyref="Pmceidr0El0PerformanceMonitorsCommonEventIdentificationRegister0EL0" type="reference">PMCEID0_EL0, Performance Monitors Common Event Identification Register 0, EL0 (Ares/Enyo specific)<desc class="- topic/desc ">The PMCEID0_EL0 defines which common architectural and common     microarchitectural feature events are implemented.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMCEID1_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3">64</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0000BE7F</ph></p>
+                
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="wyw1478113204130.xml" keyref="Pmceidr1El0PerformanceMonitorsCommonEventIdentificationRegister1EL0" type="reference">PMCEID1_EL0, Performance Monitors Common Event Identification Register 1, EL0 (Ares/Enyo Specific)<desc class="- topic/desc ">The PMCEID1_EL0 defines which common architectural and common     microarchitectural feature events are implemented.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMCCNTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">64</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Cycle Count Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMXEVTYPER_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">Performance Monitors Selected Event Type and Filter
+                Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMCCFILTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Cycle Count Filter Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMXEVCNTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">Performance Monitors Selected Event Count
+                Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMUSERENR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors User Enable Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMINTENSET_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Interrupt Enable Set Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMINTENCLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Interrupt Enable Clear Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMOVSSET_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">Performance Monitors Overflow Flag Status Set
+                Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVCNTR0_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5" morerows="5">Performance Monitors Event Count
+                Registers</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVCNTR1_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVCNTR2_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVCNTR3_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVCNTR4_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVCNTR5_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVTYPER0_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5" morerows="5">
+                <p class="- topic/p ">Performance Monitors Event Type Registers</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVTYPER1_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVTYPER2_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVTYPER3_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVTYPER4_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">PMEVTYPER5_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+            </row>
+            <row class="- topic/row " rowsep="0">
+              <entry class="- topic/entry " colname="col1">PMCCFILTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3">32</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Performance Monitors Cycle Count Filter Register</p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><link class="- topic/link " format="dita" href="tgw1477591342487.xml" role="friend" scope="local" type="reference"><linktext class="- topic/linktext ">PMU events (Ares/Enyo/Deimos Specific)</linktext><desc class="- topic/desc ">The following table shows the events that are generated and the numbers     that the PMU uses to reference the events. The table also shows the bit position of each event     on the event bus. Event reference numbers that are not listed are reserved.</desc></link></linkpool></related-links></reference>

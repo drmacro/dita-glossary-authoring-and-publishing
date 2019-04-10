@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ylb1473169716120" xml:lang="en-us">
+	<title class="- topic/title ">PMU snapshot register summary</title>
+	<shortdesc class="- topic/shortdesc ">The snapshot registers are visible in an <term class="- topic/term " outputclass="archterm">implementation defined</term> region of
+		the PMU external debug interface. Each time the debugger sends a snapshot request,
+		information is collected to see how the code is executed in the different cores.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The following table describes the PMU snapshot registers implemented in the core.</p>
+			<table class="- topic/table ">
+				<title class="- topic/title ">PMU snapshot register summary</title>
+				<tgroup class="- topic/tgroup " cols="5" colsep="0" rowsep="0">
+					<colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+					<colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+					<colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+					<colspec class="- topic/colspec " colname="col4" colnum="4" colsep="0"/>
+					<colspec class="- topic/colspec " colname="col5" colnum="5" colsep="0"/>
+					
+					<thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Offset</entry>
+							<entry class="- topic/entry " colname="col2">Name</entry>
+							<entry class="- topic/entry " colname="col3">Type</entry>
+							<entry class="- topic/entry " colname="col4">Width</entry>
+							<entry class="- topic/entry " colname="col5">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">600</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMPCSSR_LO</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							<entry class="- topic/entry " colname="col5" morerows="1"><xref class="- topic/xref " href="jub1473226957585.xml" keyref="PMPCSSRSnapshotProgramCounterSampleRegister" type="reference">PMPCSSR, Snapshot Program Counter Sample Register<desc class="- topic/desc ">The PMPCSSR is an alias for the PCSR register.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">604</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMPCSSR_HI</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">608</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMPCIDSSR</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							<entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="vqc1473172331269.xml" keyref="PMCIDSSRSnapshotCONTEXTIDREL1SampleRegister" type="reference">PMCIDSSR, Snapshot CONTEXTIDR_EL1 Sample Register<desc class="- topic/desc ">The PMCIDSSR is an alias for the CIDSR register.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">60C</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMPCID2SSR</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							<entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="nls1473172127906.xml" keyref="PMCID2SSRSnapshotCONTEXTIDREL2SampleRegister" type="reference">PMCID2SSR, Snapshot CONTEXTIDR_EL2 Sample Register<desc class="- topic/desc ">The PMCID2SSR is an alias for the CID2SR register.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">610</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMSSSR</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							<entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="hia1473229271650.xml" keyref="PMSSSRPMUSnapshotStatusRegister" type="reference">PMSSSR, PMU Snapshot Status Register<desc class="- topic/desc ">The PMSSSR holds status information about the captured counters.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">614</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMOVSSR</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							<entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="vcq1473172538334.xml" keyref="PMOVSSRPMUOverflowStatusSnapshotRegister" type="reference">PMOVSSR, PMU Overflow Status Snapshot Register<desc class="- topic/desc ">The PMOVSSR is a captured copy of  PMOVSR.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">618</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMCCNTSR_LO</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							<entry class="- topic/entry " colname="col5" morerows="1"><xref class="- topic/xref " href="rcc1473170931764.xml" keyref="PMCCNTSRPMUCycleCounterSnapshotRegister" type="reference">PMCCNTSR, PMU Cycle Counter Snapshot Register<desc class="- topic/desc ">The PMCCNTSR is a captured copy of PMCCNTR_EL0.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">61C</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMCCNTSR_HI</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">620</ph> + 4×n</entry>
+							<entry class="- topic/entry " colname="col2">PMEVCNTSRn</entry>
+							<entry class="- topic/entry " colname="col3">RO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							<entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="nvv1473172414952.xml" keyref="PMEVCNTSRnPMUCycleCounterSnapshotRegister" type="reference">PMEVCNTSRn, PMU Cycle Counter Snapshot Registers 0-5<desc class="- topic/desc ">The PMEVCNTSRn, are captured copies of PMEVCNTRn_EL0, n is 		0-5.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1"><ph class="- topic/ph " otherprops="g.number.hex">6F0</ph></entry>
+							<entry class="- topic/entry " colname="col2">PMSSCR</entry>
+							<entry class="- topic/entry " colname="col3">WO</entry>
+							<entry class="- topic/entry " colname="col4">32</entry>
+							<entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="rpf1473227989981.xml" keyref="PMSSCRPMUSnapshotCaptureRegister" type="reference">PMSSCR, PMU Snapshot Capture Register<desc class="- topic/desc ">The PMSSCR provides a mechanism for software to initiate a sample.</desc></xref></entry>
+						</row>
+						
+					</tbody>
+				</tgroup>
+			</table>
+		</section>
+	</refbody>
+</reference>

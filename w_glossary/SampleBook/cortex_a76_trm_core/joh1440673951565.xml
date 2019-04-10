@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673951565" xml:lang="en-us">
+  <title class="- topic/title ">Exporting PMU events</title>
+  <shortdesc class="- topic/shortdesc ">Some of the PMU events are exported to the ETM trace unit to be
+    monitored.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+
+      <note class="- topic/note ">The <keyword class="- topic/keyword " otherprops="g.signal.name">PMUEVENT</keyword> bus is not exported to external components. This is because the event
+        bus cannot safely cross an asynchronous boundary when events can be generated on every
+        cycle.</note>
+    </section>
+  </refbody>
+</reference>

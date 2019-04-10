@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443703849852" xml:lang="en-us">
+  <title class="- topic/title ">TRCDEVAFF1, Device Affinity Register 1</title>
+  <shortdesc class="- topic/shortdesc ">The TRCDEVAFF1 is a read-only copy of MPIDR_EL1[63:32] as seen from EL3,
+    unaffected by VMPIDR_EL2.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    
+  </refbody>
+</reference>

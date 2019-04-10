@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1457002069712" xml:lang="en-us">
+	<title class="- topic/title ">LORID_EL1, LORegion ID Register, EL1</title>
+	<shortdesc class="- topic/shortdesc ">The LORID_EL1 ID register indicates the supported number of LORegions and
+		LORegion descriptors.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">LORID_EL1 is a 64-bit register.</p>
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">LORID_EL1 bit assignments</title>
+				<image class="- topic/image " href="lau1457005962208.svg" placement="inline">
+					<alt class="- topic/alt ">LORID_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">[63:24]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">LD, [23:16]</dt>
+					<dd class="- topic/dd ">Number of LORegion descriptors supported by the implementation, expressed
+						as binary 8-bit number. The value is: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">04</ph></dt>
+								<dd class="- topic/dd ">Four LORegion descriptors are supported.</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">[15:8]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">LR, [7:0]</dt>
+					<dd class="- topic/dd ">Number of LORegions supported by the
+						implementation, expressed as a binary 8-bit number. The value is:
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">04</ph></dt>
+								<dd class="- topic/dd ">Four LORegions are supported.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">There are no configuration notes.</p>
+						<p class="- topic/p ">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+	
+	</refbody>
+</reference>

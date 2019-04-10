@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1441900491084" xml:lang="en-us">
+	<title class="- topic/title ">Off (emulated)</title>
+	<shortdesc class="- topic/shortdesc ">In this mode, all core domain logic and RAMs are kept on. However, core
+		warm reset can be asserted externally to emulate a power off scenario while keeping core
+		debug state and allowing debug access.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">All debug registers must retain their mode and be accessible from the external
+				debug interface. All other functional interfaces behave as if the core were Off.</p>
+		</section>
+	</refbody>
+</reference>

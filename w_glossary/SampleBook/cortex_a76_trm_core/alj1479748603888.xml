@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="alj1479748603888" xml:lang="en-us">
+  
+  
+  <title class="- topic/title ">Cache protection behavior </title>
+  <shortdesc class="- topic/shortdesc ">The configuration of the RAS extension that is implemented in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core includes cache
+    protection. </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">In this case, the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core protects against errors that result in a RAM bitcell holding the
+        incorrect value.</p>
+      <p class="- topic/p ">The RAMs in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core have the following capability:</p>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SED </dt>
+          <dd class="- topic/dd "><term class="- topic/term ">Single Error Detect</term>. One bit of parity is
+            applicable to the entire word. The word size is specific for each RAM and depends on the
+            protection granule.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Interleaved parity</dt>
+          <dd class="- topic/dd ">One bit of parity is applicable to the even bits of the word, and one
+            bit of parity is applicable to the odd bits of the word.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt "> SECDED</dt>
+          <dd class="- topic/dd "><term class="- topic/term ">Single Error Correct, Double Error
+            Detect</term>.</dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p "><xref class="- topic/xref " href="alj1479748603888.xml#alj1479748603888/cache.protection.behavior" type="table">Table 1</xref>
+        indicates which protection type is applied to each RAM.</p>
+      <p class="- topic/p ">The core can progress and remain functionally correct when there is a
+        single bit error in any RAM. </p>
+      <p class="- topic/p ">If there are multiple single bit errors in different RAMs, or within
+        different protection granules within the same RAM, then the core also remains functionally
+        correct. </p>
+      <p class="- topic/p ">If there is a double bit error in a single RAM within the same protection
+        granule, then the behavior depends on the RAM:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">For RAMs with SECDED capability, the core detects and either reports or
+          defers the error. If the error is in a cache line containing dirty data, then that data
+          might be lost.</li>
+        <li class="- topic/li ">For RAMs with only SED, the core does not detect a double bit error.
+          This might cause data corruption.</li>
+      </ul>
+      <p class="- topic/p ">If there are three or more bit errors within the same protection granule,
+        then depending on the RAM and the position of the errors within the RAM, the core might or
+        might not detect the errors.</p>
+      <p class="- topic/p ">The cache protection feature of the core has a minimal performance impact
+        when no errors are present.</p>
+      <table class="- topic/table " id="cache.protection.behavior">
+        <title class="- topic/title ">Cache protection behavior</title>
+        <tgroup class="- topic/tgroup " cols="5">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col5" colnum="5" colsep="0"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">RAM</entry>
+              <entry class="- topic/entry " colname="col2">Protection type</entry>
+              <entry class="- topic/entry " colname="col3">Protection granule</entry>
+              <entry class="- topic/entry " colname="col4">Correction behavior</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            
+            
+            
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L1 instruction cache data</entry>
+              <entry class="- topic/entry " colname="col2">SED</entry>
+              <entry class="- topic/entry " colname="col4">72 bits</entry>
+              <entry class="- topic/entry " colname="col5">The line that contains the error is invalidated
+                from the L1 instruction cache and fetched again from the subsequent memory
+                system.</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L1 BTB</entry>
+              <entry class="- topic/entry " colname="col2">None</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L1 GHB</entry>
+              <entry class="- topic/entry " colname="col2">None</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+            </row>
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L1 BPIQ</entry>
+              <entry class="- topic/entry " colname="col2">None</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L1 data cache tag</entry>
+              <entry class="- topic/entry " colname="col2">SECDED</entry>
+              <entry class="- topic/entry " colname="col4">34 bits + 7 bits for ECC attached to the
+                word.</entry>
+              <entry class="- topic/entry " colname="col5">The cache line that contains the error gets
+                evicted, corrected in line, and refilled to the core.</entry>
+            </row>
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L1 data cache data</entry>
+              <entry class="- topic/entry " colname="col2">SECDED</entry>
+              <entry class="- topic/entry " colname="col4">32 bits of data +1 poison bit + 7 bits for ECC
+                attached to the word.</entry>
+              <entry class="- topic/entry " colname="col5">The cache line that contains the error gets
+                evicted, corrected in line, and refilled to the core.</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L1 Prefetch History Table (PHT)</entry>
+              <entry class="- topic/entry " colname="col2">None</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">MMU translation cache</entry>
+              <entry class="- topic/entry " colname="col2">2 interleaved parity bits</entry>
+              <entry class="- topic/entry " colname="col4"><ph class="- topic/ph ">67 bits</ph></entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Entry invalidated, new pagewalk
+                started to refetch it.</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">MMU replacement policy</entry>
+              <entry class="- topic/entry " colname="col2">None</entry>
+              <entry class="- topic/entry " colname="col4"> -</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L2 cache tag</entry>
+              <entry class="- topic/entry " colname="col2"> <p class="- topic/p ">SECDED</p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">128KB L2 - 7 ECC bits for 38
+                  tag bits</p> <p class="- topic/p ">256KB L2 - 7 ECC bits for 37
+                  tag bits</p> <p class="- topic/p ">512KB L2 - 7 ECC bits for 36 tag bits</p></entry>
+              <entry class="- topic/entry " colname="col5">Tag is corrected inline.</entry>
+            </row>
+            
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L2 cache data</entry>
+              <entry class="- topic/entry " colname="col2"> <p class="- topic/p ">SECDED</p> </entry>
+              <entry class="- topic/entry " colname="col4">8 ECC bits for 64 data bits</entry>
+              <entry class="- topic/entry " colname="col5">Data is corrected inline.</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L2 victim</entry>
+              <entry class="- topic/entry " colname="col2">None</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">L2 TQ data</entry>
+              <entry class="- topic/entry " colname="col2">SECDED</entry>
+              <entry class="- topic/entry " colname="col4">8 ECC bits for 64 data bits</entry>
+              <entry class="- topic/entry " colname="col5">Data is corrected inline.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p class="- topic/p ">To ensure that progress is guaranteed even in case of hard error, the core
+        returns corrected data to the core, and no cache access is required after data
+        correction.</p>
+    </section>
+  </refbody>
+</reference>

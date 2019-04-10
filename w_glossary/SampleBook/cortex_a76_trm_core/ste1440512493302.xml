@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1440512493302" xml:lang="en-us">
+  <title class="- topic/title ">Debug register interfaces</title>
+  
+  <shortdesc class="- topic/shortdesc ">The Debug architecture defines a set of debug registers.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p "> The debug register interfaces provide access to these registers from:</p>
+      <ul class="- topic/ul "><li class="- topic/li ">Software running on the core.</li>
+        <li class="- topic/li ">An external debugger.</li></ul>
+      <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core
+        implements the Armv8 Debug architecture and debug events as described in the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>. It also implements
+        improvements to Debug introduced in Armv8.1 and Armv8.2.</p>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="joh1440673246448.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Core interfaces</linktext><desc class="- topic/desc ">System register access allows the core to directly access certain     debug registers.</desc></link><link class="- topic/link " format="dita" href="ste1440512499412.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Breakpoints and watchpoints</linktext><desc class="- topic/desc ">The core supports six breakpoints, four watchpoints, and a standard <term class="- topic/term ">Debug Communications Channel</term> (DCC).</desc></link><link class="- topic/link " format="dita" href="joh1440673249061.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Effects of resets on debug registers</linktext><desc class="- topic/desc ">The core has the following reset signals that affect the debug     registers:</desc></link><link class="- topic/link " format="dita" href="joh1440673251344.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">External access permissions to debug registers</linktext><desc class="- topic/desc ">External access permission to the debug registers is subject to the     conditions at the time of the access.</desc></link></linkpool></linkpool></related-links></reference>

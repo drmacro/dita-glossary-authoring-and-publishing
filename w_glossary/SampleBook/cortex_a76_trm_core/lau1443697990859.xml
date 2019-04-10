@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443697990859" xml:lang="en-us">
+  <title class="- topic/title ">TRCIDR3, ID Register 3</title>
+  <shortdesc class="- topic/shortdesc ">The TRCIDR3 indicates:</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Whether TRCVICTLR is supported.</li>
+        <li class="- topic/li ">The number of cores available for tracing.</li>
+        <li class="- topic/li ">If an Exception level supports instruction tracing.</li>
+        <li class="- topic/li ">The minimum threshold value for instruction trace cycle
+          counting.</li>
+        <li class="- topic/li ">Whether the synchronization period is fixed.</li>
+        <li class="- topic/li ">Whether TRCSTALLCTLR is supported and if so whether it supports
+          trace overflow prevention and supports stall control of the core.</li>
+      </ul>
+      
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The TRCIDR3 is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCIDR3 bit assignments</title>
+        <image class="- topic/image " href="lau1443698228091.svg" placement="inline">
+          <alt class="- topic/alt ">TRCIDR3 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">NOOVERFLOW, [31]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates whether TRCSTALLCTLR.NOOVERFLOW is
+            implemented:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">TRCSTALLCTLR.NOOVERFLOW is not implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">NUMPROC, [30:28]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates the number of cores available for
+            tracing:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b000</codeph></dt>
+                <dd class="- topic/dd ">The trace unit can trace one core, ETM trace unit sharing
+                  not supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SYSSTALL, [27]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates whether stall control is
+            implemented:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">The system supports core stall control.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">STALLCTL, [26]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates whether TRCSTALLCTLR is
+            implemented:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">TRCSTALLCTLR is implemented.</dd>
+              </dlentry>
+            </dl><p class="- topic/p ">This field is used in conjunction with SYSSTALL.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SYNCPR, [25]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates whether there is a fixed synchronization
+            period:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">TRCSYNCPR is read-write so software can change the
+                  synchronization period.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TRCERR, [24]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates whether TRCVICTLR.TRCERR is
+            implemented:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">TRCVICTLR.TRCERR is implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">EXLEVEL_NS, [23:20]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Each bit controls whether instruction tracing in Non-secure state is implemented
+            for the corresponding Exception level:</p><dl class="- topic/dl " compact="yes">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0111</codeph></dt>
+                <dd class="- topic/dd ">Instruction tracing is implemented for Non-secure EL0, EL1, and
+                  EL2 Exception levels.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">EXLEVEL_S, [19:16]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Each bit controls whether instruction tracing in Secure state is implemented for
+            the corresponding Exception level:</p><dl class="- topic/dl " compact="yes">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1011</codeph></dt>
+                <dd class="- topic/dd ">Instruction tracing is implemented for Secure EL0, EL1, and EL3
+                  Exception levels.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CCITMIN, [11:0]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">The minimum value that can be programmed in
+            TRCCCCTLR.THRESHOLD:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">004</ph></codeph></dt>
+                <dd class="- topic/dd ">Instruction trace cycle counting minimum threshold is 4.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The TRCIDR3 can be accessed through the external debug interface, offset
+        <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1EC</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="zgb1477919356258" outputclass="nolist" xml:lang="en-us">
+  
+  
+  <title class="- topic/title ">Error injection</title>
+  <shortdesc class="- topic/shortdesc ">To support testing of error handling software, the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core can inject errors in
+    the error detection logic.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    
+    
+    <section class="- topic/section ">
+      <p class="- topic/p ">The following table describes all the possible types of error that the
+        core can encounter and therefore inject.</p>
+      <table class="- topic/table ">
+        <title class="- topic/title ">Errors injected in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  core</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Error type</entry>
+              <entry class="- topic/entry " colname="col2">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Corrected errors</entry>
+              <entry class="- topic/entry " colname="col2">A CE is generated for a single-bit ECC error on L1 data caches
+                and L2 caches, both on data and tag RAMs.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Deferred errors</entry>
+              <entry class="- topic/entry " colname="col2">A DE is generated for a double-bit ECC error on L1 data caches
+                and L2 caches, but only on data RAM.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Uncorrected errors</entry>
+              <entry class="- topic/entry " colname="col2">A UE is generated for a double-bit ECC error on L1 data caches
+                and L2 caches, but only on tag RAM.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      
+      <p class="- topic/p ">The following table describes the registers that handle error injection in
+        the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core.</p>
+      
+      <table class="- topic/table ">
+        <title class="- topic/title ">Error injection registers</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Register name</entry>
+              <entry class="- topic/entry " colname="col2">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERR0PFGF_EL1</entry>
+              <entry class="- topic/entry " colname="col2">The ERR Pseudo Fault Generation Feature register defines which errors can be injected.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERR0PFGCTL_EL1</entry>
+              <entry class="- topic/entry " colname="col2">The ERR Pseudo Fault Generation Control register controls the errors that are injected.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERR0PFGCDN_EL1</entry>
+              <entry class="- topic/entry " colname="col2">The ERR Pseudo Fault Generation Count Down register controls
+                the fault injection timing.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      
+      <note class="- topic/note ">This mechanism simulates the corruption of any RAM but the data is not
+        actually corrupted.</note>
+      
+      <p class="- topic/p ">See also:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li "><xref class="- topic/xref " href="xhe1474455628057.xml" keyref="Err0pfgfErr0PseudoFaultGenerationFeatureRegister" type="reference">ERR0PFGF, Error Pseudo Fault Generation Feature Register<desc class="- topic/desc ">The ERR0PFGF is the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> node register that defines which fault generation features are 		implemented.</desc></xref>.</li>
+        <li class="- topic/li "><xref class="- topic/xref " href="lau1457351395113.xml" keyref="Err0pfgctlErr0PseudoFaultGenerationControlRegister" type="reference">ERR0PFGCTL, Error Pseudo Fault Generation Control Register<desc class="- topic/desc ">The ERR0PFGCTL is the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> node register that enables controlled fault generation.</desc></xref>.</li>
+        <li class="- topic/li "><xref class="- topic/xref " href="lau1457356434204.xml" keyref="Err0pfgcdnErr0PseudoFaultGenerationCountDownRegister" type="reference">ERR0PFGCDN, Error Pseudo Fault Generation Count Down Register<desc class="- topic/desc ">ERR0PFGCDN is the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> node register that generates one of the errors that are enabled in the corresponding ERR0PFGCTL register.</desc></xref>.</li>
+      </ul>
+      
+    </section>
+  </refbody>
+</reference>

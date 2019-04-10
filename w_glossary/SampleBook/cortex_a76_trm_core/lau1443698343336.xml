@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443698343336" xml:lang="en-us">
+  <title class="- topic/title ">TRCIDR5, ID Register 5</title>
+  <shortdesc class="- topic/shortdesc ">The TRCIDR5 returns how many resources the trace unit
+    supports.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCIDR5 bit assignments</title>
+        <image class="- topic/image " href="lau1443698387058.svg" placement="inline">
+          <alt class="- topic/alt ">TRCIDR5 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">REDFUNCNTR, [31]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Reduced Function Counter implemented:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Reduced Function Counter not implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">NUMCNTR, [30:28]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Number of counters implemented:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b010</codeph></dt>
+                <dd class="- topic/dd ">Two counters implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">NUMSEQSTATE, [27:25]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Number of sequencer states implemented:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b100</codeph></dt>
+                <dd class="- topic/dd ">Four sequencer states implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [24]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">LPOVERRIDE, [23]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Low-power state override support:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Low-power state override support implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ATBTRIG, [22]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">ATB trigger support:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">ATB trigger support implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TRACEIDSIZE, [21:16]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Number of bits of trace ID:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">07</ph></codeph></dt>
+                <dd class="- topic/dd ">Seven-bit trace ID implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">NUMEXTINSEL, [11:9]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Number of external input selectors
+              implemented:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b100</codeph></dt>
+                <dd class="- topic/dd ">Four external input selectors implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">NUMEXTIN, [8:0]</dt>
+            <dd class="- topic/dd ">
+                <p class="- topic/p ">Number of external inputs implemented:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+                    <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">AD</ph></dt>
+                        <dd class="- topic/dd ">32 external inputs implemented.</dd>
+                    </dlentry>
+                </dl>
+            </dd>
+        </dlentry>
+  
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The TRCIDR5 can be accessed through the external debug interface, offset
+          <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1F4</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

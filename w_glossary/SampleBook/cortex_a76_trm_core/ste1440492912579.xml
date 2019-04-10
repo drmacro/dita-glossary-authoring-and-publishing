@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="ste1440492912579" outputclass="nolist" xml:lang="en-us">
+  <title class="- topic/title ">Cache behavior</title>
+  
+  <shortdesc class="- topic/shortdesc ">The <term class="- topic/term " outputclass="archterm">implementation specific</term> features of the instruction and data caches
+    include: </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <section class="- topic/section ">
+      
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">At reset the instruction and data caches are disabled and both caches are
+          automatically invalidated.</li>
+      </ul>
+      <note class="- topic/note ">Caches in the core are invalidated automatically at reset deassertion unless the core power mode is initialized to Debug Recovery. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite> for more information.</note>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">You can enable or disable each cache independently.</li>
+        <li class="- topic/li ">Cache lockdown is not supported. </li>
+        <li class="- topic/li ">On a cache miss, data for the cache linefill is requested in critical
+          word-first order.</li>
+      </ul>
+      
+    </section>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="ste1440492918455.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Instruction cache disabled behavior</linktext><desc class="- topic/desc ">If the instruction cache is disabled, fetches cannot access any of the     instruction cache arrays. An exception is the instruction cache maintenance operations. If the     instruction cache is disabled, the instruction cache maintenance operations can still execute     normally.</desc></link><link class="- topic/link " format="dita" href="joh1440667084709.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Instruction cache speculative memory accesses</linktext><desc class="- topic/desc ">Instruction fetches are speculative, as there can be several unresolved     branches in the pipeline. There is no execution guarantee. </desc></link><link class="- topic/link " format="dita" href="joh1440667086980.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Data cache disabled behavior</linktext><desc class="- topic/desc ">If the data cache is disabled, load and store instructions do not access     any of the L1 data, L2 cache, and, if present, the <keyword class="- topic/keyword ">DSU</keyword> L3 cache     arrays.</desc></link><link class="- topic/link " format="dita" href="tby1480692375560.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Data cache maintenance considerations</linktext><desc class="- topic/desc ">DC IVAC operations in AArch64 state are treated as DC CIVAC except for     permission checking and watchpoint matching.</desc></link><link class="- topic/link " format="dita" href="fsw1473248505911.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Data cache coherency</linktext><desc class="- topic/desc ">To maintain data coherency between multiple cores, the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core uses the MESI protocol.</desc></link><link class="- topic/link " format="dita" href="lto1473834732563.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Write streaming mode</linktext><desc class="- topic/desc ">A cache line is allocated to the L1 on either a read miss or a write 		miss.</desc></link></linkpool></linkpool></related-links></concept>

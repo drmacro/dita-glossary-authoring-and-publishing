@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="mep1477568873641" xml:lang="en-us">
+	<title class="- topic/title ">Execution pipeline</title>
+	<shortdesc class="- topic/shortdesc ">The execution pipeline includes:</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<ul class="- topic/ul ">
+			<li class="- topic/li ">Integer execute unit that performs arithmetic and logical data processing
+				operations. </li>
+			<li class="- topic/li ">Vector execute unit that performs Advanced SIMD and floating point operations.
+				Optionally, it can execute the cryptographic instructions.</li>
+		</ul>
+	</conbody>
+</concept>

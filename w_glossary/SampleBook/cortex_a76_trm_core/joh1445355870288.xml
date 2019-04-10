@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1445355870288" xml:lang="en-us">
+	<title class="- topic/title " id="TitleAArch64InstructionSetAttributeRegister1_EL1">ID_AA64ISAR1_EL1, AArch64 Instruction Set
+		Attribute Register 1, EL1</title>
+	<shortdesc class="- topic/shortdesc ">The ID_AA64ISAR1_EL1 provides information about the instructions implemented in AArch64
+		state.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p "> ID_AA64ISAR1_EL1 is a 64-bit register, and is part of the Identification registers functional group.</p>
+			<p class="- topic/p ">This register is Read Only.</p>
+			<fig class="- topic/fig " id="fig_rxm_pqq_gv">
+				<title class="- topic/title ">ID_AA64ISAR1_EL1 bit assignments</title>
+				<image class="- topic/image " href="joh1445357623061.svg" id="image_j1n_pqq_gv" placement="inline">
+					<alt class="- topic/alt ">ID_AA64ISAR1_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [63:24]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">LRCPC, [23:20]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Indicates whether load-acquire (<codeph class="+ topic/ph pr-d/codeph ">LDA</codeph>) instructions are implemented for a Release Consistent core consistent RCPC model.</p>
+						<dl class="- topic/dl " compact="yes">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">The <codeph class="+ topic/ph pr-d/codeph ">LDAPRB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LDAPRH</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">LDAPR</codeph> instructions are implemented in AArch64.</p>
+								</dd>
+							</dlentry>
+							
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [19:4]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">DC CVAP, [3:0]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Indicates whether Data Cache, Clean to the Point of Persistence (<codeph class="+ topic/ph pr-d/codeph ">DC CVAP</codeph>) instructions are implemented.</p>
+						<dl class="- topic/dl " compact="yes">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph ">DC CVAP</codeph> is supported in AArch64.</p>
+								</dd>
+							</dlentry>
+						</dl>
+						
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">There are no configuration notes.</p>
+						<p class="- topic/p ">Bit fields and details that are not provided in this description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+	</refbody>
+</reference>

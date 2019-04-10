@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673339043" xml:lang="en-us">
+  <title class="- topic/title ">Watchpoint debug events</title>
+  <shortdesc class="- topic/shortdesc ">In the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core, watchpoint debug events are always synchronous. </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">Memory hint instructions and cache clean operations, except <codeph class="+ topic/ph pr-d/codeph ">DC ZVA</codeph> and <codeph class="+ topic/ph pr-d/codeph ">DC IVAC</codeph>, do not generate watchpoint debug events. Store exclusive instructions generate a watchpoint debug event even when the check for the control of exclusive monitor fails. Atomic CAS instructions generate a watchpoint debug event even when the compare operation fails.</p>
+      
+      
+    </section>
+  </refbody>
+</reference>

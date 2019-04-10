@@ -12,6 +12,29 @@ end
 @terms = Array.new
 @directory = Array.new
 @ditafiles = Array.new
+@maptype = ""
+
+
+def maptype(map)
+
+
+
+  maptype = map.xpath("//*").first
+  maptypeName = maptype.name.to_s
+  if maptypeName.match('bookmap')
+    # check to see if arm bookmap or generic bookmap
+    parts = maptype.xpath("//bookmap/part")
+    parts.each do |part|
+      @topics.push(part.attr('href'))
+      # does part have map too?
+      
+    end
+    puts "hi"
+  end
+  puts maptype
+
+
+end
 
 
 def glosswrap(para)                # Wraps glossary entries.
@@ -52,6 +75,10 @@ end
 # Open the map
 
 ditamap = Nokogiri::XML(open(@map))
+
+maptype(ditamap)  # determine what type of map is being used, bookmap, standardmap, arm bookmap
+
+
 links = ditamap.xpath("//topicref[@href]")
 
 

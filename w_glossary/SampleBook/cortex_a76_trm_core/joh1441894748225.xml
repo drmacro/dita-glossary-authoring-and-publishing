@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1441894748225" outputclass="nolist" xml:lang="en-us">
+	<title class="- topic/title ">Power control</title>
+	<shortdesc class="- topic/shortdesc ">All power mode transitions are performed at the request of the power
+		controller, using a P-Channel interface to communicate with the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core. </shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">There is one P-Channel per core, plus one P-Channel for the cluster. The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core
+				provides the current requirements on the <keyword class="- topic/keyword " otherprops="g.signal.name">PACTIVE</keyword> signals, so that the power
+				controller can make decisions and request any change with <keyword class="- topic/keyword " otherprops="g.signal.name">PREQ</keyword> and <keyword class="- topic/keyword " otherprops="g.signal.name">PSTATE</keyword>. The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core then
+				performs any actions necessary to reach the requested power mode, such as gating
+				clocks, flushing caches, or disabling coherency, before accepting the request. </p>
+			<p class="- topic/p ">If the request is not valid, either because of an incorrect transition or
+				because the status has changed so that state is no longer appropriate, then the
+				request is denied. The power mode of each core can be independent of other cores in
+				the cluster, however the cluster power mode is linked to the mode of the cores.</p>
+				
+		</section>
+	</refbody>
+</reference>

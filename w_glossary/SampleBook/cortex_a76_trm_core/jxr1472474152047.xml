@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="jxr1472474152047" xml:lang="en-us">
+	
+	
+	<title class="- topic/title ">ERR0STATUS, Error Record Primary Status Register</title>
+	<shortdesc class="- topic/shortdesc ">The ERR0STATUS contains information about the error record.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The register indicates:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">Whether any error has been detected.</li>
+				<li class="- topic/li ">Whether any detected error was not corrected and returned to a master.</li>
+				<li class="- topic/li ">Whether any detected error was not corrected and deferred.</li>
+				<li class="- topic/li ">Whether a second error of the same type was detected before software handled the first error.</li>
+				<li class="- topic/li ">Whether any error has been reported.</li>
+				<li class="- topic/li ">Whether the other error record registers contain valid information.</li>
+			</ul>
+			
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ERR0STATUS is a 32-bit register.</p>
+			<fig class="- topic/fig " id="fig_n5z_dr1_dv">
+				<title class="- topic/title ">ERR0STATUS bit assignments </title>
+				
+				<image class="- topic/image " href="bex1479839457166.svg" id="err0status_ares" placement="inline">
+					<alt class="- topic/alt ">ERR0STATUS bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">AV, [31]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Address Valid. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">ERR0ADDR is not valid.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">ERR0ADDR contains an address associated with the highest priority error recorded by this record.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">V, [30]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Status Register valid. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">ERR0STATUS is not valid. </dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">ERR0STATUS is valid. At least one error has been recorded.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">UE, [29]</dt>
+					<dd class="- topic/dd ">Uncorrected error. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+							<dd class="- topic/dd ">
+								<p class="- topic/p ">No error that could not be corrected or deferred has been detected.</p>
+							</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+							<dd class="- topic/dd ">At least one error that could not be corrected or deferred has been detected. If error recovery interrupts are enabled, then the interrupt signal is asserted until this bit is cleared.</dd>
+						</dlentry>
+						</dl> </dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">ER, [28]</dt>
+					<dd class="- topic/dd ">Error reported. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+							<dd class="- topic/dd ">No external abort has been reported.</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+							<dd class="- topic/dd ">The node has reported an external abort to the master that is in access or making a transaction.</dd>
+						</dlentry>
+						</dl> </dd>
+				</dlentry>
+
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">OF, [27]</dt>
+					<dd class="- topic/dd ">Overflow. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd "><ul class="- topic/ul ">
+										<li class="- topic/li ">If UE == 1, then no error status for an Uncorrected
+											error has been discarded.</li>
+										<li class="- topic/li ">If UE == 0 and DE == 1, then no error status for a
+											Deferred error has been discarded.</li>
+									<li class="- topic/li ">If UE == 0, DE == 0, and CE !== <ph class="- topic/ph " otherprops="g.number.bin">00</ph>, then: <p class="- topic/p ">The corrected error counter has not
+												overflowed. </p></li>
+									</ul></dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">More than one error has occurred and so details
+									of the other error have been discarded.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">MV, [26]</dt>
+					<dd class="- topic/dd ">Miscellaneous Registers Valid. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">ERR0MISC0 and ERR0MISC1 are not valid.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">This bit indicates that ERR0MISC0 contains additional information about
+									any error that is recorded by this record.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">CE, [25:24]</dt>
+					<dd class="- topic/dd ">Corrected error. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">00</ph></dt>
+								<dd class="- topic/dd ">No corrected error recorded.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">10</ph></dt>
+								<dd class="- topic/dd ">At least one corrected error recorded.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">DE, [23]</dt>
+					<dd class="- topic/dd ">Deferred error. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">No errors were deferred.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">At least one error was not corrected and
+									deferred by poisoning.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PN, [22]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Poison. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core cannot distinguish a
+										poisoned value from a corrupted value.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">UET, [21:20]</dt>
+					<dd class="- topic/dd ">Uncorrected Error Type. The value is: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc=8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">00</ph></dt>
+								<dd class="- topic/dd ">Uncontainable.</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">[19:5]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl ">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0.</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">SERR, [4:0]</dt>
+					<dd class="- topic/dd ">Primary error code. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+							<dd class="- topic/dd ">No error.</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+							<dd class="- topic/dd ">Errors due to fault injection.</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">2</ph></dt>
+							<dd class="- topic/dd ">ECC error from internal data buffer.</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">6</ph></dt>
+							<dd class="- topic/dd ">ECC error on cache data RAM.</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">7</ph></dt>
+							<dd class="- topic/dd ">ECC error on cache tag or dirty RAM.</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">8</ph></dt>
+							<dd class="- topic/dd ">Parity error on TLB data RAM.</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">12</ph></dt>
+							<dd class="- topic/dd ">
+								<p class="- topic/p ">Error response for a cache copyback.</p>
+							</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">15</ph></dt>
+							<dd class="- topic/dd ">
+								<p class="- topic/p ">Deferred error from slave not supported at the consumer. For example, poisoned data received from a slave by a master that cannot defer the error further.</p>
+							</dd>
+						</dlentry>
+						</dl></dd>
+				</dlentry>
+				
+
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">There are no configuration notes.</p>
+						<p class="- topic/p ">ERR0STATUS resets to <ph class="- topic/ph " otherprops="g.number.hex">00000000</ph>.</p>
+						<p class="- topic/p ">ERR0STATUS is accessible from the following registers
+							when ERRSELR.SEL==0:</p>
+						<ul class="- topic/ul " id="ul_f5t_tws_2x">
+							
+							<li class="- topic/li "><xref class="- topic/xref " href="lau1456920454319.xml" keyref="ErxstatusEl1SelectedErrorRecordPrimaryStatusRegisterEl1" type="reference">ERXSTATUS_EL1, Selected Error Record Primary Status Register, EL1<desc class="- topic/desc ">Register ERXSTATUS_EL1 accesses the ERR&lt;n&gt;STATUS primary status 		register for the error record selected by ERRSELR_EL1.SEL.</desc></xref>.</li>
+						</ul>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+
+
+	</refbody>
+</reference>

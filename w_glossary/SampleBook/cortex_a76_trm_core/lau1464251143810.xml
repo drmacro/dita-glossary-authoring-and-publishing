@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1464251143810" xml:lang="en-us">
+	
+	
+	<title class="- topic/title ">RAS error types</title>
+	<shortdesc class="- topic/shortdesc ">This section describes the RAS error types that are introduced by the RAS
+		extension and supported in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">When a component accesses memory, an error might be detected in that
+				memory and then be corrected, deferred, or detected but silently propagated. The
+				following table lists the types of RAS errors that are supported in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core. </p>
+			<table class="- topic/table ">
+				<title class="- topic/title ">RAS error types supported in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core </title>
+				<tgroup class="- topic/tgroup " cols="2">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/>
+					<colspec class="- topic/colspec " colname="col2" colnum="2"/>
+					<thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">RAS error type</entry>
+							<entry class="- topic/entry " colname="col2">Definition</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Corrected</entry>
+							<entry class="- topic/entry " colname="col2">A <term class="- topic/term ">Corrected Error</term>
+								(CE) is reported for a single-bit ECC error on any protected
+								RAM.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Deferred</entry>
+							<entry class="- topic/entry " colname="col2">A <term class="- topic/term ">Deferred Error</term>
+								(DE) is reported for a double-bit ECC error that affects the data
+								RAM on either the L1 data cache or the L2 cache.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Uncorrected</entry>
+							<entry class="- topic/entry " colname="col2">An <term class="- topic/term ">Uncorrected Error</term>
+								(UE) is reported for a double-bit ECC error that affects the tag RAM
+								of either the L1 data cache or the L2 cache. An Uncorrected Error is
+								also reported for external aborts received in response to a store,
+								data cache maintenance, instruction cache maintenance, TLBI
+								maintenance, or cache copyback of dirty data.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</section>
+	</refbody>
+</reference>

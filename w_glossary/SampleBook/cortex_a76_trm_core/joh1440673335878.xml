@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673335878" outputclass="nolist" xml:lang="en-us">
+  <title class="- topic/title ">Debug events</title>
+  <shortdesc class="- topic/shortdesc ">A debug event can be a software debug event or a halting debug
+    event.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">A core responds to a debug event in one of the following ways:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Ignores the debug event.</li>
+        <li class="- topic/li ">Takes a debug exception.</li>
+        <li class="- topic/li ">Enters debug state.</li>
+      </ul>
+      <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more information about the debug events.</p>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="joh1440673339043.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Watchpoint debug events</linktext><desc class="- topic/desc ">In the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core, watchpoint debug events are always synchronous. </desc></link><link class="- topic/link " format="dita" href="joh1440673342015.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Debug OS Lock</linktext><desc class="- topic/desc ">Debug OS Lock is set by the powerup reset, <keyword class="- topic/keyword " otherprops="g.signal.name">nCPUPORESET</keyword>. </desc></link></linkpool></linkpool><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><link class="- topic/link " format="dita" href="joh1440673344537.xml" role="friend" scope="local" type="reference"><linktext class="- topic/linktext ">External debug interface</linktext><desc class="- topic/desc ">For information about external debug interface, including debug memory     map and debug signals, see the <ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">                             <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>                                     Shared Unit</keyword></ph> Technical Reference Manual</ph></cite></ph>.</desc></link><link class="- topic/link " format="dita" href="joh1440596976629.xml" role="friend" scope="local" type="reference"><linktext class="- topic/linktext ">About clocks, resets, and input synchronization</linktext><desc class="- topic/desc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>     core supports hierarchical clock gating.</desc></link></linkpool></related-links></reference>

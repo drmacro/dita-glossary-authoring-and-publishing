@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="acu1472476116377" xml:lang="en-us">
+	
+	
+	
+	<title class="- topic/title ">ERR0ADDR, Error Record Address Register</title>
+	<shortdesc class="- topic/shortdesc ">The ERR0ADDR stores the address that is associated to an error that is
+		recorded.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ERR0ADDR is a 64-bit register, and is part of the <term class="- topic/term ">Reliability, Availability, Serviceability</term> (RAS) registers functional
+				group.</p>
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">ERR0ADDR bit assignments</title>
+				
+				
+				<image class="- topic/image " href="nna1479998110856.svg" placement="inline">
+					<alt class="- topic/alt ">ERR0ADDR bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">NS, [63]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Non-secure attribute. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">The physical address is Secure.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">The physical address is Non-secure.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [62:40]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PADDR, [39:0]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Physical address.</p>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">ERR0ADDR resets to <ph class="- topic/ph "><term class="- topic/term " outputclass="archterm">UNKNOWN</term></ph>.</p>
+						
+						
+						<p class="- topic/p ">When ERRSELR.SEL==0, this register is accessible from <xref class="- topic/xref " href="lau1456920542757.xml" keyref="ErxaddrEl1SelectedErrorRecordAddressRegisterEl1" type="reference">ERXADDR_EL1, Selected Error Record Address Register, EL1<desc class="- topic/desc ">Register ERXADDR_EL1 accesses the ERR&lt;n&gt;ADDR address register for 		the error record selected by ERRSELR_EL1.SEL.</desc></xref>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	
+	</refbody>
+</reference>

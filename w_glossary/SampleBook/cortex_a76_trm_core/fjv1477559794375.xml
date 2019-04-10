@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="fjv1477559794375" xml:lang="en-us">
+  <title class="- topic/title ">Features</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">Features</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core includes the following features:</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">Core features</p>
+      <ul class="- topic/ul ">
+          <li class="- topic/li ">Full implementation of the Armv8.2-A A64, A32, and T32 instruction
+          sets.</li>
+          
+          <li class="- topic/li ">Armv8.4 Dot Product instruction support.</li>
+        <li class="- topic/li ">AArch32 execution state at Exception level EL0 only. AArch64 execution state at all Exception levels (EL0 to EL3).</li> 
+               
+               
+           
+        <li class="- topic/li ">Support for <keyword class="- topic/keyword ">Arm</keyword> <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">TrustZone</tm></keyword> technology.</li>
+        
+        
+        <li class="- topic/li ">A <term class="- topic/term ">Memory Management Unit</term> (MMU).</li>
+        <li class="- topic/li ">Superscalar, variable-length, out-of-order pipeline.</li>
+        
+        <li class="- topic/li ">40-bit <term class="- topic/term ">Physical Address</term> (PA).</li>
+        
+      </ul>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">An integrated execution unit that implements the Advanced SIMD and
+          floating-point architecture support.</li>
+        <li class="- topic/li ">Optional Cryptographic Extension.</li>
+        
+        <li class="- topic/li "><term class="- topic/term ">Generic Interrupt Controller</term> (GICv4) CPU
+          interface to connect to an external distributor.</li>
+        <li class="- topic/li ">Generic Timers interface supporting 64-bit count input from an external
+          system counter.</li>
+        <li class="- topic/li "><term class="- topic/term ">Reliability, Availability, and
+            Serviceability</term> (RAS) Extension.</li>
+        
+      </ul>
+      <p class="- topic/p ">Cache features</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Separate L1 data and instruction caches.</li>
+        <li class="- topic/li ">Private, unified data and instruction L2 cache.</li>
+        
+        <li class="- topic/li ">Optional L1 and L2 memory protection in the form of <term class="- topic/term ">Error Correcting Code</term> (ECC) or parity on all RAM instances.</li>
+        
+        
+      </ul>
+      <p class="- topic/p ">Debug features</p>
+      <ul class="- topic/ul ">
+          <li class="- topic/li "> Armv8.2 debug logic.</li>
+          
+        <li class="- topic/li "><term class="- topic/term ">Performance Monitor Unit</term> (PMU).</li>
+        <li class="- topic/li "><term class="- topic/term ">Embedded Trace Macrocell</term> (ETM) that
+          supports instruction trace only.</li>
+        
+        <li class="- topic/li "><term class="- topic/term ">Activity Monitor Unit</term> (AMU).</li>
+        <li class="- topic/li ">Optional <term class="- topic/term ">Coresight Embedded Logic Analyzer</term> (ELA).</li>
+      </ul>
+      <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more information.</p>
+    </section>
+  </refbody>
+</reference>

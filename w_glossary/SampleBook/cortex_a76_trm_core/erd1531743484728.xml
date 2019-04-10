@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="erd1531743484728" xml:lang="en-us">
+	<title class="- topic/title " id="TitleAArch64ProcessorFeatureRegister0_EL1">ID_AA64PFR1_EL1, AArch64
+		Processor Feature Register 1, EL1</title>
+	<shortdesc class="- topic/shortdesc ">The ID_AA64PFR1_EL1 provides additional information about implemented
+		core features in AArch64.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ID_AA64PFR1_EL1 is a 64-bit register, and is part of the
+				Identification registers functional group.</p>
+			<p class="- topic/p ">This register is Read Only.</p>
+			<fig class="- topic/fig " id="fig_hwp_t5x_gv">
+				<title class="- topic/title ">ID_AA64PFR1_EL1 bit assignments</title>
+				<image class="- topic/image " href="tiz1531744645925.svg" id="image_tzp_t5x_gv" placement="inline">
+					<alt class="- topic/alt ">ID_AA64PFR1_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [63:8]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">SSBS, [7:4]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">PSTATE.SSBS. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></codeph></dt>
+								<dd class="- topic/dd ">AArch64 provides the PSTATE.SSBS mechanism to mark regions that are <term class="- topic/term ">Speculative Store Bypassing Safe</term> (SSBS), but does not implement the MSR/MRS instructions to directly read and write the PSTATE.SSBS field.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [3:0]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd "> <p class="- topic/p ">ID_AA64PFR1_EL1 is architecturally mapped to External register EDPFR.</p> <p class="- topic/p ">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p> </dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+	</refbody>
+</reference>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1469184979712" xml:lang="en-us">
+	
+	
+	<title class="- topic/title ">ICH_VMCR_EL2, Interrupt Controller Virtual Machine Control Register, EL2</title>
+	<shortdesc class="- topic/shortdesc ">ICH_VMCR_EL2 enables the hypervisor to save and restore the virtual
+		machine view of the GIC state.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ICH_VMCR_EL2 is a 32-bit register and is part of:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The GIC system registers functional group.</li>
+				<li class="- topic/li ">The Virtualization registers functional group.</li>
+				<li class="- topic/li ">The GIC host interface control registers functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_tlq_z3j_5v">
+				<title class="- topic/title ">ICH_VMCR_EL2 bit assignments</title>
+				<image class="- topic/image " href="lau1469111419711.svg" id="image_nmq_z3j_5v" placement="inline">
+					<alt class="- topic/alt ">ICH_VMCR_EL2 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VPMR, [31:24]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Virtual Priority Mask.</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "/>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">This field is an alias of ICV_PMR_EL1.Priority.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VBPR0, [23:21]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Virtual Binary Point Register, Group 0. The minimum value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">2</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">This field is an alias of ICV_BPR0_EL1.BinaryPoint. </p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VBPR1, [20:18]</dt>
+					<dd class="- topic/dd ">Virtual Binary Point Register, Group 1. The minimum value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">3</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">This field is an alias of ICV_BPR1_EL1.BinaryPoint.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [17:10]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VEOIM, [9]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Virtual EOI mode. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">ICV_EOIR0_EL1 and ICV_EOIR1_EL1 provide both priority drop and
+										interrupt deactivation functionality. Accesses to
+										ICV_DIR_EL1 are <term class="- topic/term " outputclass="archterm">UNPREDICTABLE</term>.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">ICV_EOIR0_EL1 and ICV_EOIR1_EL1 provide priority drop functionality
+										only. ICV_DIR_EL1 provides interrupt deactivation
+										functionality.</p>
+								</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p ">This bit is an alias of ICV_CTLR_EL1.EOImode.</p></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [8:5]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VCBPR, [4]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Virtual Common Binary Point Register. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">ICV_BPR0_EL1 determines the preemption group for virtual Group 0
+										interrupts only.</p>
+									<p class="- topic/p ">ICV_BPR1_EL1 determines the preemption group for virtual Group 1
+										interrupts.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">ICV_BPR0_EL1 determines the preemption group for both virtual Group 0
+										and virtual Group 1 interrupts.</p>
+									<p class="- topic/p ">Reads of ICV_BPR1_EL1 return ICV_BPR0_EL1 plus one, saturated to
+										<keyword class="- topic/keyword " otherprops="g.number.bin">111</keyword>. Writes to ICV_BPR1_EL1 are <term class="- topic/term " outputclass="archterm">ignored</term>.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VFIQEn, [3]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Virtual FIQ enable. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Group 0 virtual interrupts are presented as virtual FIQs.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [2]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VENG1, [1]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Virtual Group 1 interrupt enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Virtual Group 1 interrupts are disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Virtual Group 1 interrupts are enabled.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VENG0, [0]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Virtual Group 0 interrupt enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Virtual Group 0 interrupts are disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Virtual Group 0 interrupts are enabled.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+			</dl>
+			
+			<p class="- topic/p ">Bit fields and details that are not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Generic Interrupt Controller Architecture Specification</ph></cite>.</p>
+		</section>
+	</refbody>
+</reference>

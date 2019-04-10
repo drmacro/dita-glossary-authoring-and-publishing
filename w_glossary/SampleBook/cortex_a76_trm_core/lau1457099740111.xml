@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1457099740111" xml:lang="en-us">
+	<title class="- topic/title ">DISR_EL1, Deferred Interrupt Status Register, EL1</title>
+	<shortdesc class="- topic/shortdesc ">The DISR_EL1 records the SError interrupts consumed by an <codeph class="+ topic/ph pr-d/codeph ">ESB</codeph> instruction. </shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">DISR_EL1 is a 64-bit register, and is part of the registers <term class="- topic/term ">Reliability, Availability, Serviceability</term> (RAS)
+				functional group.</p>
+			
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">DISR_EL1 bit assignments, DISR_EL1.IDS is 0</title>
+				
+				<image class="- topic/image " href="lau1464781000550.svg" placement="inline">
+					<alt class="- topic/alt ">DISR_EL1 bit assignments, DISR_EL1.IDS is 0</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [63:32]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">A, [31]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Set to 1 when ESB defers an asynchronous SError
+							interrupt. If the implementation does not include any synchronizable
+							sources of SError interrupt, this bit is <term class="- topic/term " outputclass="archterm">res0</term>.</p>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [30:25]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">IDS, [24]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Indicates the type of format the deferred SError
+							interrupt uses. The value of this bit is:</p>
+						<dl class="- topic/dl " compact="yes">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Deferred error uses architecturally-defined
+										format.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [23:13]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">AET, [12:10]</dt>
+					<dd class="- topic/dd ">Asynchronous Error Type. Describes the state of the core after taking an asynchronous Data Abort exception. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">000</codeph></dt>
+							<dd class="- topic/dd ">Uncontainable error (UC).</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">001</codeph></dt>
+							<dd class="- topic/dd ">Unrecoverable error (UEU).</dd>
+						</dlentry>
+						</dl><note class="- topic/note ">
+						<p class="- topic/p ">The recovery software must also examine any implemented fault records to determine the location and extent of the error.</p>
+						</note></dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">EA, [9]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [8:6]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">DFSC, [5:0]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Data Fault Status Code. The possible values of this field are:</p>
+						<dl class="- topic/dl " compact="yes">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">010001</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Asynchronous SError interrupt.</p>
+									<note class="- topic/note ">In AArch32 the <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">010001</codeph> code previously meant an Asynchronous External Abort on memory access. With the RAS extension, it extends to include any asynchronous SError interrupt. The Parity Error codes are not used in the RAS extension.</note>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+			</dl>
+			
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						
+						<p class="- topic/p ">There are no configuration notes.</p>
+						<p class="- topic/p ">Bit fields and details not provided in this description
+							are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

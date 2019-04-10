@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="clm1477585597992" xml:lang="en-us">
+	<title class="- topic/title ">Data L1 TLB</title>
+	<abstract class="- topic/abstract ">
+		<shortdesc class="- topic/shortdesc ">The data L1 TLB is a 48-entry fully associative TLB that is used by load
+		and store operations. The cache entries have 4KB, 16KB, 64KB, 2MB, and 512MB granularity of
+		VA to PA mappings only. </shortdesc>
+		
+		
+	</abstract>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+
+	</prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<p class="- topic/p ">A hit in the data L1 TLB provides a single <keyword class="- topic/keyword " otherprops="g.signal.name">CLK</keyword> cycle access to the translation, and
+			returns the PA to the data cache for comparison. It also checks the access permissions
+			to signal a Data Abort.</p>
+	</conbody>
+</concept>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1469184932288" xml:lang="en-us">
+	
+	
+	<title class="- topic/title ">ICH_HCR_EL2, Interrupt Controller Hyp Control Register, EL2</title>
+	<shortdesc class="- topic/shortdesc ">ICH_HCR_EL2 controls the environment for VMs.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ICH_HCR_EL2 is a 32-bit register and is part of:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The GIC system registers functional group.</li>
+				<li class="- topic/li ">The Virtualization registers functional group.</li>
+				<li class="- topic/li ">The GIC host interface control registers functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_tlq_z3j_5v">
+				<title class="- topic/title ">ICH_HCR_EL2 bit assignments</title>
+				<image class="- topic/image " href="lau1469109121122.svg" id="image_nmq_z3j_5v" placement="inline">
+					<alt class="- topic/alt ">ICH_HCR_EL2 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">EOIcount, [31:27]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "/>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Number of outstanding deactivates.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [26:15]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TDIR, [14]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Trap Non-secure EL1 writes to ICC_DIR_EL1 and ICV_DIR_EL1. The possible values
+							are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Non-secure EL1 writes of ICC_DIR_EL1 and ICV_DIR_EL1 are not trapped
+										to EL2, unless trapped by other mechanisms.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">Non-secure EL1 writes of ICC_DIR_EL1 and ICV_DIR_EL1 are trapped to
+									EL2.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TSEI, [13]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Trap all locally generated SEIs. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Locally generated SEIs do not cause a trap to EL2.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TALL1, [12]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Trap all Non-secure EL1 accesses to ICC_* and ICV_* System registers for Group 1
+						interrupts to EL2. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Non-secure EL1 accesses to ICC_* and ICV_* registers for Group 1
+										interrupts proceed as normal.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Non-secure EL1 accesses to ICC_* and ICV_* registers for Group 1
+										interrupts trap to EL2.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TALL0, [11]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Trap all Non-secure EL1 accesses to ICC_* and ICV_* System registers for Group 0
+						interrupts to EL2. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Non-secure EL1 accesses to ICC_* and ICV_* registers for Group 0
+										interrupts proceed as normal.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Non-secure EL1 accesses to ICC_* and ICV_* registers for Group 0
+										interrupts trap to EL2.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TC, [10]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Trap all Non-secure EL1 accesses to System registers that are common to Group 0
+						and Group 1 to EL2. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Non-secure EL1 accesses to common registers proceed as normal.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Non-secure EL1 accesses to common registers trap to EL2.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [9:8]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VGrp1DIE, [7]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">VM Group 1 Disabled Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt signaled when ICH_VMCR_EL2.VENG1 is 0.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VGrp1EIE, [6]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">VM Group 1 Enabled Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt signaled when ICH_VMCR_EL2.VENG1 is 1.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VGrp0DIE, [5]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">VM Group 0 Disabled Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt signaled when ICH_VMCR_EL2.VENG0 is 0.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">VGrp0EIE, [4]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">VM Group 0 Enabled Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt signaled when ICH_VMCR_EL2.VENG0 is 1.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">NPIE, [3]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">No Pending Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt signaled while the List registers contain no
+										interrupts in the pending state.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">LRENPIE, [2]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">List Register Entry Not Present Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt is asserted while the EOIcount field is not
+										0.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">UIE, [1]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Underflow Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Maintenance interrupt is asserted if none, or only one, of the List
+										register entries is marked as a valid interrupt.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">En, [0]</dt>
+					<dd class="- topic/dd ">Enable. The possible values are:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Virtual CPU interface operation
+										disabled.</p>
+								</dd>
+							</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+							<dd class="- topic/dd ">
+								<p class="- topic/p ">Virtual CPU interface operation enabled.</p>
+							</dd>
+						</dlentry>
+						</dl></dd>
+				</dlentry>
+			</dl>
+			
+			<p class="- topic/p ">Bit fields and details that are not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Generic Interrupt Controller Architecture Specification</ph></cite>.</p>
+		</section>
+	</refbody>
+</reference>

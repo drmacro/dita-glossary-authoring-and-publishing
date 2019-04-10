@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443437067853" xml:lang="en-us">
+	<title class="- topic/title " id="TitleAArch64MemoryModelFeatureRegister0_EL1">ID_AA64MMFR0_EL1, AArch64 Memory Model Feature Register
+		0, EL1</title>
+	<shortdesc class="- topic/shortdesc ">The ID_AA64MMFR0_EL1 provides information about the implemented memory model and memory management
+		support in the AArch64 Execution state.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ID_AA64MMFR0_EL1 is a 64-bit register, and is part of the Identification registers functional
+				group.</p>
+			<p class="- topic/p ">This register is Read Only.</p>
+			
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">ID_AA64MMFR0_EL1 bit assignments</title>
+				<image class="- topic/image " href="lau1465372251035.svg" placement="inline">
+					<alt class="- topic/alt ">ID_AA64MMFR0_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			
+			
+			<dl class="- topic/dl " id="id_aa64mmfr0_el1">
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [63:32]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TGran4, [31:28]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Support for 4KB memory translation granule size:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">4KB granule supported.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TGran64, [27:24]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Support for 64KB memory translation granule size:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+								<dd class="- topic/dd ">64KB granule supported.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TGran16, [23:20]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Support for 16KB memory translation granule size:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt ">
+									<codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></codeph></dt>
+								<dd class="- topic/dd ">Indicates that the 16KB granule is supported.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">BigEndEL0, [19:16]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Mixed-endian support only at EL0.</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></codeph></dt>
+								<dd class="- topic/dd ">No mixed-endian support at EL0. The SCTLR_EL1.E0E bit has a fixed value.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">SNSMem, [15:12]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Secure versus Non-secure Memory distinction:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">Supports a distinction between Secure and Non-secure Memory.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">BigEnd, [11:8]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Mixed-endian configuration support:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+								<dd class="- topic/dd ">Mixed-endian support. The SCTLR_ELx.EE and SCTLR_EL1.E0E bits can be configured.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">ASIDBits, [7:4]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Number of ASID bits:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">2</ph></dt>
+								<dd class="- topic/dd ">16 bits.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PARange, [3:0]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Physical address range supported:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">2</ph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">40 bits, 1TB.</p>
+									<p class="- topic/p ">The supported Physical Address Range is 40-bits. Other cores in the <keyword class="- topic/keyword ">DSU</keyword> may support a different Physical Address Range.</p>
+								</dd>
+							</dlentry>
+						</dl>
+						
+						
+						
+						
+						
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">There are no configuration notes.</p>
+						<p class="- topic/p ">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+	</refbody>
+</reference>

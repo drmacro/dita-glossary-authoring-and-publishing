@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="lau1465289122817" xml:lang="en-us">
+	
+	<title class="- topic/title ">L2 memory system</title>
+	<shortdesc class="- topic/shortdesc ">The L2 memory system services L1 instruction and data cache misses
+		from the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core. </shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<p class="- topic/p ">The L2 memory system includes:</p>
+		<ul class="- topic/ul ">
+			
+			<li class="- topic/li ">An 8-way set associative L2 cache with data ECC protection per 64 bits. The L2 cache is configurable with sizes of 128KB, 256KB, or 512KB.</li>
+			
+			
+			
+			<li class="- topic/li ">An interface with the <keyword class="- topic/keyword ">DSU</keyword> configurable
+				at implementation time for synchronous or asynchronous operation.</li>
+		</ul>
+	</conbody>
+</concept>

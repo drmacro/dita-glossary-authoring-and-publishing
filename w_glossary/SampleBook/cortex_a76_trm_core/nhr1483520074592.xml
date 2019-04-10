@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="nhr1483520074592" xml:lang="en-us">
+	<title class="- topic/title ">AMU events</title>
+	<shortdesc class="- topic/shortdesc ">The following table describes the counters that are implemented in the
+			<ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core and the mapping
+		to fixed and programmable events.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			
+			<table class="- topic/table ">
+				<title class="- topic/title ">Mapping of counters to fixed events</title>
+				<tgroup class="- topic/tgroup " cols="5">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/>
+					<colspec class="- topic/colspec " colname="col2" colnum="2"/>
+					<colspec class="- topic/colspec " colname="col3" colnum="3"/>
+					<colspec class="- topic/colspec " colname="col4" colnum="4"/>
+					<colspec class="- topic/colspec " colname="col5" colnum="5"/>
+					<thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Activity monitor counter &lt;n&gt;</entry>
+							<entry class="- topic/entry " colname="col2">Event type</entry>
+							<entry class="- topic/entry " colname="col3">Event</entry>
+							<entry class="- topic/entry " colname="col4">Event number</entry>
+							<entry class="- topic/entry " colname="col5">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">0</entry>
+							<entry class="- topic/entry " colname="col2">Fixed</entry>
+							<entry class="- topic/entry " colname="col3">Cycles at core frequency</entry>
+							<entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">11</ph></codeph></entry>
+							<entry class="- topic/entry " colname="col5">Cycles count.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">1</entry>
+							<entry class="- topic/entry " colname="col2">Fixed</entry>
+							<entry class="- topic/entry " colname="col3">Cycles at constant frequency</entry>
+							<entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">EF</ph></codeph></entry>
+							<entry class="- topic/entry " colname="col5">This counter is used to replicate the generic system counter that is incremented on a constant basis, and not incremented depending on the PE frequency core.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">2</entry>
+							<entry class="- topic/entry " colname="col2">Fixed</entry>
+							<entry class="- topic/entry " colname="col3">Instructions retired</entry>
+							<entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">08</ph></codeph></entry>
+							<entry class="- topic/entry " colname="col5">Instruction architecturally executed. This counter increments for every instruction that is executed architecturally, including instructions that fail their condition code check.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">3</entry>
+							<entry class="- topic/entry " colname="col2">Fixed</entry>
+							<entry class="- topic/entry " colname="col3">First miss</entry>
+							<entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">F0</ph></codeph></entry>
+							<entry class="- topic/entry " colname="col5">
+								<p class="- topic/p ">The first miss event tracks whether any external load miss is outstanding and starts counting only from a first-miss until data returns for that miss. The counter does not count for any remaining part of overlapping accesses, only counting again when the first-miss condition is re-detected.</p>
+							</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">4</entry>
+							<entry class="- topic/entry " colname="col2">Fixed</entry>
+							<entry class="- topic/entry " colname="col3">High activity</entry>
+							<entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">F1</ph></codeph></entry>
+							<entry class="- topic/entry " colname="col5">
+								<p class="- topic/p ">Instructions executing through the design which act as a hint for potential high power activity.</p>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			
+			
+			<note class="- topic/note ">To program AMU counter 4, you need to program the AMEVTYPER4_EL0 register. For more information, see <xref class="- topic/xref " href="xwa1483605345151.xml" keyref="amxevtyperel0" type="reference">AMEVTYPERn_EL0, Activity Monitor Event Type Register, EL0<desc class="- topic/desc ">The activity counters AMEVTYPER_EL0n are directly accessible in the memory mapped view, where n is 0-4.</desc></xref>.</note>
+			
+			
+
+		</section>
+	</refbody>
+</reference>

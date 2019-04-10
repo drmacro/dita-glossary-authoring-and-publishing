@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE referable-content
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<referable-content xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="joh1440584904957" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- topic/topic referable-content/referable-content ">
+	<title class="- topic/title ">[ARM STANDARD] Product name content for Cortex-A55</title>
+	<rcbody class="- topic/body referable-content/body ">
+		<shortdesc class="- topic/shortdesc "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Cortex</tm>-A55</keyword></ph>
+			product name and trade mark attribution.</shortdesc>
+		<dl class="- topic/dl ">
+			<dlentry class="- topic/dlentry ">
+				<dt class="- topic/dt ">Long name</dt>
+				<dd class="- topic/dd "><ph id="g.product.name.long" class="- topic/ph "><keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Cortex</tm>-A55</keyword></ph></dd>
+			</dlentry>
+		</dl>
+		<dl class="- topic/dl ">
+			<dlentry class="- topic/dlentry ">
+				<dt class="- topic/dt ">Short name</dt>
+				<dd class="- topic/dd "><keyword id="g.product.name.short" class="- topic/keyword ">CA55</keyword></dd>
+			</dlentry>
+			<dlentry class="- topic/dlentry ">
+				<dt class="- topic/dt ">Code name</dt>
+				<dd class="- topic/dd "><keyword id="g.product.name.code" class="- topic/keyword ">ananke</keyword></dd>
+			</dlentry>
+			<dlentry class="- topic/dlentry ">
+				<dt class="- topic/dt ">Short name, but in Ananke, Prometheus, Helios it will appear as "core"</dt>
+				<dd class="- topic/dd "><ph class="- topic/ph "><keyword id="g.product.name.fcmorprocessor" class="- topic/keyword ">core</keyword></ph></dd>
+			</dlentry>
+			<dlentry class="- topic/dlentry ">
+				<dt class="- topic/dt ">Short name, but in Ananke, Prometheus, Helios it will appear as "multiprocessor"</dt>
+				<dd class="- topic/dd "><ph class="- topic/ph "><keyword id="g.product.name.fcmormultiprocessor" class="- topic/keyword ">multiprocessor</keyword></ph></dd>
+			</dlentry>
+		</dl>
+	</rcbody>
+</referable-content>

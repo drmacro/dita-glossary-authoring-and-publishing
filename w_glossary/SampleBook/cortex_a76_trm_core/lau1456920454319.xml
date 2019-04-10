@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1456920454319" xml:lang="en-us">
+	<title class="- topic/title ">ERXSTATUS_EL1, Selected Error Record Primary Status Register, EL1</title>
+	<shortdesc class="- topic/shortdesc ">Register ERXSTATUS_EL1 accesses the ERR&lt;n&gt;STATUS primary status
+		register for the error record selected by ERRSELR_EL1.SEL.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==0, then ERXSTATUS_EL1 accesses the ERR0STATUS register of
+				the core error record. See <xref class="- topic/xref " href="jxr1472474152047.xml" keyref="Err0statusErrorRecordPrimaryStatusRegister" type="reference">ERR0STATUS, Error Record Primary Status Register<desc class="- topic/desc ">The ERR0STATUS contains information about the error record.</desc></xref>.</p>	
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==1, then ERXSTATUS_EL1 accesses the ERR1STATUS register of the <keyword class="- topic/keyword ">DSU</keyword> error record. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite>.</p>
+					
+		</section>
+	</refbody>
+</reference>

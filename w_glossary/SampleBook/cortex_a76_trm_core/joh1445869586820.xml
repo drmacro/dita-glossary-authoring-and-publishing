@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1445869586820" xml:lang="en-us">
+  
+  <title class="- topic/title " id="TitleErrorRecordSelectRegister_EL1">ERRSELR_EL1, Error Record Select Register, EL1 </title>
+  <shortdesc class="- topic/shortdesc ">The ERRSELR_EL1 selects which error record should be accessed through the Error Record
+    system registers. This register is not reset on a warm reset.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ERRSELR_EL1 is a 64-bit register, and is part of the <term class="- topic/term ">Reliability,
+        Availability, Serviceability</term> (RAS) registers functional group.</p>
+      <fig class="- topic/fig " id="fig_plz_1v4_rv">
+        <title class="- topic/title ">ERRSELR_EL1 bit assignments</title>
+        <image class="- topic/image " href="joh1445870137181.svg" id="image_tmz_1v4_rv" placement="inline">
+          <alt class="- topic/alt ">ERRSELR_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [63:1]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "/>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Reserved,<term class="- topic/term " outputclass="archterm">RES0</term>.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SEL, [0]</dt>
+          <dd class="- topic/dd ">Selects which error record should be accessed.<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8"><dlentry class="- topic/dlentry "><dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt><dd class="- topic/dd "><p class="- topic/p ">Select record 0 containing errors from Level 1 and Level 2 RAMs located on the
+            <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core.</p></dd></dlentry><dlentry class="- topic/dlentry "><dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt><dd class="- topic/dd "><p class="- topic/p ">Select record 1 containing errors from Level 3 RAMs located on the <keyword class="- topic/keyword ">DSU</keyword>.</p>
+                  </dd></dlentry></dl></dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">There are no configuration notes.</p>            
+            <p class="- topic/p ">Bit fields and details not provided in this description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    
+  </refbody>
+</reference>

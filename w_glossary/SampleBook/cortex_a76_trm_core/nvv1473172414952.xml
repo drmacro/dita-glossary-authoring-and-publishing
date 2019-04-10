@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="nvv1473172414952" xml:lang="en-us">
+	<title class="- topic/title ">PMEVCNTSRn, PMU Cycle Counter Snapshot Registers 0-5</title>
+	<shortdesc class="- topic/shortdesc ">The PMEVCNTSRn, are captured copies of PMEVCNTRn_EL0, n is
+		0-5.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">When they are captured, the value in PMSSEVCNTRn is unaffected by writes to
+				PMSSEVCNTRn_EL0 and PMCR_EL0.P.</p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Configurations</title>
+			<p class="- topic/p ">There are no configuration notes.</p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Usage constraints</title>
+			<p class="- topic/p ">Any access to PMSSEVCNTRn  returns an error if any of the following
+				occurs:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The core power domain is off.</li>
+				<li class="- topic/li ">DoubleLockStatus() == TRUE.</li>
+			</ul>
+		</section>
+	</refbody>
+</reference>

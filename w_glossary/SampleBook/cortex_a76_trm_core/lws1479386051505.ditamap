@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" id="lws1479386051505" xml:lang="en-us">
+    <title class="- topic/title ">AArch32 system registers - Enyo</title><prolog class="- topic/prolog "/>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">AArch32 system registers</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </topicmeta>
+    
+    
+    <topicref class="- map/topicref " href="uwb1480603100527.xml" keys="Aarch32ArchitecturalSystemRegisterSummary"/>
+</map>

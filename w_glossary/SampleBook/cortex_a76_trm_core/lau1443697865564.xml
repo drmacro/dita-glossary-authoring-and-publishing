@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443697865564" xml:lang="en-us">
+  <title class="- topic/title ">TRCIDR1, ID Register 1</title>
+  <shortdesc class="- topic/shortdesc ">The TRCIDR1 returns the base architecture of the trace unit.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The TRCIDR1 is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCIDR1 bit assignments</title>
+        <image class="- topic/image " href="lau1443697901757.svg" placement="inline">
+          <alt class="- topic/alt ">TRCIDR1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">DESIGNER, [31:24]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates which company designed the trace
+            unit:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">41</ph></codeph></dt>
+                <dd class="- topic/dd ">Arm.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [23:16]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES1, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res1</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TRCARCHMAJ, [11:8]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Major trace unit architecture version
+              number:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0100</codeph></dt>
+                <dd class="- topic/dd ">ETMv4.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TRCARCHMIN, [7:4]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Minor trace unit architecture version
+              number:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">2</ph></codeph></dt>
+                <dd class="- topic/dd ">ETMv4.2</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">REVISION, [3:0]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Trace unit implementation revision number:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><keyword class="- topic/keyword ">3</keyword></dt>
+                <dd class="- topic/dd ">ETM revision.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The TRCIDR1 can be accessed through the external debug interface, offset
+          <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1E4</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1465368686940" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32ProcessorFeatureRegister1_EL1">ID_PFR1_EL1, AArch32
+    Processor Feature Register 1, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_PFR1_EL1 provides information about the programmers model and architecture extensions
+		supported by the core.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_PFR1_EL1 is a 32-bit register, and is part of the Identification registers functional
+				group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_t3f_k4w_pv">
+        <title class="- topic/title ">ID_PFR1_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1465368947928.svg" id="image_blf_k4w_pv" placement="inline">
+          <alt class="- topic/alt ">ID_PFR1_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">GIC CPU, [31:28]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">GIC CPU support:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph ">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">GIC CPU interface is disabled, <keyword class="- topic/keyword " otherprops="g.signal.name">GICCDISABLE</keyword> is HIGH, or not
+                  implemented.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph ">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">GIC CPU interface is implemented and enabled, <keyword class="- topic/keyword " otherprops="g.signal.name">GICCDISABLE</keyword> is LOW.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Virt_frac, [27:24]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph ">0</ph></codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">No features from the Armv7 Virtualization Extensions are
+                    implemented.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Sec_frac, [23:20]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph ">0</ph></codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">No features from the Armv7 Virtualization Extensions are
+                    implemented.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">GenTimer, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Generic Timer support:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph ">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">Generic Timer supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Virtualization, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Virtualization support:</p>
+            
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "> <ph class="- topic/ph ">0</ph> </codeph> </dt>
+                <dd class="- topic/dd ">Virtualization not implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">MProgMod, [11:8]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">M profile programmers model support:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph ">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Security, [7:4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Security support:</p>
+            
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "> <ph class="- topic/ph ">0</ph> </codeph> </dt>
+                <dd class="- topic/dd ">Security not implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ProgMod, [3:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates support for the standard programmers model for Armv4 and
+              later.</p>
+            <p class="- topic/p ">Model must support User, FIQ, IRQ, Supervisor, Abort, Undefined, and System modes:</p>
+            
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "> <ph class="- topic/ph ">0</ph> </codeph> </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">There are no configuration notes.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+   
+  </refbody>
+</reference>

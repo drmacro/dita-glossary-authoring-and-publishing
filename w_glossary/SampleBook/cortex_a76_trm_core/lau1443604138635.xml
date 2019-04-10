@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443604138635" xml:lang="en-us">
+  <title class="- topic/title ">DBGBCRn_EL1, Debug Breakpoint Control Registers, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The DBGBCRn_EL1 holds control information for a breakpoint. Each
+    DBGBVR_EL1 is associated with a DBGBCR_EL1 to form a <term class="- topic/term ">Breakpoint Register
+      Pair</term> (BRP). DBGBVRn_EL1 is associated with DBGBCRn_EL1 to form BRPn. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 5.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The DBGBCRn_EL1 registers are 32-bit registers.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">DBGBCRn_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1443604361794.svg" placement="inline">
+          <alt class="- topic/alt ">DBGBCRn_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:24]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">BT, [23:20]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Breakpoint Type. This field controls the behavior of Breakpoint debug
+              event generation. This includes the meaning of the value held in the associated
+                DBGBVR<term class="- topic/term ">n</term>_EL1, indicating whether it is an instruction
+              address match or mismatch, or a Context match. It also controls whether the breakpoint
+              is linked to another breakpoint. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0000</codeph></dt>
+                <dd class="- topic/dd ">Unlinked instruction address match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0001</codeph></dt>
+                <dd class="- topic/dd ">Linked instruction address match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0010</codeph></dt>
+                <dd class="- topic/dd ">Unlinked Context ID match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0011</codeph></dt>
+                <dd class="- topic/dd ">Linked Context ID match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0100</codeph></dt>
+                <dd class="- topic/dd ">Unlinked instruction address mismatch.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0101</codeph></dt>
+                <dd class="- topic/dd ">Linked instruction address mismatch.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0110</codeph></dt>
+                <dd class="- topic/dd ">Unlinked CONTEXTIDR_EL1 match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0111</codeph></dt>
+                <dd class="- topic/dd ">Linked CONTEXTIDR_EL1 match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1000</codeph></dt>
+                <dd class="- topic/dd ">Unlinked VMID match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1001</codeph></dt>
+                <dd class="- topic/dd ">Linked VMID match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1010</codeph></dt>
+                <dd class="- topic/dd ">Unlinked VMID + Conext ID match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1011</codeph></dt>
+                <dd class="- topic/dd ">Linked VMID + Context ID match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1100</codeph></dt>
+                <dd class="- topic/dd ">Unlinked CONTEXTIDR_EL2 match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1101</codeph></dt>
+                <dd class="- topic/dd ">Linked CONTEXTIDR_EL2 match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1110</codeph></dt>
+                <dd class="- topic/dd ">Unlinked Full Context ID match.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b1111</codeph></dt>
+                <dd class="- topic/dd ">Linked Full Context ID match.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">The field break down is:</p>
+            <ul class="- topic/ul ">
+            <li class="- topic/li "><p class="- topic/p ">BT[3:1]: Base type. If the breakpoint is not context-aware, these bits are <term class="- topic/term " outputclass="archterm">res0</term>. Otherwise, the possible
+                    values are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+                    <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b000</codeph></dt>
+                        <dd class="- topic/dd ">Match address. DBGBVR<term class="- topic/term ">n</term>_EL1 is the address of an instruction.</dd>
+                    </dlentry>
+                    <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b001</codeph></dt>
+                        <dd class="- topic/dd ">Match context ID. DBGBVR<term class="- topic/term ">n</term>_EL1[31:0] is a context ID.</dd>
+                    </dlentry>
+                    <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b010</codeph></dt>
+                        <dd class="- topic/dd ">Match VMID. DBGBVR<term class="- topic/term ">n</term>_EL1[47:32] is a VMID.</dd>
+                    </dlentry>
+                    <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b011</codeph></dt>
+                        <dd class="- topic/dd ">Match VMID and CONTEXTIDR_EL1. DBGBVR<term class="- topic/term ">n</term>_EL1[31:0] is a context ID, and DBGBVR<term class="- topic/term ">n</term>_EL1[47:32] is a VMID.</dd>
+                    </dlentry>
+                    
+                </dl></li>
+            <li class="- topic/li ">BT[2]: Mismatch. <term class="- topic/term " outputclass="archterm">res0</term>.</li>
+            <li class="- topic/li ">BT[0]: Enable linking.</li>
+        </ul>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">LBN, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Linked breakpoint number. For Linked address matching breakpoints,
+              this specifies the index of the Context-matching breakpoint linked to.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SSC, [15:14]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Security State Control. Determines the Security states under which a
+              Breakpoint debug event for breakpoint <term class="- topic/term ">n</term> is
+              generated.</p>
+            <p class="- topic/p ">This field must be interpreted with the <term class="- topic/term ">Higher Mode Control</term> (HMC), and <term class="- topic/term ">Privileged Mode
+                Control</term> (PMC), fields to determine the mode and security states that can be
+              tested.</p>
+            <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for possible values of the HMC and PMC fields.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">HMC, [13]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Hyp Mode Control bit. Determines the debug perspective for deciding
+              when a breakpoint debug event for breakpoint <term class="- topic/term ">n</term> is
+              generated.</p>
+            <p class="- topic/p ">This bit must be interpreted with the SSC and PMC fields to
+              determine the mode and security states that can be tested.</p>
+            <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for possible values of the SSC and PMC fields.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [12:9]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">BAS, [8:5]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Byte Address Select. Defines which half-words a regular breakpoint
+              matches, regardless of the instruction set and execution state. A debugger must
+              program this field as follows:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">3</ph></codeph></dt>
+                <dd class="- topic/dd ">Match the T32 instruction at DBGBVR<term class="- topic/term ">n</term>_EL1.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">C</ph></codeph></dt>
+                <dd class="- topic/dd ">Match the T32 instruction at DBGBVR<term class="- topic/term ">n</term>+2_EL1.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">F</ph></codeph></dt>
+                <dd class="- topic/dd ">Match the A64 or A32 instruction at DBGBVR<term class="- topic/term ">n</term>_EL1, or context match.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">All other values are reserved.</p>
+            <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8‑A</keyword></ph> architecture does not support direct execution of Java bytecodes.
+              BAS[3] and BAS[1] ignore writes and on reads return the values of BAS[2] and BAS[0]
+              respectively.</p>
+            <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more information on how the BAS field is interpreted by
+              hardware.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [4:3]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">PMC, [2:1]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Privileged Mode Control. Determines the Exception level or levels
+              that a breakpoint debug event for breakpoint <term class="- topic/term ">n</term> is
+              generated.</p>
+            <p class="- topic/p ">This field must be interpreted with the SSC and HMC fields to
+              determine the mode and security states that can be tested.</p>
+            <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for possible values of the SSC and HMC fields.</p>
+            <p class="- topic/p ">Bits[2:1] have no effect for accesses made in Hyp mode.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">E, [0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Enable breakpoint. This bit enables the BRP:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">BRP disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">BRP enabled.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">A BRP never generates a breakpoint debug event when it is
+              disabled.</p>
+            <p class="- topic/p ">The value of DBGBCR<term class="- topic/term ">n</term>_EL1.E is <term class="- topic/term " outputclass="archterm">unknown</term> on reset. A debugger must
+              ensure that DBGBCR<term class="- topic/term ">n</term>_EL1.E has a defined value before it
+              enables debug.</p>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

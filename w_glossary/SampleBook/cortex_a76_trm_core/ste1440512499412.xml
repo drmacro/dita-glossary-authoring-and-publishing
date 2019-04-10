@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="ste1440512499412" xml:lang="en-us">
+	<title class="- topic/title ">Breakpoints and watchpoints</title>
+	<abstract class="- topic/abstract ">
+		
+		<shortdesc class="- topic/shortdesc ">The core supports six breakpoints, four watchpoints, and a standard <term class="- topic/term ">Debug Communications Channel</term> (DCC).</shortdesc>
+	</abstract>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<p class="- topic/p ">A breakpoint consists of a breakpoint control register and a breakpoint value
+			register. These two registers are referred to as a <term class="- topic/term ">Breakpoint
+				Register Pair</term> (BRP). </p>
+		<p class="- topic/p ">Four of the breakpoints (BRP 0-3) match only to virtual address and the other
+			two (BRP 4 and 5) match against either virtual address or context ID, or VMID. All the
+			watchpoints can be linked to two breakpoints (BRP 4 and 5) to enable a memory request to
+			be trapped in a given process context.</p>
+	</conbody>
+</concept>

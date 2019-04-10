@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440667114315" xml:lang="en-us">
+  <title class="- topic/title ">Internal exclusive monitor</title>
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core L1 memory system has an internal exclusive monitor.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">This monitor is a 2-state, open and exclusive, state machine that manages
+        Load-Exclusive or Store-Exclusive accesses and Clear-Exclusive (<codeph class="+ topic/ph pr-d/codeph ">CLREX</codeph>) instructions. You can use these instructions to construct semaphores,
+        ensuring synchronization between different processes running on the core, and also between
+        different cores that are using the same coherent memory locations for the semaphore. A
+        Load-Exclusive instruction tags a small block of memory for exclusive access. CTR.ERG
+        defines the size of the tagged block as 16 words, one cache line.</p>
+      
+      <note class="- topic/note " type="note"><p class="- topic/p "> A load/store exclusive instruction is any one of the following:</p>
+        <ul class="- topic/ul ">
+          <li class="- topic/li ">In the A64 instruction set, any instruction that has a mnemonic
+            starting with <codeph class="+ topic/ph pr-d/codeph ">LDX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LDAX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">STX</codeph>, or <codeph class="+ topic/ph pr-d/codeph ">STLX</codeph>.</li>
+          <li class="- topic/li ">In the A32 and T32 instruction sets, any instruction that has a
+            mnemonic starting with <codeph class="+ topic/ph pr-d/codeph ">LDREX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">STREX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LDAEX</codeph>, or <codeph class="+ topic/ph pr-d/codeph ">STLEX</codeph>.</li>
+        </ul>
+      </note>
+      
+      
+      
+      <sectiondiv class="- topic/sectiondiv "/>
+      
+      
+      <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for more information about these instructions.</p>
+    </section>
+  </refbody>
+</reference>

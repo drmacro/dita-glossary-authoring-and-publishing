@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443445482819" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32InstructionSetAttributeRegister3_EL1">ID_ISAR3_EL1, AArch32 Instruction Set Attribute Register 3, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_ISAR3_EL1 provides information about the instruction sets
+    implemented by the core in AArch32.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_ISAR3_EL1 is a 32-bit register, and is part of the Identification
+        registers functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_ftt_fmy_nv">
+        <title class="- topic/title ">ID_ISAR3_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1443445515139.svg" id="image_bxt_fmy_nv" placement="inline">
+          <alt class="- topic/alt ">ID_ISAR3_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">T32EE, [31:28]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented T32EE instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">None implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TrueNOP, [27:24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates support for True NOP instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">True <codeph class="+ topic/ph pr-d/codeph ">NOP</codeph> instructions in both
+                  the A32 and T32 instruction sets, and additional NOP-compatible hints.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">T32Copy, [23:20]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the support for T32 non flag-setting <codeph class="+ topic/ph pr-d/codeph ">MOV</codeph> instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">Support for T32 instruction set encoding T1 of the <codeph class="+ topic/ph pr-d/codeph ">MOV</codeph> (register) instruction, copying from a low register
+                  to a low register.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TabBranch, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Table Branch instructions in the T32
+              instruction set.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">The <codeph class="+ topic/ph pr-d/codeph ">TBB</codeph> and <codeph class="+ topic/ph pr-d/codeph ">TBH</codeph> instructions.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SynchPrim, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Synchronization Primitive instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <ul class="- topic/ul " id="ul_jzt_fmy_nv">
+                    <li class="- topic/li ">The <codeph class="+ topic/ph pr-d/codeph ">LDREX</codeph> and <codeph class="+ topic/ph pr-d/codeph ">STREX</codeph> instructions.</li>
+                    <li class="- topic/li ">The <codeph class="+ topic/ph pr-d/codeph ">CLREX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LDREXB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">STREXB</codeph>,
+                      and <codeph class="+ topic/ph pr-d/codeph ">STREXH</codeph> instructions.</li>
+                    <li class="- topic/li ">The <codeph class="+ topic/ph pr-d/codeph ">LDREXD</codeph> and <codeph class="+ topic/ph pr-d/codeph ">STREXD</codeph> instructions.</li>
+                  </ul>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SVC, [11:8]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented SVC instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">The <codeph class="+ topic/ph pr-d/codeph ">SVC</codeph> instruction.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SIMD, [7:4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented <term class="- topic/term ">Single Instruction
+                Multiple Data</term> (SIMD) instructions.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">3</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <ul class="- topic/ul " id="ul_d15_fmy_nv">
+                    <li class="- topic/li ">The <codeph class="+ topic/ph pr-d/codeph ">SSAT</codeph> and <codeph class="+ topic/ph pr-d/codeph ">USAT</codeph> instructions, and the Q bit in the PSRs.</li>
+                    <li class="- topic/li ">The <codeph class="+ topic/ph pr-d/codeph ">PKHBT</codeph>, <codeph class="+ topic/ph pr-d/codeph ">PKHTB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">QADD16</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">QADD8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">QASX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">QSUB16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">QSUB8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">QSAX</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SADD16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SADD8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SASX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SEL</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHADD16</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SHADD8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHASX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHSUB16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHSUB8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHSAX</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SSAT16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SSUB16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SSUB8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SSAX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SXTAB16</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SXTB16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UADD16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UADD8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UASX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UHADD16</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">UHADD8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UHASX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UHSUB16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UHSUB8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UHSAX</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">UQADD16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UQADD8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UQASX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UQSUB16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UQSUB8</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">UQSAX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">USAD8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">USADA8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">USAT16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">USUB16</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">USUB8</codeph>, <codeph class="+ topic/ph pr-d/codeph ">USAX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UXTAB16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UXTB16</codeph> instructions, and the GE[3:0] bits in the
+                      PSRs.</li>
+                  </ul>
+                </dd>
+                <dd class="- topic/dd ">The SIMD field relates only to implemented instructions that
+                  perform SIMD operations on the general-purpose registers. In an implementation
+                  that supports Advanced SIMD and floating-point instructions, MVFR0, MVFR1, and
+                  MVFR2 give information about the implemented Advanced SIMD instructions.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Saturate, [3:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Saturate instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">The <codeph class="+ topic/ph pr-d/codeph ">QADD</codeph>, <codeph class="+ topic/ph pr-d/codeph ">QDADD</codeph>, <codeph class="+ topic/ph pr-d/codeph ">QDSUB</codeph>,
+                    <codeph class="+ topic/ph pr-d/codeph ">QSUB</codeph> Q bit in the PSRs.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">In an AArch64-only implementation, this register is <term class="- topic/term " outputclass="archterm">UNKNOWN</term>.</p>
+            
+            <p class="- topic/p ">Must be interpreted with ID_ISAR0_EL1, ID_ISAR1_EL1, ID_ISAR2_EL1, ID_ISAR4_EL1, ID_ISAR5_EL1, and ID_ISAR6_EL1. See:</p>
+            <ul class="- topic/ul " id="ul_ayl_znt_2v">
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443437809604.xml" keyref="IdIsar0El1Aarch32InstructionSetAttributeRegister0El1" type="reference">ID_ISAR0_EL1, AArch32 Instruction Set Attribute Register 0, EL1<desc class="- topic/desc ">The ID_ISAR0_EL1 provides information about the instruction sets implemented by the core in 		AArch32.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443437895509.xml" keyref="IdIsar1El1Aarch32InstructionSetAttributeRegister1El1" type="reference">ID_ISAR1_EL1, AArch32 Instruction Set Attribute Register 1, EL1<desc class="- topic/desc ">The ID_ISAR1_EL1 provides information about the instruction sets     implemented by the core in AArch32.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445407754.xml" keyref="IdIsar2El1Aarch32InstructionSetAttributeRegister2El1" type="reference">ID_ISAR2_EL1, AArch32 Instruction Set Attribute Register 2, EL1<desc class="- topic/desc ">The ID_ISAR2_EL1 provides information about the instruction sets     implemented by the core in AArch32.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445566298.xml" keyref="IdIsar4El1Aarch32InstructionSetAttributeRegister4El1" type="reference">ID_ISAR4_EL1, AArch32 Instruction Set Attribute Register 4, EL1<desc class="- topic/desc ">The ID_ISAR4_EL1 provides information about the instruction sets     implemented by the core in AArch32.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445664210.xml" keyref="IdIsar5El1Aarch32InstructionSetAttributeRegister5El1" type="reference">ID_ISAR5_EL1, AArch32 Instruction Set Attribute Register 5, EL1<desc class="- topic/desc ">The ID_ISAR5_EL1 provides information about the instruction sets that     the core implements.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="nwd1493817464437.xml" keyref="IdIsar6El1Aarch32InstructionSetAttributeRegister6El1" type="reference">ID_ISAR6_EL1, AArch32 Instruction Set Attribute Register 6, EL1<desc class="- topic/desc ">The ID_ISAR6_EL1 provides information about the instruction sets that     the core implements.</desc></xref>.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

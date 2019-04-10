@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="uwb1480603100527" xml:lang="en-us">
+	<title class="- topic/title ">AArch32 architectural system register summary</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">AArch32 architectural system register summary</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">This chapter identifies the AArch32 architectural system registers
+		implemented in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+		core.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The following table identifies the architecturally defined registers that
+				are implemented in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core. For a description of these registers see the
+				<cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>. </p>
+			<p class="- topic/p ">For the registers listed in the following table, coproc==<ph class="- topic/ph " otherprops="g.number.bin">1111</ph>.</p>
+			<table class="- topic/table " id="table_c4d_rfg_tx">
+				<title class="- topic/title ">Architecturally defined registers</title>
+				<tgroup class="- topic/tgroup " cols="7">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><colspec class="- topic/colspec " colname="col3" colnum="3"/><colspec class="- topic/colspec " colname="col4" colnum="4"/><colspec class="- topic/colspec " colname="col5" colnum="5"/><colspec class="- topic/colspec " colname="col6" colnum="6"/><colspec class="- topic/colspec " colname="col7" colnum="7"/><thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Name</entry>
+							<entry class="- topic/entry " colname="col2">CRn</entry>
+							<entry class="- topic/entry " colname="col3">Opc1</entry>
+							<entry class="- topic/entry " colname="col4">CRm</entry>
+							<entry class="- topic/entry " colname="col5">Opc2</entry>
+							<entry class="- topic/entry " colname="col6">Width</entry>
+							<entry class="- topic/entry " colname="col7">description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTFRQ</entry>
+							<entry class="- topic/entry " colname="col2">c14</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c0</entry>
+							<entry class="- topic/entry " colname="col5">0</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Timer Clock Ticks per Second</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTP_CTL</entry>
+							<entry class="- topic/entry " colname="col2">c14</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c2</entry>
+							<entry class="- topic/entry " colname="col5">1</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Counter-timer Physical Timer Control
+								register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTP_CVAL</entry>
+							<entry class="- topic/entry " colname="col2">-</entry>
+							<entry class="- topic/entry " colname="col3">2</entry>
+							<entry class="- topic/entry " colname="col4">c14</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">64</entry>
+							<entry class="- topic/entry " colname="col7">Counter-timer Physical Timer CompareValue
+								register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTP_TVAL</entry>
+							<entry class="- topic/entry " colname="col2">c14</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c2</entry>
+							<entry class="- topic/entry " colname="col5">0</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Counter-timer Physical Timer TimerValue
+								register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTPCT</entry>
+							<entry class="- topic/entry " colname="col2">-</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c14</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">64</entry>
+							<entry class="- topic/entry " colname="col7">Counter-timer Physical Count register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTV_CTL</entry>
+							<entry class="- topic/entry " colname="col2">c14</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c3</entry>
+							<entry class="- topic/entry " colname="col5">1</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Counter-timer Virtual Timer Control
+								register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTV_CVAL</entry>
+							<entry class="- topic/entry " colname="col2">-</entry>
+							<entry class="- topic/entry " colname="col3">3</entry>
+							<entry class="- topic/entry " colname="col4">c14</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">64</entry>
+							<entry class="- topic/entry " colname="col7">Counter-timer Virtual Timer CompareValue
+								register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTV_TVAL</entry>
+							<entry class="- topic/entry " colname="col2">c14</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c3</entry>
+							<entry class="- topic/entry " colname="col5">0</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Counter-timer Virtual Timer TimerValue
+								register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CNTVCT</entry>
+							<entry class="- topic/entry " colname="col2">-</entry>
+							<entry class="- topic/entry " colname="col3">1</entry>
+							<entry class="- topic/entry " colname="col4">c14</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">64</entry>
+							<entry class="- topic/entry " colname="col7">Counter-timer Virtual Count register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CP15ISB </entry>
+							<entry class="- topic/entry " colname="col2">c7</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c5</entry>
+							<entry class="- topic/entry " colname="col5">4</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Instruction Synchronization Barrier System instruction</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CP15DSB </entry>
+							<entry class="- topic/entry " colname="col2">c7</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c10</entry>
+							<entry class="- topic/entry " colname="col5">4</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Data Synchronization Barrier System instruction</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CP15DMB</entry>
+							<entry class="- topic/entry " colname="col2">c7</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c10</entry>
+							<entry class="- topic/entry " colname="col5">5</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Data Memory Barrier System instruction</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">DLR</entry>
+							<entry class="- topic/entry " colname="col2">c4</entry>
+							<entry class="- topic/entry " colname="col3">3</entry>
+							<entry class="- topic/entry " colname="col4">c5</entry>
+							<entry class="- topic/entry " colname="col5">1</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Debug Link Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">DSPSR</entry>
+							<entry class="- topic/entry " colname="col2">c4</entry>
+							<entry class="- topic/entry " colname="col3">3</entry>
+							<entry class="- topic/entry " colname="col4">c5</entry>
+							<entry class="- topic/entry " colname="col5">0</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">Debug Saved Program Status Register</entry>
+						</row>
+						
+						
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">TPIDRURO</entry>
+							<entry class="- topic/entry " colname="col2">c13</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c0</entry>
+							<entry class="- topic/entry " colname="col5">3</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">User Read Only Thread ID Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">TPIDRURW</entry>
+							<entry class="- topic/entry " colname="col2">c13</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">c0</entry>
+							<entry class="- topic/entry " colname="col5">2</entry>
+							<entry class="- topic/entry " colname="col6">32</entry>
+							<entry class="- topic/entry " colname="col7">User Read/Write Thread ID Register</entry>
+						</row>
+						
+					</tbody>
+				</tgroup>
+			</table>
+		</section>
+	</refbody>
+</reference>

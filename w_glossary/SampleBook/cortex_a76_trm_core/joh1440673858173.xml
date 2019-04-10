@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673858173" xml:lang="en-us">
+  <title class="- topic/title ">About the PMU</title>
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+    core includes performance monitors that enable you to gather various statistics on the
+    operation of the core and its memory system during runtime. These provide useful
+    information about the behavior of the core that you can use when debugging or profiling
+    code.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      
+      <p class="- topic/p ">The PMU provides six counters. Each counter can count any of the events
+        available in the core. The absolute counts recorded might vary because of pipeline
+        effects. This has negligible effect except in cases where the counters are enabled for a
+        very short time.</p>
+      
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><link class="- topic/link " format="dita" href="tgw1477591342487.xml" role="friend" scope="local" type="reference"><linktext class="- topic/linktext ">PMU events (Ares/Enyo/Deimos Specific)</linktext><desc class="- topic/desc ">The following table shows the events that are generated and the numbers     that the PMU uses to reference the events. The table also shows the bit position of each event     on the event bus. Event reference numbers that are not listed are reserved.</desc></link></linkpool></related-links></reference>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443606257755" xml:lang="en-us">
+  <title class="- topic/title ">EDPIDR2, External Debug Peripheral Identification Register 2</title>
+  <shortdesc class="- topic/shortdesc ">The EDPIDR2 provides information to identify an external debug
+    component.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The EDPIDR2 is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">EDPIDR2 bit assignments</title>
+        <image class="- topic/image " href="lau1443619274321.svg" placement="inline">
+          <alt class="- topic/alt ">EDPIDR2 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:8]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Revision, [7:4]</dt>
+          <dd class="- topic/dd "><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><keyword class="- topic/keyword ">3</keyword></dt>
+                <dd class="- topic/dd ">r<keyword class="- topic/keyword ">0</keyword>p<keyword class="- topic/keyword ">1</keyword>.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">JEDEC, [3]</dt>
+          <dd class="- topic/dd "><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">1</ph></dt>
+                <dd class="- topic/dd ">RAO. Indicates a JEP106 identity code is used.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">DES_1, [2:0]</dt>
+          <dd class="- topic/dd "><dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.bin">011</ph></dt>
+                <dd class="- topic/dd "><keyword class="- topic/keyword ">Arm Limited</keyword>. This is the most significant nibble of JEP106 ID code.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The EDPIDR2 can be accessed through the external debug interface, offset
+          <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FE8</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

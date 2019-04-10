@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="tai1477667618699" xml:lang="en-us">
+  <title class="- topic/title ">Bypassing the CPU interface</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">Bypassing the CPU interface</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">The GIC CPU Interface is always implemented within the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">However, you can disable it if you assert the GICCDISABLE signal HIGH at
+        reset. If you disable the GIC CPU interface, the input pins nVIRQ and nVFIQ can be driven by
+        an external GIC in the SoC. GIC system register access generates <term class="- topic/term " outputclass="archterm">UNDEFINED</term>
+        instruction exceptions when the GICCDISABLE signal is HIGH.</p>
+      <p class="- topic/p ">If the GIC is enabled, the input pins nVIRQ and nVFIQ must be tied off to HIGH. This is because the internal GIC CPU interface generates the virtual interrupt signals to the cores. The nIRQ and nFIQ signals are controlled by software, therefore there is no requirement to tie them HIGH.</p>
+    </section>
+  </refbody>
+</reference>

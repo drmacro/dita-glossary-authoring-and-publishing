@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673283754" xml:lang="en-us">
+  <title class="- topic/title ">Memory-mapped debug register summary</title>
+  <shortdesc class="- topic/shortdesc ">The following table shows the offset address for the registers that are
+    accessible from the external debug interface.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">For those registers not described in this chapter, see the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <table class="- topic/table " colsep="0" frame="topbot" rowsep="0">
+        <title class="- topic/title ">Memory-mapped debug register summary</title>
+        <tgroup class="- topic/tgroup " cols="5" colsep="0" rowsep="0">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4" colsep="0"/>
+          <colspec class="- topic/colspec " colname="col5" colnum="5" colsep="0"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1">Offset</entry>
+              <entry class="- topic/entry " colname="col2">Name</entry>
+              <entry class="- topic/entry " colname="col3">Type</entry>
+              <entry class="- topic/entry " colname="col4">Width</entry>
+              <entry class="- topic/entry " colname="col5">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0x000-<ph class="- topic/ph " otherprops="g.number.hex">01C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">020</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDESR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">External Debug Event Status Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">024</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDECR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">External Debug Execution Control Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0x028-<ph class="- topic/ph " otherprops="g.number.hex">02C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">030</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDWAR[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RO</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">External Debug Watchpoint Address
+                Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">034</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDWAR[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0x038-<ph class="- topic/ph " otherprops="g.number.hex">07C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">080</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGDTRRX_EL0</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">Debug Data Transfer Register, Receive</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">084</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDITR</entry>
+              <entry class="- topic/entry " colname="col3">WO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">External Debug Instruction Transfer
+                Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">088</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDSCR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">External Debug Status and Control Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">08C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGDTRTX_EL0</entry>
+              <entry class="- topic/entry " colname="col3">WO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">Debug Data Transfer Register, Transmit</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">090</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDRCR</entry>
+              <entry class="- topic/entry " colname="col3">WO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="pat1464890252201.xml" keyref="ExternalDebugReserveControlRegister" type="reference">EDRCR, External Debug Reserve Control Register<desc class="- topic/desc ">The EDRCR is part of the Debug registers functional group.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">094</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">098</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDECCR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">External Debug Exception Catch Control
+                Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">09C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0A0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Reserved</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0A4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0A8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0AC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Reserved</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0x0B0-<ph class="- topic/ph " otherprops="g.number.hex">2FC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">300</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">OSLAR_EL1</entry>
+              <entry class="- topic/entry " colname="col3">WO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">OS Lock Access Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0x304-<ph class="- topic/ph " otherprops="g.number.hex">30C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">310</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPRCR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">External Debug Power/Reset Control
+                Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">314</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPRSR</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">External Debug Processor Status Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0x318-<ph class="- topic/ph " otherprops="g.number.hex">3FC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">400</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR0_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Breakpoint Value Register
+                0</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">404</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR0_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">408</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBCR0_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604138635.xml" type="reference">DBGBCRn_EL1, Debug Breakpoint Control Registers, EL1<desc class="- topic/desc ">The DBGBCRn_EL1 holds control information for a breakpoint. Each     DBGBVR_EL1 is associated with a DBGBCR_EL1 to form a <term class="- topic/term ">Breakpoint Register       Pair</term> (BRP). DBGBVRn_EL1 is associated with DBGBCRn_EL1 to form BRPn. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 5.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">40C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">410</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR1_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Breakpoint Value Register
+                1</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">414</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR1_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">418</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBCR1_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604138635.xml" type="reference">DBGBCRn_EL1, Debug Breakpoint Control Registers, EL1<desc class="- topic/desc ">The DBGBCRn_EL1 holds control information for a breakpoint. Each     DBGBVR_EL1 is associated with a DBGBCR_EL1 to form a <term class="- topic/term ">Breakpoint Register       Pair</term> (BRP). DBGBVRn_EL1 is associated with DBGBCRn_EL1 to form BRPn. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 5.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">41C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">420</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR2_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Breakpoint Value Register
+                2</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">424</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR2_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">428</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBCR2_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604138635.xml" type="reference">DBGBCRn_EL1, Debug Breakpoint Control Registers, EL1<desc class="- topic/desc ">The DBGBCRn_EL1 holds control information for a breakpoint. Each     DBGBVR_EL1 is associated with a DBGBCR_EL1 to form a <term class="- topic/term ">Breakpoint Register       Pair</term> (BRP). DBGBVRn_EL1 is associated with DBGBCRn_EL1 to form BRPn. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 5.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">42C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">430</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR3_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Breakpoint Value Register
+                3</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">434</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR3_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">438</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBCR3_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604138635.xml" type="reference">DBGBCRn_EL1, Debug Breakpoint Control Registers, EL1<desc class="- topic/desc ">The DBGBCRn_EL1 holds control information for a breakpoint. Each     DBGBVR_EL1 is associated with a DBGBCR_EL1 to form a <term class="- topic/term ">Breakpoint Register       Pair</term> (BRP). DBGBVRn_EL1 is associated with DBGBCRn_EL1 to form BRPn. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 5.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">43C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">440</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR4_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Breakpoint Value Register
+                4</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">444</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR4_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">448</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBCR4_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604138635.xml" type="reference">DBGBCRn_EL1, Debug Breakpoint Control Registers, EL1<desc class="- topic/desc ">The DBGBCRn_EL1 holds control information for a breakpoint. Each     DBGBVR_EL1 is associated with a DBGBCR_EL1 to form a <term class="- topic/term ">Breakpoint Register       Pair</term> (BRP). DBGBVRn_EL1 is associated with DBGBCRn_EL1 to form BRPn. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 5.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">44C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">450</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR5_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Breakpoint Value Register
+                5</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">454</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBVR5_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">458</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGBCR5_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604138635.xml" type="reference">DBGBCRn_EL1, Debug Breakpoint Control Registers, EL1<desc class="- topic/desc ">The DBGBCRn_EL1 holds control information for a breakpoint. Each     DBGBVR_EL1 is associated with a DBGBCR_EL1 to form a <term class="- topic/term ">Breakpoint Register       Pair</term> (BRP). DBGBVRn_EL1 is associated with DBGBCRn_EL1 to form BRPn. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 5.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0x45C-<ph class="- topic/ph " otherprops="g.number.hex">7FC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">800</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWVR0_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Watchpoint Value Register
+                0</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">804</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWVR0_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">808</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWCR0_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604153577.xml" type="reference">DBGWCRn_EL1, Debug Watchpoint Control Registers, EL1<desc class="- topic/desc ">The DBGWCRn_EL1 holds control information for a watchpoint. Each     DBGWCR_EL1 is associated with a DBGWVR_EL1 to form a <term class="- topic/term ">Watchpoint Register       Pair</term> (WRP). DBGWCRn_EL1 is associated with DBGWVRn_EL1 to form WRP<term class="- topic/term ">n</term>. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 3.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">80C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">810</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWVR1_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Watchpoint Value Register
+                1</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">814</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWVR1_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">818</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWCR1_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604153577.xml" type="reference">DBGWCRn_EL1, Debug Watchpoint Control Registers, EL1<desc class="- topic/desc ">The DBGWCRn_EL1 holds control information for a watchpoint. Each     DBGWCR_EL1 is associated with a DBGWVR_EL1 to form a <term class="- topic/term ">Watchpoint Register       Pair</term> (WRP). DBGWCRn_EL1 is associated with DBGWVRn_EL1 to form WRP<term class="- topic/term ">n</term>. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 3.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">81C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">820</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWVR2_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Watchpoint Value Register
+                2</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">824</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWVR2_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">828</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWCR2_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604153577.xml" type="reference">DBGWCRn_EL1, Debug Watchpoint Control Registers, EL1<desc class="- topic/desc ">The DBGWCRn_EL1 holds control information for a watchpoint. Each     DBGWCR_EL1 is associated with a DBGWVR_EL1 to form a <term class="- topic/term ">Watchpoint Register       Pair</term> (WRP). DBGWCRn_EL1 is associated with DBGWVRn_EL1 to form WRP<term class="- topic/term ">n</term>. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 3.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">82C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">830</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWVR3_EL1[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RW</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1">Debug Watchpoint Value Register
+                0,</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">834</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWVR3_EL1[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">838</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGWCR3_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443604153577.xml" type="reference">DBGWCRn_EL1, Debug Watchpoint Control Registers, EL1<desc class="- topic/desc ">The DBGWCRn_EL1 holds control information for a watchpoint. Each     DBGWCR_EL1 is associated with a DBGWVR_EL1 to form a <term class="- topic/term ">Watchpoint Register       Pair</term> (WRP). DBGWCRn_EL1 is associated with DBGWVRn_EL1 to form WRP<term class="- topic/term ">n</term>. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 3.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0x83C-<ph class="- topic/ph " otherprops="g.number.hex">CFC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">D00</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">MIDR</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="mel1474024504742.xml" keyref="MidrEl1MainIdRegisterEl1" type="reference">MIDR_EL1, Main ID Register, EL1<desc class="- topic/desc ">The MIDR_EL1 provides identification information for the core,     including an implementer code for the device and a device ID number.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0xD04-<ph class="- topic/ph " otherprops="g.number.hex">D1C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">D20</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPFR[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RO</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1"><xref class="- topic/xref " href="lau1443437525908.xml" keyref="IdAa64pfr0El1Aarch64ProcessorFeatureRegister0El1" type="reference">ID_AA64PFR0_EL1, AArch64 Processor Feature Register 0, EL1<desc class="- topic/desc ">The ID_AA64PFR0_EL1 provides additional information about implemented 		core features in AArch64.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">D24</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPFR[63:32]</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">D28</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDFR[31:0]</entry>
+              <entry class="- topic/entry " colname="col3" morerows="1">RO</entry>
+              <entry class="- topic/entry " colname="col4" morerows="1">64</entry>
+              <entry class="- topic/entry " colname="col5" morerows="1"><xref class="- topic/xref " href="lau1443437525908.xml" keyref="IdAa64pfr0El1Aarch64ProcessorFeatureRegister0El1" type="reference">ID_AA64PFR0_EL1, AArch64 Processor Feature Register 0, EL1<desc class="- topic/desc ">The ID_AA64PFR0_EL1 provides additional information about implemented 		core features in AArch64.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">D2C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDFR[63:32]</entry>
+            </row>
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0xD60-<ph class="- topic/ph " otherprops="g.number.hex">EFC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">F00</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0xF04-<ph class="- topic/ph " otherprops="g.number.hex">F9C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FA0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGCLAIMSET_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="joh1440673263737.xml" type="reference">DBGCLAIMSET_EL1, Debug Claim Tag Set Register, EL1<desc class="- topic/desc ">The DBGCLAIMSET_EL1 is used by software to set CLAIM bits to     1.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FA4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGCLAIMCLR_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">Debug Claim Tag Clear Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FA8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDEVAFF0</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><p class="- topic/p ">External Debug Device Affinity Register 0</p></entry>
+            </row>
+            
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FAC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDEVAFF1</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">External Debug Device Affinity Register 1</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FB0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Reserved</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FB4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">-</entry>
+              <entry class="- topic/entry " colname="col3">-</entry>
+              <entry class="- topic/entry " colname="col4">-</entry>
+              <entry class="- topic/entry " colname="col5">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FB8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">DBGAUTHSTATUS_EL1</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">Debug Authentication Status Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FBC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDEVARCH</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">External Debug Device Architecture
+                Register</entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FC0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDEVID2</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">External Debug Device ID Register 2, <term class="- topic/term " outputclass="archterm">res0</term></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FC4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDEVID1</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606145293.xml" type="reference">EDDEVID1, External Debug Device ID Register 1<desc class="- topic/desc ">The EDDEVID1 provides extra information for external debuggers about     features of the debug implementation.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FC8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDEVID</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606132096.xml" type="reference">EDDEVID, External Debug Device ID Register 0<desc class="- topic/desc ">The EDDEVID provides extra information for external debuggers about     features of the debug implementation.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FCC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDDEVTYPE</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5">
+                <p class="- topic/p ">External Debug Device Type Register</p>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FD0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPIDR4</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606290728.xml" type="reference">EDPIDR4, External Debug Peripheral Identification Register 4<desc class="- topic/desc ">The EDPIDR4 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph ">0xFD4-<ph class="- topic/ph " otherprops="g.number.hex">FDC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPIDR5-7</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606302857.xml" type="reference">EDPIDRn, External Debug Peripheral Identification Registers 5-7<desc class="- topic/desc ">No information is held in the Peripheral ID5, Peripheral ID6, and Peripheral ID7     Registers.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FE0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPIDR0</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606199838.xml" type="reference">EDPIDR0, External Debug Peripheral Identification Register 0<desc class="- topic/desc ">The EDPIDR0 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FE4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPIDR1</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606244615.xml" type="reference">EDPIDR1, External Debug Peripheral Identification Register 1<desc class="- topic/desc ">The EDPIDR1 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FE8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPIDR2</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606257755.xml" type="reference">EDPIDR2, External Debug Peripheral Identification Register 2<desc class="- topic/desc ">The EDPIDR2 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FEC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDPIDR3</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606277314.xml" type="reference">EDPIDR3, External Debug Peripheral Identification Register 3<desc class="- topic/desc ">The EDPIDR3 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FF0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDCIDR0</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606317499.xml" type="reference">EDCIDR0, External Debug Component Identification Register 0<desc class="- topic/desc ">The EDCIDR0 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FF4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDCIDR1</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606332515.xml" type="reference">EDCIDR1, External Debug Component Identification Register 1<desc class="- topic/desc ">The EDCIDR1 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="1">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FF8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDCIDR2</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606346197.xml" type="reference">EDCIDR2, External Debug Component Identification Register 2<desc class="- topic/desc ">The EDCIDR2 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row " rowsep="0">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FFC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">EDCIDR3</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">32</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443606367264.xml" type="reference">EDCIDR3, External Debug Component Identification Register 3<desc class="- topic/desc ">The EDCIDR3 provides information to identify an external debug     component.</desc></xref></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

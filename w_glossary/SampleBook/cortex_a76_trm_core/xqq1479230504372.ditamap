@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="xqq1479230504372" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Ares Reltable - Debug</title>
+    <topicmeta class="- map/topicmeta ">
+        <shortdesc class="- map/shortdesc ">Contains the reltable for the Debug chapter of the Ananke Core TRM
+            bookmap id joh1440578089658</shortdesc>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+    <topicref class="- map/topicref " locktitle="yes" navtitle="First topic" type="non-confidential/reference.xml"/>
+    
+    
+    
+    
+    
+    <reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440673246448.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="joh1440673344537.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable>
+    
+    
+    <reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440673335878.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="joh1440673344537.xml" class="- map/topicref "/>
+                <topicref href="joh1440596976629.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable>
+    
+    
+    
+    
+</map>

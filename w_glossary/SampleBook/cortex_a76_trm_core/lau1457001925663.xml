@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1457001925663" xml:lang="en-us">
+	<title class="- topic/title ">LORN_EL1, LORegion Number Register, EL1</title>
+	<shortdesc class="- topic/shortdesc ">The LORN_EL1 register holds the number of the LORegion described in the
+		current LORegion descriptor selected by LORC_EL1.DS.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">LORN_EL1 is a 64-bit register and is part of the Virtual memory control
+				registers functional group.</p>
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">LORN_EL1 bit assignments</title>
+				<image class="- topic/image " href="lau1464774658756.svg" placement="inline">
+					<alt class="- topic/alt ">LORN_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">[63:2]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Num, [1:0]</dt>
+					<dd class="- topic/dd ">Indicates the LORegion number. </dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						
+						<p class="- topic/p ">RW fields in this register reset to architecturally <term class="- topic/term " outputclass="archterm">UNKNOWN</term> values.</p>
+						<p class="- topic/p ">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+		
+	</refbody>
+</reference>

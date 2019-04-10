@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lvk1477657616206" xml:lang="en-us">
+	<title class="- topic/title ">Translation table walks</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Translation table walks</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">When the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core generates a memory access, the MMU:</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<ol class="- topic/ol ">
+				<li class="- topic/li ">Performs a lookup for the requested VA, current ASID, current
+					VMID, and current translation regime in the relevant instruction or data.</li>
+				<li class="- topic/li ">If there is a miss in the relevant L1 TLB, the MMU performs a
+					lookup for the requested VA, current ASID, current VMID, and translation
+					regime.</li>
+				<li class="- topic/li ">If there is a miss in the L2 TLB, the MMU performs a hardware
+					translation table walk.</li>
+			</ol>
+		</section>
+		<section class="- topic/section ">
+			<p class="- topic/p ">In the case of a L2 TLB miss, the hardware does a translation table
+				walk as long as the MMU is enabled, and the translation using the base register has
+				not been disabled.</p>
+			<p class="- topic/p ">If the translation table walk is disabled for a particular base
+				register, the core returns a Translation Fault. If the TLB finds a matching entry,
+				it uses the information in the entry as follows.</p>
+			<p class="- topic/p ">The access permission bits determine if the access is permitted. If
+				the matching entry does not pass the permission checks, the MMU signals a Permission
+				fault. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for details of Permission faults, including:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">A description of the various faults.</li>
+				<li class="- topic/li ">The fault codes.</li>
+				<li class="- topic/li ">Information regarding the registers where the fault codes are
+					set.</li>
+			</ul>
+
+		</section>
+
+
+
+
+	</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="fof1473690676831.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AArch64 behavior</linktext><desc class="- topic/desc ">When executing in AArch64 state at a particular Exception level, you can configure the 		hardware translation table walk to use either the 4KB, 16KB, or 64KB translation granule. 		Program the Translation Granule bit, TG0, in the appropriate translation control 		register:</desc></link></linkpool></linkpool></related-links></reference>

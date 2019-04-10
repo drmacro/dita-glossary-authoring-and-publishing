@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673249061" xml:lang="en-us">
+  <title class="- topic/title ">Effects of resets on debug registers</title>
+  <shortdesc class="- topic/shortdesc ">The core has the following reset signals that affect the debug
+    registers:</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">nCPUPORESET</dt>
+          <dd class="- topic/dd ">This signal initializes the core logic, including the debug, ETM
+            trace unit, breakpoint, watchpoint logic, and performance monitors logic. This maps to a
+            Cold reset that covers reset of the core logic and the integrated debug
+            functionality.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">nCORERESET</dt>
+          <dd class="- topic/dd ">This signal resets some of the debug and performance monitor logic.
+            This maps to a Warm reset that covers reset of the core logic.</dd>
+        </dlentry>
+        
+      </dl>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="deb1332254789611" xml:lang="en-us">
+    <title class="- topic/title ">Product Status</title><titlealts class="- topic/titlealts "><navtitle class="- topic/navtitle " translate="yes">Product Status</navtitle></titlealts>
+    <shortdesc class="- topic/shortdesc "/>
+    <prolog class="- topic/prolog ">
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+    <refbody class="- topic/body        reference/refbody ">
+        <section class="- topic/section ">
+            <p class="- topic/p " outputclass="final">The information in this document is Final, that is for a developed product.</p>
+            <p class="- topic/p " outputclass="alpha">The information in this document is for an Alpha product, that is a product under development.</p>
+            <p class="- topic/p " outputclass="beta">The information in this document is for a Beta product, that is a product under development.</p>
+            
+        </section>
+    </refbody>
+</reference>

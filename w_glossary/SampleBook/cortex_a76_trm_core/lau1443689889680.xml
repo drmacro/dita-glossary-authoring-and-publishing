@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443689889680" xml:lang="en-us">
+  <title class="- topic/title ">PMCFGR, Performance Monitors Configuration Register</title>
+  <shortdesc class="- topic/shortdesc ">The PMCFGR contains PMU specific configuration data.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The PMCFGR is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">PMCFGR bit assignments</title>
+        <image class="- topic/image " href="lau1443689968259.svg" placement="inline">
+          <alt class="- topic/alt ">PMCFGR bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:17]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">EX, [16]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Export supported. The value is:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc11">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+              <dd class="- topic/dd ">Export is supported. PMCR_EL0.EX is read/write.</dd>
+            </dlentry>
+          </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CCD, [15]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Cycle counter has pre-scale. The value is:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc11">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+              <dd class="- topic/dd ">PMCR_EL0.D is read/write.</dd>
+            </dlentry>
+          </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CC, [14]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Dedicated cycle counter supported. The value
+            is:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc11">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Dedicated cycle counter is supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Size, [13:8]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Counter size. The value is:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc11">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b111111</codeph></dt>
+              <dd class="- topic/dd ">64-bit counters.</dd>
+            </dlentry>
+          </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">N, [7:0]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Number of event counters. The value is:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc11">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">06</ph></codeph></dt>
+              <dd class="- topic/dd ">Six counters.</dd>
+            </dlentry>
+          </dl></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The PMCFGR can be accessed through the external debug interface, offset <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">E00</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

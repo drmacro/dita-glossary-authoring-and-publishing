@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="deb1356102769213" xml:lang="en-us">
+	<title class="- topic/title ">Intended audience</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Intended audience</navtitle>
+	</titlealts>	
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section " id="g.intended-audience.section">
+			<p class="- topic/p " id="g.intended-audience"> This manual is for system designers, system integrators, and programmers who are designing or programming a <term class="- topic/term ">System-on-Chip</term> (SoC) that uses an <keyword class="- topic/keyword ">Arm</keyword> core. </p>
+			
+		</section>
+	</refbody>
+</reference>

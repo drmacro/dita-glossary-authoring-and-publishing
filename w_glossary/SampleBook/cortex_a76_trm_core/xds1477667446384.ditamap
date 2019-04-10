@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" id="xds1477667446384" xml:lang="en-us">
+    <title class="- topic/title ">Ares Generic Interrupt Controller CPU Interface</title><prolog class="- topic/prolog "/>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Generic Interrupt Controller CPU Interface</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </topicmeta>
+    <topicref class="- map/topicref " href="xil1477667346785.xml"/>
+    <topicref class="- map/topicref " href="tai1477667618699.xml"/>
+        
+    
+    
+    
+    
+</map>

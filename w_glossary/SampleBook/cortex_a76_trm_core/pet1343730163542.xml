@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="pet1343730163542" xml:lang="en-us">
+	<title class="- topic/title ">Web Address</title><titlealts class="- topic/titlealts "><navtitle class="- topic/navtitle " translate="yes">Web Address</navtitle></titlealts>
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " id="g.arm.web_address.refbody">
+		<section class="- topic/section " id="g.arm.web_address.section">
+			<p class="- topic/p ">
+				<ph class="- topic/ph ">
+            <xref class="- topic/xref " format="html" href="http://www.arm.com" scope="external">http://www.arm.com</xref>
+        </ph>
+			</p>
+		</section>
+	</refbody>
+</reference>

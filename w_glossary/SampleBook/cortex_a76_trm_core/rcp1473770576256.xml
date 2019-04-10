@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="rcp1473770576256" xml:lang="en-us">
+  
+  <title class="- topic/title " id="TitleCacheLevelIDRegister_EL1">CLIDR_EL1, Cache Level ID Register, EL1 </title>
+  <shortdesc class="- topic/shortdesc ">The CLIDR_EL1 identifies the type of cache, or caches, implemented at each level, up to a maximum of
+    seven levels.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">It also identifies the <term class="- topic/term ">Level of Coherency</term> (LoC) and <term class="- topic/term ">Level of Unification</term> (LoU) for the cache hierarchy.</p>
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">CLIDR_EL1 is a 64-bit register, and is part of the Identification registers functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_h32_rfk_qv">
+        <title class="- topic/title ">CLIDR_EL1 bit assignments</title>
+        <image class="- topic/image " href="joh1447695407447.svg" id="image_hn2_rfk_qv" placement="inline">
+          <alt class="- topic/alt ">CLIDR_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [63:33]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ICB, [32:30]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Inner cache boundary. This field indicates the boundary between the inner and the
+              outer domain:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">010</codeph> </dt>
+                <dd class="- topic/dd ">L2 cache is the highest inner level.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">011</codeph></dt>
+                <dd class="- topic/dd ">L3 cache is the highest inner level.</dd>
+              </dlentry>
+            </dl>
+            
+            
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">LoUU, [29:27]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the Level of Unification Uniprocessor for the cache hierarchy:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">000</codeph></dt>
+                <dd class="- topic/dd ">No levels of cache need to cleaned or invalidated when cleaning or invalidating to the Point of Unification. This is the value if no caches are configured.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">LoC, [26:24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the Level of Coherency for the cache hierarchy:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">010</codeph> </dt>
+                <dd class="- topic/dd ">L3 cache is not implemented.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">011</codeph> </dt>
+                <dd class="- topic/dd ">L3 cache is implemented.</dd>
+              </dlentry>
+            </dl>
+            
+            
+            
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">LoUIS, [23:21]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the <term class="- topic/term ">Level of Unification Inner Shareable</term> (LoUIS) for the cache hierarchy.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.bin">000</ph></codeph></dt>
+                <dd class="- topic/dd ">No cache level needs cleaning to Point of Unification.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [20:9]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">No cache at levels L7 down to L4.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Ctype3, [8:6]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the type of cache if the core implements L3 cache. If
+              present, unified instruction and data caches at Level 3:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">100</codeph> </dt>
+                <dd class="- topic/dd ">Both per-core L2 and cluster L3 caches are present.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">000</codeph> </dt>
+                <dd class="- topic/dd ">All other options.</dd>
+              </dlentry>
+            </dl>
+            
+            
+            <p class="- topic/p ">If Ctype2 has a value of <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">000</codeph>, then the value of Ctype3 must be <term class="- topic/term " outputclass="archterm">ignored</term>.</p>                       
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Ctype2, [5:3]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the type of unified instruction and data caches at Level 2:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">100</codeph> </dt>
+                <dd class="- topic/dd ">Either per-core L2 or cluster L2 cache is present.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">000</codeph> </dt>
+                <dd class="- topic/dd ">All other options.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Ctype1, [2:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the type of cache implemented at L1:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">011</codeph> </dt>
+                <dd class="- topic/dd ">Separate instruction and data caches at L1.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          
+          <dd class="- topic/dd ">There are no configuration notes.</dd>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Bit fields and details that are not provided in this description
+              are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+  </refbody>
+</reference>
