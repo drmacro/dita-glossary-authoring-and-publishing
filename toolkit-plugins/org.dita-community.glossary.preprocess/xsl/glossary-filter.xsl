@@ -433,9 +433,16 @@
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     <xsl:param name="directlyUsedGlossaryEntries" as="map(*)*"/>
     
+    <xsl:variable name="localDebug" as="xs:boolean" select="$doDebug or false()"/> 
+    
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:getIndirectlyUsedGlossaryEntries: Starting. Have {count($directlyUsedGlossaryEntries)} directly-used glossary entries.</xsl:message>
+    </xsl:if>
+
     <xsl:call-template name="gloss:_getIndirectlyUsedGlossaryEntries">
       <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
       <xsl:with-param name="directlyUsedGlossaryEntries" as="map(*)*" select="$directlyUsedGlossaryEntries"/>
+      <xsl:with-param name="indirectlyUsedGlossaryEntries" as="map(*)*" select="()"/>
     </xsl:call-template>
   </xsl:template>
   
@@ -443,6 +450,13 @@
   <xsl:template name="gloss:_getIndirectlyUsedGlossaryEntries" as="map(*)*">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     <xsl:param name="directlyUsedGlossaryEntries" as="map(*)*"/>
+    <xsl:param name="indirectlyUsedGlossaryEntries" as="map(*)*"/>
+    
+    <xsl:variable name="localDebug" as="xs:boolean" select="$doDebug or false()"/> 
+    
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:_getIndirectlyUsedGlossaryEntries: Starting. Have {count($directlyUsedGlossaryEntries)} directly-used glossary entries.</xsl:message>
+    </xsl:if>
     
     <!-- Get the links from the directly-used glossary entires, get the glossary
          entries from those, and recurse.
@@ -452,35 +466,61 @@
       <xsl:call-template name="gloss:get-links-from-topics">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
         <xsl:with-param name="topics" as="map(*)*" select="$directlyUsedGlossaryEntries"/>
-      </xsl:call-template>
-      
+      </xsl:call-template>      
     </xsl:variable>
-    <xsl:variable name="newIndirectGlossaryEntries" as="map(*)*">      
-      <xsl:apply-templates select="$links" mode="gloss:get-glossary-entries-for-links">
-        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-      </xsl:apply-templates>
+    
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:_getIndirectlyUsedGlossaryEntries: Have {count($links)} links:</xsl:message>
+      <xsl:for-each select="$links">        
+        <xsl:message>+ [DEBUG]     {name(.?link)} keyref="{.?link/@keyref}"</xsl:message>
+      </xsl:for-each>
+    </xsl:if>
+    
+    <xsl:variable name="newIndirectGlossaryEntries" as="map(*)*">
+      <xsl:for-each select="$links">
+        <xsl:apply-templates select=".?link" mode="gloss:get-glossary-entries-for-links">
+          <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+          <xsl:with-param name="mapContext" as="element()" tunnel="yes" select=".?mapContext"/>
+        </xsl:apply-templates>
+      </xsl:for-each>
     </xsl:variable>
+    
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:_getIndirectlyUsedGlossaryEntries: Have {count($newIndirectGlossaryEntries)} newIndirectGlossaryEntries.</xsl:message>
+    </xsl:if>
+    
     <xsl:variable name="directGlossaryTopics" as="element()*"
       select="$directlyUsedGlossaryEntries?topic"
     />
+
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:_getIndirectlyUsedGlossaryEntries: Have {count($directGlossaryTopics)} directGlossaryTopics.</xsl:message>
+    </xsl:if>
+    
     <xsl:variable name="newTopics" as="map(*)*"
       select="
       for $map in $newIndirectGlossaryEntries
       return 
       let $newTopic := map:get($map, 'topic')
-      return if (exists($newTopic except $directGlossaryTopics))
+      return if (exists($newTopic except ($directGlossaryTopics, $indirectlyUsedGlossaryEntries?topic)))
       then $map
       else ()
       "
     />
+
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:_getIndirectlyUsedGlossaryEntries: Have {count($directGlossaryTopics)} directGlossaryTopics.</xsl:message>
+    </xsl:if>
+    
     <xsl:choose>
       <xsl:when test="empty($newTopics)">
-        <xsl:sequence select="$directlyUsedGlossaryEntries"/>
+        <xsl:sequence select="$indirectlyUsedGlossaryEntries"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:call-template name="gloss:_getIndirectlyUsedGlossaryEntries">
           <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-          <xsl:with-param name="directlyUsedGlossaryEntries" as="map(*)*" select="$directlyUsedGlossaryEntries, $newTopics"/>
+          <xsl:with-param name="directlyUsedGlossaryEntries" as="map(*)*" select="$newTopics"/>
+          <xsl:with-param name="indirectlyUsedGlossaryEntries" as="map(*)*" select="($indirectlyUsedGlossaryEntries, $newTopics)"/>
         </xsl:call-template>
       </xsl:otherwise>
     </xsl:choose>
