@@ -40,7 +40,7 @@
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     <xsl:param name="df:keySpaces" as="map(*)" tunnel="yes"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
     <xsl:variable name="normalRoleTopicrefs" as="element()*"
       select="/*//*[df:isNormalRoleTopicRef(.)]"
@@ -63,7 +63,15 @@
         <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>          
       </xsl:apply-templates>
     </xsl:variable>
-
+    <xsl:if test="$localDebug">
+      <xsl:message>
+        + [DEBUG] dita-community:glossary-filter: Have <xsl:value-of select="count($normalRoleTopics)"/> normal-role topics that are not glossary entries.
+      </xsl:message>
+      <!--      <xsl:for-each select="$normalRoleTopics">
+        <xsl:message>+ [DEBUG] [<xsl:value-of select="position()"/>] <xsl:value-of select="df:getNavtitleForTopic(.)"/> (<xsl:value-of select="base-uri(.)"/>)</xsl:message>
+      </xsl:for-each>
+-->
+    </xsl:if>
     <xsl:variable name="glossaryTopics" as="map(*)*">
       <xsl:apply-templates select="$normalRoleTopicrefs" mode="gloss:get-topics-for-topicrefs">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
@@ -74,13 +82,7 @@
     </xsl:variable>
     
     <xsl:if test="$localDebug">
-      <xsl:message>
-+ [DEBUG] dita-community:glossary-filter: Have <xsl:value-of select="count($normalRoleTopics)"/> normal-role topics that are not glossary entries.
-      </xsl:message>
-<!--      <xsl:for-each select="$normalRoleTopics">
-        <xsl:message>+ [DEBUG] [<xsl:value-of select="position()"/>] <xsl:value-of select="df:getNavtitleForTopic(.)"/> (<xsl:value-of select="base-uri(.)"/>)</xsl:message>
-      </xsl:for-each>
--->      <xsl:message>+ [DEBUG] dita-community:glossary-filter: Have <xsl:value-of select="count($glossaryTopics)"/> normal-role glossary topics.</xsl:message>
+      <xsl:message>+ [DEBUG] dita-community:glossary-filter: Have <xsl:value-of select="count($glossaryTopics)"/> normal-role glossary topics.</xsl:message>
 <!--      <xsl:for-each select="$glossaryTopics">
         <xsl:message>+ [DEBUG] [<xsl:value-of select="position()"/>] <xsl:value-of select="df:getNavtitleForTopic(.)"/> (<xsl:value-of select="base-uri(.)"/>)</xsl:message>
       </xsl:for-each>
@@ -98,15 +100,15 @@
     <xsl:variable name="links" as="map(*)*">
       <xsl:call-template name="gloss:get-links-from-topics">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-        <xsl:with-param name="topics" as="map(*)*"/>
+        <xsl:with-param name="topics" as="map(*)*" select="$normalRoleTopics"/>
         <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>
       </xsl:call-template>
     </xsl:variable>       
     
-    <xsl:if test="$localDebug or true()">
+    <xsl:if test="$localDebug">
       <xsl:message>
 + [DEBUG] dita-community:glossary-filter: Have {count($links)} links:</xsl:message>
-      <xsl:for-each select="$links">
+ <!--     <xsl:for-each select="$links">
         <xsl:variable name="map" as="map(*)" select="."/>
         <xsl:variable name="link" as="element()" select="map:get($map, 'link')"/>
         <xsl:message>+ [DEBUG]   [{position()}] {name($link)} {if (exists($link/@keyref)) 
@@ -116,7 +118,7 @@
           then '&quot;' || normalize-space($link) || '&quot;'  
           else ''}</xsl:message>
       </xsl:for-each>        
-    
+ -->   
     </xsl:if>
     
     <xsl:variable name="directlyUsedGlossaryEntries" as="map(*)*">
@@ -137,17 +139,20 @@
       </xsl:call-template>
     </xsl:variable>
     
-    <xsl:message>+ [DEBUG] dita-community:glossary-filter: Have {count($indirectlyUsedGlossaryEntries)} indirectly-used glossary entries</xsl:message>
+    <xsl:message>+ [INFO] dita-community:glossary-filter: Have {count($indirectlyUsedGlossaryEntries)} indirectly-used glossary entries</xsl:message>
 
     <xsl:variable name="usedGlossaryEntries" as="map(*)*"
       select="($directlyUsedGlossaryEntries, $indirectlyUsedGlossaryEntries)"
     />
     
-    <xsl:message>+ [DEBUG] dita-community:glossary-filter: Have {count($usedGlossaryEntries)} used glossary entries</xsl:message>
+    <xsl:message>+ [INFO] dita-community:glossary-filter: Have {count($usedGlossaryEntries)} total used glossary entries</xsl:message>
     
     <xsl:variable name="rootElem" as="element()" select="/*"/>
     <xsl:document>
       <xsl:sequence select="node()[. &lt;&lt; $rootElem]"/>
+      <xsl:if test="$localDebug">
+        <xsl:message>+ [DEBUG] dita-community:glossary-filter: applying templates to map in mode dita-community:glossary-filter...</xsl:message>
+      </xsl:if>
       <xsl:comment>[DEBUG] applying templates to map in mode dita-community:glossary-filter</xsl:comment>
       <xsl:apply-templates mode="#current">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug or $localDebug"/>
@@ -156,6 +161,9 @@
         />
       </xsl:apply-templates>
       <xsl:comment>[DEBUG] After applying templates in mode dita-community:glossary-filter</xsl:comment>
+      <xsl:if test="$localDebug">
+        <xsl:message>+ [DEBUG] dita-community:glossary-filter: After applying templates to map in mode dita-community:glossary-filter.</xsl:message>
+      </xsl:if>
       <xsl:sequence select="node()[. &gt;&gt; $rootElem]"/>
     </xsl:document>
     
@@ -186,13 +194,24 @@
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     <xsl:param name="topics" as="map(*)*"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
+    
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:get-links-from-topics: Starting. Have {count($topics)} topics to evaluate.</xsl:message>
+    </xsl:if>
     
     <xsl:for-each select="$topics">
       <xsl:variable name="map" as="map(*)" select="."/>
-      <xsl:apply-templates mode="gloss:get-links-from-topics" select="map:get($map, 'topic')">
+      <xsl:variable name="topic" as="element()" select="map:get($map, 'topic')"/>
+      <xsl:variable name="mapContext" as="element()" select="map:get($map, 'mapContext')"/>
+      <xsl:if test="$localDebug">
+        <xsl:message>+ [DEBUG] gloss:get-links-from-topics:  Applying templates to topic {df:getNavtitleForTopic($topic)} in mode gloss:get-links-from-topics.</xsl:message>
+        <xsl:message>+ [DEBUG] gloss:get-links-from-topics:  Map context: {name($mapContext)} [{$mapContext/@xtrc}]</xsl:message>
+      </xsl:if>
+      
+      <xsl:apply-templates mode="gloss:get-links-from-topics" select="$topic">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
-        <xsl:with-param name="mapContext" as="element()" select="map:get($map, 'mapContext')"/>
+        <xsl:with-param name="mapContext" as="element()" tunnel="yes" select="$mapContext"/>
       </xsl:apply-templates>        
     </xsl:for-each>
     
@@ -210,6 +229,12 @@
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     <xsl:param name="links" as="map(*)*"/>    
     
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
+    
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:get-topics-for-links: Starting. Have {count($links)} links</xsl:message>
+    </xsl:if>
+    
     <xsl:for-each select="$links">
       <xsl:variable name="map" as="map(*)" select="."/>
       <xsl:apply-templates select="map:get($map, 'link')" mode="gloss:get-glossary-entries-for-links">
@@ -217,13 +242,17 @@
         <xsl:with-param name="mapContext" as="element()" tunnel="yes" select="map:get($map, 'mapContext')"/>
       </xsl:apply-templates>
     </xsl:for-each>
+
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:get-topics-for-links: Done.</xsl:message>
+    </xsl:if>
     
   </xsl:template>
   
   <!-- If the topicref is to a used glossary entry, keep it, otherwise ignore it. -->
   <xsl:template mode="dita-community:glossary-filter" match="*[gloss:isTopicrefToGlossaryEntry(.)]">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    <xsl:param name="usedGlossaryEntries" as="element()*" tunnel="yes"/>
+    <xsl:param name="usedGlossaryEntries" as="map(*)*" tunnel="yes"/>
     
     <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
@@ -232,12 +261,18 @@
     />
     
     <xsl:choose>
-      <xsl:when test="exists($target intersect $usedGlossaryEntries)">
+      <xsl:when test="exists($target intersect $usedGlossaryEntries?topic)">
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] dita-community:glossary-filter: Topicref to glossary entry, entry is used, keeping it.</xsl:message>
+        </xsl:if>
         <xsl:next-match>
           <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
         </xsl:next-match>
       </xsl:when>
       <xsl:otherwise>
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] dita-community:glossary-filter: Topicref to glossary entry, entry is not used, filtering it out (but not its child topicrefs).</xsl:message>
+        </xsl:if>
         <!-- Not a reference to a used glossary entry, filter it out -->
         <xsl:apply-templates select="*[contains(@class, ' map/topicref ')]" mode="#current">
           <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>                  
@@ -274,35 +309,73 @@
   </xsl:template>  
   
   <!-- Context element should be some form of link -->
-  <xsl:template mode="gloss:get-glossary-entries-for-links" match="*" as="element()?">
+  <xsl:template mode="gloss:get-glossary-entries-for-links" match="*" as="map(*)?">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    <xsl:param name="rootmap" as="element()" tunnel="yes"/>
-    <xsl:variable name="localDebug" as="xs:boolean" select="false()"/>
+    <xsl:param name="df:keySpaces" as="map(*)" tunnel="yes"/>
+    <xsl:param name="mapContext" as="element()" tunnel="yes"/>
     
-    <xsl:variable name="targetURI" as="xs:string?"
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
+    
+    <xsl:if test="$localDebug">
+      
+      <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links: --------------------------------------</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links: Handling element {name(.)}</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links:   keyref="{@keyref}"</xsl:message>
+      <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links:   href  ="{@href}"</xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="keydef" as="element()?"
       select="
       if (exists(@keyref))
-      then df:getEffectiveUriForKeyref(., $rootmap, $doDebug)
-      else string(@href)
+      then df:getKeydefForKeyref($df:keySpaces, $mapContext, @keyref, false())
+      else ()
       "
-    />    
-    
-    <xsl:variable name="target" as="element()?"
-      select="df:resolveTopicElementRef(., $targetURI)"
     />
 
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links:  Have a keydef: {exists($keydef)}</xsl:message>
+    </xsl:if>
+    
+    <!-- NOTE: At this point in the preprocessing, the link should always have an @href
+               value that points to the target, so the keydef is only needed
+               to capture the map context, not resolve the link.
+      -->
+    <xsl:variable name="targetURI" as="xs:string?"
+      select="string(@href)"
+    />    
+
+    <xsl:if test="$localDebug">
+      <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links:  targetURI="{$targetURI}"</xsl:message>
+    </xsl:if>
+    
+    <xsl:variable name="target" as="element()?"
+      select="df:resolveTopicElementRef(., $targetURI, false())"
+    />
+    
     <xsl:choose>
       <xsl:when test="exists($target)">
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links:  Got target element: {name($target)}</xsl:message>
+        </xsl:if>
         <xsl:choose>
-          <xsl:when test="contains(@class, ' glossentry/glossentry ')">
-            <xsl:sequence select="$target"/>
+          <xsl:when test="contains($target/@class, ' glossentry/glossentry ')">
+            <xsl:if test="$localDebug">
+              <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links:  Target element is a glossary entry, returning it.</xsl:message>
+            </xsl:if>
+            <xsl:sequence select="map{'topic' : $target, 'mapContext' : ($keydef, $mapContext)[1]}"/>
           </xsl:when>
           <xsl:otherwise>
+            <xsl:if test="$localDebug">
+              <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links:  Target element is not a glossary entry, returning nothing.</xsl:message>
+            </xsl:if>
             <!-- Not a glossary entry, ignore it -->
           </xsl:otherwise>
         </xsl:choose>
       </xsl:when>
       <xsl:otherwise>
+        <xsl:if test="$localDebug">
+          <xsl:message>+ [DEBUG] gloss:get-glossary-entries-for-links:  Did not get a target element, returning nothing.</xsl:message>
+        </xsl:if>
         <!-- No target, nothing to do -->
       </xsl:otherwise>
     </xsl:choose>

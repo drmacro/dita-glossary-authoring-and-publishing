@@ -71,7 +71,7 @@
   <xsl:template match="/">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     
-    <xsl:variable name="localDebug" as="xs:boolean" select="true() or $doDebug"/>
+    <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
     <xsl:message>+ [INFO] DITA Community glossary preprocessing:</xsl:message>
     <xsl:message>+ [INFO]   filter-glossary: <xsl:value-of select="$gloss:filter-glossary"/> (<xsl:value-of select="$dita-community:filter-glossary"/>)</xsl:message>

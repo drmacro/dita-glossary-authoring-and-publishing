@@ -524,6 +524,27 @@
     
   </xsl:function>
   
+  <xsl:function name="df:getKeydefForKeyref" as="element()?">
+    <xsl:param name="keySpaces" as="map(*)"/>
+    <xsl:param name="mapContext" as="element()"/>
+    <xsl:param name="keyref" as="attribute()"/><!-- @keyref, @conkeyref -->
+    <xsl:param name="doDebug" as="xs:boolean"/>
+    
+    <xsl:variable name="keyname" as="xs:string?"
+      select="
+      if (contains($keyref, '/'))
+      then tokenize($keyref, '/')[1]
+      else string($keyref)
+      "
+    />
+    
+    <xsl:variable name="result" as="element()?"
+      select="df:resolveScopedKey($keySpaces, $mapContext, $keyname, $doDebug)"
+    />
+    
+    <xsl:sequence select="$result"/>
+  </xsl:function>
+  
   <!-- 
     Contructs a report of the key spaces in the specified key scapes map.
     @param keyspaces Map of scope names to key spaces.

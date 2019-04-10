@@ -392,7 +392,9 @@
                <?ditaot gentext?>
                <linktext class="- map/linktext ">Aikido, The Gentle Martial Art</linktext>
                <?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">Aikido is a purely defensive martial art in which   you train cooperatively with a partner with the goal of achieving   harmony between attacker and defender.</shortdesc>
+               <shortdesc class="- map/shortdesc ">Aikido is a purely defensive martial art in which you
+        train cooperatively with a partner with the goal of achieving harmony between attacker and
+        defender.</shortdesc>
                <prodinfo class="- topic/prodinfo "
                          xtrc="prodinfo:1;8:15"
                          xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
@@ -421,7 +423,8 @@
                   <?ditaot gentext?>
                   <linktext class="- map/linktext ">Rokyu (6th Kyu) Requirements</linktext>
                   <?ditaot genshortdesc?>
-                  <shortdesc class="- map/shortdesc ">6th Kyu is the first level     of white belt earned by Aikido     beginners.</shortdesc>
+                  <shortdesc class="- map/shortdesc ">6th Kyu is the first level of white belt earned by
+          Aikido beginners.</shortdesc>
                   <prodinfo class="- topic/prodinfo "
                             xtrc="prodinfo:1;8:15"
                             xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
@@ -523,11 +526,11 @@
                      <?ditaot gentext?>
                      <linktext class="- map/linktext ">Katatedori shihonage</linktext>
                      <?ditaot genshortdesc?>
-                     <shortdesc class="- map/shortdesc ">Four direction throw     (<term class="- topic/term "
+                     <shortdesc class="- map/shortdesc ">Four direction throw (<term class="- topic/term "
                               href="glossary/en/gloss-shihonage.dita"
                               keyref="glossary.shihonage"
                               xtrc="term:1;6:41"
-                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/katatedori-shihonage.dita"/>) from     opposite hand grab     (<term class="- topic/term "
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/katatedori-shihonage.dita"/>) from opposite hand grab (<term class="- topic/term "
                               href="glossary/en/gloss-katatedori.dita"
                               keyref="glossary.katatedori"
                               xtrc="term:2;8:42"
@@ -561,11 +564,11 @@
                      <?ditaot gentext?>
                      <linktext class="- map/linktext ">Munetsuki kotegaeshi</linktext>
                      <?ditaot genshortdesc?>
-                     <shortdesc class="- map/shortdesc ">Wrist out turn     (<term class="- topic/term "
+                     <shortdesc class="- map/shortdesc ">Wrist out turn (<term class="- topic/term "
                               href="glossary/en/gloss-kotegaeshi.dita"
                               keyref="glossary.kotegaeshi"
                               xtrc="term:1;6:42"
-                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>) for strike     to the abdomen (<term class="- topic/term "
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/munetsuki-kotegaeshi.dita"/>) for strike to the abdomen (<term class="- topic/term "
                               href="glossary/en/gloss-mune.dita"
                               keyref="glossary.mune"
                               xtrc="term:2;7:51"
@@ -642,15 +645,15 @@
                      <?ditaot gentext?>
                      <linktext class="- map/linktext ">Shomenuchi iriminage</linktext>
                      <?ditaot genshortdesc?>
-                     <shortdesc class="- map/shortdesc ">Entering throw     (<term class="- topic/term "
+                     <shortdesc class="- map/shortdesc ">Entering throw (<term class="- topic/term "
                               href="glossary/en/gloss-iriminage.dita"
                               keyref="glossary.iriminage"
                               xtrc="term:1;6:41"
-                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/shomenuchi-iriminage.dita"/>) for     <term class="- topic/term "
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/shomenuchi-iriminage.dita"/>) for <term class="- topic/term "
                               href="glossary/en/gloss-shomenuchi.dita"
                               keyref="glossary.shomenuchi"
                               xtrc="term:2;7:41"
-                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/shomenuchi-iriminage.dita"/>     attack.</shortdesc>
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/shomenuchi-iriminage.dita"/> attack.</shortdesc>
                      <prodinfo class="- topic/prodinfo "
                                xtrc="prodinfo:1;8:15"
                                xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido-bookmap-literal-glossary.ditamap">
@@ -680,11 +683,11 @@
                      <?ditaot gentext?>
                      <linktext class="- map/linktext ">Yokomenuchi shihonage</linktext>
                      <?ditaot genshortdesc?>
-                     <shortdesc class="- map/shortdesc ">Four direction throw     (<term class="- topic/term "
+                     <shortdesc class="- map/shortdesc ">Four direction throw (<term class="- topic/term "
                               href="glossary/en/gloss-shihonage.dita"
                               keyref="glossary.shihonage"
                               xtrc="term:1;6:41"
-                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>) in response     to strike to the side of the head     (<term class="- topic/term "
+                              xtrf="file:/Users/ekimber/workspace/conference_papers/dita-na/dita-na-2019/dita-glossary-authoring-and-publishing/sample-data/aikido/intro-to-aikido/topics/yokomenuchi-shihonage.dita"/>) in response to strike to the side of the head (<term class="- topic/term "
                               href="glossary/en/gloss-yokomenuchi.dita"
                               keyref="glossary.yokomenuchi"
                               xtrc="term:2;8:43"

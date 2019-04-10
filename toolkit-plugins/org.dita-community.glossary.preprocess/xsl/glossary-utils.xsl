@@ -103,9 +103,18 @@
   
   <!-- ============================================
        Get links from topics
+       
+       Result is a sequence of maps, one for each
+       link containing the link element and the
+       map context for the link.
+       
+       map{
+         'link' : element(),
+         'mapContext' : element()
+       }
        ============================================ -->
   
-  <xsl:template mode="gloss:get-links-from-topics" match="*[contains(@class, ' topic/topic ')]">
+  <xsl:template mode="gloss:get-links-from-topics" match="*[contains(@class, ' topic/topic ')]" as="map(*)*">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
     
     <xsl:apply-templates mode="#current" select="*">
@@ -113,7 +122,7 @@
     </xsl:apply-templates>
   </xsl:template>
   
-  <xsl:template mode="gloss:get-links-from-topics" 
+  <xsl:template mode="gloss:get-links-from-topics" as="map(*)*"
     match="
     *[contains(@class, ' topic/body ')] |
     *[contains(@class, ' topic/title ')] |
@@ -132,14 +141,17 @@
        must be a link of some sort to a local-scope DITA topic.
        
     -->
-  <xsl:template mode="gloss:get-links-from-topics" match="*[@keyref or @href]
-                      [not(contains(@class, ' topic/image '))]
-                      [not(contains(@class, ' topic/object '))]
-                      [empty(@format) or (@format = ('dita'))]
-                      [not(@scope = ('peer', 'external'))]">
+  <xsl:template mode="gloss:get-links-from-topics" as="map(*)*" 
+    match="*[@keyref or @href]
+            [not(contains(@class, ' topic/image '))]
+            [not(contains(@class, ' topic/object '))]
+            [empty(@format) or (@format = ('dita'))]
+            [not(@scope = ('peer', 'external'))]"
+  >
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    
-    <xsl:sequence select="."/>
+    <xsl:param name="mapContext" as="element()" tunnel="yes"/>
+        
+    <xsl:sequence select="map{'link' : ., 'mapContext' : $mapContext}"/>
     <xsl:next-match>
       <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
     </xsl:next-match>
@@ -291,21 +303,30 @@
     <xsl:param name="context" as="element()"/>
     <xsl:param name="doDebug" as="xs:boolean"/>
     
-    <xsl:variable name="topic" as="element()?" select="df:resolveTopicRef($context, $doDebug)"/>
-    <xsl:if test="$doDebug">
-      <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): keyref="{$context/@keyref}", href="<xsl:value-of
-        select="$context/@href"/>"</xsl:message>
-      <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): topic exists: {exists($topic)}</xsl:message>
-      <xsl:if test="exists($topic)">
-        <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): topic class: {$topic/@class}</xsl:message>        
-      </xsl:if>
-    </xsl:if>
-    <xsl:variable name="result" as="xs:boolean"
-      select="
-       exists($topic) and
-       contains($topic/@class, ' glossentry/glossentry ')
-      "
-    />        
+    <xsl:variable name="result" as="xs:boolean">
+      <xsl:choose>
+        <xsl:when test="df:isTopicRef($context)">
+          <xsl:variable name="topic" as="element()?" select="df:resolveTopicRef($context, $doDebug)"/>
+          <xsl:if test="$doDebug">
+            <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): keyref="{$context/@keyref}", href="<xsl:value-of
+              select="$context/@href"/>"</xsl:message>
+            <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): topic exists: {exists($topic)}</xsl:message>
+            <xsl:if test="exists($topic)">
+              <xsl:message>+ [DEBUG] gloss:isTopcrefToGlossaryEntry(): topic class: {$topic/@class}</xsl:message>        
+            </xsl:if>
+          </xsl:if>
+          <xsl:sequence
+            select="
+              exists($topic) and
+              contains($topic/@class, ' glossentry/glossentry ')
+            "
+          />                  
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:sequence select="false()"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
     <xsl:sequence select="$result"/>
   </xsl:function>
   

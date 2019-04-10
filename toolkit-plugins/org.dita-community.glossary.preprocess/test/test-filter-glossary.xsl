@@ -32,7 +32,7 @@
     </xsl:variable>
     <xsl:variable name="filtered-map">
       <xsl:apply-templates select="." mode="dita-community:glossary-filter">
-        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="true()"/>
+        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
         <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>
       </xsl:apply-templates>
     </xsl:variable>
