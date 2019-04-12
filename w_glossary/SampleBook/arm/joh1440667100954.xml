@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440667100954" xml:lang="en-us">
+  <title class="- topic/title ">Program flow prediction</title>
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+    core contains program flow prediction hardware, also known as branch
+    prediction.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+  
+  
+  <refbody class="- topic/body        reference/refbody ">
+    
+    <section class="- topic/section ">
+      <p class="- topic/p ">Branch prediction increases overall performance and reduces power
+        consumption. With program flow prediction disabled, all taken branches incur a <term keyref="penalty">penalty</term> that
+        is associated with flushing the pipeline.</p>
+      <p class="- topic/p ">To avoid this , the <term keyref="branchprediction">branch prediction</term> hardware predicts if a
+        conditional or unconditional branch is to be taken. For conditional branches, the hardware
+        predicts if the branch is to be taken. It also predicts the address that the branch goes to,
+        known as the branch target address. For unconditional branches, only the target is
+        predicted.</p>
+      
+      
+      <p class="- topic/p ">The hardware contains the following functionality:</p>
+      <ul class="- topic/ul ">
+        
+        <li class="- topic/li ">A <term class="- topic/term ">Branch <term keyref="target">Target</term> Buffer</term> (BTB) holding the branch target address of previously taken branches.</li>
+        <li class="- topic/li ">Dynamic branch predictor history.</li>
+        
+        <li class="- topic/li ">The return stack, a stack of nested subroutine return addresses. </li>
+        <li class="- topic/li ">A static branch predictor.</li>
+        <li class="- topic/li ">An indirect branch predictor.</li>
+      </ul>
+      
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Predicted and non-predicted instructions</title>
+      <p class="- topic/p "><ph class="- topic/ph ">Unless otherwise specified, the following list applies to <term keyref="a64">A64</term>, <term keyref="a32">A32</term>, and <term keyref="t32">T32</term> instructions.</ph> As a rule the flow prediction hardware predicts all branch instructions regardless of the <term keyref="addressingmode">addressing mode</term>, and includes:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Conditional branches.</li>
+        <li class="- topic/li ">Unconditional branches.</li>
+        <li class="- topic/li ">Indirect branches that are associated with procedure call and return
+          instructions.</li>
+        <li class="- topic/li ">Branches that switch between  and  states.</li>
+      </ul>
+      <p class="- topic/p ">The following branch instructions are not predicted:</p>
+      
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Exception return instructions.</li>
+      </ul>
+    </section>
+    
+    <section class="- topic/section ">
+      <title class="- topic/title "> state conditional branches</title>
+      <p class="- topic/p ">A  unconditional branch instruction can be made conditional by inclusion in an <term class="- topic/term ">If-Then</term> (IT) block. It is then treated as a conditional branch.</p>
+    </section>
+    
+    
+    <section class="- topic/section ">
+      <title class="- topic/title ">Return stack</title>
+      <p class="- topic/p ">The return stack stores the address and instruction set state.</p>
+      <p class="- topic/p ">This address is equal to the link register value stored in R14 in <term keyref="aarch32">AArch32</term> state or X30 in <term keyref="aarch64">AArch64</term> state.</p>
+      
+    </section>
+    <section class="- topic/section ">
+      <p class="- topic/p ">The following instructions cause a return stack push if predicted:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">BL r14</codeph></li>
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">BLX (immediate)</codeph> in  state</li>
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">BLX (register)</codeph> in  state</li>
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">BLR</codeph> in  state</li>
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">MOV pc,r14</codeph></li>
+      </ul>
+    </section>
+    <section class="- topic/section ">
+      <p class="- topic/p ">In  state, the following instructions cause a return stack pop if predicted:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">BX</codeph></li>
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">LDR pc, [r13], #imm</codeph></li>
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">LDM r13, {…pc}</codeph></li>
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">LDM r13, {…pc}</codeph></li>
+      </ul>
+    </section>
+    <section class="- topic/section ">
+      <p class="- topic/p ">In  state, the <codeph class="+ topic/ph pr-d/codeph ">RET</codeph> instruction
+        causes a return stack pop.</p>
+      <p class="- topic/p ">As <term keyref="exception">exception</term> return instructions can change <term keyref="core">core</term> privilege mode and
+        security state, they are not predicted. These include:</p>
+      
+      <ul class="- topic/ul ">
+        <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">ERET</codeph></li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

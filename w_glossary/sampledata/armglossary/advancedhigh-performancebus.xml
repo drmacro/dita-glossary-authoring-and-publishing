@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
-<glossentry id="advancedhigh-performancebus">
-  <glossterm>Advanced High-performance Bus</glossterm>
-  <glossdef>An AMBA bus protocol supporting pipelined operation, with the address and data phases occurring during different clock periods. This means the address phase of a transfer can occur during the data phase of the previous transfer. AHB provides a subset of the functionality of the AMBA AXI protocol. See Also Advanced Microcontroller Bus Architecture (AMBA) and AHB-Lite.</glossdef>
-</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="singleinstruction_multipledata">
+  <glossterm>Single Instruction, Multiple Data</glossterm>
+  <glossdef>In the Arm instruction sets, supported SIMD instructions can comprise: Instructions that perform parallel operations on the bytes or halfwords of the Arm core registers. Instructions that perform vector operations. That is, they perform parallel operations on vectors held in multiword registers. Different versions of the Arm architecture support and recommend different instructions for vector operations. See the appropriate version of the Arm Architecture Reference Manual for more information.</glossdef>
+</glossentry>

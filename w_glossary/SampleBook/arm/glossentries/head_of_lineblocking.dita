@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="head_of_lineblocking">
+  <glossterm>Head-of-line blocking</glossterm>
+  <glossdef>In an interconnect, this occurs when a node prevents an important transaction from progressing because a less important transaction blocks the path to the same destination. </glossdef>
+</glossentry>

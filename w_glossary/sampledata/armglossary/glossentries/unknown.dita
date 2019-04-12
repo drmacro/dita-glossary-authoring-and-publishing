@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="unknown">
+  <glossterm>UNKNOWN</glossterm>
+  <glossdef>An unknown value does not contain valid data, and can vary from moment to moment, instruction to instruction, and implementation to implementation. An unknown value must not return information that cannot be accessed at the current or a lower level of privilege using instructions that are not unpredictable or constrained unpredictable and do not return unknown values. An unknown value must not be documented or promoted as having a defined value or effect. When unknown appears in body text, it is always in small capitals.</glossdef>
+</glossentry>

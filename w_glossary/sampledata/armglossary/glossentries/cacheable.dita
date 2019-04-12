@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="cacheable">
+  <glossterm>cacheable</glossterm>
+  <glossdef>A data storage method in which, if a memory location to be written is not in cache memory, a cache line is allocated for the memory. The value of that memory is then loaded into the cache from main memory, and the new value for the location is written to cache. </glossdef>
+</glossentry>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443435580346" xml:lang="en-us">
+  
+  <title class="- topic/title " id="TitleCacheTypeRegister_EL0">CTR_EL0, Cache Type Register, EL0</title>
+  <shortdesc class="- topic/shortdesc ">The CTR_EL0 provides information about the architecture of the
+    caches.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">CTR_EL0 is a 32-bit register, and is part of the Identification registers
+        functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      
+      
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">CTR_EL0 bit assignments</title>
+        <image class="- topic/image " href="bul1531664182670.svg" placement="inline">
+          <alt class="- topic/alt ">CTR_EL0 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES1, [31]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES1</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [30:29]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <term class="- topic/term " outputclass="archterm">RES0</term> </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IDC, [28]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Data cache <term keyref="clean">clean</term> requirements for instruction to data coherence:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph> </dt>
+                <dd class="- topic/dd ">Data cache  to the point of unification is required for instruction to data coherence, unless CLIDR_EL1.LoC == 0b000 or (CLIDR_EL1.LoUIS == 0b000 &amp;&amp; CLIDR_EL1.LoUU == 0b000). .</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph> </dt>
+                <dd class="- topic/dd ">Data cache  to the point of unification is not required for instruction to data coherence.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">IDC reflects the inverse value of the <key keyref="word">word class="- topic/key " otherprops="g.signal.name"&gt;BROADCASTCACHEMAINTPOU</key> pin.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CWG, [27:24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Cache <term keyref="write_back">write-back</term> granule. Log<sub class="+ topic/ph hi-d/sub ">2</sub> of the
+              number of s of the maximum size of memory that can be overwritten as a result of
+              the eviction of a cache entry that has had a memory location in it modified:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0100</codeph>
+                </dt>
+                <dd class="- topic/dd ">Cache  granule size is 16 s.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ERG, [23:20]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Exclusives Reservation Granule. Log<sub class="+ topic/ph hi-d/sub ">2</sub> of
+              the number of s of the maximum size of the reservation granule that has been
+              implemented for the Load-Exclusive and Store-Exclusive instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0100</codeph>
+                </dt>
+                <dd class="- topic/dd ">Exclusive reservation granule size is 16 s.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">DminLine, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Log<sub class="+ topic/ph hi-d/sub ">2</sub> of the number of s in the
+              smallest cache line of all the data and unified caches that the <term keyref="core">core</term>
+              controls:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0100</codeph>
+                </dt>
+                <dd class="- topic/dd ">Smallest data cache line size is 16 s.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">L1Ip, [15:14]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Instruction cache policy. Indicates the indexing and tagging policy
+              for the L1 Instruction cache:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <ph class="- topic/ph " otherprops="g.number.any">11</ph> </dt>
+                <dd class="- topic/dd "><term class="- topic/term ">Physically Indexed Physically Tagged</term> (PIPT).</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [13:4]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IminLine, [3:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Log<sub class="+ topic/ph hi-d/sub ">2</sub> of the number of s in the
+              smallest cache line of all the instruction caches that the  controls.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0100</codeph>
+                </dt>
+                <dd class="- topic/dd ">Smallest instruction cache line size is 16 s.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          
+          <dd class="- topic/dd ">There are no configuration notes.</dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <key class="- topic/key "><tm class="- topic/tm " tmtype="reg">Arm</tm></key> Architecture Reference Manual <key class="- topic/key ">Arm</key>v8, for <key class="- topic/key ">Arm</key>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

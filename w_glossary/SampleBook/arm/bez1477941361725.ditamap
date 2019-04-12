@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="bez1477941361725" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+	<title class="- topic/title ">Ares Relationship Tables</title>
+	<topicmeta class="- map/topicmeta ">
+		<shortdesc class="- map/shortdesc "/>
+		<permissions view="nonconfidential" class="- topic/permissions "/>
+	</topicmeta>
+    
+	
+	
+	 
+	
+	
+
+	
+	
+	<topicref class="- map/topicref " locktitle="yes" navtitle="First topic" type="non-confidential/reference.xml"/>
+	
+	<topicref class="- map/topicref " locktitle="yes" navtitle="First topic" type="non-confidential/reference.xml"/>
+	
+	
+	
+	<topicref class="- map/topicref " locktitle="yes" navtitle="First topic" type="non-confidential/reference.xml"/>
+	
+    
+    
+<reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="aki1477563861415.xml" class="- map/topicref "/> 
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="joh1440666282384.xml" class="- map/topicref "/>
+                <topicref href="joh1440666760590.xml" class="- map/topicref "/>
+                <topicref href="joh1440667326187.xml" class="- map/topicref "/>
+                <topicref href="ste1440493866830.xml" class="- map/topicref "/>
+                <topicref href="ste1440512327672.xml" class="- map/topicref "/>
+                <topicref href="ste1440512807652.xml" class="- map/topicref "/>
+                <topicref href="ste1440513289627.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable><reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="lau1465393370075.xml" class="- map/topicref "/> 
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="vyz1474288642391.xml" class="- map/topicref "/> 
+                <topicref href="joh1441894748225.xml" class="- map/topicref "/> 
+            </relcell>
+        </relrow>  
+        
+    </reltable><reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="normal" class="- map/relcell ">
+                <topicref href="xil1477667346785.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="ste1440662768724.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable><reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440673246448.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="joh1440673344537.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable><reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440673335878.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="joh1440673344537.xml" class="- map/topicref "/>
+                <topicref href="joh1440596976629.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable><reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440673858173.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref class="- map/topicref " keyref="PmuEvents"/> 
+            </relcell>
+        </relrow>
+        
+        
+        
+        
+    </reltable><reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440674631854.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="joh1440673344537.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable><reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440674845060.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref class="- map/topicref " keyref="PmuEvents"/>
+            </relcell>
+        </relrow>
+    </reltable><reltable title="Performance Monitor Unit" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440673879510.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref class="- map/topicref " keyref="PmuEvents"/>
+            </relcell>
+        </relrow>
+    </reltable></map>

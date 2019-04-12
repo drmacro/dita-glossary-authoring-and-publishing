@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="blh1477585707279" xml:lang="en-us">
+  <title class="- topic/title ">L2 TLB</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">L2 TLB</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">The L2 TLB structure is shared by instruction and data. It handles
+    misses from the instruction and data L1 TLBs.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+    
+    
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">The following table describes the characteristic that applies to the L2
+        <term keyref="tlb">TLB</term>.</p>
+      <table class="- topic/table ">
+        <title class="- topic/title ">Characteristic of the L2 </title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Characteristic</entry>
+              <entry class="- topic/entry " colname="col2">Note</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">5-way, set associative, 1280-entry cache</entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">Stores:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">VA to <term keyref="pa">PA</term> mappings for 4KB, 16KB, 64KB, 2MB, 32MB, 512MB, and
+                    1GB block sizes.</li>
+                  <li class="- topic/li "><term class="- topic/term ">Intermediate physical address</term>
+                    (I) to  mappings for 2MB and 1GB (in a 4KB translation granule), 32MB (in a
+                    16K translation granule), and 512MB (in a 64K granule) block sizes. Only
+                    Non-secure EL1 and EL0 stage 2 translations are cached.</li>
+                  <li class="- topic/li ">Intermediate s obtained during a <term keyref="translationtable">translation table</term> walk.</li>
+                </ul></entry>
+            </row>
+            
+          </tbody>
+        </tgroup>
+      </table>
+      
+      
+      <p class="- topic/p ">Access to the L2  usually takes three cycles. If a different page or
+        block size mapping is used, then access to the L2  can take longer.</p><p class="- topic/p ">The L2  supports four  walks in parallel (four  misses),
+          and can service two  lookups while the  walks are in progress. If there
+          are six successive misses, the L2  will stall.</p>
+      
+      <note class="- topic/note ">Caches in the <term keyref="core">core</term> are <term keyref="invalidate">invalidate</term>d automatically at reset deassertion unless the  power mode is initialized to Debug Recovery. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite> for more information.</note>
+    </section>
+  </conbody>
+</concept>

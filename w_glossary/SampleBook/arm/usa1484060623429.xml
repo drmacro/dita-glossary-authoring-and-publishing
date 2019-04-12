@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="usa1484060623429" xml:lang="en-us">
+	<title class="- topic/title ">System register access</title>
+	<shortdesc class="- topic/shortdesc ">The core implements activity monitoring in AArch64 and the activity monitors can be accessed using the <codeph class="+ topic/ph pr-d/codeph ">MRS</codeph> and <codeph class="+ topic/ph pr-d/codeph ">MSR</codeph> instructions. </shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p "/>
+		</section>
+	</refbody>
+</reference>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="cmm">
+  <glossterm>CMM</glossterm>
+  <glossdef>In the context of an ARM debugger, a scripting language provided for compatibility with other debuggers.If you are writing new scripts, ARM recommends that you use the GNU Debugger (GDB) scripting commands because these offer more functionality in the ARM Debuggers.</glossdef>
+</glossentry>

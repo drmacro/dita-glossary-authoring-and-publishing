@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="deb1332948806296" xml:lang="en-us">
+	<title class="- topic/title ">Confidentiality Status</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle " translate="yes">Confidentiality Status</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p " outputclass="nonconfidential">This document is Non-Confidential. The
+				right to use, copy and disclose this document may be subject to license restrictions
+				in accordance with the terms of the agreement entered into by <keyword class="- topic/keyword ">Arm</keyword> and the party that
+				<keyword class="- topic/keyword ">Arm</keyword> delivered this document to.</p>
+			<p class="- topic/p " outputclass="nonconfidential.restricted">This document is
+				Non-Confidential restricted. The right to use, copy and disclose this document may
+				be subject to license restrictions in accordance with the terms of the agreement
+				entered into by <keyword class="- topic/keyword ">Arm</keyword> and the party that <keyword class="- topic/keyword ">Arm</keyword> delivered this document to.</p>
+			<p class="- topic/p " outputclass="confidential">This document is Confidential. This
+				document may only be used and distributed in accordance with the terms of the
+				agreement entered into by <keyword class="- topic/keyword ">Arm</keyword> and the party that <keyword class="- topic/keyword ">Arm</keyword> delivered this document to.</p>
+			<p class="- topic/p " outputclass="confidential.restricted">This document is Confidential.
+				This document may only be used and distributed in accordance with the terms of the
+				agreement entered into by <keyword class="- topic/keyword ">Arm</keyword> and the party that <keyword class="- topic/keyword ">Arm</keyword> delivered this document to.</p>
+			<p class="- topic/p " outputclass="nonconfidential">Unrestricted Access is an <keyword class="- topic/keyword ">Arm</keyword> internal
+				classification.</p>
+			<p class="- topic/p " outputclass="confidential.restricted">Restricted Access is an <keyword class="- topic/keyword ">Arm</keyword>
+				internal classification.</p>
+			
+		</section>
+	</refbody>
+</reference>

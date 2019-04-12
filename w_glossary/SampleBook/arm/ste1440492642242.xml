@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="ste1440492642242" xml:lang="en-us">
+  <title class="- topic/title ">About the MMU</title>
+
+  <shortdesc class="- topic/shortdesc ">The <term class="- topic/term ">Memory Management Unit</term> (MMU) is
+    responsible for translating addresses of code and data <term class="- topic/term ">Virtual
+      Addresses</term> (VA) to <term class="- topic/term ">Physical Addresses</term> (PAs) in the real
+    system. The MMU also controls memory access permissions, memory ordering, and cache policies for
+    each region of memory.</shortdesc>
+  
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <conbody class="- topic/body  concept/conbody "> </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="xkn1476729556026.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Main functions</linktext><desc class="- topic/desc ">The three main functions of the MMU are to:</desc></link><link class="- topic/link " format="dita" href="xuo1477579095010.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AArch64 behavior</linktext><desc class="- topic/desc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> 		core is an Armv8 compliant core that supports execution in AArch64 state. </desc></link></linkpool></linkpool></related-links></concept>

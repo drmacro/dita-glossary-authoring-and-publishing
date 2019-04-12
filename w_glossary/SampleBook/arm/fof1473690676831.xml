@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="fof1473690676831" xml:lang="en-us">
+	<title class="- topic/title ">AArch64 behavior</title>
+	<shortdesc class="- topic/shortdesc ">When executing in AArch64 state at a particular Exception level, you can configure the
+		hardware translation table walk to use either the 4KB, 16KB, or 64KB translation granule.
+		Program the Translation Granule bit, TG0, in the appropriate translation control
+		register:</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">TCR_EL1.</li>
+				<li class="- topic/li ">TCR_EL2.</li>
+				<li class="- topic/li ">TCR_EL3.</li>
+				<li class="- topic/li ">VTCR_EL2.</li>
+			</ul>
+			<p class="- topic/p ">For TCR_EL1, you can program the Translation Granule bits TG0 and TG1 to
+				configure the translation granule respectively for TTBR0_EL1 and TTBR1_EL1, or TCR_EL2 when
+				VHE is enabled.</p>
+			
+		</section>
+	</refbody>
+</reference>

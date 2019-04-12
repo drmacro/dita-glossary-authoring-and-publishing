@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="vertexprocessor">
+  <glossterm>vertex processor</glossterm>
+  <glossdef>A programmable processor that executes vertex shaders with typical transform and lightning calculations, and generates lists of primitives for a fragment processor to draw.</glossdef>
+</glossentry>

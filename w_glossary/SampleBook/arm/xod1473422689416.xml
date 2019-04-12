@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="xod1473422689416" xml:lang="en-us">
+	<title class="- topic/title ">Voltage domains</title>
+	<shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+		core supports a VCPU voltage domain and a VSYS voltage domain.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The following figure shows the VCPU and VSYS voltage domains in each <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> <term keyref="core">core</term> and in the <keyword class="- topic/keyword ">DSU</keyword>. The example shows a configuration with four <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> s. </p>
+			
+			
+			
+			<fig class="- topic/fig ">
+				<title class="- topic/title "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> voltage domains</title>
+				<image class="- topic/image " href="mqh1473667358109.svg" placement="inline">
+					<alt class="- topic/alt ">Example of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Voltage Domains</alt>
+				</image>
+			</fig>
+			
+			
+			
+			<p class="- topic/p ">Asynchronous bridge logic exists between the voltage domains. The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  logic and  clock domain of the asynchronous bridge are in the VCPU voltage domain. The <keyword class="- topic/keyword ">DSU</keyword> clock domain of the asynchronous bridge is in the VSYS voltage domain.</p>
+			
+			<note class="- topic/note ">
+                <p class="- topic/p ">You can tie VCPU and VSYS to the same supply if one of the following conditions is met:</p>
+                <ul class="- topic/ul ">
+                    <li class="- topic/li ">The  is configured to run synchronously with the DSU sharing the same clock.</li>
+                    <li class="- topic/li ">The  is not required to support DVFS.</li>
+                </ul>
+            </note>			
+			
+			
+		</section>
+	</refbody>
+</reference>

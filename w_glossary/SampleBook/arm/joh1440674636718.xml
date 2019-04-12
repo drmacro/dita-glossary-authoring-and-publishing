@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440674636718" xml:lang="en-us">
+  <title class="- topic/title ">ETM register summary</title>
+  <shortdesc class="- topic/shortdesc ">This section summarizes the ETM trace unit registers.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">All <term keyref="etm">ETM</term> trace unit registers are 32-bit wide. The description of each
+        register includes its offset from a base address. The base address is defined by the system
+        integrator when placing the  trace unit in the Debug-APB memory map.</p>
+      <p class="- topic/p ">The following table lists all of the  trace unit registers.</p>
+      <table class="- topic/table " colsep="0" frame="topbot" rowsep="0">
+        <title class="- topic/title "> trace unit register summary</title>
+        <tgroup class="- topic/tgroup " cols="4" colsep="0" rowsep="0">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Offset</entry>
+              <entry class="- topic/entry " colname="col2">Name</entry>
+              <entry class="- topic/entry " colname="col3">Type</entry>
+              <entry class="- topic/entry " colname="col4">Reset</entry>
+              <entry class="- topic/entry " colname="col5">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">004</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPRGCTLR </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443694852546.xml" keyref="TrcprgctlrProgrammingControlRegister" type="reference">TRCPRGCTLR, Programming Control Register<desc class="- topic/desc ">The TRCPRGCTLR enables the  trace unit.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSTATR</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000003</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443694956507.xml" keyref="TrcstatrStatusRegister" type="reference">TRCSTATR, Status Register<desc class="- topic/desc ">The TRCSTATR indicates the  trace unit status.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">010</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCONFIGR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695039065.xml" keyref="TrcconfigrTraceConfigurationRegister" type="reference">TRCCONFIGR, Trace Configuration Register<desc class="- topic/desc ">The TRCCONFIGR controls the tracing options.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">018</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCAUXCTLR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="pat1464966166223.xml" keyref="TrcauxctrlAuxiliaryControlRegister" type="reference">TRCAUXCTLR, Auxiliary Control Register<desc class="- topic/desc ">The TRCAUXCTLR provides <term class="- topic/term " outputclass="archterm">implementation defined</term> configuration and control options.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">020</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCEVENTCTL0R</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695289016.xml" keyref="Trceventctl0r&lt;term keyref=" event="">EventControl0Register" type="reference"&gt;TRCEVENTCTL0R,  Control 0 Register<desc class="- topic/desc ">The TRCEVENTCTL0R controls the tracing of events in the trace stream.     The events also drive the external outputs from the  trace unit. The events are selected from     the Resource Selectors.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">024</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCEVENTCTL1R </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695387135.xml" keyref="Trceventctl1rControl1Register" type="reference">TRCEVENTCTL1R,  Control 1 Register<desc class="- topic/desc ">The TRCEVENTCTL1R controls the behavior of the events that TRCEVENTCTL0R     selects.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">02C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSTALLCTLR </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695452965.xml" keyref="TrcstallctlrStallControlRegister" type="reference">TRCSTALLCTLR, Stall Control Register<desc class="- topic/desc ">The TRCSTALLCTLR enables the  trace unit to stall the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> <term keyref="core">core</term> if the  trace     unit FIFO overflows.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">030</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCTSCTLR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695520480.xml" keyref="TrctsctlrGlobalTimestampControlRegister" type="reference">TRCTSCTLR, Global Timestamp Control Register<desc class="- topic/desc ">The TRCTSCTLR controls the insertion of global timestamps in the trace     streams. When the selected event is triggered, the trace unit inserts a global timestamp into     the trace streams. The event is selected from one of the Resource Selectors.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">034</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSYNCPR</entry>
+              <entry class="- topic/entry " colname="col3">RW </entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695621011.xml" keyref="TrcsyncprSynchronizationPeriodRegister" type="reference">TRCSYNCPR, Synchronization Period Register<desc class="- topic/desc ">The TRCSYNCPR controls how often periodic trace synchronization requests     occur.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">038</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCCCTLR </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695683697.xml" keyref="TrcccctlrCycleCountControlRegister" type="reference">TRCCCCTLR, Cycle Count Control Register<desc class="- topic/desc ">The TRCCCCTLR sets the threshold value for cycle counting.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">03C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCBBCTLR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695108725.xml" keyref="TrcbbctlrBranchBroadcastControlRegister" type="reference">TRCBBCTLR, Branch Broadcast Control Register<desc class="- topic/desc ">The TRCBBCTLR controls how branch broadcasting behaves, and allows     branch broadcasting to be enabled for certain memory <term keyref="region">region</term>s.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">040</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCTRACEIDR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443695953595.xml" keyref="TrctraceidrTraceIdRegister" type="reference">TRCTRACEIDR, Trace ID Register<desc class="- topic/desc ">The TRCTRACEIDR sets the trace ID for instruction trace.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">080</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCVICTLR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696042367.xml" keyref="TrcvictlrViewinstMainControlRegister" type="reference">TRCVICTLR, ViewInst Main Control Register<desc class="- topic/desc ">The TRCVICTLR controls instruction trace filtering.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">084</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCVIIECTLR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696192648.xml" keyref="TrcviiectlrViewinstIncludeExcludeControlRegister" type="reference">TRCVIIECTLR, ViewInst Include-Exclude Control Register<desc class="- topic/desc ">The TRCVIIECTLR defines the address range comparators that control the     ViewInst Include/Exclude control.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">088</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCVISSCTLR </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696267441.xml" keyref="TrcvissctlrViewinstStartStopControlRegister" type="reference">TRCVISSCTLR, ViewInst Start-Stop Control Register<desc class="- topic/desc ">The TRCVISSCTLR defines the single address comparators that control the     ViewInst Start/Stop logic.</desc></xref></entry>
+            </row>
+
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">100</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSEQEVR0 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696343445.xml" keyref="TrcseqevrnSequencerStateTransitionControlRegisters02" type="reference">TRCSEQEVRn, Sequencer State Transition Control Registers 0-2<desc class="- topic/desc ">The TRCSEQEVRn defines the sequencer transitions that progress to the     next state or backwards to the previous state. The  trace unit implements a sequencer state     machine with up to four states.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">104</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSEQEVR1 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696343445.xml" keyref="TrcseqevrnSequencerStateTransitionControlRegisters02" type="reference">TRCSEQEVRn, Sequencer State Transition Control Registers 0-2<desc class="- topic/desc ">The TRCSEQEVRn defines the sequencer transitions that progress to the     next state or backwards to the previous state. The  trace unit implements a sequencer state     machine with up to four states.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">108</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSEQEVR2 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696343445.xml" keyref="TrcseqevrnSequencerStateTransitionControlRegisters02" type="reference">TRCSEQEVRn, Sequencer State Transition Control Registers 0-2<desc class="- topic/desc ">The TRCSEQEVRn defines the sequencer transitions that progress to the     next state or backwards to the previous state. The  trace unit implements a sequencer state     machine with up to four states.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">118</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSEQRSTEVR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696403857.xml" keyref="TrcseqrstevrSequencerResetControlRegister" type="reference">TRCSEQRSTEVR, Sequencer Reset Control Register<desc class="- topic/desc ">The TRCSEQRSTEVR resets the sequencer to state 0.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">11C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSEQSTR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696466833.xml" keyref="TrcseqstrSequencerStateRegister" type="reference">TRCSEQSTR, Sequencer State Register<desc class="- topic/desc ">The TRCSEQSTR holds the value of the current state of the     sequencer.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">120</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCEXTINSELR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696541551.xml" keyref="TrcextinselrExternalInputSelectRegister" type="reference">TRCEXTINSELR, External Input Select Register<desc class="- topic/desc ">The TRCEXTINSELR controls the selectors that choose an external input as     a resource in the  trace unit. You can use the Resource Selectors to access these external     input resources.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">140</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCNTRLDVR0 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696601746.xml" keyref="TrccntrldvrnCounterReloadValueRegisters01" type="reference">TRCCNTRLDVRn, Counter Reload Value Registers 0-1<desc class="- topic/desc ">The TRCCNTRLDVRn define the reload value for the counter.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">144</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCNTRLDVR1 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696601746.xml" keyref="TrccntrldvrnCounterReloadValueRegisters01" type="reference">TRCCNTRLDVRn, Counter Reload Value Registers 0-1<desc class="- topic/desc ">The TRCCNTRLDVRn define the reload value for the counter.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">150</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCNTCTLR0 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696662446.xml" keyref="Trccntctlr0CounterControlRegister0" type="reference">TRCCNTCTLR0, Counter Control Register 0<desc class="- topic/desc ">The TRCCNTCTLR0 controls the counter.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">154</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCNTCTLR1 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696720047.xml" keyref="Trccntctlr1CounterControlRegister1" type="reference">TRCCNTCTLR1, Counter Control Register 1<desc class="- topic/desc ">The TRCCNTCTLR1 controls the counter.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">160</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCNTVR0 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="pat1464972464494.xml" keyref="TrccntvrnCounterValueRegisters01" type="reference">TRCCNTVRn, Counter Value Registers 0-1<desc class="- topic/desc ">The TRCCNTVRn contain the current counter value.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">164</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCNTVR1 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="pat1464972464494.xml" keyref="TrccntvrnCounterValueRegisters01" type="reference">TRCCNTVRn, Counter Value Registers 0-1<desc class="- topic/desc ">The TRCCNTVRn contain the current counter value.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">180</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR8 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696847925.xml" keyref="Trcidr8IdRegister8" type="reference">TRCIDR8, ID Register 8<desc class="- topic/desc ">The TRCIDR8 returns the maximum speculation depth of the instruction     trace stream.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">184</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR9 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443696910101.xml" keyref="Trcidr9IdRegister9" type="reference">TRCIDR9, ID Register 9<desc class="- topic/desc ">The TRCIDR9 returns the number of P0 right-hand keys that the trace unit     can use.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">188</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR10</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697458622.xml" keyref="Trcidr10IdRegister10" type="reference">TRCIDR10, ID Register 10<desc class="- topic/desc ">The TRCIDR10 returns the number of P1 right-hand keys that the trace     unit can use.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">18C</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR11</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697529862.xml" keyref="Trcidr11IdRegister11" type="reference">TRCIDR11, ID Register 11<desc class="- topic/desc ">The TRCIDR11 returns the number of special P1 right-hand keys that the     trace unit can use.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">190</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR12 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697593841.xml" keyref="Trcidr12IdRegister12" type="reference">TRCIDR12, ID Register 12<desc class="- topic/desc ">The TRCIDR12 returns the number of conditional instruction right-hand     keys that the trace unit can use.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">194</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR13</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697665125.xml" keyref="Trcidr13IdRegister13" type="reference">TRCIDR13, ID Register 13<desc class="- topic/desc ">The TRCIDR13 returns the number of special conditional instruction     right-hand keys that the trace unit can use.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1C0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIMSPEC0 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697727628.xml" keyref="Trcimspec0ImplementationSpecificRegister0" type="reference">TRCIMSPEC0, Implementation Specific Register 0<desc class="- topic/desc ">The TRCIMSPEC0 shows the presence of any <term class="- topic/term " outputclass="archterm">implementation specific</term>     features, and enables any features that are provided.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1E0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR0</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">28000EA1</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697792053.xml" keyref="Trcidr0IdRegister0" type="reference">TRCIDR0, ID Register 0<desc class="- topic/desc ">The TRCIDR0 returns the tracing capabilities of the  trace     unit.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1E4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR1 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">4100F423</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697865564.xml" keyref="Trcidr1IdRegister1" type="reference">TRCIDR1, ID Register 1<desc class="- topic/desc ">The TRCIDR1 returns the base architecture of the trace unit.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1E8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR2 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">20001088</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697930252.xml" keyref="Trcidr2IdRegister2" type="reference">TRCIDR2, ID Register 2<desc class="- topic/desc ">The TRCIDR2 returns the maximum size of six parameters in the trace     unit.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1EC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR3 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "/></p>
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">017B0100</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443697990859.xml" keyref="Trcidr3IdRegister3" type="reference">TRCIDR3, ID Register 3<desc class="- topic/desc ">The TRCIDR3 indicates:</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1F0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR4 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">11170004</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443698265471.xml" keyref="Trcidr4IdRegister4" type="reference">TRCIDR4, ID Register 4<desc class="- topic/desc ">The TRCIDR4 indicates the resources available in the  trace     unit.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1F4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIDR5 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">2847089D</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443698343336.xml" keyref="Trcidr5IdRegister5" type="reference">TRCIDR5, ID Register 5<desc class="- topic/desc ">The TRCIDR5 returns how many resources the trace unit     supports.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">200</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCRSCTLRn </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443702362625.xml" keyref="TrcrsctlrnResourceSelectionControlRegisters216" type="reference">TRCRSCTLRn, Resource Selection Control Registers 2-16<desc class="- topic/desc ">The TRCRSCTLRn controls the trace resources. There are eight resource     pairs, the first pair is predefined as {0,1,pair=0} and having reserved select registers. This     leaves seven pairs to be implemented as programmable selectors.</desc></xref>, n is 2, 15</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">280</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSSCCR0</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443702461337.xml" keyref="Trcssccr0SingleShotComparatorControlRegister0" type="reference">TRCSSCCR0, Single-Shot Comparator Control Register 0<desc class="- topic/desc ">The TRCSSCCR0 controls the single-shot comparator.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">2A0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCSSCSR0</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443702525834.xml" keyref="Trcsscsr0SingleShotComparatorStatusRegister0" type="reference">TRCSSCSR0, Single-Shot Comparator Status Register 0<desc class="- topic/desc ">The TRCSSCSR0 indicates the status of the single-shot comparator.     TRCSSCSR0 is sensitive to instruction addresses.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">300</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCOSLAR </entry>
+              <entry class="- topic/entry " colname="col3">WO</entry>
+              <entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000001</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443702603268.xml" keyref="TrcoslarOsLockAccessRegister" type="reference">TRCOSLAR, OS Lock Access Register<desc class="- topic/desc ">The TRCOSLAR sets and clears the OS Lock, to lock out external debugger     accesses to the  trace unit registers.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">304</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCOSLSR</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0000000A</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443702697419.xml" keyref="TrcoslsrOsLockStatusRegister" type="reference">TRCOSLSR, OS Lock Status Register<desc class="- topic/desc ">The TRCOSLSR returns the status of the OS Lock.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">310</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPDCR </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443702788964.xml" keyref="TrcpdcrPowerDownControlRegister" type="reference">TRCPDCR, Power Down Control Register<desc class="- topic/desc ">The TRCPDCR request to the system power controller to keep the  trace     unit powered up.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">314</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPDSR </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph ">  <ph class="- topic/ph " otherprops="g.number.hex">00000023</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443702874401.xml" keyref="TrcpdsrPowerDownStatusRegister" type="reference">TRCPDSR, Power Down Status Register<desc class="- topic/desc ">The TRCPDSR indicates the power down status of the  trace     unit.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">400</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCACVRn</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443702931501.xml" keyref="TrcacvrnAddressComparatorValueRegisters07" type="reference">TRCACVRn, Address Comparator Value Registers 0-7<desc class="- topic/desc ">The TRCACVRn indicate the address for the address     comparators.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">480</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCACATRn</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703005538.xml" keyref="TrcacatrnAddressComparatorAccessTypeRegisters07" type="reference">TRCACATRn, Address Comparator Access Type Registers 0-7<desc class="- topic/desc ">The TRCACATRn control the access for the corresponding address     comparators.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">600</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCIDCVR0</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703072337.xml" keyref="Trccidcvr0ContextIdComparatorValueRegister0" type="reference">TRCCIDCVR0, Context ID Comparator Value Register 0<desc class="- topic/desc ">The TRCCIDCVR0 contains a Context ID value.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">640</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCVMIDCVR0 </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="pat1466437487351.xml" keyref="Trcvmidcvr0VmidComparatorValueRegister0" type="reference">TRCVMIDCVR0, VMID Comparator Value Register 0<desc class="- topic/desc ">The TRCVMIDCVR0 contains a VMID value.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">680</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCIDCCTLR0</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703206624.xml" keyref="Trccidcctlr0ContextIdComparatorControlRegister0" type="reference">TRCCIDCCTLR0, Context ID Comparator Control Register 0<desc class="- topic/desc ">The TRCCIDCCTLR0 controls the mask value for the context ID     comparators.</desc></xref></entry>
+            </row>
+          <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">688</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCVMIDCCTRL0</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+             
+            <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="erm1513187212132.xml" keyref="Trcvmidcctlr0VirtualContextIdentifierComparatorControlRegister0" type="reference">TRCVMIDCCTLR0, Virtual context identifier Comparator Control Register 0<desc class="- topic/desc ">The TRCVMIDCCTLR0 contains the Virtual machine identifier mask value for 		the TRCVMIDCVR0 register.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">EE4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCIT<term keyref="atb">ATB</term>IDR </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703275428.xml" keyref="TrcitatbidrIntegrationAtbIdentificationRegister" type="reference">TRCITIDR, Integration  Identification Register<desc class="- topic/desc ">The TRCITIDR sets the state of output pins, mentioned in the bit     descriptions in this section.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">EEC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCITIDATAR </entry>
+              <entry class="- topic/entry " colname="col3">WO</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="jus1455877057850.xml" keyref="TrcitidatarIntegrationInstructionAtbDataRegister" type="reference">TRCITIDATAR, Integration Instruction  Data Register<desc class="- topic/desc ">The TRCITIDATAR sets the state of the <keyword class="- topic/keyword " otherprops="g.signal.name">ATDATAMn</keyword> output pins shown in the TRCITIDATAR bit     assignments table.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">EF4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCITIINR </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703410360.xml" keyref="TrcitiatbinrIntegrationInstructionAtbInRegister" type="reference">TRCITIINR, Integration Instruction  In Register<desc class="- topic/desc ">The TRCITIINR <term keyref="read">read</term>s the state of the input pins described in this     section.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">EFC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCITIOUTR </entry>
+              <entry class="- topic/entry " colname="col3">WO</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703477546.xml" keyref="TrcitiatboutrIntegrationInstructionAtbOutRegister" type="reference">TRCITIOUTR, Integration Instruction  Out Register<desc class="- topic/desc ">The TRCITIOUTR sets the state of the output pins mentioned in the bit     descriptions in this section.</desc></xref></entry>
+            </row>
+
+
+
+
+
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">F00</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCITCTRL </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703538622.xml" keyref="TrcitctrlIntegrationModeControlRegister" type="reference">TRCITCTRL, Integration Mode Control Register<desc class="- topic/desc ">The TRCITCTRL enables topology detection or integration testing, by     putting the  trace unit into integration mode.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FA0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCLAIMSET </entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703599787.xml" keyref="TrcclaimsetClaimTagSetRegister" type="reference">TRCCLAIMSET, Claim Tag Set Register<desc class="- topic/desc ">The TRCCLAIMSET sets bits in the claim tag and determines the number of     claim tag bits implemented.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FA4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCLAIMCLR</entry>
+              <entry class="- topic/entry " colname="col3">RW</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703662502.xml" keyref="TrcclaimclrClaimTagClearRegister" type="reference">TRCCLAIMCLR, Claim Tag Clear Register<desc class="- topic/desc ">The TRCCLAIMCLR clears bits in the claim tag and determines the current     value of the claim tag.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FA8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCDEVAFF0 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703721336.xml" keyref="Trcdevaff0DeviceAffinityRegister0" type="reference">TRCDEVAFF0, Device Affinity Register 0<desc class="- topic/desc ">The TRCDEVAFF0 provides an additional  identification mechanism for     scheduling purposes in a <term keyref="cluster">cluster</term>. TRCDEVAFF0 is a -only copy of MPIDR accessible from the     external <term keyref="debuginterface">debug interface</term>.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FAC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCDEVAFF1</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703849852.xml" keyref="Trcdevaff1DeviceAffinityRegister1" type="reference">TRCDEVAFF1, Device Affinity Register 1<desc class="- topic/desc ">The TRCDEVAFF1 is a -only copy of MPIDR_EL1[63:32] as seen from EL3,     unaffected by VMPIDR_EL2.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FB0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCLAR </entry>
+              <entry class="- topic/entry " colname="col3">WO</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703894407.xml" keyref="TrclarSoftwareLockAccessRegister" type="reference">TRCLAR, Software Lock Access Register<desc class="- topic/desc ">The TRCLAR controls access to registers using the memory-mapped     interface, when <keyword class="- topic/keyword " otherprops="g.signal.name">PADDRDBG31</keyword> is LOW. </desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FB4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCLSR </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443703960810.xml" keyref="TrclsrSoftwareLockStatusRegister" type="reference">TRCLSR, Software Lock Status Register<desc class="- topic/desc ">The TRCLSR determines whether the software lock is implemented, and     indicates the current status of the software lock.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FB8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCAUTHSTATUS</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">UNK</entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704023626.xml" keyref="TrcauthstatusAuthenticationStatusRegister" type="reference">TRCAUTHSTATUS, Authentication Status Register<desc class="- topic/desc ">The TRCAUTHSTATUS indicates the current level of tracing permitted by     the system.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FBC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCDEVARCH </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4"><ph class="- topic/ph " otherprops="g.number.hex">47724A13</ph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704093741.xml" keyref="TrcdevarchDeviceArchitectureRegister" type="reference">TRCDEVARCH, Device Architecture Register<desc class="- topic/desc ">The TRCDEVARCH identifies the  trace unit as an v4     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FC8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCDEVID </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704153576.xml" keyref="TrcdevidDeviceIdRegister" type="reference">TRCDEVID, Device ID Register<desc class="- topic/desc ">The TRCDEVID indicates the capabilities of the  trace     unit.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FCC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCDEVTYPE</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4"><ph class="- topic/ph " otherprops="g.number.hex">00000013</ph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704215095.xml" keyref="TrcdevtypeDeviceTypeRegister" type="reference">TRCDEVTYPE, Device Type Register<desc class="- topic/desc ">The TRCDEVTYPE indicates the type of the component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FE0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPIDR0</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x0000000B</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704488946.xml" keyref="Trcpidr0EtmPeripheralIdentificationRegister0" type="reference">TRCPIDR0,  Peripheral Identification Register 0<desc class="- topic/desc ">The TRCPIDR0 provides information to identify a trace     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FE4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPIDR1</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x000000BD</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704505352.xml" keyref="Trcpidr1EtmPeripheralIdentificationRegister1" type="reference">TRCPIDR1,  Peripheral Identification Register 1<desc class="- topic/desc ">The TRCPIDR1 provides information to identify a trace     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FE8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPIDR2 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x0000000B</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704522482.xml" keyref="Trcpidr2EtmPeripheralIdentificationRegister2" type="reference">TRCPIDR2,  Peripheral Identification Register 2<desc class="- topic/desc ">The TRCPIDR2 provides information to identify a trace     component.</desc></xref></entry>
+            </row>
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FEC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPIDR3 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x00000000</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704535743.xml" keyref="Trcpidr3EtmPeripheralIdentificationRegister3" type="reference">TRCPIDR3,  Peripheral Identification Register 3<desc class="- topic/desc ">The TRCPIDR3 provides information to identify a trace     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FD0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPIDR4 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x00000004</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704548527.xml" keyref="Trcpidr4EtmPeripheralIdentificationRegister4" type="reference">TRCPIDR4,  Peripheral Identification Register 4<desc class="- topic/desc ">The TRCPIDR4 provides information to identify a trace     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FD4</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FDC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCPIDRn </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704563281.xml" keyref="TrcpidrnEtmPeripheralIdentificationRegisters57" type="reference">TRCPIDRn,  Peripheral Identification Registers 5-7<desc class="- topic/desc ">No information is held in the Peripheral ID5, Peripheral ID6, and     Peripheral ID7 Registers.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FF0</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCIDR0</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x0000000D</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704592612.xml" keyref="Trccidr0EtmComponentIdentificationRegister0" type="reference">TRCCIDR0,  Component Identification Register 0<desc class="- topic/desc ">The TRCCIDR0 provides information to identify a trace     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FF4</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCIDR1 </entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x00000090</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704606244.xml" keyref="Trccidr1EtmComponentIdentificationRegister1" type="reference">TRCCIDR1,  Component Identification Register 1<desc class="- topic/desc ">The TRCCIDR1 provides information to identify a trace     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FF8</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCIDR2</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x00000005</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704620127.xml" keyref="Trccidr2EtmComponentIdentificationRegister2" type="reference">TRCCIDR2,  Component Identification Register 2<desc class="- topic/desc ">The TRCCIDR2 provides information to identify a <term keyref="cti">CTI</term>     component.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FFC</ph></codeph></entry>
+              <entry class="- topic/entry " colname="col2">TRCCIDR3</entry>
+              <entry class="- topic/entry " colname="col3">RO</entry>
+              <entry class="- topic/entry " colname="col4">
+                <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0x000000B1</ph></p>
+              </entry>
+              <entry class="- topic/entry " colname="col5"><xref class="- topic/xref " href="lau1443704635879.xml" keyref="Trccidr3EtmComponentIdentificationRegister3" type="reference">TRCCIDR3,  Component Identification Register 3<desc class="- topic/desc ">The TRCCIDR3 provides information to identify a trace     component.</desc></xref></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

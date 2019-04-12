@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lqh1478852129477" xml:lang="en-us">
+  <title class="- topic/title ">Other UNPREDICTABLE behaviors</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">Other UNPREDICTABLE behaviors</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">This section describes other <term class="- topic/term " outputclass="archterm">unpredictable</term> behaviors.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <table class="- topic/table ">
+        <title class="- topic/title ">Other <term class="- topic/term " outputclass="archterm">unpredictable</term> behaviors</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Scenario</entry>
+              <entry class="- topic/entry " colname="col2">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CSSELR indicates a cache that is not
+                implemented.</entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">If CSSELR indicates a cache that
+                is not implemented, then on a read of the CCSIDR the behavior is <term class="- topic/term " outputclass="archterm">constrained unpredictable</term>, and can
+                be one of the following:</p><ul class="- topic/ul ">
+                  <li class="- topic/li ">The CCSIDR read is treated as <codeph class="+ topic/ph pr-d/codeph ">NOP</codeph>.</li>
+                  <li class="- topic/li ">The CCSIDR read is <term class="- topic/term " outputclass="archterm">undefined</term>.</li>
+                  <li class="- topic/li ">The CCSIDR read returns an <term class="- topic/term " outputclass="archterm">unknown</term> value (preferred).</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">HDCR.HPMN is set to 0, or to a value larger than
+                PMCR.N.</entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">If HDCR.HPMN is set to 0, or to
+                a value larger than PMCR.N, then the behavior in Non-secure EL0 and EL1 is <term class="- topic/term " outputclass="archterm">constrained unpredictable</term>, and one
+                of the following must happen:</p><ul class="- topic/ul ">
+                  <li class="- topic/li ">The number of counters accessible is an <term class="- topic/term " outputclass="archterm">unknown</term> non-zero value less than PMCR.N.</li>
+                  <li class="- topic/li ">There is no access to any counters.</li>
+                </ul><p class="- topic/p ">For reads of HDCR.HPMN by EL2 or higher, if this field is
+                  set to 0 or to a value larger than PMCR.N, the core must return a <term class="- topic/term " outputclass="archterm">constrained unpredictable</term> value
+                  that is one of:</p><ul class="- topic/ul ">
+                    <li class="- topic/li ">PMCR.N.</li>
+                    <li class="- topic/li ">The value that was written to HDCR.HPMN.</li>
+                    <li class="- topic/li ">(The value that was written to HDCR.HPMN) modulo 2h, where h
+                      is the smallest number of bits required for a value in the range 0 to
+                      PMCR.N.</li>
+                  </ul></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CRC32 or CRC32C instruction with <codeph class="+ topic/ph pr-d/codeph ">size==64</codeph>.</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">On read of the instruction, the behavior is <term class="- topic/term " outputclass="archterm">constrained unpredictable</term>, and the instruction
+                  executes with the additional decode: <codeph class="+ topic/ph pr-d/codeph ">size==32</codeph>.</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CRC32 or CRC32C instruction with <codeph class="+ topic/ph pr-d/codeph "> cond!=1110</codeph> in the A1 encoding.</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements the following option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">Executed unconditionally. </li>
+                </ul>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

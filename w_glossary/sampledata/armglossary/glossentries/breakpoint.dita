@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="breakpoint">
+  <glossterm>breakpoint</glossterm>
+  <glossdef>A debug event triggered by the execution of a particular instruction. It is specified by one or both of the address of the instruction and the state of the processor when the instruction is executed.See Also Watchpoint.</glossdef>
+</glossentry>

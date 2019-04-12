@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
-<glossentry id="os-awareness">
-  <glossterm>OS-awareness</glossterm>
-  <glossdef>OS-awareness is a feature provided by RealView Debugger that enables you to:debug applications running on an embedded OS development platform, such as a Real-Time Operating System (RTOS)present thread information and scope some debugging operations to specific threads.</glossdef>
-</glossentry>

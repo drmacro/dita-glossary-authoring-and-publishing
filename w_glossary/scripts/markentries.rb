@@ -1,4 +1,4 @@
-require 'bundler'
+require 'bundler/setup'
 require 'nokogiri'
 require 'creek'
 
@@ -11,7 +11,20 @@ end
 @topics = Array.new
 @terms = Array.new
 @directory = Array.new
-@ditafiles = Array.new
+@maptype = ""
+
+
+def maptype(themap)
+  typemap = themap.xpath("//*").first
+  maptypeName = typemap.name.to_s
+  if maptypeName.match('bookmap')
+   #search = map.xpath("/bookmap/(part|appendices)/descendant::*[contains(@class,' map/topicref ')]/@href")
+    search = typemap.xpath("/bookmap/part/descendant::*[contains(@class,' map/topicref ')]/@href | bookmap/appendices/descendant::*[contains(@class,' map/topicref ')]/@href")
+  elsif typemap.match('map')
+    search = typemap.xpath("/map/descendant::topicref/@href")
+  end
+return search
+end
 
 
 def glosswrap(para)                # Wraps glossary entries.
@@ -22,7 +35,11 @@ def glosswrap(para)                # Wraps glossary entries.
       all.each.each_with_index do |text, idx|
         if idx.eql?(0)
           @writeme = true
-          all[0] = (text + "<term keyref=\"#{singleterm}\">#{singleterm}</term>")
+          if all[1].split.first.eql?('</term>')
+            all[0] = text + singleterm
+          else
+            all[0] = (text + "<term keyref=\"#{singleterm.downcase.delete(' ').gsub(/[(,)\/\-']/ , '_')}\">#{singleterm}</term>")
+          end
         else
           all[idx] = (text)
         end
@@ -52,13 +69,13 @@ end
 # Open the map
 
 ditamap = Nokogiri::XML(open(@map))
-links = ditamap.xpath("//topicref[@href]")
 
+links = maptype(ditamap)  # determine what type of map is being used, bookmap, standardmap, arm bookmap
 
 links.each do |link|
   @writeme = false  # Only write file if needed.
-  @ditafile = (link.attr('href').to_s)
-  file = Nokogiri::XML(open("#{@directory}/#{link.attr('href').to_s}"))
+  #@ditafile = (link.attr('href').to_s)
+  file = Nokogiri::XML(open("#{@directory}/#{link}"))
   filetype = file.xpath("/*").first.name # get type of file
   if filetype.eql?("reference")
     topictype = 'refbody'
@@ -71,17 +88,25 @@ links.each do |link|
   elsif filetype.eql?('task')
     topictype = 'taskbody'
   end
-  body = file.xpath("//#{topictype}")[0] # Only process the body. No processing short description or title.
-  nextelements = body.element_children
-  body.children = (glosswrap(nextelements))
-  if @writeme
-    File.write("#{@directory}/#{@ditafile}", file)
-    p "Modified : #{@directory}/#{@ditafile}"
+  body = file.xpath("//#{topictype}")[0]# Only process the body. No processing short description or title.
+  if body.nil?
+    @writeme = nil?
   else
-    p "No Changes in: #{@directory}/#{@ditafile}"
+    nextelements = body.xpath("//#{topictype}/child::node()")
+    replacement = glosswrap(nextelements)
+    body.children = replacement
   end
-end
 
+  if @writeme
+    File.write("#{@directory}/#{link.to_s}", file)
+    puts "Modified : #{@directory}/#{link.to_s}"
+  else
+    puts "No Changes in: #{@directory}/#{link.to_s}"
+  end
+rescue
+  puts "failed to modify: #{link.to_s}"
+
+end
 
 
 

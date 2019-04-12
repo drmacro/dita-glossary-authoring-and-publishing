@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="qza1478895304526" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Ares Reltable - ETM</title>
+    <topicmeta class="- map/topicmeta ">
+        <shortdesc class="- map/shortdesc ">Contains the reltable for the ETM chapter of the Ananke Core TRM
+            bookmap id joh1440578089658</shortdesc>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+    <topicref class="- map/topicref " locktitle="yes" navtitle="First topic" type="non-confidential/reference.xml"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    <reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440674631854.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="joh1440673344537.xml" class="- map/topicref "/>
+            </relcell>
+        </relrow>
+    </reltable>
+    
+    
+    <reltable title="Related information" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440674845060.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="tgw1477591342487.xml" class="- map/topicref " keyref="PmuEvents"/>
+            </relcell>
+        </relrow>
+    </reltable>
+    
+    
+    
+    
+    <reltable title="Performance Monitor Unit" toc="no" class="- map/reltable ">
+        <relrow class="- map/relrow ">
+            <relcell linking="sourceonly" class="- map/relcell ">
+                <topicref href="joh1440673879510.xml" class="- map/topicref "/>
+            </relcell>
+            <relcell linking="targetonly" class="- map/relcell ">
+                <topicref href="tgw1477591342487.xml" class="- map/topicref " keyref="PmuEvents"/>
+            </relcell>
+        </relrow>
+    </reltable>
+    
+    
+</map>

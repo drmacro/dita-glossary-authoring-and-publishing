@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" id="wwx1473951479566" xml:lang="en-us">
+    
+    <title class="- topic/title ">Error system registers</title><prolog class="- topic/prolog "/>
+    
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Error system registers</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </topicmeta>
+   
+    <topicref class="- map/topicref " href="joh1440673267089.xml" keys="ErrorSystemRegisterSummary"/>
+    <topicref class="- map/topicref " href="acu1472476116377.xml" keys="Err0addrErrorRecordAddressRegister"/>
+    <topicref class="- map/topicref " href="oey1472473209476.xml" keys="Err0ctlrErrorRecordControlRegister"/>
+    <topicref class="- map/topicref " href="gdk1473951932274.xml" keys="Err0frErrorRecordFeatureRegister"/>
+    <topicref class="- map/topicref " href="bke1472476304668.xml" keys="Err0misc0ErrorRecordMiscellaneousRegister0"/>
+    <topicref class="- map/topicref " href="ajb1472476331389.xml" keys="Err0misc1ErrorRecordMiscellaneousRegister1"/>
+   
+    <topicref class="- map/topicref " href="lau1457356434204.xml" keys="Err0pfgcdnErr0PseudoFaultGenerationCountDownRegister"/>
+    
+    <topicref class="- map/topicref " href="lau1457351395113.xml" keys="Err0pfgctlErr0PseudoFaultGenerationControlRegister"/>
+    <topicref class="- map/topicref " href="xhe1474455628057.xml" keys="Err0pfgfErr0PseudoFaultGenerationFeatureRegister"/>
+    <topicref class="- map/topicref " href="jxr1472474152047.xml" keys="Err0statusErrorRecordPrimaryStatusRegister"/>
+    
+</map>

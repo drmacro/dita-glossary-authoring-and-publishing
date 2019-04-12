@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="contextswitch">
+  <glossterm>context switch</glossterm>
+  <glossdef>The saving and restoring of computational state when switching between different threads or processes. Context switch describes any situation where the context is switched by an operating system and might or might not include changes to the address space.</glossdef>
+</glossentry>

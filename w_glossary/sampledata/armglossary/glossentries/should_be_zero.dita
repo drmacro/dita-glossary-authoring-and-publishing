@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="should_be_zero">
+  <glossterm>Should-Be-Zero</glossterm>
+  <glossdef>Hardware must ignore writes to the field.Software should write the field as all 0s. If software writes a value that is not all 0s, it must expect an unpredictable result.This description can apply to a single bit that should be written as 0, or to a field that should be written as all 0s.</glossdef>
+</glossentry>

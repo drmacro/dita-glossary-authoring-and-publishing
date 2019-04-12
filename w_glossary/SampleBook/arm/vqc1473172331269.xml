@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="vqc1473172331269" xml:lang="en-us">
+	<title class="- topic/title ">PMCIDSSR, Snapshot CONTEXTIDR_EL1 Sample Register</title>
+	<shortdesc class="- topic/shortdesc ">The PMCIDSSR is an alias for the CIDSR register.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Configurations</title>
+			<p class="- topic/p ">There are no configuration notes.</p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Usage constraints</title>
+			<p class="- topic/p ">Any access to PMCIDSSR returns an error if any of the following occurs:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The <term keyref="core">core</term> power domain is off.</li>
+				<li class="- topic/li ">DoubleLockStatus() == TRUE.</li>
+			</ul>
+		</section>
+	</refbody>
+</reference>

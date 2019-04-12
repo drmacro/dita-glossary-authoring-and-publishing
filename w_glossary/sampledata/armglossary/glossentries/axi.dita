@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="axi">
+  <glossterm>AXI</glossterm>
+  <glossdef>An AMBA bus protocol that supports:separate phases for address or control and data unaligned data transfers using byte strobes burst-based transactions with only start address issued separate read and write data channels issuing multiple outstanding addresses out-of-order transaction completionaddition of register stages to provide timing closure.The AXI protocol includes optional signaling extensions for low-power operation.See Also AXI Coherency Extensions (ACE).</glossdef>
+</glossentry>

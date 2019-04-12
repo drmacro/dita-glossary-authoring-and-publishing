@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673344537" xml:lang="en-us">
+  <title class="- topic/title ">External debug interface</title>
+  <shortdesc class="- topic/shortdesc ">For information about external debug interface, including debug memory
+    map and debug signals, see the <ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite></ph>.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p "/>
+    </section>
+  </refbody>
+</reference>

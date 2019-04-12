@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="cortexmicrocontrollersoftwareinterfacestandard">
+  <glossterm>Cortex Microcontroller Software Interface Standard</glossterm>
+  <glossdef>(CMSIS) Defines a common way to access peripheral regiseters or define excpetion vectors. CMSIS is the name of the core exception vectors, and a device-independent interface for RTOS kernels, including a debug channel.</glossdef>
+</glossentry>

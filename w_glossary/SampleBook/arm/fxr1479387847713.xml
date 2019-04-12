@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="fxr1479387847713" xml:lang="en-us">
+	<title class="- topic/title ">AArch64 implementation defined register summary</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">AArch64 implementation defined register summary</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">This section describes the AArch64 registers in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core that are
+		implementation defined.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The following tables lists the AArch 64 implementation defined registers,
+				sorted by opcode.</p>
+			<table class="- topic/table " id="standard.implem.defined.registers.aarch64">
+				<title class="- topic/title ">AArch64 implementation defined registers</title>
+				<tgroup class="- topic/tgroup " cols="8">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/>
+					<colspec class="- topic/colspec " colname="col2" colnum="2"/>
+					<colspec class="- topic/colspec " colname="col3" colnum="3"/>
+					<colspec class="- topic/colspec " colname="col4" colnum="4"/>
+					<colspec class="- topic/colspec " colname="col5" colnum="5"/>
+					<colspec class="- topic/colspec " colname="col6" colnum="6"/>
+					<colspec class="- topic/colspec " colname="col7" colnum="7"/>
+					<colspec class="- topic/colspec " colname="col8" colnum="8"/>
+					<thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Name</entry>
+							<entry class="- topic/entry " colname="col2">Copro</entry>
+							<entry class="- topic/entry " colname="col3">CRn</entry>
+							<entry class="- topic/entry " colname="col4">Op1</entry>
+							<entry class="- topic/entry " colname="col5">CRm</entry>
+							<entry class="- topic/entry " colname="col6">Op2</entry>
+							<entry class="- topic/entry " colname="col7">Width</entry>
+							<entry class="- topic/entry " colname="col8">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						
+						
+						
+						
+						
+						
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ATCR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c7</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8">
+								<p class="- topic/p "><xref class="- topic/xref " href="tny1472108072714.xml" keyref="AtcrEl1AuxiliaryTranslationControlRegisterEl1" type="reference"/></p>
+							</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ATCR_EL2</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">4</entry>
+							<entry class="- topic/entry " colname="col5">c7</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="mvh1472107452815.xml" keyref="AtcrEl2AuxiliaryTranslationControlRegisterEl2" type="reference"/>
+							</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ATCR_EL12</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">5</entry>
+							<entry class="- topic/entry " colname="col5">c7</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="olf1472106808180.xml" keyref="AtcrEl12AliasToAuxiliaryTranslationControlRegisterEl1" type="reference"/></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ATCR_EL3</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">6</entry>
+							<entry class="- topic/entry " colname="col5">c7</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="sds1472108520645.xml" keyref="AtcrEl3AuxiliaryTranslationControlRegisterEl3" type="reference"/></entry>
+						</row>
+						
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">AVTCR_EL2</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">4</entry>
+							<entry class="- topic/entry " colname="col5">c7</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="vqi1472110158664.xml" keyref="AvtcrEl2AuxiliaryVirtualizedTranslationControlRegisterEl2" type="reference"/></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUACTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c1</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">64</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1443435659568.xml" keyref="CpuactlrEl1CpuAuxiliaryControlRegisterEl1" type="reference">CPUACTLR_EL1, CPU Auxiliary Control Register, EL1<desc class="- topic/desc ">The CPUACTLR_EL1 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the <term keyref="core">core</term>.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUACTLR2_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c1</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">64</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="ftg1469778004136.xml" keyref="Cpuactlr2El1CpuAuxiliaryControlRegister2El1" type="reference">CPUACTLR2_EL1, CPU Auxiliary Control Register 2, EL1<desc class="- topic/desc ">The CPUACTLR2_EL1 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the . </desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUACTLR3_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c1</entry>
+							<entry class="- topic/entry " colname="col6">2</entry>
+							<entry class="- topic/entry " colname="col7">64</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="dcs1494593701173.xml" keyref="Cpuactlr3El1CpuAuxiliaryControlRegister3El1" type="reference">CPUACTLR3_EL1, CPU Auxiliary Control Register 3, EL1<desc class="- topic/desc ">The CPUACTLR3_EL1 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the . </desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUCFR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c0</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="joh1460102853477.xml" keyref="CpucfrEl1CpuConfigurationRegisterEl1" type="reference">CPUCFR_EL1, CPU Configuration Register, EL1<desc class="- topic/desc ">The CPUCFR_EL1 provides configuration information for the . </desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUECTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c1</entry>
+							<entry class="- topic/entry " colname="col6">4</entry>
+							<entry class="- topic/entry " colname="col7">64</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="vrj1494872408498.xml" keyref="CpuectlrEl1CpuExtendedControlRegisterEl1" type="reference">CPUECTLR_EL1, CPU Extended Control Register, EL1<desc class="- topic/desc ">The CPUECTLR_EL1 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options 		for the .</desc></xref></entry>
+						</row>
+						
+						
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUPCR_EL3</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">6</entry>
+							<entry class="- topic/entry " colname="col5">c8</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">64</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="etz1494315856829.xml" keyref="CpupcrEl3CpuPrivateControlRegisterEl3" type="reference">CPUPCR_EL3, CPU Private Control Register, EL3<desc class="- topic/desc ">The CPUPCR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the 		.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUPMR_EL3</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">6</entry>
+							<entry class="- topic/entry " colname="col5">c8</entry>
+							<entry class="- topic/entry " colname="col6">3</entry>
+							<entry class="- topic/entry " colname="col7">64</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="xcz1494316026689.xml" keyref="CpupmrEl3CpuPrivateMaskRegisterE3" type="reference">CPUPMR_EL3, CPU Private Mask Register, EL3<desc class="- topic/desc ">The CPUPMR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the 		.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUPOR_EL3</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">6</entry>
+							<entry class="- topic/entry " colname="col5">c8</entry>
+							<entry class="- topic/entry " colname="col6">2</entry>
+							<entry class="- topic/entry " colname="col7">64</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="wiw1494315880432.xml" keyref="CpuporEl3CpuPrivateOperationRegisterEl3" type="reference">CPUPOR_EL3, CPU Private Operation Register, EL3<desc class="- topic/desc ">The CPUPOR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the 		.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUPSELR_EL3</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">6</entry>
+							<entry class="- topic/entry " colname="col5">c8</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="rrm1494315735139.xml" keyref="CpuselrEl3CpuPrivateSelectionRegisterEl3" type="reference">CPUPSELR_EL3, CPU Private Selection Register, EL3<desc class="- topic/desc ">The CPUPSELR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the 		.</desc></xref></entry>
+						</row>
+						
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUPWRCTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c2</entry>
+							<entry class="- topic/entry " colname="col6">7</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="joh1457541801121.xml" keyref="CpupwrctlrEl1PowerControlRegisterEl1" type="reference">CPUPWRCTLR_EL1, Power Control Register, EL1<desc class="- topic/desc ">The CPUPWRCTLR_EL1 provides information about power control support for     the .</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ERXPFGCDNR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c2</entry>
+							<entry class="- topic/entry " colname="col6">2</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="joh1460047172751.xml" keyref="ErxpfgcdnrEl1SelectedErrorPseudoFaultGenerationCountDownRegisterEl1" type="reference">ERXPFGCDN_EL1, Selected Error Pseudo Fault Generation Count Down Register, EL1<desc class="- topic/desc ">Register ERXPFGCDN_EL1 accesses the ERR&lt;n&gt;PFGCND register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ERXPFGCTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c2</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="joh1460039575404.xml" keyref="ErxpfgctlrEl1SelectedErrorPseudoFaultGenerationControlRegisterEl1" type="reference">ERXPFGCTL_EL1, Selected Error Pseudo Fault Generation Control Register, EL1<desc class="- topic/desc ">Register ERXPFGCTL_EL1 accesses the ERR&lt;n&gt;PFGCTL register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ERXPFGFR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c2</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="joh1460036786483.xml" keyref="ErxpfgfrEl1SelectedPseudoFaultGenerationFeatureRegisterEl1" type="reference">ERXPFGF_EL1, Selected Pseudo Fault Generation Feature Register, EL1<desc class="- topic/desc ">Register ERXPFGF_EL1 accesses the ERR&lt;n&gt;PFGF register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			
+		</section>
+		<section class="- topic/section ">
+			<p class="- topic/p ">The following table shows the 32-bit wide implementation defined
+				Cluster registers. Details of these registers can be found in <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite></p>
+			<table class="- topic/table " id="table_j5d_zwl_4v">
+				<title class="- topic/title ">Cluster registers</title>
+				<tgroup class="- topic/tgroup " cols="8">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/>
+					<colspec class="- topic/colspec " colname="col2" colnum="2"/>
+					<colspec class="- topic/colspec " colname="col3" colnum="3"/>
+					<colspec class="- topic/colspec " colname="col4" colnum="4"/>
+					<colspec class="- topic/colspec " colname="col5" colnum="5"/>
+					<colspec class="- topic/colspec " colname="col6" colnum="6"/>
+					<colspec class="- topic/colspec " colname="col7" colnum="7"/>
+					<colspec class="- topic/colspec " colname="col8" colnum="8"/>
+					<thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Name</entry>
+							<entry class="- topic/entry " colname="col2">Copro</entry>
+							<entry class="- topic/entry " colname="col3">CRn</entry>
+							<entry class="- topic/entry " colname="col4">Opc1</entry>
+							<entry class="- topic/entry " colname="col5">CRm</entry>
+							<entry class="- topic/entry " colname="col6">Opc2</entry>
+							<entry class="- topic/entry " colname="col7">Width</entry>
+							<entry class="- topic/entry " colname="col8">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERCFR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c3</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster configuration register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERIDR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c3</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster main revision ID.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTEREVIDR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c3</entry>
+							<entry class="- topic/entry " colname="col6">2</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster ECO ID.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERACTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c3</entry>
+							<entry class="- topic/entry " colname="col6">3</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster auxiliary control register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERECTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c3</entry>
+							<entry class="- topic/entry " colname="col6">4</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster extended control register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPWRCTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c3</entry>
+							<entry class="- topic/entry " colname="col6">5</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster power control register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPWRDN_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c3</entry>
+							<entry class="- topic/entry " colname="col6">6</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster power down register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPWRSTAT_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c3</entry>
+							<entry class="- topic/entry " colname="col6">7</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster power status register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERTHREADSID_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c4</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster thread scheme ID register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERACPSID_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c4</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster ACP scheme ID register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERSTASHSID_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c4</entry>
+							<entry class="- topic/entry " colname="col6">2</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster stash scheme ID register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPARTCR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c4</entry>
+							<entry class="- topic/entry " colname="col6">3</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster partition control register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERBUSQOS_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c4</entry>
+							<entry class="- topic/entry " colname="col6">4</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster bus QoS control register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERL3HIT_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c4</entry>
+							<entry class="- topic/entry " colname="col6">5</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster L3 hit counter register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERL3MISS_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c4</entry>
+							<entry class="- topic/entry " colname="col6">6</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster L3 miss counter register.</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERTHREADSIDOVR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c4</entry>
+							<entry class="- topic/entry " colname="col6">7</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster thread scheme ID override register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMCR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c5</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Performance Monitors Control
+								Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMCNTENSET_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c5</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Count Enable Set Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMCNTENCLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c5</entry>
+							<entry class="- topic/entry " colname="col6">2</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Count Enable Clear Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMOVSSET_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c5</entry>
+							<entry class="- topic/entry " colname="col6">3</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Overflow Flag Status Set </entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMOVSCLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c5</entry>
+							<entry class="- topic/entry " colname="col6">4</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Overflow Flag Status Clear</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMSELR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c5</entry>
+							<entry class="- topic/entry " colname="col6">5</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster <term keyref="event">Event</term> Counter Selection
+								Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMINTENSET_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c5</entry>
+							<entry class="- topic/entry " colname="col6">6</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Interrupt Enable Set Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMINTENCLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c5</entry>
+							<entry class="- topic/entry " colname="col6">7</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Interrupt Enable Clear Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMXEVTYPER_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c6</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Selected  Type and Filter
+								Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMXEVCNTR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5"> c6</entry>
+							<entry class="- topic/entry " colname="col6">2</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Selected  Counter Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Reserved/RAZ</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c6</entry>
+							<entry class="- topic/entry " colname="col6">3</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Monitor Debug Configuration
+								Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMCEID0_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c6</entry>
+							<entry class="- topic/entry " colname="col6">4</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Common  Identification ID0
+								Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMCEID1_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c6</entry>
+							<entry class="- topic/entry " colname="col6">5</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Common  Identification ID1
+								Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMCLAIMSET_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c6</entry>
+							<entry class="- topic/entry " colname="col6">6</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Performance Monitor Claim Tag Set
+								Register</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CLUSTERPMCLAIMCLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">c15</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">c6</entry>
+							<entry class="- topic/entry " colname="col6">7</entry>
+							<entry class="- topic/entry " colname="col7">32-bit</entry>
+							<entry class="- topic/entry " colname="col8">Cluster Performance Monitor Claim Tag Clear
+								Register</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</section>
+		
+	
+	
+	</refbody>
+</reference>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="coj1473337690216" xml:lang="en-us">
+  <title class="- topic/title ">MMU memory accesses</title>
+  
+  <shortdesc class="- topic/shortdesc ">During a translation table walk, the MMU generates accesses. This
+    section describes the specific behaviors of the core for MMU memory accesses.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    
+    
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="mnh1473691255020.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Configuring MMU accesses</linktext><desc class="- topic/desc "><ph class="- topic/ph ">By programming the IRGN and ORGN bits, you             can configure the MMU to perform translation table walks in cacheable or non-cacheable             regions:</ph></desc></link><link class="- topic/link " format="dita" href="ggb1473691529883.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Descriptor hardware update</linktext><desc class="- topic/desc ">The core supports hardware update in AArch64 state using hardware 		management of the access flag and hardware management of dirty state.</desc></link></linkpool></linkpool></related-links></concept>

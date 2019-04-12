@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="way1441995346883" xml:lang="en-us">
+	<title class="- topic/title ">Processor Safety Analysis Results</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Processor Safety Analysis Results</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">This chapter describes the safety analysis results for the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+		processor. </shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<conbody class="- topic/body  concept/conbody ">
+	</conbody>
+</concept>

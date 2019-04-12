@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="fastcontextswitchextension">
+  <glossterm>Fast Context Switch Extension</glossterm>
+  <glossdef>Before ARMv8, an extension to the ARM architecture that modifies the behavior of the memory system. It enables multiple programs running on the core to use identical address ranges, while ensuring that the addresses they present to the rest of the memory system differ. From ARMv6, ARM deprecates use of the FCSE. The FCSE is optional in ARMv7, and obsolete from the ARMv7 Multiprocessing Extensions.</glossdef>
+</glossentry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1445957247614" xml:lang="en-us">
+  
+  <title class="- topic/title " id="TitleErrorIDRegister_EL1">ERRIDR_EL1, Error ID Register, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ERRIDR_EL1 defines the number of error record registers.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ERRIDR_EL1 is a 32-bit register, and is part of the  registers <term class="- topic/term ">Reliability, Availability,
+					Serviceability</term> (RAS) functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_f5m_j31_dv">
+        <title class="- topic/title ">ERRIDR_EL1 bit assignments</title>
+        <image class="- topic/image " href="joh1460977679069.svg" id="image_nwm_j31_dv" placement="inline">
+          <alt class="- topic/alt ">ERRIDR_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:16]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">res0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">NUM, [15:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Number of records that can be accessed through the Error Record
+              system registers.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              
+              
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.hex">0002</codeph></dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Two records present, if L3 cache is present.</p>
+                </dd>
+              </dlentry>
+              
+              
+              
+              
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">There are no configuration notes.</p>            
+            <p class="- topic/p ">Bit fields and details not provided in this description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+        </section>
+    
+  </refbody>
+</reference>

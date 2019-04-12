@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="byte_invariant">
+  <glossterm>byte-invariant</glossterm>
+  <glossdef>In a byte-invariant system, the address of each byte of memory remains unchanged when switching between little-endian and big-endian operation. When a data item larger than a byte is loaded from or stored to memory, the bytes making up that data item are arranged into the correct order depending on the endianness of the memory access.The ARM architecture supports byte-invariant systems in ARMv6 and later versions.See Also Word-invariant.</glossdef>
+</glossentry>

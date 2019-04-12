@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="pat1464793762018" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">ETM registers</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Debug AArch32 registers</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+
+    <topicref href="joh1440674636718.xml" class="- map/topicref " keys="EtmRegisterSummary"/>
+    <topicref href="lau1443703005538.xml" class="- map/topicref " keys="TrcacatrnAddressComparatorAccessTypeRegisters07"/>
+    <topicref href="lau1443702931501.xml" class="- map/topicref " keys="TrcacvrnAddressComparatorValueRegisters07"/>
+    <topicref href="lau1443704023626.xml" class="- map/topicref " keys="TrcauthstatusAuthenticationStatusRegister"/>
+    <topicref href="pat1464966166223.xml" class="- map/topicref " keys="TrcauxctrlAuxiliaryControlRegister"/>
+    <topicref href="lau1443695108725.xml" class="- map/topicref " keys="TrcbbctlrBranchBroadcastControlRegister"/>
+    <topicref href="lau1443695683697.xml" class="- map/topicref " keys="TrcccctlrCycleCountControlRegister"/>
+    <topicref href="lau1443703206624.xml" class="- map/topicref " keys="Trccidcctlr0ContextIdComparatorControlRegister0"/>
+    <topicref href="lau1443703072337.xml" class="- map/topicref " keys="Trccidcvr0ContextIdComparatorValueRegister0"/>
+    <topicref href="lau1443704592612.xml" class="- map/topicref " keys="Trccidr0EtmComponentIdentificationRegister0"/>
+    <topicref href="lau1443704606244.xml" class="- map/topicref " keys="Trccidr1EtmComponentIdentificationRegister1"/>
+    <topicref href="lau1443704620127.xml" class="- map/topicref " keys="Trccidr2EtmComponentIdentificationRegister2"/>
+    <topicref href="lau1443704635879.xml" class="- map/topicref " keys="Trccidr3EtmComponentIdentificationRegister3"/>
+    <topicref href="lau1443703662502.xml" class="- map/topicref " keys="TrcclaimclrClaimTagClearRegister"/>
+    <topicref href="lau1443703599787.xml" class="- map/topicref " keys="TrcclaimsetClaimTagSetRegister"/>
+    <topicref href="lau1443696662446.xml" class="- map/topicref " keys="Trccntctlr0CounterControlRegister0"/>
+    <topicref href="lau1443696720047.xml" class="- map/topicref " keys="Trccntctlr1CounterControlRegister1"/>
+    <topicref href="lau1443696601746.xml" class="- map/topicref " keys="TrccntrldvrnCounterReloadValueRegisters01"/>
+    <topicref href="pat1464972464494.xml" class="- map/topicref " keys="TrccntvrnCounterValueRegisters01"/>
+    <topicref href="lau1443695039065.xml" class="- map/topicref " keys="TrcconfigrTraceConfigurationRegister"/>
+    <topicref href="lau1443703721336.xml" class="- map/topicref " keys="Trcdevaff0DeviceAffinityRegister0"/>
+    <topicref href="lau1443703849852.xml" class="- map/topicref " keys="Trcdevaff1DeviceAffinityRegister1"/>
+    <topicref href="lau1443704093741.xml" class="- map/topicref " keys="TrcdevarchDeviceArchitectureRegister"/>
+    <topicref href="lau1443704153576.xml" class="- map/topicref " keys="TrcdevidDeviceIdRegister"/>
+    <topicref href="lau1443704215095.xml" class="- map/topicref " keys="TrcdevtypeDeviceTypeRegister"/>
+    <topicref href="lau1443695289016.xml" class="- map/topicref " keys="Trceventctl0rEventControl0Register"/>
+    <topicref href="lau1443695387135.xml" class="- map/topicref " keys="Trceventctl1rEventControl1Register"/>
+    <topicref href="lau1443696541551.xml" class="- map/topicref " keys="TrcextinselrExternalInputSelectRegister"/>
+    <topicref href="lau1443697792053.xml" class="- map/topicref " keys="Trcidr0IdRegister0"/>
+    <topicref href="lau1443697865564.xml" class="- map/topicref " keys="Trcidr1IdRegister1"/>
+    <topicref href="lau1443697930252.xml" class="- map/topicref " keys="Trcidr2IdRegister2"/>
+    <topicref href="lau1443697990859.xml" class="- map/topicref " keys="Trcidr3IdRegister3"/>
+    <topicref href="lau1443698265471.xml" class="- map/topicref " keys="Trcidr4IdRegister4"/>
+    <topicref href="lau1443698343336.xml" class="- map/topicref " keys="Trcidr5IdRegister5"/>
+    <topicref href="lau1443696847925.xml" class="- map/topicref " keys="Trcidr8IdRegister8"/>
+    <topicref href="lau1443696910101.xml" class="- map/topicref " keys="Trcidr9IdRegister9"/>
+    <topicref href="lau1443697458622.xml" class="- map/topicref " keys="Trcidr10IdRegister10"/>
+    <topicref href="lau1443697529862.xml" class="- map/topicref " keys="Trcidr11IdRegister11"/>
+    <topicref href="lau1443697593841.xml" class="- map/topicref " keys="Trcidr12IdRegister12"/>
+    <topicref href="lau1443697665125.xml" class="- map/topicref " keys="Trcidr13IdRegister13"/>
+    <topicref href="lau1443697727628.xml" class="- map/topicref " keys="Trcimspec0ImplementationSpecificRegister0"/>
+    <topicref href="lau1443703275428.xml" class="- map/topicref " keys="TrcitatbidrIntegrationAtbIdentificationRegister"/>
+    <topicref href="lau1443703538622.xml" class="- map/topicref " keys="TrcitctrlIntegrationModeControlRegister"/>
+    <topicref href="lau1443703410360.xml" class="- map/topicref " keys="TrcitiatbinrIntegrationInstructionAtbInRegister"/>
+    <topicref href="lau1443703477546.xml" class="- map/topicref " keys="TrcitiatboutrIntegrationInstructionAtbOutRegister"/>
+    <topicref href="jus1455877057850.xml" class="- map/topicref " keys="TrcitidatarIntegrationInstructionAtbDataRegister"/>
+    <topicref href="lau1443703894407.xml" class="- map/topicref " keys="TrclarSoftwareLockAccessRegister"/>
+    <topicref href="lau1443703960810.xml" class="- map/topicref " keys="TrclsrSoftwareLockStatusRegister"/>
+    <topicref href="lau1443696781432.xml" class="- map/topicref " keys="TrcntvrnCounterValueRegisters01"/>
+    <topicref href="lau1443702603268.xml" class="- map/topicref " keys="TrcoslarOsLockAccessRegister"/>
+    <topicref href="lau1443702697419.xml" class="- map/topicref " keys="TrcoslsrOsLockStatusRegister"/>
+    <topicref href="lau1443702788964.xml" class="- map/topicref " keys="TrcpdcrPowerDownControlRegister"/>
+    <topicref href="lau1443702874401.xml" class="- map/topicref " keys="TrcpdsrPowerDownStatusRegister"/>
+    <topicref href="lau1443704488946.xml" class="- map/topicref " keys="Trcpidr0EtmPeripheralIdentificationRegister0"/>
+    <topicref href="lau1443704505352.xml" class="- map/topicref " keys="Trcpidr1EtmPeripheralIdentificationRegister1"/>
+    <topicref href="lau1443704522482.xml" class="- map/topicref " keys="Trcpidr2EtmPeripheralIdentificationRegister2"/>
+    <topicref href="lau1443704535743.xml" class="- map/topicref " keys="Trcpidr3EtmPeripheralIdentificationRegister3"/>
+    <topicref href="lau1443704548527.xml" class="- map/topicref " keys="Trcpidr4EtmPeripheralIdentificationRegister4"/>
+    <topicref href="lau1443704563281.xml" class="- map/topicref " keys="TrcpidrnEtmPeripheralIdentificationRegisters57"/>
+    <topicref href="lau1443694852546.xml" class="- map/topicref " keys="TrcprgctlrProgrammingControlRegister"/>
+    <topicref href="lau1443702362625.xml" class="- map/topicref " keys="TrcrsctlrnResourceSelectionControlRegisters216"/>
+    <topicref href="lau1443696343445.xml" class="- map/topicref " keys="TrcseqevrnSequencerStateTransitionControlRegisters02"/>
+    <topicref href="lau1443696403857.xml" class="- map/topicref " keys="TrcseqrstevrSequencerResetControlRegister"/>
+    <topicref href="lau1443696466833.xml" class="- map/topicref " keys="TrcseqstrSequencerStateRegister"/>
+    <topicref href="lau1443702461337.xml" class="- map/topicref " keys="Trcssccr0SingleShotComparatorControlRegister0"/>
+    <topicref href="lau1443702525834.xml" class="- map/topicref " keys="Trcsscsr0SingleShotComparatorStatusRegister0"/>
+    <topicref href="lau1443695452965.xml" class="- map/topicref " keys="TrcstallctlrStallControlRegister"/>
+    <topicref href="lau1443694956507.xml" class="- map/topicref " keys="TrcstatrStatusRegister"/>
+    <topicref href="lau1443695621011.xml" class="- map/topicref " keys="TrcsyncprSynchronizationPeriodRegister"/>
+    <topicref href="lau1443695953595.xml" class="- map/topicref " keys="TrctraceidrTraceIdRegister"/>
+    <topicref href="lau1443695520480.xml" class="- map/topicref " keys="TrctsctlrGlobalTimestampControlRegister"/>
+    <topicref href="lau1443696042367.xml" class="- map/topicref " keys="TrcvictlrViewinstMainControlRegister"/>
+    <topicref href="lau1443696192648.xml" class="- map/topicref " keys="TrcviiectlrViewinstIncludeExcludeControlRegister"/>
+    <topicref href="lau1443696267441.xml" class="- map/topicref " keys="TrcvissctlrViewinstStartStopControlRegister"/>
+    <topicref href="pat1466437487351.xml" class="- map/topicref " keys="Trcvmidcvr0VmidComparatorValueRegister0"/>
+    <topicref href="erm1513187212132.xml" class="- map/topicref " keys="Trcvmidcctlr0VirtualContextIdentifierComparatorControlRegister0"/></map>

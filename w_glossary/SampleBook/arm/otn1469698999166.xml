@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="otn1469698999166" xml:lang="en-us">
+  <title class="- topic/title ">AArch64 registers</title>
+  <shortdesc class="- topic/shortdesc ">This chapter provides information about the AArch64 system registers
+    with <term class="- topic/term " outputclass="archterm">implementation defined</term> bit fields and <term class="- topic/term " outputclass="archterm">implementation defined</term> registers associated with the
+    core.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">The chapter provides <term class="- topic/term " outputclass="archterm">implementation specific</term> information, for a complete
+        description of the registers, see the <ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</ph></p>
+      
+      <p class="- topic/p ">The chapter is presented as follows:</p>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt "><term keyref="aarch64">AArch64</term> architectural system register summary</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">This section identifies the  architectural system registers
+              implemented in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+              <term keyref="core">core</term> that have <term class="- topic/term " outputclass="archterm">implementation defined</term> bit fields. The register descriptions for these
+              registers only contain information about the <term class="- topic/term " outputclass="archterm">implementation defined</term> bits.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt "> <term class="- topic/term " outputclass="archterm">implementation defined</term> register summary</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">This section identifies the  architectural registers
+              implemented in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+               that are <term class="- topic/term " outputclass="archterm">implementation defined</term>.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt "> registers by functional group</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">This section groups the <term class="- topic/term " outputclass="archterm">implementation defined</term> registers and
+              architectural system registers with <term class="- topic/term " outputclass="archterm">implementation defined</term> bit fields, as identified
+              previously, by function. It also provides reset details for key register types.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Register descriptions</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">The remainder of the chapter provides register descriptions of the
+              <term class="- topic/term " outputclass="archterm">implementation defined</term> registers and architectural system registers with
+              <term class="- topic/term " outputclass="archterm">implementation defined</term> bit fields, as identified previously. These are listed in
+              alphabetic order.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+  </refbody>
+</reference>

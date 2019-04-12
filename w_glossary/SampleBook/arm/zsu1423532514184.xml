@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="zsu1423532514184" xml:lang="en-us">
+  <title class="- topic/title ">Use of R15 by Instruction</title>
+  <shortdesc class="- topic/shortdesc ">If the use of R15 as a base register for a load or store is <term class="- topic/term " outputclass="archterm">unpredictable</term>, the value used by the load or
+    store using R15 as a base register is the <term class="- topic/term ">Program Counter</term> (PC) with
+    its usual offset and, in the case of T32 instructions, with the forced word alignment. In this
+    case, if the instruction specifies Writeback, then the load or store is performed without
+    Writeback.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+      core does not implement a <term class="- topic/term ">Read 0</term> or <term class="- topic/term ">Ignore
+        Write</term> policy on <term class="- topic/term " outputclass="archterm">unpredictable</term> use
+      of R15 by instruction. Instead, the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core takes an <term class="- topic/term " outputclass="archterm">undefined</term> exception trap.</p>
+  </conbody>
+</concept>

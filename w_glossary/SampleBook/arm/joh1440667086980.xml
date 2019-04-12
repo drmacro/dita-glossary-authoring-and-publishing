@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440667086980" xml:lang="en-us">
+  <title class="- topic/title ">Data cache disabled behavior</title>
+  <shortdesc class="- topic/shortdesc ">If the data cache is disabled, load and store instructions do not access
+    any of the L1 data, L2 cache, and, if present, the <keyword class="- topic/keyword ">DSU</keyword> L3 cache
+    arrays.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">Unless the data cache is enabled, a new line is not allocated in the L2 or
+        L3 caches due to an instruction fetch</p>
+      <p class="- topic/p ">Data cache maintenance operations are an <term keyref="exception">exception</term>. If the data cache is
+        enabled, the data cache maintenance operations execute normally.</p>
+      <p class="- topic/p ">If the data cache is disabled, all loads and store instructions to <term keyref="cacheable">cacheable</term>
+        memory are treated as if they were non-. Therefore, they are not <term keyref="coherent">coherent</term> with the
+        caches in this <term keyref="core">core</term> or the caches in other s, and software must take this into
+        account.</p>
+     
+      <p class="- topic/p ">The L2 and L1 data caches cannot be disabled independently.</p>
+
+    </section>
+  </refbody>
+</reference>

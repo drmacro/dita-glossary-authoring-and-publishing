@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="geo1447779518835" xml:lang="en-us">
+  <title class="- topic/title ">Appendices</title>
+  <shortdesc class="- topic/shortdesc ">This part describes the appendices of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+  <refbody class="- topic/body        reference/refbody "/>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="skn1478611620752.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Ares/Enyo Core AArch32 UNPREDICTABLE behaviors</linktext><desc class="- topic/desc ">This appendix describes the cases in which the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implementation 		diverges from the preferred behavior described in Armv8 AArch32 <term class="- topic/term " outputclass="archterm">UNPREDICTABLE</term> behaviors.</desc></link><link class="- topic/link " format="dita" href="ste1440517945969.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Revisions</linktext><desc class="- topic/desc ">This appendix describes the technical changes between released issues of     this book.</desc></link></linkpool></linkpool></related-links></reference>

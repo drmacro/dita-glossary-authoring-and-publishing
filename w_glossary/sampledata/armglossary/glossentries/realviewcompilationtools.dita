@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="realviewcompilationtools">
+  <glossterm>RealView Compilation Tools</glossterm>
+  <glossdef>A suite of tools that, together with supporting documentation and examples, enables you to write and build applications for Arm processors. See Also armcc, armasm.</glossdef>
+</glossentry>

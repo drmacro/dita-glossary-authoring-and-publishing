@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="tracepointunit">
+  <glossterm>Tracepoint unit</glossterm>
+  <glossdef>In the context of an Arm debugger, a unit within a Chained tracepoint that combines with other tracepoint units to create a complex tracepoint.See Also Chained tracepoint and Tracepoint.</glossdef>
+</glossentry>

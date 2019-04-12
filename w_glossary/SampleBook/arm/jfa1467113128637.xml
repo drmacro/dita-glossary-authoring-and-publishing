@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="jfa1467113128637" xml:lang="en-us">
+	<title class="- topic/title ">VDISR_EL2 at EL1 using AArch64</title>
+	<shortdesc class="- topic/shortdesc ">VDISR_EL2 has a specific format when written at EL1.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The following figure shows the VDISR_EL2 bit assignments when written at EL1
+				using <term keyref="aarch64">AArch64</term>:</p>
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">VDISR_EL2 at EL1 using </title>
+				<image class="- topic/image " href="joh1467114477013.svg" placement="inline">
+					<alt class="- topic/alt ">VDISR_EL2 at EL1 using </alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [63:32]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc14">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">A, [31]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Set to 1 when ESB defers an asynchronous SError interrupt. </p>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [30:25]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt ">
+									<term class="- topic/term " outputclass="archterm">RES0</term>
+								</dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">IDS, [24]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Contains the value from VSESR_EL2.IDS.</p>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">ISS, [23:0]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Contains the value from VSESR_EL2, bits[23:0].</p>
+					</dd>
+				</dlentry>
+			</dl>
+			
+		</section>
+	</refbody>
+</reference>

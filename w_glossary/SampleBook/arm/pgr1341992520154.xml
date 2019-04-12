@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE referable-content
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<referable-content xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="pgr1341992520154" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- topic/topic referable-content/referable-content ">
+    <title class="- topic/title ">[ARM STANDARD] Arm's web address as referable content</title>
+    <shortdesc class="- topic/shortdesc ">This fragment gives the correct format for Arm's web address prepared
+        for reuse</shortdesc>
+    <prolog class="- topic/prolog ">
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </prolog>
+    <rcbody class="- topic/body referable-content/body ">
+        <ph id="g.arm.web_address" class="- topic/ph ">
+            <xref format="html" href="http://www.arm.com" scope="external" class="- topic/xref ">http://www.arm.com</xref>
+        </ph>
+    </rcbody>
+</referable-content>

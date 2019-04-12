@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="processingelement">
+  <glossterm>processing element</glossterm>
+  <glossdef>The abstract machine defined in the Arm architecture, as documented in an Arm Architecture Reference Manual. A processing element implementation that is compliant with the Arm architecture must conform with the behaviors described in the corresponding Arm Architecture Reference Manual. Do not capitalize the p or e of processing element. PE is the acronym of processing element. You can use PE.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="big_endian">
+  <glossterm>big-endian</glossterm>
+  <glossdef>In the context of the ARM architecture, big-endian is defined as the memory organization in which the least significant byte of a word is at a higher address than the most significant byte, for example: *A byte or halfword at a word-aligned address is the most significant byte or halfword in the word at that address. *A byte at a halfword-aligned address is the most significant byte in the halfword at that address. </glossdef>
+</glossentry>

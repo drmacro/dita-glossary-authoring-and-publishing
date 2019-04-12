@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="deb1356102687854" xml:lang="en-us">
+	<title class="- topic/title ">Implementation obligations</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Implementation obligations</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">This book is designed to help you implement an <keyword class="- topic/keyword ">Arm</keyword> product. The extent to which the
+				deliverables may be modified or disclosed is governed by the contract between
+					<keyword class="- topic/keyword ">Arm</keyword> and
+				Licensee. There may be validation requirements, which if applicable will be detailed
+				in the contract between <keyword class="- topic/keyword ">Arm</keyword> and
+				Licensee and which if present must be complied with prior to the distribution of any
+				silicon devices incorporating the technology described in this document.
+				Reproduction of this document is only permitted in accordance with the licences
+				granted to Licensee.</p>
+			<p class="- topic/p "><keyword class="- topic/keyword ">Arm</keyword> assumes no liability for your overall system design and performance, the
+				verification procedures defined by <keyword class="- topic/keyword ">Arm</keyword> are only
+				intended to verify the correct implementation of the technology licensed by <keyword class="- topic/keyword ">Arm</keyword>, and are not
+				intended to test the functionality or performance of the overall system. You or the
+				Licensee will be responsible for performing any system level tests.</p>
+			<p class="- topic/p ">You are responsible for any applications which are used in conjunction
+				with the <keyword class="- topic/keyword ">Arm</keyword>
+				technology described in this document, and in order to minimize risks adequate
+				design and operating safeguards should be provided for by you. <keyword class="- topic/keyword ">Arm</keyword>'s publication of
+				any information in this document of information regarding any third party’s products
+				or services is not an express or implied approval or endorsement of the use
+				thereof.</p>
+		</section>
+	</refbody>
+</reference>

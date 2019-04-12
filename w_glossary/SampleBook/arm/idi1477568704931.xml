@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="idi1477568704931" xml:lang="en-us">
+
+	<title class="- topic/title ">Instruction issue</title>
+	<shortdesc class="- topic/shortdesc ">The instruction issue unit controls when the decoded instructions are
+		dispatched to the execution pipelines. It includes issue queues for storing instruction
+		pending dispatch to execution pipelines.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+</concept>

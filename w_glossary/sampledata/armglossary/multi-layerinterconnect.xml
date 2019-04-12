@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
-<glossentry id="multi-layerinterconnect">
-  <glossterm>Multi-layer interconnect</glossterm>
-  <glossdef>An interconnect scheme similar to a cross-bar switch. Each master on the interconnect has a direct link to each slave that is not shared with other masters. This means each master can process transfers in parallel with other masters. Contention in a multi-layer interconnect only occurs at a payload destination, typically a slave.</glossdef>
-</glossentry>

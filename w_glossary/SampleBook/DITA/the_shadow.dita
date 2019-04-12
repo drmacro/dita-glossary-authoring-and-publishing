@@ -3,6 +3,9 @@
 <reference id="the_shadow">
     <title>The Shadow</title>
     <shortdesc></shortdesc>
+    <prolog class="- topic/prolog ">
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
     <refbody><section>
         
         <p>Mrs. Darling screamed, and, as if in answer to a bell, the door

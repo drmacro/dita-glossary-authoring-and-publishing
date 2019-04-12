@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="illegalinstruction">
+  <glossterm>illegal instruction</glossterm>
+  <glossdef>Indicates an instruction that is not architecturally defined. It generates an Undefined Instruction exception. See the ARM Architecture Reference Manual for more information.</glossdef>
+</glossentry>

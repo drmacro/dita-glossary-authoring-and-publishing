@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="pat1464793197776" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Prometheus PMU Memory Mapped registers</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Debug AArch32 registers</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+
+
+
+
+
+
+    <topicref href="joh1440673908507.xml" class="- map/topicref "/>
+    <topicref href="lau1443689889680.xml" class="- map/topicref " keys="PmcrPerformanceMonitorsConfigurationRegister"/>
+    <topicref href="lau1443691157979.xml" class="- map/topicref " keys="Pmcir0PerformanceMonitorsComponentIdentificationRegister0"/>
+    <topicref href="lau1443690906393.xml" class="- map/topicref " keys="Pmcir1PerformanceMonitorsComponentIdentificationRegister1"/>
+    <topicref href="lau1443690983708.xml" class="- map/topicref " keys="Pmcir2PerformanceMonitorsComponentIdentificationRegister2"/>
+    <topicref href="lau1443691250407.xml" class="- map/topicref " keys="Pmcir3PerformanceMonitorsComponentIdentificationRegister3"/>
+    <topicref href="lau1443690386394.xml" class="- map/topicref " keys="Pmpir0PerformanceMonitorsPeripheralIdentificationRegister0"/>
+    <topicref href="lau1443690492063.xml" class="- map/topicref " keys="Pmpir1PerformanceMonitorsPeripheralIdentificationRegister1"/>
+    <topicref href="lau1443690586985.xml" class="- map/topicref " keys="Pmpir2PerformanceMonitorsPeripheralIdentificationRegister2"/>
+    <topicref href="lau1443690676556.xml" class="- map/topicref " keys="Pmpir3PerformanceMonitorsPeripheralIdentificationRegister3"/>
+    <topicref href="lau1443690763702.xml" class="- map/topicref " keys="Pmpir4PerformanceMonitorsPeripheralIdentificationRegister4"/>
+    <topicref href="lau1443690858119.xml" class="- map/topicref " keys="Pmpir57PerformanceMonitorsPeripheralIdentificationRegister57"/>
+
+
+
+
+
+
+</map>

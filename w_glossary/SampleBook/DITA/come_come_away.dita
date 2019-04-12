@@ -2,7 +2,9 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
 <reference id="come_come_away">
     <title>Come Away Come Away!</title>
-    <shortdesc></shortdesc>
+    <shortdesc></shortdesc><prolog class="- topic/prolog ">
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
     <refbody><section>
         <p>For a moment after Mr. and Mrs. Darling left the house the
 night-lights by the beds of the three children continued to burn

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1456920674327" xml:lang="en-us">
+	<title class="- topic/title ">ERXMISC1_EL1, Selected Error Record Miscellaneous Register 1, EL1</title>
+	<shortdesc class="- topic/shortdesc ">Register ERXMISC1_EL1 accesses the ERR&lt;n&gt;MISC1 miscellaneous
+		register 1 for the error record selected by ERRSELR_EL1.SEL.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		
+		<section class="- topic/section ">
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==0, then ERXMISC1_EL1 accesses the ERR0MISC1 register of
+				the <term keyref="core">core</term> error record. See <xref class="- topic/xref " href="ajb1472476331389.xml" keyref="Err0misc1ErrorRecordMiscellaneousRegister1" type="reference">ERR0MISC1, Error Record Miscellaneous Register 1<desc class="- topic/desc ">This register is unused in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  and marked as <term class="- topic/term " outputclass="archterm">RES0</term>. </desc></xref>.</p>	
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==1, then ERXMISC1_EL1 accesses the ERR1MISC1 register of the <keyword class="- topic/keyword ">DSU</keyword> error record. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite>.</p>
+			
+		</section>
+		
+	</refbody>
+</reference>

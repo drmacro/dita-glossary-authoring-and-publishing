@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="instructionbreakpoint">
+  <glossterm>instruction breakpoint</glossterm>
+  <glossdef>A location in the image containing an instruction that, if executed, activates a breakpoint. The breakpoint activation can be delayed by assigning condition qualifiers, and subsequent execution of the image is determined by any actions assigned to the breakpoint.See Also Conditional breakpoint and Software breakpoint.</glossdef>
+</glossentry>

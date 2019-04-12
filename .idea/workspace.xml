@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1b44efe-e12a-469f-84ec-16ff9c1c3693" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/readXL/htmlExcel.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readXL/markentries.rb" beforeDir="false" afterPath="$PROJECT_DIR$/readXL/markentries.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readXL/readXLFile.rb" beforeDir="false" afterPath="$PROJECT_DIR$/readXL/readXLFile.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glossaryDITANA/glossary/glossBookMap.ditamap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glossaryDITANA/glossary/glossentry.ditamap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glossaryDITANA/glossary/glossentryTerm.dita" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glossaryDITANA/glossary/out/topic-pdf/glossBookMap.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glossaryDITANA/glossary/terms.ditamap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glossaryDITANA/glossary/whatisGlossary.dita" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/w_glossary/scripts/markentries.rb" beforeDir="false" afterPath="$PROJECT_DIR$/w_glossary/scripts/markentries.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,12 +27,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readXL/markentries.rb">
+        <entry file="file://$PROJECT_DIR$/w_glossary/scripts/markentries.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="151">
+              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/w_glossary/scripts/htmlExcel.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/w_glossary/scripts/readXLFile.rb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -64,15 +78,16 @@
         <option value="$PROJECT_DIR$/readXL/htmlExcel.rb" />
         <option value="$PROJECT_DIR$/readXL/readXLFile.rb" />
         <option value="$PROJECT_DIR$/readXL/markentries.rb" />
+        <option value="$PROJECT_DIR$/w_glossary/scripts/markentries.rb" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="144" />
-    <option name="y" value="65" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="221" />
+    <option name="y" value="94" />
     <option name="width" value="2107" />
     <option name="height" value="1270" />
   </component>
@@ -81,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -93,18 +107,13 @@
             <path>
               <item name="dita-glossary-authoring-and-publishing" type="b2602c69:ProjectViewProjectNode" />
               <item name="dita-glossary-authoring-and-publishing" type="462c0819:PsiDirectoryNode" />
-              <item name="glossaryDITANA" type="462c0819:PsiDirectoryNode" />
+              <item name="w_glossary" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dita-glossary-authoring-and-publishing" type="b2602c69:ProjectViewProjectNode" />
               <item name="dita-glossary-authoring-and-publishing" type="462c0819:PsiDirectoryNode" />
-              <item name="glossaryDITANA" type="462c0819:PsiDirectoryNode" />
-              <item name="glossary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dita-glossary-authoring-and-publishing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dita-glossary-authoring-and-publishing" type="462c0819:PsiDirectoryNode" />
-              <item name="readXL" type="462c0819:PsiDirectoryNode" />
+              <item name="w_glossary" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dita-glossary-authoring-and-publishing" type="b2602c69:ProjectViewProjectNode" />
@@ -119,6 +128,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.htmlExcel">
+  <component name="RunManager" selected="Ruby.markentries">
     <configuration name="ReadXML" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="dita-glossary-authoring-and-publishing" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -220,8 +230,8 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/readXL/markentries.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="$PROJECT_DIR$/readXL/glossary.xlsx $PROJECT_DIR$/SampleBook/DITA/peter_pan.ditamap" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/w_glossary/scripts/markentries.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="$PROJECT_DIR$/w_glossary/sampledata/ArmGlossary.xlsx $PROJECT_DIR$/w_glossary/SampleBook/cortex_a76_trm_core/kqb1476970875925.ditamap" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -275,6 +285,8 @@
       <workItem from="1554429860825" duration="496000" />
       <workItem from="1554541804783" duration="8205000" />
       <workItem from="1554575492398" duration="6773000" />
+      <workItem from="1554888159355" duration="2986000" />
+      <workItem from="1554901466328" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="updated for markentries">
       <created>1554323406215</created>
@@ -301,13 +313,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36762000" />
+    <option name="totallyTimeSpent" value="39756000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="144" y="65" width="2107" height="1270" extended-state="1" />
-    <editor active="true" />
+    <frame x="221" y="94" width="2107" height="1270" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22324455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22711864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -317,7 +328,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32852292" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41171476" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41171476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -359,6 +370,16 @@
           <line>14</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/w_glossary/scripts/markentries.rb</url>
+          <line>33</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/w_glossary/scripts/markentries.rb</url>
+          <line>31</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -379,7 +400,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dita_glossary_authoring_and_publishing@htmlExcel.rcov" NAME="htmlExcel Coverage Results" MODIFIED="1554587487672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/readXL" MODULE_NAME="dita-glossary-authoring-and-publishing" />
     <SUITE FILE_PATH="coverage/dita_glossary_authoring_and_publishing@ReadXML.rcov" NAME="ReadXML Coverage Results" MODIFIED="1554429436060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="dita-glossary-authoring-and-publishing" />
-    <SUITE FILE_PATH="coverage/dita_glossary_authoring_and_publishing@markentries.rcov" NAME="markentries Coverage Results" MODIFIED="1554579110823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="dita-glossary-authoring-and-publishing" />
+    <SUITE FILE_PATH="coverage/dita_glossary_authoring_and_publishing@markentries.rcov" NAME="markentries Coverage Results" MODIFIED="1554891498227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="dita-glossary-authoring-and-publishing" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -437,27 +458,11 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../.rvm/gems/ruby-2.6.2/gems/nokogiri-1.10.2/lib/nokogiri/xml.rb" />
-    <entry file="file://$PROJECT_DIR$/SampleBook/DITA/peter_pan.ditamap">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readXL/testoutput/pirate.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleBook/DITA/peter_pan.ditamap" />
+    <entry file="file://$PROJECT_DIR$/readXL/testoutput/pirate.xml" />
     <entry file="file://$PROJECT_DIR$/../.rvm/rubies/ruby-2.6.2/lib/ruby/gems/2.6.0/gems/ruby-debug-ide-0.7.0.beta7/lib/ruby-debug-ide.rb" />
-    <entry file="file://$PROJECT_DIR$/glossaryDITANA/glossary/whatisGlossary.dita">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readXL/testoutput/glossaryentries.ditamap">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/glossaryDITANA/glossary/whatisGlossary.dita" />
+    <entry file="file://$PROJECT_DIR$/readXL/testoutput/glossaryentries.ditamap" />
     <entry file="file://$PROJECT_DIR$/../.rvm/gems/ruby-2.6.2/gems/ruby-debug-ide-0.7.0.beta7/bin/rdebug-ide">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
@@ -493,13 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.rvm/gems/ruby-2.6.2/gems/ruby-debug-ide-0.7.0.beta7/lib/ruby-debug-ide.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.rvm/gems/ruby-2.6.2/gems/nokogiri-1.10.2/lib/nokogiri/xml/node.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -521,33 +519,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SampleBook/DITA/come_come_away.dita">
+    <entry file="file://$PROJECT_DIR$/SampleBook/DITA/come_come_away.dita" />
+    <entry file="file://$PROJECT_DIR$/readXL/htmlExcel.rb" />
+    <entry file="file://$PROJECT_DIR$/readXL/readXLFile.rb" />
+    <entry file="file://$PROJECT_DIR$/readXL/markentries.rb" />
+    <entry file="file://$PROJECT_DIR$/../.rvm/gems/ruby-2.6.2/gems/ruby-debug-ide-0.7.0.beta7/lib/ruby-debug-ide.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        <state relative-caret-position="221">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readXL/htmlExcel.rb">
+    <entry file="file://$PROJECT_DIR$/w_glossary/scripts/markentries.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="151">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readXL/readXLFile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="37" column="83" selection-start-line="37" selection-start-column="83" selection-end-line="37" selection-end-column="83" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/w_glossary/scripts/htmlExcel.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/readXL/markentries.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/w_glossary/scripts/readXLFile.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

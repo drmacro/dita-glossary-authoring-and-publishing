@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
-<glossentry id="g-pop">
-  <glossterm>G-POP</glossterm>
-  <glossdef>A POP that includes components for an ARM MALI Graphics Processor.See Also POP.</glossdef>
-</glossentry>

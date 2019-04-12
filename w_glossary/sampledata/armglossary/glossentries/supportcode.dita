@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="supportcode">
+  <glossterm>support code</glossterm>
+  <glossdef>In a floating-point implementation, system software that complements the hardware VFP implementation. The support code can provide a library of routines that perform operations beyond the scope of the hardware. The support code includes a set of exception handlers to process exceptional conditions in compliance with the IEEE 754 standard.</glossdef>
+</glossentry>

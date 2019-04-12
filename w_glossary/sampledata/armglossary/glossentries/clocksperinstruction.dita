@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="clocksperinstruction">
+  <glossterm>Clocks Per Instruction</glossterm>
+  <glossdef>The average number of clock cycles per instruction for a program or program fragment. It is the multiplicative inverse of instructions per cycle. You can use this value to compare the performance of different processors that implement the same instruction set. The lower the value, the better the performance.</glossdef>
+</glossentry>

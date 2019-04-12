@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="pe">
+  <glossterm>PE</glossterm>
+  <glossdef>Core is used to describe a single processing unit. In the application processor area we can further define core as something that has exclusive use of its own program counter (PC). Never use CPU to refer to a core or PE. Do not try to introduce local definitions of CPU to get round this rule.</glossdef>
+</glossentry>

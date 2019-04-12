@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="pat1443017254201" xml:lang="en-us">
+	<title class="- topic/title ">Systematic fault avoidance measures</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Systematic fault avoidance measures</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">To avoid systematic faults in designs targeted for safety-related
+		applications, IEC 61508-2:2010 contains a number of requirements depending on the expected
+		safety integrity level of the safety functions.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<p class="- topic/p ">Because the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> processor has been developed with no information about the final
+			system level safety functions, the assumed safety integrity level for systematic fault
+			avoidance measures is SIL 3. </p>
+
+		<p class="- topic/p ">This section includes the following tables:</p>
+		<ul class="- topic/ul " id="ul_pfq_wc5_tp">
+			<li class="- topic/li "><p class="- topic/p "><xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>. Indication of techniques and measures based on IEC
+					61508-2, Table B.1.</p></li>
+			<li class="- topic/li "><p class="- topic/p "><xref class="- topic/xref " href="#pat1443017254201/table_lxm_kw1_5p" type="table">Table 2</xref>. Indication of techniques and measures based on IEC
+					61508-2, Table B.2.</p></li>
+			<li class="- topic/li "><p class="- topic/p "><xref class="- topic/xref " href="#pat1443017254201/table_aff_cy1_5p" type="table">Table 3</xref>. Indication of techniques and measures based on IEC
+					61508-2, Table B.3.</p></li>
+			<li class="- topic/li "><p class="- topic/p "><xref class="- topic/xref " href="#pat1443017254201/table_vvw_ty1_5p" type="table">Table 4</xref>. Indication of techniques and measures based on IEC
+					61508-2, Table B.5.</p></li>
+			<li class="- topic/li "><p class="- topic/p "><xref class="- topic/xref " href="#pat1443017254201/table_nns_zz1_5p" type="table">Table 5</xref>. Indication of techniques and measures based on IEC
+					61508-2, Table F.1.</p></li>
+		</ul>
+		<note class="- topic/note ">
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">IEC 61508-2, Table B.4 has been omitted because it is related to
+					operation and maintenance phase systematic fault avoidance, which are out of
+					scope of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design.</li>
+				<li class="- topic/li ">For IEC 61508-2, Table F.1, only techniques and measures
+					applicable to design entry are included, because synthesis, test insertion,
+					placement, routing, layout generation, and chip manufacturing are not in the
+					scope of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+					activities for <keyword class="- topic/keyword ">Arm</keyword>. These techniques and measures are the responsibility of the
+					system integrator or system developer. </li>
+			</ul>
+		</note>
+		
+		<p class="- topic/p ">The ISO 26262:2011 standard requires similar consideration of systematic
+			faults for safety-related designs. However, the guidance available within the IEC
+			61508:2010, especially for IP designs, is currently more comprehensive. Therefore no
+			separate information is included in this section for ISO 26262 measures against
+			systematic faults. </p>
+		<table class="- topic/table " frame="all" id="table_zdd_b35_tp">
+			<title class="- topic/title ">Fault avoidance during specification of system design
+				requirements</title>
+			<tgroup class="- topic/tgroup " cols="4">
+				<colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="3*"/>
+				<colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1*"/>
+				<colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="2*"/>
+				<colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="10*"/>
+				<thead class="- topic/thead ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Method</entry>
+						<entry class="- topic/entry " colname="col2">SIL 3</entry>
+						<entry class="- topic/entry " colname="col3">Applicable</entry>
+						<entry class="- topic/entry " colname="col4">How is this addressed for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design?</entry>
+					</row>
+				</thead>
+				<tbody class="- topic/tbody ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of project management</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p ">Project management with defined project stages, gated
+								stage entries, reviews and assessments has been followed for both
+								the original <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> development, and the additional activities to
+								complete the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> safety case.</p>
+							<note class="- topic/note ">Project management is applied throughout design
+								and verification activities. Project management is not separately
+								addressed in the later tables.</note>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Appropriate documentation</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> documentation has been developed as part of
+								the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> development project, and during the
+								additional activities to complete the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> safety case.</p>
+							<p class="- topic/p ">The documentation is split into internal and external
+								documents. External documents are available to the system
+								integrator.</p>
+							<note class="- topic/note ">Documentation is required throughout design and
+								verification activities. Documentation is not separately addressed
+								in the later tables.</note>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Safety functions separated from non-safety
+							functions</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">No</entry>
+						<entry class="- topic/entry " colname="col4">Because of the general-purpose nature of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							processor, there is no clear separation between the fault detection and
+							control mechanisms, and normal processing functions of the
+							processor.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of structured specification</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4"><ph class="- topic/ph ">Structured specification methods have been applied
+                for the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design, as
+                applicable.</ph></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Formal inspection of the specification</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p ">Design plans, requirements and specifications, and
+								verification plans, requirements and specifications are reviewed
+								though formal inspection mechanisms by persons independent from the
+								author.</p>
+							<p class="- topic/p ">Each review has been separately signed-off by a second independent person.
+								The reviews are conducted based on pre-defined review questions,
+								which are dependent on the type of artifact being reviewed. </p>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of semi-formal methods</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">Semi-formal specification methods, such as functional
+							block diagrams and state charts, have been used where
+							appropriate.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of checklists</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p ">Checklists are an essential part of <keyword class="- topic/keyword ">Arm</keyword> IP
+								development projects.</p>
+							<p class="- topic/p ">Each review and assessment is conducted based on a pre-defined set of
+								review or assessment questions, which are tailored for the type of
+								artifact being reviewed.</p>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of computer aided specification tools</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">No</entry>
+						<entry class="- topic/entry " colname="col4">No particular computer aided specification tools have
+							been used during the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> development.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of formal methods</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">Formal methods have been used to prove specific
+							properties of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design. Use of formal proofs has been specified
+							as part of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> verification strategy.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		
+
+		<table class="- topic/table " frame="all" id="table_lxm_kw1_5p">
+			<title class="- topic/title ">Fault avoidance during system design and development</title>
+			<tgroup class="- topic/tgroup " cols="4">
+				<colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="3*"/>
+				<colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1*"/>
+				<colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="2*"/>
+				<colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="10*"/>
+				<thead class="- topic/thead ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Method</entry>
+						<entry class="- topic/entry " colname="col2">SIL 3</entry>
+						<entry class="- topic/entry " colname="col3">Applicable</entry>
+						<entry class="- topic/entry " colname="col4">How is this addressed for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design? </entry>
+					</row>
+				</thead>
+				<tbody class="- topic/tbody ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Definition and use of guidelines and
+							standards</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> development project has followed <keyword class="- topic/keyword ">Arm</keyword> internal
+								guidelines and standards. These include, for example, project
+								management guidelines, project reviews and assessment, coding
+								guidelines.</p>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of project management</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Appropriate documentation</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of structured design</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">Structured design methods have been applied for the
+								<ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design, with defined modules containing specific parts of the
+							required functionality.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Appropriate modularization</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p "><ph class="- topic/ph ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design has been structured based on required
+                functionality.</ph>
+							</p>
+							<p class="- topic/p ">Design and verification activities have been done
+								for the defined units.</p>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Reuse of well-tried components</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design has reused components from well-tried
+							designs, and design principles from other <keyword class="- topic/keyword ">Arm</keyword> designs.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of semi-formal methods</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of checklists</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of computer-aided design tools</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">Simulation has been used throughout the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design and verification activities.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Inspection of the design</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p ">Each RTL module has undergone a formal review. The
+								reviews are done based on pre-defined review questions. The reviewer
+								is an independent person from the RTL code author. </p>
+							<p class="- topic/p ">A second independent person is required to sign off the inspection
+								reviews.</p>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of formal methods</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+
+		
+		<table class="- topic/table " frame="all" id="table_aff_cy1_5p">
+			<title class="- topic/title ">Fault avoidance during system integration</title>
+			<tgroup class="- topic/tgroup " cols="4">
+				<colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="3*"/>
+				<colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1*"/>
+				<colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="2*"/>
+				<colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="10*"/>
+				<thead class="- topic/thead ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Method</entry>
+						<entry class="- topic/entry " colname="col2">SIL 3</entry>
+						<entry class="- topic/entry " colname="col3">Applicable</entry>
+						<entry class="- topic/entry " colname="col4">How is this addressed for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design?</entry>
+					</row>
+				</thead>
+				<tbody class="- topic/tbody ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of functional testing</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p ">Functional testing of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> has been conducted. The functional testing consists of a
+								combination of integration (top-level) and unit level tests. </p>
+							<p class="- topic/p ">The test stimuli are either manually generated to
+								target particular aspects of the design, or randomly generated with
+								specific constraints. </p>
+							<p class="- topic/p ">Functional test coverage is automatically recorded
+								through the use of defined functional coverage points.</p>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of project management</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Appropriate documentation</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of black-box testing</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">Black-box behavior of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							has been verified through top-level and system testing. </entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Consideration of field experience</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">No</entry>
+						<entry class="- topic/entry " colname="col4">No credit has been taken from field experience for
+								<ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of statistical testing</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">Part of the black-box testing can be considered to be statistical
+							testing as defined in IEC 61508-7, clause B.5.3, in the sense that the
+							test stimuli/application payloads are typical to the final uses of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		
+		<table class="- topic/table " frame="all" id="table_vvw_ty1_5p">
+			<title class="- topic/title ">Fault avoidance during system safety validation</title>
+			<tgroup class="- topic/tgroup " cols="4">
+				<colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="3*"/>
+				<colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1*"/>
+				<colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="2*"/>
+				<colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="10*"/>
+				<thead class="- topic/thead ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Method</entry>
+						<entry class="- topic/entry " colname="col2">SIL 3</entry>
+						<entry class="- topic/entry " colname="col3">Applicable</entry>
+						<entry class="- topic/entry " colname="col4">How is this addressed for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design?</entry>
+					</row>
+				</thead>
+				<tbody class="- topic/tbody ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of functional testing</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_aff_cy1_5p" type="table">Table 3</xref>. </entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of functional testing in environmental
+							conditions</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">No</entry>
+						<entry class="- topic/entry " colname="col4">Not applicable because <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> is
+							provided as logic design only.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Testing for interference surge immunity</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">No</entry>
+						<entry class="- topic/entry " colname="col4">Not applicable because <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> is
+							provided as logic design only. Interference immunity depends on physical
+							implementation, which is outside the scope.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of fault insertion testing when required DC
+							&gt;= 90%</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">No</entry>
+						<entry class="- topic/entry " colname="col4">Not applicable because <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> is
+							provided as logic design only. Fault insertion results are dependent on
+							the system integrator implementation of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of project management</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Appropriate documentation</entry>
+						<entry class="- topic/entry " colname="col2">M</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_zdd_b35_tp" type="table">Table 1</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of simulation, static analysis and failure
+							analysis</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">
+							<p class="- topic/p "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design has been verified through simulation
+								and analysis. </p>
+							<p class="- topic/p ">Details of failure analysis are contained in the
+										<cite class="- topic/cite "><tm class="- topic/tm " tmtype="reg">Arm</tm>
+									<ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  Processor FMEA Report.</cite></p>
+							<p class="- topic/p ">Static analysis of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> has been conducted through the use of code checkers, linting
+								tools, and formal proofs.</p>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of expanded functional testing</entry>
+						<entry class="- topic/entry " colname="col2">HR</entry>
+						<entry class="- topic/entry " colname="col3">No</entry>
+						<entry class="- topic/entry " colname="col4">Expanded functional testing relies on physical
+							product characteristics. Therefore it is outside the scope of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of black-box testing</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_aff_cy1_5p" type="table">Table 3</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of statistical testing</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_aff_cy1_5p" type="table">Table 3</xref>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Use of worst-case testing</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">Yes</entry>
+						<entry class="- topic/entry " colname="col4">Parts of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							verification activities rely on test case generators targeted for
+							generating worst-case conditions.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Field experience</entry>
+						<entry class="- topic/entry " colname="col2">R</entry>
+						<entry class="- topic/entry " colname="col3">No</entry>
+						<entry class="- topic/entry " colname="col4">See <xref class="- topic/xref " href="#pat1443017254201/table_aff_cy1_5p" type="table">Table 3</xref>.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		
+		<table class="- topic/table " frame="all" id="table_nns_zz1_5p">
+			<title class="- topic/title ">Fault avoidance during system integration</title>
+			<tgroup class="- topic/tgroup " cols="5">
+				<colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="1*"/>
+				<colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="3*"/>
+				<colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="1*"/>
+				<colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="2*"/>
+				<colspec class="- topic/colspec " colname="col5" colnum="5" colwidth="10*"/>
+				<thead class="- topic/thead ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Ref</entry>
+						<entry class="- topic/entry " colname="col2">Method</entry>
+						<entry class="- topic/entry " colname="col3">SIL 3</entry>
+						<entry class="- topic/entry " colname="col4">Applicable</entry>
+						<entry class="- topic/entry " colname="col5">How is this addressed for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design?</entry>
+					</row>
+				</thead>
+				<tbody class="- topic/tbody ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">1</entry>
+						<entry class="- topic/entry " colname="col2">Use of structured description</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5"><ph class="- topic/ph "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design is described in a structured way, based on required functionality. Major
+                design units and their functions are identified, and further refined in unit-level
+                design specifications.</ph></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">2</entry>
+						<entry class="- topic/entry " colname="col2">Design description done in high level hardware
+							description language</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">
+							<p class="- topic/p "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design is described in high level <term class="- topic/term ">Hardware Description Language</term> (HDL). </p>
+							<note class="- topic/note ">HDL as defined in IEC 61508-2:2010.</note>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">3</entry>
+						<entry class="- topic/entry " colname="col2">Use of schematic entry</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">No</entry>
+						<entry class="- topic/entry " colname="col5">Schematic entry is not used for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design. HDL description is used instead.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">4</entry>
+						<entry class="- topic/entry " colname="col2">Use of HDL simulation</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">Simulation is used throughout design and
+							verification activities.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">5</entry>
+						<entry class="- topic/entry " colname="col2">Use of HDL simulators with known properties</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">Properties of HDL simulators used for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							design and test activities are well known.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">6</entry>
+						<entry class="- topic/entry " colname="col2">Module level functional testing</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5"><ph class="- topic/ph "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> verification strategy includes block-level
+                verification.</ph></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">7</entry>
+						<entry class="- topic/entry " colname="col2">Top level functional testing</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5"><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> verification strategy includes top-level
+							verification.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">8</entry>
+						<entry class="- topic/entry " colname="col2">System level functional testing</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5"><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> verification strategy includes system-level
+							verification.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">9</entry>
+						<entry class="- topic/entry " colname="col2">Limited use of asynchronous constructs</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">Design guidelines used for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							require the use of synchronous constructs.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">10</entry>
+						<entry class="- topic/entry " colname="col2">
+							<p class="- topic/p ">Synchronization of primary inputs and control of metastability </p>
+						</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">Design guidelines used for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							contain requirements for synchronization and control of
+							metastability.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">11</entry>
+						<entry class="- topic/entry " colname="col2">Design for testability</entry>
+						<entry class="- topic/entry " colname="col3">R</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">Design guidelines used for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							include considerations for testability.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">12</entry>
+						<entry class="- topic/entry " colname="col2">Use of modular design</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5"><ph class="- topic/ph "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> design is modular, both at the level of design
+                specifications, and at the design implementation (RTL) level where applicable.</ph></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">13</entry>
+						<entry class="- topic/entry " colname="col2">Defined coverage for the verification
+							scenarios</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">Test coverage target values and metrics are defined
+							as part of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> verification strategy. The metrics are used to
+							determine the completeness of verification for <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">14</entry>
+						<entry class="- topic/entry " colname="col2">Observation of coding guidelines</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5"><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> HDL design guidelines are enforced through tools
+							and RTL inspections.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">15</entry>
+						<entry class="- topic/entry " colname="col2">Use of code checker</entry>
+						<entry class="- topic/entry " colname="col3">R</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">RTL code checker is used to check <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+							RTL conformance to HDL design and coding guidelines.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">16</entry>
+						<entry class="- topic/entry " colname="col2">Use of defensive programming</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">Defensive measures have been used in the form of
+							formal properties such as assertions.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">17</entry>
+						<entry class="- topic/entry " colname="col2">Documentation of simulation results</entry>
+						<entry class="- topic/entry " colname="col3">HR </entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5"><ph class="- topic/ph ">Test results and test data have been collected,
+                analyzed, and documented.</ph>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">18a</entry>
+						<entry class="- topic/entry " colname="col2">HDL code inspection</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">Yes</entry>
+						<entry class="- topic/entry " colname="col5">
+							<p class="- topic/p ">RTL code reviews are done through inspection, with
+								independent reviewer, and second independent person being
+								responsible for review sign-off. </p>
+							<p class="- topic/p ">Reviews are structured based on a pre-defined list
+								of questions.</p>
+						</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">19a</entry>
+						<entry class="- topic/entry " colname="col2">Application of validated soft-cores</entry>
+						<entry class="- topic/entry " colname="col3">HR</entry>
+						<entry class="- topic/entry " colname="col4">No</entry>
+						<entry class="- topic/entry " colname="col5">No soft-cores are used.</entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">19b</entry>
+						<entry class="- topic/entry " colname="col2">Validation of soft-cores</entry>
+						<entry class="- topic/entry " colname="col3">HR </entry>
+						<entry class="- topic/entry " colname="col4">No</entry>
+						<entry class="- topic/entry " colname="col5">No soft-cores are used.</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+
+	</conbody>
+</concept>

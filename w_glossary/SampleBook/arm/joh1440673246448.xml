@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440673246448" xml:lang="en-us">
+  <title class="- topic/title ">Core interfaces</title>
+  <shortdesc class="- topic/shortdesc ">System register access allows the core to directly access certain
+    debug registers.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p "/>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Debug registers</dt>
+          <dd class="- topic/dd ">This function is system register based and memory-mapped. You can
+            access the debug register map using the <term keyref="apb">APB</term> slave port.The external <term keyref="debuginterface">debug interface</term> enables both external and self-hosted debug
+        agents to access debug registers. Access to the debug registers is partitioned as
+        follows:</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Performance monitor</dt>
+          <dd class="- topic/dd ">This function is system register based and memory-mapped. You can
+            access the performance monitor registers using the  slave port.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Activity monitor</dt>
+          <dd class="- topic/dd ">This function is system register based and memory-mapped. You can access the activity monitor registers using the  slave port.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Trace registers</dt>
+          <dd class="- topic/dd ">This function is memory-mapped.</dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ELA registers</dt>
+          <dd class="- topic/dd ">This function is memory-mapped.</dd>
+        </dlentry>
+      </dl>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><link class="- topic/link " format="dita" href="joh1440673344537.xml" role="friend" scope="local" type="reference"><linktext class="- topic/linktext ">External debug interface</linktext><desc class="- topic/desc ">For information about external debug interface, including debug memory     map and debug signals, see the <ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">                             <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>                                     Shared Unit</keyword></ph> Technical Reference Manual</ph></cite></ph>.</desc></link></linkpool></related-links></reference>

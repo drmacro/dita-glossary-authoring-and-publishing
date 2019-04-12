@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="programstatusregister">
+  <glossterm>Program Status Register</glossterm>
+  <glossdef>Holds processor status and control information. The Current Program Status Register (CPSR) is the active PSR that affects processor operation. The Saved Program Status Register (SPSR) is a copy of the CPSR saved by the hardware.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="via">
+  <glossterm>VIA</glossterm>
+  <glossdef>A conductive connection between different layers of an integrated circuit. VIA is always written in uppercase.</glossdef>
+</glossentry>

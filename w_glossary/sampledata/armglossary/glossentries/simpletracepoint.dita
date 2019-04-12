@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="simpletracepoint">
+  <glossterm>simple tracepoint</glossterm>
+  <glossdef>A type of tracepoint that enables you to set trigger points, trace start and end points, or trace ranges for memory and data accesses.See Also Tracepoint.</glossdef>
+</glossentry>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443447647886" xml:lang="en-us">
+  <title class="- topic/title " id="TitlePhysicalAddressRegister_EL1">PAR_EL1, Physical Address Register, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The PAR_EL1 returns the output address from an address translation
+    instruction that executed successfully, or fault information if the instruction did not execute
+    successfully.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions, <term keyref="pa">PA</term>R_EL1.F is 0</title>
+      <p class="- topic/p ">The following figure shows the R bit assignments when R.F is 0.</p>
+      <fig class="- topic/fig " id="fig_l1q_tx4_mv">
+        <title class="- topic/title ">R bit assignments, R_EL1.F is 0</title>
+        <image class="- topic/image " href="joh1460381674343.svg" id="image_hdh_qst_mv" placement="inline">
+          <alt class="- topic/alt ">R_EL1 bit assignments, R.F is 0.</alt>
+        </image>
+      </fig>
+      
+      
+      
+      
+      
+      
+      
+      
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IMP DEF, [10]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p "><term class="- topic/term " outputclass="archterm">IMPLEMENTATION
+                DEFINED</term>. Bit[10] is <term class="- topic/term " outputclass="archterm">RES0</term>. </p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">F, [0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates whether the instruction performed a successful address
+              translation.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+                <dd class="- topic/dd ">Address translation completed successfully.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+                <dd class="- topic/dd ">Address translation <term keyref="abort">abort</term>ed.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">There are no configuration notes.</p>
+            <p class="- topic/p ">Bit fields and details that are not provided in this description are
+              architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions, R_EL1.F is 1</title>
+      <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+  </refbody>
+</reference>
