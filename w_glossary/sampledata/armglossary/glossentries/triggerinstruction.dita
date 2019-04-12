@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="triggerinstruction">
+  <glossterm>trigger instruction</glossterm>
+  <glossdef>In a floating-point implementation that requires a floating-point subarchitecture, a trigger instruction is a floating-point instruction that causes a bounce when it is issued.</glossdef>
+</glossentry>

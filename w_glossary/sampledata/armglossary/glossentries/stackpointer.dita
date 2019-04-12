@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="stackpointer">
+  <glossterm>stack pointer</glossterm>
+  <glossdef>On Arm cores, SP refers to the stack pointer for the hardware-managed stack, and: In AArch32 state, the SP is register R13 in the general-purpose register file. In AArch64 state, there is a dedicated SP for each implemented Exception level.</glossdef>
+</glossentry>

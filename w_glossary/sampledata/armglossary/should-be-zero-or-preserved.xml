@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
-<glossentry id="should-be-zero-or-preserved">
-  <glossterm>Should-Be-Zero-or-Preserved</glossterm>
-  <glossdef>The Large Physical Address Extension modifies the definition of SBZP for register bits that are reallocated by the extension, and as a result are SBZP in some but not all contexts. For more information see the Arm Architecture Reference Manual, Armv7-A and Armv7-R edition. The generic definition of SBZP given here applies only to bits that are not affected by this modification.Hardware must ignore writes to the field.When writing this field, software must either write all 1s to this field, or, if the register is being restored from a previously read state, this field must be written previously read value. If this is not done, then the result is UNPREDICTABLE.This description can apply to a single bit that should be written as its preserved value or as 0, or to a field that should be written as its preserved value or as all 0s.See Also Should-Be-One-or-Preserved (SBOP) and Should-Be-Zero (SBZ).</glossdef>
-</glossentry>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443445754052" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32MemoryModelFeatureRegister0_EL1">ID_MMFR0_EL1, AArch32 Memory Model Feature Register 0,
+		EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_MMFR0_EL1 provides information about the memory model and memory management support in
+		AArch32.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_MMFR0_EL1 is a 32-bit register, and is part of the Identification registers functional
+				group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_bpp_t4s_4v">
+        <title class="- topic/title ">ID_MMFR0_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1443445778078.svg" id="image_htp_t4s_4v" placement="inline">
+          <alt class="- topic/alt ">ID_MMFR0_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">InnerShr, [31:28]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the innermost shareability domain implemented:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+       
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  
+                </dt>
+                <dd class="- topic/dd ">Implemented with hardware coherency support.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">FCSE, [27:24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates support for <term class="- topic/term ">Fast Context Switch Extension</term>
+							(FCSE):</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                 
+                  <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  
+                </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">AuxReg, [23:20]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates support for Auxiliary registers:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                </dt>
+                <dd class="- topic/dd ">Support for Auxiliary Fault Status Registers (AIFSR and ADFSR) and Auxiliary
+									Control Register.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt "><term keyref="tcm">TCM</term>, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates support for s and associated DMAs:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                 
+                  <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  
+                </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ShareLvl, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the number of shareability levels implemented:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+               
+                  <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  
+                </dt>
+                <dd class="- topic/dd ">Two levels of shareability implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">OuterShr, [11:8]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the outermost shareability domain implemented:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+              
+                  <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  
+                </dt>
+                <dd class="- topic/dd ">Implemented with hardware coherency support.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">PMSA, [7:4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates support for a <term class="- topic/term ">Protected Memory System
+								Architecture</term> (PMSA):</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+            
+                  <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  
+                </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">VMSA, [3:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates support for a <term class="- topic/term ">Virtual Memory System
+								Architecture</term> (VMSA).</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <ph class="- topic/ph " otherprops="g.number.hex">5</ph>
+                  
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Support for:</p>
+                  <ul class="- topic/ul " id="ul_zvp_t4s_4v">
+                    <li class="- topic/li ">VMSAv7, with support for <term keyref="remapping">remapping</term> and the Access flag.</li>
+                    <li class="- topic/li ">The PXN bit in the Short-descriptor <term keyref="translationtable">translation table</term> format
+											descriptors.</li>
+                    <li class="- topic/li ">The Long-descriptor  format.</li>
+                  </ul>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">Must be interpreted with ID_MMFR1_EL1, ID_MMFR2_EL1, ID_MMFR3_EL1, and ID_MMFR4_EL1.
+							See:</p>
+            <ul class="- topic/ul " id="ul_npt_ywc_gv">
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445820394.xml" keyref="IdMmfr1El1Aarch32MemoryModelFeatureRegister1El1" type="reference">ID_MMFR1_EL1, <term keyref="aarch32">AArch32</term> Memory Model Feature Register 1, EL1<desc class="- topic/desc ">The ID_MMFR1_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445885040.xml" keyref="IdMmfr2El1Aarch32MemoryModelFeatureRegister2El1" type="reference">ID_MMFR2_EL1,  Memory Model Feature Register 2, EL1<desc class="- topic/desc ">The ID_MMFR2_EL1 provides information about the implemented memory model     and memory management support in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445969299.xml" keyref="IdMmfr3El1Aarch32MemoryModelFeatureRegister3El1" type="reference">ID_MMFR3_EL1,  Memory Model Feature Register 3, EL1<desc class="- topic/desc ">The ID_MMFR3_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="joh1445266072993.xml" keyref="IdMmfr4El1Aarch32MemoryModelFeatureRegister4El1" type="reference">ID_MMFR4_EL1,  Memory Model Feature Register 4, EL1<desc class="- topic/desc ">The ID_MMFR4_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

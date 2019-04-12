@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="testaccessport">
+  <glossterm>Test Access Port</glossterm>
+  <glossdef>The collection of four mandatory and one optional terminals that form the input/output and control interface to a JTAG boundary-scan architecture. The mandatory terminals are TDI, TDO, TMS, and TCK. In the JTAG standard, the nTRST signal is optional, but this signal is mandatory in Arm processors because it is used to reset the debug logic. -or- Talent Assessment Programme - Numerical performance review rating</glossdef>
+</glossentry>

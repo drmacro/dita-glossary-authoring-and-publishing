@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443446043975" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32ProcessorFeatureRegister0_EL1">ID_PFR0_EL1, AArch32
+    Processor Feature Register 0, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_PFR0_EL1 provides top-level information about the instruction
+    sets supported by the core in AArch32.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_PFR0_EL1 is a 32-bit register, and is part of the Identification
+        registers functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_lxw_2bw_pv">
+        <title class="- topic/title ">ID_PFR0_EL1 bit assignments</title>
+        
+        <image class="- topic/image " href="vyi1523021485301.svg" placement="inline">
+          <alt class="- topic/alt ">ID_PFR0_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RAS, [31:28]</dt>
+          <dd class="- topic/dd "> <p class="- topic/p ">RAS extension version. The value is:</p> <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></codeph> </dt>
+              <dd class="- topic/dd "> <p class="- topic/p ">Version 1 of the RAS extension is present.</p> </dd>
+            </dlentry>
+            </dl> </dd>
+        </dlentry>
+        
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [27:20]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <term class="- topic/term " outputclass="archterm">RES0</term> </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CSV2, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></codeph></dt>
+                <dd class="- topic/dd ">This <term keyref="device">device</term> does not disclose whether branch targets trained in one context can affect speculative execution in a different context.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></codeph></dt>
+                <dd class="- topic/dd ">Branch targets trained in one context cannot affect speculative execution in a different hardware described context. This is the reset value. </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">State3, [15:12]</dt>
+          <dd class="- topic/dd "> <p class="- topic/p ">Indicates support for <term class="- topic/term ">Thumb Execution
+              Environment</term> (<term keyref="t32">T32</term>EE) instruction set. This value is:</p> <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "> <ph class="- topic/ph " otherprops="g.number.hex">0</ph> </codeph> </dt>
+              <dd class="- topic/dd ">Core does not support the EE instruction set.</dd>
+            </dlentry>
+            </dl> </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">State2, [11:8]</dt>
+          <dd class="- topic/dd "> <p class="- topic/p ">Indicates support for Jazelle. This value is:</p> <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "> <ph class="- topic/ph " otherprops="g.number.hex">1</ph> </codeph> </dt>
+              <dd class="- topic/dd ">Core supports trivial implementation of Jazelle.</dd>
+            </dlentry>
+            </dl> </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">State1, [7:4]</dt>
+          <dd class="- topic/dd "> <p class="- topic/p ">Indicates support for  instruction set. This value is:</p> <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "> <ph class="- topic/ph " otherprops="g.number.hex">3</ph> </codeph> </dt>
+              <dd class="- topic/dd ">Core supports  encoding after the introduction of <term keyref="thumb_2">Thumb-2</term>
+                  technology, and for all 16-bit and 32-bit  basic instructions.</dd>
+            </dlentry>
+            </dl> </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">State0, [3:0]</dt>
+          <dd class="- topic/dd "> <p class="- topic/p ">Indicates support for <term keyref="a32">A32</term> instruction set. This value is:</p> <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "> <codeph class="+ topic/ph pr-d/codeph "> <ph class="- topic/ph " otherprops="g.number.hex">1</ph> </codeph> </dt>
+              <dd class="- topic/dd "> instruction set implemented.</dd>
+            </dlentry>
+            </dl> </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          
+          <dd class="- topic/dd ">There are no configuration notes.</dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

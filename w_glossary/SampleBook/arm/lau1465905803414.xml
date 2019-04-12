@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1465905803414" xml:lang="en-us">
+	<title class="- topic/title ">Power domains</title>
+	<shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core contains a core power domain (PDCPU), and a core top-level SYS power domain (PDSYS) where all the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core I/O signals go through.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The PDCPU power domain contains all <codeph class="+ topic/ph pr-d/codeph "><keyword class="- topic/keyword ">enyo</keyword>_cpu</codeph> logic and part of the <term keyref="core">core</term> asynchronous bridge that belongs to the VCPU domain. The <term keyref="advancedsimd">Advanced SIMD</term> and <term keyref="floating_point">floating-point</term> unit are included in the PDCPU power domain and is not supported as a separate power domain. The L1 and L2 RAMs are included in the PDCPU power domain and are not part of a separate power domain.</p>
+			<p class="- topic/p ">The PDSYS power domain contains the part of the  asynchronous bridge that belongs to the <keyword class="- topic/keyword ">DSU</keyword> power domain.</p>
+			<note class="- topic/note ">There are additional system power domains in the <keyword class="- topic/keyword ">DSU</keyword>. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite> for information.</note>
+			<p class="- topic/p ">The following table shows the power domain that the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  supports.</p>
+
+			<table class="- topic/table " colsep="0" frame="topbot" id="table_egd_ltt_4t" rowsep="0">
+				<title class="- topic/title ">Power domain description</title>
+				<tgroup class="- topic/tgroup " cols="3">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><colspec class="- topic/colspec " colname="col3" colnum="3"/><thead class="- topic/thead ">
+						<row class="- topic/row " rowsep="1">
+							<entry class="- topic/entry " colname="col1">Power domain</entry>
+							<entry class="- topic/entry " colname="col2">Hierarchy</entry>
+							<entry class="- topic/entry " colname="col3">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row " rowsep="1">
+							<entry class="- topic/entry " colname="col1">PDCPU&lt;n&gt;</entry>
+							<entry class="- topic/entry " colname="col2"><filepath class="+ topic/ph sw-d/filepath ">u_vcpu</filepath></entry>
+							<entry class="- topic/entry " colname="col3">
+								
+								<p class="- topic/p ">The domain includes the  and  block, the L1 and L2 <term keyref="tlb">TLB</term>s, L1 and L2 cache RAMs, and Debug registers that are associated with the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</p>
+								<p class="- topic/p ">&lt;n&gt; is the number of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> s. The number represents  0,  1,  2, and  3. If a  is not present, the corresponding power domain is not present.</p>
+							</entry>
+						</row>
+						<row class="- topic/row " rowsep="1">
+							<entry class="- topic/entry " colname="col1">PDSYS</entry>
+							<entry class="- topic/entry " colname="col2">Top-level hierarchy and everything outside <filepath class="+ topic/ph sw-d/filepath ">u_vcpu</filepath></entry>
+							<entry class="- topic/entry " colname="col3">
+								<p class="- topic/p ">The domain is the interface between <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> and the <keyword class="- topic/keyword ">DSU</keyword>. It contains the <term keyref="cluster">cluster</term> clock domain logic of the CPU bridge. The CPU Bridge contains all asynchronous bridges for crossing clock domains, and is split with one half of each bridge in the  clock domain and the other half in the relevant  domain. All  I/O signals go through the CPU bridge and the SYS power domain.</p>
+								<p class="- topic/p ">The domain is shared between the and hierarchies, and contains:</p>
+								<ul class="- topic/ul ">
+									<li class="- topic/li ">Anything outside of the  power domain (<filepath class="+ topic/ph sw-d/filepath ">u_vcpu</filepath> hierarchy).</li>
+									<li class="- topic/li "><filepath class="+ topic/ph sw-d/filepath ">u_cb_sys</filepath>.</li>
+								</ul>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<p class="- topic/p ">Clamping cells between power domains are inferred through power intent files rather than instantiated in the RTL.</p>
+			<p class="- topic/p ">The following figure shows an example of the organization of the power domains.</p>
+			<fig class="- topic/fig ">
+            <title class="- topic/title "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  power domain diagram at <keyword class="- topic/keyword ">enyo</keyword>_
+                level</title>
+            <image class="- topic/image " href="hxh1477574247335.svg" placement="inline">
+                <alt class="- topic/alt "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  power domain diagram at <keyword class="- topic/keyword ">enyo</keyword>_
+                    level</alt>
+            </image>
+        </fig>
+			<p class="- topic/p ">The following figure shows the power domains in the <keyword class="- topic/keyword ">DSU</keyword>, where everything in the same color is part of the same power domain. The example shows four <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> s. The number of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> s can vary, and the number of domains increases based on the number of <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> s present. </p>
+			<p class="- topic/p ">This example only shows the power domains that are associated with the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> s, other power domains are required for a <keyword class="- topic/keyword ">DSU</keyword>. </p>
+			<fig class="- topic/fig ">
+            <title class="- topic/title "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> power domains at <keyword class="- topic/keyword ">enyo</keyword>_ level</title>
+            <image class="- topic/image " href="sgp1477576638188.svg" placement="inline">
+                <alt class="- topic/alt "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> power domains at <keyword class="- topic/keyword ">enyo</keyword>_
+                    level</alt>
+            </image>
+        </fig>
+			
+			
+		</section>
+	</refbody>
+</reference>

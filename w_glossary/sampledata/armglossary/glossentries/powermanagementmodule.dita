@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="powermanagementmodule">
+  <glossterm>Power Management Module</glossterm>
+  <glossdef>In the context of graphics processors, a software routine that tracks the hardware blocks which can be enabled or disabled to reduce power. The PMM can control a specialized hardware unit, or a third-party power-management device, to power up or down each processor separately.</glossdef>
+</glossentry>

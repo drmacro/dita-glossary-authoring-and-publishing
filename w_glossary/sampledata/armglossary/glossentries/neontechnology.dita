@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="neontechnology">
+  <glossterm>NEON technology</glossterm>
+  <glossdef>The ARM technology that provides SIMD processing using a dedicated SIMD and floating-point register bank. Registers in this bank can be accessed as 128-bit registers, 64-bit registers, 32-bit registers, 16-bit registers, or 8-bit registers.</glossdef>
+</glossentry>

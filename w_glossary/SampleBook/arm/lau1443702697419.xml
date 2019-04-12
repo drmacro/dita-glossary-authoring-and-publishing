@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443702697419" xml:lang="en-us">
+  <title class="- topic/title ">TRCOSLSR, OS Lock Status Register</title>
+  <shortdesc class="- topic/shortdesc ">The TRCOSLSR returns the status of the OS Lock.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The TRCOSLSR is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCOSLSR bit assignments</title>
+        <image class="- topic/image " href="lau1443702736815.svg" placement="inline">
+          <alt class="- topic/alt ">TRCOSLSR bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:4]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">OSLM[1], [3]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">OS Lock model [1] bit. This bit is combined with
+              OSLM[0] to form a two-bit field that indicates the OS Lock model is implemented.</p><p class="- topic/p ">The value of this field is always <codeph class="+ topic/ph pr-d/codeph ">0b10</codeph>, indicating that the OS Lock is implemented.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">nTT, [2]</dt>
+          <dd class="- topic/dd ">This bit is <term keyref="raz">RAZ</term>, that indicates that software must perform a 32-bit
+            write to update the TRCOSLAR.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">OSLK, [1]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">OS Lock status bit:</p><dl class="- topic/dl " compact="yes">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">OS Lock is unlocked.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">OS Lock is locked.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">OSLM[0], [0]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">OS Lock model [0] bit. This bit is combined with
+              OSLM[1] to form a two-bit field that indicates the OS Lock model is implemented.</p><p class="- topic/p ">The value of this field is always <codeph class="+ topic/ph pr-d/codeph ">0b10</codeph>, indicating that the OS Lock is implemented.</p></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The TRCOSLSR can be accessed through the external <term keyref="debuginterface">debug interface</term>, offset <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">304</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

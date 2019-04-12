@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="traceportinterfaceunit">
+  <glossterm>Trace Port Interface Unit</glossterm>
+  <glossdef>Drains trace data and acts as a bridge between the on-chip trace data and the data stream captured by a TPA.</glossdef>
+</glossentry>

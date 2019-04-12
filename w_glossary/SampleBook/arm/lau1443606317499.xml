@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443606317499" xml:lang="en-us">
+  <title class="- topic/title ">EDCIDR0, External Debug Component Identification Register 0</title>
+  <shortdesc class="- topic/shortdesc ">The EDCIDR0 provides information to identify an external debug
+    component.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The EDCIDR0 is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">EDCIDR0 bit assignments</title>
+        <image class="- topic/image " href="jus1453971934820.svg" placement="inline">
+          <alt class="- topic/alt ">EDCIDR0 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:8]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">PRMBL_0, [7:0]</dt>
+          <dd class="- topic/dd "><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0D</ph></codeph></dt>
+                <dd class="- topic/dd ">Preamble byte 0.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The EDCIDR0 can be accessed through the external <term keyref="debuginterface">debug interface</term>, offset <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">FF0</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

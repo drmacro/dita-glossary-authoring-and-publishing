@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="canonicalframeaddress">
+  <glossterm>Canonical Frame Address</glossterm>
+  <glossdef>In Debug With Arbitrary Record Format (DWARF), this is an address on the stack specifying where the call frame of an interrupted function is located.</glossdef>
+</glossentry>

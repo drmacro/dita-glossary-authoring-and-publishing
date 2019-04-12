@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="intermediatephysicaladdress">
+  <glossterm>intermediate physical address</glossterm>
+  <glossdef>Do not capitalize the i, p or a of intermediate physical address. In an implementation of virtualization, the address to which a Guest OS maps a virtual address.See Also Virtual Address (VA) and Physical Address (PA).</glossdef>
+</glossentry>

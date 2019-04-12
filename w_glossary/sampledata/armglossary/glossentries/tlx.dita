@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="tlx">
+  <glossterm>TLX</glossterm>
+  <glossdef>A protocol to reduce the number of signals in an AXI point-to-point connection to simplify routing.</glossdef>
+</glossentry>

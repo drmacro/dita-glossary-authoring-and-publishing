@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="pu">
+  <glossterm>PU</glossterm>
+  <glossdef>A hardware unit that controls a limited number of protection regions in memory. A n MPU is the major component of an Arm Protected Memory System Architecture (PMSA).</glossdef>
+</glossentry>

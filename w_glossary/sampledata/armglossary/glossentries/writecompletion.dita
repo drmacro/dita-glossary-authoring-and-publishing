@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="writecompletion">
+  <glossterm>write completion</glossterm>
+  <glossdef>The memory system indicates to the core that a write is complete at a point in the transaction where the memory system can guarantee that the write is observable by all processors in the system. An additional recommendation for Device-nGnRnE memory (Strongly-ordered memory), is that a write to a memory-mapped peripheral is complete only when it reaches that memory-mapped peripheral and therefore can trigger any side effects caused by the memory-mapped peripheral. Write completion is not required to ensure that all side effects are globally visible, although some peripherals might define this as a required property of completed writes.</glossdef>
+</glossentry>

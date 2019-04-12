@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="branchfolding">
+  <glossterm>branch folding</glossterm>
+  <glossdef>A technique where, on the prediction of a branch, the target instructions are completely removed from the instruction stream presented to the execution pipeline. Branch folding can significantly improve the performance of branches, and take the CPI for branches below one.</glossdef>
+</glossentry>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="bpu1483524952193" xml:lang="en-us">
+	<title class="- topic/title ">AArch64 AMU register summary</title>
+	<shortdesc class="- topic/shortdesc ">The following table gives a summary of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> AMU registers in the
+		AArch64 Execution state.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<table class="- topic/table ">
+			<title class="- topic/title ">AArch64 AMU registers</title>
+			<tgroup class="- topic/tgroup " cols="4" colsep="0" rowsep="0">
+				<colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0"/>
+				<colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0"/>
+				<colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0"/>
+				<colspec class="- topic/colspec " colname="col4" colnum="4" colsep="0"/>
+				<thead class="- topic/thead ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Name</entry>
+						<entry class="- topic/entry " colname="col2">Width</entry>
+						<entry class="- topic/entry " colname="col3">Reset</entry>
+						<entry class="- topic/entry " colname="col4">Description</entry>
+					</row>
+				</thead>
+				<tbody class="- topic/tbody ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">AMCNTENCLR_EL0</entry>
+						<entry class="- topic/entry " colname="col2">32</entry>
+						<entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></entry>
+						<entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="yoh1483534950148.xml" keyref="amcntenclrel0" type="reference">AMCNTENCLR_EL0, Activity Monitors Count Enable Clear Register, EL0<desc class="- topic/desc ">The AMCNTENCLR_EL0 disables the activity monitor counters implemented, AMEVCNTR0-4.</desc></xref></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">AMCNTENSET_EL0</entry>
+						<entry class="- topic/entry " colname="col2">32</entry>
+						<entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></entry>
+						<entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="lxh1483535755178.xml" keyref="amcntensetelo" type="reference">AMCNTENSET_EL0, Activity Monitors Count Enable Set Register, EL0<desc class="- topic/desc ">The AMCNTENSET_EL0 enables the activity monitor counters implemented, 		AMEVCNTRn (n is 0-4).</desc></xref></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">AMCFGR_EL0</entry>
+						<entry class="- topic/entry " colname="col2">32</entry>
+						<entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00003F04</ph></entry>
+						<entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="cxj1483536984411.xml" keyref="amcfgrel0" type="reference">AMCFGR_EL0, Activity Monitors Configuration Register, EL0<desc class="- topic/desc ">The AMCFGR_EL0 provides information on the number of activity counters 		implemented and their size. </desc></xref></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">AMUSERENR_EL0</entry>
+						<entry class="- topic/entry " colname="col2">32</entry>
+						<entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></entry>
+						<entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="orf1483602317618.xml" keyref="amuserenrel0" type="reference">AMUSERENR_EL0, Activity Monitor EL0 Enable access, EL0<desc class="- topic/desc ">The AMUSERENR_EL0 enables or disables EL0 access to the activity 		monitors. </desc></xref></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">AMEVCNTRn_EL0</entry>
+						<entry class="- topic/entry " colname="col2">64</entry>
+						<entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">0000000000000000</ph></entry>
+						<entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="pak1483604323973.xml" keyref="amxevcntrel0" type="reference">AMEVCNTRn_EL0, Activity Monitor <term keyref="event">Event</term> Counter Register, EL0<desc class="- topic/desc ">The activity counters AMEVCNTRn_EL0 are directly accessible in the memory 		mapped-view. n is 0-4.</desc></xref></entry>
+					</row>
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">AMEVTYPERn_EL0</entry>
+						<entry class="- topic/entry " colname="col2">32</entry>
+						<entry class="- topic/entry " colname="col3">
+							<p class="- topic/p ">The reset value depends on the register:</p>
+							<ul class="- topic/ul ">
+								<li class="- topic/li ">AMEVTYPER0_EL0 = <ph class="- topic/ph " otherprops="g.number.hex">00000011</ph>.</li>
+								<li class="- topic/li ">AMEVTYPER1_EL0 = <ph class="- topic/ph " otherprops="g.number.hex">000000EF</ph>.</li>
+								<li class="- topic/li ">AMEVTYPER2_EL0 = <ph class="- topic/ph " otherprops="g.number.hex">00000008</ph>.</li>
+								
+								<li class="- topic/li ">AMEVTYPER3_EL0 = <ph class="- topic/ph " otherprops="g.number.hex">000000F0</ph>.</li>
+								<li class="- topic/li ">AMEVTYPER4_EL0 = <ph class="- topic/ph " otherprops="g.number.hex">000000F1</ph>.</li>
+							</ul>
+						</entry>
+						<entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="xwa1483605345151.xml" keyref="amxevtyperel0" type="reference">AMEVTYPERn_EL0, Activity Monitor  Type Register, EL0<desc class="- topic/desc ">The activity counters AMEVTYPER_EL0n are directly accessible in the memory mapped view, where n is 0-4.</desc></xref></entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+	</refbody>
+</reference>

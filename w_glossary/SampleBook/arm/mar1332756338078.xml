@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="mar1332756338078" xml:lang="en-us">
+	<title class="- topic/title ">About the ETM</title>
+	
+	<shortdesc class="- topic/shortdesc ">The ETM trace unit is a module that performs real-time instruction flow
+		tracing based on the ETMv4 architecture. The ETM is a CoreSight component, and is an integral
+		part of the <keyword class="- topic/keyword ">Arm</keyword> Real-time Debug solution, DS-5 Development Studio.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		</prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p "> See the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <term keyref="embeddedtracemacrocell">Embedded Trace Macrocell</term> Architecture Specification <term keyref="etm">ETM</term>v4</ph></cite> for more
+				information.</p>
+		</section>
+	</conbody>
+</concept>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="ace">
+  <glossterm>ACE</glossterm>
+  <glossdef>The AXI Coherency Extensions (ACE) provide additional channels and signaling to an AXI interface to support system level cache coherency.</glossdef>
+</glossentry>

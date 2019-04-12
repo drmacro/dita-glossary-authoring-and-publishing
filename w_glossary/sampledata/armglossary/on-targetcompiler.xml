@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
-<glossentry id="on-targetcompiler">
-  <glossterm>on-target compiler</glossterm>
-  <glossdef>A component of the Mali GPU OpenGL ES 2.0 driver that translates shader source files provided by the graphics application, into binary shader code, at runtime.</glossdef>
-</glossentry>

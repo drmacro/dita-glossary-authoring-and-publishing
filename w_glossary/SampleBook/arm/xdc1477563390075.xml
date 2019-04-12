@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="xdc1477563390075" xml:lang="en-us">
+  <title class="- topic/title ">Supported standards and specifications</title>
+
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implements the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8‑A</keyword></ph>
+    architecture and some architecture extensions. It also supports interconnect, interrupt, timer,
+    debug, and trace architectures.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+
+        <table class="- topic/table " id="table_irv_52y_bq">
+                <title class="- topic/title ">Compliance with standards and specifications</title>
+                <tgroup class="- topic/tgroup " cols="3">
+                    <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+                    <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+                    <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+                    <thead class="- topic/thead ">
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1">Architecture specification or standard</entry>
+                            <entry class="- topic/entry " colname="col2">Version</entry>
+                            <entry class="- topic/entry " colname="col3">Notes</entry>
+                        </row>
+                    </thead>
+                    <tbody class="- topic/tbody ">
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1"><keyword class="- topic/keyword ">Arm</keyword> architecture</entry>
+                            <entry class="- topic/entry " colname="col2">
+                                <p class="- topic/p "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8‑A</keyword></ph></p>
+                            </entry>
+                            <entry class="- topic/entry " colname="col3">
+                                <ul class="- topic/ul ">
+                                    <li class="- topic/li ">AArch32 execution state at <term keyref="exceptionlevel">Exception level</term> EL0 only. <term keyref="aarch64">AArch64</term> execution state at all s (EL0-EL3). </li>
+                                    <li class="- topic/li ">A64, <term keyref="a32">A32</term>, and <term keyref="t32">T32</term> instruction sets.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1">Arm architecture extensions</entry>
+                            <entry class="- topic/entry " colname="col2">
+                                <ul class="- topic/ul ">
+                                    <li class="- topic/li "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.1‑A</keyword></ph> extensions </li>
+                                    <li class="- topic/li "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.2‑A</keyword></ph> extensions</li>
+                                    <li class="- topic/li ">
+                                        <p class="- topic/p ">Cryptographic extension</p>
+                                    </li>
+                                    <li class="- topic/li ">RAS extension</li>
+                                    
+                                    <li class="- topic/li "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.3‑A</keyword></ph> extensions</li>
+                                    <li class="- topic/li "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.4‑A</keyword></ph> dot product instructions</li>
+                                    
+                                    <li class="- topic/li "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.5‑A</keyword></ph> extensions</li>
+                                </ul>
+                            </entry>
+                            <entry class="- topic/entry " colname="col3">
+                                <ul class="- topic/ul ">
+                                    <li class="- topic/li ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> <term keyref="core">core</term> implements the <codeph class="+ topic/ph pr-d/codeph ">LDAPR</codeph> instructions introduced in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.3‑A</keyword></ph> extensions.</li>
+                                    <li class="- topic/li ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  implements the <codeph class="+ topic/ph pr-d/codeph ">SDOT</codeph> and <codeph class="+ topic/ph pr-d/codeph ">UDOT</codeph> instructions introduced in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.4‑A</keyword></ph> extensions.</li>
+                                    <li class="- topic/li ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  implements the PSTATE <term class="- topic/term ">Speculative Store Bypass Safe</term> (SSBS) bit introduced in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.5‑A</keyword></ph> extension.</li>
+                                    
+                                    
+                                </ul>
+                            </entry>
+                        </row>
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1">Generic Interrupt Controller</entry>
+                            <entry class="- topic/entry " colname="col2">GICv4</entry>
+                            <entry class="- topic/entry " colname="col3">-</entry>
+                        </row>
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1">Generic Timer</entry>
+                            <entry class="- topic/entry " colname="col2"><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8‑A</keyword></ph></entry>
+                            <entry class="- topic/entry " colname="col3">64-bit external system counter with timers within each . </entry>
+                        </row>
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1">PMU</entry>
+                            <entry class="- topic/entry " colname="col2">PMUv3</entry>
+                            <entry class="- topic/entry " colname="col3">-</entry>
+                        </row>
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1">Debug</entry>
+                            <entry class="- topic/entry " colname="col2"><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8‑A</keyword></ph></entry>
+                            <entry class="- topic/entry " colname="col3">With support for the debug features added by the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm>v8.2‑A</keyword></ph> extensions.</entry>
+                        </row>
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1">CoreSight</entry>
+                            <entry class="- topic/entry " colname="col2">CoreSightv3</entry>
+                            <entry class="- topic/entry " colname="col3">-</entry>
+                        </row>
+                        <row class="- topic/row ">
+                            <entry class="- topic/entry " colname="col1">Embedded Trace Macrocell</entry>
+                            <entry class="- topic/entry " colname="col2">ETMv4.2</entry>
+                            <entry class="- topic/entry " colname="col3">Instruction trace only.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+      <p class="- topic/p ">See <xref class="- topic/xref " href="ste1361895918258.xml" type="reference">[ARM STANDARD] Preface topic: Additional <term keyref="read">read</term>ing<desc class="- topic/desc ">Information published by <keyword class="- topic/keyword ">Arm</keyword> and by third parties.</desc></xref> for a list of architectural references. </p>
+
+    </section>
+  </refbody>
+</reference>

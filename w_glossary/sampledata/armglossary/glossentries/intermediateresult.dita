@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="intermediateresult">
+  <glossterm>Intermediate result</glossterm>
+  <glossdef>In floating-point operation, an internal format that is used to store the result of a calculation before rounding. This format can have a larger exponent field and fraction field than the destination format.</glossdef>
+</glossentry>

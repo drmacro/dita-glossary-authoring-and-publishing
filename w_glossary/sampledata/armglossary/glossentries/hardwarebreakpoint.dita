@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="hardwarebreakpoint">
+  <glossterm>hardware breakpoint</glossterm>
+  <glossdef>A breakpoint that is implemented using non-intrusive hardware. Hardware breakpoints are the only method of halting execution on a specific instruction when the instruction is located in Read Only Memory (ROM) or Flash. See Also Chained breakpoint and Data breakpoint.</glossdef>
+</glossentry>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443445885040" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32MemoryModelFeatureRegister2_EL1">ID_MMFR2_EL1, AArch32
+    Memory Model Feature Register 2, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_MMFR2_EL1 provides information about the implemented memory model
+    and memory management support in AArch32.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_MMFR2_EL1 is a 32-bit register, and is part of the Identification
+        registers functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_ajl_rss_4v">
+        <title class="- topic/title ">ID_MMFR2_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1443445912200.svg" id="image_mml_rss_4v" placement="inline">
+          <alt class="- topic/alt ">ID_MMFR2_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">HWAccFlg, [31:28]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Hardware access flag. Indicates support for a hardware access flag,
+              as part of the VMSAv7 implementation:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">WFIStall, [27:24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Wait For Interrupt Stall. Indicates the support for <term class="- topic/term ">Wait For Interrupt</term> (WFI) stalling:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">Support for WFI stalling.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">MemBarr, [23:20]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Memory Barrier. Indicates the supported CP15 memory barrier
+              operations.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Supported CP15 memory barrier operations are:</p>
+                  <ul class="- topic/ul " id="ul_epl_rss_4v">
+                    <li class="- topic/li "><term class="- topic/term ">Data Synchronization Barrier</term>
+                      (DSB).</li>
+                    <li class="- topic/li "><term class="- topic/term ">Instruction Synchronization
+                        Barrier</term> (ISB).</li>
+                    <li class="- topic/li "><term class="- topic/term ">Data Memory Barrier</term> (DMB).</li>
+                  </ul>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Uni<term keyref="tlb">TLB</term>, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Unified . Indicates the supported  maintenance operations, for
+              a unified  implementation.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">6</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Supported unified  maintenance operations are:</p>
+                  <ul class="- topic/ul " id="ul_opl_rss_4v">
+                    <li class="- topic/li ">Invalidate all entries in the .</li>
+                    <li class="- topic/li ">Invalidate  entry by <term keyref="mva">MVA</term>.</li>
+                    <li class="- topic/li ">Invalidate  entries by ASID match.</li>
+                    <li class="- topic/li ">Invalidate instruction  and data  entries by  All
+                      ASID. This is a shared unified  operation.</li>
+                    <li class="- topic/li ">Invalidate Hyp mode unified  entry by .</li>
+                    <li class="- topic/li ">Invalidate entire Non-secure EL1 and EL0 unified .</li>
+                    <li class="- topic/li ">Invalidate entire Hyp mode unified .</li>
+                    <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">ILIS</codeph>, <codeph class="+ topic/ph pr-d/codeph ">IALIS</codeph>, <codeph class="+ topic/ph pr-d/codeph ">ILHIS</codeph>, <codeph class="+ topic/ph pr-d/codeph ">IL</codeph>, <codeph class="+ topic/ph pr-d/codeph ">IAL</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">ILH</codeph>.</li>
+                    <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">IIPAS2IS</codeph>, <codeph class="+ topic/ph pr-d/codeph ">IIPAS2LIS</codeph>, <codeph class="+ topic/ph pr-d/codeph ">IIPAS2</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">IIPAS2L</codeph>.</li>
+                  </ul>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Hvd, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Harvard . Indicates the supported  maintenance operations, for
+              a Harvard  implementation:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Not supported.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">LL1HvdRng, [11:8]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">L1 Harvard cache Range. Indicates the supported L1 cache maintenance
+              range operations, for a Harvard cache implementation:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">L1HvdBG, [7:4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">L1 Harvard cache Background fetch. Indicates the supported L1 cache
+              background prefetch operations, for a Harvard cache implementation:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">L1HvdFG, [3:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">L1 Harvard cache Foreground fetch. Indicates the supported L1 cache
+              foreground prefetch operations, for a Harvard cache implementation:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">Must be interpreted with ID_MMFR0_EL1, ID_MMFR1_EL1, ID_MMFR3_EL1,
+              and ID_MMFR4_EL1. See:</p>
+            <ul class="- topic/ul " id="ul_npt_ywc_gv">
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445754052.xml" keyref="IdMmfr0El1Aarch32MemoryModelFeatureRegister0El1" type="reference">ID_MMFR0_EL1, <term keyref="aarch32">AArch32</term> Memory Model Feature Register 0, EL1<desc class="- topic/desc ">The ID_MMFR0_EL1 provides information about the memory model and memory management support in 		.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445820394.xml" keyref="IdMmfr1El1Aarch32MemoryModelFeatureRegister1El1" type="reference">ID_MMFR1_EL1,  Memory Model Feature Register 1, EL1<desc class="- topic/desc ">The ID_MMFR1_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445969299.xml" keyref="IdMmfr3El1Aarch32MemoryModelFeatureRegister3El1" type="reference">ID_MMFR3_EL1,  Memory Model Feature Register 3, EL1<desc class="- topic/desc ">The ID_MMFR3_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="joh1445266072993.xml" keyref="IdMmfr4El1Aarch32MemoryModelFeatureRegister4El1" type="reference">ID_MMFR4_EL1,  Memory Model Feature Register 4, EL1<desc class="- topic/desc ">The ID_MMFR4_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

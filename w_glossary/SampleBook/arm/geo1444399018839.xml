@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="geo1444399018839" xml:lang="en-us">
+  
+  <title class="- topic/title ">About the Generic Timer</title>
+  <shortdesc class="- topic/shortdesc ">The Generic Timer can schedule events and trigger interrupts that are
+    based on an incrementing counter value. It generates timer events as active-LOW interrupt
+    outputs and event streams.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+
+    <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> <term keyref="core">core</term> provides a set of timer registers. The timers are:</p>
+    
+    <ul class="- topic/ul ">
+      <li class="- topic/li ">An EL1 Non-secure physical timer.</li>
+      <li class="- topic/li ">An EL2 Hypervisor physical timer.</li>
+      <li class="- topic/li ">An EL3 Secure physical timer.</li>
+      <li class="- topic/li ">A virtual timer.</li>
+      <li class="- topic/li ">A Hypervisor virtual timer.</li>
+    </ul>
+    <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  does not include the system counter. This resides in the SoC. The system counter value is distributed to the  with a 64-bit bus.</p>
+
+
+    <p class="- topic/p ">For more information on the Generic Timer, see the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite> and the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+
+
+
+
+
+  </conbody>
+</concept>

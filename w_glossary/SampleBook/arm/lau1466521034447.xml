@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1466521034447" xml:lang="en-us">
+	<title class="- topic/title ">Uncorrected errors and data poisoning</title>
+	<shortdesc class="- topic/shortdesc ">When an error is detected, the correction mechanism is triggered.
+		However, if the error is a 2-bit error in a RAM protected by ECC, then the error is not
+		correctable.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The behavior on an uncorrected error depends on the type of RAM.</p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Uncorrected error detected in a data RAM</title>
+			<p class="- topic/p ">When an uncorrected error is detected in a data RAM, the chunk of data with the
+				error is marked as poisoned. This poison information is then transferred with the
+				data and stored in the cache if the data is allocated into another cache. The
+				poisoned information is stored per 64 bits of data, except in the L1 data cache where it is
+				stored per 32 bits of data.</p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Uncorrected error detected in a tag RAM</title>
+			<p class="- topic/p ">When an uncorrected error is detected in a tag RAM, either the address or
+				coherency state of the line is not known, and the corresponding data cannot be poisoned.
+				In this case, the line is <term keyref="invalidate">invalidate</term>d and an error recovery interrupt is generated
+				to notify software that data has potentially been lost.</p>
+		</section>
+	</refbody>
+</reference>

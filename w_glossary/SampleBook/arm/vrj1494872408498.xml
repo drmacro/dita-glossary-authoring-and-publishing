@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="vrj1494872408498" xml:lang="en-us">
+	<title class="- topic/title ">CPUECTLR_EL1, CPU Extended Control Register, EL1 </title>
+	<shortdesc class="- topic/shortdesc ">The CPUECTLR_EL1 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options
+		for the core.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">CPUECTLR_EL1 is a 64-bit register, and is part of the 64-bit
+				registers functional group.</p>
+			<p class="- topic/p ">This register resets to value <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.hex">0000000961563000</codeph>.</p>
+			
+			
+			
+			
+			
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">CPUECTLR_EL1 bit assignments</title>
+				<image class="- topic/image " href="srx1494919507115.svg" placement="inline">
+					<alt class="- topic/alt ">CPUECTLR_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			
+			
+			
+			
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [63:62]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">MXP_EN, [61]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Max-power throttle enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Disables max-power throttling mechanism. This
+									is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Enables max-power throttling mechanism.
+										<note class="- topic/note ">Both the MXP_EN bit and the <keyword class="- topic/keyword " otherprops="g.signal.name">MPMMEN</keyword> input pin at the <keyword class="- topic/keyword ">DSU</keyword> <term keyref="cluster">cluster</term> level must be asserted to enable the max-power throttling mechanism.
+											
+											
+											
+											
+											</note></dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [60:59]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">MXP_TP, [58:57]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Percentage of throttling in the Load-Store and Vector
+							Execute units during the period when throttling has been triggered and
+							is active. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">Throttle by 60%. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">Throttle by 50%.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">Throttle by 40%.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Throttle by 30%.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">MXP_ATHR, [56:55]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Peak activity threshold at which max-power throttling
+							is triggered. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">Max-power throttling triggered at 70% of peak
+									activity. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">Max-power throttling triggered at 60% of peak
+									activity.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">Max-power throttling triggered at 50% of peak
+									activity.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Max-power throttling triggered at 40% of peak
+									activity.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">MM_VMID_THR, [54]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">VMID filter threshold. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Flush VMID filter after 16 unique VMID
+									allocations to the <term keyref="mmu">MMU</term> Translation Cache. This is the reset
+									value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Flush VMID filter after 32 unique VMID
+									allocations to the  Translation Cache.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">MM_ASP_EN, [53]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables allocation of splintered pages in L2 <term keyref="tlb">TLB</term>. The
+							possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Enables allocation of splintered pages in the
+									L2 . This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Disables allocation of splintered pages in the
+									L2 .</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">MM_CH_DIS, [52]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables use of contiguous hint. The possible values
+							are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Enables use of contiguous hint. This is the
+									reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Disables use of contiguous hint.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">MM_PF_DIS, [51]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables L2  prefetcher. The possible values
+							are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Enables L2  prefetcher. This is the reset
+									value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Disables L2  prefetcher.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">HPA_MODE, [50:49]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p "><term class="- topic/term ">Hardware Page
+								Aggregation</term> (HPA) mode. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">Moderately conservative hardware page
+									aggregation. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">Aggressive hardware page aggregation.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">Moderately aggressive hardware page
+									aggregation.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Conservative hardware page aggregation.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">HPA_CAP, [48]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Limited or full hardware page aggregation selection . The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Limited hardware page aggregation. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Full hardware page aggregation.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+								
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">HPA_L1_DIS, [47]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables HPA in L1 s (but continues to use HPA in L2
+							). The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Enables hardware page aggregation in L1 s. This is the reset
+									value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Disables hardware page aggregation in L1
+									s.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">HPA_DIS, [46]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables hardware page aggregation. The possible values
+							are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Enables hardware page aggregation. This is the
+									reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Disables hardware page aggregation.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [45:44]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">L2_FLUSH, [43]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Allocation behavior of copybacks caused by L2 cache
+							hardware flush and DC CISW instructions targeting the L2 cache. If it is
+							known that data is likely to be used soon by another <term keyref="core">core</term>, setting this
+							bit can improve system performance. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">L2 cache flushes and <term keyref="invalidate">invalidate</term>s by set/way do not allocate in the L3 cache. Cache lines in the UniqueDirty state cause <term keyref="write">Write</term>Back transactions with the allocation hint cleared, while cache lines in UniqueClean or SharedClean states cause address-only Evict transactions. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd "> L2 cache flushes by set/way allocate in the
+									L3 cache. Cache lines in the UniqueDirty or UniqueClean state
+									cause BackFull or EvictFull transactions,
+									respectively, both with the allocation hint set. Cache lines in
+									the SharedClean state cause address-only Evict
+									transactions.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [42]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PFT_MM, [41:40]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">DRAM prefetch using PrefetchTgt transactions for table walk requests. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">Disable prefetchtgt generation for requests
+									from the Memory Management unit (). This is the reset
+									value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">Conservatively generate prefetchtgt for
+									<term keyref="cacheable">cacheable</term> requests from the , always generate for
+									non-.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">Aggressively generate prefetchtgt for
+									 requests from the , always generate for
+									non-.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Always generate prefetchtgt for 
+									requests from the , always generate for non-.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PFT_LS, [39:38]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">DRAM prefetch using PrefetchTgt transactions for load
+							and store requests. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">Disable prefetchtgt generation for requests
+									from the Load-Store unit (LS). This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">Conservatively generate prefetchtgt for
+									 requests from the LS, always generate for
+									non-.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">Aggressively generate prefetchtgt for
+									 requests from the LS, always generate for
+									non-.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Always generate prefetchtgt for 
+									requests from the LS, always generate for non-.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PFT_IF, [37:36]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">DRAM prefetch using PrefetchTgt transactions for
+							instruction fetch requests. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">Disable prefetchtgt generation for requests
+									from the Instruction Fetch unit (IF). This is the reset
+									value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">Conservatively generate prefetchtgt for
+									 requests from the IF, always generate for
+									non-.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">Aggressively generate prefetchtgt for
+									 requests from the IF, always generate for
+									non-.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Always generate prefetchtgt for 
+									requests from the IF, always generate for non-.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">CA_UCLEAN_EVICT_EN, [35]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Enables sending Evict transactions on the CPU CHI
+							interface for UniqueClean evictions. Evict transactions update
+							downstream caches. Enable Evict transactions only if there is an
+							additional level of cache below the CPU's Level 2 cache. The possible
+							values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> Disables sending data with UniqueClean
+									evictions.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Enables sending data with UniqueClean
+									evictions. This is the reset value.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">CA_EVICT_DIS, [34]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables sending of Evict transactions on the CPU CHI
+							interface for <term keyref="clean">clean</term> cache lines that are evicted from the . Evict
+							transactions are required only if the system contains a snoop filter
+							that requires notification when the  evicts the cache line. The
+							possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> Enables sending Evict transactions. This is
+									the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Disables sending Evict transactions.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [33]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">ATOMIC_ACQ_NEAR, [32]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">An atomic instruction to WB memory with acquire
+							semantics that does not hit in the cache in Exclusive state, may make up
+							to one fill request. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> Acquire-atomic is near if cache line is
+									al<term keyref="read">read</term>y Exclusive, otherwise make far atomic request.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Acquire-atomic will make up to 1 fill request
+									to perform near. This is the reset value.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">ATOMIC_ST_NEAR, [31]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">A store atomic instruction to WB memory that does not
+							hit in the cache in Exclusive state, may make up to one fill request.
+							The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> Store-atomic is near if cache line is aly
+									Exclusive, otherwise make far atomic request. This is the reset
+									value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Store-atomic will make up to 1 fill request to
+									perform near.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">ATOMIC_REL_NEAR, [30]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">An atomic instruction to WB memory with release
+							semantics that does not hit in the cache in Exclusive state, may make up
+							to one fill request. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> Release-atomic is near if cache line is
+									aly Exclusive, otherwise make far atomic request.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Release-atomic will make up to 1 fill request
+									to perform near. This is the reset value.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">ATOMIC_LD_NEAR, [29]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">A load atomic (including SWP and CAS) instruction to WB memory that does
+							not hit in the cache in Exclusive state, may make up to one fill
+							request. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> Load-atomic is near if cache line is aly
+									Exclusive, otherwise make far atomic request.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Load-atomic will make up to 1 fill request to
+									perform near. This is the reset value.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">TLD_PRED_DIS, [28]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables Transient Load Prediction. The possible values
+							are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> Enables transient load prediction. This is
+									the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Disables transient load prediction.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [27]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">D_CABT_EN , [26]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Enables  Conflict <term keyref="dataabort">Data Abort</term> Exception. The possible
+							values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> Disables  conflict data <term keyref="abort">abort</term> <term keyref="exception">exception</term>.
+									This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Enables  conflict data 
+									.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">WS_THR_L2, [25:24]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Threshold for direct stream to L2 cache on store. The
+							possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">256B.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">4KB. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">8KB.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Disables direct stream to L2 cache on
+									store.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">WS_THR_L3, [23:22]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Threshold for direct stream to L3 cache on store. The
+							possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">768B.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">16KB. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">32KB.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Disables direct stream to L3 cache on
+									store.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">WS_THR_L4, [21:20]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Threshold for direct stream to L4 cache on store. The
+							possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">16KB.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">64KB. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">128KB.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Disables direct stream to L4 cache on
+									store.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">WS_THR_DRAM, [19:18]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Threshold for direct stream to DRAM on store. The
+							possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">64KB.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">1MB, for memory designated as outer-allocate.
+									This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">1MB, allocating irrespective of
+									outer-allocation designation.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">Disables direct stream to DRAM on store.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">WS_THR_DCZVA, [17]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Have DCZVA use a lower WS_THR_L2 configuration. The
+							possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd "> DCZVA behaves like normal store wrt
+									WS_THR_L2.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">DCZVA will use one lower stream threshold from
+									WS_THR_L2. This is the reset value.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [16]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PF_DIS, [15]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables data-side hardware <term keyref="prefetching">prefetching</term>. The possible
+							values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">Enables hardware . This is the
+									reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">Disables hardware .</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [14]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PF_SS_L2_DIST, [13:12]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Single cache line stride  L2 distance. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">00</codeph></dt>
+								<dd class="- topic/dd ">22</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">01</codeph></dt>
+								<dd class="- topic/dd ">28</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">10</codeph></dt>
+								<dd class="- topic/dd ">34</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">11</codeph></dt>
+								<dd class="- topic/dd ">40. This is the reset value.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [11:10]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [9]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PF_STI_DIS, [8]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables store prefetches at issue (not overridden by CPUECTLR_EL1[15]). The possible values are:</p>
+						
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Enables store . This is the
+										reset value.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Disables store .</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PF_STS_DIS, [7]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables store-stride prefetches. The possible values
+							are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Enables store . This is the
+										reset value.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Disables store .</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [6]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RPF_DIS, [5]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Disables <term keyref="region">region</term> prefetcher. The possible values
+							are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Enables  . This is the
+										reset value.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Disables  .</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RPF_LO_CONF, [4]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Region prefetcher training behavior. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Limited training for  prefetcher on single accesses. This is the reset value.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Always train the  prefetcher on single accesses, which results in fewer prefetch requests.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RPF_PHIT_EN, [3]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Enable  prefetcher propagation on hit. The
+							possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Disables  prefetcher propagation on
+										hit. This is the reset value.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Enables  prefetcher propagation on
+										hit.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [2:1]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">Reserved.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">EXTLLC, [0]</dt>
+					<dd class="- topic/dd ">Internal or external Last-level cache (LLC) in the system. The possible values are:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+							<dd class="- topic/dd ">
+								<p class="- topic/p ">Indicates that an internal Last-level cache is present in the system, and that the DataSource field on the master CHI interface indicates when data is returned from the LLC. This is used to control how the LL_CACHE* PMU events count. This is the reset value.</p>
+							</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry ">
+							<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+							<dd class="- topic/dd ">
+								<p class="- topic/p ">Indicates that an external Last-level cache is present in the system, and that the DataSource field on the master CHI interface indicates when data is returned from the LLC. This is used to control how the LL_CACHE* PMU events count.</p>
+							</dd>
+						</dlentry>
+						</dl> </dd>
+				</dlentry>
+				
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">This register has no configuration options.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Usage constraints</title>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Accessing the CPUECTLR_EL1</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">The CPU Extended Control Register can be written only
+							when the system is idle. <keyword class="- topic/keyword ">Arm</keyword>
+							recommends that you write to this register after a powerup reset, before
+							the  is enabled.</p>
+						<p class="- topic/p ">This register can be  using MRS with the following
+							syntax:</p>
+						<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">MRS &lt;Xt&gt;,&lt;systemreg&gt;</codeblock>
+						<p class="- topic/p ">This register can be written using MSR with the
+							following syntax:</p>
+						<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">MSR &lt;systemreg&gt;, &lt;Xt&gt;</codeblock>
+					</dd>
+				</dlentry>
+			</dl>
+			<p class="- topic/p ">This syntax is encoded with the following settings in the
+				instruction encoding:</p>
+			<table class="- topic/table " id="table_c3j_wfs_cv">
+				<tgroup class="- topic/tgroup " cols="6">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><colspec class="- topic/colspec " colname="col3" colnum="3"/><colspec class="- topic/colspec " colname="col4" colnum="4"/><colspec class="- topic/colspec " colname="col5" colnum="5"/><colspec class="- topic/colspec " colname="col6" colnum="6"/><thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">&lt;systemreg&gt;</entry>
+							<entry class="- topic/entry " colname="col2">op0</entry>
+							<entry class="- topic/entry " colname="col3">op1</entry>
+							<entry class="- topic/entry " colname="col4">CRn</entry>
+							<entry class="- topic/entry " colname="col5">CRm</entry>
+							<entry class="- topic/entry " colname="col6">op2</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUECTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">11</entry>
+							<entry class="- topic/entry " colname="col3">000</entry>
+							<entry class="- topic/entry " colname="col4">1111</entry>
+							<entry class="- topic/entry " colname="col5">0001</entry>
+							<entry class="- topic/entry " colname="col6">100</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Accessibility</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">This register is accessible in software as follows:</p>
+					</dd>
+				</dlentry>
+			</dl>
+			<table class="- topic/table " id="table_br1_4vf_1v">
+				<tgroup class="- topic/tgroup " cols="8">
+					<colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="100pt"/>
+					<colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col5" colnum="5" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col6" colnum="6" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col7" colnum="7" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col8" colnum="8" colwidth="30pt"/>
+					<thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1" morerows="1">&lt;systemreg&gt;</entry>
+							<entry class="- topic/entry " colname="col2" nameend="col4" namest="col2">Control</entry>
+							<entry class="- topic/entry " colname="col5" nameend="col8" namest="col5">Accessibility</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">E2H</entry>
+							<entry class="- topic/entry " colname="col2">TGE</entry>
+							<entry class="- topic/entry " colname="col3">NS</entry>
+							<entry class="- topic/entry " colname="col4">EL0</entry>
+							<entry class="- topic/entry " colname="col5">EL1</entry>
+							<entry class="- topic/entry " colname="col6">EL2</entry>
+							<entry class="- topic/entry " colname="col7">EL3</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUECTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">x</entry>
+							<entry class="- topic/entry " colname="col3">x</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">RW</entry>
+							<entry class="- topic/entry " colname="col7">n/a</entry>
+							<entry class="- topic/entry " colname="col8">RW</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUECTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">x</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">1</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">RW</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8">RW</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">CPUECTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">x</entry>
+							<entry class="- topic/entry " colname="col3">1</entry>
+							<entry class="- topic/entry " colname="col4">1</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">n/a</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8">RW</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<p class="- topic/p ">'n/a' Not accessible. The <term keyref="pe">PE</term> cannot be executing at this Exception
+				level, so this access is not possible.</p>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Traps and enables</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">For a description of the prioritization of any
+							generated s, see <cite class="- topic/cite ">Synchronous 
+								prioritization</cite> in the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>
+							for s taken to <term keyref="aarch64">AArch64</term> state. </p>
+						<p class="- topic/p ">Access to this register depends on bit[1] of ACTLR_EL2
+							and ACTLR_EL3.</p>
+					</dd>
+				</dlentry>				
+			</dl>
+		</section>
+	</refbody>
+</reference>

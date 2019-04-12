@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="sbm1479387887957" xml:lang="en-us">
+  <title class="- topic/title ">AArch64 registers by functional group</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">AArch64 registers by functional group</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">This section identifies the AArch64 registers by their functional groups
+    and applies to the registers in the core that are implementation defined or have
+    micro-architectural bit fields. Reset values are provided for these registers. </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Identification registers</title>
+      <table class="- topic/table " id="id.registers.functional.group.aarch64">
+        <tgroup class="- topic/tgroup " cols="4">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Reset</entry>
+              <entry class="- topic/entry " colname="col4">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "> <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></codeph></p>  </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="iwg1474024439306.xml" keyref="AidrEl1AuxiliaryIdRegisterEl1" type="reference">AIDR_EL1, Auxiliary ID Register, EL1<desc class="- topic/desc ">AIDR_EL1 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> identification information. This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> <term keyref="core">core</term>.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CCSIDR__EL1 </entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">-</p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="way1460466410970.xml" keyref="CcsidrEl1CacheSizeIdRegisterEl1" type="reference">CCSIDR_EL1, Cache Size ID Register, EL1<desc class="- topic/desc ">The CCSIDR_EL1 provides information about the architecture of the 		currently selected cache.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <ul class="- topic/ul ">
+                <li class="- topic/li "><ph class="- topic/ph " otherprops="g.number.hex">C3000123</ph> if L3 cache present.</li>
+                <li class="- topic/li "><ph class="- topic/ph " otherprops="g.number.hex">82000023</ph> if no L3 cache.</li>
+                </ul> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="rcp1473770576256.xml" keyref="ClidrEl1CacheLevelIdRegisterEl1" type="reference">CLIDR_EL1, Cache Level ID Register, EL1<desc class="- topic/desc ">The CLIDR_EL1 identifies the type of cache, or caches, implemented at each level, up to a maximum of     seven levels.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CSSELR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph ">UNK</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435521428.xml" keyref="CsselrEl1CacheSizeSelectionRegisterEl1" type="reference">CSSELR_EL1, Cache Size Selection Register, EL1<desc class="- topic/desc ">CSSELR_EL1 selects the current Cache Size ID Register (CCSIDR_EL1), by     specifying:</desc></xref></p> </entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">8444C004</ph></codeph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435580346.xml" keyref="CtrEl0CacheTypeRegisterEl0" type="reference">CTR_EL0, Cache Type Register, EL0<desc class="- topic/desc ">The CTR_EL0 provides information about the architecture of the     caches.</desc></xref></p> </entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">DCZID_EL0</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00000004</ph></entry>
+              <entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="lau1443436033950.xml" keyref="DczidEl0DataCacheZeroIdRegisterEl0" type="reference">DCZID_EL0, Data Cache Zero ID Register, EL0<desc class="- topic/desc ">The DCZID_EL0 indicates the block size written with byte values of zero     by the <codeph class="+ topic/ph pr-d/codeph ">DC ZVA</codeph> (Data Cache Zero by Address) system     instruction.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERRIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00000002</ph></entry>
+              <entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="joh1445957247614.xml" keyref="ErridrEl1ErrorIdRegisterEl1" type="reference">ERRIDR_EL1, Error ID Register, EL1<desc class="- topic/desc ">The ERRIDR_EL1 defines the number of error record registers.</desc></xref></entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64AFR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></entry>
+              <entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="xmg1473840260163.xml" keyref="IdAa64afr0El1Aarch64AuxiliaryFeatureRegister0El1" type="reference">ID_AA64AFR0_EL1, <term keyref="aarch64">AArch64</term> Auxiliary Feature Register 0<desc class="- topic/desc ">The  does not use this register, ID_AA64AFR0_EL1 is <term class="- topic/term " outputclass="archterm">RES0</term>.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64AFR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></entry>
+              <entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="nbo1473840335573.xml" keyref="IdAa64afr1El1Aarch64AuxiliaryFeatureRegister1El1" type="reference">ID_AA64AFR1_EL1,  Auxiliary Feature Register 1<desc class="- topic/desc ">The  does not use this register, ID_AA64AFR0_EL1 is <term class="- topic/term " outputclass="archterm">RES0</term>.</desc></xref></entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64DFR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0000000010305408</ph></codeph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443436888356.xml" keyref="IdAa64dfr0El1Aarch64DebugFeatureRegister0El1" type="reference">ID_AA64DFR0_EL1,  Debug Feature Register 0, EL1<desc class="- topic/desc ">Provides top-level information about the debug system in 		.</desc></xref></p> </entry>
+            </row>
+
+            
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64DFR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></entry>
+              <entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="upk1473840155926.xml" keyref="IdAa64dfr1El1Aarch64DebugFeatureRegister1El1" type="reference">ID_AA64DFR1_EL1,  Debug Feature Register 1, EL1<desc class="- topic/desc ">This register is reserved for future expansion of top level information 		about the debug system in  state. </desc></xref></entry>
+            </row>
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64ISAR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <ul class="- topic/ul ">
+                <li class="- topic/li "><ph class="- topic/ph " otherprops="g.number.hex">0000100010211120</ph> if the Cryptographic Extension is implemented.</li>
+                <li class="- topic/li "><ph class="- topic/ph " otherprops="g.number.hex">0000100010210000</ph> if the Cryptographic Extension is not implemented.</li>
+                </ul> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="geo1449222875800.xml" keyref="IdAa64isar0El1Aarch64InstructionSetAttributeRegister0El1" type="reference">ID_AA64ISAR0_EL1,  Instruction Set Attribute Register 0, EL1<desc class="- topic/desc ">The ID_AA64ISAR0_EL1 provides information about the instructions 		implemented in  state, including the instructions that are provided by the 		Cryptographic Extension. </desc></xref></p> </entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64ISAR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0000000000100001</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="joh1445355870288.xml" keyref="IdAa64isar1El1Aarch64InstructionSetAttributeRegister1El1" type="reference">ID_AA64ISAR1_EL1,  Instruction Set Attribute Register 1, EL1<desc class="- topic/desc ">The ID_AA64ISAR1_EL1 provides information about the instructions implemented in  		state.</desc></xref></p> </entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64MMFR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0000000000101122</ph></codeph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443437067853.xml" keyref="IdAa64mmfr0El1Aarch64MemoryModelFeatureRegister0El1" type="reference">ID_AA64MMFR0_EL1,  Memory Model Feature Register 0, EL1<desc class="- topic/desc ">The ID_AA64MMFR0_EL1 provides information about the implemented memory model and memory management 		support in the  Execution state.</desc></xref></p> </entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64MMFR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0000000010212122</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="joh1445336307712.xml" keyref="IdAa64mmfr1El1Aarch64MemoryModelFeatureRegister1El1" type="reference">ID_AA64MMFR1_EL1,  Memory Model Feature Register 1, EL1<desc class="- topic/desc ">The ID_AA64MMFR1_EL1 provides information about the implemented memory model and memory management 		support in the  Execution state.</desc></xref></p> </entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64MMFR2_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0000000000001011</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="joh1445344391305.xml" keyref="IdAa64mmfr2El1Aarch64MemoryModelFeatureRegister2El1" type="reference">ID_AA64MMFR2_EL1,  Memory Model Feature Register 2, EL1<desc class="- topic/desc ">The ID_AA64MMFR2_EL1 provides information about the implemented memory 		model and memory management support in the  Execution state. </desc></xref></p> </entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64PFR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <ul class="- topic/ul ">
+                <li class="- topic/li "><ph class="- topic/ph " otherprops="g.number.hex">1100000010111112</ph> if the <term keyref="gic">GIC</term>v4 interface is disabled.</li>
+                <li class="- topic/li "><ph class="- topic/ph " otherprops="g.number.hex">1100000011111112</ph> if the v4 interface is enabled.</li>
+
+                
+                
+
+                </ul> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443437525908.xml" keyref="IdAa64pfr0El1Aarch64ProcessorFeatureRegister0El1" type="reference">ID_AA64PFR0_EL1,  Processor Feature Register 0, EL1<desc class="- topic/desc ">The ID_AA64PFR0_EL1 provides additional information about implemented 		 features in .</desc></xref></p> </entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AA64PFR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"><ph class="- topic/ph " otherprops="g.number.hex">0000000000000010</ph></entry>
+              <entry class="- topic/entry " colname="col4"><xref class="- topic/xref " href="erd1531743484728.xml" keyref="IdAa64pfr1El1Aarch64ProcessorFeatureRegister1El1" type="reference">ID_AA64PFR1_EL1,  Processor Feature Register 1, EL1<desc class="- topic/desc ">The ID_AA64PFR1_EL1 provides additional information about implemented 		 features in .</desc></xref></entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_AFR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443437677599.xml" keyref="IdAfr0El1Aarch32AuxiliaryFeatureRegister0El1" type="reference">ID_AFR0_EL1, <term keyref="aarch32">AArch32</term> Auxiliary Feature Register 0, EL1<desc class="- topic/desc ">The ID_AFR0_EL1 provides information about the <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> features of the <term keyref="pe">PE</term> in . This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_DFR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">04010088</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443437728306.xml" keyref="IdDfr0El1Aarch32DebugFeatureRegister0El1" type="reference">ID_DFR0_EL1,  Debug Feature Register 0, EL1<desc class="- topic/desc ">The ID_DFR0_EL1 provides top-level information about the debug system in     .</desc></xref></p> </entry>
+            </row>
+
+            
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_ISAR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">02101110</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443437809604.xml" keyref="IdIsar0El1Aarch32InstructionSetAttributeRegister0El1" type="reference">ID_ISAR0_EL1,  Instruction Set Attribute Register 0, EL1<desc class="- topic/desc ">The ID_ISAR0_EL1 provides information about the instruction sets implemented by the  in 		.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_ISAR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">13112111</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443437895509.xml" keyref="IdIsar1El1Aarch32InstructionSetAttributeRegister1El1" type="reference">ID_ISAR1_EL1,  Instruction Set Attribute Register 1, EL1<desc class="- topic/desc ">The ID_ISAR1_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_ISAR2_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">21232042</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443445407754.xml" keyref="IdIsar2El1Aarch32InstructionSetAttributeRegister2El1" type="reference">ID_ISAR2_EL1,  Instruction Set Attribute Register 2, EL1<desc class="- topic/desc ">The ID_ISAR2_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_ISAR3_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">01112131</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443445482819.xml" keyref="IdIsar3El1Aarch32InstructionSetAttributeRegister3El1" type="reference">ID_ISAR3_EL1,  Instruction Set Attribute Register 3, EL1<desc class="- topic/desc ">The ID_ISAR3_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_ISAR4_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">00010142</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443445566298.xml" keyref="IdIsar4El1Aarch32InstructionSetAttributeRegister4El1" type="reference">ID_ISAR4_EL1,  Instruction Set Attribute Register 4, EL1<desc class="- topic/desc ">The ID_ISAR4_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref></p> </entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_ISAR5_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">01011121</ph></p> <p class="- topic/p ">ID_ISAR5 has the value <ph class="- topic/ph " otherprops="g.number.hex">01010001</ph> if the Cryptographic Extension is not
+                  implemented and enabled.</p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443445664210.xml" keyref="IdIsar5El1Aarch32InstructionSetAttributeRegister5El1" type="reference">ID_ISAR5_EL1,  Instruction Set Attribute Register 5, EL1<desc class="- topic/desc ">The ID_ISAR5_EL1 provides information about the instruction sets that     the  implements.</desc></xref></p> </entry>
+            </row>
+
+            
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_ISAR6_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">00000010</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="nwd1493817464437.xml" keyref="IdIsar6El1Aarch32InstructionSetAttributeRegister6El1" type="reference">ID_ISAR6_EL1,  Instruction Set Attribute Register 6, EL1<desc class="- topic/desc ">The ID_ISAR6_EL1 provides information about the instruction sets that     the  implements.</desc></xref></p> </entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_MMFR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">10201105</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443445754052.xml" keyref="IdMmfr0El1Aarch32MemoryModelFeatureRegister0El1" type="reference">ID_MMFR0_EL1,  Memory Model Feature Register 0, EL1<desc class="- topic/desc ">The ID_MMFR0_EL1 provides information about the memory model and memory management support in 		.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_MMFR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">40000000</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443445820394.xml" keyref="IdMmfr1El1Aarch32MemoryModelFeatureRegister1El1" type="reference">ID_MMFR1_EL1,  Memory Model Feature Register 1, EL1<desc class="- topic/desc ">The ID_MMFR1_EL1 provides information about the memory model and memory     management support in .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_MMFR2_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">01260000</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443445885040.xml" keyref="IdMmfr2El1Aarch32MemoryModelFeatureRegister2El1" type="reference">ID_MMFR2_EL1,  Memory Model Feature Register 2, EL1<desc class="- topic/desc ">The ID_MMFR2_EL1 provides information about the implemented memory model     and memory management support in .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_MMFR3_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">02122211</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443445969299.xml" keyref="IdMmfr3El1Aarch32MemoryModelFeatureRegister3El1" type="reference">ID_MMFR3_EL1,  Memory Model Feature Register 3, EL1<desc class="- topic/desc ">The ID_MMFR3_EL1 provides information about the memory model and memory     management support in .</desc></xref></p> </entry>
+            </row>
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_MMFR4_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">00021110</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="joh1445266072993.xml" keyref="IdMmfr4El1Aarch32MemoryModelFeatureRegister4El1" type="reference">ID_MMFR4_EL1,  Memory Model Feature Register 4, EL1<desc class="- topic/desc ">The ID_MMFR4_EL1 provides information about the memory model and memory     management support in .</desc></xref></p> </entry>
+            </row>
+
+            
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_PFR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"><p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">10010131</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443446043975.xml" keyref="IdPfr0El1Aarch32ProcessorFeatureRegister0El1" type="reference">ID_PFR0_EL1,  Processor Feature Register 0, EL1<desc class="- topic/desc ">The ID_PFR0_EL1 provides top-level information about the instruction     sets supported by the  in .</desc></xref></p> </entry>
+            </row>
+
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_PFR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">10010000</ph></p> <p class="- topic/p ">Bits [31:28] are <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></codeph> if the  CPU
+                  interface is implemented and enabled, and <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></codeph> otherwise.</p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1465368686940.xml" keyref="IdPfr1El1Aarch32ProcessorFeatureRegister1El1" type="reference">ID_PFR1_EL1,  Processor Feature Register 1, EL1<desc class="- topic/desc ">The ID_PFR1_EL1 provides information about the programmers model and architecture extensions 		supported by the .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ID_PFR2_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"><p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">00000011</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="uio1522946473820.xml" keyref="IdPfr2El1Aarch32ProcessorFeatureRegister2El1" type="reference">ID_PFR2_EL1,  Processor Feature Register 2, EL1<desc class="- topic/desc ">The ID_PFR2_EL1 provides information about the programmers model and architecture extensions supported by the .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">LORID_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">0000000000040004</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457002069712.xml" keyref="LoridEl1LimitedOrderRegionIdentificationRegisterEl1" type="reference">LORID_EL1, LORegion ID Register, EL1<desc class="- topic/desc ">The LORID_EL1 ID register indicates the supported number of LORegions and 		LORegion descriptors.</desc></xref></p> </entry>
+            </row>
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">MIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">413FD0B1</ph></p>      </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="mel1474024504742.xml" keyref="MidrEl1MainIdRegisterEl1" type="reference">MIDR_EL1, Main ID Register, EL1<desc class="- topic/desc ">The MIDR_EL1 provides identification information for the ,     including an implementer code for the <term keyref="device">device</term> and a  ID number.</desc></xref></p> </entry>
+            </row>
+
+
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">MPIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">The reset value depends on <keyword class="- topic/keyword " otherprops="g.signal.name">CLUSTERIDAFF2[7:0]</keyword> and <keyword class="- topic/keyword " otherprops="g.signal.name">CLUSTERIDAFF3[7:0]</keyword>. See register description for details.</p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443447573920.xml" keyref="MpidrEl1MultiprocessorAffinityRegisterEl1" type="reference">MPIDR_EL1, Multiprocessor Affinity Register, EL1<desc class="- topic/desc ">The MPIDR_EL1 provides an additional  identification mechanism for     scheduling purposes in a <term keyref="cluster">cluster</term>.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">REVIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><ph class="- topic/ph " otherprops="g.number.hex">00000000</ph></p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443447751652.xml" keyref="RevidrEl1RevisionIdRegisterEl1" type="reference">REVIDR_EL1, Revision ID Register, EL1<desc class="- topic/desc ">The REVIDR_EL1 provides revision information, additional to MIDR_EL1,     that identifies minor fixes (errata) which might be present in a specific implementation of the     <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VMPIDR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">The reset value is the value of MPIDR_EL1.</p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Virtualization Multiprocessor ID Register EL2</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VPIDR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">The reset value is the value of MIDR_EL1.</p> </entry>
+              <entry class="- topic/entry " colname="col4"> <p class="- topic/p ">Virtualization Core ID Register EL2</p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+
+
+
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Other system control registers</title>
+      <table class="- topic/table ">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ACTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443434506032.xml" keyref="ActlrEl1AuxiliaryControlRegisterEl1" type="reference">ACTLR_EL1, Auxiliary Control Register, EL1<desc class="- topic/desc ">ACTLR_EL1 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for execution at EL1 and     EL0.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ACTLR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443434705598.xml" keyref="ActlrEl2AuxiliaryControlRegisterEl2" type="reference">ACTLR_EL2, Auxiliary Control Register, EL2<desc class="- topic/desc ">The ACTLR_EL2 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for EL2.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ACTLR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443434859896.xml" keyref="ActlrEl3AuxiliaryControlRegisterEl3" type="reference">ACTLR_EL3, Auxiliary Control Register, EL3<desc class="- topic/desc ">The ACTLR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for EL3.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">C<term keyref="pa">PA</term>CR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="dav1465210368714.xml" keyref="CpacrEl1ArchitecturalFeatureAccessControlRegisterEl1" type="reference">CCR_EL1, Architectural Feature Access Control Register, EL1<desc class="- topic/desc ">The CCR_EL1 controls access to trace functionality and access to     registers associated with <term keyref="advancedsimd">Advanced SIMD</term> and <term keyref="floating_point">floating-point</term> execution.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">SCTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="pat1465329960099.xml" keyref="SctlrEl1SystemControlRegisterEl1" type="reference">SCTLR_EL1, System Control Register, EL1<desc class="- topic/desc ">The SCTLR_EL1 provides top-level control of the system, including its     memory system, at EL1 and EL0.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">SCTLR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443448134151.xml" keyref="SctlrEl2SystemControlRegisterEl2" type="reference">SCTLR_EL2, System Control Register, EL2<desc class="- topic/desc ">The SCTLR_EL2 provides top-level control of the system, including its     memory system at EL2.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">SCTLR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="pat1465328816361.xml" keyref="SctlrEl3SystemControlRegisterEl3" type="reference">SCTLR_EL3, System Control Register, EL3<desc class="- topic/desc ">The SCTLR_EL3 provides top-level control of the system, including its 		memory system at EL3. </desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">SCTLR_EL12</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="pat1465329960099.xml" keyref="SctlrEl1SystemControlRegisterEl1" type="reference">SCTLR_EL1, System Control Register, EL1<desc class="- topic/desc ">The SCTLR_EL1 provides top-level control of the system, including its     memory system, at EL1 and EL0.</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Reliability, Availability, Serviceability (RAS) registers</title>
+      <table class="- topic/table ">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">DISR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457099740111.xml" keyref="DisrEl1DeferredInterruptStatusRegisterEl1" type="reference">DISR_EL1, Deferred Interrupt Status Register, EL1<desc class="- topic/desc ">The DISR_EL1 records the SError interrupts consumed by an <codeph class="+ topic/ph pr-d/codeph ">ESB</codeph> instruction. </desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERRIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1445957247614.xml" keyref="ErridrEl1ErrorIdRegisterEl1" type="reference">ERRIDR_EL1, Error ID Register, EL1<desc class="- topic/desc ">The ERRIDR_EL1 defines the number of error record registers.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERRSELR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1445869586820.xml" keyref="ErrselrEl1ErrorRecordSelectRegisterEl1" type="reference">ERRSELR_EL1, Error Record Select Register, EL1<desc class="- topic/desc ">The ERRSELR_EL1 selects which error record should be accessed through the Error Record     system registers. This register is not reset on a warm reset.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXADDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1456920542757.xml" keyref="ErxaddrEl1SelectedErrorRecordAddressRegisterEl1" type="reference">ERXADDR_EL1, Selected Error Record Address Register, EL1<desc class="- topic/desc ">Register ERXADDR_EL1 accesses the ERR&lt;n&gt;ADDR address register for 		the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXCTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1456920378552.xml" keyref="ErxctlrEl1SelectedErrorRecordControlRegisterEl1" type="reference">ERXCTLR_EL1, Selected Error Record Control Register, EL1<desc class="- topic/desc ">Register ERXCTLR_EL1 accesses the ERR&lt;n&gt;CTLR control register     for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXFR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1456920298397.xml" keyref="ErxfrEl1SelectedErrorRecordFeatureRegisterEl1" type="reference">ERXFR_EL1, Selected Error Record Feature Register, EL1<desc class="- topic/desc ">Register ERXFR_EL1 accesses the ERR&lt;n&gt;FR feature register for the 		error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXMISC0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1456920606253.xml" keyref="Erxmisc0El1SelectedErrorRecordMiscellaneousRegister0El1" type="reference">ERXMISC0_EL1, Selected Error Record Miscellaneous Register 0, EL1<desc class="- topic/desc ">Register ERXMISC0_EL1 accesses the ERR&lt;n&gt;MISC0 register for the 		error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXMISC1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1456920674327.xml" keyref="Erxmisc1El1SelectedErrorRecordMiscellaneousRegister1El1" type="reference">ERXMISC1_EL1, Selected Error Record Miscellaneous Register 1, EL1<desc class="- topic/desc ">Register ERXMISC1_EL1 accesses the ERR&lt;n&gt;MISC1 miscellaneous 		register 1 for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXSTATUS_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1456920454319.xml" keyref="ErxstatusEl1SelectedErrorRecordPrimaryStatusRegisterEl1" type="reference">ERXSTATUS_EL1, Selected Error Record Primary Status Register, EL1<desc class="- topic/desc ">Register ERXSTATUS_EL1 accesses the ERR&lt;n&gt;STATUS primary status 		register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXPFGCDNR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460047172751.xml" keyref="ErxpfgcdnrEl1SelectedErrorPseudoFaultGenerationCountDownRegisterEl1" type="reference">ERXPFGCDN_EL1, Selected Error Pseudo Fault Generation Count Down Register, EL1<desc class="- topic/desc ">Register ERXPFGCDN_EL1 accesses the ERR&lt;n&gt;PFGCND register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXPFCTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460039575404.xml" keyref="ErxpfgctlrEl1SelectedErrorPseudoFaultGenerationControlRegisterEl1" type="reference">ERXPFGCTL_EL1, Selected Error Pseudo Fault Generation Control Register, EL1<desc class="- topic/desc ">Register ERXPFGCTL_EL1 accesses the ERR&lt;n&gt;PFGCTL register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXPFGFR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460036786483.xml" keyref="ErxpfgfrEl1SelectedPseudoFaultGenerationFeatureRegisterEl1" type="reference">ERXPFGF_EL1, Selected Pseudo Fault Generation Feature Register, EL1<desc class="- topic/desc ">Register ERXPFGF_EL1 accesses the ERR&lt;n&gt;PFGF register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">HCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443436588351.xml" keyref="HcrEl2HypervisorConfigurationRegisterEl2" type="reference">HCR_EL2, Hypervisor Configuration Register, EL2<desc class="- topic/desc ">The HCR_EL2 provides configuration control for virtualization, including     whether various Non-secure operations are trapped to EL2.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VDISR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457099519678.xml" keyref="VdisrEl2VirtualDeferredInterruptStatusRegisterEl2" type="reference">VDISR_EL2, Virtual Deferred Interrupt Status Register, EL2<desc class="- topic/desc ">The VDISR_EL2 records that a virtual SError interrupt has been consumed 		by an <codeph class="+ topic/ph pr-d/codeph ">ESB</codeph> instruction executed at Non-secure 		EL1.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VSESR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="mnw1478964168395.xml" keyref="VsesrEl2VirtualSerrorExceptionSyndromeRegisterEl2" type="reference">VSESR_EL2, Virtual SError Exception Syndrome Register (Ares Specific)<desc class="- topic/desc ">The VSESR_EL2 provides the syndrome value reported to software on taking 		a virtual SError interrupt <term keyref="exception">exception</term>.</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Virtual Memory control registers</title>
+      <table class="- topic/table " id="standard.virtual.memory.control.registers.aarch64">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AMAIR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435020386.xml" keyref="AmairEl1AuxiliaryMemoryAttributeIndirectionRegisterEl1" type="reference">AMAIR_EL1, Auxiliary Memory Attribute Indirection Register, EL1<desc class="- topic/desc ">AMAIR_EL1 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> memory attributes for the memory <term keyref="region">region</term>s specified by MAIR_EL1.     This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AMAIR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435042487.xml" keyref="AmairEl2AuxiliaryMemoryAttributeIndirectionRegisterEl2" type="reference">AMAIR_EL2, Auxiliary Memory Attribute Indirection Register, EL2<desc class="- topic/desc ">AMAIR_EL2 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> memory attributes for the memory s specified by MAIR_EL2.     This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AMAIR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435060354.xml" keyref="AmairEl3AuxiliaryMemoryAttributeIndirectionRegisterEl3" type="reference">AMAIR_EL3, Auxiliary Memory Attribute Indirection Register, EL3<desc class="- topic/desc ">AMAIR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> memory attributes for the memory s specified by 		MAIR_EL3. This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            
+            
+            
+            
+
+            
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ATCR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="tny1472108072714.xml" keyref="AtcrEl1AuxiliaryTranslationControlRegisterEl1" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ATCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="mvh1472107452815.xml" keyref="AtcrEl2AuxiliaryTranslationControlRegisterEl2" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ATCR_EL12</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="olf1472106808180.xml" keyref="AtcrEl12AliasToAuxiliaryTranslationControlRegisterEl1" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ATCR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="sds1472108520645.xml" keyref="AtcrEl3AuxiliaryTranslationControlRegisterEl3" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AVTCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="vqi1472110158664.xml" keyref="AvtcrEl2AuxiliaryVirtualizedTranslationControlRegisterEl2" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">LORC_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457001994468.xml" keyref="LorcEl1LoControlRegisterEl1" type="reference">LORC_EL1, LORegion Control Register, EL1<desc class="- topic/desc ">The LORC_EL1 register enables and disables LORegions, and selects the 		current LORegion descriptor.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">LOREA_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">LORegion End Address Register EL1</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">LORID_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457002069712.xml" keyref="LoridEl1LimitedOrderRegionIdentificationRegisterEl1" type="reference">LORID_EL1, LORegion ID Register, EL1<desc class="- topic/desc ">The LORID_EL1 ID register indicates the supported number of LORegions and 		LORegion descriptors.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">LORN_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457001925663.xml" keyref="LornEl1LoNumberRegisterEl1" type="reference">LORN_EL1, LORegion Number Register, EL1<desc class="- topic/desc ">The LORN_EL1 register holds the number of the LORegion described in the 		current LORegion descriptor selected by LORC_EL1.DS.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">LORSA_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">LORegion Start Address Register EL1</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TCR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443448377025.xml" keyref="TcrEl1TranslationControlRegisterEl1" type="reference">TCR_EL1, Translation Control Register, EL1<desc class="- topic/desc ">The TCR_EL1 determines which Translation Base registers define the base     address register for a <term keyref="translationtable">translation table</term> walk required for stage 1 translation of a memory     access from EL0 or EL1 and holds cacheability and shareability information.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1458646790614.xml" keyref="TcrEl2TranslationControlRegisterEl2" type="reference">TCR_EL2, Translation Control Register, EL2<desc class="- topic/desc ">The TCR_EL2 controls  walks required for stage 1     translation of a memory access from EL2 and holds cacheability and shareability     information.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TCR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1458646804810.xml" keyref="TcrEl3TranslationControlRegisterEl3" type="reference">TCR_EL3, Translation Control Register, EL3<desc class="- topic/desc ">The TCR_EL3 controls  walks required for stage 1     translation of memory accesses from EL3 and holds cacheability and shareability information for     the accesses.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TTBR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1458646818196.xml" keyref="Ttbr0El1TranslationTableBaseRegister0El1" type="reference">TTBR0_EL1, Translation Table Base Register 0, EL1<desc class="- topic/desc ">The TTBR0_EL1 holds the base address of  0, and     information about the memory it occupies. This is one of the s for the stage 1     translation of memory accesses from modes other than Hyp mode.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TTBR0_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457341284380.xml" keyref="Ttbr0El2TranslationTableBaseRegister0El2" type="reference">TTBR0_EL2, Translation Table Base Register 0, EL2<desc class="- topic/desc ">The TTBR0_EL2 holds the base address of the  for 		the stage 1 translation of memory accesses from EL2.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TTBR0_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1458646847626.xml" keyref="Ttbr0El3TranslationTableBaseRegister0El3" type="reference">TTBR0_EL3, Translation Table Base Register 0, EL3<desc class="- topic/desc ">The TTBR0_EL3 holds the base address of the  for the     stage 1 translation of memory accesses from EL3.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TTBR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1458646831483.xml" keyref="Ttbr1El1TranslationTableBaseRegister1El1" type="reference">TTBR1_EL1, Translation Table Base Register 1, EL1<desc class="- topic/desc ">The TTBR1_EL1 holds the base address of  1, and     information about the memory it occupies. This is one of the s for the stage 1     translation of memory accesses at EL0 and EL1.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TTBR1_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457341307460.xml" keyref="Ttbr1El2TranslationTableBaseRegister1El2" type="reference">TTBR1_EL2, Translation Table Base Register 1, EL2<desc class="- topic/desc ">TTBR1_EL2 has the same format and contents as TTBR1_EL1. </desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VTTBR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457340777806.xml" keyref="VttbrEl2VirtualizationTranslationTableBaseRegisterEl2" type="reference">VTTBR_EL2, Virtualization Translation Table Base Register, EL2<desc class="- topic/desc ">VTTBR_EL2 holds the base address of the  for the stage 2 		translation of memory accesses from Non-secure EL0 and EL1.</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+
+
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Virtualization registers</title>
+      <table class="- topic/table " id="table_obf_wvz_sw">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ACTLR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443434705598.xml" keyref="ActlrEl2AuxiliaryControlRegisterEl2" type="reference">ACTLR_EL2, Auxiliary Control Register, EL2<desc class="- topic/desc ">The ACTLR_EL2 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for EL2.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR0_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460539432217.xml" keyref="Afsr0El2AuxiliaryFaultStatusRegister0El2" type="reference">AFSR0_EL2, Auxiliary Fault Status Register 0, EL2<desc class="- topic/desc ">AFSR0_EL2 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> <term keyref="fault">fault</term> status information for s     that are taken to EL2. </desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR1_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460545106712.xml" keyref="Afsr1El2AuxiliaryFaultStatusRegister1El2" type="reference">AFSR1_EL2, Auxiliary Fault Status Register 1, EL2<desc class="- topic/desc ">AFSR1_EL2 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for s     that are taken to EL2. <ph class="- topic/ph ">This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</ph></desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AMAIR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435042487.xml" keyref="AmairEl2AuxiliaryMemoryAttributeIndirectionRegisterEl2" type="reference">AMAIR_EL2, Auxiliary Memory Attribute Indirection Register, EL2<desc class="- topic/desc ">AMAIR_EL2 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> memory attributes for the memory s specified by MAIR_EL2.     This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CPTR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435380910.xml" keyref="CptrEl2ArchitecturalFeatureTrapRegisterEl2" type="reference">CPTR_EL2, Architectural Feature Trap Register, EL2<desc class="- topic/desc ">The CPTR_EL2 controls trapping to EL2 for accesses to CCR, trace     functionality and registers associated with  and  execution. It also     controls EL2 access to this functionality.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ESR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443436180070.xml" keyref="EsrEl2ExceptionSyndromeRegisterEl2" type="reference">ESR_EL2, Exception Syndrome Register, EL2<desc class="- topic/desc ">The ESR_EL2 holds syndrome information for an  taken to     EL2.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">HACR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443436573879.xml" keyref="HacrEl2HypAuxiliaryConfigurationRegisterEl2" type="reference">HACR_EL2, Hyp Auxiliary Configuration Register, EL2<desc class="- topic/desc ">HACR_EL2 controls trapping to EL2 of <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> aspects of Non-secure EL1 or EL0     operation. This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">HCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443436588351.xml" keyref="HcrEl2HypervisorConfigurationRegisterEl2" type="reference">HCR_EL2, Hypervisor Configuration Register, EL2<desc class="- topic/desc ">The HCR_EL2 provides configuration control for virtualization, including     whether various Non-secure operations are trapped to EL2.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">HPFAR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">Hypervisor <term keyref="ipa">I</term> Fault Address Register EL2</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">TCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1458646790614.xml" keyref="TcrEl2TranslationControlRegisterEl2" type="reference">TCR_EL2, Translation Control Register, EL2<desc class="- topic/desc ">The TCR_EL2 controls  walks required for stage 1     translation of a memory access from EL2 and holds cacheability and shareability     information.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VMPIDR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">Virtualization Multiprocessor ID Register EL2</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VPIDR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">Virtualization Core ID Register EL2</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VSESR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"><xref class="- topic/xref " href="mnw1478964168395.xml" keyref="VsesrEl2VirtualSerrorExceptionSyndromeRegisterEl2" type="reference">VSESR_EL2, Virtual SError Exception Syndrome Register (Ares Specific)<desc class="- topic/desc ">The VSESR_EL2 provides the syndrome value reported to software on taking 		a virtual SError interrupt .</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VTCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"><xref class="- topic/xref " href="lau1443449236544.xml" keyref="VtcrEl2VirtualizationTranslationControlRegisterEl2" type="reference">VTCR_EL2, Virtualization Translation Control Register, EL2<desc class="- topic/desc ">The VTCR_EL2 controls the  walks required for the stage     2 translation of memory accesses from Non-secure EL0 and EL1.</desc></xref></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VTTBR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457340777806.xml" keyref="VttbrEl2VirtualizationTranslationTableBaseRegisterEl2" type="reference">VTTBR_EL2, Virtualization Translation Table Base Register, EL2<desc class="- topic/desc ">VTTBR_EL2 holds the base address of the  for the stage 2 		translation of memory accesses from Non-secure EL0 and EL1.</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Exception and  handling registers</title>
+      <table class="- topic/table " id="table_exr_sxz_sw">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443434960248.xml" keyref="Afsr0El1AuxiliaryFaultStatusRegister0El1" type="reference">AFSR0_EL1, Auxiliary Fault Status Register 0, EL1<desc class="- topic/desc ">AFSR0_EL1 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for s     that are taken to EL1. In the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> , no additional information is provided for these s. Therefore this register is     not used.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR0_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460539432217.xml" keyref="Afsr0El2AuxiliaryFaultStatusRegister0El2" type="reference">AFSR0_EL2, Auxiliary Fault Status Register 0, EL2<desc class="- topic/desc ">AFSR0_EL2 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for s     that are taken to EL2. </desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR0_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460541921485.xml" keyref="Afsr0El3AuxiliaryFaultStatusRegister0El3" type="reference">AFSR0_EL3, Auxiliary Fault Status Register 0, EL3<desc class="- topic/desc ">AFSR0_EL3 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for 		s that are taken to EL3. In the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> , no additional information is provided for these s. 		Therefore this register is not used.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443434978778.xml" keyref="Afsr1El1AuxiliaryFaultStatusRegister1El1" type="reference">AFSR1_EL1, Auxiliary Fault Status Register 1, EL1<desc class="- topic/desc ">AFSR1_EL1 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for s     that are taken to EL1. <ph class="- topic/ph "> This register is not used in <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>.</ph></desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR1_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460545106712.xml" keyref="Afsr1El2AuxiliaryFaultStatusRegister1El2" type="reference">AFSR1_EL2, Auxiliary Fault Status Register 1, EL2<desc class="- topic/desc ">AFSR1_EL2 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for s     that are taken to EL2. <ph class="- topic/ph ">This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</ph></desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR1_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460549217620.xml" keyref="Afsr1El3AuxiliaryFaultStatusRegister1El3" type="reference">AFSR1_EL3, Auxiliary Fault Status Register 1, EL3<desc class="- topic/desc ">AFSR1_EL3 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for 		s that are taken to EL3. This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">DISR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457099740111.xml" keyref="DisrEl1DeferredInterruptStatusRegisterEl1" type="reference">DISR_EL1, Deferred Interrupt Status Register, EL1<desc class="- topic/desc ">The DISR_EL1 records the SError interrupts consumed by an <codeph class="+ topic/ph pr-d/codeph ">ESB</codeph> instruction. </desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ESR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="dav1465221618420.xml" keyref="EsrEl1ExceptionSyndromeRegisterEl1" type="reference">ESR_EL1, Exception Syndrome Register, EL1<desc class="- topic/desc ">The ESR_EL1 holds syndrome information for an  taken to EL1.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ESR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443436180070.xml" keyref="EsrEl2ExceptionSyndromeRegisterEl2" type="reference">ESR_EL2, Exception Syndrome Register, EL2<desc class="- topic/desc ">The ESR_EL2 holds syndrome information for an  taken to     EL2.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ESR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="dav1465225143645.xml" keyref="EsrEl3ExceptionSyndromeRegisterEl3" type="reference">ESR_EL3, Exception Syndrome Register, EL3<desc class="- topic/desc ">The ESR_EL3 holds syndrome information for an  taken to EL3.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">HPFAR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p ">Hypervisor  Fault Address Register EL2</p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VDISR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1457099519678.xml" keyref="VdisrEl2VirtualDeferredInterruptStatusRegisterEl2" type="reference">VDISR_EL2, Virtual Deferred Interrupt Status Register, EL2<desc class="- topic/desc ">The VDISR_EL2 records that a virtual SError interrupt has been consumed 		by an <codeph class="+ topic/ph pr-d/codeph ">ESB</codeph> instruction executed at Non-secure 		EL1.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">VSESR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="mnw1478964168395.xml" keyref="VsesrEl2VirtualSerrorExceptionSyndromeRegisterEl2" type="reference">VSESR_EL2, Virtual SError Exception Syndrome Register (Ares Specific)<desc class="- topic/desc ">The VSESR_EL2 provides the syndrome value reported to software on taking 		a virtual SError interrupt .</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Implementation defined registers</title>
+      <table class="- topic/table " id="standard.implem.defined.functional.registers.aarch64">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            
+            
+            
+            
+            
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ATCR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="tny1472108072714.xml" keyref="AtcrEl1AuxiliaryTranslationControlRegisterEl1" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ATCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="mvh1472107452815.xml" keyref="AtcrEl2AuxiliaryTranslationControlRegisterEl2" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ATCR_EL12</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="olf1472106808180.xml" keyref="AtcrEl12AliasToAuxiliaryTranslationControlRegisterEl1" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ATCR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="sds1472108520645.xml" keyref="AtcrEl3AuxiliaryTranslationControlRegisterEl3" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AVTCR_EL2</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="vqi1472110158664.xml" keyref="AvtcrEl2AuxiliaryVirtualizedTranslationControlRegisterEl2" type="reference"/></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CPUACTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435659568.xml" keyref="CpuactlrEl1CpuAuxiliaryControlRegisterEl1" type="reference">CPUACTLR_EL1, CPU Auxiliary Control Register, EL1<desc class="- topic/desc ">The CPUACTLR_EL1 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CPUACTLR2_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="ftg1469778004136.xml" keyref="Cpuactlr2El1CpuAuxiliaryControlRegister2El1" type="reference">CPUACTLR2_EL1, CPU Auxiliary Control Register 2, EL1<desc class="- topic/desc ">The CPUACTLR2_EL1 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the . </desc></xref></p> </entry>
+            </row>
+            
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CPUCFR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RO</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460102853477.xml" keyref="CpucfrEl1CpuConfigurationRegisterEl1" type="reference">CPUCFR_EL1, CPU Configuration Register, EL1<desc class="- topic/desc ">The CPUCFR_EL1 provides configuration information for the . </desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CPUECTLR_EL1 </entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="vrj1494872408498.xml" keyref="CpuectlrEl1CpuExtendedControlRegisterEl1" type="reference">CPUECTLR_EL1, CPU Extended Control Register, EL1<desc class="- topic/desc ">The CPUECTLR_EL1 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options 		for the .</desc></xref></p> </entry>
+            </row>
+            
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CPUPWRCTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1457541801121.xml" keyref="CpupwrctlrEl1PowerControlRegisterEl1" type="reference">CPUPWRCTLR_EL1, Power Control Register, EL1<desc class="- topic/desc ">The CPUPWRCTLR_EL1 provides information about power control support for     the .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXPFGCDNR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460047172751.xml" keyref="ErxpfgcdnrEl1SelectedErrorPseudoFaultGenerationCountDownRegisterEl1" type="reference">ERXPFGCDN_EL1, Selected Error Pseudo Fault Generation Count Down Register, EL1<desc class="- topic/desc ">Register ERXPFGCDN_EL1 accesses the ERR&lt;n&gt;PFGCND register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXPFGCTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460039575404.xml" keyref="ErxpfgctlrEl1SelectedErrorPseudoFaultGenerationControlRegisterEl1" type="reference">ERXPFGCTL_EL1, Selected Error Pseudo Fault Generation Control Register, EL1<desc class="- topic/desc ">Register ERXPFGCTL_EL1 accesses the ERR&lt;n&gt;PFGCTL register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ERXPFGFR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460036786483.xml" keyref="ErxpfgfrEl1SelectedPseudoFaultGenerationFeatureRegisterEl1" type="reference">ERXPFGF_EL1, Selected Pseudo Fault Generation Feature Register, EL1<desc class="- topic/desc ">Register ERXPFGF_EL1 accesses the ERR&lt;n&gt;PFGF register for the error record selected by ERRSELR_EL1.SEL.</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section class="- topic/section ">
+      <p class="- topic/p ">The following table shows the 32-bit wide implementation defined Cluster
+        registers. Details of these registers can be found in <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite></p>
+      <table class="- topic/table " id="table_j5d_zwl_4v">
+        <title class="- topic/title ">Cluster registers</title>
+        <tgroup class="- topic/tgroup " cols="8">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4"/>
+          <colspec class="- topic/colspec " colname="col5" colnum="5"/>
+          <colspec class="- topic/colspec " colname="col6" colnum="6"/>
+          <colspec class="- topic/colspec " colname="col7" colnum="7"/>
+          <colspec class="- topic/colspec " colname="col8" colnum="8"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Copro</entry>
+              <entry class="- topic/entry " colname="col3">CRn</entry>
+              <entry class="- topic/entry " colname="col4">Opc1</entry>
+              <entry class="- topic/entry " colname="col5">CRm</entry>
+              <entry class="- topic/entry " colname="col6">Opc2</entry>
+              <entry class="- topic/entry " colname="col7">Width</entry>
+              <entry class="- topic/entry " colname="col8">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERCFR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c3</entry>
+              <entry class="- topic/entry " colname="col6">0</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster configuration register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c3</entry>
+              <entry class="- topic/entry " colname="col6">1</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster main revision ID.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTEREVIDR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c3</entry>
+              <entry class="- topic/entry " colname="col6">2</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster ECO ID.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERACTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c3</entry>
+              <entry class="- topic/entry " colname="col6">3</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster auxiliary control register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERECTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c3</entry>
+              <entry class="- topic/entry " colname="col6">4</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster extended control register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPWRCTLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c3</entry>
+              <entry class="- topic/entry " colname="col6">5</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster power control register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPWRDN_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c3</entry>
+              <entry class="- topic/entry " colname="col6">6</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster power down register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPWRSTAT_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c3</entry>
+              <entry class="- topic/entry " colname="col6">7</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster power status register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERTHREADSID_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c4</entry>
+              <entry class="- topic/entry " colname="col6">0</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster thread scheme ID register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERACPSID_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c4</entry>
+              <entry class="- topic/entry " colname="col6">1</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster ACP scheme ID register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERSTASHSID_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c4</entry>
+              <entry class="- topic/entry " colname="col6">2</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster stash scheme ID register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERRTCR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c4</entry>
+              <entry class="- topic/entry " colname="col6">3</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster partition control register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERBUSQOS_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c4</entry>
+              <entry class="- topic/entry " colname="col6">4</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster bus QoS control register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERL3HIT_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c4</entry>
+              <entry class="- topic/entry " colname="col6">5</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster L3 hit counter register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERL3MISS_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c4</entry>
+              <entry class="- topic/entry " colname="col6">6</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster L3 miss counter register.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERTHREADSIDOVR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c4</entry>
+              <entry class="- topic/entry " colname="col6">7</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster thread scheme ID override register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMCR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c5</entry>
+              <entry class="- topic/entry " colname="col6">0</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Performance Monitors Control Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMCNTENSET_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c5</entry>
+              <entry class="- topic/entry " colname="col6">1</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Count Enable Set Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMCNTENCLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c5</entry>
+              <entry class="- topic/entry " colname="col6">2</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Count Enable Clear Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMOVSSET_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c5</entry>
+              <entry class="- topic/entry " colname="col6">3</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Overflow Flag Status Set </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMOVSCLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c5</entry>
+              <entry class="- topic/entry " colname="col6">4</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Overflow Flag Status Clear</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMSELR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c5</entry>
+              <entry class="- topic/entry " colname="col6">5</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster <term keyref="event">Event</term> Counter Selection Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMINTENSET_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c5</entry>
+              <entry class="- topic/entry " colname="col6">6</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Interrupt Enable Set Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMINTENCLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c5</entry>
+              <entry class="- topic/entry " colname="col6">7</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Interrupt Enable Clear Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMXEVTYR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c6</entry>
+              <entry class="- topic/entry " colname="col6">1</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Selected  Type and Filter Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMXEVCNTR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5"> c6</entry>
+              <entry class="- topic/entry " colname="col6">2</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Selected  Counter Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Reserved/RAZ</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c6</entry>
+              <entry class="- topic/entry " colname="col6">3</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Monitor Debug Configuration Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMCEID0_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c6</entry>
+              <entry class="- topic/entry " colname="col6">4</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Common  Identification ID0 Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMCEID1_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c6</entry>
+              <entry class="- topic/entry " colname="col6">5</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Common  Identification ID1 Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMCLAIMSET_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c6</entry>
+              <entry class="- topic/entry " colname="col6">6</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Performance Monitor Claim Tag Set Register</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CLUSTERPMCLAIMCLR_EL1</entry>
+              <entry class="- topic/entry " colname="col2">3</entry>
+              <entry class="- topic/entry " colname="col3">c15</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">c6</entry>
+              <entry class="- topic/entry " colname="col6">7</entry>
+              <entry class="- topic/entry " colname="col7">32-bit</entry>
+              <entry class="- topic/entry " colname="col8">Cluster Performance Monitor Claim Tag Clear Register</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Security</title>
+      <table class="- topic/table " id="table_s1x_pk1_tw">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ACTLR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443434859896.xml" keyref="ActlrEl3AuxiliaryControlRegisterEl3" type="reference">ACTLR_EL3, Auxiliary Control Register, EL3<desc class="- topic/desc ">The ACTLR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for EL3.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR0_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460541921485.xml" keyref="Afsr0El3AuxiliaryFaultStatusRegister0El3" type="reference">AFSR0_EL3, Auxiliary Fault Status Register 0, EL3<desc class="- topic/desc ">AFSR0_EL3 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for 		s that are taken to EL3. In the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> , no additional information is provided for these s. 		Therefore this register is not used.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AFSR1_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="joh1460549217620.xml" keyref="Afsr1El3AuxiliaryFaultStatusRegister1El3" type="reference">AFSR1_EL3, Auxiliary Fault Status Register 1, EL3<desc class="- topic/desc ">AFSR1_EL3 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>  status information for 		s that are taken to EL3. This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">AMAIR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435060354.xml" keyref="AmairEl3AuxiliaryMemoryAttributeIndirectionRegisterEl3" type="reference">AMAIR_EL3, Auxiliary Memory Attribute Indirection Register, EL3<desc class="- topic/desc ">AMAIR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> memory attributes for the memory s specified by 		MAIR_EL3. This register is not used in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">CPTR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443435456167.xml" keyref="CptrEl3ArchitecturalFeatureTrapRegisterEl3" type="reference">CPTR_EL3, Architectural Feature Trap Register, EL3<desc class="- topic/desc ">The CPTR_EL3 controls trapping to EL3 of access to CCR_EL1, CPTR_EL2, trace functionality and 		registers associated with  and  execution.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">MDCR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443447162708.xml" keyref="MdcrEl3MonitorDebugConfigurationRegisterEl3" type="reference">MDCR_EL3, Monitor Debug Configuration Register, EL3<desc class="- topic/desc ">The MDCR_EL3 provides configuration options for Security to self-hosted     debug.</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+
+    <section class="- topic/section ">
+      <title class="- topic/title ">Reset management registers</title>
+      <table class="- topic/table " id="table_onl_xfm_xw">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><term keyref="rm">RM</term>R_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443447832537.xml" keyref="RmrEl3ResetManagementRegister" type="reference">R_EL3, Reset Management Register<desc class="- topic/desc ">The R_EL3 controls the execution state that the  boots into and     allows request of a <term keyref="warmreset">Warm reset</term>.</desc></xref></p> </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">RVBAR_EL3</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="zua1470316645250.xml" keyref="RvbarEl3ResetVectorBaseAddressRegisterEl3" type="reference">RVBAR_EL3, Reset Vector Base Address Register, EL3<desc class="- topic/desc ">RVBAR_EL3 contains the <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> address that execution starts from after reset.</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Address registers</title>
+      <table class="- topic/table " id="table_bvf_gl1_tw">
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Name</entry>
+              <entry class="- topic/entry " colname="col2">Type</entry>
+              <entry class="- topic/entry " colname="col3">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">R_EL1</entry>
+              <entry class="- topic/entry " colname="col2">RW</entry>
+              <entry class="- topic/entry " colname="col3"> <p class="- topic/p "><xref class="- topic/xref " href="lau1443447647886.xml" keyref="ParEl1PhysicalAddressRegisterEl1" type="reference">R_EL1, Physical Address Register, EL1<desc class="- topic/desc ">The R_EL1 returns the output address from an address translation     instruction that executed successfully, or  information if the instruction did not execute     successfully.</desc></xref></p> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

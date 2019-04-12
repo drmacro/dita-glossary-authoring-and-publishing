@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="instructionsetsystemmodel">
+  <glossterm>instruction set system model</glossterm>
+  <glossdef>Instruction Set Simulator Model: in the context of RVDS, a set of models that simulate the ARM Cortex family of processors. These models are provided with RVDS.See Also Real Time System Model (RTSM) and Simulator.</glossdef>
+</glossentry>

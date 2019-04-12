@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
-<glossentry id="ds-5debugger">
-  <glossterm>DS-5 Debugger</glossterm>
-  <glossdef>An ARM software development tool that enables you to make use of a debug agent to examine and control the execution of software running on a debug target. It is fully integrated into Eclipse for DS-5.See Also Eclipse for DS-5.</glossdef>
-</glossentry>

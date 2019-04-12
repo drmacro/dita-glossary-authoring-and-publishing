@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="constrainedunpredictable">
+  <glossterm>CONSTRAINED UNPREDICTABLE</glossterm>
+  <glossdef>Where an instruction can result in unpredictable behavior, the ARM architecture can specify a narrow range of permitted behaviors. This range is the range of CONSTRAINED UNPREDICTABLE behavior. All implementations that are compliant with the architecture must follow the CONSTRAINED UNPREDICTABLE behavior. However, software must not rely on any CONSTRAINED UNPREDICTABLE behavior. When CONSTRAINED UNPREDICTABLE appears in body text, it is always in SMALL CAPITALS.</glossdef>
+</glossentry>

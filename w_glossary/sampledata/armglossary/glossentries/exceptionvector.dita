@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="exceptionvector">
+  <glossterm>exception vector</glossterm>
+  <glossdef>A fixed address that contains the address of the first instruction of the corresponding exception handler.</glossdef>
+</glossentry>

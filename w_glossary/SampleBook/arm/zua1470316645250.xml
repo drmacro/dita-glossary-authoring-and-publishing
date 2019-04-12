@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="zua1470316645250" xml:lang="en-us">
+	<title class="- topic/title " id="TitleResetVectorBaseAddressRegister_EL3">RVBAR_EL3, Reset Vector Base
+		Address Register, EL3</title>
+	<abstract class="- topic/abstract ">
+		
+		<shortdesc class="- topic/shortdesc ">RVBAR_EL3 contains the <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> address that execution starts from after reset.</shortdesc>
+	</abstract>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">RVBAR_EL3 is a 64-bit register, and is part of the Reset management
+				registers functional group.</p>
+			<p class="- topic/p ">This register is Read Only.</p>
+			<fig class="- topic/fig " id="fig_ovq_mtq_sv">
+				<title class="- topic/title ">RVBAR_EL3 bit assignments</title>
+				<image class="- topic/image " href="lau1443447936761.svg" id="image_swq_mtq_sv" placement="inline">
+					<alt class="- topic/alt ">RVBAR_EL3 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RVBA, [63:0]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Reset Vector Base Address. The address that execution starts from after reset when executing in 64-bit state. Bits[1:0] of this register are <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.bin">00</codeph>, as this address must be aligned, and bits [63:40] are <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.hex">000000</codeph> because the address must be within the <term keyref="physicaladdress">physical address</term> size supported by the <term keyref="core">core</term>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+			
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">There are no configuration notes.</p>
+						<p class="- topic/p ">Bit fields and details not provided in this description
+							are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+	</refbody>
+</reference>

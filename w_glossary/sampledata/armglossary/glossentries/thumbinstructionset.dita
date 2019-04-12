@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="thumbinstructionset">
+  <glossterm>Thumb instruction set</glossterm>
+  <glossdef>An instruction set that can be used by a core that is in AArch32 execution state. </glossdef>
+</glossentry>

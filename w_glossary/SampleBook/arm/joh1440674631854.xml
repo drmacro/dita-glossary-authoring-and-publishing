@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440674631854" xml:lang="en-us">
+  <title class="- topic/title ">ETM trace unit register interfaces</title>
+  <abstract class="- topic/abstract ">
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+    core supports only memory-mapped interface to trace registers.</shortdesc>
+    
+  </abstract>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <term keyref="embeddedtracemacrocell">Embedded Trace Macrocell</term> Architecture Specification <term keyref="etm">ETM</term>v4</ph></cite> for information on the behaviors on register accesses
+        for different trace unit states and the different access mechanisms.</p>
+      
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><link class="- topic/link " format="dita" href="joh1440673344537.xml" role="friend" scope="local" type="reference"><linktext class="- topic/linktext ">External debug interface</linktext><desc class="- topic/desc ">For information about external debug interface, including debug memory     map and debug signals, see the <ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">                             <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>                                     Shared Unit</keyword></ph> Technical Reference Manual</ph></cite></ph>.</desc></link></linkpool></related-links></reference>

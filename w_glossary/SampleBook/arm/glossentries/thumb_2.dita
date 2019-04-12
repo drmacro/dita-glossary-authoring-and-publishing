@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="thumb_2">
+  <glossterm>Thumb-2</glossterm>
+  <glossdef>The technology, introduced in Armv6T2, that extends the Thumb instruction set to a variable-length instructions set that includes both 16-bit and 32-bit instructions.See Also Thumb instruction and ThumbEE instruction.</glossdef>
+</glossentry>

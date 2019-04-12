@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="ste1440492918455" xml:lang="en-us">
+  <title class="- topic/title ">Instruction cache disabled behavior</title>
+
+  <shortdesc class="- topic/shortdesc ">If the instruction cache is disabled, fetches cannot access any of the
+    instruction cache arrays. An exception is the instruction cache maintenance operations. If the
+    instruction cache is disabled, the instruction cache maintenance operations can still execute
+    normally.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">If the instruction cache is disabled, all instruction fetches to <term keyref="cacheable">cacheable</term>
+        memory are treated as if they were non-. This treatment means that instruction
+        fetches might not be <term keyref="coherent">coherent</term> with caches in other <term keyref="core">core</term>s, and software must take account of
+        this.</p>
+      
+    </section>
+  </conbody>
+</concept>

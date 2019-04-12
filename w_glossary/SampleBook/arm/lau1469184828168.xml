@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1469184828168" xml:lang="en-us">
+	
+	
+	<title class="- topic/title ">ICC_SRE_EL3, Interrupt Controller System Register Enable register,
+		EL3</title>
+	<shortdesc class="- topic/shortdesc ">ICC_SRE_EL3 controls whether the System register interface or the
+		memory-mapped interface to the GIC CPU interface is used for EL3.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ICC_SRE_EL3 is a 32-bit register and is part of:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The <term keyref="gic">GIC</term> system registers functional group.</li>
+				<li class="- topic/li ">The Security registers functional group.</li>
+				<li class="- topic/li ">The  control registers functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_tlq_z3j_5v">
+				<title class="- topic/title ">ICC_SRE_EL3 bit assignments</title>
+				<image class="- topic/image " href="lau1469095918274.svg" id="image_nmq_z3j_5v" placement="inline">
+					<alt class="- topic/alt ">ICC_SRE_EL3 bit assignments</alt>
+				</image>
+			</fig>
+			
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [31:4]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Enable, [3]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Enables lower <term keyref="exceptionlevel">Exception level</term> access to ICC_SRE_EL1 and ICC_SRE_EL2. The value
+						is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<ul class="- topic/ul ">
+										<li class="- topic/li ">Secure EL1 accesses to Secure ICC_SRE_EL1 do not trap to
+											EL3.</li>
+										<li class="- topic/li ">EL2 accesses to Non-secure ICC_SRE_EL1 and ICC_SRE_EL2
+											do not trap to EL3.</li>
+										<li class="- topic/li ">Non-secure EL1 accesses to ICC_SRE_EL1 do not trap to
+											EL3.</li>
+									</ul>
+								</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p ">This bit is <term keyref="rao">RAO</term>/WI.</p>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">DIB, [2]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Disable <term keyref="irq">IRQ</term> bypass. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p "> bypass enabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p "> bypass disabled.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">DFB, [1]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Disable <term keyref="fiq">FIQ</term> bypass. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">0</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p "> bypass enabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p "> bypass disabled.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">SRE, [0]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">System Register Enable. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><keyword class="- topic/keyword " otherprops="g.number.hex">1</keyword></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">The System register interface for the current Security state
+										is enabled.</p>
+								</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p ">This bit is /WI. The <term keyref="core">core</term> only supports a system register interface
+							to the  CPU interface.</p></dd>
+				</dlentry>
+			</dl>
+			
+			<p class="- topic/p ">Bit fields and details that are not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <term keyref="genericinterruptcontroller">Generic Interrupt Controller</term> Architecture Specification</ph></cite>.</p>
+		</section>
+	</refbody>
+</reference>

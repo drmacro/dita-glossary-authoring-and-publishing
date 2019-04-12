@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="rootregion">
+  <glossterm>root region</glossterm>
+  <glossdef>In an image, regions having the same load and execution address. A non-root region is a region that must be copied from its load address to its execution address.See Also Region.</glossdef>
+</glossentry>

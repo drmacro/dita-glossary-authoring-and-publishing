@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
-<glossentry id="sw-dp">
-  <glossterm>SW-DP</glossterm>
-  <glossdef>Serial Wire Debug Port (SW-DP), The interface for Serial Wire Debug.</glossdef>
-</glossentry>

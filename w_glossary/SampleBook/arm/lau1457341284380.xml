@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1457341284380" xml:lang="en-us">
+	<title class="- topic/title ">TTBR0_EL2, Translation Table Base Register 0, EL2</title>
+	<shortdesc class="- topic/shortdesc ">The TTBR0_EL2 holds the base address of the translation table for
+		the stage 1 translation of memory accesses from EL2.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+		</section>
+		<section class="- topic/section ">
+			<p class="- topic/p ">TTBR0_EL2 is a 64-bit register, and is part of the Virtual memory
+				control registers functional group.</p>
+			<fig class="- topic/fig " id="fig_oqn_syt_xw">
+				<title class="- topic/title ">TTBR0_EL2 bit assignments</title>
+				<image class="- topic/image " href="lau1457026251621.svg" id="image_pqn_syt_xw" placement="inline">
+					<alt class="- topic/alt ">TTBR0_EL2 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [63:48]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+								<dd class="- topic/dd ">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">BADDR, [47:1]</dt>
+					<dd class="- topic/dd "><p class="- topic/p ">Translation table base address, bits[47:x]. Bits [x-1:1] are <term class="- topic/term " outputclass="archterm">RES0</term>.</p><p class="- topic/p ">x is based on the value of
+							TCR_EL2.T0SZ, the stage of translation, and the memory translation
+							granule size.</p><p class="- topic/p ">For instructions on how to calculate
+							it, see the <cite class="- topic/cite "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+								Architecture Reference Manual <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>v8,
+								for <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>v8-A architecture profile</cite>.</p><p class="- topic/p ">The value of x determines the required alignment of the
+							<term keyref="translationtable">translation table</term>, that must be aligned to 2<sup class="+ topic/ph hi-d/sup ">x</sup>
+							bytes.</p><p class="- topic/p ">If bits [x-1:1] are not all zero, this is a misaligned  base
+							address. Its effects are <term class="- topic/term " outputclass="archterm">CONSTRAINED <term keyref="unp">UNP</term>REDICTABLE</term>, where bits [x-1:1] are treated as
+							if all the bits are zero. The value <term keyref="read">read</term> back from those bits is the
+							value written.</p></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">CnP, [0]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Common not Private. The possible values are: </p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+								<dd class="- topic/dd ">CnP is not supported.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">CnP is supported.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">When the Virtualization Host Extension is activated,
+							TTBR0_EL2 has the same bit assignments as TTBR0_EL1.</p>
+						<p class="- topic/p ">Bit fields and details that are not provided in this description are
+							architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p></dd>
+				</dlentry>
+			</dl>
+		</section>
+
+		
+
+
+
+	</refbody>
+</reference>

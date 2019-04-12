@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="doubleword_aligned">
+  <glossterm>doubleword-aligned</glossterm>
+  <glossdef>Hyphenate doubleword-aligned. A data item having a memory address that is divisible by eight.</glossdef>
+</glossentry>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1445266072993" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32MemoryModelFeatureRegiste4_EL1">ID_MMFR4_EL1, AArch32 Memory
+    Model Feature Register 4, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_MMFR4_EL1 provides information about the memory model and memory
+    management support in AArch32.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_MMFR4_EL1 is a 32-bit register, and is part of the Identification
+        registers functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_oyw_rpd_gv">
+        <title class="- topic/title ">ID_MMFR4_EL1 bit assignments</title>
+        <image class="- topic/image " href="joh1457455863275.svg" id="image_w1x_rpd_gv" placement="inline">
+          <alt class="- topic/alt ">ID_MMFR4_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RAZ, [31:24]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "/>
+                <dd class="- topic/dd ">Read-As-Zero.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">LSM, [23:20]</dt>
+          <dd class="- topic/dd ">Load/Store Multiple. Indicates whether adjacent loads or stores can be
+            combined. The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+                <dd class="- topic/dd ">LSMAOE and nTLSMD bit not supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">HD, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Presence of Hierarchical Disables. Enables an operating system or hypervisor to hand over up to 4 bits of the last level <term keyref="pagetable">page table</term> descriptor (bits[62:59] of the  entry) for use by hardware for <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> usage. The value is:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">2</ph></dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Hierarchical Permission Disables and Hardware allocation of bits[62:59] supported.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CNP, [15:12]</dt>
+          <dd class="- topic/dd ">Common Not Private. Indicates support for selective sharing of <term keyref="tlb">TLB</term>
+            entries across multiple <term keyref="pe">PE</term>s. The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+                <dd class="- topic/dd ">CnP bit supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">XNX, [11:8]</dt>
+          <dd class="- topic/dd ">Execute Never. Indicates whether the stage 2 <term keyref="translationtable">translation table</term>s allows
+            the stage 2 control of whether memory is executable at EL1 independent of whether memory
+            is executable at EL0. The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+                <dd class="- topic/dd ">EL0/EL1 execute control distinction at stage2 bit
+                  supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">AC2, [7:4]</dt>
+          <dd class="- topic/dd ">Indicates the extension of the ACTLR and HACTLR registers using ACTLR2
+            and HACTLR2. The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></dt>
+                <dd class="- topic/dd ">ACTLR2 and HACTLR2 are implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SpecSEI, [3:0]</dt>
+          <dd class="- topic/dd ">Describes whether the <term keyref="core">core</term> can generate SError interrupt
+            <term keyref="exception">exception</term>s from speculative <term keyref="read">read</term>s of memory, including speculative instruction fetches.
+            The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></dt>
+                <dd class="- topic/dd ">The  never generates an SError interrupt due to an
+                  external <term keyref="abort">abort</term> on a speculative .</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">There is one copy of this register that is used in both Secure and
+              Non-secure states.</p>
+            <p class="- topic/p ">Must be interpreted with ID_MMFR0_EL1, ID_MMFR1_EL1, ID_MMFR2_EL1, and
+              ID_MMFR3_EL1. See:</p>
+            <ul class="- topic/ul " id="ul_npt_ywc_gv">
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445754052.xml" keyref="IdMmfr0El1Aarch32MemoryModelFeatureRegister0El1" type="reference">ID_MMFR0_EL1, <term keyref="aarch32">AArch32</term> Memory Model Feature Register 0, EL1<desc class="- topic/desc ">The ID_MMFR0_EL1 provides information about the memory model and memory management support in 		.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445820394.xml" keyref="IdMmfr1El1Aarch32MemoryModelFeatureRegister1El1" type="reference">ID_MMFR1_EL1,  Memory Model Feature Register 1, EL1<desc class="- topic/desc ">The ID_MMFR1_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445885040.xml" keyref="IdMmfr2El1Aarch32MemoryModelFeatureRegister2El1" type="reference">ID_MMFR2_EL1,  Memory Model Feature Register 2, EL1<desc class="- topic/desc ">The ID_MMFR2_EL1 provides information about the implemented memory model     and memory management support in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445969299.xml" keyref="IdMmfr3El1Aarch32MemoryModelFeatureRegister3El1" type="reference">ID_MMFR3_EL1,  Memory Model Feature Register 3, EL1<desc class="- topic/desc ">The ID_MMFR3_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>
