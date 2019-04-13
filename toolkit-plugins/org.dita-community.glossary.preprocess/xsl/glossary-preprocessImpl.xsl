@@ -18,29 +18,6 @@
        ======================================================== -->
   
   <!--
-    Turn glossary sorting on.
-    
-    Recognized glossary lists will be sorted automatically when this is 
-    true(), otherwise they will not be sorted.
-    -->
-  <xsl:param name="dita-community:sort-glossary" as="xs:string" select="'false'"/>
-  <xsl:variable name="gloss:sort-glossary" as="xs:boolean"
-    select="matches($dita-community:sort-glossary, 'yes|true|on|1', 'i')"
-  />
-
-  <!--
-    Turn glossary filtering on
-    
-    When filtering is on, the normal-role glossary entries found or generated
-    will be limited to those glossary entries used directly or indirectly by
-    normal-role non-glossary-entry topics.
-    -->
-  <xsl:param name="dita-community:filter-glossary" as="xs:string" select="'false'"/>
-  <xsl:variable name="gloss:filter-glossary" as="xs:boolean"
-    select="matches($dita-community:filter-glossary, 'yes|true|on|1', 'i')"
-  />
-  
-  <!--
     Turn glossary generation on.
     
     When true() and a recognized glossary list marker element is found (e.g.,
@@ -58,6 +35,31 @@
     select="matches($dita-community:generate-glossary, 'yes|true|on|1', 'i')"
   />
   
+  <!--
+    Turn glossary sorting on.
+    
+    Recognized glossary lists will be sorted automatically when this is 
+    true(), otherwise they will not be sorted.
+    -->
+  <xsl:param name="dita-community:sort-glossary" as="xs:string" select="'false'"/>
+  <xsl:variable name="gloss:sort-glossary" as="xs:boolean"
+    select="matches($dita-community:sort-glossary, 'yes|true|on|1', 'i') 
+            or $gloss:generate-glossary"
+  />
+
+  <!--
+    Turn glossary filtering on
+    
+    When filtering is on, the normal-role glossary entries found or generated
+    will be limited to those glossary entries used directly or indirectly by
+    normal-role non-glossary-entry topics.
+    -->
+  <xsl:param name="dita-community:filter-glossary" as="xs:string" select="'false'"/>
+  <xsl:variable name="gloss:filter-glossary" as="xs:boolean"
+    select="matches($dita-community:filter-glossary, 'yes|true|on|1', 'i')"
+  />
+  
+
   <xsl:import href="plugin:org.dita-community.common.xslt:xsl/relpath_util.xsl"/>
   <xsl:import href="plugin:org.dita-community.common.xslt:xsl/dita-support-lib.xsl"/>   
   <xsl:import href="plugin:org.dita-community.i18n:xsl/i18n-utils.xsl"/>
@@ -65,6 +67,7 @@
   <xsl:import href="glossary-utils.xsl"/>
   <xsl:import href="glossary-sorter.xsl"/>
   <xsl:import href="glossary-filter.xsl"/>
+  <xsl:import href="glossary-generation.xsl"/>
   <xsl:import href="link-report.xsl"/>
   <xsl:import href="construct-key-spaces.xsl"/>
   
@@ -78,6 +81,19 @@
     <xsl:message>+ [INFO]   generate-glossary: <xsl:value-of select="$gloss:generate-glossary"/> (<xsl:value-of select="$dita-community:generate-glossary"/>)</xsl:message>
     <xsl:message>+ [INFO]   sort-glossary: <xsl:value-of select="$gloss:sort-glossary"/> (<xsl:value-of select="$dita-community:sort-glossary"/>)</xsl:message>
     
+    <xsl:variable name="effectiveInitialGlossaryMap" as="document-node()">
+      <xsl:choose>
+        <xsl:when test="$gloss:generate-glossary">
+          <xsl:apply-templates select="." mode="gloss:generate-glossary">
+            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+          </xsl:apply-templates>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:sequence select="."/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    
     <!-- Generate the filtered map and, optionally, a link report -->
     <xsl:variable name="filteredMapDocs" as="document-node()+">
       <xsl:choose>
@@ -88,21 +104,22 @@
           <xsl:variable name="df:keySpaces" as="map(*)">
             <xsl:call-template name="df:construct-key-spaces">
               <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+              <xsl:with-param name="rootMap" as="document-node()" select="$effectiveInitialGlossaryMap"/>
             </xsl:call-template>
           </xsl:variable>
           <xsl:if test="$localDebug">
             <xsl:message>+ [DEBUG] glossary preprocess: Applying templates in mode dita-community:glossary-filter....</xsl:message>
           </xsl:if>
-          <xsl:apply-templates select="." mode="dita-community:glossary-filter">
+          <xsl:apply-templates select="$effectiveInitialGlossaryMap" mode="dita-community:glossary-filter">
             <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
             <xsl:with-param name="df:keySpaces" as="map(*)" tunnel="yes" select="$df:keySpaces"/>
           </xsl:apply-templates>
         </xsl:when>
         <xsl:otherwise>
           <xsl:if test="$localDebug">
-            <xsl:message>+ [DEBUG] glossary preprocess: gloss:filter-glossary is false, using original input map.</xsl:message>
+            <xsl:message>+ [DEBUG] glossary preprocess: gloss:filter-glossary is false, using effective initial map.</xsl:message>
           </xsl:if>
-          <xsl:sequence select="."/>
+          <xsl:sequence select="$effectiveInitialGlossaryMap"/>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>

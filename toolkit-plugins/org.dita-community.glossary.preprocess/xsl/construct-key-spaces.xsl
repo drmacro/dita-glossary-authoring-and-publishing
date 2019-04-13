@@ -69,6 +69,7 @@
   
   <xsl:template name="df:construct-key-spaces" as="map(*)">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
+    <xsl:param name="rootMap" as="document-node()"/>
         
     <xsl:variable name="localDebug" as="xs:boolean" select="false() or $doDebug"/>
     
@@ -84,7 +85,7 @@
       -->
     <xsl:variable name="keySpaces" as="map(*)*">      
       
-      <xsl:for-each select="/*, .//*[@keyscope]" >
+      <xsl:for-each select="$rootMap/*, $rootMap/.//*[@keyscope]" >
         <!-- Each keyspace is map that relates the key space ID
              to the key space data.
           -->
