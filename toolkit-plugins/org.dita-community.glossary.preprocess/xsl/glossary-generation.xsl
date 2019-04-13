@@ -216,6 +216,9 @@
     />
     
     <xsl:element name="{$newTagName}">
+      <xsl:if test="$gloss:glossentry-toc-no">
+        <xsl:attribute name="toc" select="'no'"/>
+      </xsl:if>
       <xsl:attribute name="processing-role" select="'normal'"/>
       <xsl:apply-templates select="@* except (@processing-role)" mode="gloss:generate-glossary">
         <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>

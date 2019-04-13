@@ -59,7 +59,12 @@
     select="matches($dita-community:filter-glossary, 'yes|true|on|1', 'i')"
   />
   
-
+  <!-- FIXME: Make this a runtime parameter and document it -->
+  <xsl:variable name="gloss:glossgroup-toc-no" as="xs:boolean" select="true()"/>
+  
+  <!-- FIXME: Make this a runtime parameter and document it -->
+  <xsl:variable name="gloss:glossentry-toc-no" as="xs:boolean" select="true()"/>
+  
   <xsl:import href="plugin:org.dita-community.common.xslt:xsl/relpath_util.xsl"/>
   <xsl:import href="plugin:org.dita-community.common.xslt:xsl/dita-support-lib.xsl"/>   
   <xsl:import href="plugin:org.dita-community.i18n:xsl/i18n-utils.xsl"/>
@@ -84,15 +89,15 @@
     <xsl:variable name="effectiveInitialGlossaryMap" as="document-node()">
       <xsl:choose>
         <xsl:when test="$gloss:generate-glossary">
-          <xsl:if test="$localDebug or true()">
+          <xsl:if test="$localDebug or $debug">
             <xsl:message>+ [DEBUG]   Generate glossary is on: applying templates in mode dita-community:generate-glossary...</xsl:message>
           </xsl:if>
           <xsl:apply-templates select="." mode="dita-community:generate-glossary">
-            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug or true()"/>
+            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
           </xsl:apply-templates>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:if test="$localDebug or true()">
+          <xsl:if test="$localDebug or $debug">
             <xsl:message>+ [DEBUG]   Generate glossary is off: Using initial input map.</xsl:message>
           </xsl:if>
           <xsl:sequence select="."/>
