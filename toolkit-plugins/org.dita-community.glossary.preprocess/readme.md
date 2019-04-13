@@ -4,7 +4,7 @@ Preprocessing extension that automates the generation and sorting of glossaries.
 
 Extends the preprocess `keyref` phase. Modifies the resolved map to reflect the glossary manipulation options requested.
 
-Recognizes the BookMap `glosslist` element as the trigger for generating a glossary or as the container of a literal glossary. 
+Recognizes the BookMap `glossarylist` element or the @outputclass "glossarylist" as the trigger for generating a glossary or as the container of a literal glossary. 
 
 Recognizes `glossgroup` topics as containers of other glossary groups or glossary entries (normally via nested topicrefs). When glossary filtering is applied, `glossgroup` topics that end up with no child topicrefs are also filtered out.
 
@@ -48,7 +48,7 @@ Option: `dita-community.generate-glossary=true`
 
 NOTE: glossary generation implies glossary sorting.
 
-For documents that have resource-only topicrefs to glossary entries and have an empty `glosslist` element, a glossary is generated at the point where `glosslist` occurs. Literal normal-role topicrefs to glossary entries are not affected.
+For documents that have resource-only topicrefs to glossary entries and have an empty `glossarylist` element or topicref with an outputclass of "glossarylsit", a glossary is generated at the point where `glossarylist` occurs. Literal normal-role topicrefs to glossary entries are not affected.
 
 The processor finds all resource-only topicrefs to `glossentry` topics then groups and sorts them as described under "Glossary Sorting". This ensures that all keyrefs to glossary entries will continue to be resolved correctly.
 
@@ -56,7 +56,7 @@ Each resource-only topicref to a glossary entry is removed from its original loc
 
 If filtering is also turned on, the resulting glossary is filtered as described under "Glossary Filtering", otherwise the glossary reflects all glossary entries found by examining all the resource-only topicrefs in the map.
 
-Documents that do not use BookMap or `glosslist` can use the `org.dita-community.glossary.preprocess.xsl` to add support for whatever markup convention is used to signal the place where the glossary should be generated (for example, an @outputclass of "glosslist" or a specialization of `topicref`.
+Use the `org.dita-community.glossary.preprocess.xsl` to add support for whatever markup convention is used to signal the place where the glossary should be generated if the base processing is not sufficient.
 
 
 
