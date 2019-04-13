@@ -30,6 +30,10 @@
        
        ======================================================== -->
   
+  <xsl:mode name="dita-community:glossary-filter"
+    on-no-match="shallow-copy"
+  />
+  
   <!-- 
     Filters the input map based on the links.
     
@@ -324,31 +328,14 @@
     
   </xsl:template>
   
-  <xsl:template mode="dita-community:glossary-filter" match="*" priority="-1">
+  <xsl:template mode="dita-community:glossary-filter" match="/*">
     <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    
-    <xsl:variable name="localDebug" as="xs:boolean" select="false()"/>
-    
-    <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] dita-community:glossary-filter: Catch-all (<xsl:value-of select="concat(name(..), '/', name(.))"/>), outputclass="<xsl:value-of select="@outputclass"/>"</xsl:message>
-    </xsl:if>
     
     <xsl:copy copy-namespaces="no">
-      <xsl:apply-templates mode="#current" select="@*, node()">
-        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
-      </xsl:apply-templates>
+      <xsl:attribute name="xml:base" select="base-uri(.)"/>
+      <xsl:apply-templates select="@*, node()" mode="#current"/>
     </xsl:copy>
   </xsl:template>
-  
-  <xsl:template mode="dita-community:glossary-filter" match="text() | @* | comment() | processing-instruction()" priority="-1">
-    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    <xsl:variable name="localDebug" as="xs:boolean" select="false()"/>
-    
-    <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] dita-community:glossary-filter: Catch-all for non-element node: <xsl:sequence select="."/></xsl:message>
-    </xsl:if>
-    <xsl:sequence select="."/>
-  </xsl:template>  
   
   <!-- Context element should be some form of link -->
   <xsl:template mode="gloss:get-glossary-entries-for-links" match="*" as="map(*)?">

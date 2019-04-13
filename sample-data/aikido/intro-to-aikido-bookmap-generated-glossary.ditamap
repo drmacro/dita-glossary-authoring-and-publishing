@@ -52,7 +52,11 @@
   </chapter>
   <backmatter>
     <booklists>
-      <glossarylist/>
+      <glossarylist keyscope="glossary" chunk="to-content select-branch">
+        <topicmeta>
+          <navtitle>Glossary</navtitle>
+        </topicmeta>
+      </glossarylist>
     </booklists>
   </backmatter>
 </bookmap>

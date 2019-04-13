@@ -84,11 +84,17 @@
     <xsl:variable name="effectiveInitialGlossaryMap" as="document-node()">
       <xsl:choose>
         <xsl:when test="$gloss:generate-glossary">
-          <xsl:apply-templates select="." mode="gloss:generate-glossary">
-            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug"/>
+          <xsl:if test="$localDebug or true()">
+            <xsl:message>+ [DEBUG]   Generate glossary is on: applying templates in mode dita-community:generate-glossary...</xsl:message>
+          </xsl:if>
+          <xsl:apply-templates select="." mode="dita-community:generate-glossary">
+            <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$doDebug or true()"/>
           </xsl:apply-templates>
         </xsl:when>
         <xsl:otherwise>
+          <xsl:if test="$localDebug or true()">
+            <xsl:message>+ [DEBUG]   Generate glossary is off: Using initial input map.</xsl:message>
+          </xsl:if>
           <xsl:sequence select="."/>
         </xsl:otherwise>
       </xsl:choose>

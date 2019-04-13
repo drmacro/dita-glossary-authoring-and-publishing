@@ -7,7 +7,8 @@
   xmlns:dci18nfunc="http://org.dita-community/i18n/saxon-extensions"
   
   exclude-result-prefixes="xs dita-community gloss dci18n dci18nfunc"
-  version="2.0">
+  expand-text="yes"
+  version="3.0">
   <!-- ========================================================
        Glossary preprocessing extension: Glossary Sorter
        
@@ -25,6 +26,10 @@
        Copyright (c) 2019 DITA Community Project
        
        ======================================================== -->
+  
+  <xsl:mode name="dita-community:glossary-sort"
+    on-no-match="shallow-copy"
+  />  
   
   <xsl:variable name="gloss:customCollatorUri" as="xs:string"
     select="'http://org.dita-community.i18n.zhCNawareCollator?lang=zh-CN'"
@@ -98,31 +103,5 @@
       <xsl:message>+ [DEBUG] dita-community:glossary-sort: <xsl:value-of select="concat(name(..), '/', name(.))"/> Done.</xsl:message>
     </xsl:if>
   </xsl:template>
-  
-  <xsl:template mode="dita-community:glossary-sort" match="*" priority="-1">
-    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    <xsl:variable name="localDebug" as="xs:boolean" select="false()"/>
-
-    <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] dita-community:glossary-sort: Catch-all (<xsl:value-of select="concat(name(..), '/', name(.))"/>), outputclass="<xsl:value-of select="@outputclass"/>"</xsl:message>
-    </xsl:if>
     
-    <xsl:copy copy-namespaces="no">
-      <xsl:apply-templates mode="#current" select="@*, node()">
-        <xsl:with-param name="doDebug" as="xs:boolean" tunnel="yes" select="$localDebug"/>
-      </xsl:apply-templates>
-    </xsl:copy>
-  </xsl:template>
-  
-  <xsl:template mode="dita-community:glossary-sort" match="text() | @* | comment() | processing-instruction()" priority="-1">
-    <xsl:param name="doDebug" as="xs:boolean" tunnel="yes" select="false()"/>
-    <xsl:variable name="localDebug" as="xs:boolean" select="false()"/>
-    
-    <xsl:if test="$localDebug">
-      <xsl:message>+ [DEBUG] dita-community:glossary-sort: Catch-all for non-element node: <xsl:sequence select="."/></xsl:message>
-    </xsl:if>
-    <xsl:sequence select="."/>
-  </xsl:template>
-  
-  
 </xsl:stylesheet>
