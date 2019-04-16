@@ -62,7 +62,7 @@ builder = Nokogiri::XML::Builder.new do |ditamap|
   ditamap.map('id' =>'glossary_entries')do
     ditamap.title 'Glossary Map'
     @topics.each.with_index do |indfile, idx|
-      ditamap.topicref('href' => "glossentries/#{indfile}", 'keys' => @keys[idx])
+      ditamap.topicref('href' => "glossentries/#{indfile}", 'keys' => @keys[idx], 'toc' => 'no')
     end
   end
 end
