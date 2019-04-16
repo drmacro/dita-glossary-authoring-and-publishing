@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
-    <title>Aikido Glossary Navigation Structure</title>
+   <title>Aikido Glossary Navigation Structure</title>
    <topicref href="en/glossary-title.dita" chunk="to-content select-branch">
       <topicref toc="no" href="en/letter-group-A.dita">
          <topicref keys="ai" keyref="gloss-res.ai"/>
@@ -32,7 +32,7 @@
          <topicref keys="awase" keyref="gloss-res.awase"/>
          <topicref keys="ayumiashi" keyref="gloss-res.ayumiashi"/>
       </topicref>
-     <topicref toc="no" href="en/letter-group-B.dita">
+      <topicref toc="no" href="en/letter-group-B.dita">
          <topicref keys="barai-harai" keyref="gloss-res.barai-harai"/>
          <topicref keys="batto" keyref="gloss-res.batto"/>
          <topicref keys="bo" keyref="gloss-res.bo"/>
@@ -45,7 +45,7 @@
          <topicref keys="bukiwaza" keyref="gloss-res.bukiwaza"/>
          <topicref keys="bushi" keyref="gloss-res.bushi"/>
          <topicref keys="bushido" keyref="gloss-res.bushido"/>
-     </topicref>
+      </topicref>
       <topicref toc="no" href="en/letter-group-C.dita">
          <topicref keys="chado" keyref="gloss-res.chado"/>
          <topicref keys="chikara" keyref="gloss-res.chikara"/>
@@ -72,8 +72,7 @@
          <topicref keys="doka" keyref="gloss-res.doka"/>
          <topicref keys="domo" keyref="gloss-res.domo"/>
          <topicref keys="domo-arigato-gozaimas" keyref="gloss-res.domo-arigato-gozaimas"/>
-         <topicref keys="domo-arigato-gozaimashita"
-                 keyref="gloss-res.domo-arigato-gozaimashita"/>
+         <topicref keys="domo-arigato-gozaimashita" keyref="gloss-res.domo-arigato-gozaimashita"/>
          <topicref keys="dori" keyref="gloss-res.dori"/>
          <topicref keys="dosa" keyref="gloss-res.dosa"/>
          <topicref keys="doshu" keyref="gloss-res.doshu"/>
@@ -317,8 +316,7 @@
          <topicref keys="ninindori" keyref="gloss-res.ninindori"/>
          <topicref keys="ninja" keyref="gloss-res.ninja"/>
          <topicref keys="Nippon-Nihon" keyref="gloss-res.Nippon-Nihon"/>
-         <topicref keys="Nito-ichiryu-Niten-ichiryu"
-                 keyref="gloss-res.Nito-ichiryu-Niten-ichiryu"/>
+         <topicref keys="Nito-ichiryu-Niten-ichiryu" keyref="gloss-res.Nito-ichiryu-Niten-ichiryu"/>
          <topicref keys="noto" keyref="gloss-res.noto"/>
          <topicref keys="nuki" keyref="gloss-res.nuki"/>
          <topicref keys="nukite" keyref="gloss-res.nukite"/>
@@ -521,7 +519,7 @@
          <topicref keys="Yoshinkan" keyref="gloss-res.Yoshinkan"/>
          <topicref keys="yudansha" keyref="gloss-res.yudansha"/>
       </topicref>
-     <topicref toc="no" href="en/letter-group-Z.dita">
+      <topicref toc="no" href="en/letter-group-Z.dita">
          <topicref keys="za" keyref="gloss-res.za"/>
          <topicref keys="Zaidan-Hojin-Aikikai" keyref="gloss-res.Zaidan-Hojin-Aikikai"/>
          <topicref keys="zanshin" keyref="gloss-res.zanshin"/>
@@ -530,6 +528,6 @@
          <topicref keys="zen" keyref="gloss-res.zen"/>
          <topicref keys="zengo" keyref="gloss-res.zengo"/>
          <topicref keys="zori" keyref="gloss-res.zori"/>
-     </topicref>
-   </topicref>  
+      </topicref>
+   </topicref>
 </map>

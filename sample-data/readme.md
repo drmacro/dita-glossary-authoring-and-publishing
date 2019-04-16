@@ -33,7 +33,7 @@ The resource-only map is in the key scope "gloss-res" (glossary resource-only ke
          <topicref keys="aihanmi" keyref="gloss-res.aihanmi"/>
 ```
 
-With both of these maps the base keys are the same are just the terms with "-" for spaces.
+With both of these maps the base keys are the same: just the terms with "-" for spaces.
 
 This allows the key references within the glossary topics to other glossary entries to just use the base key:
 
@@ -97,12 +97,15 @@ It uses the bookmap map type so that it has the bookmap-specific &lt;glossarylis
   />
   </frontmatter>
 ```
-  It does not otherwise include any key definitions for the glossary entries. The presentation intent is that the the term text will be pulled from the referenced glossary entries but the terms will be made into links only if generation of cross-deliverable links is possible (or is requested if possible). The presumption with a scope of "peer" is that the source files of the peer resource are available at the time the referencing document is processed, so there should be no technical difficulty resolving the key references to get the term text. The processing challenge comes in producing deliverables that make those term references into working cross-deliverable links.
-  Out of the box, the Open Toolkit doesn not resolve the cross-publication term references. The OxygenXML editor does resolve cross-publication term references, so you can see what the correct result _should_ be even if the Open Toolkit does not resolve them out of the box. 
+  It does not otherwise include any key definitions for the glossary entries. 
+  
+The presentation intent is that the the term text will be pulled from the referenced glossary entries but the terms will be made into links only if generation of cross-deliverable links is possible (or is requested if possible). The presumption with a scope of "peer" is that the source files of the peer resource are available at the time the referencing document is processed, so there should be no technical difficulty resolving the key references to get the term text. The processing challenge comes in producing deliverables that make those term references into working cross-deliverable links.
+
+Out of the box, the Open Toolkit doesn not resolve the cross-publication term references. The OxygenXML editor does resolve cross-publication term references, so you can see what the correct result _should_ be even if the Open Toolkit does not resolve them out of the box. 
   
 ## Implementing Cross-Publication Term References
 
-Conceptually resolving cross-publication term references simple to get the term text is a simple matter of resolving the peer map reference to the root map and then using that root map as the basis for resolving the key references in the peer map's scope.
+Conceptually resolving cross-publication term references simply to get the term text is a simple matter of resolving the peer map reference to the root map and then using that root map as the basis for resolving the key references in the peer map's scope.
 
 That is, given this map reference:
 ```
@@ -112,23 +115,25 @@ That is, given this map reference:
 ```
 You resolve the @href value to a map and then construct the key spaces for that map. Having constructed those key spaces you can then resolve key references within them just as you would resolve key references for the initial input map.
 
-So for this key reference made in the content of the map you're publishing:
+So for this key reference made in the context of the map you're publishing:
 ```
 <term keyref="glossary.kokyu"/>
 ```
-You would find the scope "glossary", which in this context is bound to the peer root map `aikido-master-glossary-en.ditamap` and then resolve the key name "kokyu" in that map, which in this example will get you to the glossary entry topic `en/gloss-kokyu.dita` as used in the navigation structure of the master Aikido glossary (as opposed to the same topic used as a resource-only topic within the key scope "gloss-res"). The use context is important because different use contexts might have different effective values for the term text.
+You would find the key scope "glossary", which in this context is bound to the peer root map `aikido-master-glossary-en.ditamap` and then resolve the key name "kokyu" in that map, which in this example will get you to the glossary entry topic `en/gloss-kokyu.dita` as used in the navigation structure of the master Aikido glossary (as opposed to the same topic used as a resource-only topic within the key scope "gloss-res"). The use context is important because different use contexts might have different effective values for the term text.
 
 If there is no filtering in effect for the content set then the processing is very simple: just use normal XML processing to resolve the references and normal DITA processing to construct the key space and resolve the key name to its resource (topic, text-only key definition, etc.).
 
-However, if there is filtering in effect then things get more complicated because you need to process the target document using the "appropriate" runtime filtering conditions. What "appropriate" is could differ depending on the needs of what you're publishing but typically you would expect "appropriate" to be "the same filtering conditions in effect for the main input map. So if you're publishing the "beginner" version of the Intro to Aikido publication you'd expect to resolve the cross-publication term references from the master glossary filtered on "beginner". But the requirements in practice could be more complicated. For example, maybe the Intro to Aikido publication is filtered but the master glossary is not, with the glossary entries using flagging to distinguish beginner and expert content.
+However, if there is filtering in effect then things get more complicated because you need to process the target document using the "appropriate" runtime filtering conditions. What "appropriate" is could differ depending on the needs of what you're publishing but typically you would expect "appropriate" to be "the same filtering conditions in effect for the main input map." So if you're publishing the "beginner" version of the Intro to Aikido publication you'd expect to resolve the cross-publication term references from the master glossary filtered on "beginner". But the requirements in practice could be more complicated. For example, maybe the Intro to Aikido publication is filtered but the master glossary is not, with the glossary entries using flagging to distinguish beginner and expert content.
 
 In a case like that you need a per-root-map filtering configuration as part of the processing configuration for the publishing instance you're performing.
 
-This implies that there needs to be some kind of "publishing configuration" mechanism that addresses these requirements as well as other requirements around publication management. As of version 3.3 of the Open Toolkit, the Toolkit team is working on specifying the requirements for some kind of "project configuration" mechanism but hasn't yet started implementing anything.
+This implies that there needs to be some kind of "publishing configuration" mechanism that addresses these requirements as well as other requirements around publication management. As of version 3.3 of the Open Toolkit, the Toolkit team is working on specifying the requirements for some kind of "project configuration" mechanism and has started implementation.
 
-Note that these are the issues just for _resovling_ cross-publication references. Generating working cross-deliverable links gets even more complicated because in addition to the filtering that might be applied to peer publications you also have to know what deliverable format or formats the links from the deliverable you're producting should be _to_ for each target deliverable. In the simple case you can establish a "like links to like" rule (e.g., PDF links to PDF) but that will not work for many situations, for example, where a PDF needs to link to reference information that is only published as HTML (API reference documentation, for example, where the API is updated constantly and so PDF is neither that useful or that practical).
+Note that these are the issues just for _resovling_ cross-publication references. 
 
-So the publication-time configuration also has to have some way of configuring knowledge about the target deliverables, including where they will be delivered relative to the deliverable you're generating now. There may also need to be a way to configure the target deliverable on a per-link, per deliverable being linked from basis (although you would hope that that level of complexity can be avoided most of the time).
+Generating working cross-deliverable links gets even more complicated because in addition to the filtering that might be applied to peer publications you also have to know what deliverable format or formats the links from the deliverable you're producting should be _to_ for each target deliverable. In the simple case you can establish a "like links to like" rule (i.e., PDF links to PDF) but that will not work for many situations, for example, where a PDF needs to link to reference information that is only published as HTML (API reference documentation, for example, where the API is updated constantly and so PDF is neither that useful or that practical).
+
+So the publication-time configuration also has to have some way of configuring knowledge about the target deliverables, including where they will be delivered relative to the deliverable you're generating now. There may also need to be a way to configure the target deliverable on a per-link, per-deliverable-being-linked-from basis (although you would hope that that level of complexity can be avoided most of the time).
 
 This implies the need for some kind of "publication manager" that maintains both the publication configuration details and knowledge about what has been published and when. This is the kind of service that would normally be provided by a content management or publication management system and would always need to be tailored or configured to reflect the specific requirements of each publishing organization.
 
@@ -148,9 +153,11 @@ Ideally this processing would be applied to a map for which all the direct-URI m
 
 In terms of both the 3.3 preprocess and preprocess2 Ant targets, that would be between the branch-filter target and the keyref target. There is no extension point there.
 
-However, for both preprocess and preprocess2 the mapref target is implemented using an XSLT transform, `org.dita.base/xsl/preprocess/mapref.xsl` that is extensible. So it would be possible to extend that transform to rework the maps before branch filtering is applied.
+However, for both preprocess and preprocess2 the mapref target is implemented using an XSLT transform, `org.dita.base/xsl/preprocess/mapref.xsl` that is extensible. So it is possible to extend that transform to rework the maps before branch filtering is applied.
 
 This extension point can be used to rework the glossary-related map structures before the map goes to branch filtering or topic-level keyref resolution.
+
+The plugin `org.dita-community.glossary.preprocess` provides an extension to the `keyref` phase that implements these three options.
 
 ### Cross-Deliverable Implementation with the 3.x Open Toolkit
 
@@ -159,6 +166,8 @@ If I'm understanding the key processing code, the KeyrefModule builds the key sp
 And then that is passed to the KeyrefPaser [sic] class that processes all the topics that have keyrefs to resolve key references within them using the information in the key spaces.
 
 That suggests that the place to add handling of peer scopes is in KeyrefModule and then KeyrefPaser probably needs to be enhanced to handle the case where a reference is to something in a peer scope.
+
+The `org.dita-community.glossary.preprocess` code also includes generate XSLT code to construct DITA 1.3 scoped key spaces and resolve references to them, but it requires that all the preprocessing up to the `keyref` phase has already been performed, including inserting topicgroup elements that capture any original submap references (and thus any key scopes defined by the map reference or the submap element). The alternative would be to basically replicate the map preprocessing that the OT already does in a standalone XSLT module. The practical implication is that each target publication needs to at least have been processed up to the `keyref` preprocessing phase and the intermediate files saved. Again, this implies some kind of "publication manager" that knows where all the source files are, knows where the temporary files are, and whether or not the temporary files are up to date with the source and the publishing configuration details (since a change to either would require generating the temporary files).
 
 
 ## DITA OT Notes
