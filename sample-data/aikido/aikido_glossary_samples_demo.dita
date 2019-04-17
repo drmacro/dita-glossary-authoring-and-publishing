@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="aikido-glossary-samples">
+    <title>Aikido Glossary Samples</title>
+    <topic id="three-use-cases">
+        <title>Three use cases:</title>
+        <body>
+            <ol id="ol_nyk_kfn_lhb">
+                <li>Complete authored glossary: <xref
+                        href="file:./intro-to-aikido-bookmap-literal-glossary.ditamap"
+                        format="ditamap" scope="peer"
+                        >intro-to-aikido-bookmap-literal-glossary.ditamap</xref>
+                </li>
+                <li>Generated glossary: <xref
+                        href="intro-to-aikido-bookmap-generated-glossary.ditamap" format="ditamap"
+                        scope="peer">intro-to-aikido-bookmap-generated-glossary.ditamap</xref></li>
+                <li>Master glossary published as separate publication, term links are
+                    cross-publication links: <xref
+                        href="intro-to-aikido-bookmap-cross-book-link-to-glossary.ditamap"
+                        format="ditamap" scope="peer"
+                        >intro-to-aikido-bookmap-cross-book-link-to-glossary.ditamap</xref></li>
+            </ol>
+        </body>
+    </topic>
+    <topic id="output-requirements">
+        <title>Output requirements</title>
+        <body>
+            <ul id="ul_oyk_kfn_lhb">
+                <li>
+                    <p>Filter glossary to only terms actually used</p>
+                </li>
+                <li>
+                    <p>Generate glossary navigation structure</p>
+                </li>
+                <li>
+                    <p>Group and sort authored glossary</p>
+                </li>
+            </ul>
+        </body>
+    </topic>
+    <topic id="demo">
+        <title>Demo</title>
+        <body>
+            <ol id="ol_pyk_kfn_lhb">
+                <li>Produce complete authored glossary</li>
+                <li>Produce complete glossary, filtered</li>
+                <li>Generate glossary</li>
+                <li>Generate glossary filtered</li>
+            </ol>
+        </body>
+    </topic>
+</topic>

@@ -3,8 +3,7 @@
 <reference id="referenceId">
   <title>Kokyu tanden ho</title>
   <shortdesc>Breath power (<term keyref="glossary.kokyu"/>) throw or exercise (<term
-      keyref="glossary.ho-1">ho</term>) from kneeling position (<term keyref="glossary.seiza"
-      >seiza</term>)</shortdesc>
+      keyref="glossary.ho-1"/>) from kneeling position (<term keyref="glossary.seiza"/>)</shortdesc>
   <refbody>
     <section
       spectitle="Description">
