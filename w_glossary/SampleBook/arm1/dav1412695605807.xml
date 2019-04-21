@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="dav1412695605807" xml:lang="en-us">
+	<title class="- topic/title ">RTL configuration options</title>
+	<shortdesc class="- topic/shortdesc ">This chapter describes the build time RTL configuration options which are
+		related to the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> processor
+		fault detection and control mechanisms.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<conbody class="- topic/body  concept/conbody ">
+		<p class="- topic/p "/>
+	</conbody>
+</concept>

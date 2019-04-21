@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="tapcontroller">
+  <glossterm>TAP Controller</glossterm>
+  <glossdef>Logic on a device that enables access to some or all of that device for test purposes. The circuit functionality is defined in IEEE1149.1.See Also Joint Test Action Group (JTAG).</glossdef>
+</glossentry>

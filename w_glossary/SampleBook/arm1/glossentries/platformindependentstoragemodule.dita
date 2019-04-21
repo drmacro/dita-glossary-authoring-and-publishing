@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="platformindependentstoragemodule">
+  <glossterm>Platform Independent Storage Module</glossterm>
+  <glossdef>Memory specification for plug-in memory modules.</glossdef>
+</glossentry>

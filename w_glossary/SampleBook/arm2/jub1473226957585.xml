@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="jub1473226957585" xml:lang="en-us">
+	<title class="- topic/title ">PMPCSSR, Snapshot Program Counter Sample Register</title>
+	<shortdesc class="- topic/shortdesc ">The PMPCSSR is an alias for the PCSR register.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">However, unlike the other view of  PCSR, it is not sensitive to <term keyref="read">read</term>s. That is, s of
+				PMPCSSR through the PMU snapshot view do not cause a new sample capture and do not
+				change CIDSR, CID2SR, or VIDSR.</p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">The PMPCSSR is a 64-bit -only register.</p>
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">PMPCSSR bit assignments</title>
+				<image class="- topic/image " href="qvu1473227689906.svg" placement="inline">
+					<alt class="- topic/alt ">PMPCSSR bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">NS, [63]</dt>
+					<dd class="- topic/dd ">Non-secure sample. </dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">EL, [62:61]</dt>
+					<dd class="- topic/dd ">Exception level sample. </dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">RES0, [60:56]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">PC, [55:0]</dt>
+					<dd class="- topic/dd ">Sampled PC.</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">There are no configuration notes.</dd>
+				</dlentry>
+			</dl>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Usage constraints</title>
+			<p class="- topic/p ">Any access to PMPCSSR returns an error if any of the following occurs:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The <term keyref="core">core</term> power domain is off.</li>
+				<li class="- topic/li ">DoubleLockStatus() == TRUE.</li>
+			</ul>
+		</section>
+	</refbody>
+</reference>

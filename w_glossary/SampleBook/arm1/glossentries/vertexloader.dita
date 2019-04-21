@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="vertexloader">
+  <glossterm>vertex loader</glossterm>
+  <glossdef>A component of the vertex processor that loads vertex attributes from memory and inputs them to the vertex shader unit.</glossdef>
+</glossentry>

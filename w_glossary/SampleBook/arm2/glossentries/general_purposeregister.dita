@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="general_purposeregister">
+  <glossterm>general-purpose register</glossterm>
+  <glossdef>Use 'source general-purpose register'. Processing registers used in AArch32 Execution state, comprising: 13 general-purpose registers, R0 to R12, that software uses for all data processing when using the base instruction set instructions. SP, the Stack Pointer, that can also be referred to as R13. LR, the Link Register, that can also be referred to as R14. PC, the Program Counter, that can also be referred to as R15. In some situations, software can use SP, LR, and PC for processing. The instruction descriptions include any constraints on the use of SP, LR, and PC.</glossdef>
+</glossentry>

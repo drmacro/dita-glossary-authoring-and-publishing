@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="hia1473229271650" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+	<title class="- topic/title " xtrc="title:1;4:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">PMSSSR, PMU Snapshot Status Register</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">The PMSSSR holds status information about the captured counters.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;6:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml"><publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata></prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;7:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+		<section class="- topic/section " xtrc="section:1;8:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+			<title class="- topic/title " xtrc="title:2;9:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;10:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">The PMSSSR is a 32-bit <term class="- topic/term " keyref="read" xtrc="term:1;10:69" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">read</term>-only register.</p>
+			<fig class="- topic/fig " xtrc="fig:1;11:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+				<title class="- topic/title " xtrc="title:3;12:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">PMSSSR bit assignments</title>
+				<image class="- topic/image " href="hng1473229788064.svg" placement="inline" xtrc="image:1;13:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+					<alt class="- topic/alt " xtrc="alt:1;14:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">PMSSSR bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;17:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;18:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+					<dt class="- topic/dt " xtrc="dt:1;19:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">RES0, [31:1]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;20:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:2;20:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">RES0</term>. </dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:2;22:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+					<dt class="- topic/dt " xtrc="dt:2;23:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">NC, [0]</dt>
+					<dd class="- topic/dd " xtrc="dd:2;24:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+						<p class="- topic/p " xtrc="p:2;25:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">No capture. This bit indicates whether the PMU counters have been captured.
+							The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12" xtrc="dl:2;27:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:3;28:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+								<dt class="- topic/dt " xtrc="dt:3;29:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">0</dt>
+								<dd class="- topic/dd " xtrc="dd:3;30:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">PMU counters are captured.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;32:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+								<dt class="- topic/dt " xtrc="dt:4;33:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">1</dt>
+								<dd class="- topic/dd " xtrc="dd:4;34:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">PMU counters are not captured.</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p " xtrc="p:3;37:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">If there is a security violation, the <term class="- topic/term " keyref="core" xtrc="term:3;37:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">core</term> does not capture the event
+							counters. The external monitor is responsible for keeping track of
+							whether it managed to capture the snapshot registers from the .</p>
+						<p class="- topic/p " xtrc="p:4;40:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">This bit does not reflect the status of the captured <term class="- topic/term " keyref="programcounter" xtrc="term:4;40:112" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">Program Counter</term>
+							Sample registers.</p>
+						<p class="- topic/p " xtrc="p:5;42:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">The  resets this bit to 1 by a <term class="- topic/term " keyref="warmreset" xtrc="term:5;42:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">Warm reset</term> but MPSSSR.NC is
+							overwritten at the first capture.</p>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:3;47:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:5;48:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+					<dt class="- topic/dt " xtrc="dt:5;49:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:5;50:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">There are no configuration notes.</dd>
+				</dlentry>
+			</dl>
+		</section>
+		<section class="- topic/section " xtrc="section:2;54:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+			<title class="- topic/title " xtrc="title:4;55:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">Usage constraints</title>
+			<p class="- topic/p " xtrc="p:6;56:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">Any access to PMSSSR returns an error if any of the following occurs:</p>
+			<ul class="- topic/ul " xtrc="ul:1;57:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">
+				<li class="- topic/li " xtrc="li:1;58:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">The  power domain is off.</li>
+				<li class="- topic/li " xtrc="li:2;59:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/hia1473229271650.xml">DoubleLockStatus() == TRUE.</li>
+			</ul>
+		</section>
+	</refbody>
+</reference>

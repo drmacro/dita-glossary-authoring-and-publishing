@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="tol1478623191718" xml:lang="en-us">
+  <title class="- topic/title ">Armv8 Debug UNPREDICTABLE behaviors</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">Armv8 Debug UNPREDICTABLE behaviors</navtitle>
+  </titlealts>
+ 
+ 
+  <shortdesc class="- topic/shortdesc "> This section describes the behavior that the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implements when: </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">A topic has multiple options.</li>
+        <li class="- topic/li ">The behavior differs from either or both of the Options and Preferences
+          behaviors.</li>
+      </ul>
+      <note class="- topic/note ">This section does not describe the behavior when a topic only has a
+        single option and the core implements the preferred behavior.</note>
+      <table class="- topic/table ">
+        <title class="- topic/title ">Armv8 Debug <term class="- topic/term " outputclass="archterm">unpredictable</term> behaviors</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Scenario</entry>
+              <entry class="- topic/entry " colname="col2">Behavior</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">A32 BKPT instruction with condition code not
+                AL</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements the following preferred option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">Executed unconditionally.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Address match breakpoint match only on second
+                halfword of an instruction</entry>
+              <entry class="- topic/entry " colname="col2">The core generates a breakpoint on the
+                instruction if CPSR.IL=0. In the case of CPSR.IL=1, the core does not generate
+                a breakpoint exception. </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Address matching breakpoint on A32 instruction
+                with DBGBCRn.BAS=1100</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements the following option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">Does match if CPSR.IL=0.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Address match breakpoint match on T32 instruction
+                at DBGBCRn+2 with DBGBCRn.BAS=1111</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements the following option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">Does match.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Link to non-existent breakpoint or breakpoint that
+                is not context-aware</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements the following option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">No Breakpoint or Watchpoint debug event is generated, and the
+                    LBN field of the <term class="- topic/term ">linker</term> reads <term class="- topic/term " outputclass="archterm">unknown</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">DBGWCRn_EL1.MASK!=00000 and
+                DBGWCRn_EL1.BAS!=11111111</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core behaves as indicated in the sole Preference:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">DBGWCRn_EL1.BAS is <term class="- topic/term " outputclass="archterm">ignored</term> and treated as if <ph class="- topic/ph " otherprops="g.number.hex">11111111</ph>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Address match breakpoint with
+                DBGBCRn_EL1.BAS=0000</entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">The core implements the
+                  following option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">As if disabled.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"> DBGWCRn_EL1.BAS specifies a non-contiguous set of
+                bytes within a double-word</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements the following option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">A Watchpoint debug event is generated for each byte.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">A32 HLT instruction with condition code not
+                AL</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements the following option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">Executed unconditionally.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Execute instruction at a given EL when the
+                corresponding EDECCR bit is 1 and Halting is allowed</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core behaves as follows:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">Generates debug event and Halt no later than the instruction
+                    following the next <term class="- topic/term ">Context Synchronization
+                      operation</term> (CSO) excluding ISB instruction.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"> H &gt; N or H = 0 at Non-secure EL1 and EL0,
+                including value read from PMCR_EL0.N</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li "><p class="- topic/p ">A simple implementation where all of
+                      HPMN[4:0] are implemented, and In Non-secure EL1 and EL0:</p>
+                    <ul class="- topic/ul ">
+                      <li class="- topic/li ">If H &gt; N then M = N.</li>
+                      <li class="- topic/li ">If H = 0 then M = 0.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">H &gt; N or H = 0: value read back in
+                MDCR_EL2.HPMN</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">A simple implementation where all of HPMN[4:0] are
+                    implemented and for reads of MDCR_EL2.HPMN, return H.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">P ≥ M and P ≠ 31: reads and writes of PM
+                XEVTYPER_EL0 and PMXEVCNTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">A simple implementation where all of SEL[4:0] are
+                    implemented, and if P ≥ M and P ≠ 31 then the register is <term class="- topic/term " outputclass="archterm">res0</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">P ≥ M and P ≠ 31: value read in
+                PMSELR_EL0.SEL</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">A simple implementation where all of SEL[4:0] are
+                    implemented, and if P ≥ M and P ≠ 31 then the register is <term class="- topic/term " outputclass="archterm">res0</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">P = 31: reads and writes of PMXEVCNTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li "><term class="- topic/term " outputclass="archterm">res0</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">n ≥ M: Direct access to PMEVCNTRn_EL0 and
+                PMEVTYPERn_EL0</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">If n ≥ N, then the instruction is <term class="- topic/term " outputclass="archterm">unallocated</term>.</li>
+                  <li class="- topic/li ">Otherwise if n ≥ M, then the register is <term class="- topic/term " outputclass="archterm">res0</term>.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Exiting Debug state while instruction issued
+                through EDITR is in flight</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core implements the following option:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">The instruction completes in Debug state before executing the
+                    restart.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Using memory-access mode with a non-word-aligned
+                address</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core behaves as indicated in the sole Preference:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">Does unaligned accesses, faulting if these are not permitted
+                    for the memory type.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Access to memory-mapped registers mapped to Normal
+                memory</entry>
+              <entry class="- topic/entry " colname="col2">
+                <p class="- topic/p ">The core behaves as indicated in the sole Preference:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">The access is generated, and accesses might be repeated,
+                    gathered, split or resized, in accordance with the rules for Normal memory,
+                    meaning the effect is <term class="- topic/term " outputclass="archterm">unpredictable</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><p class="- topic/p ">Not word-sized accesses or
+                  (AArch64 only) doubleword-sized accesses</p> &gt; </entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">The core behaves as
+                  indicated in the sole Preference:</p>
+                <ul class="- topic/ul ">
+                  <li class="- topic/li ">Reads occur and return <term class="- topic/term " outputclass="archterm">unknown</term> data.</li>
+                  <li class="- topic/li ">Writes set the accessed register(s) to <term class="- topic/term " outputclass="archterm">unknown</term>.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">External debug write to register that is being
+                reset</entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">The core behaves as
+                  indicated in the sole Preference:</p><ul class="- topic/ul ">
+                  <li class="- topic/li ">Takes reset value.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Accessing reserved debug registers</entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">The core deviates from
+                  preferred behavior because the hardware cost to decode some of these addresses in
+                  debug power domain is significantly high.</p>
+                <p class="- topic/p ">The actual behavior is:</p>
+                <ol class="- topic/ol ">
+                  <li class="- topic/li " id="access.reserved.debug.reg.one">For reserved debug
+                    registers in the address range <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">000</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">CFC</ph></codeph> and Performance
+                    Monitors registers in the address range <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">000</ph></codeph>, the response is
+                    either <term class="- topic/term " outputclass="archterm">constrained
+                      unpredictable</term> Error or <term class="- topic/term " outputclass="archterm">res0</term> when any of the following errors occurs:<dl class="- topic/dl ">
+                      <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt ">Off</dt>
+                        <dd class="- topic/dd ">The core power domain is either completely off or in a
+                          low-power state where the core power domain registers cannot be
+                          accessed.</dd>
+                      </dlentry>
+                      <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt ">DLK</dt>
+                        <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">DoubleLockStatus()</codeph> is
+                          TRUE and OS double-lock is locked (EDPRSR.DLK is 1).</dd>
+                      </dlentry>
+                      <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt ">OSLK</dt>
+                        <dd class="- topic/dd ">OS lock is locked (OSLSR_EL1.OSLK is 1).</dd>
+                      </dlentry>
+                    </dl></li>
+                  <li class="- topic/li " id="access.reserved.debug.reg.two">For reserved debug
+                    registers in the address ranges <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">400</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">4FC</ph></codeph> and <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">800</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">8FC</ph></codeph>, the response is <term class="- topic/term " outputclass="archterm">constrained unpredictable</term> Error
+                    or <term class="- topic/term " outputclass="archterm">res0</term> when the conditions
+                    in <xref class="- topic/xref " href="tol1478623191718.xml#tol1478623191718/access.reserved.debug.reg.one" type="li">1</xref> do not apply and the following error occurs:<dl class="- topic/dl ">
+                      <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt ">EDAD</dt>
+                        <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">AllowExternalDebugAccess()</codeph> is FALSE. External debug access is
+                          disabled.</dd>
+                      </dlentry>
+                    </dl></li>
+                  <li class="- topic/li ">For reserved Performance Monitor registers in the address
+                    ranges <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">000</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0FC</ph></codeph> and <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">400</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">47C</ph></codeph>, the response is either <term class="- topic/term " outputclass="archterm">constrained unpredictable</term> Error, or <term class="- topic/term " outputclass="archterm">res0</term> when the conditions in
+                      <xref class="- topic/xref " href="tol1478623191718.xml#tol1478623191718/access.reserved.debug.reg.one" type="li">1</xref> and <xref class="- topic/xref " href="tol1478623191718.xml#tol1478623191718/access.reserved.debug.reg.two" type="li">2</xref> do not apply, and the following error occurs:<dl class="- topic/dl ">
+                      <dlentry class="- topic/dlentry ">
+                        <dt class="- topic/dt ">EPMAD</dt>
+                        <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">AllowExternalPMUAccess()</codeph> is FALSE. External Performance
+                          Monitors access is disabled.</dd>
+                      </dlentry>
+                    </dl></li>
+                </ol>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Clearing the <term class="- topic/term ">clear-after-read</term> EDPRSR bits when Core power domain is on, and <codeph class="+ topic/ph pr-d/codeph ">DoubleLockStatus()</codeph> is TRUE</entry>
+              <entry class="- topic/entry " colname="col2"><p class="- topic/p ">The core behaves as
+                  indicated in the sole Preference:</p><ul class="- topic/ul ">
+                  <li class="- topic/li "><p class="- topic/p ">Bits are not cleared to zero.</p></li>
+                </ul></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

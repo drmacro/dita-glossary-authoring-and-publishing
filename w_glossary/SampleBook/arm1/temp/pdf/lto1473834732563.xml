@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lto1473834732563" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">
+	<title class="- topic/title " xtrc="title:1;4:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">Write streaming mode</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">A cache line is allocated to the L1 on either a read miss or a write
+		miss.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;7:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+		</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;10:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">
+		<section class="- topic/section " xtrc="section:1;11:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">
+			<p class="- topic/p " xtrc="p:1;12:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">However, there are some situations where allocating on writes is not required. For example,
+				when executing the C standard library <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;13:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">memset</codeph>() function to clear a
+				large block of memory to a known value. <term class="- topic/term " keyref="write" xtrc="term:1;14:66" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">Write</term>s of large blocks of data can pollute
+				the cache with unnecessary data. It can also waste power and performance if a
+				linefill must be performed only to discard the linefill data because the entire line
+				was subsequently written by the <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;17:77" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">memset</codeph>().</p>
+			<p class="- topic/p " xtrc="p:2;18:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">To counter this, the L1 memory system includes logic to detect when the <term class="- topic/term " keyref="core" xtrc="term:2;18:118" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">core</term> has stores
+				pending to a full cache line when it is waiting for a linefill to complete, or when
+				it detects a <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;20:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">DCZVA</codeph> (full cache line write to zero). If this
+				situation is detected, then it switches into write streaming mode.</p>
+			<p class="- topic/p " xtrc="p:3;22:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">When in write streaming mode, loads behave as normal, and can still cause linefills, and writes still lookup in the cache, but if they miss then they write out to L2 (or possibly <ph class="- topic/ph " xtrc="ph:1;22:229" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">L3, system cache, or DRAM</ph>) rather than starting a linefill.</p>
+			
+			<p class="- topic/p " xtrc="p:4;24:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">The L1 memory system continues in write streaming mode until it can no longer create a full
+				cacheline of store (for example because of a lack of resource in the L1 memory
+				system) or has detected a high proportion of store hitting in the cache.</p>
+			
+			<note class="- topic/note " xtrc="note:1;28:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">The L1 memory system is monitoring transaction traffic through L1 and, depending on different thresholds, can set a stream to go out to L2, L3, and system cache and DRAM.</note>
+			
+			<p class="- topic/p " xtrc="p:5;30:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">The following registers control the different thresholds:</p>
+			<dl class="- topic/dl " xtrc="dl:1;31:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;33:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">
+					<dt class="- topic/dt " xtrc="dt:1;34:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">AArch64 state</dt>
+					<dd class="- topic/dd " xtrc="dd:1;35:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">CPUECTLR_EL1 configure the L2, L3, and system cache write streaming mode threshold. See <xref class="- topic/xref " href="vrj1494872408498.xml" keyref="CpuectlrEl1CpuExtendedControlRegisterEl1" type="reference" xtrc="xref:1;35:241" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml"><?ditaot usertext?>CPUECTLR_EL1, CPU Extended Control Register, EL1<desc class="- topic/desc " xtrc="desc:1;35:317" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">The CPUECTLR_EL1 provides additional <term class="- topic/term " outputclass="archterm" xtrc="term:3;35:405" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lto1473834732563.xml">IMPLEMENTATION DEFINED</term> configuration and control options 		for the .</desc></xref>.</dd>
+				</dlentry>
+				
+			</dl>
+		</section>
+	</refbody>
+</reference>

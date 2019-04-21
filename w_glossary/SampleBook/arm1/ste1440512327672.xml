@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1440512327672" xml:lang="en-us">
+  <title class="- topic/title ">Debug</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">Debug</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">This chapter describes the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core debug registers
+    and shows examples of how to use them.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "/>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="joh1440673227157.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">About debug methods</linktext><desc class="- topic/desc ">The core is part of a debug system and supports both self-hosted     and external debug. </desc></link><link class="- topic/link " format="dita" href="ste1440512493302.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Debug register interfaces</linktext><desc class="- topic/desc ">The Debug architecture defines a set of debug registers.</desc></link><link class="- topic/link " format="dita" href="joh1440673335878.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Debug events</linktext><desc class="- topic/desc ">A debug event can be a software debug event or a halting debug     event.</desc></link><link class="- topic/link " format="dita" href="joh1440673344537.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">External debug interface</linktext><desc class="- topic/desc ">For information about external debug interface, including debug memory     map and debug signals, see the <ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">                             <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>                                     Shared Unit</keyword></ph> Technical Reference Manual</ph></cite></ph>.</desc></link></linkpool></linkpool></related-links></reference>

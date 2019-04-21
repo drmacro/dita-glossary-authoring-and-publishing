@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="ds_5">
+  <glossterm>DS-5</glossterm>
+  <glossdef>The suite of software development tools, together with supporting documentation and examples, that enable you to write and debug applications for the ARM family of processors. DS-5 supersedes RealView Development Suite.See Also RealView Development Suite (RVDS).</glossdef>
+</glossentry>

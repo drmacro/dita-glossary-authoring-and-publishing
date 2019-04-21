@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="ht">
+  <glossterm>HT</glossterm>
+  <glossdef>Hierarchical Tiler, a type of graphical tiler. Probably not unique to ARM. Used in some of the Mali GPUs. Just two normal words, no capitalisation, no special meaning.</glossdef>
+</glossentry>

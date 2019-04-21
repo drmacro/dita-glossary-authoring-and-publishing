@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ljp1483519921466" xml:lang="en-us">
+	<title class="- topic/title ">AMU counters</title>
+	<abstract class="- topic/abstract ">
+		<shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implements five counters, 0-4. The activity monitor counters, AMEVCNTR0-4, have the following characteristics:</shortdesc>
+		
+	</abstract>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">All events are counted in 64-bit wrapping counters that overflow when they wrap.
+					There is no support for overflow status indication or interrupts.</li>
+				<li class="- topic/li ">Any change in clock frequency, including when a WFI and WFE instruction stops the clock, can affect any counter.</li>
+				
+				<li class="- topic/li ">Events 0, 1, 2, 3, and 4 are fixed, and the AMEVTYPER&lt;n&gt; evtCount bits are <term keyref="read">read</term>-only.</li>
+				
+				
+				
+				
+				
+			</ul>
+			
+			
+		</section>
+	</refbody>
+</reference>

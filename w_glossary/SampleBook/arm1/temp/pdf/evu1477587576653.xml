@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="evu1477587576653" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+  <title class="- topic/title " xtrc="title:1;4:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">PMCR_EL0, Performance Monitors Control Register, EL0</title><titlealts class="- topic/titlealts "/>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">The PMCR_EL0 provides details of the Performance Monitors
+    implementation, including the number of counters implemented, and configures and controls the
+    counters.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;8:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;11:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+    <section class="- topic/section " xtrc="section:1;12:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+      <title class="- topic/title " xtrc="title:2;13:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Bit field descriptions</title>
+      <fig class="- topic/fig " xtrc="fig:1;14:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+        <title class="- topic/title " xtrc="title:3;15:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">PMCR_EL0 bit assignments</title>
+        <image class="- topic/image " href="lau1443689231489.svg" placement="inline" xtrc="image:1;16:86" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <alt class="- topic/alt " xtrc="alt:1;17:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">PMCR_EL0 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl " xtrc="dl:1;20:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;21:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:1;22:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">IMP, [31:24]</dt>
+          <dd class="- topic/dd " xtrc="dd:1;23:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:1;23:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Implementer code:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:2;23:144" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:2;24:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:2;25:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;25:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;25:131" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">41</ph></codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:2;26:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><keyword class="- topic/keyword " xtrc="keyword:1;26:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Arm</keyword>.</dd>
+              </dlentry>
+            </dl><p class="- topic/p " xtrc="p:2;28:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">This is a <term class="- topic/term " keyref="read" xtrc="term:1;28:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">read</term>-only field.</p></dd>
+        </dlentry>
+
+        <dlentry class="- topic/dlentry " xtrc="dlentry:3;31:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:3;32:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">IDCODE, [23:16]</dt>
+          <dd class="- topic/dd " xtrc="dd:3;33:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:3;33:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Identification code:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:3;33:147" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:4;34:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:4;35:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">   <ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;35:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0B</ph>  </dt>
+                <dd class="- topic/dd " xtrc="dd:4;36:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><ph class="- topic/ph " xtrc="ph:3;36:65" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><keyword class="- topic/keyword " xtrc="keyword:2;36:99" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;36:136" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Cortex</tm></keyword><keyword class="- topic/keyword " xtrc="keyword:3;36:191" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">‑A76</keyword></ph>.</dd>
+              </dlentry>
+            </dl><p class="- topic/p " xtrc="p:4;38:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">This is a -only field.</p></dd>
+        </dlentry>
+
+
+        <dlentry class="- topic/dlentry " xtrc="dlentry:5;42:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:5;43:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">N, [15:11]</dt>
+          <dd class="- topic/dd " xtrc="dd:5;44:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:5;44:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Number of event counters.</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:4;44:152" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:6;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:6;46:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;46:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0b00110</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:6;47:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Six counters.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+
+        <dlentry class="- topic/dlentry " xtrc="dlentry:7;52:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:7;53:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">RES0, [10:7]</dt>
+          <dd class="- topic/dd " xtrc="dd:7;54:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:5;55:79" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:8;56:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:8;57:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:2;57:92" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">RES0</term></dt>
+                <dd class="- topic/dd " xtrc="dd:8;58:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+
+        <dlentry class="- topic/dlentry " xtrc="dlentry:9;64:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:9;65:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">LC, [6]</dt>
+          <dd class="- topic/dd " xtrc="dd:9;66:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:6;66:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Long cycle count enable. Determines which
+              PMCCNTR_EL0 bit generates an overflow recorded in PMOVSR[31]. The possible values
+              are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:6;68:89" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:10;69:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:10;70:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;70:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:10;71:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Overflow on increment that changes PMCCNTR_EL0[31] from 1 to
+                  0.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:11;74:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:11;75:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;75:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:11;76:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Overflow on increment that changes PMCCNTR_EL0[63] from 1 to
+                  0.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+
+        <dlentry class="- topic/dlentry " xtrc="dlentry:12;82:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:12;83:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">DP, [5]</dt>
+          <dd class="- topic/dd " xtrc="dd:12;84:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:7;84:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Disable cycle counter, PMCCNTR_EL0 when event
+              counting is prohibited:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:7;85:108" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:13;86:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:13;87:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;87:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:13;88:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Cycle counter operates regardless of the non-invasive debug
+                  authentication settings. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:14;91:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:14;92:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;92:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:14;93:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Cycle counter is disabled if non-invasive debug is not permitted
+                  and enabled.</dd>
+              </dlentry>
+            </dl><p class="- topic/p " xtrc="p:8;96:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">This bit is /write.</p></dd>
+        </dlentry>
+
+
+
+        <dlentry class="- topic/dlentry " xtrc="dlentry:15;101:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:15;102:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">X, [4]</dt>
+          <dd class="- topic/dd " xtrc="dd:15;103:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:9;103:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Export enable. This bit permits events to be
+              exported to another debug <term class="- topic/term " keyref="device" xtrc="term:3;104:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">device</term>, such as a trace macrocell, over an event bus:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:8;104:193" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:16;105:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:16;106:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;106:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:16;107:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Export of events is disabled. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:17;109:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:17;110:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:8;110:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:17;111:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Export of events is enabled.</dd>
+              </dlentry>
+            </dl><p class="- topic/p " xtrc="p:10;113:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">This bit is /write and does not affect the generation of
+              Performance Monitors interrupts on the <keyword class="- topic/keyword " otherprops="g.signal.name" xtrc="keyword:4;114:115" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">nPMUIRQ</keyword> pin.</p></dd>
+        </dlentry>
+
+        <dlentry class="- topic/dlentry " xtrc="dlentry:18;117:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:18;118:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">D, [3]</dt>
+          <dd class="- topic/dd " xtrc="dd:18;119:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:11;119:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Clock divider:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:9;119:141" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:19;120:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:19;121:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:9;121:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:19;122:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">When enabled, PMCCNTR_EL0 counts every clock cycle. This is the
+                  reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:20;125:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:20;126:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:10;126:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:20;127:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">When enabled, PMCCNTR_EL0 counts every 64 clock cycles.</dd>
+              </dlentry>
+            </dl><p class="- topic/p " xtrc="p:12;129:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">This bit is /write.</p></dd>
+        </dlentry>
+
+        <dlentry class="- topic/dlentry " xtrc="dlentry:21;132:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:21;133:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">C, [2]</dt>
+          <dd class="- topic/dd " xtrc="dd:21;134:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:13;134:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Clock counter reset. This bit is WO. The effects
+              of writing to this bit are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:10;135:112" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:22;136:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:22;137:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:11;137:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:22;138:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">No action. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:23;140:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:23;141:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:12;141:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:23;142:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Reset PMCCNTR_EL0 to 0.</dd>
+              </dlentry>
+            </dl><p class="- topic/p " xtrc="p:14;144:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">This bit is always <term class="- topic/term " keyref="raz" xtrc="term:4;144:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">RAZ</term>.</p><p class="- topic/p " xtrc="p:15;144:115" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Resetting PMCCNTR_EL0 does not clear the PMCCNTR_EL0 overflow bit to 0. See the
+                <cite class="- topic/cite " xtrc="cite:1;145:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><ph class="- topic/ph " xtrc="ph:4;145:69" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:5;146:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:2;146:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:6;146:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:7;146:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Arm</keyword>v8-A architecture profile</ph></cite> for more
+              information.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:24;149:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:24;150:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">P, [1]</dt>
+          <dd class="- topic/dd " xtrc="dd:24;151:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:16;151:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Event counter reset. This bit is WO. The effects
+              of writing to this bit are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:11;152:112" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:25;153:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:25;154:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:13;154:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:25;155:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">No action. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:26;157:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:26;158:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:14;158:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:26;159:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Reset all event counters, not including PMCCNTR_EL0, to
+                  zero.</dd>
+              </dlentry>
+            </dl><p class="- topic/p " xtrc="p:17;162:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">This bit is always .</p><p class="- topic/p " xtrc="p:18;162:86" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">In Non-secure
+              EL0 and EL1, a write of 1 to this bit does not reset event counters that MDCR_EL2.HPMN
+              reserves for EL2 use.</p><p class="- topic/p " xtrc="p:19;164:62" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">In EL2 and EL3, a write of 1 to this bit
+              resets all the event counters.</p><p class="- topic/p " xtrc="p:20;165:71" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Resetting the event counters
+              does not clear any overflow bits to 0.</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:27;168:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:27;169:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">E, [0]</dt>
+          <dd class="- topic/dd " xtrc="dd:27;170:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><p class="- topic/p " xtrc="p:21;170:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Enable. The possible values of this bit
+              are:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:12;171:89" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:28;172:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:28;173:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:15;173:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:28;174:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">All counters, including PMCCNTR_EL0, are disabled. This is the
+                  reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:29;177:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                <dt class="- topic/dt " xtrc="dt:29;178:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:16;178:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:29;179:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">All counters are enabled.</dd>
+              </dlentry>
+            </dl><p class="- topic/p " xtrc="p:22;181:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">This bit is RW.</p><p class="- topic/p " xtrc="p:23;181:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">In Non-secure EL0 and
+              EL1, this bit does not affect the operation of event counters that MDCR_EL2.HPMN
+              reserves for EL2 use.</p><p class="- topic/p " xtrc="p:24;183:62" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">On <term class="- topic/term " keyref="warmreset" xtrc="term:5;183:90" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Warm reset</term>, the field resets to
+            0.</p></dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl " xtrc="dl:13;187:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:30;188:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+          <dt class="- topic/dt " xtrc="dt:30;189:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Configurations</dt>
+          <dd class="- topic/dd " xtrc="dd:30;190:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+            <p class="- topic/p " xtrc="p:25;191:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">AArch64 System register PMCR_EL0 is architecturally mapped to
+              <term class="- topic/term " keyref="aarch32" xtrc="term:6;192:38" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">AArch32</term> System register PMCR.</p>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p " xtrc="p:26;196:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite " xtrc="cite:2;197:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><ph class="- topic/ph " xtrc="ph:5;197:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:8;198:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:3;198:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:9;198:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:10;198:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/evu1477587576653.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

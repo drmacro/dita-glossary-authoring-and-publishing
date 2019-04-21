@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="xkn1476729556026" xml:lang="en-us">
+	<title class="- topic/title ">Main functions</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Main functions</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">The three main functions of the MMU are to:</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">Control the table walk hardware that accesses <term keyref="translationtable">translation table</term>s in
+					main memory.</li>
+				<li class="- topic/li ">Translate <term class="- topic/term ">Virtual Addresses</term> (VAs) to
+					<term class="- topic/term ">Physical Addresses</term> (PAs).</li>
+				<li class="- topic/li ">Provide fine-grained memory system control through a set of
+					virtual-to-physical address mappings and memory attributes that are held in translation
+					tables.</li>
+			</ul>
+			<p class="- topic/p ">Each stage of address translation uses a set of address translations and
+				associated memory properties that are held in memory mapped tables called translation
+				tables. Translation table entries can be cached into a <term class="- topic/term ">Translation
+					Lookaside Buffer</term> (<term keyref="tlb">TLB</term>).</p>
+
+
+			<p class="- topic/p ">The following table describes the components included in the <term keyref="mmu">MMU</term>.</p>
+			<table class="- topic/table ">
+				<title class="- topic/title ">s and  caches in the </title>
+				<tgroup class="- topic/tgroup " cols="2">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Component</entry>
+							<entry class="- topic/entry " colname="col2">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Instruction L1 </entry>
+							<entry class="- topic/entry " colname="col2">48 entries, fully associative.</entry>
+						</row>
+						
+						
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Data L1 </entry>
+							<entry class="- topic/entry " colname="col2">48 entries, fully associative.</entry>
+						</row>
+						
+						
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">L2  cache</entry>
+							<entry class="- topic/entry " colname="col2">1280 entries, 5-way set associative.</entry>
+						</row>
+						
+						
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Translation table prefetcher</entry>
+							<entry class="- topic/entry " colname="col2">Detects access to contiguous s and prefetches the next one.
+								This prefetcher can be disabled in the <term keyref="ect">ECT</term>LR register.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<p class="- topic/p ">The  entries contain either one or both of a global indicator
+				and an <term class="- topic/term ">Address Space Identifier</term> (ASID) to permit
+				context switches without requiring the  to be <term keyref="invalidate">invalidate</term>d.</p>
+			<p class="- topic/p ">The  entries contain a <term class="- topic/term ">Virtual Machine
+				Identifier</term> (VMID) to permit virtual machine switches by the hypervisor
+				without requiring the  to be d.</p>
+		</section>
+	</refbody>
+</reference>

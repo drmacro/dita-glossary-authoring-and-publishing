@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="iintegrator">
+  <glossterm>iIntegrator</glossterm>
+  <glossdef>A range of ARM hardware development platforms. Core modules are available that contain the processor and local memory.See Also Core module.</glossdef>
+</glossentry>

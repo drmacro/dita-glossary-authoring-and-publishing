@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="ohj1490885562644" xml:lang="en-us">
+  <title class="- topic/title ">Load/Store accesses crossing page boundaries</title>
+  <shortdesc class="- topic/shortdesc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+    core implements a set of behaviors for load or store accesses that cross page
+    boundaries.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <dl class="- topic/dl ">
+      <dlentry class="- topic/dlentry ">
+        <dt class="- topic/dt ">Crossing a page boundary with different memory types or shareability
+          attributes</dt>
+        <dd class="- topic/dd "><p class="- topic/p ">The <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>, states that a memory access from a load or store instruction that
+          crosses a page boundary to a memory location that has a different memory type or
+          shareability attribute results in <term class="- topic/term " outputclass="archterm">constrained unpredictable</term> behavior.</p></dd>
+      </dlentry>
+    </dl>
+    
+    <dl class="- topic/dl ">
+      <dlentry class="- topic/dlentry ">
+        <dt class="- topic/dt ">Crossing a 4KB boundary with a Device access</dt>
+        <dd class="- topic/dd "><p class="- topic/p ">The <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>, states that a memory access from a load or store instruction to Device
+          memory that crosses a 4KB boundary results in <term class="- topic/term " outputclass="archterm">constrained unpredictable</term> behavior.</p></dd>
+      </dlentry>
+      <dlentry class="- topic/dlentry ">
+        <dt class="- topic/dt ">Implementation (for both page boundary specifications)</dt>
+        <dd class="- topic/dd ">
+          <p class="- topic/p ">For an access that crosses a page boundary, the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implements
+            the following behaviors:</p>
+          <ul class="- topic/ul ">
+            <li class="- topic/li "><p class="- topic/p ">Store crossing a page boundary:</p><ul class="- topic/ul ">
+              <li class="- topic/li ">No alignment fault.</li>
+              <li class="- topic/li ">The access is split into two stores.</li>
+              <li class="- topic/li ">Each store uses the memory type and shareability attributes
+                associated with its own address.</li>
+            </ul></li>
+            <li class="- topic/li "><p class="- topic/p ">Load crossing a page boundary (Device to Device
+              and Normal to Normal):</p><ul class="- topic/ul ">
+                <li class="- topic/li ">No alignment fault.</li>
+                <li class="- topic/li ">The access is split into two loads.</li>
+                <li class="- topic/li ">Each load uses the memory type and shareability attributes
+                  associated with its own address.</li>
+              </ul></li>
+            <li class="- topic/li "><p class="- topic/p ">Load crossing a page boundary (Device to Normal
+              and Normal to Device):</p><ul class="- topic/ul ">
+                
+                <li class="- topic/li ">The instruction will generate an alignment fault.</li>
+                
+                
+              </ul></li>
+          </ul></dd>
+      </dlentry>
+    </dl>
+  </conbody>
+</concept>

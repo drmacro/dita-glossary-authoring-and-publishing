@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1469181709121" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+	
+	
+	<title class="- topic/title " xtrc="title:1;6:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">ICC_BPR0_EL1, Interrupt Controller Binary Point Register 0, EL1</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;7:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">ICC_BPR0_EL1 defines the point at which the priority value fields split
+		into two parts, the group priority field and the subpriority field. The group priority field
+		determines Group 0 interrupt preemption.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;10:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;13:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+		<section class="- topic/section " xtrc="section:1;14:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+			<title class="- topic/title " xtrc="title:2;15:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;16:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">ICC_BPR0_EL1 is a 32-bit register and is part of:</p>
+			<ul class="- topic/ul " xtrc="ul:1;17:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+				<li class="- topic/li " xtrc="li:1;18:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">The <term class="- topic/term " keyref="gic" xtrc="term:1;18:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">GIC</term> system registers functional group.</li>
+				<li class="- topic/li " xtrc="li:2;19:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">The  control registers functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_tlq_z3j_5v" xtrc="fig:1;21:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+				<title class="- topic/title " xtrc="title:3;22:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">ICC_BPR0_EL1 bit assignments</title>
+				<image class="- topic/image " href="lau1469100408998.svg" id="image_nmq_z3j_5v" placement="inline" xtrc="image:1;23:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+					<alt class="- topic/alt " xtrc="alt:1;24:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">ICC_BPR0_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			
+			<dl class="- topic/dl " xtrc="dl:1;28:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;29:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+					<dt class="- topic/dt " xtrc="dt:1;30:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">RES0, [31:3]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;31:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;32:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;33:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+								<dt class="- topic/dt " xtrc="dt:2;34:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:2;34:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:2;35:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;40:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+					<dt class="- topic/dt " xtrc="dt:3;41:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">BinaryPoint, [2:0]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;42:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml"><p class="- topic/p " xtrc="p:2;42:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">The value of this field controls how the 8-bit interrupt priority field is split
+							into a group priority field, that determines interrupt preemption, and a
+							subpriority field. The minimum value that is implemented is:</p>
+						<dl class="- topic/dl " xtrc="dl:3;45:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;46:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">
+								<dt class="- topic/dt " xtrc="dt:4;47:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;47:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">2</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:4;48:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml"/>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			
+			<p class="- topic/p " xtrc="p:3;55:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">Bit fields and details that are not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;56:66" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml"><ph class="- topic/ph " xtrc="ph:2;56:90" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml"><keyword class="- topic/keyword " xtrc="keyword:1;56:124" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;56:161" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">Arm</tm></keyword> <term class="- topic/term " keyref="genericinterruptcontroller" xtrc="term:3;56:222" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469181709121.xml">Generic Interrupt Controller</term> Architecture Specification</ph></cite>.</p>
+		</section>
+	</refbody>
+</reference>

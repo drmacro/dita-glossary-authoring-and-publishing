@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="boardfile">
+  <glossterm>board file</glossterm>
+  <glossdef>A debugger uses this term to refer to the top-level configuration file, normally called rvdebug.brd, that references one or more other configuration files. A board file contains:the Debug Configuration (connection-level) settingsreferences to the Debug Interface configuration file that identifies the targets on the development platformreferences to any Board and Chip Definition (BCD) files assigned to a Debug Configuration.See Also Board and Chip Definition (BCD) file and Debug configuration.</glossdef>
+</glossentry>

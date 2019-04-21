@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="joh1440673227157" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+  <title class="- topic/title " xtrc="title:1;4:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">About debug methods</title><titlealts class="- topic/titlealts "/>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">The core is part of a debug system and supports both self-hosted
+    and external debug. </shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;7:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;11:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+    
+    <section class="- topic/section " xtrc="section:1;13:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+      <p class="- topic/p " xtrc="p:1;14:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">The following figure shows a typical external debug system.</p>
+      <fig class="- topic/fig " id="fig_jkb_tsg_qr" xtrc="fig:1;15:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+        <title class="- topic/title " xtrc="title:2;16:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">External debug system</title>
+        <image class="- topic/image " href="joh1449593460962.svg" id="image_nlb_tsg_qr" placement="inline" xtrc="image:1;17:108" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+          <alt class="- topic/alt " xtrc="alt:1;18:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">External debug system</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl " xtrc="dl:1;21:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;22:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+          <dt class="- topic/dt " xtrc="dt:1;23:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Debug <term class="- topic/term " keyref="host" xtrc="term:1;23:61" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">host</term></dt>
+          <dd class="- topic/dd " xtrc="dd:1;24:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">A computer, for example a personal computer, that
+            is running a software debugger such as the <term class="- topic/term " keyref="ds_5" xtrc="term:2;25:76" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">DS-5</term> Debugger. With the
+            debug , you can issue high-level commands, such as setting a
+            <term class="- topic/term " keyref="breakpoint" xtrc="term:3;27:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">breakpoint</term> at a certain location or examining the contents of a
+            memory address.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:2;30:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+          <dt class="- topic/dt " xtrc="dt:2;31:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Protocol converter</dt>
+          <dd class="- topic/dd " xtrc="dd:2;32:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">The debug  sends messages to the debug target
+            using an interface such as Ethernet. However, the debug target
+            typically implements a different interface protocol. A <term class="- topic/term " keyref="device" xtrc="term:4;34:90" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">device</term> such
+            as DSTREAM is required to convert between the two protocols.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:3;37:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+          <dt class="- topic/dt " xtrc="dt:3;38:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Debug target</dt>
+          <dd class="- topic/dd " xtrc="dd:3;39:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+            <p class="- topic/p " xtrc="p:2;40:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">The lowest level of the system implements system
+              support for the protocol converter to access the debug unit using
+              the <term class="- topic/term " xtrc="term:5;42:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Advanced Peripheral Bus</term> (APB)
+              slave interface. An example of a debug target is a development
+              system with a test chip or a silicon part with a <term class="- topic/term " keyref="core" xtrc="term:6;44:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">core</term>.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:4;47:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+          <dt class="- topic/dt " xtrc="dt:4;48:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Debug unit</dt>
+          <dd class="- topic/dd " xtrc="dd:4;49:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+            <p class="- topic/p " xtrc="p:3;50:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Helps debugging software that is running on the
+              :</p>
+            <ul class="- topic/ul " id="ul_xlb_tsg_qr" xtrc="ul:1;52:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+              <li class="- topic/li " xtrc="li:1;53:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Hardware systems that are based on the
+                .</li>
+              <li class="- topic/li " xtrc="li:2;55:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Operating systems.</li>
+              <li class="- topic/li " xtrc="li:3;56:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Application software.</li>
+            </ul>
+            <p class="- topic/p " xtrc="p:4;58:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">With the debug unit, you can:</p>
+            <ul class="- topic/ul " id="ul_hmb_tsg_qr" xtrc="ul:2;59:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">
+              <li class="- topic/li " xtrc="li:4;60:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Stop program execution.</li>
+              <li class="- topic/li " xtrc="li:5;61:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Examine and alter process and <term class="- topic/term " keyref="coprocessor" xtrc="term:7;61:96" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">coprocessor</term>
+                state.</li>
+              <li class="- topic/li " xtrc="li:6;63:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Examine and alter memory and
+                the
+                state of the input or output peripherals.</li>
+              <li class="- topic/li " xtrc="li:7;66:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Restart the .</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    
+    <section class="- topic/section " xtrc="section:2;73:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml"><p class="- topic/p " xtrc="p:5;73:61" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">For self-ed debug, the debug target runs additional debug monitor software
+      that runs on the <ph class="- topic/ph " xtrc="ph:1;74:48" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml"><keyword class="- topic/keyword " xtrc="keyword:1;74:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;74:119" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">Cortex</tm></keyword><keyword class="- topic/keyword " xtrc="keyword:2;74:174" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1440673227157.xml">‑A76</keyword></ph> 
+       itself. This way, it does not require expensive interface hardware to connect a
+      second  computer.</p>
+      
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="baseportinglayer">
+  <glossterm>base porting layer</glossterm>
+  <glossdef>A platform-dependent base driver software component that communicates with the Mali GPU. For example, the base porting layer controls the Mali GPU registers. You implement, or port, the base porting layer onto different target platforms.</glossdef>
+</glossentry>

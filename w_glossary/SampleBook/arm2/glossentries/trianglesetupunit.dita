@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="trianglesetupunit">
+  <glossterm>triangle setup unit</glossterm>
+  <glossdef>A component of a fragment processor. The triangle setup unit prepares primitives for rendering by calculating the data required to rasterize and shade the primitive.</glossdef>
+</glossentry>

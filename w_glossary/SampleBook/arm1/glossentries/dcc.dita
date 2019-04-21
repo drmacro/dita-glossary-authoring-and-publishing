@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="dcc">
+  <glossterm>DCC</glossterm>
+  <glossdef>A channel that carries data between a debugger and debug logic in the target processor. It can do this without stopping the program flow or causing entry to Debug state, but can also be used when the target is in Debug state. The DCC is part of the debug register interface of the target.</glossdef>
+</glossentry>

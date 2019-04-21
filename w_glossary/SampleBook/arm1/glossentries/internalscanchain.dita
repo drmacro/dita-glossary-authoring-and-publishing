@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="internalscanchain">
+  <glossterm>internal scan chain</glossterm>
+  <glossdef>A series of registers connected together to form a path through a device, used during production testing to import test patterns into internal nodes of the device and export the resulting values.</glossdef>
+</glossentry>

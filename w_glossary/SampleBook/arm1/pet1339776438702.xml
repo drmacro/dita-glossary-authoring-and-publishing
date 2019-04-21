@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="pet1339776438702" xml:lang="en-us">
+	<title class="- topic/title ">Release Information</title><titlealts class="- topic/titlealts "><navtitle class="- topic/navtitle " translate="yes">Release Information</navtitle></titlealts>
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<table class="- topic/table " frame="all" id="table_3vm_b3f_lf" outputclass="tablewidthcolumn dochistory">
+			<tgroup class="- topic/tgroup " cols="4">
+				<colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><colspec class="- topic/colspec " colname="col3" colnum="3"/><colspec class="- topic/colspec " colname="col4" colnum="4"/><thead class="- topic/thead ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">Issue</entry>
+						<entry class="- topic/entry " colname="col2">Date</entry>
+						<entry class="- topic/entry " colname="col3">Confidentiality</entry>
+						<entry class="- topic/entry " colname="col4">Change</entry>
+					</row>
+				</thead>
+				<tbody class="- topic/tbody ">
+					<row class="- topic/row ">
+						<entry class="- topic/entry " colname="col1">[this text will be replaced automatically with content from: <p class="- topic/p ">&lt;bookevent&gt;&lt;revisionid&gt; in &lt;bookchangehistory&gt;</p>]</entry>
+						<entry class="- topic/entry " colname="col2">[this text will be replaced automatically with content from: <p class="- topic/p ">&lt;bookevent&gt; dates in &lt;bookchangehistory&gt;</p>]</entry>
+						<entry class="- topic/entry " colname="col3">[this text will be replaced automatically with content from: &lt;data name="permission" value="nonconfidential.restricted"/&gt; in the &lt;bookmap&gt;...&lt;bookchangehistory&gt;]</entry>
+						<entry class="- topic/entry " colname="col4">[this text will be replaced automatically with content from: <p class="- topic/p ">@revs &lt;revisionid&gt; in the &lt;bookmap&gt;...&lt;bookchangehistory&gt;</p>]</entry>
+					</row>
+				</tbody>
+			</tgroup>
+		</table>
+		
+	</refbody>
+</reference>

@@ -2,6 +2,7 @@ require 'bundler/setup'
 require 'creek'
 require 'nokogiri'
 
+
 def writeFile (file)
   # Need path for map
   filename = File.join("#{@output}/glossentries/",@filename)

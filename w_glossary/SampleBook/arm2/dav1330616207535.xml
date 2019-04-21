@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="dav1330616207535" xml:lang="en-us">
+    <title class="- topic/title ">Typographic conventions</title>
+    <titlealts class="- topic/titlealts ">
+        <navtitle class="- topic/navtitle ">Typographic conventions</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc "/>
+    <prolog class="- topic/prolog ">
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+    <refbody class="- topic/body        reference/refbody ">
+        <section class="- topic/section ">
+            <dl class="- topic/dl " outputclass="typographic.conventions">
+                <dlentry class="- topic/dlentry ">
+                    <dt class="- topic/dt ">
+                        <term class="- topic/term ">italic</term>
+                    </dt>
+                    <dd class="- topic/dd "> Introduces special terminology, denotes cross-references,
+                        and citations. </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry ">
+                    <dt class="- topic/dt " outputclass="typographic.conventions.bold">bold</dt>
+                    <dd class="- topic/dd "> Highlights interface elements, such as menu names. Denotes
+                        signal names. Also used for terms in descriptive lists, where appropriate.
+                    </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry ">
+                    <dt class="- topic/dt ">
+                        <codeph class="+ topic/ph pr-d/codeph ">monospace</codeph>
+                    </dt>
+                    <dd class="- topic/dd "> Denotes text that you can enter at the keyboard, such as
+                        commands, file and program names, and source code. </dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry ">
+                    <dt class="- topic/dt ">
+                        <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " outputclass="uput">mono</ph>space</codeph>
+                    </dt>
+                    <dd class="- topic/dd ">Denotes a permitted abbreviation for a command or option.
+                        You can enter the underlined text instead of the full command or option
+                        name.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry ">
+                    <dt class="- topic/dt ">
+                        <codeph class="+ topic/ph pr-d/codeph ">
+                            <varname class="+ topic/keyword sw-d/varname ">monospace italic</varname>
+                        </codeph>
+                    </dt>
+                    <dd class="- topic/dd ">Denotes arguments to monospace text where the argument is to
+                        be replaced by a specific value.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry ">
+                    <dt class="- topic/dt " outputclass="typographic.conventions.bold">
+                        <codeph class="+ topic/ph pr-d/codeph ">monospace bold</codeph>
+                    </dt>
+                    <dd class="- topic/dd ">Denotes language keywords when used outside example
+                        code.</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry ">
+                    <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">&lt;and&gt;</codeph></dt>
+                    <dd class="- topic/dd ">Encloses replaceable terms for assembler syntax where they
+                        appear in code or code fragments. For example:
+                        <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">MRC p15, 0, &lt;Rd&gt;, &lt;CRn&gt;, &lt;CRm&gt;, &lt;Opcode_2&gt;</codeblock></dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry ">
+                    <dt class="- topic/dt ">
+                        <term class="- topic/term " outputclass="archterm">SMALL CAPITALS</term>
+                    </dt>
+                    <dd class="- topic/dd "> Used in body text for a few terms that have specific
+                        technical meanings, that are defined in the <cite class="- topic/cite "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Glossary</cite>. For example, <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term>, <term class="- topic/term " outputclass="archterm">IMPLEMENTATION SPECIFIC</term>,
+                            <term class="- topic/term " outputclass="archterm">UNKNOWN</term>, and <term class="- topic/term " outputclass="archterm">UNPREDICTABLE</term>.</dd>
+                </dlentry>
+            </dl>
+        </section>
+    </refbody>
+</reference>

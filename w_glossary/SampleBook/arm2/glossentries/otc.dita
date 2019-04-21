@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="otc">
+  <glossterm>OTC</glossterm>
+  <glossdef>A power routing scheme, also referred to as ArtiGrid.See Also ArtiGrid.</glossdef>
+</glossentry>

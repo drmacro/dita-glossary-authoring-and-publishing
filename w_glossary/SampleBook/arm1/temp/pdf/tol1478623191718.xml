@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="tol1478623191718" xml:lang="en-us" xtrc="reference:1;4:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+  <title class="- topic/title " xtrc="title:1;5:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Armv8 Debug UNPREDICTABLE behaviors</title>
+  <titlealts class="- topic/titlealts " xtrc="titlealts:1;6:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+    <navtitle class="- topic/navtitle " xtrc="navtitle:1;7:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Armv8 Debug UNPREDICTABLE behaviors</navtitle>
+  </titlealts>
+ 
+ 
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;11:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"> This section describes the behavior that the <ph class="- topic/ph " xtrc="ph:1;11:111" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><keyword class="- topic/keyword " xtrc="keyword:1;11:145" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;11:182" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Cortex</tm></keyword><keyword class="- topic/keyword " xtrc="keyword:2;11:237" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">‑A76</keyword></ph> core implements when: </shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;12:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;15:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+    <section class="- topic/section " xtrc="section:1;16:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+      <ul class="- topic/ul " xtrc="ul:1;17:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+        <li class="- topic/li " xtrc="li:1;18:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">A topic has multiple options.</li>
+        <li class="- topic/li " xtrc="li:2;19:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The behavior differs from either or both of the Options and Preferences
+          behaviors.</li>
+      </ul>
+      <note class="- topic/note " xtrc="note:1;22:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">This section does not describe the behavior when a topic only has a
+        single option and the core implements the preferred behavior.</note>
+      <table class="- topic/table " xtrc="table:1;24:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+        <title class="- topic/title " xtrc="title:2;25:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Armv8 Debug <term class="- topic/term " outputclass="archterm" xtrc="term:1;25:102" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">unpredictable</term> behaviors</title>
+        <tgroup class="- topic/tgroup " cols="2" xtrc="tgroup:1;26:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" xtrc="colspec:1;27:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" xtrc="colspec:2;28:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"/>
+          <thead class="- topic/thead " xtrc="thead:1;29:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+            <row class="- topic/row " xtrc="row:1;30:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:1;31:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Scenario</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:2;32:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Behavior</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody " xtrc="tbody:1;35:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+            <row class="- topic/row " xtrc="row:2;36:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:3;37:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">A32 BKPT instruction with condition code not
+                AL</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:4;39:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:1;40:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements the following preferred option:</p>
+                <ul class="- topic/ul " xtrc="ul:2;41:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:3;42:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Executed unconditionally.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:3;46:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3" xtrc="entry:5;47:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Address match breakpoint match only on second
+                halfword of an instruction</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3" xtrc="entry:6;49:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core generates a breakpoint on the
+                instruction if CPSR.IL=0. In the case of CPSR.IL=1, the core does not generate
+                a breakpoint exception. </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:4;53:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4" xtrc="entry:7;54:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Address matching breakpoint on A32 instruction
+                with DBGBCRn.BAS=1100</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4" xtrc="entry:8;56:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:2;57:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements the following option:</p>
+                <ul class="- topic/ul " xtrc="ul:3;58:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:4;59:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Does match if CPSR.IL=0.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row " xtrc="row:5;62:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="5" xtrc="entry:9;63:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Address match breakpoint match on T32 instruction
+                at DBGBCRn+2 with DBGBCRn.BAS=1111</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="5" xtrc="entry:10;65:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:3;66:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements the following option:</p>
+                <ul class="- topic/ul " xtrc="ul:4;67:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:5;68:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Does match.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:6;72:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="6" xtrc="entry:11;73:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Link to non-existent breakpoint or breakpoint that
+                is not context-aware</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="6" xtrc="entry:12;75:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:4;76:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements the following option:</p>
+                <ul class="- topic/ul " xtrc="ul:5;77:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:6;78:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">No Breakpoint or Watchpoint debug event is generated, and the
+                    LBN field of the <term class="- topic/term " xtrc="term:2;79:66" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">linker</term> reads <term class="- topic/term " outputclass="archterm" xtrc="term:3;79:137" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">unknown</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:7;83:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="7" xtrc="entry:13;84:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">DBGWCRn_EL1.MASK!=00000 and
+                DBGWCRn_EL1.BAS!=11111111</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="7" xtrc="entry:14;86:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:5;87:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core behaves as indicated in the sole Preference:</p>
+                <ul class="- topic/ul " xtrc="ul:6;88:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:7;89:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">DBGWCRn_EL1.BAS is <term class="- topic/term " outputclass="archterm" xtrc="term:4;89:113" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">ignored</term> and treated as if <ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;89:196" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">11111111</ph>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:8;93:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="8" xtrc="entry:15;94:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Address match breakpoint with
+                DBGBCRn_EL1.BAS=0000</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="8" xtrc="entry:16;96:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><p class="- topic/p " xtrc="p:6;96:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements the
+                  following option:</p>
+                <ul class="- topic/ul " xtrc="ul:7;98:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:8;99:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">As if disabled.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:9;103:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="9" xtrc="entry:17;104:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"> DBGWCRn_EL1.BAS specifies a non-contiguous set of
+                bytes within a double-word</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="9" xtrc="entry:18;106:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:7;107:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements the following option:</p>
+                <ul class="- topic/ul " xtrc="ul:8;108:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:9;109:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">A Watchpoint debug event is generated for each byte.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:10;113:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="10" xtrc="entry:19;114:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">A32 HLT instruction with condition code not
+                AL</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="10" xtrc="entry:20;116:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:8;117:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements the following option:</p>
+                <ul class="- topic/ul " xtrc="ul:9;118:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:10;119:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Executed unconditionally.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:11;123:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="11" xtrc="entry:21;124:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Execute instruction at a given EL when the
+                corresponding EDECCR bit is 1 and Halting is allowed</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="11" xtrc="entry:22;126:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:9;127:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core behaves as follows:</p>
+                <ul class="- topic/ul " xtrc="ul:10;128:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:11;129:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Generates debug event and Halt no later than the instruction
+                    following the next <term class="- topic/term " xtrc="term:5;130:68" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Context Synchronization
+                      operation</term> (CSO) excluding ISB instruction.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:12;135:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="12" xtrc="entry:23;136:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"> H &gt; N or H = 0 at Non-secure EL1 and EL0,
+                including value read from PMCR_EL0.N</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="12" xtrc="entry:24;138:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:10;139:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements:</p>
+                <ul class="- topic/ul " xtrc="ul:11;140:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:12;141:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><p class="- topic/p " xtrc="p:11;141:65" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">A simple implementation where all of
+                      HPMN[4:0] are implemented, and In Non-secure EL1 and EL0:</p>
+                    <ul class="- topic/ul " xtrc="ul:12;143:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                      <li class="- topic/li " xtrc="li:13;144:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">If H &gt; N then M = N.</li>
+                      <li class="- topic/li " xtrc="li:14;145:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">If H = 0 then M = 0.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:13;151:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="13" xtrc="entry:25;152:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">H &gt; N or H = 0: value read back in
+                MDCR_EL2.HPMN</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="13" xtrc="entry:26;154:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:12;155:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements:</p>
+                <ul class="- topic/ul " xtrc="ul:13;156:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:15;157:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">A simple implementation where all of HPMN[4:0] are
+                    implemented and for reads of MDCR_EL2.HPMN, return H.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:14;162:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="14" xtrc="entry:27;163:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">P ≥ M and P ≠ 31: reads and writes of PM
+                XEVTYPER_EL0 and PMXEVCNTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="14" xtrc="entry:28;165:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:13;166:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements:</p>
+                <ul class="- topic/ul " xtrc="ul:14;167:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:16;168:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">A simple implementation where all of SEL[4:0] are
+                    implemented, and if P ≥ M and P ≠ 31 then the register is <term class="- topic/term " outputclass="archterm" xtrc="term:6;169:130" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">res0</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:15;173:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="15" xtrc="entry:29;174:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">P ≥ M and P ≠ 31: value read in
+                PMSELR_EL0.SEL</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="15" xtrc="entry:30;176:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:14;177:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements:</p>
+                <ul class="- topic/ul " xtrc="ul:15;178:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:17;179:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">A simple implementation where all of SEL[4:0] are
+                    implemented, and if P ≥ M and P ≠ 31 then the register is <term class="- topic/term " outputclass="archterm" xtrc="term:7;180:130" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">res0</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:16;184:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="16" xtrc="entry:31;185:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">P = 31: reads and writes of PMXEVCNTR_EL0</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="16" xtrc="entry:32;186:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:15;187:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements:</p>
+                <ul class="- topic/ul " xtrc="ul:16;188:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:18;189:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:8;189:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">res0</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:17;193:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="17" xtrc="entry:33;194:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">n ≥ M: Direct access to PMEVCNTRn_EL0 and
+                PMEVTYPERn_EL0</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="17" xtrc="entry:34;196:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:16;197:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements:</p>
+                <ul class="- topic/ul " xtrc="ul:17;198:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:19;199:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">If n ≥ N, then the instruction is <term class="- topic/term " outputclass="archterm" xtrc="term:9;199:128" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">unallocated</term>.</li>
+                  <li class="- topic/li " xtrc="li:20;200:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Otherwise if n ≥ M, then the register is <term class="- topic/term " outputclass="archterm" xtrc="term:10;200:135" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">res0</term>.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row " xtrc="row:18;203:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="18" xtrc="entry:35;204:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Exiting Debug state while instruction issued
+                through EDITR is in flight</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="18" xtrc="entry:36;206:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:17;207:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core implements the following option:</p>
+                <ul class="- topic/ul " xtrc="ul:18;208:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:21;209:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The instruction completes in Debug state before executing the
+                    restart.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:19;214:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="19" xtrc="entry:37;215:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Using memory-access mode with a non-word-aligned
+                address</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="19" xtrc="entry:38;217:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:18;218:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core behaves as indicated in the sole Preference:</p>
+                <ul class="- topic/ul " xtrc="ul:19;219:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:22;220:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Does unaligned accesses, faulting if these are not permitted
+                    for the memory type.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:20;225:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="20" xtrc="entry:39;226:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Access to memory-mapped registers mapped to Normal
+                memory</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="20" xtrc="entry:40;228:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                <p class="- topic/p " xtrc="p:19;229:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core behaves as indicated in the sole Preference:</p>
+                <ul class="- topic/ul " xtrc="ul:20;230:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:23;231:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The access is generated, and accesses might be repeated,
+                    gathered, split or resized, in accordance with the rules for Normal memory,
+                    meaning the effect is <term class="- topic/term " outputclass="archterm" xtrc="term:11;233:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">unpredictable</term>.</li>
+                </ul>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:21;237:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="21" xtrc="entry:41;238:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><p class="- topic/p " xtrc="p:20;238:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Not word-sized accesses or
+                  (AArch64 only) doubleword-sized accesses</p> &gt; </entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="21" xtrc="entry:42;240:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><p class="- topic/p " xtrc="p:21;240:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core behaves as
+                  indicated in the sole Preference:</p>
+                <ul class="- topic/ul " xtrc="ul:21;242:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:24;243:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Reads occur and return <term class="- topic/term " outputclass="archterm" xtrc="term:12;243:117" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">unknown</term> data.</li>
+                  <li class="- topic/li " xtrc="li:25;244:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Writes set the accessed register(s) to <term class="- topic/term " outputclass="archterm" xtrc="term:13;244:133" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">unknown</term>.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row " xtrc="row:22;247:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="22" xtrc="entry:43;248:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">External debug write to register that is being
+                reset</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="22" xtrc="entry:44;250:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><p class="- topic/p " xtrc="p:22;250:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core behaves as
+                  indicated in the sole Preference:</p><ul class="- topic/ul " xtrc="ul:22;251:80" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:26;252:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Takes reset value.</li>
+                </ul></entry>
+            </row>
+            <row class="- topic/row " xtrc="row:23;255:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="23" xtrc="entry:45;256:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Accessing reserved debug registers</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="23" xtrc="entry:46;257:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><p class="- topic/p " xtrc="p:23;257:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core deviates from
+                  preferred behavior because the hardware cost to decode some of these addresses in
+                  debug power domain is significantly high.</p>
+                <p class="- topic/p " xtrc="p:24;260:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The actual behavior is:</p>
+                <ol class="- topic/ol " xtrc="ol:1;261:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " id="access.reserved.debug.reg.one" xtrc="li:27;262:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">For reserved debug
+                    registers in the address range <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;263:92" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:3;263:142" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">000</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;263:200" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:4;263:250" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">CFC</ph></codeph> and Performance
+                    Monitors registers in the address range <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;264:101" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:5;264:151" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">000</ph></codeph>, the response is
+                    either <term class="- topic/term " outputclass="archterm" xtrc="term:14;265:79" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">constrained
+                      unpredictable</term> Error or <term class="- topic/term " outputclass="archterm" xtrc="term:15;266:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">res0</term> when any of the following errors occurs:<dl class="- topic/dl " xtrc="dl:1;266:180" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                      <dlentry class="- topic/dlentry " xtrc="dlentry:1;267:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                        <dt class="- topic/dt " xtrc="dt:1;268:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Off</dt>
+                        <dd class="- topic/dd " xtrc="dd:1;269:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core power domain is either completely off or in a
+                          low-power state where the core power domain registers cannot be
+                          accessed.</dd>
+                      </dlentry>
+                      <dlentry class="- topic/dlentry " xtrc="dlentry:2;273:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                        <dt class="- topic/dt " xtrc="dt:2;274:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">DLK</dt>
+                        <dd class="- topic/dd " xtrc="dd:2;275:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;275:89" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">DoubleLockStatus()</codeph> is
+                          TRUE and OS double-lock is locked (EDPRSR.DLK is 1).</dd>
+                      </dlentry>
+                      <dlentry class="- topic/dlentry " xtrc="dlentry:3;278:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                        <dt class="- topic/dt " xtrc="dt:3;279:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">OSLK</dt>
+                        <dd class="- topic/dd " xtrc="dd:3;280:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">OS lock is locked (OSLSR_EL1.OSLK is 1).</dd>
+                      </dlentry>
+                    </dl></li>
+                  <li class="- topic/li " id="access.reserved.debug.reg.two" xtrc="li:28;283:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">For reserved debug
+                    registers in the address ranges <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;284:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:6;284:143" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">400</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;284:201" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:7;284:251" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">4FC</ph></codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;284:313" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:8;284:363" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">800</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:8;284:421" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:9;284:471" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">8FC</ph></codeph>, the response is <term class="- topic/term " outputclass="archterm" xtrc="term:16;284:557" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">constrained unpredictable</term> Error
+                    or <term class="- topic/term " outputclass="archterm" xtrc="term:17;285:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">res0</term> when the conditions
+                    in <xref class="- topic/xref " href="tol1478623191718.xml#tol1478623191718/access.reserved.debug.reg.one" type="li" xtrc="xref:1;286:137" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><?ditaot usertext?>1</xref> do not apply and the following error occurs:<dl class="- topic/dl " xtrc="dl:2;286:214" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                      <dlentry class="- topic/dlentry " xtrc="dlentry:4;287:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                        <dt class="- topic/dt " xtrc="dt:4;288:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">EDAD</dt>
+                        <dd class="- topic/dd " xtrc="dd:4;289:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:9;289:89" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">AllowExternalDebugAccess()</codeph> is FALSE. External debug access is
+                          disabled.</dd>
+                      </dlentry>
+                    </dl></li>
+                  <li class="- topic/li " xtrc="li:29;293:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">For reserved Performance Monitor registers in the address
+                    ranges <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:10;294:68" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:10;294:118" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">000</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:11;294:176" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:11;294:226" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">0FC</ph></codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:12;294:288" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:12;294:338" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">400</ph></codeph>-<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:13;294:396" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:13;294:446" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">47C</ph></codeph>, the response is either <term class="- topic/term " outputclass="archterm" xtrc="term:18;294:539" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">constrained unpredictable</term> Error, or <term class="- topic/term " outputclass="archterm" xtrc="term:19;294:633" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">res0</term> when the conditions in
+                      <xref class="- topic/xref " href="tol1478623191718.xml#tol1478623191718/access.reserved.debug.reg.one" type="li" xtrc="xref:2;295:136" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><?ditaot usertext?>1</xref> and <xref class="- topic/xref " href="tol1478623191718.xml#tol1478623191718/access.reserved.debug.reg.two" type="li" xtrc="xref:3;295:262" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><?ditaot usertext?>2</xref> do not apply, and the following error occurs:<dl class="- topic/dl " xtrc="dl:3;295:340" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                      <dlentry class="- topic/dlentry " xtrc="dlentry:5;296:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                        <dt class="- topic/dt " xtrc="dt:5;297:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">EPMAD</dt>
+                        <dd class="- topic/dd " xtrc="dd:5;298:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:14;298:89" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">AllowExternalPMUAccess()</codeph> is FALSE. External Performance
+                          Monitors access is disabled.</dd>
+                      </dlentry>
+                    </dl></li>
+                </ol>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:24;305:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="24" xtrc="entry:47;306:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Clearing the <term class="- topic/term " xtrc="term:20;306:101" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">clear-after-read</term> EDPRSR bits when Core power domain is on, and <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:15;306:211" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">DoubleLockStatus()</codeph> is TRUE</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="24" xtrc="entry:48;307:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><p class="- topic/p " xtrc="p:25;307:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">The core behaves as
+                  indicated in the sole Preference:</p><ul class="- topic/ul " xtrc="ul:23;308:80" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">
+                  <li class="- topic/li " xtrc="li:30;309:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml"><p class="- topic/p " xtrc="p:26;309:65" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/tol1478623191718.xml">Bits are not cleared to zero.</p></li>
+                </ul></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

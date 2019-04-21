@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1457002069712" xml:lang="en-us" xtrc="reference:1;4:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+	<title class="- topic/title " xtrc="title:1;5:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">LORID_EL1, LORegion ID Register, EL1</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">The LORID_EL1 ID register indicates the supported number of LORegions and
+		LORegion descriptors.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;8:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml"><publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata></prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;9:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+		<section class="- topic/section " xtrc="section:1;10:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+			<title class="- topic/title " xtrc="title:2;11:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;12:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">LORID_EL1 is a 64-bit register.</p>
+			<fig class="- topic/fig " xtrc="fig:1;13:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+				<title class="- topic/title " xtrc="title:3;14:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">LORID_EL1 bit assignments</title>
+				<image class="- topic/image " href="lau1457005962208.svg" placement="inline" xtrc="image:1;15:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+					<alt class="- topic/alt " xtrc="alt:1;16:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">LORID_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;19:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;20:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+					<dt class="- topic/dt " xtrc="dt:1;21:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">[63:24]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;22:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:1;22:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:2;24:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+					<dt class="- topic/dt " xtrc="dt:2;25:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">LD, [23:16]</dt>
+					<dd class="- topic/dd " xtrc="dd:2;26:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Number of LORegion descriptors supported by the implementation, expressed
+						as binary 8-bit number. The value is: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc12" xtrc="dl:2;27:111" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:3;28:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+								<dt class="- topic/dt " xtrc="dt:3;29:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;29:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">04</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:3;30:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Four LORegion descriptors are supported.</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:4;34:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+					<dt class="- topic/dt " xtrc="dt:4;35:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">[15:8]</dt>
+					<dd class="- topic/dd " xtrc="dd:4;36:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:2;36:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:5;38:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+					<dt class="- topic/dt " xtrc="dt:5;39:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">LR, [7:0]</dt>
+					<dd class="- topic/dd " xtrc="dd:5;40:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Number of LORegions supported by the
+						implementation, expressed as a binary 8-bit number. The value is:
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12" xtrc="dl:3;42:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:6;43:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+								<dt class="- topic/dt " xtrc="dt:6;44:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;44:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">04</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:6;45:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Four LORegions are supported.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:4;51:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:7;52:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+					<dt class="- topic/dt " xtrc="dt:7;53:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:7;54:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+						<p class="- topic/p " xtrc="p:2;55:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">There are no configuration notes.</p>
+						<p class="- topic/p " xtrc="p:3;56:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;57:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml"><ph class="- topic/ph " xtrc="ph:3;57:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;58:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;58:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:2;58:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:3;58:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457002069712.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+	
+	</refbody>
+</reference>

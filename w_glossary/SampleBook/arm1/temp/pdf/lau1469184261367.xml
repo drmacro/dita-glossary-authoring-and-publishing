@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1469184261367" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+	
+	
+	<title class="- topic/title " xtrc="title:1;6:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_CTLR_EL1, Interrupt Controller Control Register, EL1</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;7:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_CTLR_EL1 controls aspects of the behavior of the GIC CPU interface
+		and provides information about the features implemented.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;9:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;12:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+		<section class="- topic/section " xtrc="section:1;13:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+			<title class="- topic/title " xtrc="title:2;14:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;15:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_CTLR_EL1 is a 32-bit register and is part of:</p>
+			<ul class="- topic/ul " xtrc="ul:1;16:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+				<li class="- topic/li " xtrc="li:1;17:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">The <term class="- topic/term " keyref="gic" xtrc="term:1;17:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">GIC</term> system registers functional group.</li>
+				<li class="- topic/li " xtrc="li:2;18:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">The  control registers functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_tlq_z3j_5v" xtrc="fig:1;20:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+				<title class="- topic/title " xtrc="title:3;21:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_CTLR_EL1 bit assignments</title>
+				<image class="- topic/image " href="lau1468939527824.svg" id="image_nmq_z3j_5v" placement="inline" xtrc="image:1;22:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<alt class="- topic/alt " xtrc="alt:1;23:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_CTLR_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;26:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;27:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:1;28:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">RES0, [31:16]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;29:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;30:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;31:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:2;32:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:2;32:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:2;33:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;38:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:3;39:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">A3V, [15]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;40:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><p class="- topic/p " xtrc="p:2;40:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Affinity 3 Valid. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:3;41:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;42:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:4;43:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:1;43:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:4;44:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">The CPU interface logic supports non-zero values of Affinity 3
+									in SGI generation System registers.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:5;50:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:5;51:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">SEIS, [14]</dt>
+					<dd class="- topic/dd " xtrc="dd:5;52:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><p class="- topic/p " xtrc="p:3;52:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">SEI Support. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:4;53:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:6;54:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:6;55:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:2;55:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:6;56:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">The CPU interface logic does not support local generation of SEIs.</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:7;60:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:7;61:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">IDbits, [13:11]</dt>
+					<dd class="- topic/dd " xtrc="dd:7;62:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><p class="- topic/p " xtrc="p:4;62:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Identifier bits. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:5;63:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:8;64:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:8;65:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:3;65:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:8;66:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">The number of physical interrupt identifier bits supported is 16 bits.</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p " xtrc="p:5;69:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">This field is an
+							alias of ICC_CTLR_EL3.IDbits.</p></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:9;72:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:9;73:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">PRIbits, [10:8]</dt>
+					<dd class="- topic/dd " xtrc="dd:9;74:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><p class="- topic/p " xtrc="p:6;74:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Priority bits. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:6;75:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:10;76:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:10;77:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:4;77:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">4</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:10;78:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">The <term class="- topic/term " keyref="core" xtrc="term:3;78:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">core</term> supports 32 levels of physical priority with 5 priority bits. </dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:11;83:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:11;84:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">RES0, [7]</dt>
+					<dd class="- topic/dd " xtrc="dd:11;85:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:7;86:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:12;87:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:12;88:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:4;88:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:12;89:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:13;94:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:13;95:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">PMHE, [6]</dt>
+					<dd class="- topic/dd " xtrc="dd:13;96:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+						<p class="- topic/p " xtrc="p:7;97:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Priority Mask Hint Enable. This bit is <term class="- topic/term " keyref="read" xtrc="term:5;97:88" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">read</term> only and is an alias of ICC_CTLR_EL3.PMHE. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:8;98:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:14;99:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:14;100:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:5;100:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:14;101:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Disables use of ICC_PMR as a hint for interrupt distribution.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:15;103:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:15;104:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:6;104:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:15;105:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Enables use of ICC_PMR as a hint for interrupt distribution.</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:16;109:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:16;110:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">RES0, [5:2]</dt>
+					<dd class="- topic/dd " xtrc="dd:16;111:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:9;112:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:17;113:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:17;114:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:6;114:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:17;115:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:18;120:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:18;121:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">EOImode, [1]</dt>
+					<dd class="- topic/dd " xtrc="dd:18;122:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">End of interrupt mode for the current security state. The possible values
+						are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc12" xtrc="dl:10;123:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:19;124:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:19;125:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:7;125:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:19;126:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_EOIR0 and ICC_EOIR1 provide both priority
+									drop and interrupt deactivation functionality. Accesses to
+									ICC_DIR are <term class="- topic/term " outputclass="archterm" xtrc="term:7;128:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">UNPREDICTABLE</term>.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:20;130:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:20;131:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:8;131:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:20;132:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_EOIR0 and ICC_EOIR1 provide priority drop
+									functionality only. ICC_DIR provides interrupt deactivation
+									functionality.</dd>
+							</dlentry>
+						</dl></dd>
+					
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:21;139:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+					<dt class="- topic/dt " xtrc="dt:21;140:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">CBPR, [0]</dt>
+					<dd class="- topic/dd " xtrc="dd:21;141:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Common Binary Point Register. Control whether the same register is used for
+						interrupt preemption of both Group 0 and Group 1 interrupt. The possible
+						values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc12" xtrc="dl:11;143:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:22;144:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:22;145:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:9;145:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:22;146:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+									<p class="- topic/p " xtrc="p:8;147:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_BPR0 determines the preemption group
+										for Group 0 interrupts.</p>
+									<p class="- topic/p " xtrc="p:9;149:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_BPR1 determines the preemption group
+										for Group 1 interrupts.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:23;153:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">
+								<dt class="- topic/dt " xtrc="dt:23;154:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:10;154:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:23;155:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">ICC_BPR0 determines the preemption group for
+									Group 0 and Group 1 interrupts.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			
+			<p class="- topic/p " xtrc="p:10;163:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Bit fields and details that are not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;164:66" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><ph class="- topic/ph " xtrc="ph:11;164:90" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><keyword class="- topic/keyword " xtrc="keyword:1;164:124" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;164:161" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Arm</tm></keyword> <term class="- topic/term " keyref="genericinterruptcontroller" xtrc="term:8;164:222" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184261367.xml">Generic Interrupt Controller</term> Architecture Specification</ph></cite>.</p>
+		</section>
+	</refbody>
+</reference>

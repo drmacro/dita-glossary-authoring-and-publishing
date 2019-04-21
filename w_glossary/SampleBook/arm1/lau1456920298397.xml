@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1456920298397" xml:lang="en-us">
+	<title class="- topic/title ">ERXFR_EL1, Selected Error Record Feature Register, EL1</title>
+	<shortdesc class="- topic/shortdesc ">Register ERXFR_EL1 accesses the ERR&lt;n&gt;FR feature register for the
+		error record selected by ERRSELR_EL1.SEL.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==0, then ERXFR_EL1 accesses the ERR0FR register of the
+				core error record. See <xref class="- topic/xref " href="gdk1473951932274.xml" keyref="Err0frErrorRecordFeatureRegister" type="reference">ERR0FR, Error Record Feature Register<desc class="- topic/desc ">The ERR0FR defines which of the common architecturally defined features 		are implemented and, of the implemented features, which are software 		programmable.</desc></xref>.</p>	
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==1, then ERXFR_EL1 accesses the ERR1FR register of the <keyword class="- topic/keyword ">DSU</keyword> error record. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite>.</p>
+			
+		</section>
+	</refbody>
+</reference>

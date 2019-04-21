@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="acu1472476116377" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+	
+	
+	
+	<title class="- topic/title " xtrc="title:1;7:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">ERR0ADDR, Error Record Address Register</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;8:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">The ERR0ADDR stores the address that is associated to an error that is
+		recorded.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;10:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml"><publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata></prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;11:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+		<section class="- topic/section " xtrc="section:1;12:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+			<title class="- topic/title " xtrc="title:2;13:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;14:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">ERR0ADDR is a 64-bit register, and is part of the <term class="- topic/term " xtrc="term:1;14:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">Reliability, Availability, Serviceability</term> (RAS) registers functional
+				group.</p>
+			<fig class="- topic/fig " xtrc="fig:1;16:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+				<title class="- topic/title " xtrc="title:3;17:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">ERR0ADDR bit assignments</title>
+				
+				
+				<image class="- topic/image " href="nna1479998110856.svg" placement="inline" xtrc="image:1;20:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+					<alt class="- topic/alt " xtrc="alt:1;21:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">ERR0ADDR bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;24:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;25:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+					<dt class="- topic/dt " xtrc="dt:1;26:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">NS, [63]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;27:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+						<p class="- topic/p " xtrc="p:2;28:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">Non-secure attribute. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc=12" xtrc="dl:2;29:74" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;30:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+								<dt class="- topic/dt " xtrc="dt:2;31:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:1;31:99" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">0</codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:2;32:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">The <term class="- topic/term " keyref="physicaladdress" xtrc="term:2;32:68" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">physical address</term> is Secure.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:3;34:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+								<dt class="- topic/dt " xtrc="dt:3;35:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:2;35:99" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">1</codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:3;36:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">The  is Non-secure.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:4;45:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+					<dt class="- topic/dt " xtrc="dt:4;46:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">RES0, [62:40]</dt>
+					<dd class="- topic/dd " xtrc="dd:4;47:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12" xtrc="dl:3;48:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:5;49:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+								<dt class="- topic/dt " xtrc="dt:5;50:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:3;50:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:5;51:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:6;58:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+					<dt class="- topic/dt " xtrc="dt:6;59:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">PADDR, [39:0]</dt>
+					<dd class="- topic/dd " xtrc="dd:6;60:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+						<p class="- topic/p " xtrc="p:3;61:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">Physical address.</p>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:4;65:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:7;66:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+					<dt class="- topic/dt " xtrc="dt:7;67:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:7;68:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">
+						<p class="- topic/p " xtrc="p:4;69:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">ERR0ADDR resets to <ph class="- topic/ph " xtrc="ph:1;69:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:4;69:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">UNKNOWN</term></ph>.</p>
+						
+						
+						<p class="- topic/p " xtrc="p:5;72:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">When ERRSELR.SEL==0, this register is accessible from <xref class="- topic/xref " href="lau1456920542757.xml" keyref="ErxaddrEl1SelectedErrorRecordAddressRegisterEl1" type="reference" xtrc="xref:1;72:213" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml"><?ditaot usertext?>ERXADDR_EL1, Selected Error Record Address Register, EL1<desc class="- topic/desc " xtrc="desc:1;72:297" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/acu1472476116377.xml">Register ERXADDR_EL1 accesses the ERR&lt;n&gt;ADDR address register for 		the error record selected by ERRSELR_EL1.SEL.</desc></xref>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	
+	</refbody>
+</reference>

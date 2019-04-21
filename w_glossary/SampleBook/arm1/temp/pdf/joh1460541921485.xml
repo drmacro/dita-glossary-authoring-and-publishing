@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="joh1460541921485" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+	
+	
+	<title class="- topic/title " id="TitleAuxiliaryFaultStatusRegister0_EL3" xtrc="title:1;6:76" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">AFSR0_EL3, Auxiliary Fault Status Register 0, EL3</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;7:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">AFSR0_EL3 provides additional <term class="- topic/term " outputclass="archterm" xtrc="term:1;7:121" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">IMPLEMENTATION DEFINED</term> fault status information for
+		exceptions that are taken to EL3. In the <ph class="- topic/ph " xtrc="ph:1;8:68" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml"><keyword class="- topic/keyword " xtrc="keyword:1;8:102" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;8:139" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">Cortex</tm></keyword><keyword class="- topic/keyword " xtrc="keyword:2;8:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">‑A76</keyword></ph> core, no additional information is provided for these exceptions.
+		Therefore this register is not used.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;10:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;14:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+		<section class="- topic/section " xtrc="section:1;15:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+			<title class="- topic/title " xtrc="title:2;16:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;17:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">AFSR0_EL3 is a 32-bit register, and is part of:</p>
+			<ul class="- topic/ul " id="ul_w5l_cnd_cv" xtrc="ul:1;18:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+				<li class="- topic/li " xtrc="li:1;19:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">The Exception and <term class="- topic/term " keyref="fault" xtrc="term:2;19:68" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">fault</term> handling registers functional group.</li>
+				<li class="- topic/li " xtrc="li:2;20:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">The Security registers functional group.</li>
+				<li class="- topic/li " xtrc="li:3;21:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">The <term class="- topic/term " outputclass="archterm" xtrc="term:3;21:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">IMPLEMENTATION
+						DEFINED</term> functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_l1q_tx4_mv" xtrc="fig:1;24:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+				<title class="- topic/title " xtrc="title:3;25:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">AFSR0_EL3 bit assignments</title>
+				<image class="- topic/image " href="joh1460536465889.svg" id="image_yfq_txw_nv" placement="inline" xtrc="image:1;26:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+					<alt class="- topic/alt " xtrc="alt:1;27:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">AFSR0_EL3 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;30:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;31:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+					<dt class="- topic/dt " xtrc="dt:1;32:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">RES0, [31:0]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;33:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;34:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;35:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+								<dt class="- topic/dt " xtrc="dt:2;36:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml"/>
+								<dd class="- topic/dd " xtrc="dd:2;37:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:4;37:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">RES0</term>.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:3;43:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;44:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+					<dt class="- topic/dt " xtrc="dt:3;45:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:3;46:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+						<p class="- topic/p " xtrc="p:2;47:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">There are no configuration notes.</p>
+						<p class="- topic/p " xtrc="p:3;48:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;49:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml"><ph class="- topic/ph " xtrc="ph:2;49:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:3;50:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:2;50:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:4;50:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:5;50:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1460541921485.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

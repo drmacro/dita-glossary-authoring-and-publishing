@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1456920542757" xml:lang="en-us">
+	<title class="- topic/title ">ERXADDR_EL1, Selected Error Record Address Register, EL1</title>
+	<shortdesc class="- topic/shortdesc ">Register ERXADDR_EL1 accesses the ERR&lt;n&gt;ADDR address register for
+		the error record selected by ERRSELR_EL1.SEL.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==0, then ERXADDR_EL1 accesses the ERR0ADDR register of the
+				core error record. See <xref class="- topic/xref " href="acu1472476116377.xml" keyref="Err0addrErrorRecordAddressRegister" type="reference">ERR0ADDR, Error Record Address Register<desc class="- topic/desc ">The ERR0ADDR stores the address that is associated to an error that is 		recorded.</desc></xref>.</p>
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==1, then ERXADDR_EL1 accesses the ERR1ADDR register of the <keyword class="- topic/keyword ">DSU</keyword> error record. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite>.</p>	
+			
+		</section>
+	</refbody>
+</reference>

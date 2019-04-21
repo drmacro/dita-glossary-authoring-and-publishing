@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="realviewdebuggertrace">
+  <glossterm>RealView Debugger Trace</glossterm>
+  <glossdef>Part of RVDS that extends the debugging capability with the addition of real-time program and data tracing. It is available from the RealView Debugger Code window.See Also RealView Debugger Trace and RealView ICE.</glossdef>
+</glossentry>

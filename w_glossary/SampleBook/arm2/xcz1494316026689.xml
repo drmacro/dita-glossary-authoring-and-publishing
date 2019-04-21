@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="xcz1494316026689" xml:lang="en-us">
+	<title class="- topic/title ">CPUPMR_EL3, CPU Private Mask Register, EL3</title>
+	<shortdesc class="- topic/shortdesc ">The CPUPMR_EL3 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for the
+		core.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">CPUPMR_EL3 is a 64-bit register, and is part of the <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> registers functional
+				group.</p>
+			<fig class="- topic/fig " id="fig_em3_wfs_cv">
+				<title class="- topic/title ">CPUPMR_EL3 bit assignments</title>
+				<image class="- topic/image " href="lau1442568599501.svg" id="image_wy3_wfs_cv" placement="inline">
+					<alt class="- topic/alt ">CPUPMR_EL3 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Reserved, [63:0]</dt>
+					<dd class="- topic/dd ">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "/>
+								<dd class="- topic/dd ">Reserved for <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> internal use.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			
+			<dl class="- topic/dl ">
+			<dlentry class="- topic/dlentry ">
+				<dt class="- topic/dt ">Configurations</dt>
+				<dd class="- topic/dd ">CPUPMR_EL3 is only accessible in Secure state.</dd>	
+			</dlentry>
+		</dl>
+			
+			
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Usage constraints</title>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Accessing the CPUPMR_EL3</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">The CPUPMR_EL3 can be written only when the system is idle. <keyword class="- topic/keyword ">Arm</keyword> recommends
+							that you write to this register after a powerup reset, before the <term keyref="mmu">MMU</term> is
+							enabled.</p>
+						<p class="- topic/p ">Writing to this register might cause <term class="- topic/term " outputclass="archterm">UNPREDICTABLE</term> behaviors. Therefore,
+						 <keyword class="- topic/keyword ">Arm</keyword> strongly recommends that you do not modify this register unless
+							directed by <keyword class="- topic/keyword ">Arm</keyword>.</p>
+						<p class="- topic/p ">This register is accessible as follows:</p>
+						<p class="- topic/p ">This register can be <term keyref="read">read</term> with the MRS instruction using the following syntax:</p>
+						<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">MRS &lt;Xt&gt;,&lt;systemreg&gt;</codeblock>
+						<p class="- topic/p ">This register can be written with the MSR instruction using the following syntax:</p>
+						<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">MSR &lt;systemreg&gt;, &lt;Xt&gt;</codeblock>
+					</dd>
+				</dlentry>
+			</dl>
+			<p class="- topic/p ">This syntax is encoded with the following settings in the instruction encoding:</p>
+			<table class="- topic/table " id="table_c3j_wfs_cv">
+				<tgroup class="- topic/tgroup " cols="6">
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><colspec class="- topic/colspec " colname="col3" colnum="3"/><colspec class="- topic/colspec " colname="col4" colnum="4"/><colspec class="- topic/colspec " colname="col5" colnum="5"/><colspec class="- topic/colspec " colname="col6" colnum="6"/><thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">&lt;systemreg&gt;</entry>
+							<entry class="- topic/entry " colname="col2">op0</entry>
+							<entry class="- topic/entry " colname="col3">op1</entry>
+							<entry class="- topic/entry " colname="col4">CRn</entry>
+							<entry class="- topic/entry " colname="col5">CRm</entry>
+							<entry class="- topic/entry " colname="col6">op2</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">S3_6_C15_8_3</entry>
+							<entry class="- topic/entry " colname="col2">11</entry>
+							<entry class="- topic/entry " colname="col3">110</entry>
+							<entry class="- topic/entry " colname="col4">1111</entry>
+							<entry class="- topic/entry " colname="col5">1000</entry>
+							<entry class="- topic/entry " colname="col6">011</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Accessibility</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">This register is accessible in software as follows:</p>
+					</dd>
+				</dlentry>
+			</dl>
+			<table class="- topic/table " id="table_br1_4vf_1v">
+				<tgroup class="- topic/tgroup " cols="8">
+					<colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="100pt"/>
+					<colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col5" colnum="5" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col6" colnum="6" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col7" colnum="7" colwidth="30pt"/>
+					<colspec class="- topic/colspec " colname="col8" colnum="8" colwidth="30pt"/>
+					<thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1" morerows="1">&lt;systemreg&gt;</entry>
+							<entry class="- topic/entry " colname="col2" nameend="col4" namest="col2">Control</entry>
+							<entry class="- topic/entry " colname="col5" nameend="col8" namest="col5">Accessibility</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">E2H</entry>
+							<entry class="- topic/entry " colname="col2">TGE</entry>
+							<entry class="- topic/entry " colname="col3">NS</entry>
+							<entry class="- topic/entry " colname="col4">EL0</entry>
+							<entry class="- topic/entry " colname="col5">EL1</entry>
+							<entry class="- topic/entry " colname="col6">EL2</entry>
+							<entry class="- topic/entry " colname="col7">EL3</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">S3_6_C15_8_3</entry>
+							<entry class="- topic/entry " colname="col2">x</entry>
+							<entry class="- topic/entry " colname="col3">x</entry>
+							<entry class="- topic/entry " colname="col4">0</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">-</entry>
+							<entry class="- topic/entry " colname="col7">n/a</entry>
+							<entry class="- topic/entry " colname="col8">RW</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">S3_6_C15_8_3</entry>
+							<entry class="- topic/entry " colname="col2">x</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">1</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">-</entry>
+							<entry class="- topic/entry " colname="col7">-</entry>
+							<entry class="- topic/entry " colname="col8">RW</entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">S3_6_C15_8_3</entry>
+							<entry class="- topic/entry " colname="col2">x</entry>
+							<entry class="- topic/entry " colname="col3">1</entry>
+							<entry class="- topic/entry " colname="col4">1</entry>
+							<entry class="- topic/entry " colname="col5">-</entry>
+							<entry class="- topic/entry " colname="col6">n/a</entry>
+							<entry class="- topic/entry " colname="col7">-</entry>
+							<entry class="- topic/entry " colname="col8">RW</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<p class="- topic/p ">'n/a' Not accessible. The <term keyref="core">core</term> cannot be executing at this <term keyref="exceptionlevel">Exception level</term>, so this access is not possible.</p>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Traps and enables</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">For a description of the prioritization of any generated <term keyref="exception">exception</term>s, see
+							<cite class="- topic/cite ">Synchronous  prioritization</cite> in the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>. </p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

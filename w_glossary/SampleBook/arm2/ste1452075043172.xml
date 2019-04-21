@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1452075043172" xml:lang="en-us">
+  <title class="- topic/title ">AArch32 debug registers</title>
+  <shortdesc class="- topic/shortdesc ">This chapter describes the debug registers in the AArch32 Execution
+    state and shows examples of how to use them.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+   
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "/>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="xwg1477656601388.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AArch32 debug register summary (Ares/Enyo specific)</linktext><desc class="- topic/desc ">The following table summarizes the 32-bit and 64-bit debug control         registers that are accessible in the AArch32 Execution state from the internal CP14         interface. These registers are accessed by the <codeph class="+ topic/ph pr-d/codeph ">MCR</codeph> and         <codeph class="+ topic/ph pr-d/codeph ">MRC</codeph> instructions in the order of CRn, op2, CRm, Op1 or         <codeph class="+ topic/ph pr-d/codeph ">MCRR</codeph> and <codeph class="+ topic/ph pr-d/codeph ">MRRC</codeph>         instructions in the order of CRm, Op1. </desc></link></linkpool></linkpool></related-links></reference>

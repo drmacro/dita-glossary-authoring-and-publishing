@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="siy1480519308825" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">
+  <title class="- topic/title " xtrc="title:1;4:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">TLB match process</title><titlealts class="- topic/titlealts "/>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">The Armv8-A architecture provides support for multiple maps from the VA
+    space that are translated differently. </shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;7:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;11:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">
+    <section class="- topic/section " xtrc="section:1;12:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">
+      <p class="- topic/p " xtrc="p:1;13:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml"><term class="- topic/term " keyref="tlb" xtrc="term:1;13:48" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">TLB</term> entries store the context information required to facilitate a match
+        and avoid the need for a  flush on a context or virtual machine switch. </p>
+      <p class="- topic/p " xtrc="p:2;15:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">Each  entry contains a:</p>
+      <ul class="- topic/ul " xtrc="ul:1;16:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">
+        <li class="- topic/li " xtrc="li:1;17:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml"><term class="- topic/term " keyref="va" xtrc="term:2;17:51" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">VA</term>.</li>
+        <li class="- topic/li " xtrc="li:2;18:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">PA.</li>
+        <li class="- topic/li " xtrc="li:3;19:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">Set of memory properties that include type and access permissions.</li>
+      </ul>
+      
+      <p class="- topic/p " xtrc="p:3;22:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">Each entry is either associated with a particular ASID or global. In
+        addition, each  entry contains a field to store the VMID in the entry applicable to
+        accesses from Non-secure EL0 and EL1 <term class="- topic/term " keyref="exceptionlevel" xtrc="term:3;24:76" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">Exception level</term>s.</p>
+      <p class="- topic/p " xtrc="p:4;25:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">Each entry is associated with a particular translation regime.</p>
+      <ul class="- topic/ul " xtrc="ul:2;26:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">
+        <li class="- topic/li " xtrc="li:4;27:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">EL3 in Secure state in <term class="- topic/term " keyref="aarch64" xtrc="term:4;27:79" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">AArch64</term> state only.</li>
+        <li class="- topic/li " xtrc="li:5;28:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">EL2 or EL0  in Non-secure state.</li>
+        <li class="- topic/li " xtrc="li:6;29:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">EL1 or EL0 in Secure state.</li>
+        <li class="- topic/li " xtrc="li:7;30:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">EL1 or EL0 in Non-secure state.</li>
+      </ul>
+      
+      <p class="- topic/p " xtrc="p:5;33:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">A  match entry occurs when the following conditions are met:</p>
+      <ul class="- topic/ul " xtrc="ul:3;34:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">
+          <li class="- topic/li " xtrc="li:8;35:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">Its , moderated by the page size such as the  bits[48:N], where N is
+          log<sub class="+ topic/ph hi-d/sub " xtrc="sub:1;36:48" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">2</sub> of the block size for that translation that is stored in
+          the  entry, matches the requested address.</li>
+          
+        <li class="- topic/li " xtrc="li:9;39:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">Entry translation regime matches the current translation regime.</li>
+        <li class="- topic/li " xtrc="li:10;40:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">The ASID matches the current ASID held in the CONTEXTIDR, TTBR0, or
+          TTBR1 register, or the entry is marked global. </li>
+        <li class="- topic/li " xtrc="li:11;42:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">The VMID matches the current VMID held in the VTTBR_EL2 register. </li>
+        <li class="- topic/li " xtrc="li:12;43:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">The ASID and VMID matches are <term class="- topic/term " outputclass="archterm" xtrc="term:5;43:114" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">ignored</term> when ASID and VMID are not
+          relevant. <p class="- topic/p " xtrc="p:6;44:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">ASID is relevant when the translation regime is: </p><ul class="- topic/ul " xtrc="ul:4;44:120" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">
+            <li class="- topic/li " xtrc="li:13;45:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">EL2 in Non-secure state with HCR_EL2.E2H and HCR_EL2.TGE set to
+              1.</li>
+            <li class="- topic/li " xtrc="li:14;47:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">EL1 or EL0 in Secure state.</li>
+            <li class="- topic/li " xtrc="li:15;48:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">EL1 or EL0 in Non-secure state.</li>
+          </ul><p class="- topic/p " xtrc="p:7;49:38" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/siy1480519308825.xml">VMID is relevant for EL1  or EL0 in Non-secure state.</p></li>
+      </ul>
+      
+    </section>
+  </refbody>
+</reference>

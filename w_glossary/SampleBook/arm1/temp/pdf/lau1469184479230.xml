@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1469184479230" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+	
+	
+	<title class="- topic/title " xtrc="title:1;6:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">ICC_SRE_EL1, Interrupt Controller System Register Enable Register, EL1</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;7:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">ICC_SRE_EL1 controls whether the System register interface or the
+		memory-mapped interface to the GIC CPU interface is used for EL0 and EL1.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;9:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;12:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+		<section class="- topic/section " xtrc="section:1;13:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+			<title class="- topic/title " xtrc="title:2;14:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;15:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">ICC_SRE_EL1 is a 32-bit register and is part of:</p>
+			<ul class="- topic/ul " xtrc="ul:1;16:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+				<li class="- topic/li " xtrc="li:1;17:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">The <term class="- topic/term " keyref="gic" xtrc="term:1;17:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">GIC</term> system registers functional group.</li>
+				<li class="- topic/li " xtrc="li:2;18:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">The  control registers functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_tlq_z3j_5v" xtrc="fig:1;20:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+				<title class="- topic/title " xtrc="title:3;21:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">ICC_SRE_EL1 bit assignments</title>
+				<image class="- topic/image " href="lau1469095189285.svg" id="image_nmq_z3j_5v" placement="inline" xtrc="image:1;22:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+					<alt class="- topic/alt " xtrc="alt:1;23:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">ICC_SRE_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			
+			<dl class="- topic/dl " xtrc="dl:1;27:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;28:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+					<dt class="- topic/dt " xtrc="dt:1;29:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">RES0, [31:3]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;30:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;31:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;32:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+								<dt class="- topic/dt " xtrc="dt:2;33:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:2;33:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:2;34:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;39:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+					<dt class="- topic/dt " xtrc="dt:3;40:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">DIB, [2]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;41:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><p class="- topic/p " xtrc="p:2;41:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">Disable <term class="- topic/term " keyref="irq" xtrc="term:3;41:79" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">IRQ</term> bypass. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:3;42:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;43:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+								<dt class="- topic/dt " xtrc="dt:4;44:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;44:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:4;45:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+									<p class="- topic/p " xtrc="p:3;46:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"> bypass enabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:5;49:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+								<dt class="- topic/dt " xtrc="dt:5;50:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;50:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:5;51:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+									<p class="- topic/p " xtrc="p:4;52:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"> bypass disabled.</p>
+								</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p " xtrc="p:5;56:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">This bit is an alias of ICC_SRE_EL3.DIB</p>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:6;59:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+					<dt class="- topic/dt " xtrc="dt:6;60:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">DFB, [1]</dt>
+					<dd class="- topic/dd " xtrc="dd:6;61:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><p class="- topic/p " xtrc="p:6;61:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">Disable <term class="- topic/term " keyref="fiq" xtrc="term:4;61:79" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">FIQ</term> bypass. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:4;62:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:7;63:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+								<dt class="- topic/dt " xtrc="dt:7;64:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:3;64:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:7;65:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+									<p class="- topic/p " xtrc="p:7;66:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"> bypass enabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:8;69:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+								<dt class="- topic/dt " xtrc="dt:8;70:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:4;70:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:8;71:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+									<p class="- topic/p " xtrc="p:8;72:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"> bypass disabled.</p>
+								</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p " xtrc="p:9;76:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">This bit is an alias of ICC_SRE_EL3.DFB</p></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:9;78:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+					<dt class="- topic/dt " xtrc="dt:9;79:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">SRE, [0]</dt>
+					<dd class="- topic/dd " xtrc="dd:9;80:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><p class="- topic/p " xtrc="p:10;80:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">System Register Enable. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:5;81:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:10;82:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+								<dt class="- topic/dt " xtrc="dt:10;83:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:5;83:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:10;84:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">
+									<p class="- topic/p " xtrc="p:11;85:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">The System register interface for the current Security state
+										is enabled.</p>
+								</dd>
+							</dlentry>
+						</dl>
+						<p class="- topic/p " xtrc="p:12;90:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">This bit is <term class="- topic/term " keyref="rao" xtrc="term:5;90:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">RAO</term>/WI. The <term class="- topic/term " keyref="core" xtrc="term:6;90:99" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">core</term> only supports a system register interface
+							to the  CPU interface.</p></dd>
+				</dlentry>
+			</dl>
+			
+			<p class="- topic/p " xtrc="p:13;95:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">Bit fields and details that are not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;96:66" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><ph class="- topic/ph " xtrc="ph:6;96:90" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><keyword class="- topic/keyword " xtrc="keyword:1;96:124" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;96:161" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">Arm</tm></keyword> <term class="- topic/term " keyref="genericinterruptcontroller" xtrc="term:7;96:222" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184479230.xml">Generic Interrupt Controller</term> Architecture Specification</ph></cite>.</p>
+		</section>
+	</refbody>
+</reference>

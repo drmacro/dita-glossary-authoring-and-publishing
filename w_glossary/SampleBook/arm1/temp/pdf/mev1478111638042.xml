@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="mev1478111638042" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+  <title class="- topic/title " xtrc="title:1;4:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Encoding for the L2 TLB</title>
+  <titlealts class="- topic/titlealts " xtrc="titlealts:1;5:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+    <navtitle class="- topic/navtitle " xtrc="navtitle:1;6:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Encoding for the L2 TLB</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;8:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">The following section describes the encoding for L2 TLB direct accesses. </shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;9:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;13:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+    <section class="- topic/section " xtrc="section:1;14:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+      <p class="- topic/p " xtrc="p:1;15:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">The following table shows the encoding that is required to select a given
+        <term class="- topic/term " keyref="tlb" xtrc="term:1;16:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">TLB</term> entry.</p>
+      <table class="- topic/table " colsep="0" frame="topbot" rowsep="0" xtrc="table:1;17:74" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+        <title class="- topic/title " xtrc="title:2;18:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">L2  encoding</title>
+        <tgroup class="- topic/tgroup " cols="2" colsep="0" rowsep="0" xtrc="tgroup:1;19:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0" colwidth="80pt" xtrc="colspec:1;20:99" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0" colwidth="180pt" xtrc="colspec:2;21:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml"/>
+          <thead class="- topic/thead " xtrc="thead:1;22:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+            <row class="- topic/row " rowsep="1" xtrc="row:1;23:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:1;24:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Bit fields of Rd</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:2;25:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody " xtrc="tbody:1;28:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+            <row class="- topic/row " rowsep="1" xtrc="row:2;29:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:3;30:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[31:24]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:4;31:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">RAMID = <ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;31:118" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">18</ph></entry>
+            </row>
+            <row class="- topic/row " rowsep="1" xtrc="row:3;33:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3" xtrc="entry:5;34:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[23:21]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3" xtrc="entry:6;35:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="1" xtrc="row:4;37:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4" xtrc="entry:7;38:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[20:18]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4" xtrc="entry:8;39:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Way
+                <dl class="- topic/dl " compact="yes" xtrc="dl:1;40:55" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:1;41:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:1;42:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">000</dt>
+                    <dd class="- topic/dd " xtrc="dd:1;43:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">way0</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:2;45:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:2;46:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">001</dt>
+                    <dd class="- topic/dd " xtrc="dd:2;47:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">way1</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:3;49:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:3;50:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">010</dt>
+                    <dd class="- topic/dd " xtrc="dd:3;51:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">way2</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:4;53:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:4;54:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">011</dt>
+                    <dd class="- topic/dd " xtrc="dd:4;55:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">way3</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:5;57:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:5;58:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">100</dt>
+                    <dd class="- topic/dd " xtrc="dd:5;59:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">way4</dd>
+                  </dlentry>                
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " rowsep="1" xtrc="row:5;64:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="5" xtrc="entry:9;65:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[17:8]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="5" xtrc="entry:10;66:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</entry>
+            </row>
+            <row class="- topic/row " rowsep="0" xtrc="row:6;68:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="6" xtrc="entry:11;69:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[7:0]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="6" xtrc="entry:12;70:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Index</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+
+      <p class="- topic/p " xtrc="p:2;76:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">The following table shows the data that is returned from accessing the L2
+        .</p>
+      <table class="- topic/table " xtrc="table:2;78:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+        <title class="- topic/title " xtrc="title:3;79:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">L2  format</title>
+        <tgroup class="- topic/tgroup " cols="3" xtrc="tgroup:2;80:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="1.02*" xtrc="colspec:3;81:89" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="1*" xtrc="colspec:4;82:86" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="1*" xtrc="colspec:5;83:86" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml"/>
+          <thead class="- topic/thead " xtrc="thead:2;84:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+            <row class="- topic/row " xtrc="row:7;85:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:13;86:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Register</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:14;87:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Bit field</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="1" xtrc="entry:15;88:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody " xtrc="tbody:2;91:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+            <row class="- topic/row " xtrc="row:8;92:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" morerows="12" xtrc="entry:16;93:74" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Instruction Register 0</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:17;94:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[63:59]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="2" xtrc="entry:18;95:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                <p class="- topic/p " xtrc="p:3;96:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</p>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:9;99:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3" xtrc="entry:19;100:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[58]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="3" xtrc="entry:20;101:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Non-global</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:10;103:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4" xtrc="entry:21;104:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[57]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="4" xtrc="entry:22;105:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Outer-shared</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:11;107:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="5" xtrc="entry:23;108:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[56]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="5" xtrc="entry:24;109:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Inner-shared</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:12;111:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="6" xtrc="entry:25;112:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[55]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="6" xtrc="entry:26;113:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:13;115:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="7" xtrc="entry:27;116:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[54:52]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="7" xtrc="entry:28;117:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                <p class="- topic/p " xtrc="p:4;118:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Memory attributes:</p>
+                <dl class="- topic/dl " compact="yes" xtrc="dl:2;119:55" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:6;120:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:6;121:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">000</dt>
+                    <dd class="- topic/dd " xtrc="dd:6;122:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Device nGnRnE</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:7;124:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:7;125:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">001</dt>
+                    <dd class="- topic/dd " xtrc="dd:7;126:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Device nGnRE</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:8;128:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:8;129:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">010</dt>
+                    <dd class="- topic/dd " xtrc="dd:8;130:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Device nGRE</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:9;132:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:9;133:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">011</dt>
+                    <dd class="- topic/dd " xtrc="dd:9;134:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Device GRE</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:10;136:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:10;137:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">100</dt>
+                    <dd class="- topic/dd " xtrc="dd:10;138:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Non-cacheable</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:11;140:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:11;141:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">101</dt>
+                    <dd class="- topic/dd " xtrc="dd:11;142:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml"><term class="- topic/term " keyref="write" xtrc="term:2;142:66" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Write</term>-Back No-Allocate</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:12;144:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:12;145:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">110</dt>
+                    <dd class="- topic/dd " xtrc="dd:12;146:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">-Back Transient</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:13;148:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:13;149:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">111</dt>
+                    <dd class="- topic/dd " xtrc="dd:13;150:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">-Back <term class="- topic/term " keyref="read_allocate" xtrc="term:3;150:80" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Read-Allocate</term> and -Allocate </dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:14;155:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="8" xtrc="entry:29;156:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[51:48]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="8" xtrc="entry:30;157:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                <p class="- topic/p " xtrc="p:5;158:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</p>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:15;161:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="9" xtrc="entry:31;162:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[47:20]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="9" xtrc="entry:32;163:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Physical address [39:12]</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:16;165:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="10" xtrc="entry:33;166:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[19:17]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="10" xtrc="entry:34;167:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                <p class="- topic/p " xtrc="p:6;168:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Page size:</p>
+                <dl class="- topic/dl " compact="yes" xtrc="dl:3;169:55" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:14;170:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:14;171:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">000</dt>
+                    <dd class="- topic/dd " xtrc="dd:14;172:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">4KB</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:15;174:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:15;175:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">001</dt>
+                    <dd class="- topic/dd " xtrc="dd:15;176:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">16KB</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:16;178:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:16;179:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">010</dt>
+                    <dd class="- topic/dd " xtrc="dd:16;180:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">64KB</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:17;182:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:17;183:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">011</dt>
+                    <dd class="- topic/dd " xtrc="dd:17;184:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">256KB</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:18;186:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:18;187:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">100</dt>
+                    <dd class="- topic/dd " xtrc="dd:18;188:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">2MB</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:19;190:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:19;191:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">101</dt>
+                    <dd class="- topic/dd " xtrc="dd:19;192:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">32MB</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:20;194:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:20;195:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">110</dt>
+                    <dd class="- topic/dd " xtrc="dd:20;196:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">512MB</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:21;198:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:21;199:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">111</dt>
+                    <dd class="- topic/dd " xtrc="dd:21;200:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">1GB</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:17;205:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="11" xtrc="entry:35;206:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[16:7]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="11" xtrc="entry:36;207:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:18;209:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="12" xtrc="entry:37;210:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[6]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="12" xtrc="entry:38;211:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Indicates that the entry is coalesced and holds translations for four contiguous pages</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:19;213:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="13" xtrc="entry:39;214:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[5:2]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="13" xtrc="entry:40;215:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">This bit field contains the valid bits for four contiguous pages. If the entry is non-coalesced, then <ph class="- topic/ph " otherprops="g.number.bin" xtrc="ph:2;215:212" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">0001</ph> indicates a valid entry.</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:20;217:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="14" xtrc="entry:41;218:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[1:0]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="14" xtrc="entry:42;219:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:21;221:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="15" morerows="6" xtrc="entry:43;222:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Instruction Register 1</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="15" xtrc="entry:44;223:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[63:54]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="15" xtrc="entry:45;224:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                <p class="- topic/p " xtrc="p:7;225:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">VMID [9:0]</p>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:22;228:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="16" xtrc="entry:46;229:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[53:38]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="16" xtrc="entry:47;230:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">ASID [15:0]</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:23;232:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="17" xtrc="entry:48;233:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[37]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="17" xtrc="entry:49;234:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Walk cache entry</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:24;236:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="18" xtrc="entry:50;237:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[36]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="18" xtrc="entry:51;238:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Prefetched translation</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:25;240:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="19" xtrc="entry:52;241:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[35:7]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="19" xtrc="entry:53;242:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Virtual address [48:20]</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:26;244:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="20" xtrc="entry:54;245:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[6]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="20" xtrc="entry:55;246:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Non-secure</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:27;248:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="21" xtrc="entry:56;249:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[5:0]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="21" xtrc="entry:57;250:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</entry>
+            </row>
+            <row class="- topic/row " xtrc="row:28;252:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="22" morerows="2" xtrc="entry:58;253:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Instruction Register 2</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="22" xtrc="entry:59;254:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[63:8]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="22" xtrc="entry:60;255:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                <p class="- topic/p " xtrc="p:8;256:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Reserved</p>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:29;259:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="23" xtrc="entry:61;260:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[7:6]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="23" xtrc="entry:62;261:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                <p class="- topic/p " xtrc="p:9;262:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Translation regime:</p>
+                <dl class="- topic/dl " compact="yes" xtrc="dl:4;263:55" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:22;264:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:22;265:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">00</dt>
+                    <dd class="- topic/dd " xtrc="dd:22;266:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Secure EL1</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:23;268:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:23;269:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">01</dt>
+                    <dd class="- topic/dd " xtrc="dd:23;270:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">EL3</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:24;272:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:24;273:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">10</dt>
+                    <dd class="- topic/dd " xtrc="dd:24;274:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">Non-secure EL1</dd>
+                  </dlentry>
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:25;276:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+                    <dt class="- topic/dt " xtrc="dt:25;277:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">11</dt>
+                    <dd class="- topic/dd " xtrc="dd:25;278:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">EL2</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:30;283:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="24" xtrc="entry:63;284:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">[5:0]</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="24" xtrc="entry:64;285:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/mev1478111638042.xml">VMID [15:10] </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      
+      
+    </section>
+  </refbody>
+</reference>

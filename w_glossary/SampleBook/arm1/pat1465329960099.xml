@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="pat1465329960099" xml:lang="en-us">
+  <title class="- topic/title " id="TitleSystemControlRegister_EL1">SCTLR_EL1, System Control Register, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The SCTLR_EL1 provides top-level control of the system, including its
+    memory system, at EL1 and EL0.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">SCTLR_EL1 is a 32-bit register, and is part of the Other system control registers functional group.</p>
+      
+      
+      <p class="- topic/p ">This register resets to <ph class="- topic/ph " otherprops="g.number.hex">0000000030D50838</ph>.</p>
+      <fig class="- topic/fig " id="fig_fqc_1gr_sv">
+        <title class="- topic/title ">SCTLR_EL1 bit assignments</title>
+        <image class="- topic/image " href="pat1465330527975.svg" id="image_twc_1gr_sv" placement="inline">
+          <alt class="- topic/alt ">SCTLR_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      
+      
+      <dl class="- topic/dl ">
+        
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:30]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <term class="- topic/term " outputclass="archterm">RES0</term> </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Reserved.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES1, [29:28]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES1</term>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Reserved.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [27]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Reserved.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">EE, [25]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Exception <term keyref="endianness">endianness</term>. The value of this bit controls the  for explicit data
+							accesses at EL1. This value also indicates the  of the <term keyref="translationtable">translation table</term> data for
+							 lookups. The possible values of this bit are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">Little-endian.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Big-endian.</dd>
+              </dlentry>
+            </dl>
+            
+          </dd>
+        </dlentry>
+        
+       
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ITD, [7]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">This field is <term class="- topic/term " outputclass="archterm">RAZ/WI</term>.</p>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [6]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">Reserved.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CP15BEN, [5]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">CP15 barrier enable. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">CP15 barrier operations disabled. Their encodings are <term class="- topic/term " outputclass="archterm">UNDEFINED</term>.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">CP15 barrier operations enabled. </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+       
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">M, [0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p "><term keyref="mmu">MMU</term> enable. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">EL1 and EL0 stage 1  disabled. </dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">EL1 and EL0 stage 1  enabled.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">There are no configuration notes.</p>
+            <p class="- topic/p ">Bit fields and details that are not provided in this description
+              are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+   
+  </refbody>
+</reference>

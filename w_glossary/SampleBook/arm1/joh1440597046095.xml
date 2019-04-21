@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440597046095" xml:lang="en-us">
+  <title class="- topic/title ">Core Wait for Interrupt</title>
+  <shortdesc class="- topic/shortdesc ">WFI puts the core in a low-power state by disabling most of the clocks
+    in the core, while keeping the core powered up.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">There is a small dynamic power overhead from the logic that is required to
+        wake up the <term keyref="core">core</term> from WFI low-power state. Other than this, the power that is drawn is
+        reduced to static leakage current only.</p>
+      <p class="- topic/p ">When the  executes the <codeph class="+ topic/ph pr-d/codeph ">WFI</codeph>
+        instruction, the  waits for all instructions in the  to retire before it enters
+        low-power state. The <codeph class="+ topic/ph pr-d/codeph ">WFI</codeph> instruction ensures that all
+        explicit memory accesses that occurred before the <codeph class="+ topic/ph pr-d/codeph ">WFI</codeph>
+        instruction in program order have retired.</p>
+      <p class="- topic/p ">In addition, the <codeph class="+ topic/ph pr-d/codeph ">WFI</codeph> instruction ensures
+        that store instructions have updated the cache or have been issued to the L3 memory
+        system.</p>
+      <p class="- topic/p ">While the  is in WFI low-power state, the clocks in the  are
+        temporarily enabled without causing the  to exit WFI low-power state when any of the
+        following events are detected:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">An L3 snoop request that must be serviced by the  data caches.</li>
+        <li class="- topic/li ">A cache or <term keyref="tlb">TLB</term> maintenance operation that must be serviced by the 
+          L1 instruction cache, data cache, , or L2 cache.</li>
+        <li class="- topic/li ">An <term keyref="apb">APB</term> access to the debug or trace registers residing in the  power
+          domain.</li>
+        <li class="- topic/li ">A <term keyref="gic">GIC</term> CPU access through the <term keyref="axi">AXI</term>4 stream channel.</li>
+      </ul>
+      <p class="- topic/p ">Exit from WFI low-power state occurs when one of the following occurs:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">The  detects one of the WFI wake-up events.</li>
+        <li class="- topic/li ">The  detects a reset.</li>
+      </ul>
+        <p class="- topic/p ">For more information, see the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+  </refbody>
+</reference>

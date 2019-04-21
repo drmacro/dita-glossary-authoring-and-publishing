@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1441899904916" xml:lang="en-us">
+	<title class="- topic/title ">Debug recovery mode</title>
+	<shortdesc class="- topic/shortdesc ">The debug recovery mode can be used to assist debug of external
+		watchdog-triggered reset events.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			
+			<p class="- topic/p ">It allows contents of the <term keyref="core">core</term> L1 data cache that was present before the reset
+				to be observable after the reset. The contents of the L1 cache are retained and are
+				not altered on the transition back to the On mode.</p>
+				
+			<p class="- topic/p ">By default, the  <term keyref="invalidate">invalidate</term>s its caches when <term keyref="power_onreset">power-on reset</term> (<keyword class="- topic/keyword " otherprops="g.signal.name">nCPUPORESET</keyword>) is deasserted.
+				If the P-Channel is initialized to the debug recovery mode, and the  is cycled
+				through  along with the system , then the cache
+				invalidation is disabled. The cache contents are preserved when the  is
+				transitioned to the On mode. </p>
+			<p class="- topic/p ">Debug recovery mode also supports preserving RAS state, in addition to the
+				cache contents. In this case, a transition to the debug recovery mode is made from
+				any of the current states. Once in debug recovery mode, the  is cycled through a
+				warm reset with the system warm reset. The RAS and cache state are preserved when
+				the  is transitioned to the On mode. </p>
+			<p class="- topic/p ">This mode is strictly for debug purposes. It must not be used for
+				functional purposes, as correct operation of the L1 cache is not guaranteed when
+				entering this mode.</p>
+			<note class="- topic/note ">This mode can occur at any time with no guarantee of the state of
+				the . A P-Channel request of this type is accepted immediately, therefore its
+				effects on the , <term keyref="cluster">cluster</term>, or the wider system are <term class="- topic/term " outputclass="archterm">unpredictable</term>, and a wider
+				system reset might be required. In particular, if there were outstanding memory
+				system transactions at the time of the reset, then these may complete after the
+				reset when the  is not expecting them and cause a system deadlock.</note>
+		</section>
+	</refbody>
+</reference>

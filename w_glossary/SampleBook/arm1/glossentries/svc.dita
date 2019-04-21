@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="svc">
+  <glossterm>SVC</glossterm>
+  <glossdef>An instruction that causes the processor to take a Supervisor Call exception.Used by the Arm standard C library to handle semihosting. This was previously called SoftWare Interrupt (SWI).</glossdef>
+</glossentry>

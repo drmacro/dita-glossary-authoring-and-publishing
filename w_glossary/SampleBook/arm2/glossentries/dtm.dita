@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="dtm">
+  <glossterm>DTM</glossterm>
+  <glossdef>In the context of physical IP, a data timing module that synchronizes incoming and outgoing data. The DTM is a component of PHY to include I/Os and PLL.</glossdef>
+</glossentry>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="afg1480518533436" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+  <title class="- topic/title " xtrc="title:1;4:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">Product revisions</title>
+  <titlealts class="- topic/titlealts " xtrc="titlealts:1;5:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+    <navtitle class="- topic/navtitle " xtrc="navtitle:1;6:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">Product revisions</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;8:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">This section indicates the first release and, in subsequent releases,
+    describes the differences in functionality between product revisions.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;10:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;13:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+    <section class="- topic/section " xtrc="section:1;14:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+      <dl class="- topic/dl " xtrc="dl:1;15:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;16:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+          <dt class="- topic/dt " xtrc="dt:1;17:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">r0p0</dt>
+          <dd class="- topic/dd " xtrc="dd:1;18:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">First release.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:2;20:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+          <dt class="- topic/dt " xtrc="dt:2;21:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">r1p0</dt>
+          <dd class="- topic/dd " xtrc="dd:2;22:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">Further development and optimization of the product, including updates to the  L2 data RAM control inputs to allow multi-cycle hold timing constraints to ease timing closure.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:3;24:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+          <dt class="- topic/dt " xtrc="dt:3;25:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">r2p0</dt>
+          <dd class="- topic/dd " xtrc="dd:3;26:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">Includes Inter-Exception level isolation of branch predictor structures so that an Exception Level cannot train <term class="- topic/term " keyref="branchprediction" xtrc="term:1;26:179" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">branch prediction</term> for a different Exception Level to reliability hit in these trained prediction entries.  Implemented new barrier SSBB.
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:4;29:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+          <dt class="- topic/dt " xtrc="dt:4;30:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">r3p0</dt>
+          <dd class="- topic/dd " xtrc="dd:4;31:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">Implemented new barriers PSSBB and CSDB. Support for <term class="- topic/term " xtrc="term:2;31:116" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">Speculative Store Bypass Safe</term> (SSBS) bit enabling software to indicate whether hardware is permitted to load or store speculatively.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:5;33:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+          <dt class="- topic/dt " xtrc="dt:5;34:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">r3p1</dt>
+          <dd class="- topic/dd " xtrc="dd:5;35:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">No functional changes to <term class="- topic/term " keyref="core" xtrc="term:3;35:80" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">core</term> for this revision.</dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:6;37:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">
+          <dt class="- topic/dt " xtrc="dt:6;38:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">r4p0</dt>
+          <dd class="- topic/dd " xtrc="dd:6;39:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/afg1480518533436.xml">Addition of PBHA support.</dd>
+        </dlentry>
+        
+      </dl>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440674621742" xml:lang="en-us">
+  <title class="- topic/title ">Resetting the ETM</title>
+  <shortdesc class="- topic/shortdesc ">The reset for <ph class="- topic/ph ">the ETM</ph> trace unit is the same as a Cold reset for the
+    core. </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p "><ph class="- topic/ph ">The <term keyref="etm">ETM</term></ph> trace unit is not reset when <term keyref="warmreset">Warm reset</term> is applied to the <term keyref="core">core</term>
+        so that tracing through Warm  reset is possible.</p>
+      <p class="- topic/p ">If <ph class="- topic/ph ">the </ph> trace unit is reset, tracing stops until <ph class="- topic/ph ">the </ph> trace unit is
+        reprogrammed and re-enabled. However, if the  is reset using , the last
+        few instructions provided by the  before the reset might not be traced.</p>
+      
+    </section>
+  </refbody>
+</reference>

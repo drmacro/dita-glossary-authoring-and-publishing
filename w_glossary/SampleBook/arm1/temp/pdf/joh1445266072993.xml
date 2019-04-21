@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="joh1445266072993" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+  <title class="- topic/title " id="TitleAArch32MemoryModelFeatureRegiste4_EL1" xtrc="title:1;4:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">ID_MMFR4_EL1, AArch32 Memory
+    Model Feature Register 4, EL1</title><titlealts class="- topic/titlealts "/>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">The ID_MMFR4_EL1 provides information about the memory model and memory
+    management support in AArch32.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;8:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;12:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+    <section class="- topic/section " xtrc="section:1;13:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+      <title class="- topic/title " xtrc="title:2;14:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Bit field descriptions</title>
+      <p class="- topic/p " xtrc="p:1;15:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">ID_MMFR4_EL1 is a 32-bit register, and is part of the Identification
+        registers functional group.</p>
+      <p class="- topic/p " xtrc="p:2;17:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_oyw_rpd_gv" xtrc="fig:1;18:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+        <title class="- topic/title " xtrc="title:3;19:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">ID_MMFR4_EL1 bit assignments</title>
+        <image class="- topic/image " href="joh1457455863275.svg" id="image_w1x_rpd_gv" placement="inline" xtrc="image:1;20:108" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <alt class="- topic/alt " xtrc="alt:1;21:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">ID_MMFR4_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl " xtrc="dl:1;24:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;25:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <dt class="- topic/dt " xtrc="dt:1;26:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">RAZ, [31:24]</dt>
+          <dd class="- topic/dd " xtrc="dd:1;27:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;28:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:2;29:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                <dt class="- topic/dt " xtrc="dt:2;30:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"/>
+                <dd class="- topic/dd " xtrc="dd:2;31:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Read-As-Zero.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:3;36:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <dt class="- topic/dt " xtrc="dt:3;37:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">LSM, [23:20]</dt>
+          <dd class="- topic/dd " xtrc="dd:3;38:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Load/Store Multiple. Indicates whether adjacent loads or stores can be
+            combined. The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;39:101" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:4;40:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                <dt class="- topic/dt " xtrc="dt:4;41:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;41:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">0</ph></dt>
+                <dd class="- topic/dd " xtrc="dd:4;42:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">LSMAOE and nTLSMD bit not supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:5;46:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <dt class="- topic/dt " xtrc="dt:5;47:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">HD, [19:16]</dt>
+          <dd class="- topic/dd " xtrc="dd:5;48:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+            <p class="- topic/p " xtrc="p:3;49:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Presence of Hierarchical Disables. Enables an operating system or hypervisor to hand over up to 4 bits of the last level <term class="- topic/term " keyref="pagetable" xtrc="term:1;49:181" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">page table</term> descriptor (bits[62:59] of the  entry) for use by hardware for <term class="- topic/term " outputclass="archterm" xtrc="term:2;49:313" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">IMPLEMENTATION DEFINED</term> usage. The value is:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:4;50:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:6;51:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                <dt class="- topic/dt " xtrc="dt:6;52:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;52:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">2</ph></dt>
+                <dd class="- topic/dd " xtrc="dd:6;53:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                  <p class="- topic/p " xtrc="p:4;54:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Hierarchical Permission Disables and Hardware allocation of bits[62:59] supported.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:7;60:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <dt class="- topic/dt " xtrc="dt:7;61:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">CNP, [15:12]</dt>
+          <dd class="- topic/dd " xtrc="dd:7;62:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Common Not Private. Indicates support for selective sharing of <term class="- topic/term " keyref="tlb" xtrc="term:3;62:117" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">TLB</term>
+            entries across multiple <term class="- topic/term " keyref="pe" xtrc="term:4;63:55" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">PE</term>s. The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:5;63:145" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:8;64:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                <dt class="- topic/dt " xtrc="dt:8;65:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:3;65:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">1</ph></dt>
+                <dd class="- topic/dd " xtrc="dd:8;66:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">CnP bit supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:9;70:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <dt class="- topic/dt " xtrc="dt:9;71:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">XNX, [11:8]</dt>
+          <dd class="- topic/dd " xtrc="dd:9;72:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Execute Never. Indicates whether the stage 2 <term class="- topic/term " keyref="translationtable" xtrc="term:5;72:112" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">translation table</term>s allows
+            the stage 2 control of whether memory is executable at EL1 independent of whether memory
+            is executable at EL0. The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:6;74:113" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:10;75:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                <dt class="- topic/dt " xtrc="dt:10;76:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:4;76:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">1</ph></dt>
+                <dd class="- topic/dd " xtrc="dd:10;77:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">EL0/EL1 execute control distinction at stage2 bit
+                  supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:11;82:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <dt class="- topic/dt " xtrc="dt:11;83:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">AC2, [7:4]</dt>
+          <dd class="- topic/dd " xtrc="dd:11;84:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Indicates the extension of the ACTLR and HACTLR registers using ACTLR2
+            and HACTLR2. The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:7;85:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:12;86:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                <dt class="- topic/dt " xtrc="dt:12;87:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:5;87:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">1</ph></dt>
+                <dd class="- topic/dd " xtrc="dd:12;88:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">ACTLR2 and HACTLR2 are implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:13;92:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <dt class="- topic/dt " xtrc="dt:13;93:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">SpecSEI, [3:0]</dt>
+          <dd class="- topic/dd " xtrc="dd:13;94:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Describes whether the <term class="- topic/term " keyref="core" xtrc="term:6;94:77" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">core</term> can generate SError interrupt
+            <term class="- topic/term " keyref="exception" xtrc="term:7;95:38" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">exception</term>s from speculative <term class="- topic/term " keyref="read" xtrc="term:8;95:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">read</term>s of memory, including speculative instruction fetches.
+            The value is:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:8;96:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:14;97:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                <dt class="- topic/dt " xtrc="dt:14;98:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:6;98:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">0</ph></dt>
+                <dd class="- topic/dd " xtrc="dd:14;99:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">The  never generates an SError interrupt due to an
+                  external <term class="- topic/term " keyref="abort" xtrc="term:9;100:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">abort</term> on a speculative .</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl " xtrc="dl:9;105:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:15;106:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+          <dt class="- topic/dt " xtrc="dt:15;107:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Configurations</dt>
+          <dd class="- topic/dd " xtrc="dd:15;108:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+            
+            <p class="- topic/p " xtrc="p:5;110:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">There is one copy of this register that is used in both Secure and
+              Non-secure states.</p>
+            <p class="- topic/p " xtrc="p:6;112:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Must be interpreted with ID_MMFR0_EL1, ID_MMFR1_EL1, ID_MMFR2_EL1, and
+              ID_MMFR3_EL1. See:</p>
+            <ul class="- topic/ul " id="ul_npt_ywc_gv" xtrc="ul:1;114:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+              <li class="- topic/li " xtrc="li:1;115:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><xref class="- topic/xref " href="lau1443445754052.xml" keyref="IdMmfr0El1Aarch32MemoryModelFeatureRegister0El1" type="reference" xtrc="xref:1;115:169" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><?ditaot usertext?>ID_MMFR0_EL1, <term class="- topic/term " keyref="aarch32" xtrc="term:10;115:206" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">AArch32</term> Memory Model Feature Register 0, EL1<desc class="- topic/desc " xtrc="desc:1;115:285" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">The ID_MMFR0_EL1 provides information about the memory model and memory management support in 		.</desc></xref>.</li>
+              <li class="- topic/li " xtrc="li:2;116:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><xref class="- topic/xref " href="lau1443445820394.xml" keyref="IdMmfr1El1Aarch32MemoryModelFeatureRegister1El1" type="reference" xtrc="xref:2;116:169" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><?ditaot usertext?>ID_MMFR1_EL1,  Memory Model Feature Register 1, EL1<desc class="- topic/desc " xtrc="desc:2;116:248" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">The ID_MMFR1_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+              <li class="- topic/li " xtrc="li:3;117:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><xref class="- topic/xref " href="lau1443445885040.xml" keyref="IdMmfr2El1Aarch32MemoryModelFeatureRegister2El1" type="reference" xtrc="xref:3;117:169" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><?ditaot usertext?>ID_MMFR2_EL1,  Memory Model Feature Register 2, EL1<desc class="- topic/desc " xtrc="desc:3;117:248" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">The ID_MMFR2_EL1 provides information about the implemented memory model     and memory management support in .</desc></xref>.</li>
+              <li class="- topic/li " xtrc="li:4;118:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><xref class="- topic/xref " href="lau1443445969299.xml" keyref="IdMmfr3El1Aarch32MemoryModelFeatureRegister3El1" type="reference" xtrc="xref:4;118:169" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><?ditaot usertext?>ID_MMFR3_EL1,  Memory Model Feature Register 3, EL1<desc class="- topic/desc " xtrc="desc:4;118:248" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">The ID_MMFR3_EL1 provides information about the memory model and memory     management support in .</desc></xref>.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p " xtrc="p:7;123:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;124:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><ph class="- topic/ph " xtrc="ph:7;124:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;125:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;125:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:2;125:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:3;125:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/joh1445266072993.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

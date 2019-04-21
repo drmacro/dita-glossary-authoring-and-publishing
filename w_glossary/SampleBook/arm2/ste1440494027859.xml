@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1440494027859" xml:lang="en-us">
+  
+  
+  <title class="- topic/title ">CPU interface registers</title>
+  
+  <shortdesc class="- topic/shortdesc ">Each CPU interface block provides the interface for the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core that interfaces with
+    a GIC distributor within the system.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      
+      <p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> <term keyref="core">core</term> only
+        supports system register access to the <term keyref="gic">GIC</term> CPU interface registers. The following table
+        lists the three types of  CPU interface system registers supported in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</p>
+      
+      <table class="- topic/table ">
+        <title class="- topic/title "> CPU interface system register types supported in the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> .</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Register prefix</entry>
+              <entry class="- topic/entry " colname="col2">Register type</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ICC</entry>
+              <entry class="- topic/entry " colname="col2">Physical  CPU interface system registers.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ICV</entry>
+              <entry class="- topic/entry " colname="col2">Virtual  CPU interface system registers.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">ICH</entry>
+              <entry class="- topic/entry " colname="col2">Virtual interface control system registers.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p class="- topic/p ">Access to virtual  CPU interface system registers is only possible at Non-secure EL1.</p>
+      <p class="- topic/p ">Access to ICC registers or the equivalent ICV registers is determined by
+        HCR_EL2. See <xref class="- topic/xref " href="lau1443436588351.xml" keyref="HcrEl2HypervisorConfigurationRegisterEl2" type="reference">HCR_EL2, Hypervisor Configuration Register, EL2<desc class="- topic/desc ">The HCR_EL2 provides configuration control for virtualization, including     whether various Non-secure operations are trapped to EL2.</desc></xref>.</p>
+      <p class="- topic/p ">For more information on the CPU interface, see the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <term keyref="genericinterruptcontroller">Generic Interrupt Controller</term> Architecture Specification</ph></cite>.
+      </p>
+    </section>
+  </refbody>
+</reference>

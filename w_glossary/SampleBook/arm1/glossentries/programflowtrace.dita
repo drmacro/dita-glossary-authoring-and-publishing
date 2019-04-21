@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="programflowtrace">
+  <glossterm>Program Flow Trace</glossterm>
+  <glossdef>The Program Flow Trace (PFT) architecture assumes that any trace decompressor has a copy of the program being traced, and generally outputs only enough trace for the decompressor to reconstruct the program flow. However, its trace output also enables a decompressor to reconstruct the program flow when it does not have a copy of parts of the program, for example because the program uses self-modifying code.A Program Flow Trace Macrocell (PTM) implements the Program Flow Trace architecture.</glossdef>
+</glossentry>

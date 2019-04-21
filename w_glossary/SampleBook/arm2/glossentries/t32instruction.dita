@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="t32instruction">
+  <glossterm>T32 instruction</glossterm>
+  <glossdef>An instruction that can be used by a core that is in AArch32 execution state. T32 is a variable-length instruction set that uses both 16-bit and 32-bit instruction encodings. It is the only instruction supported by Arm M-profile processors. Previously, this instruction set was called the Thumb instruction set.</glossdef>
+</glossentry>

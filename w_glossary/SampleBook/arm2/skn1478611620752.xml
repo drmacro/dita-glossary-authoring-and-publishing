@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="skn1478611620752" xml:lang="en-us">
+	<title class="- topic/title "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Core
+			AArch32 UNPREDICTABLE behaviors</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Core
+			AArch32 UNPREDICTABLE behaviors</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">This appendix describes the cases in which the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implementation
+		diverges from the preferred behavior described in Armv8 AArch32 <term class="- topic/term " outputclass="archterm">UNPREDICTABLE</term> behaviors.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section "> </section>
+	</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="zsu1423532514184.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Use of R15 by Instruction</linktext><desc class="- topic/desc ">If the use of R15 as a base register for a load or store is <term class="- topic/term " outputclass="archterm">unpredictable</term>, the value used by the load or     store using R15 as a base register is the <term class="- topic/term ">Program Counter</term> (PC) with     its usual offset and, in the case of T32 instructions, with the forced word alignment. In this     case, if the instruction specifies Writeback, then the load or store is performed without     Writeback.</desc></link><link class="- topic/link " format="dita" href="ohj1490885562644.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Load/Store accesses crossing page boundaries</linktext><desc class="- topic/desc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>     core implements a set of behaviors for load or store accesses that cross page     boundaries.</desc></link><link class="- topic/link " format="dita" href="tol1478623191718.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Ares/Enyo Armv8 Debug UNPREDICTABLE behaviors</linktext><desc class="- topic/desc "> This section describes the behavior that the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implements when: </desc></link><link class="- topic/link " format="dita" href="lqh1478852129477.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Ares/Enyo Other UNPREDICTABLE behaviors</linktext><desc class="- topic/desc ">This section describes other <term class="- topic/term " outputclass="archterm">unpredictable</term> behaviors.</desc></link></linkpool></linkpool></related-links></reference>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="deb1356336226730" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+	<title class="- topic/title ">[ARM STANDARD] Preface information for default bookmap</title>
+	<topicref href="deb1353594352617.xml" class="- map/topicref " chunk="to-content" collection-type="family" keys="deb1353594352617" locktitle="yes">
+		<topicmeta class="- map/topicmeta ">
+			<navtitle class="- topic/navtitle ">About this book</navtitle>
+			<shortdesc class="- map/shortdesc "/>
+			<permissions view="nonconfidential" class="- topic/permissions "/>
+		</topicmeta>
+		<topicref href="deb1356102746590.xml" class="- map/topicref " keys="deb1356102746590"/>
+		<topicref href="deb1356102769213.xml" class="- map/topicref " keys="deb1356102769213"/>
+		<topicref href="pgr1331654409682.xml" class="- map/topicref " linking="targetonly" keys="pgr1331654409682" locktitle="yes" outputclass="usingbook.booklist">
+			<topicmeta class="- map/topicmeta ">
+				<navtitle class="- topic/navtitle ">Using this book</navtitle>
+				<shortdesc class="- map/shortdesc "/>
+				<permissions view="nonconfidential" class="- topic/permissions "/>
+			</topicmeta>
+		    
+			<topicref href="deb1356102801769.xml" class="- map/topicref " keys="deb1356102801769"/>
+		    			
+		    
+		    <topicref href="dav1330616207535.xml" class="- map/topicref " keys="dav1330616207535"/>
+		    
+			<topicref href="dch1378290144351.xml" class="- map/topicref " keys="dch1378290144351"/>
+		    
+		    <topicref href="dav1330616213038.xml" class="- map/topicref " keys="dav1330616213038"/>
+		</topicref>
+		<topicref href="ste1361895918258.xml" class="- map/topicref " keys="ste1361895918258"/>
+	</topicref>
+    
+        
+	<topicref href="pgr1331716423733.xml" class="- map/topicref " chunk="to-content" collection-type="family" keys="pgr1331716423733">
+		
+		<topicref href="pgr1331716502517.xml" class="- map/topicref " keys="pgr1331716502517" locktitle="yes">
+			<topicmeta class="- map/topicmeta ">
+				<navtitle class="- topic/navtitle ">Feedback on this product</navtitle>
+				<shortdesc class="- map/shortdesc "/>
+				<permissions view="nonconfidential" class="- topic/permissions "/>
+			</topicmeta>
+		</topicref>
+		<topicref href="pgr1331716880258.xml" class="- map/topicref " keys="pgr1331716880258" locktitle="yes">
+			<topicmeta class="- map/topicmeta ">
+				<navtitle class="- topic/navtitle ">Feedback on content</navtitle>
+				<shortdesc class="- map/shortdesc "/>
+				<permissions view="nonconfidential" class="- topic/permissions "/>
+			</topicmeta>
+		</topicref>
+	</topicref>
+</map>

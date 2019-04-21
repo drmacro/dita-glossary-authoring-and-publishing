@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="bytelanestrobe">
+  <glossterm>byte lane strobe</glossterm>
+  <glossdef>A signal that determines which byte lanes are active, or valid, in a data transfer. Each bit of this signal corresponds to eight bits of the data bus.</glossdef>
+</glossentry>

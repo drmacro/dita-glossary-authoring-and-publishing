@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="deb1356102746590" xml:lang="en-us">
+	<title class="- topic/title ">Product revision status</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Product revision status</navtitle>
+	</titlealts>	
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The r<varname class="+ topic/keyword sw-d/varname ">m</varname>p<varname class="+ topic/keyword sw-d/varname ">n</varname> identifier indicates the revision status of the product described in this book, for example, r<varname class="+ topic/keyword sw-d/varname ">1</varname>p<varname class="+ topic/keyword sw-d/varname ">2</varname>, where:</p>
+			<dl class="- topic/dl " compact="yes">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">r<varname class="+ topic/keyword sw-d/varname ">m</varname></dt>
+					<dd class="- topic/dd ">Identifies the major revision of the product, for example, r1.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">p<varname class="+ topic/keyword sw-d/varname ">n</varname></dt>
+					<dd class="- topic/dd ">Identifies the minor revision or modification status of the product, for example, p2.</dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

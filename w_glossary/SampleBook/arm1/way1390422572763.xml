@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE referable-content
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<referable-content xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="way1390422572763" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- topic/topic referable-content/referable-content ">
+    <title class="- topic/title ">Cortex R5 acronyms</title>
+   <rcbody class="- topic/body referable-content/body "> <section class="- topic/section ">
+    <title class="- topic/title ">Accelerator Coherency Port</title>
+    <ph id="g.acp.term" class="- topic/ph "> <term id="g.acp.name" class="- topic/term ">Accelerator Coherency Port</term> (<ph id="g.acp.abbreviation" class="- topic/ph ">ACP</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Arithmetic Logic Unit</title>
+    <ph id="g.alu.term" class="- topic/ph "> <term id="g.alu.name" class="- topic/term ">Arithmetic Logic Unit</term> (<ph id="g.alu.abbreviation" class="- topic/ph ">ALU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Assumptions of Use</title>
+    <ph id="g.aou.term" class="- topic/ph "> <term id="g.aou.name" class="- topic/term ">Assumptions of Use</term> (<ph id="g.aou.abbreviation" class="- topic/ph ">AoU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Auxiliary Instruction Fault Status Register</title>
+    <ph id="g.aifsr.term" class="- topic/ph "> <term id="g.aifsr.name" class="- topic/term ">Auxiliary Instruction Fault Status Register</term> (<ph id="g.aifsr.abbreviation" class="- topic/ph ">AIFSR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Auxiliary Data Fault Status Register</title>
+    <ph id="g.adfsr.term" class="- topic/ph "> <term id="g.adfsr.name" class="- topic/term ">Auxiliary Data Fault Status Register</term> (<ph id="g.adfsr.abbreviation" class="- topic/ph ">ADFSR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Check bit</title>
+    <ph id="g.cbn.term" class="- topic/ph "> <term id="g.cbn.name" class="- topic/term ">Check bit</term> (<ph id="g.cbn.abbreviation" class="- topic/ph ">CBn</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Coprocessor Access Control Register</title>
+    <ph id="g.cpacr.term" class="- topic/ph "> <term id="g.cpacr.name" class="- topic/term ">Coprocessor Access Control Register</term> (<ph id="g.cpacr.abbreviation" class="- topic/ph ">CPACR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Correctable Fault Location Register</title>
+    <ph id="g.cflr.term" class="- topic/ph "> <term id="g.cflr.name" class="- topic/term ">Correctable Fault Location Register</term> (<ph id="g.cflr.abbreviation" class="- topic/ph ">CFLR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Current Program Status Register</title>
+    <ph id="g.cpsr.term" class="- topic/ph "> <term id="g.cpsr.name" class="- topic/term ">Current Program Status Register</term> (<ph id="g.cpsr.abbreviation" class="- topic/ph ">CPSR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Data Fault Address Register</title>
+    <ph id="g.dfar.term" class="- topic/ph "> <term id="g.dfar.name" class="- topic/term ">Data Fault Address Register</term> (<ph id="g.dfar.abbreviation" class="- topic/ph ">DFAR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Data Fault Status Register</title>
+    <ph id="g.dfsr.term" class="- topic/ph "> <term id="g.dfsr.name" class="- topic/term ">Data Fault Status Register</term> (<ph id="g.dfsr.abbreviation" class="- topic/ph ">DFSR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Debug Access Port</title>
+    <ph id="g.dap.term" class="- topic/ph "> <term id="g.dap.name" class="- topic/term ">Debug Access Port</term> (<ph id="g.dap.abbreviation" class="- topic/ph ">DAP</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Debug Communications Channel</title>
+    <ph id="g.dcc.term" class="- topic/ph "> <term id="g.dcc.name" class="- topic/term ">Debug Communications Channel</term> (<ph id="g.dcc.abbreviation" class="- topic/ph ">DCC</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Development Interface Agreement</title>
+    
+    <ph id="g.dia.term" class="- topic/ph "> <term id="g.dia.name" class="- topic/term ">Development Interface Agreement</term> (<ph id="g.dia.abbreviation" class="- topic/ph ">DIA</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Direct Memory Access</title>
+    <ph id="g.dma.term" class="- topic/ph "> <term id="g.dma.name" class="- topic/term ">Direct Memory Access</term> (<ph id="g.dma.abbreviation" class="- topic/ph ">DMA</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Embedded Trace Macrocell</title>
+    <ph id="g.etm.term" class="- topic/ph "> <term id="g.etm.name" class="- topic/term ">Embedded Trace Macrocell</term> (<ph id="g.etm.abbreviation" class="- topic/ph ">ETM</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Error Checking and Correction</title>
+    <ph id="g.ecc.term" class="- topic/ph "> <term id="g.ecc.name" class="- topic/term ">Error Checking and Correction</term> (<ph id="g.ecc.abbreviation" class="- topic/ph ">ECC</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Failure Mode and Effects Diagnostic Analysis</title>
+    <ph id="g.fmea.term" class="- topic/ph "> <term id="g.fmea.name" class="- topic/term ">Failure Mode and Effects Diagnostic Analysis</term> (<ph id="g.fmea.abbreviation" class="- topic/ph ">FMEDA</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Failure Modes Effects and Diagnostic Analysis</title>
+    <ph id="g.fmeda.term" class="- topic/ph "> <term id="g.fmeda.name" class="- topic/term ">Failure Modes Effects and Diagnostic Analysis</term> (<ph id="g.fmeda.abbreviation" class="- topic/ph ">FMEDA</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Fault Address Register</title>
+    <ph id="g.far.term" class="- topic/ph "> <term id="g.far.name" class="- topic/term ">Fault Address Register</term> (<ph id="g.far.abbreviation" class="- topic/ph ">FAR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Fault Reaction Time</title>
+    <ph id="g.frt.term" class="- topic/ph "> <term id="g.frt.name" class="- topic/term ">Fault Reaction Time</term> (<ph id="g.frt.abbreviation" class="- topic/ph ">FRT</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Fault Status Register</title>
+    <ph id="g.fsr.term" class="- topic/ph "> <term id="g.fsr.name" class="- topic/term ">Fault Status Register</term> (<ph id="g.fsr.abbreviation" class="- topic/ph ">FSR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Fault Tree Analysis</title>
+    <ph id="g.fta.term" class="- topic/ph "><term id="g.fta.name" class="- topic/term ">Fault Tree Analysis</term> (<ph id="g.fta.abbreviation" class="- topic/ph ">FTA</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Floating Point Unit</title>
+    <ph id="g.fpu.term" class="- topic/ph "> <term id="g.fpu.name" class="- topic/term ">Floating Point Unit</term> (<ph id="g.fpu.abbreviation" class="- topic/ph ">FPU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Instruction Fault Address Register</title>
+    <ph id="g.ifar.term" class="- topic/ph "> <term id="g.ifar.name" class="- topic/term ">Instruction Fault Address Register</term> (<ph id="g.ifar.abbreviation" class="- topic/ph ">IFAR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Instruction Fault Status Register</title>
+    <ph id="g.ifsr.term" class="- topic/ph "> <term id="g.ifsr.name" class="- topic/term ">Instruction Fault Status Register</term> (<ph id="g.ifsr.abbreviation" class="- topic/ph ">IFSR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Instruction Set Architecture</title>
+    <ph id="g.isa.term" class="- topic/ph "> <term id="g.isa.name" class="- topic/term ">Instruction Set Architecture</term> (<ph id="g.isa.abbreviation" class="- topic/ph ">ISA</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Level 1</title>
+    <ph id="g.lv1.term" class="- topic/ph "> <term id="g.lv1.name" class="- topic/term ">Level 1</term> (<ph id="g.lv1.abbreviation" class="- topic/ph ">L1</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Level 2</title>
+    <ph id="g.lv2.term" class="- topic/ph "> <term id="g.lv2.name" class="- topic/term ">Level 2</term> (<ph id="g.lv2.abbreviation" class="- topic/ph ">L2</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Lloyd's Register Quality Assurance</title>
+    <ph id="g.lrqa.term" class="- topic/ph "> <term id="g.lrqa.name" class="- topic/term ">Lloyd's Register Quality Assurance</term> (<ph id="g.lrqa.abbreviation" class="- topic/ph ">LRQA</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Low Interrupt Latency</title>
+    <ph id="g.lil.term" class="- topic/ph "> <term id="g.lil.name" class="- topic/term ">Low Interrupt Latency</term> (<ph id="g.lil.abbreviation" class="- topic/ph ">LIL</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Memory Built-In Self Test</title>
+    <ph id="g.mbist.term" class="- topic/ph "> <term id="g.mbist.name" class="- topic/term ">Memory Built-In Self Test</term> (<ph id="g.mbist.abbreviation" class="- topic/ph ">MBIST</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Memory Protection Unit</title>
+    <ph id="g.mpu.term" class="- topic/ph "> <term id="g.mpu.name" class="- topic/term ">Memory Protection Unit</term> (<ph id="g.mpu.abbreviation" class="- topic/ph ">MPU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Micro Controller Unit</title>
+    <ph id="g.mcu.term" class="- topic/ph "> <term id="g.mcu.name" class="- topic/term ">Micro Controller Unit</term> (<ph id="g.mcu.abbreviation" class="- topic/ph ">MCU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">micro-Snoop Control Unit</title>
+    <ph id="g.mscu.term" class="- topic/ph "> <term id="g.mscu.name" class="- topic/term ">micro-Snoop Control Unit</term> (<ph id="g.mscu.abbreviation" class="- topic/ph ">µSCU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Multiple-bit upsets</title>
+    <ph id="g.mbu.term" class="- topic/ph "> <term id="g.mbu.name" class="- topic/term ">Multiple-bit upsets</term> (<ph id="g.mbu.abbreviation" class="- topic/ph ">MBU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Multi-Processor ID Register</title>
+    <ph id="g.mpidr.term" class="- topic/ph "> <term id="g.mpidr.name" class="- topic/term ">Multi-Processor ID Register</term> (<ph id="g.mpidr.abbreviation" class="- topic/ph ">MPIDR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Non Disclosure Agreement</title>
+    
+    <ph id="g.nda.term" class="- topic/ph "> <term id="g.nda.name" class="- topic/term ">Non Disclosure Agreement</term> (<ph id="g.nda.abbreviation" class="- topic/ph ">NDA</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Not applicable</title>
+    
+    <ph id="g.na.term" class="- topic/ph "> <term id="g.na.name" class="- topic/term ">Not applicable</term> (<ph id="g.na.abbreviation" class="- topic/ph ">N/A</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Performance Monitoring Unit</title>
+    <ph id="g.pmu.term" class="- topic/ph "> <term id="g.pmu.name" class="- topic/term ">Performance Monitoring Unit</term> (<ph id="g.pmu.abbreviation" class="- topic/ph ">PMU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Program Counter</title>
+    <ph id="g.prgc.term" class="- topic/ph "> <term id="g.prgc.name" class="- topic/term ">Program Counter</term> (<ph id="g.prgc.abbreviation" class="- topic/ph ">PC</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Read-Modify-Write</title>
+    <ph id="g.rmw.term" class="- topic/ph "> <term id="g.rmw.name" class="- topic/term ">Read-Modify-Write</term> (<ph id="g.rmw.abbreviation" class="- topic/ph ">RMW</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Safety Element out of Context</title>
+    <ph id="g.seooc.term" class="- topic/ph "> <term id="g.seooc.name" class="- topic/term ">Safety Element out of Context</term> (<ph id="g.seooc.abbreviation" class="- topic/ph ">SEooC</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Saved Program Status Register</title>
+    <ph id="g.spsr.term" class="- topic/ph "> <term id="g.spsr.name" class="- topic/term ">Saved Program Status Register</term> (<ph id="g.spsr.abbreviation" class="- topic/ph ">SPSR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Single-Error-Correction, Double-Error-Detection</title>
+    <ph id="g.secded.term" class="- topic/ph "> <term id="g.secded.name" class="- topic/term ">Single-Error-Correction, Double-Error-Detection</term> (<ph id="g.secded.abbreviation" class="- topic/ph ">SEC-DED</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Single-event transients</title>
+    <ph id="g.set.term" class="- topic/ph "> <term id="g.set.name" class="- topic/term ">Single-event transients</term> (<ph id="g.set.abbreviation" class="- topic/ph ">SET</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">Single-event upsets</title>
+    <ph id="g.seu.term" class="- topic/ph "> <term id="g.seu.name" class="- topic/term ">Single-event upsets</term> (<ph id="g.seu.abbreviation" class="- topic/ph ">SEU</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">SuperVisor Call</title>
+    <ph id="g.svc.term" class="- topic/ph "> <term id="g.svc.name" class="- topic/term ">SuperVisor Call</term> (<ph id="g.svc.abbreviation" class="- topic/ph ">SVC</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">System Control Register</title>
+    <ph id="g.sctlr.term" class="- topic/ph "> <term id="g.sctlr.name" class="- topic/term ">System Control Register</term> (<ph id="g.sctlr.abbreviation" class="- topic/ph ">SCTLR</ph>)</ph>
+    </section> <section class="- topic/section ">
+    <title class="- topic/title ">System on Chip</title>
+    <ph id="g.soc.term" class="- topic/ph "> <term id="g.soc.name" class="- topic/term ">System on Chip</term> (<ph id="g.soc.abbreviation" class="- topic/ph ">SoC</ph>)</ph>
+    </section><section class="- topic/section ">
+    <title class="- topic/title ">Tightly Coupled Memory</title>
+    <ph id="g.tcm.term" class="- topic/ph "> <term id="g.tcm.name" class="- topic/term ">Tightly Coupled Memory</term> (<ph id="g.tcm.abbreviation" class="- topic/ph ">TCM</ph>)</ph>
+    </section>Vectored Interrupt Controller<section class="- topic/section ">
+    <title class="- topic/title ">Vectored Interrupt Controller</title>
+    <ph id="g.vic.term" class="- topic/ph "> <term id="g.vic.name" class="- topic/term ">Vectored Interrupt Controller</term> (<ph id="g.vic.abbreviation" class="- topic/ph ">VIC</ph>)</ph>
+    </section><section class="- topic/section ">
+    <title class="- topic/title ">Vector Floating Point</title>
+    <ph id="g.vfp.term" class="- topic/ph "> <term id="g.vfp.name" class="- topic/term ">Vector Floating Point</term> (<ph id="g.vfp.abbreviation" class="- topic/ph ">VFP</ph>)</ph>
+    </section> </rcbody>
+</referable-content>

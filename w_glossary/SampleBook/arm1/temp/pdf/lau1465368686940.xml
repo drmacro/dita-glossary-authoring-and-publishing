@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1465368686940" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+  <title class="- topic/title " id="TitleAArch32ProcessorFeatureRegister1_EL1" xtrc="title:1;4:80" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">ID_PFR1_EL1, AArch32
+    Processor Feature Register 1, EL1</title><titlealts class="- topic/titlealts "/>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">The ID_PFR1_EL1 provides information about the programmers model and architecture extensions
+		supported by the core.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;8:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;12:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+    <section class="- topic/section " xtrc="section:1;13:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+      <title class="- topic/title " xtrc="title:2;14:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Bit field descriptions</title>
+      <p class="- topic/p " xtrc="p:1;15:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">ID_PFR1_EL1 is a 32-bit register, and is part of the Identification registers functional
+				group.</p>
+      <p class="- topic/p " xtrc="p:2;17:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_t3f_k4w_pv" xtrc="fig:1;18:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+        <title class="- topic/title " xtrc="title:3;19:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">ID_PFR1_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1465368947928.svg" id="image_blf_k4w_pv" placement="inline" xtrc="image:1;20:108" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <alt class="- topic/alt " xtrc="alt:1;21:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">ID_PFR1_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl " xtrc="dl:1;24:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;25:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:1;26:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">GIC CPU, [31:28]</dt>
+          <dd class="- topic/dd " xtrc="dd:1;27:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <p class="- topic/p " xtrc="p:3;28:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">GIC CPU support:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;29:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:2;30:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:2;31:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;32:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                    <ph class="- topic/ph " xtrc="ph:1;33:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:2;36:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">GIC CPU interface is disabled, <keyword class="- topic/keyword " otherprops="g.signal.name" xtrc="keyword:1;36:133" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">GICCDISABLE</keyword> is HIGH, or not
+                  implemented.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:3;39:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:3;40:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;41:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                    <ph class="- topic/ph " xtrc="ph:2;42:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:3;45:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">GIC CPU interface is implemented and enabled, <keyword class="- topic/keyword " otherprops="g.signal.name" xtrc="keyword:2;45:148" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">GICCDISABLE</keyword> is LOW.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:4;50:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:4;51:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Virt_frac, [27:24]</dt>
+          <dd class="- topic/dd " xtrc="dd:4;52:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;53:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:5;54:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:5;55:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;56:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml"><ph class="- topic/ph " xtrc="ph:3;56:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">0</ph></codeph>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:5;58:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                  <p class="- topic/p " xtrc="p:4;59:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">No features from the Armv7 Virtualization Extensions are
+                    implemented.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:6;66:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:6;67:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Sec_frac, [23:20]</dt>
+          <dd class="- topic/dd " xtrc="dd:6;68:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:4;69:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:7;70:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:7;71:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;72:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml"><ph class="- topic/ph " xtrc="ph:4;72:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">0</ph></codeph>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:7;74:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                  <p class="- topic/p " xtrc="p:5;75:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">No features from the Armv7 Virtualization Extensions are
+                    implemented.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:8;82:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:8;83:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">GenTimer, [19:16]</dt>
+          <dd class="- topic/dd " xtrc="dd:8;84:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <p class="- topic/p " xtrc="p:6;85:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Generic Timer support:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:5;86:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:9;87:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:9;88:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;89:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                    <ph class="- topic/ph " xtrc="ph:5;90:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:9;93:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Generic Timer supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:10;98:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:10;99:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Virtualization, [15:12]</dt>
+          <dd class="- topic/dd " xtrc="dd:10;100:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <p class="- topic/p " xtrc="p:7;101:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Virtualization support:</p>
+            
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:6;103:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:11;104:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:11;105:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml"> <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;105:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml"> <ph class="- topic/ph " xtrc="ph:6;105:107" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">0</ph> </codeph> </dt>
+                <dd class="- topic/dd " xtrc="dd:11;106:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Virtualization not implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:12;111:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:12;112:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">MProgMod, [11:8]</dt>
+          <dd class="- topic/dd " xtrc="dd:12;113:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <p class="- topic/p " xtrc="p:8;114:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">M profile programmers model support:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:7;115:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:13;116:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:13;117:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                  <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;118:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                    <ph class="- topic/ph " xtrc="ph:7;119:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:13;122:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:14;127:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:14;128:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Security, [7:4]</dt>
+          <dd class="- topic/dd " xtrc="dd:14;129:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <p class="- topic/p " xtrc="p:9;130:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Security support:</p>
+            
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:8;132:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:15;133:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:15;134:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml"> <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:8;134:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml"> <ph class="- topic/ph " xtrc="ph:8;134:107" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">0</ph> </codeph> </dt>
+                <dd class="- topic/dd " xtrc="dd:15;135:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Security not implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:16;140:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:16;141:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">ProgMod, [3:0]</dt>
+          <dd class="- topic/dd " xtrc="dd:16;142:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <p class="- topic/p " xtrc="p:10;143:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Indicates support for the standard programmers model for Armv4 and
+              later.</p>
+            <p class="- topic/p " xtrc="p:11;145:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Model must support User, <term class="- topic/term " keyref="fiq" xtrc="term:1;145:79" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">FIQ</term>, <term class="- topic/term " keyref="irq" xtrc="term:2;145:110" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">IRQ</term>, Supervisor, Abort, Undefined, and System modes:</p>
+            
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:9;147:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:17;148:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+                <dt class="- topic/dt " xtrc="dt:17;149:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml"> <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:9;149:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml"> <ph class="- topic/ph " xtrc="ph:9;149:107" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">0</ph> </codeph> </dt>
+                <dd class="- topic/dd " xtrc="dd:17;150:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Not supported.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl " xtrc="dl:10;156:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:18;157:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+          <dt class="- topic/dt " xtrc="dt:18;158:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">Configurations</dt>
+          
+          <dd class="- topic/dd " xtrc="dd:18;160:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">
+            <p class="- topic/p " xtrc="p:12;161:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1465368686940.xml">There are no configuration notes.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+   
+  </refbody>
+</reference>

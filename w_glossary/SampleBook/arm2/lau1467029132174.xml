@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1467029132174" xml:lang="en-us">
+	
+	
+	<title class="- topic/title ">AArch64 virtual interface control system register summary</title>
+	<shortdesc class="- topic/shortdesc ">The following table lists the AArch64 virtual interface control system
+		registers that have <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> bits.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <term keyref="genericinterruptcontroller">Generic Interrupt Controller</term> Architecture Specification</ph></cite> for more information and a
+				complete list of <term keyref="aarch64">AArch64</term> virtual interface control system registers.</p>
+			
+			<table class="- topic/table ">
+				<title class="- topic/title "> virtual interface control system register summary</title>
+				<tgroup class="- topic/tgroup " cols="9">
+					
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><colspec class="- topic/colspec " colname="col3" colnum="3"/><colspec class="- topic/colspec " colname="col4" colnum="4"/><colspec class="- topic/colspec " colname="col5" colnum="5"/><colspec class="- topic/colspec " colname="col6" colnum="6"/><colspec class="- topic/colspec " colname="col7" colnum="7"/><colspec class="- topic/colspec " colname="col8" colnum="8"/><colspec class="- topic/colspec " colname="col9" colnum="9"/><thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Name</entry>
+							<entry class="- topic/entry " colname="col2">Op0</entry>
+							<entry class="- topic/entry " colname="col3">Op1</entry>
+							<entry class="- topic/entry " colname="col4">CRn</entry>
+							<entry class="- topic/entry " colname="col5">CRm</entry>
+							<entry class="- topic/entry " colname="col6">Op2</entry>
+							<entry class="- topic/entry " colname="col7">Type</entry>
+							<entry class="- topic/entry " colname="col8">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICH_AP0R0_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">8</entry>
+							<entry class="- topic/entry " colname="col6">4</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="qae1470139654006.xml" keyref="IchInterruptControllerHypActivePrioritiesGroup0Register0EL1" type="reference">ICH_AP0R0_EL2, Interrupt Controller Hyp Active Priorities Group 0 Register 0, EL2<desc class="- topic/desc ">The ICH_AP0R0_EL2 provides information about Group 0 active priorities 		for EL2.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICH_AP1R0_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">19</entry>
+							<entry class="- topic/entry " colname="col5">9</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="edo1470139751823.xml" keyref="IchInterruptControllerHypActivePrioritiesGroup1Register0EL1" type="reference">ICH_AP1R0_EL2, Interrupt Controller Hyp Active Priorities Group 1 Register 0, EL2<desc class="- topic/desc ">The ICH_AP1R0_EL2 provides information about Group 1 active priorities 		for EL2.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICH_HCR_EL2</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">4</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">11</entry>
+							<entry class="- topic/entry " colname="col6">0</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469184932288.xml" keyref="IchInterruptControllerHypControlRegisterEL2" type="reference">ICH_HCR_EL2, Interrupt Controller Hyp Control Register, EL2<desc class="- topic/desc ">ICH_HCR_EL2 controls the environment for VMs.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICH_VTR_EL2</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">4</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">11</entry>
+							<entry class="- topic/entry " colname="col6">1</entry>
+							<entry class="- topic/entry " colname="col7">RO</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469184979712.xml" keyref="IchInterruptControllerVirtualMachineControlRegisterEL2" type="reference">ICH_VMCR_EL2, Interrupt Controller Virtual Machine Control Register, EL2<desc class="- topic/desc ">ICH_VMCR_EL2 enables the hypervisor to save and restore the virtual 		machine view of the <term keyref="gic">GIC</term> state.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICH_VMCR_EL2</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">4</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">11</entry>
+							<entry class="- topic/entry " colname="col6">7</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469185142151.xml" keyref="IchInterruptControllerVTypeRegisterEL2" type="reference">ICH_VTR_EL2, Interrupt Controller V Type Register, EL2<desc class="- topic/desc ">ICH_VTR_EL2 reports supported  virtualization features.</desc></xref></entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</section>
+	</refbody>
+</reference>

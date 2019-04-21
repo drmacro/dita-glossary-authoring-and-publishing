@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="dch1378290144351" xml:lang="en-us">
+	<title class="- topic/title ">Timing diagrams</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Timing diagrams</navtitle>
+	</titlealts>   	
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The following figure explains the components used in timing diagrams. Variations, when they
+				occur, have clear labels. You must not assume any timing information that is not
+				explicit in the diagrams.</p>
+			<p class="- topic/p ">Shaded bus and signal areas are undefined, so the bus or signal can assume any value
+				within the shaded area at that time. The actual level is unimportant and does not
+				affect normal operation.</p>
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">Key to timing diagram conventions</title>
+				<image class="- topic/image " href="dav1330616208004.svg" placement="break">
+					<alt class="- topic/alt ">Key to timing diagram conventions</alt>
+				</image>
+			</fig>
+
+		</section>
+	</refbody>
+</reference>

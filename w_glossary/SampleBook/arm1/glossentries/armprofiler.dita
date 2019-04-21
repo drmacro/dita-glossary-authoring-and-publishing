@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="armprofiler">
+  <glossterm>Arm profiler</glossterm>
+  <glossdef>A plug-in to the ARM Workbench Integrated Development Environment that provides non-intrusive analysis of embedded software over time, on targets running at frequencies which are typically as high as 250MHz. Targets can be Real-Time System Models (RTSMs) and hardware targets.See Also RealView Development Suite (RVDS).</glossdef>
+</glossentry>

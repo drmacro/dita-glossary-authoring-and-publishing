@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="a32">
+  <glossterm>A32</glossterm>
+  <glossdef>The instruction set used by an ARMv8 processor that is in AArch32 execution state. A32 is a fixed-width instruction set that uses 32-bit instruction encoding. It is compatible with the ARMv7 ARM instruction set.See Also AArch32, T32.</glossdef>
+</glossentry>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1456920606253" xml:lang="en-us">
+	<title class="- topic/title ">ERXMISC0_EL1, Selected Error Record Miscellaneous Register 0, EL1</title>
+	<shortdesc class="- topic/shortdesc ">Register ERXMISC0_EL1 accesses the ERR&lt;n&gt;MISC0 register for the
+		error record selected by ERRSELR_EL1.SEL.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==0, then ERXMISC0_EL1 accesses the ERR0MISC0 register of
+				the <term keyref="core">core</term> error record. See <xref class="- topic/xref " href="bke1472476304668.xml" keyref="Err0misc0ErrorRecordMiscellaneousRegister0" type="reference">ERR0MISC0, Error Record Miscellaneous Register 0<desc class="- topic/desc ">The ERR0MISC0 is an error syndrome register. It contains corrected error counters, information to identify where the error was detected, and other state information not present in the corresponding status and address error record registers.</desc></xref>.</p>	
+			<p class="- topic/p ">If ERRSELR_EL1.SEL==1, then ERXMISC0_EL1 accesses the ERR1MISC0 register of the <keyword class="- topic/keyword ">DSU</keyword> error record. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite>.</p>
+			
+		</section>
+		
+		
+	</refbody>
+</reference>

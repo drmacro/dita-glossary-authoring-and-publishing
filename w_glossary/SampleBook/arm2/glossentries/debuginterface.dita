@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="debuginterface">
+  <glossterm>debug interface</glossterm>
+  <glossdef>In the context of RealView Debugger, the Debug interface identifies the targets on your development platform, and provides the mechanism that enables RealView Debugger to communicate with those targets. The Debug interface corresponds directly to a piece of hardware or a software simulator.See Also Debug configuration and Target.</glossdef>
+</glossentry>

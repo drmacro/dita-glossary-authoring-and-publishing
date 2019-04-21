@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1452075060088" xml:lang="en-us">
+  <title class="- topic/title ">AArch64 debug registers</title>
+  <shortdesc class="- topic/shortdesc ">This chapter describes the debug registers in the AArch64 Execution
+    state and shows examples of how to use them.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "/>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="joh1440673253656.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AArch64 debug register summary</linktext></link><link class="- topic/link " format="dita" href="lau1443604138635.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">DBGBCRn_EL1, Debug Breakpoint Control Registers, EL1</linktext><desc class="- topic/desc ">The DBGBCRn_EL1 holds control information for a breakpoint. Each     DBGBVR_EL1 is associated with a DBGBCR_EL1 to form a <term class="- topic/term ">Breakpoint Register       Pair</term> (BRP). DBGBVRn_EL1 is associated with DBGBCRn_EL1 to form BRPn. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 5.</desc></link><link class="- topic/link " format="dita" href="joh1440673263737.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">DBGCLAIMSET_EL1, Debug Claim Tag Set Register, EL1</linktext><desc class="- topic/desc ">The DBGCLAIMSET_EL1 is used by software to set CLAIM bits to     1.</desc></link><link class="- topic/link " format="dita" href="lau1443604153577.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">DBGWCRn_EL1, Debug Watchpoint Control Registers, EL1</linktext><desc class="- topic/desc ">The DBGWCRn_EL1 holds control information for a watchpoint. Each     DBGWCR_EL1 is associated with a DBGWVR_EL1 to form a <term class="- topic/term ">Watchpoint Register       Pair</term> (WRP). DBGWCRn_EL1 is associated with DBGWVRn_EL1 to form WRP<term class="- topic/term ">n</term>. The range of <term class="- topic/term ">n</term> for DBGBCRn_EL1 is 0 to 3.</desc></link></linkpool></linkpool></related-links></reference>

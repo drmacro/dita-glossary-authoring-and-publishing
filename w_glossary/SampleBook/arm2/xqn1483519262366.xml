@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="xqn1483519262366" xml:lang="en-us">
+  <title class="- topic/title ">Activity Monitor Unit</title>
+  <titlealts class="- topic/titlealts ">
+    <navtitle class="- topic/navtitle ">Activity Monitor Unit</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc ">This chapter describes the <term class="- topic/term ">Activity Monitor
+      Unit</term> (AMU). </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "/>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="woi1483519316976.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">About the AMU</linktext><desc class="- topic/desc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core 		includes activity monitoring. It has features in common with performance monitoring, but is 		intended for system management use whereas performance monitoring is aimed at user and debug 		applications. </desc></link><link class="- topic/link " format="dita" href="bux1483519438536.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Accessing the activity monitors</linktext><desc class="- topic/desc ">The activity monitors can be accessed by:</desc></link><link class="- topic/link " format="dita" href="ljp1483519921466.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AMU counters</linktext><desc class="- topic/desc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core implements five counters, 0-4. The activity monitor counters, AMEVCNTR0-4, have the following characteristics:</desc></link><link class="- topic/link " format="dita" href="nhr1483520074592.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AMU events</linktext><desc class="- topic/desc ">The following table describes the counters that are implemented in the 			<ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core and the mapping 		to fixed and programmable events.</desc></link></linkpool></linkpool></related-links></reference>

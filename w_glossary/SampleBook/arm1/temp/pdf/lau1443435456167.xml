@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1443435456167" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+	
+	
+	<title class="- topic/title " id="TitleArchitecturalFeatureTrapRegister_EL3" xtrc="title:1;6:79" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">CPTR_EL3, Architectural Feature Trap Register,
+		EL3</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;8:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">The CPTR_EL3 controls trapping to EL3 of access to CPACR_EL1, CPTR_EL2, trace functionality and
+		registers associated with Advanced SIMD and floating-point execution.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;10:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;14:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+		<section class="- topic/section " xtrc="section:1;15:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+			<p class="- topic/p " xtrc="p:1;16:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">It also controls EL3 access to trace functionality and registers associated with <term class="- topic/term " keyref="advancedsimd" xtrc="term:1;16:135" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Advanced SIMD</term> and
+				<term class="- topic/term " keyref="floating_point" xtrc="term:2;17:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">floating-point</term> execution.</p>
+			<title class="- topic/title " xtrc="title:2;18:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:2;19:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">CPTR_EL3 is a 32-bit register, and is part of the Security registers functional group.</p>
+			<fig class="- topic/fig " id="fig_l55_pbx_pv" xtrc="fig:1;20:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+				<title class="- topic/title " xtrc="title:3;21:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">CPTR_EL3 bit assignments</title>
+				<image class="- topic/image " href="lau1443435493341.svg" id="image_tw5_pbx_pv" placement="inline" xtrc="image:1;22:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+					<alt class="- topic/alt " xtrc="alt:1;23:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">CPTR_EL3 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;26:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;28:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+					<dt class="- topic/dt " xtrc="dt:1;29:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">TTA, [20]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;30:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+						<p class="- topic/p " xtrc="p:3;31:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Trap Trace Access.</p>
+						<p class="- topic/p " xtrc="p:4;32:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Not implemented. <term class="- topic/term " outputclass="archterm" xtrc="term:3;32:97" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">RES0</term>.</p>
+					</dd>
+				</dlentry>
+			
+				<dlentry class="- topic/dlentry " xtrc="dlentry:2;36:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+					<dt class="- topic/dt " xtrc="dt:2;37:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">TFP, [10]</dt>
+					<dd class="- topic/dd " xtrc="dd:2;38:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+						<p class="- topic/p " xtrc="p:5;39:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Traps all accesses to SVE,  and  functionality to EL3. This applies to all <term class="- topic/term " keyref="exceptionlevel" xtrc="term:4;39:134" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Exception level</term>s, both Security states, and both Execution states. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;40:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:3;41:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+								<dt class="- topic/dt " xtrc="dt:3;42:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;42:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">0</codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:3;43:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Does not cause any instruction to be trapped. This is the reset value.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;45:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+								<dt class="- topic/dt " xtrc="dt:4;46:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;46:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">1</codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:4;47:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Any attempt at any  to execute an instruction that uses the registers that are associated with SVE,  and  is trapped to EL3, subject to the <term class="- topic/term " keyref="exception" xtrc="term:5;47:198" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">exception</term> prioritization rules.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:3;55:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:5;56:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+					<dt class="- topic/dt " xtrc="dt:5;57:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:5;58:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+						<p class="- topic/p " xtrc="p:6;59:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">There are no configuration notes.</p>
+						<p class="- topic/p " xtrc="p:7;60:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;61:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml"><ph class="- topic/ph " xtrc="ph:1;61:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;62:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;62:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:2;62:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:3;62:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443435456167.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

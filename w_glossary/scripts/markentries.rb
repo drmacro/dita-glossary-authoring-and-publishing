@@ -1,12 +1,33 @@
 require 'bundler/setup'
 require 'nokogiri'
 require 'creek'
+require 'optparse'
 
 
-def checklist (xmlbody)
-
-
+options = {}
+optparse = OptionParser.new do |opts|
+  opts.banner ="Usage: ruby markentries [options] [excel_file.xslx] [ditamap or bookmap]"
+  options[:multiple] = false
+  options[:single] = false
+  options[:first] = true   # Default is mark only first occurrence in a topic if no options are set.
+  opts.on('-f', '--first', 'markup only first occurrence of word in a topic.') do
+    options[:first] = true
+  end
+  opts.on('-m', '--mulitple', 'markup multiple occurrences of words in a topic.') do
+    options[:multiple] = true
+    options[:first] = false
+  end
+  opts.on('-s', '--single', 'markup only a single occurrence of word in map or bookmap.') do
+    options[:multiple] = false
+    options[:first] = false
+    options[:single] = true
+  end
+  opts.on('-h', '--help', 'Display this screen.') do
+    puts opts
+    exit
+  end
 end
+optparse.parse!
 
 @topics = Array.new
 @terms = Array.new
@@ -32,11 +53,11 @@ def glosswrap(para)                # Wraps glossary entries.
     read_buffer = para.to_s
     if read_buffer.include? "\s#{singleterm}"
       all = read_buffer.split(singleterm)  # only want first instance in topic
-      all.each.each_with_index do |text, idx|
+      all.each_with_index do |text, idx|
         if idx.eql?(0)
           @writeme = true
           if all[1].split.first.eql?('</term>')
-            all[0] = text + singleterm
+            all[0] = text + singleif term
           else
             all[0] = (text + "<term keyref=\"#{singleterm.downcase.delete(' ').gsub(/[(,)\/\-']/ , '_')}\">#{singleterm}</term>")
           end

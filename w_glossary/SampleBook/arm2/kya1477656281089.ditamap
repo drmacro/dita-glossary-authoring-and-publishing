@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="kya1477656281089" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Ares Debug AArch32 registers</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Debug AArch32 registers</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+
+
+    
+    
+    
+    
+
+
+
+
+<topicref href="xwg1477656601388.xml" class="- map/topicref " keys="xwg1477656601388"/></map>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="orf1483602317618" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+	<title class="- topic/title " xtrc="title:1;4:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">AMUSERENR_EL0, Activity Monitor EL0 Enable access, EL0</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">The AMUSERENR_EL0 enables or disables EL0 access to the activity
+		monitors. </shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;7:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;10:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+		<section class="- topic/section " xtrc="section:1;11:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+			<title class="- topic/title " xtrc="title:2;12:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;13:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">The AMUSERENR_EL0 is a 32-bit register.</p>
+			<fig class="- topic/fig " xtrc="fig:1;14:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+				<title class="- topic/title " xtrc="title:3;15:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">MUSERENR_EL0 bit assignments</title>
+				<image class="- topic/image " href="yau1483603047335.svg" placement="inline" xtrc="image:1;16:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+					<alt class="- topic/alt " xtrc="alt:1;17:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">AMUSERENR_EL0 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;20:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;21:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+					<dt class="- topic/dt " xtrc="dt:1;22:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">RES0, [31:1]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;23:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:1;23:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:2;25:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+					<dt class="- topic/dt " xtrc="dt:2;26:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">EN, [0]</dt>
+					<dd class="- topic/dd " xtrc="dd:2;27:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+						<p class="- topic/p " xtrc="p:2;28:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Traps EL0 accesses to the activity monitor registers to
+							EL1. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:2;30:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:3;31:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+								<dt class="- topic/dt " xtrc="dt:3;32:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">0</dt>
+								<dd class="- topic/dd " xtrc="dd:3;33:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">EL0 accesses to the activity monitor registers
+									are trapped to EL1.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;36:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+								<dt class="- topic/dt " xtrc="dt:4;37:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">1</dt>
+								<dd class="- topic/dd " xtrc="dd:4;38:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">EL0 accesses to the activity monitor registers
+									are not trapped to EL1. Software can access all activity monitor
+									registers at EL0.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:3;46:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:5;47:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+					<dt class="- topic/dt " xtrc="dt:5;48:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:5;49:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">There are no configuration notes.</dd>
+				</dlentry>
+			</dl>
+		</section>
+		<section class="- topic/section " xtrc="section:2;53:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+			<title class="- topic/title " xtrc="title:4;54:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Usage constraints </title>
+			<dl class="- topic/dl " xtrc="dl:4;55:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:6;56:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+					<dt class="- topic/dt " xtrc="dt:6;57:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Accessing the AMUSERENR_EL0</dt>
+					<dd class="- topic/dd " xtrc="dd:6;58:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+						<p class="- topic/p " xtrc="p:3;59:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">To access the AMUSERENR_EL0:</p>
+						<codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve" xtrc="codeblock:1;60:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">MRS &lt;Xt&gt;, AMUSERENR_EL0 ; Read AMUSERENR_EL0 into Xt
+MSR AMUSERENR_EL0, &lt;Xt&gt; ; <term class="- topic/term " keyref="write" xtrc="term:2;61:54" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Write</term> Xt to AMUSERENR_EL0</codeblock>
+						<p class="- topic/p " xtrc="p:4;62:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Register access is encoded as follows:</p>
+						<table class="- topic/table " xtrc="table:1;63:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+							<title class="- topic/title " xtrc="title:5;64:38" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">AMUSERENR_EL0 encoding</title>
+							<tgroup class="- topic/tgroup " cols="5" colsep="0" rowsep="0" xtrc="tgroup:1;65:71" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+								<colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0" xtrc="colspec:1;66:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0" xtrc="colspec:2;67:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0" xtrc="colspec:3;68:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<colspec class="- topic/colspec " colname="col4" colnum="4" colsep="0" xtrc="colspec:4;69:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<colspec class="- topic/colspec " colname="col5" colnum="5" colsep="0" xtrc="colspec:5;70:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<thead class="- topic/thead " xtrc="thead:1;71:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+									<row class="- topic/row " xtrc="row:1;72:36" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+										<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:1;73:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">op0</entry>
+										<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:2;74:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">op1</entry>
+										<entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="1" xtrc="entry:3;75:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">CRn</entry>
+										<entry class="- topic/entry " colname="col4" dita-ot:x="4" dita-ot:y="1" xtrc="entry:4;76:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">CRm</entry>
+										<entry class="- topic/entry " colname="col5" dita-ot:x="5" dita-ot:y="1" xtrc="entry:5;77:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">op2</entry>
+									</row>
+								</thead>
+								<tbody class="- topic/tbody " xtrc="tbody:1;80:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+									<row class="- topic/row " xtrc="row:2;81:36" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+										<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:6;82:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">11</entry>
+										<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:7;83:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">011</entry>
+										<entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="2" xtrc="entry:8;84:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">1111</entry>
+										<entry class="- topic/entry " colname="col4" dita-ot:x="4" dita-ot:y="2" xtrc="entry:9;85:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">1010</entry>
+										<entry class="- topic/entry " colname="col5" dita-ot:x="5" dita-ot:y="2" xtrc="entry:10;86:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">111</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+						<p class="- topic/p " xtrc="p:5;91:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">This register is accessible as follows:</p>
+						<table class="- topic/table " xtrc="table:2;92:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+							<tgroup class="- topic/tgroup " cols="4" colsep="0" rowsep="0" xtrc="tgroup:2;93:71" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+								<colspec class="- topic/colspec " colname="col1" colnum="1" colsep="0" xtrc="colspec:6;94:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<colspec class="- topic/colspec " colname="col2" colnum="2" colsep="0" xtrc="colspec:7;95:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<colspec class="- topic/colspec " colname="col3" colnum="3" colsep="0" xtrc="colspec:8;96:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<colspec class="- topic/colspec " colname="col4" colnum="4" colsep="0" xtrc="colspec:9;97:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml"/>
+								<thead class="- topic/thead " xtrc="thead:2;98:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+									<row class="- topic/row " xtrc="row:3;99:36" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+										<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:11;100:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">EL0</entry>
+										<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:12;101:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">EL1</entry>
+										<entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="1" xtrc="entry:13;102:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">EL2</entry>
+										<entry class="- topic/entry " colname="col4" dita-ot:x="4" dita-ot:y="1" xtrc="entry:14;103:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">EL3</entry>
+									</row>
+								</thead>
+								<tbody class="- topic/tbody " xtrc="tbody:2;106:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+									<row class="- topic/row " xtrc="row:4;107:36" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+										<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:15;108:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">RO</entry>
+										<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:16;109:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">RW</entry>
+										<entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="2" xtrc="entry:17;110:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">RW</entry>
+										<entry class="- topic/entry " colname="col4" dita-ot:x="4" dita-ot:y="2" xtrc="entry:18;111:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">RW</entry>
+									</row>
+								</tbody>
+							</tgroup>
+						</table>
+						<note class="- topic/note " xtrc="note:1;116:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">AMUSERENR_EL0 is always RO at EL0 and not trapped by the EN bit.</note>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:5;120:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:7;121:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+					<dt class="- topic/dt " xtrc="dt:7;122:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">Traps and enables</dt>
+					<dd class="- topic/dd " xtrc="dd:7;123:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">
+						<p class="- topic/p " xtrc="p:6;124:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">If <ph class="- topic/ph " xtrc="ph:1;124:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">ACTLR_EL2.AMEN</ph> is 0, then Non-secure accesses to this register from EL0 and EL1 are trapped to EL2.</p>
+						<p class="- topic/p " xtrc="p:7;125:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">If <ph class="- topic/ph " xtrc="ph:2;125:56" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/orf1483602317618.xml">ACTLR_EL3.AMEN</ph> is 0, then accesses to this register from EL0, EL1, and EL2 are trapped to EL3.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="qwx1473172683878" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+	<title class="- topic/title ">PMU snapshot registers</title>
+	<topicmeta class="- map/topicmeta ">
+		<navtitle class="- topic/navtitle ">PMU Snapshot Registers</navtitle>
+		<shortdesc class="- map/shortdesc "/>
+		<permissions view="nonconfidential" class="- topic/permissions "/>
+	</topicmeta>
+	<topicref href="ylb1473169716120.xml" class="- map/topicref "/>
+	<topicref href="jub1473226957585.xml" class="- map/topicref " keys="PMPCSSRSnapshotProgramCounterSampleRegister"/>
+	<topicref href="vqc1473172331269.xml" class="- map/topicref " keys="PMCIDSSRSnapshotCONTEXTIDREL1SampleRegister"/>
+	<topicref href="nls1473172127906.xml" class="- map/topicref " keys="PMCID2SSRSnapshotCONTEXTIDREL2SampleRegister"/>
+	<topicref href="hia1473229271650.xml" class="- map/topicref " keys="PMSSSRPMUSnapshotStatusRegister"/>
+	<topicref href="vcq1473172538334.xml" class="- map/topicref " keys="PMOVSSRPMUOverflowStatusSnapshotRegister"/>
+	<topicref href="rcc1473170931764.xml" class="- map/topicref " keys="PMCCNTSRPMUCycleCounterSnapshotRegister"/>
+	<topicref href="nvv1473172414952.xml" class="- map/topicref " keys="PMEVCNTSRnPMUCycleCounterSnapshotRegister"/>
+	<topicref href="rpf1473227989981.xml" class="- map/topicref " keys="PMSSCRPMUSnapshotCaptureRegister"/>
+	
+	
+</map>

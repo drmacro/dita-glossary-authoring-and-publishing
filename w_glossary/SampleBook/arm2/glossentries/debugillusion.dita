@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="debugillusion">
+  <glossterm>debug illusion</glossterm>
+  <glossdef>The view of the software being debugged that a debugger presents to its user. The features of the debug illusion include:Mapping between assembler code and source code, including displaying assembler and source code simultaneously if required.Support for source-level stepping and breakpoints.Visibility of the source-level function call stack, even when called functions are generated inline.Display of variable values and structure field values, even when these values migrate between various locations. This includes displaying registers and the stack.</glossdef>
+</glossentry>

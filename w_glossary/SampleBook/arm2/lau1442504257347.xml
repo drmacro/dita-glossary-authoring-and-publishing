@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="lau1442504257347" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- topic/topic       reference/reference ">
+  
+  <title class="- topic/title ">FPSID, Floating-Point System ID Register</title>
+  <shortdesc class="- topic/shortdesc ">The FPSID provides top-level information about the floating-point
+    implementation.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions view="nonconfidential" class="- topic/permissions "/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">FPSID is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">FPSID bit assignments</title>
+        <image href="lau1442505271164." placement="inline" class="- topic/image ">
+          <alt class="- topic/alt ">FPSID bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SW, [23]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Software bit. This bit indicates that a system
+            provides only software emulation of the floating-point instructions:</p><dl compact="yes" outputclass="termwidthpc8" class="- topic/dl ">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">The system includes hardware support for floating-point
+                  operations.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Subarchitecture, [22:16]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Subarchitecture version number:</p><dl compact="yes" outputclass="termwidthpc8" class="- topic/dl ">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "><ph otherprops="g.number.hex" class="- topic/ph ">03</ph></dt>
+              <dd class="- topic/dd ">VFPv3 architecture, or later, with no subarchitecture. The entire
+                floating-point implementation is in hardware, and requires no software support
+                code. The MVFR0, MVFR1, and MVFR2 registers indicate the VFP architecture
+                version.</dd>
+            </dlentry>
+          </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Part number, [15:8]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates the part number for the floating-point
+            implementation:</p><dl compact="yes" outputclass="termwidthpc8" class="- topic/dl ">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><ph otherprops="g.number.hex" class="- topic/ph ">40</ph></dt>
+                <dd class="- topic/dd ">v8-A profile.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Variant, [7:4]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates the variant number:</p><dl compact="yes" outputclass="termwidthpc8" class="- topic/dl ">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "><ph otherprops="g.number.hex" class="- topic/ph "><keyword class="- topic/keyword ">A</keyword></ph></dt>
+              <dd class="- topic/dd "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core.</dd>
+            </dlentry>
+            
+          </dl></dd>
+        </dlentry>
+        
+        
+        
+        
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Access to this register depends on the values of CPACR.{cp10,cp11},
+            NSACR.{cp10,cp11}, and HCPTR.{TCP10,TCP11}. For details of which field values permit
+            access at specific Exception levels, see the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+            <p class="- topic/p ">This register largely duplicates information that is held in the
+              MIDR. <keyword class="- topic/keyword ">Arm</keyword>
+              deprecates use of it.</p></dd>
+        </dlentry>
+
+      </dl>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Usage constraints</title>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Accessing the FPSID</dt>
+          <dd class="- topic/dd "> <p class="- topic/p ">To access the FPSID:</p>
+            <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock ">VMRS &lt;Rt&gt;, FPSID ; Read FPSID into Rt</codeblock></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Register access is encoded as follows:</p>
+      <table class="- topic/table ">
+        <title class="- topic/title ">FPSID access encoding</title>
+        <tgroup cols="1" class="- topic/tgroup ">
+          <colspec class="- topic/colspec " colnum="1" colname="col1"/><thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">spec_reg</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">0000</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Accessibility</dt>
+          <dd class="- topic/dd ">This register is accessible as follows:</dd>
+        </dlentry>
+      </dl>
+      <table colsep="0" frame="topbot" rowsep="0" class="- topic/table ">
+        <tgroup cols="7" colsep="0" rowsep="0" class="- topic/tgroup ">
+          <colspec colname="col1" colnum="1" colsep="0" class="- topic/colspec "/>
+          <colspec colname="col2" colnum="2" colsep="0" class="- topic/colspec "/>
+          <colspec colname="col3" colnum="3" colsep="0" class="- topic/colspec "/>
+          <colspec colname="col4" colnum="4" colsep="0" class="- topic/colspec "/>
+          <colspec colname="col5" colnum="5" colsep="0" class="- topic/colspec "/>
+          <colspec colname="col6" colnum="6" colsep="0" class="- topic/colspec "/>
+          <colspec colname="col7" colnum="7" colsep="0" class="- topic/colspec "/>
+          <thead class="- topic/thead ">
+            <row rowsep="1" class="- topic/row ">
+              <entry colname="col1" class="- topic/entry "><p class="- topic/p ">EL0</p><p class="- topic/p ">(NS)</p></entry>
+              <entry colname="col2" class="- topic/entry "><p class="- topic/p ">EL0</p><p class="- topic/p ">(S)</p></entry>
+              <entry colname="col3" class="- topic/entry "><p class="- topic/p ">EL1</p><p class="- topic/p ">(NS)</p></entry>
+              <entry colname="col4" class="- topic/entry "><p class="- topic/p ">EL1</p><p class="- topic/p ">(S)</p></entry>
+              <entry colname="col5" class="- topic/entry ">EL2</entry>
+              <entry colname="col6" class="- topic/entry "><p class="- topic/p ">EL3</p><p class="- topic/p ">(SCR.NS = 1)</p></entry>
+              <entry colname="col7" class="- topic/entry "><p class="- topic/p ">EL3</p><p class="- topic/p ">(SCR.NS = 0)</p></entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row rowsep="0" class="- topic/row ">
+              <entry colname="col1" class="- topic/entry ">-</entry>
+              <entry colname="col2" class="- topic/entry ">-</entry>
+              <entry colname="col3" class="- topic/entry ">Config</entry>
+              <entry colname="col4" class="- topic/entry ">RO</entry>
+              <entry colname="col5" class="- topic/entry ">Config</entry>
+              <entry colname="col6" class="- topic/entry ">Config</entry>
+              <entry colname="col7" class="- topic/entry ">RO</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="fge1473708290149" xml:lang="en-us">
+	<title class="- topic/title ">Mis-programming contiguous hints</title>
+	<shortdesc class="- topic/shortdesc ">In the case of a mis-programming contiguous hint, when there is a
+				descriptor that contains a set CH bit, all contiguous VAs contained in this block
+				should be included in the input VA address space that is defined for stage 1 by TxSZ
+				for TTBx or for stage 2 by {SL0, T0SZ}.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>
+            <term keyref="core">core</term> treats such a block as not causing a translation <term keyref="fault">fault</term>. </p>
+			
+		</section>
+	</refbody>
+</reference>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="unconditionalbreakpoint">
+  <glossterm>unconditional breakpoint</glossterm>
+  <glossdef>A breakpoint that does not have a conditional qualifier assigned. The breakpoint activates immediately it is hit, but subsequent image execution is determined by any actions assigned to the breakpoint.See Also Conditional breakpoint and Hardware breakpoint.</glossdef>
+</glossentry>

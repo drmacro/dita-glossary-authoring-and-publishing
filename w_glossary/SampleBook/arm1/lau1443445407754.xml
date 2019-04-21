@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443445407754" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32InstructionSetAttributeRegister2_EL1">ID_ISAR2_EL1, AArch32 Instruction Set Attribute Register 2, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_ISAR2_EL1 provides information about the instruction sets
+    implemented by the core in AArch32.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_ISAR2_EL1 is a 32-bit register, and is part of the Identification
+        registers functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_srp_bhy_nv">
+        <title class="- topic/title ">ID_ISAR2_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1443445442478.svg" id="image_mvp_bhy_nv" placement="inline">
+          <alt class="- topic/alt ">ID_ISAR2_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Reversal, [31:28]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented Reversal instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">The <codeph class="+ topic/ph pr-d/codeph ">REV</codeph>, <codeph class="+ topic/ph pr-d/codeph ">REV16</codeph>, <codeph class="+ topic/ph pr-d/codeph ">REVSH</codeph>, and
+                    <codeph class="+ topic/ph pr-d/codeph ">RBIT</codeph> instructions.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt "><term keyref="psr">PSR</term>_AR, [27:24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented A and R profile instructions to manipulate
+              the :</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">The <codeph class="+ topic/ph pr-d/codeph ">MRS</codeph> and <codeph class="+ topic/ph pr-d/codeph ">MSR</codeph> instructions, and the <term keyref="exception">exception</term> return forms of
+                  data-processing instructions.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">The  return forms of the data-processing instructions
+              are:</p>
+            <ul class="- topic/ul " id="ul_cyp_bhy_nv">
+              <li class="- topic/li ">In the <term keyref="a32">A32</term> instruction set, data-processing instructions with the
+                PC as the destination and the S bit set.</li>
+              <li class="- topic/li ">In the <term keyref="t32">T32</term> instruction set, the <codeph class="+ topic/ph pr-d/codeph ">SUBS</codeph><codeph class="+ topic/ph pr-d/codeph ">PC</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LR</codeph>, <codeph class="+ topic/ph pr-d/codeph ">#N</codeph> instruction.</li>
+            </ul>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">MultU, [23:20]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented advanced unsigned Multiply
+              instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">The <codeph class="+ topic/ph pr-d/codeph ">UMULL</codeph>, <codeph class="+ topic/ph pr-d/codeph ">UMLAL</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">UMAAL</codeph>
+                  instructions.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">MultS, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented advanced signed Multiply instructions.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">3</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <ul class="- topic/ul " id="ul_rzp_bhy_nv">
+                    <li class="- topic/li ">The <codeph class="+ topic/ph pr-d/codeph ">SMULL</codeph> and <codeph class="+ topic/ph pr-d/codeph ">SMLAL</codeph> instructions.</li>
+                    <li class="- topic/li ">The <codeph class="+ topic/ph pr-d/codeph ">SMLABB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLABT</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLALBB</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SMLALBT</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLALTB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLALTT</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLATB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLATT</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SMLAWB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLAWT</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMULBB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMULBT</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMULTB</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SMULTT</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMULWB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMULWT</codeph> instructions, and
+                      the Q bit in the s.</li>
+                    <li class="- topic/li ">The <codeph class="+ topic/ph pr-d/codeph ">SMLAD</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLADX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLALD</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SMLALDX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLSD</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLSDX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLSLD</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMLSLDX</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SMMLA</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMMLAR</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMMLS</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMMLSR</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMMUL</codeph>,
+                        <codeph class="+ topic/ph pr-d/codeph ">SMMULR</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMUAD</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMUADX</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SMUSD</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">SMUSDX</codeph> instructions.</li>
+                  </ul>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Mult, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented additional Multiply instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">The <codeph class="+ topic/ph pr-d/codeph ">MUL</codeph>, <codeph class="+ topic/ph pr-d/codeph ">MLA</codeph> and <codeph class="+ topic/ph pr-d/codeph ">MLS</codeph>
+                  instructions.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">MultiAccessInt, [11:8]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the support for interruptible multi-access
+              instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">No support. This means the LDM and <term keyref="stm">STM</term> instructions are not
+                  interruptible.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">MemHint, [7:4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented memory <term keyref="hintinstruction">hint instruction</term>s:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">4</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">The <codeph class="+ topic/ph pr-d/codeph ">PLD</codeph>, <codeph class="+ topic/ph pr-d/codeph ">PLI</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">PLDW</codeph>instructions.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">LoadStore, [3:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates the implemented additional load/store instructions:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <p class="- topic/p ">The <codeph class="+ topic/ph pr-d/codeph ">LDRD</codeph> and <codeph class="+ topic/ph pr-d/codeph ">STRD</codeph> instructions.</p>
+                  <p class="- topic/p ">The Load Acquire (<codeph class="+ topic/ph pr-d/codeph ">LDAB</codeph>,
+                      <codeph class="+ topic/ph pr-d/codeph ">LDAH</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LDA</codeph>,
+                      <codeph class="+ topic/ph pr-d/codeph ">LDAEXB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LDAEXH</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LDAEX</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">LDAEXD</codeph>) and Store Release (<codeph class="+ topic/ph pr-d/codeph ">STLB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">STLH</codeph>, <codeph class="+ topic/ph pr-d/codeph ">STL</codeph>, <codeph class="+ topic/ph pr-d/codeph ">STLEXB</codeph>,
+                      <codeph class="+ topic/ph pr-d/codeph ">STLEXH</codeph>, <codeph class="+ topic/ph pr-d/codeph ">STLEX</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">STLEXD</codeph>)
+                    instructions.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">In an <term keyref="aarch64">AArch64</term>-only implementation, this register is <term class="- topic/term " outputclass="archterm">UNKNOWN</term>.</p>
+            
+            <p class="- topic/p ">Must be interpreted with ID_ISAR0_EL1, ID_ISAR1_EL1, ID_ISAR3_EL1, ID_ISAR4_EL1, ID_ISAR5_EL1, and ID_ISAR6_EL1. See:</p>
+            <ul class="- topic/ul " id="ul_lfd_dkt_2v">
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443437809604.xml" keyref="IdIsar0El1Aarch32InstructionSetAttributeRegister0El1" type="reference">ID_ISAR0_EL1, <term keyref="aarch32">AArch32</term> Instruction Set Attribute Register 0, EL1<desc class="- topic/desc ">The ID_ISAR0_EL1 provides information about the instruction sets implemented by the <term keyref="core">core</term> in 		.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443437895509.xml" keyref="IdIsar1El1Aarch32InstructionSetAttributeRegister1El1" type="reference">ID_ISAR1_EL1,  Instruction Set Attribute Register 1, EL1<desc class="- topic/desc ">The ID_ISAR1_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445482819.xml" keyref="IdIsar3El1Aarch32InstructionSetAttributeRegister3El1" type="reference">ID_ISAR3_EL1,  Instruction Set Attribute Register 3, EL1<desc class="- topic/desc ">The ID_ISAR3_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445566298.xml" keyref="IdIsar4El1Aarch32InstructionSetAttributeRegister4El1" type="reference">ID_ISAR4_EL1,  Instruction Set Attribute Register 4, EL1<desc class="- topic/desc ">The ID_ISAR4_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445664210.xml" keyref="IdIsar5El1Aarch32InstructionSetAttributeRegister5El1" type="reference">ID_ISAR5_EL1,  Instruction Set Attribute Register 5, EL1<desc class="- topic/desc ">The ID_ISAR5_EL1 provides information about the instruction sets that     the  implements.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="nwd1493817464437.xml" keyref="IdIsar6El1Aarch32InstructionSetAttributeRegister6El1" type="reference">ID_ISAR6_EL1,  Instruction Set Attribute Register 6, EL1<desc class="- topic/desc ">The ID_ISAR6_EL1 provides information about the instruction sets that     the  implements.</desc></xref>.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl><p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="erd1531743484728" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+	<title class="- topic/title " id="TitleAArch64ProcessorFeatureRegister0_EL1" xtrc="title:1;4:79" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">ID_AA64PFR1_EL1, AArch64
+		Processor Feature Register 1, EL1</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">The ID_AA64PFR1_EL1 provides additional information about implemented
+		core features in AArch64.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;8:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;12:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+		<section class="- topic/section " xtrc="section:1;13:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+			<title class="- topic/title " xtrc="title:2;14:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;15:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">ID_AA64PFR1_EL1 is a 64-bit register, and is part of the
+				Identification registers functional group.</p>
+			<p class="- topic/p " xtrc="p:2;17:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">This register is Read Only.</p>
+			<fig class="- topic/fig " id="fig_hwp_t5x_gv" xtrc="fig:1;18:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+				<title class="- topic/title " xtrc="title:3;19:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">ID_AA64PFR1_EL1 bit assignments</title>
+				<image class="- topic/image " href="tiz1531744645925.svg" id="image_tzp_t5x_gv" placement="inline" xtrc="image:1;20:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+					<alt class="- topic/alt " xtrc="alt:1;21:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">ID_AA64PFR1_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;24:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;25:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+					<dt class="- topic/dt " xtrc="dt:1;26:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">RES0, [63:8]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;27:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;28:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;29:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+								<dt class="- topic/dt " xtrc="dt:2;30:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:1;30:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:2;31:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;37:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+					<dt class="- topic/dt " xtrc="dt:3;38:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">SSBS, [7:4]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;39:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+						<p class="- topic/p " xtrc="p:3;40:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">PSTATE.SSBS. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;41:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;42:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+								<dt class="- topic/dt " xtrc="dt:4;43:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;43:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;43:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:4;44:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">AArch64 provides the PSTATE.SSBS mechanism to mark <term class="- topic/term " keyref="region" xtrc="term:2;44:106" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">region</term>s that are <term class="- topic/term " xtrc="term:3;44:158" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Speculative Store Bypassing Safe</term> (SSBS), but does not implement the MSR/MRS instructions to directly <term class="- topic/term " keyref="read" xtrc="term:4;44:286" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">read</term> and write the PSTATE.SSBS field.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:5;49:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+					<dt class="- topic/dt " xtrc="dt:5;50:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">RES0, [3:0]</dt>
+					<dd class="- topic/dd " xtrc="dd:5;51:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:4;52:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:6;53:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+								<dt class="- topic/dt " xtrc="dt:6;54:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:5;54:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:6;55:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:5;61:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:7;62:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+					<dt class="- topic/dt " xtrc="dt:7;63:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:7;64:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml"> <p class="- topic/p " xtrc="p:4;64:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">ID_AA64PFR1_EL1 is architecturally mapped to External register EDPFR.</p> <p class="- topic/p " xtrc="p:5;64:149" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;65:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml"><ph class="- topic/ph " xtrc="ph:2;65:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;66:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;66:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:2;66:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:3;66:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erd1531743484728.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p> </dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+	</refbody>
+</reference>

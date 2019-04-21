@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1452075087151" xml:lang="en-us">
+  <title class="- topic/title ">AArch32 PMU registers</title>
+  <shortdesc class="- topic/shortdesc ">This chapter describes the AArch32 PMU registers and shows examples of
+    how to use them.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+ 
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "/>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="joh1440673893072.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AArch32 PMU register summary</linktext><desc class="- topic/desc ">The PMU counters and their associated control registers are accessible     in the AArch32 Execution state from the internal CP15 system register interface with <codeph class="+ topic/ph pr-d/codeph ">MCR</codeph> and <codeph class="+ topic/ph pr-d/codeph ">MRC</codeph> instructions for 32-bit     registers and <codeph class="+ topic/ph pr-d/codeph ">MCRR</codeph> and <codeph class="+ topic/ph pr-d/codeph ">MRRC</codeph> for     64-bit registers.</desc></link><link class="- topic/link " format="dita" href="fvd1477940426136.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">PMCEID0, Performance Monitors Common Event Identification Register 0 (Ares/Enyo Specific)</linktext><desc class="- topic/desc ">The PMCEID0 defines which common architectural and common     microarchitectural feature events are implemented.</desc></link><link class="- topic/link " format="dita" href="dsh1478112495083.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">PMCEID1, Performance Monitors Common Event Identification Register 1 (Ares/Enyo Specific)</linktext><desc class="- topic/desc ">The PMCEID1 defines which common architectural and common     microarchitectural feature events are implemented.</desc></link><link class="- topic/link " format="dita" href="vwh1474025890586.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">PMCR, Performance Monitors Control Register</linktext><desc class="- topic/desc ">The PMCR provides details of the Performance Monitors implementation,     including the number of counters implemented, and configures and controls the     counters.</desc></link></linkpool></linkpool></related-links></reference>

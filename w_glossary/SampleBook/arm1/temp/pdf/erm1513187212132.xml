@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="erm1513187212132" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+	<title class="- topic/title " xtrc="title:1;4:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">TRCVMIDCCTLR0, Virtual context identifier Comparator Control Register 0 </title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">The TRCVMIDCCTLR0 contains the Virtual machine identifier mask value for
+		the TRCVMIDCVR0 register.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;7:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;10:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+		<section class="- topic/section " xtrc="section:1;11:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+			<title class="- topic/title " xtrc="title:2;12:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;13:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">The TRCVMIDCCTLR0 is a 32-bit register.</p>
+			<fig class="- topic/fig " xtrc="fig:1;14:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+				<title class="- topic/title " xtrc="title:3;15:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">TRCVMIDCCTLR0 bit assignments</title>
+				<image class="- topic/image " href="lau1443703242414.svg" placement="inline" xtrc="image:1;16:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+					<alt class="- topic/alt " xtrc="alt:1;17:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">TRCVMIDCCTRL0  bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;20:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;21:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+					<dt class="- topic/dt " xtrc="dt:1;22:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">RES0, [31:4]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;23:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;24:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;25:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+								<dt class="- topic/dt " xtrc="dt:2;26:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:1;26:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">res0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:2;27:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;32:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+					<dt class="- topic/dt " xtrc="dt:3;33:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">COMP0, [3:0]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;34:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+						<p class="- topic/p " xtrc="p:2;35:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">Controls the mask value that the trace unit applies to TRCVMIDCVR0. Each
+							bit in this field corresponds to a byte in TRCVMIDCVR0. When a bit
+							is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;38:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;39:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+								<dt class="- topic/dt " xtrc="dt:4;40:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;40:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">0</codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:4;41:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">The trace unit includes the relevant byte in TRCVMIDCVR0 when it
+									performs the Virtual context ID comparison.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:5;44:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+								<dt class="- topic/dt " xtrc="dt:5;45:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;45:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">1</codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:5;46:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">The trace unit ignores the relevant byte in TRCVMIDCVR0 when it performs
+									the Virtual context ID comparison.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+			</dl>
+			<p class="- topic/p " xtrc="p:3;53:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">Bit fields and details not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;54:66" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml"><ph class="- topic/ph " xtrc="ph:1;54:90" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;55:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;55:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:2;55:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:3;55:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+			<p class="- topic/p " xtrc="p:4;56:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">The TRCVMIDCCTLR0 can be accessed through the external <term class="- topic/term " keyref="debuginterface" xtrc="term:2;56:111" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">debug interface</term>, offset
+					<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;57:46" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;57:96" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/erm1513187212132.xml">688</ph></codeph>.</p>
+		</section>
+	</refbody>
+</reference>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1467028866637" xml:lang="en-us">
+	<title class="- topic/title ">AArch64 physical GIC CPU interface system register summary</title>
+	<shortdesc class="- topic/shortdesc ">The following table lists the AArch64 physical GIC CPU interface system
+		registers that have <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> bits.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">See the <cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <term keyref="genericinterruptcontroller">Generic Interrupt Controller</term> Architecture Specification</ph></cite> for more information and a complete list of <term keyref="aarch64">AArch64</term> physical <term keyref="gic">GIC</term> CPU interface
+				system registers.</p>
+			<table class="- topic/table ">
+				<title class="- topic/title "> physical  CPU interface system register summary</title>
+				<tgroup class="- topic/tgroup " cols="9">
+					
+					<colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><colspec class="- topic/colspec " colname="col3" colnum="3"/><colspec class="- topic/colspec " colname="col4" colnum="4"/><colspec class="- topic/colspec " colname="col5" colnum="5"/><colspec class="- topic/colspec " colname="col6" colnum="6"/><colspec class="- topic/colspec " colname="col7" colnum="7"/><colspec class="- topic/colspec " colname="col8" colnum="8"/><colspec class="- topic/colspec " colname="col9" colnum="9"/><thead class="- topic/thead ">
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">Name</entry>
+							<entry class="- topic/entry " colname="col2">Op0</entry>
+							<entry class="- topic/entry " colname="col3">Op1</entry>
+							<entry class="- topic/entry " colname="col4">CRn</entry>
+							<entry class="- topic/entry " colname="col5">CRm</entry>
+							<entry class="- topic/entry " colname="col6">Op2</entry>
+							<entry class="- topic/entry " colname="col7">Type</entry>
+							<entry class="- topic/entry " colname="col8">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody ">
+						
+							<row class="- topic/row ">
+								<entry class="- topic/entry " colname="col1">ICC_AP0R0_EL1</entry>
+								<entry class="- topic/entry " colname="col2">3</entry>
+								<entry class="- topic/entry " colname="col3">0</entry>
+								<entry class="- topic/entry " colname="col4">12</entry>
+								<entry class="- topic/entry " colname="col5">8</entry>
+								<entry class="- topic/entry " colname="col6">4</entry>
+								<entry class="- topic/entry " colname="col7">RW</entry>
+								<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="pgt1470139323391.xml" keyref="IccInterruptControllerActivePrioritiesGroup0Register0EL1" type="reference">ICC_AP0R0_EL1, Interrupt Controller Active Priorities Group 0 Register 0, EL1<desc class="- topic/desc ">The ICC_AP0R0_EL1 provides information about Group 0 active 		priorities.</desc></xref></entry>
+							</row>
+							<row class="- topic/row ">
+								<entry class="- topic/entry " colname="col1">ICC_AP1R0_EL1</entry>
+								<entry class="- topic/entry " colname="col2">3</entry>
+								<entry class="- topic/entry " colname="col3">0</entry>
+								<entry class="- topic/entry " colname="col4">12</entry>
+								<entry class="- topic/entry " colname="col5">9</entry>
+								<entry class="- topic/entry " colname="col6">0</entry>
+								<entry class="- topic/entry " colname="col7">RW</entry>
+								<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="zkn1470139413326.xml" keyref="IccInterruptControllerActivePrioritiesGroup1Register0EL1" type="reference">ICC_AP1R0_EL1, Interrupt Controller Active Priorities Group 1 Register 0 EL1<desc class="- topic/desc ">The ICC_AP1R0_EL1 provides information about Group 1 active 		priorities.</desc></xref></entry>
+							</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICC_BPR0_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">8</entry>
+							<entry class="- topic/entry " colname="col6">3</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469181709121.xml" keyref="IccInterruptControllerBinaryPointRegister0EL1" type="reference">ICC_BPR0_EL1, Interrupt Controller Binary Point Register 0, EL1<desc class="- topic/desc ">ICC_BPR0_EL1 defines the point at which the priority value fields split 		into two parts, the group priority field and the subpriority field. The group priority field 		determines Group 0 interrupt preemption.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICC_BPR1_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">12</entry>
+							<entry class="- topic/entry " colname="col6">3</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469181855355.xml" keyref="IccInterruptControllerBinaryPointRegister1EL1" type="reference">ICC_BPR1_EL1, Interrupt Controller Binary Point Register 1, EL1<desc class="- topic/desc ">ICC_BPR1_EL1 defines the point at which the priority value fields split 		into two parts, the group priority field and the subpriority field. The group priority field 		determines Group 1 interrupt preemption.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICC_CTLR_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">12</entry>
+							<entry class="- topic/entry " colname="col6">4</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469184261367.xml" keyref="IccCtlrInterruptControllerControlRegisterEL1" type="reference">ICC_CTLR_EL1, Interrupt Controller Control Register, EL1<desc class="- topic/desc ">ICC_CTLR_EL1 controls aspects of the behavior of the  CPU interface 		and provides information about the features implemented.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICC_CTLR_EL3</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">6</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">12</entry>
+							<entry class="- topic/entry " colname="col6">4</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469184763973.xml" keyref="IccInterruptControllerControlRegisterEL3" type="reference">ICC_CTLR_EL3, Interrupt Controller Control Register, EL3<desc class="- topic/desc ">ICC_CTLR_EL3 controls aspects of the behavior of the  CPU interface 		and provides information about the features implemented.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICC_SRE_EL1</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">0</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">12</entry>
+							<entry class="- topic/entry " colname="col6">5</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469184479230.xml" keyref="IccInterruptControllerSystemRegisterEnableRegisterEL1" type="reference">ICC_SRE_EL1, Interrupt Controller System Register Enable Register, EL1<desc class="- topic/desc ">ICC_SRE_EL1 controls whether the System register interface or the 		memory-mapped interface to the  CPU interface is used for EL0 and EL1.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICC_SRE_EL2</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">4</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">9</entry>
+							<entry class="- topic/entry " colname="col6">5</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469184656964.xml" keyref="IccInterruptControllerSystemRegisterEnableregisterEL2" type="reference">ICC_SRE_EL2, Interrupt Controller System Register Enable register, EL2<desc class="- topic/desc ">ICC_SRE_EL2 controls whether the system register interface or the 		memory-mapped interface to the  CPU interface is used for EL2.</desc></xref></entry>
+						</row>
+						<row class="- topic/row ">
+							<entry class="- topic/entry " colname="col1">ICC_SRE_EL3</entry>
+							<entry class="- topic/entry " colname="col2">3</entry>
+							<entry class="- topic/entry " colname="col3">6</entry>
+							<entry class="- topic/entry " colname="col4">12</entry>
+							<entry class="- topic/entry " colname="col5">12</entry>
+							<entry class="- topic/entry " colname="col6">5</entry>
+							<entry class="- topic/entry " colname="col7">RW</entry>
+							<entry class="- topic/entry " colname="col8"><xref class="- topic/xref " href="lau1469184828168.xml" keyref="IccInterruptControllerSystemRegisterEnableRegisterEL3" type="reference">ICC_SRE_EL3, Interrupt Controller System Register Enable register, EL3<desc class="- topic/desc ">ICC_SRE_EL3 controls whether the System register interface or the 		memory-mapped interface to the  CPU interface is used for EL3.</desc></xref></entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			
+		</section>
+	</refbody>
+</reference>

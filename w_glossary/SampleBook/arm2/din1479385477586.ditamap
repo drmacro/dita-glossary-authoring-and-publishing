@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" id="din1479385477586" xml:lang="en-us">
+	<title class="- topic/title ">AArch64 system registers - Enyo</title><prolog class="- topic/prolog "/>
+	<topicmeta class="- map/topicmeta ">
+		<navtitle class="- topic/navtitle ">AArch64 system registers</navtitle>
+		<shortdesc class="- map/shortdesc "/>
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</topicmeta>
+
+	<topicref class="- map/topicref " href="otn1469698999166.xml"/>
+	<topicref class="- map/topicref " href="yqi1479387756317.xml"/>
+	<topicref class="- map/topicref " href="fxr1479387847713.xml"/>
+	<topicref class="- map/topicref " href="sbm1479387887957.xml"/>
+	
+	
+
+	<topicref class="- map/topicref " href="lau1443434506032.xml" keys="ActlrEl1AuxiliaryControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443434705598.xml" keys="ActlrEl2AuxiliaryControlRegisterEl2"/>
+	<topicref class="- map/topicref " href="lau1443434859896.xml" keys="ActlrEl3AuxiliaryControlRegisterEl3"/>
+	<topicref class="- map/topicref " href="lau1443434960248.xml" keys="Afsr0El1AuxiliaryFaultStatusRegister0El1"/>
+	<topicref class="- map/topicref " href="joh1460539432217.xml" keys="Afsr0El2AuxiliaryFaultStatusRegister0El2"/>
+	<topicref class="- map/topicref " href="joh1460541921485.xml" keys="Afsr0El3AuxiliaryFaultStatusRegister0El3"/>
+	<topicref class="- map/topicref " href="lau1443434978778.xml" keys="Afsr1El1AuxiliaryFaultStatusRegister1El1"/>
+	<topicref class="- map/topicref " href="joh1460545106712.xml" keys="Afsr1El2AuxiliaryFaultStatusRegister1El2"/>
+	<topicref class="- map/topicref " href="joh1460549217620.xml" keys="Afsr1El3AuxiliaryFaultStatusRegister1El3"/>
+	<topicref class="- map/topicref " href="iwg1474024439306.xml" keys="AidrEl1AuxiliaryIdRegisterEl1"/>
+	
+	
+	<topicref class="- map/topicref " href="lau1443435020386.xml" keys="AmairEl1AuxiliaryMemoryAttributeIndirectionRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443435042487.xml" keys="AmairEl2AuxiliaryMemoryAttributeIndirectionRegisterEl2"/>
+	<topicref class="- map/topicref " href="lau1443435060354.xml" keys="AmairEl3AuxiliaryMemoryAttributeIndirectionRegisterEl3"/>
+	
+		
+	
+	<topicref class="- map/topicref " href="tny1472108072714.xml" keys="AtcrEl1AuxiliaryTranslationControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="mvh1472107452815.xml" keys="AtcrEl2AuxiliaryTranslationControlRegisterEl2"/>
+	<topicref class="- map/topicref " href="sds1472108520645.xml" keys="AtcrEl3AuxiliaryTranslationControlRegisterEl3"/>
+	<topicref class="- map/topicref " href="olf1472106808180.xml" keys="AtcrEl12AliasToAuxiliaryTranslationControlRegisterEl1"/>	
+	<topicref class="- map/topicref " href="vqi1472110158664.xml" keys="AvtcrEl2AuxiliaryVirtualizedTranslationControlRegisterEl2"/>	
+		
+	
+	<topicref class="- map/topicref " href="way1460466410970.xml" keys="CcsidrEl1CacheSizeIdRegisterEl1"/>
+	<topicref class="- map/topicref " href="rcp1473770576256.xml" keys="ClidrEl1CacheLevelIdRegisterEl1"/>
+	<topicref class="- map/topicref " href="dav1465210368714.xml" keys="CpacrEl1ArchitecturalFeatureAccessControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443435380910.xml" keys="CptrEl2ArchitecturalFeatureTrapRegisterEl2"/>
+	<topicref class="- map/topicref " href="lau1443435456167.xml" keys="CptrEl3ArchitecturalFeatureTrapRegisterEl3"/>
+	<topicref class="- map/topicref " href="lau1443435659568.xml" keys="CpuactlrEl1CpuAuxiliaryControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="ftg1469778004136.xml" keys="Cpuactlr2El1CpuAuxiliaryControlRegister2El1"/>
+	<topicref class="- map/topicref " href="dcs1494593701173.xml" keys="Cpuactlr3El1CpuAuxiliaryControlRegister3El1"/>
+	<topicref class="- map/topicref " href="joh1460102853477.xml" keys="CpucfrEl1CpuConfigurationRegisterEl1"/>
+	<topicref class="- map/topicref " href="vrj1494872408498.xml" keys="CpuectlrEl1CpuExtendedControlRegisterEl1 CpuectlrCpuExtendedControlRegister"/>
+	
+	<topicref class="- map/topicref " href="etz1494315856829.xml" keys="CpupcrEl3CpuPrivateControlRegisterEl3"/>
+	<topicref class="- map/topicref " href="xcz1494316026689.xml" keys="CpupmrEl3CpuPrivateMaskRegisterE3"/>
+	<topicref class="- map/topicref " href="wiw1494315880432.xml" keys="CpuporEl3CpuPrivateOperationRegisterEl3"/>
+	<topicref class="- map/topicref " href="rrm1494315735139.xml" keys="CpuselrEl3CpuPrivateSelectionRegisterEl3"/>     
+	
+	
+	<topicref class="- map/topicref " href="joh1457541801121.xml" keys="CpupwrctlrEl1PowerControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443435521428.xml" keys="CsselrEl1CacheSizeSelectionRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443435580346.xml" keys="CtrEl0CacheTypeRegisterEl0"/>
+	<topicref class="- map/topicref " href="lau1443436033950.xml" keys="DczidEl0DataCacheZeroIdRegisterEl0"/>
+	<topicref class="- map/topicref " href="lau1457099740111.xml" keys="DisrEl1DeferredInterruptStatusRegisterEl1"/>
+	<topicref class="- map/topicref " href="joh1445957247614.xml" keys="ErridrEl1ErrorIdRegisterEl1"/>
+	<topicref class="- map/topicref " href="joh1445869586820.xml" keys="ErrselrEl1ErrorRecordSelectRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1456920542757.xml" keys="ErxaddrEl1SelectedErrorRecordAddressRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1456920378552.xml" keys="ErxctlrEl1SelectedErrorRecordControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1456920298397.xml" keys="ErxfrEl1SelectedErrorRecordFeatureRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1456920606253.xml" keys="Erxmisc0El1SelectedErrorRecordMiscellaneousRegister0El1"/>
+	<topicref class="- map/topicref " href="lau1456920674327.xml" keys="Erxmisc1El1SelectedErrorRecordMiscellaneousRegister1El1"/>
+	<topicref class="- map/topicref " href="joh1460047172751.xml" keys="ErxpfgcdnrEl1SelectedErrorPseudoFaultGenerationCountDownRegisterEl1"/>
+	<topicref class="- map/topicref " href="joh1460039575404.xml" keys="ErxpfgctlrEl1SelectedErrorPseudoFaultGenerationControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="joh1460036786483.xml" keys="ErxpfgfrEl1SelectedPseudoFaultGenerationFeatureRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1456920454319.xml" keys="ErxstatusEl1SelectedErrorRecordPrimaryStatusRegisterEl1"/>
+	<topicref class="- map/topicref " href="dav1465221618420.xml" keys="EsrEl1ExceptionSyndromeRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443436180070.xml" keys="EsrEl2ExceptionSyndromeRegisterEl2"/>
+	<topicref class="- map/topicref " href="dav1465225143645.xml" keys="EsrEl3ExceptionSyndromeRegisterEl3"/>
+	<topicref class="- map/topicref " href="lau1443436573879.xml" keys="HacrEl2HypAuxiliaryConfigurationRegisterEl2"/>
+	<topicref class="- map/topicref " href="lau1443436588351.xml" keys="HcrEl2HypervisorConfigurationRegisterEl2"/>
+	<topicref class="- map/topicref " href="xmg1473840260163.xml" keys="IdAa64afr0El1Aarch64AuxiliaryFeatureRegister0El1"/>
+	<topicref class="- map/topicref " href="nbo1473840335573.xml" keys="IdAa64afr1El1Aarch64AuxiliaryFeatureRegister1El1"/>
+	<topicref class="- map/topicref " href="lau1443436888356.xml" keys="IdAa64dfr0El1Aarch64DebugFeatureRegister0El1"/>
+	<topicref class="- map/topicref " href="upk1473840155926.xml" keys="IdAa64dfr1El1Aarch64DebugFeatureRegister1El1"/>
+	<topicref class="- map/topicref " href="geo1449222875800.xml" keys="IdAa64isar0El1Aarch64InstructionSetAttributeRegister0El1"/>
+	<topicref class="- map/topicref " href="joh1445355870288.xml" keys="IdAa64isar1El1Aarch64InstructionSetAttributeRegister1El1"/>
+	<topicref class="- map/topicref " href="lau1443437067853.xml" keys="IdAa64mmfr0El1Aarch64MemoryModelFeatureRegister0El1"/>
+	<topicref class="- map/topicref " href="joh1445336307712.xml" keys="IdAa64mmfr1El1Aarch64MemoryModelFeatureRegister1El1"/>
+	<topicref class="- map/topicref " href="joh1445344391305.xml" keys="IdAa64mmfr2El1Aarch64MemoryModelFeatureRegister2El1"/>
+	<topicref class="- map/topicref " href="lau1443437525908.xml" keys="IdAa64pfr0El1Aarch64ProcessorFeatureRegister0El1"/>
+	<topicref class="- map/topicref " href="erd1531743484728.xml" keys="IdAa64pfr1El1Aarch64ProcessorFeatureRegister1El1"/>
+	<topicref class="- map/topicref " href="lau1443437677599.xml" keys="IdAfr0El1Aarch32AuxiliaryFeatureRegister0El1"/>
+	<topicref class="- map/topicref " href="lau1443437728306.xml" keys="IdDfr0El1Aarch32DebugFeatureRegister0El1"/>
+	<topicref class="- map/topicref " href="lau1443437809604.xml" keys="IdIsar0El1Aarch32InstructionSetAttributeRegister0El1"/>
+	<topicref class="- map/topicref " href="lau1443437895509.xml" keys="IdIsar1El1Aarch32InstructionSetAttributeRegister1El1"/>
+	<topicref class="- map/topicref " href="lau1443445407754.xml" keys="IdIsar2El1Aarch32InstructionSetAttributeRegister2El1"/>
+	<topicref class="- map/topicref " href="lau1443445482819.xml" keys="IdIsar3El1Aarch32InstructionSetAttributeRegister3El1"/>
+	<topicref class="- map/topicref " href="lau1443445566298.xml" keys="IdIsar4El1Aarch32InstructionSetAttributeRegister4El1"/>
+	<topicref class="- map/topicref " href="lau1443445664210.xml" keys="IdIsar5El1Aarch32InstructionSetAttributeRegister5El1"/>
+	
+	<topicref class="- map/topicref " href="nwd1493817464437.xml" keys="IdIsar6El1Aarch32InstructionSetAttributeRegister6El1"/>
+	<topicref class="- map/topicref " href="lau1443445754052.xml" keys="IdMmfr0El1Aarch32MemoryModelFeatureRegister0El1 IdMmfr0MemoryModelFeatureRegister0"/>
+	<topicref class="- map/topicref " href="lau1443445820394.xml" keys="IdMmfr1El1Aarch32MemoryModelFeatureRegister1El1 IdMmfr1MemoryModelFeatureRegister1"/>
+	<topicref class="- map/topicref " href="lau1443445885040.xml" keys="IdMmfr2El1Aarch32MemoryModelFeatureRegister2El1 IdMmfr2MemoryModelFeatureRegister2"/>
+	<topicref class="- map/topicref " href="lau1443445969299.xml" keys="IdMmfr3El1Aarch32MemoryModelFeatureRegister3El1"/>
+	<topicref class="- map/topicref " href="joh1445266072993.xml" keys="IdMmfr4El1Aarch32MemoryModelFeatureRegister4El1 IdMmfr4MemoryModelFeatureRegister4"/>
+	
+	<topicref class="- map/topicref " href="lau1443446043975.xml" keys="IdPfr0El1Aarch32ProcessorFeatureRegister0El1"/>
+	<topicref class="- map/topicref " href="lau1465368686940.xml" keys="IdPfr1El1Aarch32ProcessorFeatureRegister1El1"/>	
+	<topicref class="- map/topicref " href="uio1522946473820.xml" keys="IdPfr2El1Aarch32ProcessorFeatureRegister2El1"/>
+	
+	<topicref class="- map/topicref " href="lau1457001994468.xml" keys="LorcEl1LoregionControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1457002069712.xml" keys="LoridEl1LimitedOrderRegionIdentificationRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1457001925663.xml" keys="LornEl1LoregionNumberRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443447162708.xml" keys="MdcrEl3MonitorDebugConfigurationRegisterEl3"/>
+	<topicref class="- map/topicref " href="mel1474024504742.xml" keys="MidrEl1MainIdRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443447573920.xml" keys="MpidrEl1MultiprocessorAffinityRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443447647886.xml" keys="ParEl1PhysicalAddressRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443447751652.xml" keys="RevidrEl1RevisionIdRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443447832537.xml" keys="RmrEl3ResetManagementRegister"/>
+	<topicref class="- map/topicref " href="zua1470316645250.xml" keys="RvbarEl3ResetVectorBaseAddressRegisterEl3"/>
+	<topicref class="- map/topicref " href="pat1465329960099.xml" keys="SctlrEl1SystemControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1443448134151.xml" keys="SctlrEl2SystemControlRegisterEl2"/>
+	<topicref class="- map/topicref " href="pat1465328816361.xml" keys="SctlrEl3SystemControlRegisterEl3"/>
+	<topicref class="- map/topicref " href="lau1443448377025.xml" keys="TcrEl1TranslationControlRegisterEl1"/>
+	<topicref class="- map/topicref " href="lau1458646790614.xml" keys="TcrEl2TranslationControlRegisterEl2"/>
+	<topicref class="- map/topicref " href="lau1458646804810.xml" keys="TcrEl3TranslationControlRegisterEl3"/>
+	<topicref class="- map/topicref " href="lau1458646818196.xml" keys="Ttbr0El1TranslationTableBaseRegister0El1"/>
+	<topicref class="- map/topicref " href="lau1457341284380.xml" keys="Ttbr0El2TranslationTableBaseRegister0El2"/>
+	<topicref class="- map/topicref " href="lau1458646847626.xml" keys="Ttbr0El3TranslationTableBaseRegister0El3"/>
+	<topicref class="- map/topicref " href="lau1458646831483.xml" keys="Ttbr1El1TranslationTableBaseRegister1El1"/>
+	<topicref class="- map/topicref " href="lau1457341307460.xml" keys="Ttbr1El2TranslationTableBaseRegister1El2"/>
+	<topicref class="- map/topicref " href="lau1457099519678.xml" keys="VdisrEl2VirtualDeferredInterruptStatusRegisterEl2">
+		
+		
+		<topicref class="- map/topicref " href="jfa1467113128637.xml" keys="VdisrEl2AtEl1UsingAarch64"/>
+	</topicref>
+	
+	<topicref class="- map/topicref " href="mnw1478964168395.xml" keys="VsesrEl2VirtualSerrorExceptionSyndromeRegisterEl2"/><topicref class="- map/topicref " href="lau1443449236544.xml" keys="VtcrEl2VirtualizationTranslationControlRegisterEl2"/>
+	<topicref class="- map/topicref " href="lau1457340777806.xml" keys="VttbrEl2VirtualizationTranslationTableBaseRegisterEl2"/>
+</map>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="aarch32">
+  <glossterm>AArch32</glossterm>
+  <glossdef>The ARM 32-bit Execution state that uses 32-bit general purpose registers, and a 32-bit program counter (PC), stack pointer (SP), and link register (LR). AArch32 Execution state provides a choice of two instruction sets, A32 and T32. In implementations of versions of the ARM architecture before ARMv8, and in the ARM R and M architecture profiles, execution is always in AArch32 state.</glossdef>
+</glossentry>

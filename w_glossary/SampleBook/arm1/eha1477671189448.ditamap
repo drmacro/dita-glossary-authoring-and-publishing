@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" id="eha1477671189448" xml:lang="en-us">
+    <title class="- topic/title ">Advanced SIMD and Floating-point</title><prolog class="- topic/prolog "/>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Advanced SIMD and Floating-point</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </topicmeta>
+
+    <topicref class="- map/topicref " href="lau1442502201562.xml" keys="AboutTheSIMD"/>
+    <topicref class="- map/topicref " href="xgm1477670634579.xml" keys="AccessingTheFeatureIdentificationRegisters"/>
+
+
+
+
+</map>

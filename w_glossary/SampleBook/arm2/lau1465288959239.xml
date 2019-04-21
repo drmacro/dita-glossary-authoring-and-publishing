@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="lau1465288959239" xml:lang="en-us">
+    <title class="- topic/title ">Instruction decode</title>
+    <shortdesc class="- topic/shortdesc ">The instruction decode unit supports the A32, T32, and A64 instruction sets. 
+It also supports Advanced SIMD and floating-point instructions in each instruction set. 
+        </shortdesc>
+    <prolog class="- topic/prolog ">
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+</concept>

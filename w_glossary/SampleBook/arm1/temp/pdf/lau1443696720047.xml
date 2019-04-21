@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1443696720047" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+  <title class="- topic/title " xtrc="title:1;4:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">TRCCNTCTLR1, Counter Control Register 1</title><titlealts class="- topic/titlealts "/>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">The TRCCNTCTLR1 controls the counter.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;6:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;9:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+    <section class="- topic/section " xtrc="section:1;10:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+      <title class="- topic/title " xtrc="title:2;11:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Bit field descriptions</title>
+      <p class="- topic/p " xtrc="p:1;12:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">The TRCCNTCTLR1 is a 32-bit register.</p>
+      <fig class="- topic/fig " xtrc="fig:1;13:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+        <title class="- topic/title " xtrc="title:3;14:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">TRCCNTCTLR1 bit assignments</title>
+        <image class="- topic/image " href="lau1443696751174.svg" placement="inline" xtrc="image:1;15:86" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <alt class="- topic/alt " xtrc="alt:1;16:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">TRCCNTCTLR1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl " xtrc="dl:1;19:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;20:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:1;21:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">RES0, [31:18]</dt>
+          <dd class="- topic/dd " xtrc="dd:1;22:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;23:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:2;24:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:2;25:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:1;25:92" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">res0</term></dt>
+                <dd class="- topic/dd " xtrc="dd:2;26:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:3;31:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:3;32:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">CNTCHAIN, [17]</dt>
+          <dd class="- topic/dd " xtrc="dd:3;33:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><p class="- topic/p " xtrc="p:2;33:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Defines whether the counter decrements when the
+              counter reloads. This enables two counters to be used in combination to provide a
+              larger counter:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;35:99" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:4;36:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:4;37:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;37:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:4;38:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">The counter operates independently from the counter. The counter
+                  only decrements based on CNTTYPE and CNTSEL.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:5;41:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:5;42:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;42:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:5;43:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">The counter decrements when the counter reloads. The counter
+                  also decrements when the resource selected by CNTTYPE and CNTSEL is active.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:6;48:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:6;49:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">RLDSELF, [16]</dt>
+          <dd class="- topic/dd " xtrc="dd:6;50:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><p class="- topic/p " xtrc="p:3;50:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Defines whether the counter reloads when it reaches
+            zero:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:4;51:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:7;52:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:7;53:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;53:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:7;54:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">The counter does not reload when it reaches zero. The counter
+                  only reloads based on RLDTYPE and RLDSEL.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:8;57:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:8;58:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;58:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:8;59:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">The counter reloads when it is zero and the resource selected by
+                  CNTTYPE and CNTSEL is also active. The counter also reloads based on RLDTYPE and
+                  RLDSEL.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:9;65:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:9;66:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">RLDTYPE, [15]</dt>
+          <dd class="- topic/dd " xtrc="dd:9;67:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><p class="- topic/p " xtrc="p:4;67:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Selects the resource type for the reload:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:5;67:167" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:10;68:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:10;69:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;69:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:10;70:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Single selected resource.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:11;72:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:11;73:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;73:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:11;74:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Boolean combined resource pair.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:12;78:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:12;79:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">RES0, [14:12]</dt>
+          <dd class="- topic/dd " xtrc="dd:12;80:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:6;81:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:13;82:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:13;83:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:2;83:92" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">res0</term></dt>
+                <dd class="- topic/dd " xtrc="dd:13;84:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:14;89:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:14;90:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">RLDSEL, [11:8]</dt>
+          <dd class="- topic/dd " xtrc="dd:14;91:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><p class="- topic/p " xtrc="p:5;91:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Selects the resource number, based on the value of
+              RLDTYPE:</p><p class="- topic/p " xtrc="p:6;92:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">When RLDTYPE is 0, selects a single selected resource
+              from 0-15 defined by bits[3:0].</p><p class="- topic/p " xtrc="p:7;93:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">When RLDTYPE is 1, selects a
+              Boolean combined resource pair from 0-7 defined by bits[2:0].</p></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:15;96:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:15;97:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">CNTTYPE, [7]</dt>
+          <dd class="- topic/dd " xtrc="dd:15;98:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><p class="- topic/p " xtrc="p:8;98:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Selects the resource type for the counter:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:7;98:168" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:16;99:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:16;100:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;100:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:16;101:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Single selected resource.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:17;103:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:17;104:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:8;104:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">1</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:17;105:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Boolean combined resource pair.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:18;109:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:18;110:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">RES0, [6:4]</dt>
+          <dd class="- topic/dd " xtrc="dd:18;111:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:8;112:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:19;113:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                <dt class="- topic/dt " xtrc="dt:19;114:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:3;114:92" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">res0</term></dt>
+                <dd class="- topic/dd " xtrc="dd:19;115:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:20;120:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+          <dt class="- topic/dt " xtrc="dt:20;121:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">CNTSEL, [3:0]</dt>
+          <dd class="- topic/dd " xtrc="dd:20;122:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><p class="- topic/p " xtrc="p:9;122:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Selects the resource number, based on the value of
+              CNTTYPE:</p><p class="- topic/p " xtrc="p:10;123:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">When CNTTYPE is 0, selects a single selected resource
+              from 0-15 defined by bits[3:0].</p><p class="- topic/p " xtrc="p:11;124:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">When CNTTYPE is 1, selects a
+              Boolean combined resource pair from 0-7 defined by bits[2:0].</p></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p " xtrc="p:12;128:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;129:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><ph class="- topic/ph " xtrc="ph:1;129:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;130:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;130:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:2;130:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:3;130:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p " xtrc="p:13;131:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">The TRCCNTCTLR1 can be accessed through the external <term class="- topic/term " keyref="debuginterface" xtrc="term:4;131:112" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">debug interface</term>, offset <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:9;131:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;131:233" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443696720047.xml">154</ph></codeph>.</p>
+     
+    </section>
+  </refbody>
+</reference>

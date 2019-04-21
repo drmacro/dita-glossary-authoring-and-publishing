@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE referable-content
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<referable-content xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="hjy1535375544306" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- topic/topic referable-content/referable-content ">
+    <title class="- topic/title ">Enyo SL DIR book title</title>
+    <rcbody class="- topic/body referable-content/body ">
+         <ph id="title.only" class="- topic/ph "> <keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Core Development Interface Report</ph>
+         <ph id="docnumber.only" class="- topic/ph ">101397</ph> <cite id="g.core.dir.docnumber" class="- topic/cite "><ph class="- topic/ph ">101397</ph></cite>
+         <cite id="g.core.dir.title" class="- topic/cite "><ph class="- topic/ph "> <keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Core Development Interface Report</ph></cite>
+         <ph id="g.core.dir.combined" class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "> <keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Core Development Interface Report</ph></cite> (<ph class="- topic/ph ">101397</ph>)</ph> </rcbody>
+</referable-content>

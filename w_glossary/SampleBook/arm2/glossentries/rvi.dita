@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="rvi">
+  <glossterm>RVI</glossterm>
+  <glossdef>An Arm JTAG interface unit for debugging embedded processor cores that uses a DBGTAP or Serial Wire interface.</glossdef>
+</glossentry>

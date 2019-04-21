@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="upk1473840155926" xml:lang="en-us">
+	<title class="- topic/title ">ID_AA64DFR1_EL1, AArch64 Debug Feature Register 1, EL1</title>
+	<shortdesc class="- topic/shortdesc ">This register is reserved for future expansion of top level information
+		about the debug system in AArch64 state. </shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p "/>
+		</section>
+	</refbody>
+</reference>

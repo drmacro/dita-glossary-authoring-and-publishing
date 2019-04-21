@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1443447573920" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+  <title class="- topic/title " id="TitleMultiprocessorAffinityRegister_EL1" xtrc="title:1;4:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MPIDR_EL1, Multiprocessor Affinity Register, EL1</title><titlealts class="- topic/titlealts "/>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">The MPIDR_EL1 provides an additional core identification mechanism for
+    scheduling purposes in a cluster.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;7:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;11:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+    <section class="- topic/section " xtrc="section:1;12:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+      <title class="- topic/title " xtrc="title:2;13:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Bit field descriptions</title>
+      <p class="- topic/p " xtrc="p:1;14:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MPIDR_EL1 is a 64-bit register, and is part of the Other system control
+        registers functional group.</p>
+      <p class="- topic/p " xtrc="p:2;16:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">This register is Read Only.</p>
+      
+      <fig class="- topic/fig " id="ares_mpidr.el1.bit.assignmts" xtrc="fig:1;18:67" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+        <title class="- topic/title " xtrc="title:3;19:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MPIDR_EL1 bit assignments</title>
+        <image class="- topic/image " href="rfy1477476531058.svg" id="image_kmt_gfj_sv.ares" placement="inline" xtrc="image:1;20:113" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <alt class="- topic/alt " xtrc="alt:1;21:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MPIDR_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl " xtrc="dl:1;24:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;25:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:1;26:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">RES0, [63:40]</dt>
+          <dd class="- topic/dd " xtrc="dd:1;27:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;28:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:2;29:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:2;30:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                  <term class="- topic/term " outputclass="archterm" xtrc="term:1;31:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">RES0</term>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:2;33:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:3;38:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:3;39:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"> Aff3, [39:32]</dt>
+          <dd class="- topic/dd " xtrc="dd:3;40:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <p class="- topic/p " xtrc="p:3;41:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Affinity level 3. Highest level affinity field.</p>
+            <dl class="- topic/dl " compact="no" xtrc="dl:3;42:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:4;43:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:4;44:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">CLUSTERID</dt>
+                <dd class="- topic/dd " xtrc="dd:4;45:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Indicates the value <term class="- topic/term " keyref="read" xtrc="term:2;45:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">read</term> in the <keyword class="- topic/keyword " otherprops="g.signal.name" xtrc="keyword:1;45:161" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">CLUSTERIDAFF3</keyword> configuration signal. </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:5;50:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:5;51:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">RES1, [31]</dt>
+          <dd class="- topic/dd " xtrc="dd:5;52:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:4;53:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:6;54:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:6;55:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                  <term class="- topic/term " outputclass="archterm" xtrc="term:3;56:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">RES1</term>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:6;58:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:7;63:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:7;64:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">U, [30]</dt>
+          <dd class="- topic/dd " xtrc="dd:7;65:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <p class="- topic/p " xtrc="p:4;66:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Indicates a single <term class="- topic/term " keyref="core" xtrc="term:4;66:74" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">core</term> system, as distinct from  0 in a <term class="- topic/term " keyref="cluster" xtrc="term:5;66:142" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">cluster</term>.
+              This value is:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:5;68:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:8;69:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:8;70:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:1;71:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">0</codeph>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:8;73:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Core is part of a multiprocessor system. This is the value
+                  for implementations with more than one , and for implementations with an <term class="- topic/term " keyref="ace" xtrc="term:6;74:111" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">ACE</term>
+                  or CHI master interface.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:9;80:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:9;81:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">RES0, [29:25]</dt>
+          <dd class="- topic/dd " xtrc="dd:9;82:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:6;83:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:10;84:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:10;85:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"> <term class="- topic/term " outputclass="archterm" xtrc="term:7;85:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">RES0</term> </dt>
+                <dd class="- topic/dd " xtrc="dd:10;86:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry " xtrc="dlentry:11;92:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:11;93:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MT, [24]</dt>
+          <dd class="- topic/dd " xtrc="dd:11;94:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <p class="- topic/p " xtrc="p:5;95:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Indicates whether the lowest level of affinity consists of logical
+              s that are implemented using a multithing type approach. This value is:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:7;97:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:12;98:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:12;99:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:2;100:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">1</codeph>
+                </dt>
+                <dd class="- topic/dd " xtrc="dd:12;102:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                  <p class="- topic/p " xtrc="p:6;103:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Performance of <term class="- topic/term " keyref="pe" xtrc="term:8;103:74" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">PE</term>s at the lowest affinity level is very
+                    interdependent.</p>
+                  <p class="- topic/p " xtrc="p:7;105:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Affinity0 represents ths. <ph class="- topic/ph " xtrc="ph:1;105:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"><keyword class="- topic/keyword " xtrc="keyword:2;105:125" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;105:162" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Cortex</tm></keyword><keyword class="- topic/keyword " xtrc="keyword:3;105:217" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">‑A76</keyword></ph> is not multithed, but may be in a system with other s that are multithed.</p>
+                  
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:13;112:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:13;113:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Aff2, [23:16]</dt>
+          <dd class="- topic/dd " xtrc="dd:13;114:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <p class="- topic/p " xtrc="p:8;115:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Affinity level 2. Second highest level affinity field.</p>
+            <dl class="- topic/dl " xtrc="dl:8;116:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:14;117:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:14;118:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">CLUSTERID</dt>
+                <dd class="- topic/dd " xtrc="dd:14;119:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Indicates the value  in the <keyword class="- topic/keyword " otherprops="g.signal.name" xtrc="keyword:4;119:130" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">CLUSTERIDAFF2</keyword> configuration signal. </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        <dlentry class="- topic/dlentry " xtrc="dlentry:15;126:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:15;127:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Aff1, [15:11]</dt>
+          <dd class="- topic/dd " xtrc="dd:15;128:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Part of Affinity level 1. Third highest level affinity field. <dl class="- topic/dl " compact="yes" xtrc="dl:9;128:135" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <dlentry class="- topic/dlentry " xtrc="dlentry:16;129:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dt class="- topic/dt " xtrc="dt:16;130:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">RAZ</dt>
+              <dd class="- topic/dd " xtrc="dd:16;131:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Read-As-Zero.</dd>
+            </dlentry>
+            </dl> </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry " xtrc="dlentry:17;135:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:17;136:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Aff1, [10:8]</dt>
+          <dd class="- topic/dd " xtrc="dd:17;137:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            <p class="- topic/p " xtrc="p:9;138:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Part of Affinity level 1. Third highest level affinity field.</p>
+            <dl class="- topic/dl " compact="yes" xtrc="dl:10;139:51" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:18;140:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:18;141:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">CPUID</dt>
+                <dd class="- topic/dd " xtrc="dd:18;142:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Identification number for each CPU in the :</dd>
+              </dlentry>
+            </dl>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:11;145:78" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+              <dlentry class="- topic/dlentry " xtrc="dlentry:19;146:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:19;147:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.hex" xtrc="codeph:3;147:107" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">0</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:19;148:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MP1: CPUID: 0.</dd>
+                <dd class="- topic/dd " xtrc="dd:20;149:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">to</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry " xtrc="dlentry:20;151:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                <dt class="- topic/dt " xtrc="dt:20;152:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.hex" xtrc="codeph:4;152:107" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">7</codeph></dt>
+                <dd class="- topic/dd " xtrc="dd:21;153:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MP8: CPUID: 7.</dd>
+              </dlentry>
+            </dl>
+            
+          </dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry " xtrc="dlentry:21;160:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:21;161:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Aff0, [7:0]</dt>
+          <dd class="- topic/dd " xtrc="dd:22;162:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Affinity level 0. The level identifies individual ths within a multithed . The <ph class="- topic/ph " xtrc="ph:2;162:138" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"><keyword class="- topic/keyword " xtrc="keyword:5;162:172" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:2;162:209" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Cortex</tm></keyword><keyword class="- topic/keyword " xtrc="keyword:6;162:264" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">‑A76</keyword></ph>  is single-thed, so this field has the value <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.hex" xtrc="codeph:5;162:395" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">00</codeph>. </dd>
+        </dlentry>
+        
+      </dl>
+      <dl class="- topic/dl " xtrc="dl:12;166:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:22;167:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+          <dt class="- topic/dt " xtrc="dt:22;168:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Configurations</dt>
+          <dd class="- topic/dd " xtrc="dd:23;169:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+            
+            
+            <p class="- topic/p " xtrc="p:10;172:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MPIDR_EL1[31:0] is mapped to external register EDDEVAFF0.</p>
+            <p class="- topic/p " xtrc="p:11;173:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">MPIDR_EL1[63:32] is mapped to external register EDDEVAFF1.</p>
+            <p class="- topic/p " xtrc="p:12;174:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Bit fields and details that are not provided in this description are
+            architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;175:74" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"><ph class="- topic/ph " xtrc="ph:3;175:98" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:7;176:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:3;176:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:8;176:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:9;176:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1443447573920.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+      
+      
+      
+    </section>
+    
+  </refbody>
+</reference>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="oey1472473209476" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+	
+	
+	<title class="- topic/title " xtrc="title:1;6:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">ERR0CTLR, Error Record Control Register</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;7:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">The ERR0CTLR contains enable bits for the node that writes to this
+		record:</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;9:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata></prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;10:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+		<section class="- topic/section " xtrc="section:1;11:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+			<ul class="- topic/ul " xtrc="ul:1;12:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+				<li class="- topic/li " xtrc="li:1;13:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Enabling error detection and correction.</li>
+				<li class="- topic/li " xtrc="li:2;14:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Enabling an error recovery interrupt.</li>
+				<li class="- topic/li " xtrc="li:3;15:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Enabling a <term class="- topic/term " keyref="fault" xtrc="term:1;15:61" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">fault</term> handling interrupt.</li>
+				<li class="- topic/li " xtrc="li:4;16:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Enabling error recovery reporting as a <term class="- topic/term " keyref="read" xtrc="term:2;16:88" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">read</term> or write error response.</li>
+			</ul>
+		</section>
+		<section class="- topic/section " xtrc="section:2;19:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+			<title class="- topic/title " xtrc="title:2;20:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;21:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">ERR0CTLR is a 64-bit register and is part of the <term class="- topic/term " xtrc="term:3;21:103" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Reliability, Availability, Serviceability</term> (RAS)  registers functional
+				group.</p>
+			<p class="- topic/p " xtrc="p:2;23:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">ERR0CTLR resets to <ph class="- topic/ph " xtrc="ph:1;23:69" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">CFI [8], FI [3], and UI [2] are <term class="- topic/term " outputclass="archterm" xtrc="term:4;23:152" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">UNKNOWN</term>. The rest of the register is <term class="- topic/term " outputclass="archterm" xtrc="term:5;23:247" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">RES0</term>.</ph></p>
+			<fig class="- topic/fig " id="fig_zrg_r5z_cv" xtrc="fig:1;24:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+				<title class="- topic/title " xtrc="title:3;25:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"> ERR0CTLR bit assignments</title>
+				<image class="- topic/image " href="joh1445967016226.svg" id="image_vvg_r5z_cv" placement="inline" xtrc="image:1;26:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<alt class="- topic/alt " xtrc="alt:1;27:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"> ERR0CTLR bit assignments</alt>
+				</image>
+			</fig>
+			
+			<dl class="- topic/dl " xtrc="dl:1;31:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;32:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<dt class="- topic/dt " xtrc="dt:1;33:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">RES0, [63:9]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;34:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;35:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;36:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:2;37:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:6;37:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:2;38:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;43:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<dt class="- topic/dt " xtrc="dt:3;44:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">CFI, [8]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;45:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><p class="- topic/p " xtrc="p:3;45:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Fault handling interrupt for corrected errors enable.
+					</p><p class="- topic/p " xtrc="p:4;46:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">The  handling interrupt is generated when one of the standard CE
+						counters on ERR0MISC0 overflows and the overflow bit is set. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;48:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;49:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:4;50:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;50:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:2;50:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">0</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:4;51:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Fault handling interrupt not generated for
+									corrected errors.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:5;54:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:5;55:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;55:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:3;55:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:5;56:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Fault handling interrupt generated for
+									corrected errors.</dd>
+							</dlentry>
+						</dl><p class="- topic/p " xtrc="p:5;59:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">The interrupt is generated even if the error status is overwritten because the
+							error record aly records a higher priority error.</p><note class="- topic/note " xtrc="note:1;60:89" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">This applies to both s and writes.</note></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:6;62:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<dt class="- topic/dt " xtrc="dt:6;63:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">RES0, [7:4]</dt>
+					<dd class="- topic/dd " xtrc="dd:6;64:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:4;65:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:7;66:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:7;67:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:7;67:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:7;68:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:8;73:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<dt class="- topic/dt " xtrc="dt:8;74:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">FI, [3]</dt>
+					<dd class="- topic/dd " xtrc="dd:8;75:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+						<p class="- topic/p " xtrc="p:6;76:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Fault handling interrupt enable. </p>
+						<p class="- topic/p " xtrc="p:7;77:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">The  handling interrupt is generated for all detected Deferred errors
+							and Uncorrected errors. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:5;79:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:9;80:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:9;81:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;81:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:4;81:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">0</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:9;82:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Fault handling interrupt disabled.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:10;84:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:10;85:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;85:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:5;85:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:10;86:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Fault handling interrupt enabled.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:11;91:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<dt class="- topic/dt " xtrc="dt:11;92:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">UI, [2]</dt>
+					<dd class="- topic/dd " xtrc="dd:11;93:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+						<p class="- topic/p " xtrc="p:8;94:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Uncorrected error recovery interrupt enable. When
+							enabled, the error recovery interrupt is generated for all detected
+							Uncorrected errors that are not deferred. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:6;97:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:12;98:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:12;99:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;99:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:6;99:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">0</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:12;100:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Error recovery interrupt disabled.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:13;102:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:13;103:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;103:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:7;103:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:13;104:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Error recovery interrupt enabled.</dd>
+							</dlentry>
+						</dl>
+						<note class="- topic/note " xtrc="note:2;107:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Applies to both s and writes.</note>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:14;110:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<dt class="- topic/dt " xtrc="dt:14;111:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">RES0, [1]</dt>
+					<dd class="- topic/dd " xtrc="dd:14;112:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:7;113:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:15;114:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:15;115:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:8;115:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:15;116:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:16;122:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<dt class="- topic/dt " xtrc="dt:16;123:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">ED, [0]</dt>
+					<dd class="- topic/dd " xtrc="dd:16;124:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+						<p class="- topic/p " xtrc="p:9;125:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Error Detection and correction enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:8;126:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:17;127:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:17;128:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;128:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:8;128:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">0</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:17;129:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+									<p class="- topic/p " xtrc="p:10;130:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Error detection and correction disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:18;133:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+								<dt class="- topic/dt " xtrc="dt:18;134:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:8;134:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><ph class="- topic/ph " otherprops="g.number.any" xtrc="ph:9;134:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:18;135:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+									<p class="- topic/p " xtrc="p:11;136:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Error detection and correction enabled.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:9;144:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:19;145:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">
+					<dt class="- topic/dt " xtrc="dt:19;146:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Configurations</dt>
+					
+					<dd class="- topic/dd " xtrc="dd:19;148:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">This register is accessible from the following registers when ERRSELR.SEL==0: <p class="- topic/p " xtrc="p:12;148:130" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><xref class="- topic/xref " href="lau1456920378552.xml" keyref="ErxctlrEl1SelectedErrorRecordControlRegisterEl1" type="reference" xtrc="xref:1;148:260" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml"><?ditaot usertext?>ERXCTLR_EL1, Selected Error Record Control Register, EL1<desc class="- topic/desc " xtrc="desc:1;148:344" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/oey1472473209476.xml">Register ERXCTLR_EL1 accesses the ERR&lt;n&gt;CTLR control register     for the error record selected by ERRSELR_EL1.SEL.</desc></xref>.</p></dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

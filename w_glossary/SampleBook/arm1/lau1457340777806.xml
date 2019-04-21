@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1457340777806" xml:lang="en-us">
+	<title class="- topic/title ">VTTBR_EL2, Virtualization Translation Table Base Register, EL2</title>
+	<shortdesc class="- topic/shortdesc ">VTTBR_EL2 holds the base address of the translation table for the stage 2
+		translation of memory accesses from Non-secure EL0 and EL1.</shortdesc>
+	<prolog class="- topic/prolog "><permissions class="- topic/permissions " view="nonconfidential"/></prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+<p class="- topic/p ">VTTBR_EL2 is a 64-bit register.</p>
+<fig class="- topic/fig ">
+	<title class="- topic/title ">VTTBR_EL2 bit assignments</title>
+	<image class="- topic/image " href="lau1464782471185.svg" placement="inline">
+		<alt class="- topic/alt ">VTTBR_EL2 bit assignments</alt>
+	</image>
+</fig>	
+	<dl class="- topic/dl ">
+		<dlentry class="- topic/dlentry ">
+			<dt class="- topic/dt ">CnP, [0]</dt>
+			<dd class="- topic/dd ">
+				<p class="- topic/p ">Common not Private. The possible values are: </p>
+				<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+					<dlentry class="- topic/dlentry ">
+						<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+						<dd class="- topic/dd ">CnP is not supported.</dd>
+					</dlentry>
+					<dlentry class="- topic/dlentry ">
+						<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+						<dd class="- topic/dd ">
+							<p class="- topic/p ">CnP is supported.</p>
+						</dd>
+					</dlentry>
+				</dl>
+			</dd>
+		</dlentry>
+	</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">There are no configuration notes.</dd>
+					<dd class="- topic/dd ">Bit fields and details not provided in this description are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</dd>
+				</dlentry>
+			</dl>
+		
+		</section>
+		
+	
+	</refbody>
+</reference>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1469184932288" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+	
+	
+	<title class="- topic/title " xtrc="title:1;6:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">ICH_HCR_EL2, Interrupt Controller Hyp Control Register, EL2</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;7:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">ICH_HCR_EL2 controls the environment for VMs.</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;8:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata></prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;9:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+		<section class="- topic/section " xtrc="section:1;10:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+			<title class="- topic/title " xtrc="title:2;11:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;12:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">ICH_HCR_EL2 is a 32-bit register and is part of:</p>
+			<ul class="- topic/ul " xtrc="ul:1;13:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+				<li class="- topic/li " xtrc="li:1;14:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">The <term class="- topic/term " keyref="gic" xtrc="term:1;14:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">GIC</term> system registers functional group.</li>
+				<li class="- topic/li " xtrc="li:2;15:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">The Virtualization registers functional group.</li>
+				<li class="- topic/li " xtrc="li:3;16:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">The  <term class="- topic/term " keyref="host" xtrc="term:2;16:54" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">host</term> interface control registers functional group.</li>
+			</ul>
+			<fig class="- topic/fig " id="fig_tlq_z3j_5v" xtrc="fig:1;18:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+				<title class="- topic/title " xtrc="title:3;19:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">ICH_HCR_EL2 bit assignments</title>
+				<image class="- topic/image " href="lau1469109121122.svg" id="image_nmq_z3j_5v" placement="inline" xtrc="image:1;20:104" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<alt class="- topic/alt " xtrc="alt:1;21:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">ICH_HCR_EL2 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;24:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;25:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:1;26:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">EOIcount, [31:27]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;27:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:2;28:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;29:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:2;30:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"/>
+								<dd class="- topic/dd " xtrc="dd:2;31:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:2;32:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Number of outstanding deactivates.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;38:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:3;39:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">RES0, [26:15]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;40:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;41:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;42:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:4;43:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:3;43:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:4;44:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:5;49:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:5;50:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">TDIR, [14]</dt>
+					<dd class="- topic/dd " xtrc="dd:5;51:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:3;51:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Trap Non-secure EL1 writes to ICC_DIR_EL1 and ICV_DIR_EL1. The possible values
+							are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:4;53:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:6;54:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:6;55:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;55:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:6;56:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:4;57:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Non-secure EL1 writes of ICC_DIR_EL1 and ICV_DIR_EL1 are not trapped
+										to EL2, unless trapped by other mechanisms.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:7;61:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:7;62:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;62:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:7;63:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Non-secure EL1 writes of ICC_DIR_EL1 and ICV_DIR_EL1 are trapped to
+									EL2.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:8;69:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:8;70:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">TSEI, [13]</dt>
+					<dd class="- topic/dd " xtrc="dd:8;71:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:5;71:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Trap all locally generated SEIs. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:5;72:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:9;73:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:9;74:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:1;74:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:9;75:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:6;76:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Locally generated SEIs do not cause a trap to EL2.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:10;81:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:10;82:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">TALL1, [12]</dt>
+					<dd class="- topic/dd " xtrc="dd:10;83:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:7;83:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Trap all Non-secure EL1 accesses to ICC_* and ICV_* System registers for Group 1
+						interrupts to EL2. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:6;85:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:11;86:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:11;87:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:3;87:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:11;88:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:8;89:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Non-secure EL1 accesses to ICC_* and ICV_* registers for Group 1
+										interrupts proceed as normal.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:12;93:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:12;94:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:4;94:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:12;95:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:9;96:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Non-secure EL1 accesses to ICC_* and ICV_* registers for Group 1
+										interrupts trap to EL2.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:13;102:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:13;103:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">TALL0, [11]</dt>
+					<dd class="- topic/dd " xtrc="dd:13;104:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:10;104:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Trap all Non-secure EL1 accesses to ICC_* and ICV_* System registers for Group 0
+						interrupts to EL2. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:7;106:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:14;107:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:14;108:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:5;108:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:14;109:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:11;110:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Non-secure EL1 accesses to ICC_* and ICV_* registers for Group 0
+										interrupts proceed as normal.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:15;114:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:15;115:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:6;115:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:15;116:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:12;117:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Non-secure EL1 accesses to ICC_* and ICV_* registers for Group 0
+										interrupts trap to EL2.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:16;123:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:16;124:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">TC, [10]</dt>
+					<dd class="- topic/dd " xtrc="dd:16;125:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:13;125:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Trap all Non-secure EL1 accesses to System registers that are common to Group 0
+						and Group 1 to EL2. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:8;127:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:17;128:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:17;129:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:7;129:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:17;130:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:14;131:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Non-secure EL1 accesses to common registers proceed as normal.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:18;134:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:18;135:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:8;135:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</ph></dt>
+								<dd class="- topic/dd " xtrc="dd:18;136:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:15;137:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Non-secure EL1 accesses to common registers trap to EL2.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:19;142:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:19;143:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">RES0, [9:8]</dt>
+					<dd class="- topic/dd " xtrc="dd:19;144:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:9;145:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:20;146:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:20;147:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:4;147:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:20;148:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:21;153:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:21;154:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">VGrp1DIE, [7]</dt>
+					<dd class="- topic/dd " xtrc="dd:21;155:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:16;155:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">VM Group 1 Disabled Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:10;156:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:22;157:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:22;158:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:2;158:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:22;159:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:17;160:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:23;163:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:23;164:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:3;164:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:23;165:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:18;166:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt signaled when ICH_VMCR_EL2.VENG1 is 0.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:24;171:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:24;172:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">VGrp1EIE, [6]</dt>
+					<dd class="- topic/dd " xtrc="dd:24;173:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:19;173:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">VM Group 1 Enabled Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:11;174:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:25;175:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:25;176:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:4;176:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:25;177:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:20;178:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:26;181:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:26;182:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:5;182:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:26;183:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:21;184:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt signaled when ICH_VMCR_EL2.VENG1 is 1.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:27;189:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:27;190:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">VGrp0DIE, [5]</dt>
+					<dd class="- topic/dd " xtrc="dd:27;191:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:22;191:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">VM Group 0 Disabled Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:12;192:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:28;193:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:28;194:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:6;194:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:28;195:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:23;196:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:29;199:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:29;200:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:7;200:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:29;201:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:24;202:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt signaled when ICH_VMCR_EL2.VENG0 is 0.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:30;207:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:30;208:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">VGrp0EIE, [4]</dt>
+					<dd class="- topic/dd " xtrc="dd:30;209:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:25;209:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">VM Group 0 Enabled Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:13;210:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:31;211:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:31;212:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:8;212:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:31;213:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:26;214:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:32;217:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:32;218:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:9;218:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:32;219:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:27;220:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt signaled when ICH_VMCR_EL2.VENG0 is 1.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:33;225:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:33;226:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">NPIE, [3]</dt>
+					<dd class="- topic/dd " xtrc="dd:33;227:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:28;227:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">No Pending Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:14;228:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:34;229:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:34;230:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:10;230:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:34;231:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:29;232:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:35;235:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:35;236:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:11;236:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:35;237:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:30;238:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt signaled while the List registers contain no
+										interrupts in the pending state.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:36;244:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:36;245:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">LRENPIE, [2]</dt>
+					<dd class="- topic/dd " xtrc="dd:36;246:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:31;246:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">List Register Entry Not Present Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:15;247:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:37;248:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:37;249:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:12;249:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:37;250:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:32;251:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:38;254:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:38;255:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:13;255:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:38;256:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:33;257:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt is asserted while the EOIcount field is not
+										0.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:39;263:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:39;264:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">UIE, [1]</dt>
+					<dd class="- topic/dd " xtrc="dd:39;265:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><p class="- topic/p " xtrc="p:34;265:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Underflow Interrupt Enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:16;266:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:40;267:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:40;268:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:14;268:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:40;269:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:35;270:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:41;273:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:41;274:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:15;274:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:41;275:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:36;276:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Maintenance interrupt is asserted if none, or only one, of the List
+										register entries is marked as a valid interrupt.</p>
+								</dd>
+							</dlentry>
+						</dl></dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:42;282:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+					<dt class="- topic/dt " xtrc="dt:42;283:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">En, [0]</dt>
+					<dd class="- topic/dd " xtrc="dd:42;284:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Enable. The possible values are:<dl class="- topic/dl " compact="yes" outputclass="termwidthpc10" xtrc="dl:17;284:128" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:43;285:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<dt class="- topic/dt " xtrc="dt:43;286:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:16;286:93" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">0</keyword></dt>
+								<dd class="- topic/dd " xtrc="dd:43;287:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+									<p class="- topic/p " xtrc="p:37;288:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Virtual CPU interface operation
+										disabled.</p>
+								</dd>
+							</dlentry>
+						<dlentry class="- topic/dlentry " xtrc="dlentry:44;292:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+							<dt class="- topic/dt " xtrc="dt:44;293:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " otherprops="g.number.hex" xtrc="keyword:17;293:92" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">1</keyword></dt>
+							<dd class="- topic/dd " xtrc="dd:44;294:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">
+								<p class="- topic/p " xtrc="p:38;295:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Virtual CPU interface operation enabled.</p>
+							</dd>
+						</dlentry>
+						</dl></dd>
+				</dlentry>
+			</dl>
+			
+			<p class="- topic/p " xtrc="p:39;302:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Bit fields and details that are not provided in this description are
+				architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;303:66" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><ph class="- topic/ph " xtrc="ph:9;303:90" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><keyword class="- topic/keyword " xtrc="keyword:18;303:124" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;303:161" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Arm</tm></keyword> <term class="- topic/term " keyref="genericinterruptcontroller" xtrc="term:5;303:222" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1469184932288.xml">Generic Interrupt Controller</term> Architecture Specification</ph></cite>.</p>
+		</section>
+	</refbody>
+</reference>

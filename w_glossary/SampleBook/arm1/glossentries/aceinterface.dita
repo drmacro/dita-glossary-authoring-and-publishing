@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="aceinterface">
+  <glossterm>ACE interface</glossterm>
+  <glossdef>An AMBA AXI4 interface that includes full support for the ACE protocol. An ACE interface adds: *Signals to some of the AXI4 channels. *Channels to the AXI4 interface. </glossdef>
+</glossentry>

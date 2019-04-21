@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="realviewtraceandrealviewtrace2">
+  <glossterm>RealView Trace and RealView Trace 2</glossterm>
+  <glossdef>Work in conjunction with RealView ICE to provide real-time trace functionality for software running in System-on-Chip devices with deeply embedded Arm processors. RealView Trace 2 also supports data streaming directly to Arm Profiler, providing real-time hardware platform profiling.See Also RealView Debugger Trace and RealView ICE.</glossdef>
+</glossentry>

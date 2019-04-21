@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="pat1464792841734" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Prometheus Debug AArch64 registers</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Debug AArch32 registers</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+
+
+
+
+
+
+    <topicref href="joh1440673253656.xml" class="- map/topicref "/>
+    <topicref href="lau1443604138635.xml" class="- map/topicref " keys="DebugBreakpointControlRegisters"/>
+    <topicref href="joh1440673263737.xml" class="- map/topicref " keys="DebugClaimTagSetRegister"/>
+    <topicref href="lau1443604153577.xml" class="- map/topicref " keys="DebugWatchpointControlRegisters"/>
+
+
+</map>

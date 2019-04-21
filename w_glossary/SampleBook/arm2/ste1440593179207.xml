@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1440593179207" xml:lang="en-us">
+	<title class="- topic/title ">Register descriptions</title>
+	<shortdesc class="- topic/shortdesc ">This part describes the non-debug registers of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p "/>
+		</section>
+	</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="ste1440662612911.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AArch32 system registers</linktext><desc class="- topic/desc ">This chapter describes the system registers in the AArch32     state.</desc></link><link class="- topic/link " format="dita" href="ste1440662673049.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AArch64 system registers</linktext><desc class="- topic/desc ">This chapter describes the system registers in the AArch64 state.</desc></link><link class="- topic/link " format="dita" href="jta1469529531483.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Error system registers</linktext><desc class="- topic/desc "> <ph class="- topic/ph ">This chapter describes the error registers accessed by the AArch64 error registers.</ph> </desc></link><link class="- topic/link " format="dita" href="ste1440662768724.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">GIC registers</linktext><desc class="- topic/desc ">This chapter describes the GIC registers.</desc></link><link class="- topic/link " format="dita" href="ste1452158501184.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Advanced SIMD and floating-point registers</linktext><desc class="- topic/desc ">This chapter describes the Advanced SIMD and floating-point     registers.</desc></link></linkpool></linkpool></related-links></reference>

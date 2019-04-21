@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443447832537" xml:lang="en-us">
+  <title class="- topic/title " id="TitleResetManagementRegisterEL3">RMR_EL3, Reset Management Register</title>
+  <shortdesc class="- topic/shortdesc ">The RMR_EL3 controls the execution state that the core boots into and
+    allows request of a Warm reset.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">RMR_EL3 is a 32-bit register, and is part of the Reset management registers
+        functional group.</p>
+      
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">RMR_EL3 bit assignments</title>
+        <image class="- topic/image " href="wym1479052362938.svg" placement="inline">
+          <alt class="- topic/alt ">RMR_EL3 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:2]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RR, [1]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Reset Request. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph>
+                </dt>
+                <dd class="- topic/dd ">This is the reset value on both a Warm and a <term keyref="coldreset">Cold reset</term>.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph>
+                </dt>
+                <dd class="- topic/dd ">Requests a <term keyref="warmreset">Warm reset</term>.</dd>
+              </dlentry>
+            </dl>
+            <p class="- topic/p ">The bit is strictly a request.</p>
+          </dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES1, [0]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "> <term class="- topic/term " outputclass="archterm">RES1</term> </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            
+            
+            
+            <p class="- topic/p ">There are no configuration notes.</p>
+            <p class="- topic/p ">Details that are not provided in this description are
+              architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+      
+    </section>
+    
+  </refbody>
+</reference>

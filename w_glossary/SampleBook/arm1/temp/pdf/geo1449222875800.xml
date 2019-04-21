@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="geo1449222875800" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+	<title class="- topic/title " id="TitleAArch64InstructionSetAttributeRegister0_EL1" xtrc="title:1;4:86" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">ID_AA64ISAR0_EL1, AArch64 Instruction Set
+		Attribute Register 0, EL1</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">The ID_AA64ISAR0_EL1 provides information about the instructions
+		implemented in AArch64 state, including the instructions that are provided by the
+		Cryptographic Extension. </shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;9:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;13:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+		<section class="- topic/section " xtrc="section:1;14:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+			<title class="- topic/title " xtrc="title:2;15:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;16:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">ID_AA64ISAR0_EL1 is a 64-bit register, and is part of the Identification registers functional
+				group.</p>
+			<p class="- topic/p " xtrc="p:2;18:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">This register is Read Only.</p>
+			<p class="- topic/p " xtrc="p:3;19:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">The optional Cryptographic Extension is not included in the base product of
+				the <term class="- topic/term " keyref="core" xtrc="term:1;20:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">core</term>. <keyword class="- topic/keyword " xtrc="keyword:1;20:76" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Arm</keyword> requires licensees to have contractual rights to obtain the
+				Cryptographic Extension. </p>
+			
+			
+			<fig class="- topic/fig " id="fig_cbp_hpd_ygb" xtrc="fig:1;24:51" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+				<title class="- topic/title " xtrc="title:3;25:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">ID_AA64ISAR0_EL1 bit assignments</title>
+				<image class="- topic/image " href="swo1491396741827.svg" id="image_dbp_hpd_ygb" placement="inline" xtrc="image:1;26:105" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<alt class="- topic/alt " xtrc="alt:1;27:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">ID_AA64ISAR0_EL1 bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;30:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;32:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:1;33:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">RES0, [63:48]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;34:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;35:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:2;36:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:2;37:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:2;37:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:2;38:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;46:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:3;47:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">DP, [47:44]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;48:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<p class="- topic/p " xtrc="p:4;49:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Indicates whether Dot Product support instructions are implemented.</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;50:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:4;51:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:4;52:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;52:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:1;52:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:4;53:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;53:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">UDOT</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;53:128" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SDOT</codeph> instructions are implemented.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:5;59:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:5;60:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">RES0, [43:32]</dt>
+					<dd class="- topic/dd " xtrc="dd:5;61:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:4;62:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:6;63:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:6;64:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:3;64:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:6;65:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:7;72:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:7;73:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">RDM, [31:28]</dt>
+					<dd class="- topic/dd " xtrc="dd:7;74:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<p class="- topic/p " xtrc="p:5;75:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Indicates whether <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;75:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SQRDMLAH</codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;75:149" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SQRDMLSH</codeph>
+							instructions in <term class="- topic/term " keyref="aarch64" xtrc="term:4;76:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">AArch64</term> are implemented.</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:5;77:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:8;78:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:8;79:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;79:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:2;79:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:8;80:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;80:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SQRDMLAH</codeph> and<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:8;80:134" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"> SQRDMLSH</codeph> instructions
+									implemented.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:9;86:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:9;87:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">RES0, [27:24]</dt>
+					<dd class="- topic/dd " xtrc="dd:9;88:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:6;89:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:10;90:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:10;91:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><term class="- topic/term " outputclass="archterm" xtrc="term:5;91:84" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">RES0</term></dt>
+								<dd class="- topic/dd " xtrc="dd:10;92:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Reserved.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:11;97:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:11;98:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Atomic, [23:20]</dt>
+					<dd class="- topic/dd " xtrc="dd:11;99:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<p class="- topic/p " xtrc="p:6;100:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Indicates whether Atomic instructions in  are implemented. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:7;101:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:12;102:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:12;103:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:9;103:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:3;103:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">2</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:12;104:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><p class="- topic/p " xtrc="p:7;104:55" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:10;104:95" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">LDADD</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:11;104:151" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">LDCLR</codeph>,
+											<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:12;105:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">LDEOR</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:13;105:108" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">LDSET</codeph>,
+											<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:14;106:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">LDSMAX</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:15;106:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">LDSMIN</codeph>,
+											<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:16;107:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">LDUMAX</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:17;107:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">LDUMIN</codeph>,
+											<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:18;108:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">CAS</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:19;108:106" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">CASP</codeph>, and
+											<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:20;109:52" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SWP</codeph> instructions are
+									implemented</p>.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:13;115:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:13;116:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">CRC32, [19:16]</dt>
+					<dd class="- topic/dd " xtrc="dd:13;117:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<p class="- topic/p " xtrc="p:8;118:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Indicates whether CRC32 instructions are implemented. The value is:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:8;119:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:14;120:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:14;121:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:21;121:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:4;121:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:14;122:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">CRC32 instructions are implemented.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:15;127:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:15;128:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA2, [15:12]</dt>
+					<dd class="- topic/dd " xtrc="dd:15;129:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<p class="- topic/p " xtrc="p:9;130:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Indicates whether SHA2 instructions are implemented. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:9;131:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:16;132:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:16;133:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:22;133:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:5;133:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">0</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:16;134:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">No SHA2 instructions are implemented. This is the value if the 
+									implementation does not include the Cryptographic Extension.</dd>
+							</dlentry>
+							
+							<dlentry class="- topic/dlentry " xtrc="dlentry:17;138:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:17;139:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:23;139:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:6;139:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:17;140:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:24;140:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA256H</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:25;140:131" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA256H2</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:26;140:190" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA256U0</codeph>, and <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:27;140:253" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA256U1</codeph> implemented. This is the value if the
+									 implementation includes the Cryptographic
+									Extension.</dd>
+							</dlentry>
+							
+							
+							
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:18;150:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:18;151:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA1, [11:8]</dt>
+					<dd class="- topic/dd " xtrc="dd:18;152:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<p class="- topic/p " xtrc="p:10;153:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Indicates whether SHA1 instructions are implemented. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:10;154:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:19;155:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:19;156:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:28;156:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:7;156:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">0</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:19;157:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">No SHA1 instructions implemented. This is the value if the 
+									implementation does not include the Cryptographic Extension.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:20;160:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:20;161:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:29;161:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:8;161:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">1</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:20;162:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:30;162:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA1C</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:31;162:129" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA1P</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:32;162:185" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA1M</codeph>,
+										<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:33;163:51" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA1SU0</codeph>, and <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:34;163:113" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">SHA1SU1</codeph> implemented. This is the
+									value if the  implementation includes the Cryptographic
+									Extension.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:21;170:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:21;171:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">AES, [7:4]</dt>
+					<dd class="- topic/dd " xtrc="dd:21;172:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<p class="- topic/p " xtrc="p:11;173:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Indicates whether AES instructions are implemented. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:11;174:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:22;175:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:22;176:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:35;176:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:9;176:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">0</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:22;177:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">No AES instructions implemented. This is the value if the 
+									implementation does not include the Cryptographic Extension.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry " xtrc="dlentry:23;180:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+								<dt class="- topic/dt " xtrc="dt:23;181:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:36;181:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " otherprops="g.number.hex" xtrc="ph:10;181:123" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">2</ph></codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:23;182:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:37;182:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">AESE</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:38;182:128" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">AESD</codeph>, <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:39;182:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">AESMC</codeph>, and
+										<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:40;183:51" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">AESIMC</codeph> implemented, plus
+										<codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:41;184:51" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">PMULL</codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:42;184:110" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">PMULL2</codeph> instructions operating on
+									64-bit data. This is the value if the  implementation
+									includes the Cryptographic Extension.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:24;191:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:24;192:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">[3:0]</dt>
+					<dd class="- topic/dd " xtrc="dd:24;193:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:6;193:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">RES0</term>.</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl " xtrc="dl:12;196:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:25;197:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+					<dt class="- topic/dt " xtrc="dt:25;198:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:25;199:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+						<p class="- topic/p " xtrc="p:12;200:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">ID_AA64ISAR0_EL1 is architecturally mapped to external register ID_AA64ISAR0.</p>
+						<p class="- topic/p " xtrc="p:13;201:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Bit fields and details that are not provided in this
+							description are architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;202:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><ph class="- topic/ph " xtrc="ph:11;202:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:2;203:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;203:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:3;203:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:4;203:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1449222875800.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+		
+	</refbody>
+</reference>

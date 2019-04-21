@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="fvd1477940426136" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+  <title class="- topic/title " xtrc="title:1;4:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">PMCEID0, Performance Monitors Common Event Identification Register
+      0</title>
+  <titlealts class="- topic/titlealts " xtrc="titlealts:1;6:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+    <navtitle class="- topic/navtitle " xtrc="navtitle:1;7:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">PMCEID0, Performance Monitors Common Event Identification Register
+      0</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;10:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">The PMCEID0 defines which common architectural and common
+    microarchitectural feature events are implemented.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;12:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrc="refbody:1;15:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+    <section class="- topic/section " xtrc="section:1;16:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+      <title class="- topic/title " xtrc="title:2;17:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Bit field descriptions</title>
+      <fig class="- topic/fig " xtrc="fig:1;18:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+        <title class="- topic/title " xtrc="title:3;19:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">PMCEID0 bit assignments</title>
+        <image class="- topic/image " href="lau1443688654656.svg" placement="inline" xtrc="image:1;20:86" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+          <alt class="- topic/alt " xtrc="alt:1;21:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">PMCEID0 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl " xtrc="dl:1;24:31" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+        <dlentry class="- topic/dlentry " xtrc="dlentry:1;25:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+          <dt class="- topic/dt " xtrc="dt:1;26:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">ID[31:0], [31:0]</dt>
+          <dd class="- topic/dd " xtrc="dd:1;27:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><p class="- topic/p " xtrc="p:1;27:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Common architectural and microarchitectural feature
+              events that can be counted by the PMU event counters.</p><p class="- topic/p " xtrc="p:2;28:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">The following table shows the PMCEID0 bit assignments with event implemented or
+              not implemented when the associated bit is set to 1 or 0. See the <cite class="- topic/cite " xtrc="cite:1;29:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><ph class="- topic/ph " xtrc="ph:1;29:133" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;30:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;30:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:2;30:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:3;30:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Arm</keyword>v8-A architecture profile</ph></cite> for more information about these
+              events.</p></dd>
+        </dlentry>
+      </dl>
+      <table class="- topic/table " xtrc="table:1;34:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+        <title class="- topic/title " xtrc="title:4;35:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">PMU events</title>
+        <tgroup class="- topic/tgroup " cols="3" xtrc="tgroup:1;36:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" xtrc="colspec:1;37:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" xtrc="colspec:2;38:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" xtrc="colspec:3;39:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"/>
+          <thead class="- topic/thead " xtrc="thead:1;40:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+            <row class="- topic/row " xtrc="row:1;41:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:1;42:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Bit</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:2;43:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Event mnemonic</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="1" xtrc="entry:3;44:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Description</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody " xtrc="tbody:1;47:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+            <row class="- topic/row " xtrc="row:2;48:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:4;49:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[31]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:5;50:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1D_CACHE_ALLOCATE</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="2" xtrc="entry:6;51:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:3;52:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1 Data cache allocate:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:2;53:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:2;54:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:2;55:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;55:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">0</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:2;56:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is not implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:3;61:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3" xtrc="entry:7;62:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[30]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3" xtrc="entry:8;63:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">CHAIN</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="3" xtrc="entry:9;64:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:4;65:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Chain. For odd-numbered counters, counts once for each overflow
+                  of the preceding even-numbered counter. For even-numbered counters, does not
+                  count:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:3;68:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:3;69:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:3;70:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:2;70:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:3;71:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:4;76:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4" xtrc="entry:10;77:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[29]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4" xtrc="entry:11;78:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">BUS_CYCLES</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="4" xtrc="entry:12;79:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:5;80:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Bus cycle:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:4;81:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:4;82:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:4;83:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:3;83:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:4;84:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:5;89:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="5" xtrc="entry:13;90:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[28]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="5" xtrc="entry:14;91:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">TTBR_WRITE_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="5" xtrc="entry:15;92:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:6;93:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">TTBR write, architecturally executed, condition check pass -
+                  write to <term class="- topic/term " keyref="translationtable" xtrc="term:1;94:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">translation table</term> base:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:5;95:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:5;96:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:5;97:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:4;97:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:5;98:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:6;103:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="6" xtrc="entry:16;104:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[27]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="6" xtrc="entry:17;105:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">INST_SPEC</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="6" xtrc="entry:18;106:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:7;107:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction speculatively executed:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:6;108:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:6;109:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:6;110:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:5;110:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:6;111:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:7;116:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="7" xtrc="entry:19;117:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[26]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="7" xtrc="entry:20;118:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">MEMORY_ERROR</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="7" xtrc="entry:21;119:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:8;120:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Local memory error:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:7;121:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:7;122:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:7;123:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:6;123:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:7;124:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:8;129:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="8" xtrc="entry:22;130:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[25]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="8" xtrc="entry:23;131:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">BUS_ACCESS</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="8" xtrc="entry:24;132:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:9;133:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Bus access:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:8;134:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:8;135:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:8;136:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:7;136:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:8;137:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:9;142:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="9" xtrc="entry:25;143:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[24]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="9" xtrc="entry:26;144:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L2D_CACHE_WB</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="9" xtrc="entry:27;145:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:10;146:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L2 Data cache <term class="- topic/term " keyref="write" xtrc="term:2;146:74" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Write</term>-Back:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:9;147:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:9;148:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:9;149:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:8;149:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:9;150:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:10;155:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="10" xtrc="entry:28;156:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[23]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="10" xtrc="entry:29;157:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L2D_CACHE_REFILL</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="10" xtrc="entry:30;158:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:11;159:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L2 Data cache refill:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:10;160:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:10;161:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:10;162:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:9;162:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:10;163:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:11;168:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="11" xtrc="entry:31;169:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[22]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="11" xtrc="entry:32;170:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L2D_CACHE</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="11" xtrc="entry:33;171:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:12;172:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L2 Data cache access:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:11;173:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:11;174:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:11;175:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:10;175:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:11;176:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:12;181:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="12" xtrc="entry:34;182:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[21]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="12" xtrc="entry:35;183:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1D_CACHE_WB</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="12" xtrc="entry:36;184:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:13;185:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1 Data cache -Back:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:12;186:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:12;187:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:12;188:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:11;188:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:12;189:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:13;194:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="13" xtrc="entry:37;195:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[20]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="13" xtrc="entry:38;196:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1I_CACHE</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="13" xtrc="entry:39;197:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:14;198:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1 Instruction cache access:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:13;199:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:13;200:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:13;201:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:12;201:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:13;202:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:14;207:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="14" xtrc="entry:40;208:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[19]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="14" xtrc="entry:41;209:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">MEM_ACCESS</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="14" xtrc="entry:42;210:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:15;211:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Data memory access:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:14;212:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:14;213:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:14;214:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:13;214:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:14;215:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:15;220:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="15" xtrc="entry:43;221:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[18]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="15" xtrc="entry:44;222:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">BR_PRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="15" xtrc="entry:45;223:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:16;224:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Predictable branch speculatively executed:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:15;225:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:15;226:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:15;227:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:14;227:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:15;228:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:16;233:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="16" xtrc="entry:46;234:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[17]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="16" xtrc="entry:47;235:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">CPU_CYCLES</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="16" xtrc="entry:48;236:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:17;237:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Cycle:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:16;238:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:16;239:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:16;240:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:15;240:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:16;241:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:17;246:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="17" xtrc="entry:49;247:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[16]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="17" xtrc="entry:50;248:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">BR_MIS_PRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="17" xtrc="entry:51;249:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:18;250:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Mispredicted or not predicted branch speculatively executed:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:17;251:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:17;252:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:17;253:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:16;253:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:17;254:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:18;259:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="18" xtrc="entry:52;260:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[15]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="18" xtrc="entry:53;261:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">UNALIGNED_LDST_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="18" xtrc="entry:54;262:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:19;263:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed, condition check pass -
+                  unaligned load or store:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:18;265:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:18;266:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:18;267:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:17;267:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">0</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:18;268:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is not implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:19;273:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="19" xtrc="entry:55;274:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[14]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="19" xtrc="entry:56;275:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">BR_RETURN_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="19" xtrc="entry:57;276:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:20;277:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed, condition check pass -
+                  procedure return:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:19;279:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:19;280:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:19;281:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:18;281:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">0</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:19;282:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is not implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:20;287:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="20" xtrc="entry:58;288:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[13]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="20" xtrc="entry:59;289:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">BR_IMMED_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="20" xtrc="entry:60;290:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:21;291:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed - immediate branch:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:20;292:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:20;293:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:20;294:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:19;294:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">0</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:20;295:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is not implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:21;300:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="21" xtrc="entry:61;301:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[12]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="21" xtrc="entry:62;302:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">PC_WRITE_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="21" xtrc="entry:63;303:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:22;304:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed, condition check pass -
+                  software change of the PC:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:21;306:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:21;307:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:21;308:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:20;308:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">0</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:21;309:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is not implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:22;314:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="22" xtrc="entry:64;315:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[11]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="22" xtrc="entry:65;316:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">CID_WRITE_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="22" xtrc="entry:66;317:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:23;318:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed, condition check pass -
+                  write to CONTEXTIDR:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:22;320:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:22;321:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:22;322:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:21;322:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:22;323:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:23;328:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="23" xtrc="entry:67;329:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[10]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="23" xtrc="entry:68;330:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">EXC_RETURN</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="23" xtrc="entry:69;331:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:24;332:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed, condition check pass -
+                  <term class="- topic/term " keyref="exception" xtrc="term:3;333:44" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">exception</term> return:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:23;334:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:23;335:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:23;336:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:22;336:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:23;337:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:24;342:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="24" xtrc="entry:70;343:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[9]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="24" xtrc="entry:71;344:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">EXC_TAKEN</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="24" xtrc="entry:72;345:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:25;346:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Exception taken:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:24;347:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:24;348:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:24;349:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:23;349:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:24;350:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:25;355:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="25" xtrc="entry:73;356:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[8]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="25" xtrc="entry:74;357:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">INST_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="25" xtrc="entry:75;358:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:26;359:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:25;360:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:25;361:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:25;362:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:24;362:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:25;363:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:26;368:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="26" xtrc="entry:76;369:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[7]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="26" xtrc="entry:77;370:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">ST_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="26" xtrc="entry:78;371:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:27;372:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed, condition check pass -
+                  store:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:26;374:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:26;375:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:26;376:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:25;376:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">0</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:26;377:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is not implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:27;382:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="27" xtrc="entry:79;383:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[6]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="27" xtrc="entry:80;384:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">LD_RETIRED</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="27" xtrc="entry:81;385:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:28;386:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed, condition check pass -
+                  load:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:27;388:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:27;389:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:27;390:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:26;390:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">0</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:27;391:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is not implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:28;396:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="28" xtrc="entry:82;397:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[5]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="28" xtrc="entry:83;398:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1D_<term class="- topic/term " keyref="tlb" xtrc="term:4;398:83" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">TLB</term>_REFILL</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="28" xtrc="entry:84;399:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:29;400:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1 Data  refill:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:28;401:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:28;402:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:28;403:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:27;403:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:28;404:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:29;409:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="29" xtrc="entry:85;410:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[4]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="29" xtrc="entry:86;411:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1D_CACHE</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="29" xtrc="entry:87;412:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:30;413:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1 Data cache access:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:29;414:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:29;415:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:29;416:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:28;416:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:29;417:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:30;422:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="30" xtrc="entry:88;423:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[3]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="30" xtrc="entry:89;424:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1D_CACHE_REFILL</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="30" xtrc="entry:90;425:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:31;426:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1 Data cache refill:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:30;427:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:30;428:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:30;429:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:29;429:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:30;430:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:31;435:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="31" xtrc="entry:91;436:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[2]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="31" xtrc="entry:92;437:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1I__REFILL</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="31" xtrc="entry:93;438:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:32;439:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1 Instruction  refill:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:31;440:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:31;441:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:31;442:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:30;442:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:31;443:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:32;448:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="32" xtrc="entry:94;449:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[1]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="32" xtrc="entry:95;450:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1I_CACHE_REFILL</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="32" xtrc="entry:96;451:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:33;452:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">L1 Instruction cache refill:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:32;453:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:32;454:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:32;455:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:31;455:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:32;456:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+            <row class="- topic/row " xtrc="row:33;461:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="33" xtrc="entry:97;462:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">[0]</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="33" xtrc="entry:98;463:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">SW_INCR</entry>
+              <entry class="- topic/entry " colname="col3" dita-ot:x="3" dita-ot:y="33" xtrc="entry:99;464:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                <p class="- topic/p " xtrc="p:34;465:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Instruction architecturally executed, condition check pass -
+                  software increment:</p>
+                <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8" xtrc="dl:33;467:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                  <dlentry class="- topic/dlentry " xtrc="dlentry:33;468:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                    <dt class="- topic/dt " xtrc="dt:33;469:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:32;469:85" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">1</codeph></dt>
+                    <dd class="- topic/dd " xtrc="dd:33;470:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">This event is implemented.</dd>
+                  </dlentry>
+                </dl>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <note class="- topic/note " xtrc="note:1;478:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">The PMU events implemented in the above table can be found in <xref class="- topic/xref " href="tgw1477591342487.xml#tgw1477591342487/table_vxj_2h2_vp" keyref="PmuEvents/table_vxj_2h2_vp" type="table" xtrc="xref:1;478:236" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><?ditaot usertext?>Table 1</xref>.</note>
+      <p class="- topic/p " xtrc="p:35;479:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite " xtrc="cite:2;480:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><ph class="- topic/ph " xtrc="ph:2;480:94" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:4;481:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:2;481:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:5;481:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:6;481:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/fvd1477940426136.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

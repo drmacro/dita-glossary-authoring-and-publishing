@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="blh1477585707279" xml:lang="en-us" xtrc="concept:1;3:182" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+  <title class="- topic/title " xtrc="title:1;4:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">L2 TLB</title>
+  <titlealts class="- topic/titlealts " xtrc="titlealts:1;5:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+    <navtitle class="- topic/navtitle " xtrc="navtitle:1;6:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">L2 TLB</navtitle>
+  </titlealts>
+  <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;8:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">The L2 TLB structure is shared by instruction and data. It handles
+    misses from the instruction and data L1 TLBs.</shortdesc>
+  <prolog class="- topic/prolog " xtrc="prolog:1;10:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+    <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+    
+    
+    
+  </prolog>
+  <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;16:51" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+    <section class="- topic/section " xtrc="section:1;17:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+      <p class="- topic/p " xtrc="p:1;18:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">The following table describes the characteristic that applies to the L2
+        <term class="- topic/term " keyref="tlb" xtrc="term:1;19:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">TLB</term>.</p>
+      <table class="- topic/table " xtrc="table:1;20:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+        <title class="- topic/title " xtrc="title:2;21:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Characteristic of the L2 </title>
+        <tgroup class="- topic/tgroup " cols="2" xtrc="tgroup:1;22:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" xtrc="colspec:1;23:72" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml"/><colspec class="- topic/colspec " colname="col2" colnum="2" xtrc="colspec:2;23:133" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml"/><thead class="- topic/thead " xtrc="thead:1;23:163" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+            <row class="- topic/row " xtrc="row:1;24:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:1;25:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Characteristic</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:2;26:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Note</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody " xtrc="tbody:1;29:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+            <row class="- topic/row " xtrc="row:2;30:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+              <entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:3;31:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">5-way, set associative, 1280-entry cache</entry>
+              <entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:4;32:60" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml"><p class="- topic/p " xtrc="p:2;32:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Stores:</p>
+                <ul class="- topic/ul " xtrc="ul:1;33:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+                  <li class="- topic/li " xtrc="li:1;34:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">VA to <term class="- topic/term " keyref="pa" xtrc="term:2;34:67" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">PA</term> mappings for 4KB, 16KB, 64KB, 2MB, 32MB, 512MB, and
+                    1GB block sizes.</li>
+                  <li class="- topic/li " xtrc="li:2;36:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml"><term class="- topic/term " xtrc="term:3;36:71" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Intermediate physical address</term>
+                    (I) to  mappings for 2MB and 1GB (in a 4KB translation granule), 32MB (in a
+                    16K translation granule), and 512MB (in a 64K granule) block sizes. Only
+                    Non-secure EL1 and EL0 stage 2 translations are cached.</li>
+                  <li class="- topic/li " xtrc="li:3;40:43" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Intermediate s obtained during a <term class="- topic/term " keyref="translationtable" xtrc="term:4;40:108" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">translation table</term> walk.</li>
+                </ul></entry>
+            </row>
+            
+          </tbody>
+        </tgroup>
+      </table>
+      
+      
+      <p class="- topic/p " xtrc="p:3;49:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Access to the L2  usually takes three cycles. If a different page or
+        block size mapping is used, then access to the L2  can take longer.</p><p class="- topic/p " xtrc="p:4;50:102" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">The L2  supports four  walks in parallel (four  misses),
+          and can service two  lookups while the  walks are in progress. If there
+          are six successive misses, the L2  will stall.</p>
+      
+      <note class="- topic/note " xtrc="note:1;54:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Caches in the <term class="- topic/term " keyref="core" xtrc="term:5;54:69" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">core</term> are <term class="- topic/term " keyref="invalidate" xtrc="term:6;54:111" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">invalidate</term>d automatically at reset deassertion unless the  power mode is initialized to Debug Recovery. See the <cite class="- topic/cite " xtrc="cite:1;54:258" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml"><ph class="- topic/ph " xtrc="ph:1;54:282" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;55:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;55:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">Arm</tm></keyword> <ph class="- topic/ph " xtrc="ph:2;55:143" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml"><keyword class="- topic/keyword " xtrc="keyword:2;55:177" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml"><tm class="- topic/tm " tmtype="tm" xtrc="tm:2;55:213" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/blh1477585707279.xml">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite> for more information.</note>
+    </section>
+  </conbody>
+</concept>

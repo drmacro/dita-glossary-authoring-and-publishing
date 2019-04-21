@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="deb1332948760711" translate="no" xml:lang="en-us">
+    <title class="- topic/title " translate="no">Proprietary Notice</title><titlealts class="- topic/titlealts "><navtitle class="- topic/navtitle " translate="yes">Proprietary Notice</navtitle></titlealts>
+    
+    <shortdesc class="- topic/shortdesc " translate="no"/>
+    <prolog class="- topic/prolog " translate="no">
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+    <refbody class="- topic/body        reference/refbody " translate="no">
+        <section class="- topic/section " outputclass="confidential" translate="no" xml:lang="en-us">
+            <p class="- topic/p " translate="no">This document is CONFIDENTIAL and any use by you is
+                subject to the terms of the agreement between you and Arm or the terms of the
+                agreement between you and the party authorised by Arm to disclose this document to
+                you.</p>
+            <p class="- topic/p " translate="no">This document is protected by copyright and other
+                related rights and the practice or implementation of the information contained in
+                this document may be protected by one or more patents or pending patent
+                applications. No part of this document may be reproduced in any form by any means
+                without the express prior written permission of Arm. <ph class="- topic/ph " outputclass="legal.emphasis" translate="no">No license, express or implied,
+                by estoppel or otherwise to any intellectual property rights is granted by this
+                document unless specifically stated.</ph></p>
+            <p class="- topic/p " translate="no">Your access to the information in this document is
+                conditional upon your acceptance that you will not use or permit others to use the
+                information: (i) for the purposes of determining whether implementations infringe
+                any third party patents;(ii) for developing technology or products which avoid any
+                of Arm's intellectual property; or (iii) as a reference for modifying existing
+                patents or patent applications or creating any continuation, continuation in part,
+                or extension of existing patents or patent applications; or (iv) for generating data
+                for publication or disclosure to third parties, which compares the performance or
+                functionality of the Arm technology described in this document with any other
+                products created by you or a third party, without obtaining Arm's prior written
+                consent.</p>
+            <p class="- topic/p " translate="no">THIS DOCUMENT IS PROVIDED “AS IS”. ARM PROVIDES NO
+                REPRESENTATIONS AND NO WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT
+                LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY,
+                NON-INFRINGEMENT OR FITNESS FOR A PARTICULAR PURPOSE WITH RESPECT TO THE DOCUMENT.
+                For the avoidance of doubt, Arm makes no representation with respect to, and has
+                undertaken no analysis to identify or understand the scope and content of, third
+                party patents, copyrights, trade secrets, or other rights.</p>
+            <p class="- topic/p " translate="no">This document may include technical inaccuracies or
+                typographical errors.</p>
+            <p class="- topic/p " translate="no">TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL
+                ARM BE LIABLE FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION ANY DIRECT, INDIRECT,
+                SPECIAL, INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND
+                REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF ANY USE OF THIS DOCUMENT, EVEN
+                IF ARM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+            <p class="- topic/p " translate="no">This document consists solely of commercial items. You
+                shall be responsible for ensuring that any use, duplication or disclosure of this
+                document complies fully with any relevant export laws and regulations to assure that
+                this document or any portion thereof is not exported, directly or indirectly, in
+                violation of such export laws. Use of the word “partner” in reference to Arm's
+                customers is not intended to create or refer to any partnership relationship with
+                any other company. Arm may make changes to this document at any time and without
+                notice.</p>
+            <p class="- topic/p " translate="no">If any of the provisions contained in these terms
+                conflict with any of the provisions of any click through or signed written agreement
+                covering this document with Arm, then the click through or signed written agreement
+                prevails over and supersedes the conflicting provisions of these terms. This
+                document may be translated into other languages for convenience, and you agree that
+                if there is any conflict between the English version of this document and any
+                translation, the terms of the English version of the Agreement shall prevail.</p>
+            <p class="- topic/p " translate="no">The Arm corporate logo and words marked with <sup class="+ topic/ph hi-d/sup ">®</sup> or ™ are registered trademarks or trademarks of Arm Limited (or its subsidiaries) in the
+                US and/or elsewhere. All rights reserved. Other brands and names mentioned in this
+                document may be the trademarks of their respective owners. Please follow Arm's
+                trademark usage guidelines at <xref class="- topic/xref " format="html" href="http://www.arm.com/company/policies/trademarks" scope="external">http://www.arm.com/company/policies/trademarks</xref>.</p>
+            <p class="- topic/p " translate="no">Copyright © <ph class="- topic/ph " outputclass="bookcopyright" translate="no"/> Arm Limited (or its affiliates).
+                All rights reserved. </p>
+            <p class="- topic/p " translate="no">Arm Limited. Company 02557590 registered in England. </p>
+            <p class="- topic/p " translate="no">110 Fulbourn Road, Cambridge, England CB1 9NJ. </p>
+            <p class="- topic/p " translate="no">LES-PRE-20348</p>
+        </section>
+        <section class="- topic/section " outputclass="confidential" translate="no" xml:lang="ja-jp">
+            <title class="- topic/title " translate="no">機密著作権情報</title>
+            <p class="- topic/p " translate="no">本書は機密情報であり、お客様による使用は、お客様と Arm との間で締結した契約の条項、またはお客様と本書をお客様に開示することを Arm が認めた当事者との間で締結した契約の条項に従うものとします。</p>
+            <p class="- topic/p " translate="no">本書は著作権などの権利により保護されており、本書に含まれる手順または実装に関する情報は、1 つ以上の特許または申請中の特許により保護されている可能性があります。 本書のいかなる部分も、Arm から事前に書面による明示的な承諾なく、何らかの形式や方法で無断複製することは許可されていません。 <ph class="- topic/ph " outputclass="legal.emphasis" translate="no">特に記載がない限り、明示的であるか黙示的であるかを問わず、また禁反言やその他いかなる知的財産権のライセンスを許諾するものではありません。</ph></p>
+            <p class="- topic/p " translate="no">本書の情報には、以下の目的のために情報を使用せず、第三者にもそれを許可しないと承諾することを条件としてアクセスすることができます。(i) 実装により、いかなる第三者の特許も侵害されないことを確認すること、(ii) Arm のいかなる知的所有権も回避したテクノロジまたは製品を開発すること、(iii) 既存特許または特許申請に変更を加えるための参考としたり、部分的に書き加えたり、既存特許または特許申請を拡張したりすること、または (iv) 事前に書面による Arm の同意を得ることなく、本書で説明されている Arm テクノロジの性能または機能をお客様または第三者により作成された何らかの他製品と比較する第三者に対し、公開または開示するためのデータを作成すること。 </p>
+            <p class="- topic/p " translate="no">本書は、「現状」のまま提供されます。 Arm は、明示的、黙示的、または制定法上のいずれを問わず、いかなる表明も保証も行いません。これには、本書に関連した商品性、品質基準、非侵害、または特定目的への適合性に関する黙示的保証を含むが、これに限定されません。 疑義を避けるため、Arm は第三者の特許、著作権、営業機密、または他の権利の範囲および内容に関して、いかなる表明も行わず、識別や理解のための分析も行いません。 </p>
+            <p class="- topic/p " translate="no">本書には、技術的に不正確な箇所および誤記が含まれる場合があります。</p>
+            <p class="- topic/p " translate="no">法により禁止されていない限りにおいて、Arm は本書の使用により生じた直接的、間接的、特別、付随的、懲罰的、または結果的損害などを含むすべての損害に対して、たとえそのような損害の可能性が事前に告知されていた場合でも、その原因および責任理論の如何に関わらず一切の責任を負わないものとします。</p>
+            <p class="- topic/p " translate="no">本書には、商品のみが含まれています。 本書の使用、複製、または開示が関連するあらゆる輸出法および輸出規制に完全に準拠し、本書が全体であれ一部であれ、該当する輸出法に違反して直接的または間接的に輸出されることがないことを保証する責任を負うものとします。 Arm のお客様に関連して「パートナー」という言葉が使用されている場合でも、他会社と提携関係を設立することや、言及することを意図するものではありません。 Arm は、通知することなくいつでも本書を変更することができます。</p>
+            <p class="- topic/p " translate="no">本契約のいずれかの規定と、Arm と締結された本書の内容を含むクリックスルー契約または署名済みの書面契約の間に矛盾がある場合、クリックスルー契約または署名済みの書面契約を本契約の規定より優先するものとします。 本書は、便宜上、他言語に翻訳される場合がありますが、本書の英語版と翻訳との間に矛盾がある場合、契約書の英語版に含まれる規定を優先することに同意するものとします。</p>
+            <p class="- topic/p " translate="no">Arm のロゴおよび ® または ™ のマークが付いた語は、Arm Limited (またはその子会社) の米国およびその他の国における登録商標または商標です。 All rights reserved. 本書に記載されている他の製品名は、各社の所有する商標です。 Arm の 商標の使用に関する次のガイドラインに従ってください。<xref class="- topic/xref " format="html" href="http://www.arm.com/company/policies/trademarks" scope="external">http://www.arm.com/company/policies/trademarks</xref></p>
+            <p class="- topic/p " translate="no">Copyright © <ph class="- topic/ph " outputclass="bookcopyright" translate="no"/>, Arm Limited or its affiliates. All
+                rights reserved.</p>
+            <p class="- topic/p " translate="no">Arm Limited. Company 02557590 registered in
+                England.</p>
+            <p class="- topic/p " translate="no">110 Fulbourn Road, Cambridge, England CB1 9NJ.</p>
+            <p class="- topic/p " translate="no">LES-PRE-20348</p>
+        </section>
+        <section class="- topic/section " outputclass="confidential" translate="no" xml:lang="ko-kr">
+            <title class="- topic/title " translate="no">기밀 소유권 고지 사항</title>
+            <p class="- topic/p " translate="no">이 문서는 기밀 문서이며 귀하가 이를 사용하는 경우 귀하와 Arm 간의 계약 약관 또는 귀하와 Arm이 귀하에게 이 문서를 공개하도록 승인한 당사자 간의 계약 약관이 적용됩니다.</p>
+            <p class="- topic/p " translate="no">이 문서는 저작권 및 기타 관련 권한에 의해 보호되며 이 문서에 포함된 정보의 실행 및 구현은 하나 이상의 특허 또는 출원 중인 특허 신청에 의해 보호될 수 있습니다. 이 문서의 어떠한 부분도 Arm의 명시적인 사전 서면 승인 없이는 어떠한 수단에 의해서든 어떠한 형태로도 복제할 수 없습니다. <ph class="- topic/ph " outputclass="legal.emphasis" translate="no">구체적인 진술이 있는 경우가 아닌 한 이 문서로 금반언 또는 다른 방식에 의해 지적 재산권에 대한 명시적 또는 암시적 라이센스가 부여되지 않습니다.</ph></p>
+            <p class="- topic/p " translate="no">귀하는 이 문서의 정보를 Arm의 사전 서면 동의 없이 (i) 구현 시 타사 특허를 침해하는지 확인할 목적으로, (ii) Arm의 지적 재산을 무효로 하는 기술 또는 제품을 개발할 목적으로 또는 (iii) 기존 특허 또는 특허 신청을 수정하거나 기존 특허 또는 특허 신청의 연속, 부분적인 연속 또는 연장에 대한 참고 자료로 또는 (iv) 이 문서에 설명된 Arm 기술의 성능 또는 기능을 귀하 또는 타사가 제작한 다른 제품과 비교하는 데이터를 생성하여 게시 또는 타사에 공개할 목적으로 사용하거나 다른 사람이 사용하도록 허용하지 않는 것에 동의해야만 정보에 액세스할 수 있습니다. </p>
+            <p class="- topic/p " translate="no">이 문서는 "있는 그대로" 제공됩니다. Arm은 암시적 상품성 보증, 만족스러운 품질, 문서와 관련해 특정 목적 적합성이 포함되나 그에 국한되지 않는 명시적, 암시적 또는 법적 진술, 보증을 하지 않습니다. 의문을 방지할 수 있도록, Arm은 타사 특허, 저작권, 사업 비밀 또는 기타 권한의 범위 및 내용을 식별 또는 파악하기 위한 분석과 관련하여 어떠한 진술도 하지 않으며 그러한 분석에 착수하지도 않았습니다. </p>
+            <p class="- topic/p " translate="no">이 문서에는 기술적 부정확성 또는 오타가 포함되어 있을 수 있습니다.</p>
+            <p class="- topic/p " translate="no">법률에 의해 금지되지 않는 범위 내에서, Arm은 Arm이 해당 손해 발생 가능성에 대해 고지를 받았더라도 원인 및 책임 이론에 관계없이, 이 문서 사용에 의해 발생하는 직접적, 간접적, 특별적, 우발적, 징벌적 또는 결과적 손해가 포함되나 그에 국한되지 않는 손해에 대해 책임을 지지 않습니다.</p>
+            <p class="- topic/p " translate="no">이 문서는 상업적 항목으로만 구성됩니다. 귀하는 이 문서를 사용, 중복 또는 공개 시 이 문서 또는 문서의 어떤 부분을 관련 수출법을 위반하여 수출되지 않도록 보장하기 위해 관련 수출법 및 규정을 완전하게 준수할 책임이 있습니다. Arm의 고객을 가리키는 "파트너"라는 단어를 사용하더라도 다른 회사와의 파트너 관계를 형성하거나 이를 가리키려는 의도가 아닙니다. Arm은 언제든지 사전 통지 없이 이 문서를 변경할 수 있습니다.</p>
+            <p class="- topic/p " translate="no">이 약관에 포함된 조항 중 Arm과 이 문서가 포함되는 클릭 또는 서명을 통해 체결된 서면 계약의 조항과 충돌하는 것이 있는 경우 클릭 또는 서명을 통해 체결된 서면 계약이 이 약관의 충돌 조항에 우선하며 이를 대체합니다. 이 문서는 편의를 위해 다른 언어로 번역될 수 있으며 귀하는 이 문서의 영문본과 번역이 충돌하는 경우 영문본 계약의 약관이 우선 적용됨에 동의합니다.</p>
+            <p class="- topic/p " translate="no">Arm의 기업 로고 및 ® 또는 ™으로 표시된 단어는 미국 및/또는 다른 지역에서 Arm Limited(또는 자회사)의 등록 상표 또는 상표입니다. All rights reserved. 그 외 이 문서에 언급된 브랜드 및 이름은 해당 소유자의 상표일 수 있습니다. <xref class="- topic/xref " format="html" href="http://www.arm.com/company/policies/trademarks" scope="external">http://www.arm.com/company/policies/trademarks</xref>에 있는 Arm의 상표 사용 지침을 따르십시오.</p>
+            <p class="- topic/p " translate="no">Copyright © <ph class="- topic/ph " outputclass="bookcopyright" translate="no"/>, Arm Limited 또는 그 계열사. All rights
+                reserved.</p>
+            <p class="- topic/p " translate="no">Arm Limited. 잉글랜드 등록 법인 제02557590호.</p>
+            <p class="- topic/p " translate="no">110 Fulbourn Road, Cambridge, England CB1 9NJ.</p>
+            <p class="- topic/p " translate="no">LES-PRE-20348</p>
+        </section>
+        <section class="- topic/section " outputclass="confidential" translate="no" xml:lang="zh-cn">
+            <title class="- topic/title " translate="no">保密所有权</title>
+            <p class="- topic/p " translate="no">本文档为保密资料，您在使用时须遵守您与 Arm 之间所签协议的各项条款，以及您与获得 Arm 授权向您披露本文档的有关方之间所签协议的各项条款。</p>
+            <p class="- topic/p " translate="no">本文档受版权和其他相关权利的保护，实践或实施本文档中所含信息可能受到一项或多项专利或待定专利申请的保护。 未经 Arm 事先明确书面许可，不得以任何形式通过任何手段复制本文档的任何部分。 <ph class="- topic/ph " outputclass="legal.emphasis" translate="no">除非明确说明，否则本文档未以禁止反言或其他方式授予任何知识产权方面的许可，无论是明示还是暗示许可。</ph></p>
+            <p class="- topic/p " translate="no">您对本文档所含信息的访问取决于您是否接受不出于以下目的使用或允许他人使用此信息的条件：(i) 为了确定实施是否会侵犯任何第三方专利；(ii) 为了开发技术或产品以避开 Arm 的任何知识产权；或 (iii) 作为修改现有专利或专利申请或制造任何延续、部分延续或扩展现有专利或专利申请的参考；或 (iv) 为了生成数据以发布或披露给第三方，在未获得 Arm 事先书面同意的情况下，将本文档中所述的 Arm 技术的性能或功能性与您或第三方创建的任何其他产品进行比较。 </p>
+            <p class="- topic/p " translate="no">本文档“按原样”提供。 ARM 就本文档不作任何陈述和保证，无论是明示、暗示或法定保证，包括但不限于对适销性、满意的质量、不侵权或针对特定目的的适用性的暗示保证。 为避免疑义，Arm 不就在分析的基础上识别或理解第三方专利、版权、商业机密或其他权利的范围和内容作出任何陈述和承诺。 </p>
+            <p class="- topic/p " translate="no">本文档可能包含技术或排版上的错误。</p>
+            <p class="- topic/p " translate="no">在不受法律禁止的范围内，ARM 在任何情况下都不会对因使用本文档引起的任何损害承担责任，包括但不限于任何直接、间接、特殊、连带、惩罚性或后果性损害，无论损害如何造成以及何种责任理论，即便 ARM 已被告知有此类损害的可能性。</p>
+            <p class="- topic/p " translate="no">本文档仅包含商业内容。 您应负责确保本文档的任何使用、复制或披露完全符合任何相关的出口法律法规，以确保本文档或其任何部分不会在违反相关出口法律法规的情况下直接或间接出口。 在提及 Arm 的客户时使用“合作伙伴”一词并非意欲建立或指代与任何其他公司的任何合作伙伴关系。 Arm 可以随时对本文档进行更改，恕不另行通知。</p>
+            <p class="- topic/p " translate="no">如果这些条款中的任何规定与同 Arm 达成的涵盖本文档的任何点击或签署的书面协议中的任何规定有冲突，则以点击或签署的书面协议为准，并取代这些条款中的冲突规定。 本文档可以翻译成其他语言以方便使用，您并且同意，若本文档的英文版与任何翻译版出现任何冲突时，将以协议的英文版条款为准。</p>
+            <p class="- topic/p " translate="no">Arm 公司的徽标以及带有 ® 或 ™ 标记的文字为 Arm Limited（或其子公司）在美国和/或其他地方的注册商标或商标。 保留所有权利。 本文档中提及的其他品牌和名称可能是其各自所有者的商标。 请遵循 <xref class="- topic/xref " format="html" href="http://www.arm.com/company/policies/trademarks" scope="external">http://www.arm.com/company/policies/trademarks</xref> 上的 Arm 商标使用指南。</p>
+            <p class="- topic/p " translate="no">版权 © <ph class="- topic/ph " outputclass="bookcopyright" translate="no"/>，归 ARM Limited 或其关联公司所有。保留所有权利。</p>
+            <p class="- topic/p " translate="no">Arm Limited。英格兰注册公司，注册号：02557590。</p>
+            <p class="- topic/p " translate="no">110 Fulbourn Road, Cambridge, England CB1 9NJ。</p>
+            <p class="- topic/p " translate="no">LES-PRE-20348</p>
+        </section>
+        <section class="- topic/section " outputclass="nonconfidential" translate="no" xml:lang="en-us">
+            <p class="- topic/p " translate="no">This document is protected by copyright and other related rights and
+                the practice or implementation of the information contained in this document may be
+                protected by one or more patents or pending patent applications. No part of this
+                document may be reproduced in any form by any means without the express prior
+                written permission of Arm. <ph class="- topic/ph " outputclass="legal.emphasis" translate="no">No license, express or implied, by estoppel or otherwise
+                to any intellectual property rights is granted by this document unless specifically
+                stated.</ph></p>
+            <p class="- topic/p " translate="no">Your access to the information in this document is conditional upon
+                your acceptance that you will not use or permit others to use the information for
+                the purposes of determining whether implementations infringe any third party
+                patents.</p>
+            <p class="- topic/p " translate="no">THIS DOCUMENT IS PROVIDED “AS IS”. ARM PROVIDES NO REPRESENTATIONS AND
+                NO WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT LIMITATION, THE
+                IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, NON-INFRINGEMENT OR
+                FITNESS FOR A PARTICULAR PURPOSE WITH RESPECT TO THE DOCUMENT. For the avoidance of
+                doubt, Arm makes no representation with respect to, and has undertaken no analysis
+                to identify or understand the scope and content of, third party patents, copyrights,
+                trade secrets, or other rights.</p>
+            <p class="- topic/p " translate="no">This document may include technical inaccuracies or typographical
+                errors.</p>
+            <p class="- topic/p " translate="no">TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL ARM BE LIABLE
+                FOR ANY DAMAGES, INCLUDING WITHOUT LIMITATION ANY DIRECT, INDIRECT, SPECIAL,
+                INCIDENTAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE
+                THEORY OF LIABILITY, ARISING OUT OF ANY USE OF THIS DOCUMENT, EVEN IF ARM HAS BEEN
+                ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+            <p class="- topic/p " translate="no">This document consists solely of commercial items. You shall be
+                responsible for ensuring that any use, duplication or disclosure of this document
+                complies fully with any relevant export laws and regulations to assure that this
+                document or any portion thereof is not exported, directly or indirectly, in
+                violation of such export laws. Use of the word “partner” in reference to Arm’s
+                customers is not intended to create or refer to any partnership relationship with
+                any other company. Arm may make changes to this document at any time and without
+                notice.</p>
+            <p class="- topic/p " translate="no">If any of the provisions contained in these terms conflict with any of
+                the provisions of any click through or signed written agreement covering this
+                document with Arm, then the click through or signed written agreement prevails over
+                and supersedes the conflicting provisions of these terms. This document may be
+                translated into other languages for convenience, and you agree that if there is any
+                conflict between the English version of this document and any translation, the terms
+                of the English version of the Agreement shall prevail.</p>
+            <p class="- topic/p " translate="no">The Arm corporate logo and words marked with <sup class="+ topic/ph hi-d/sup ">®</sup> or ™ are registered
+                trademarks or trademarks of Arm Limited (or its subsidiaries) in the US and/or
+                elsewhere. All rights reserved. Other brands and names mentioned in this document
+                may be the trademarks of their respective owners. Please follow Arm’s trademark
+                usage guidelines at <xref class="- topic/xref " format="html" href="http://www.arm.com/company/policies/trademarks" scope="external">http://www.arm.com/company/policies/trademarks</xref>. </p>
+            <p class="- topic/p ">Copyright © <ph class="- topic/ph " outputclass="bookcopyright" translate="no"/> Arm Limited (or its affiliates). All rights
+                reserved.</p>
+            <p class="- topic/p ">Arm Limited. Company 02557590 registered in England. </p>
+            <p class="- topic/p ">110 Fulbourn Road, Cambridge, England CB1 9NJ. </p>
+            <p class="- topic/p " translate="no">LES-PRE-20349</p>
+        </section>
+        <section class="- topic/section " outputclass="nonconfidential" translate="no" xml:lang="ja-jp">
+            <title class="- topic/title " translate="no">非機密著作権情報</title>
+            <p class="- topic/p " translate="no">本書は著作権などの権利により保護されており、本書に含まれる手順または実装に関する情報は、1 つ以上の特許または申請中の特許により保護されている可能性があります。 本書のいかなる部分も、Arm から事前に書面による明示的な承諾なく、何らかの形式や方法で無断複製することは許可されていません。<ph class="- topic/ph " outputclass="legal.emphasis" translate="no"> 特に記載がない限り、明示的であるか黙示的であるかを問わず、また禁反言やその他いかなる知的財産権のライセンスを許諾するものではありません。</ph></p>
+            <p class="- topic/p " translate="no">本書の情報には、実装により、いかなる第三者の特許も侵害されないことを確認する目的のために情報を使用せず、第三者にもそれを許可しないと承諾することを条件としてアクセスすることができます。</p>
+            <p class="- topic/p " translate="no">本書は、「現状」のまま提供されます。 Arm は、明示的、黙示的、または制定法上のいずれを問わず、いかなる表明も保証も行いません。これには、本書に関連した商品性、品質基準、非侵害、または特定目的への適合性に関する黙示的保証を含むが、これに限定されません。 疑義を避けるため、Arm は第三者の特許、著作権、営業機密、または他の権利の範囲および内容に関して、いかなる表明も行わず、識別や理解のための分析も行いません。</p>
+            <p class="- topic/p " translate="no">本書には、技術的に不正確な箇所および誤記が含まれる場合があります。</p>
+            <p class="- topic/p " translate="no">法により禁止されていない限りにおいて、Arm は本書の使用により生じた直接的、間接的、特別、付随的、懲罰的、または結果的損害などを含むすべての損害に対して、たとえそのような損害の可能性が事前に告知されていた場合でも、その原因および責任理論の如何に関わらず一切の責任を負わないものとします。</p>
+            <p class="- topic/p " translate="no">本書には、商品のみが含まれています。 本書の使用、複製、または開示が関連するあらゆる輸出法および輸出規制に完全に準拠し、本書が全体であれ一部であれ、該当する輸出法に違反して直接的または間接的に輸出されることがないことを保証する責任を負うものとします。 ARM のお客様に関連して「パートナー」という言葉が使用されている場合でも、他会社と提携関係を設立することや、言及することを意図するものではありません。 Arm は、通知することなくいつでも本書を変更することができます。</p>
+            <p class="- topic/p " translate="no">本契約のいずれかの規定と、Arm と締結された本書の内容を含むクリックスルー契約または署名済みの書面契約の間に矛盾がある場合、クリックスルー契約または署名済みの書面契約を本契約の規定より優先するものとします。 本書は、便宜上、他言語に翻訳される場合がありますが、本書の英語版と翻訳との間に矛盾がある場合、契約書の英語版に含まれる規定を優先することに同意するものとします。</p>
+            <p class="- topic/p " translate="no">Arm のロゴおよび ® または ™ のマークが付いた語は、Arm Limited (またはその子会社) の米国およびその他の国における登録商標または商標です。 All rights reserved. 本書に記載されている他の製品名は、各社の所有する商標です。 Arm の 商標の使用に関する次のガイドラインに従ってください。<xref class="- topic/xref " format="html" href="http://www.arm.com/company/policies/trademarks" scope="external">http://www.arm.com/company/policies/trademarks</xref></p>
+            <p class="- topic/p " translate="no">Copyright © <ph class="- topic/ph " outputclass="bookcopyright" translate="no"/>, Arm Limited or its affiliates. All
+                rights reserved.</p>
+            <p class="- topic/p " translate="no">Arm Limited. Company 02557590 registered in
+                England.</p>
+            <p class="- topic/p " translate="no">110 Fulbourn Road, Cambridge, England CB1 9NJ.</p>
+            <p class="- topic/p " translate="no">LES-PRE-20349</p>
+            
+        </section>
+        <section class="- topic/section " outputclass="nonconfidential" translate="no" xml:lang="ko-kr">
+            <title class="- topic/title " translate="no">공개 소유권 고지 사항</title>            
+            <p class="- topic/p " translate="no">이 문서는 저작권 및 기타 관련 권한에 의해 보호되며 이 문서에 포함된 정보의 실행 및 구현은 하나 이상의 특허 또는 출원 중인 특허 신청에 의해 보호될 수 있습니다. 이 문서의 어떠한 부분도 Arm의 명시적인 사전 서면 승인 없이는 어떠한 수단에 의해서든 어떠한 형태로도 복제할 수 없습니다. <ph class="- topic/ph " outputclass="legal.emphasis" translate="no">구체적인 진술이 있는 경우가 아닌 한 이 문서로 금반언 또는 다른 방식에 의해 지적 재산권에 대한 명시적 또는 암시적 라이센스가 부여되지 않습니다.</ph></p>
+            <p class="- topic/p " translate="no">귀하는 이 문서의 정보를 Arm의 사전 서면 동의 없이 구현 시 타사 특허를 침해하는지 확인할 목적으로 사용하거나 다른 사람이 사용하도록 허용하지 않는 것에 동의해야만 정보에 액세스할 수 있습니다.</p>
+            <p class="- topic/p " translate="no">이 문서는 "있는 그대로" 제공됩니다. Arm은 암시적 상품성 보증, 만족스러운 품질, 문서와 관련해 특정 목적 적합성이 포함되나 그에 국한되지 않는 명시적, 암시적 또는 법적 진술, 보증을 하지 않습니다. 의문을 방지할 수 있도록, Arm은 타사 특허, 저작권, 사업 비밀 또는 기타 권한의 범위 및 내용을 식별 또는 파악하기 위한 분석과 관련하여 어떠한 진술도 하지 않으며 그러한 분석에 착수하지도 않았습니다.</p>
+            <p class="- topic/p " translate="no">이 문서에는 기술적 부정확성 또는 오타가 포함되어 있을 수 있습니다.</p>
+            <p class="- topic/p " translate="no">법률에 의해 금지되지 않는 범위 내에서, Arm은 Arm이 해당 손해 발생 가능성에 대해 고지를 받았더라도 원인 및 책임 이론에 관계없이, 이 문서 사용에 의해 발생하는 직접적, 간접적, 특별적, 우발적, 징벌적 또는 결과적 손해가 포함되나 그에 국한되지 않는 손해에 대해 책임을 지지 않습니다.</p>
+            <p class="- topic/p " translate="no">이 문서는 상업적 항목으로만 구성됩니다. 귀하는 이 문서를 사용, 중복 또는 공개 시 이 문서 또는 문서의 어떤 부분을 관련 수출법을 위반하여 수출되지 않도록 보장하기 위해 관련 수출법 및 규정을 완전하게 준수할 책임이 있습니다. Arm의 고객을 가리키는 "파트너"라는 단어를 사용하더라도 다른 회사와의 파트너 관계를 형성하거나 이를 가리키려는 의도가 아닙니다. Arm은 언제든지 사전 통지 없이 이 문서를 변경할 수 있습니다.</p>
+            <p class="- topic/p " translate="no">이 약관에 포함된 조항 중 Arm과 이 문서가 포함되는 클릭 또는 서명을 통해 체결된 서면 계약의 조항과 충돌하는 것이 있는 경우 클릭 또는 서명을 통해 체결된 서면 계약이 이 약관의 충돌 조항에 우선하며 이를 대체합니다. 이 문서는 편의를 위해 다른 언어로 번역될 수 있으며 귀하는 이 문서의 영문본과 번역이 충돌하는 경우 영문본 계약의 약관이 우선 적용됨에 동의합니다.</p>
+            <p class="- topic/p " translate="no">Arm의 기업 로고 및 ® 또는 ™으로 표시된 단어는 미국 및/또는 다른 지역에서 Arm Limited(또는 자회사)의 등록 상표 또는 상표입니다. All rights reserved. 그 외 이 문서에 언급된 브랜드 및 이름은 해당 소유자의 상표일 수 있습니다. <xref class="- topic/xref " format="html" href="http://www.arm.com/company/policies/trademarks" scope="external">http://www.arm.com/company/policies/trademarks</xref>에 있는 Arm의 상표 사용 지침을 따르십시오.</p>
+            <p class="- topic/p " translate="no">Copyright © <ph class="- topic/ph " outputclass="bookcopyright" translate="no"/>, Arm Limited 또는 그 계열사. All rights
+                reserved.</p>
+            <p class="- topic/p " translate="no">Arm Limited. 잉글랜드 등록 법인 제02557590호.</p>
+            <p class="- topic/p " translate="no">110 Fulbourn Road, Cambridge, England CB1 9NJ.</p>
+            <p class="- topic/p " translate="no">LES-PRE-20349</p>
+        </section>
+        <section class="- topic/section " outputclass="nonconfidential" translate="no" xml:lang="zh-cn">
+            <title class="- topic/title " translate="no">非机密专有权声明</title>    
+            <p class="- topic/p " translate="no">本文档受版权和其他相关权利的保护，实践或实施本文档中所含信息可能受到一项或多项专利或待定专利申请的保护。 未经 Arm 事先明确书面许可，不得以任何形式通过任何手段复制本文档的任何部分。<ph class="- topic/ph " outputclass="legal.emphasis" translate="no"> 除非明确说明，否则本文档未以禁止反言或其他方式授予任何知识产权方面的许可，无论是明示还是暗示许可。</ph></p>
+            <p class="- topic/p " translate="no">您对本文档所含信息的访问取决于您是否接受不会出于确定实施是否侵犯任何第三方专利的目的而使用或允许其他人使用此信息的条件。</p>
+            <p class="- topic/p " translate="no">本文档“按原样”提供。 Arm 就本文档不作任何陈述和保证，无论是明示、暗示或法定保证，包括但不限于对适销性、满意的质量、不侵权或针对特定目的的适用性的暗示保证。 为避免疑义，Arm 不就在分析的基础上识别或理解第三方专利、版权、商业机密或其他权利的范围和内容作出任何陈述和承诺。</p>
+            <p class="- topic/p " translate="no">本文档可能包含技术或排版上的错误。</p>
+            <p class="- topic/p " translate="no">在不受法律禁止的范围内，Arm 在任何情况下都不会对因使用本文档引起的任何损害承担责任，包括但不限于任何直接、间接、特殊、连带、惩罚性或后果性损害，无论损害如何造成以及何种责任理论，即便 Arm 已被告知有此类损害的可能性。</p>
+            <p class="- topic/p " translate="no">本文档仅包含商业内容。 您应负责确保本文档的任何使用、复制或披露完全符合任何相关的出口法律法规，以确保本文档或其任何部分不会在违反相关出口法律法规的情况下直接或间接出口。 在提及 Arm 的客户时使用“合作伙伴”一词并非意欲建立或指代与任何其他公司的任何合作伙伴关系。 Arm 可以随时对本文档进行更改，恕不另行通知。</p>
+            <p class="- topic/p " translate="no">如果这些条款中的任何规定与同 Arm 达成的涵盖本文档的任何点击或签署的书面协议中的任何规定有冲突，则以点击或签署的书面协议为准，并取代这些条款中的冲突规定。 本文档可以翻译成其他语言以方便使用，您并且同意，若本文档的英文版与任何翻译版出现任何冲突时，将以协议的英文版条款为准。</p>
+            <p class="- topic/p " translate="no">Arm 公司的徽标以及带有 ® 或 ™ 标记的文字为 Arm Limited（或其子公司）在美国和/或其他地方的注册商标或商标。 保留所有权利。 本文档中提及的其他品牌和名称可能是其各自所有者的商标。 请遵循 <xref class="- topic/xref " format="html" href="http://www.arm.com/company/policies/trademarks" scope="external">http://www.arm.com/company/policies/trademarks</xref> 上的 Arm 商标使用指南。 </p>
+            <p class="- topic/p " translate="no">版权 © <ph class="- topic/ph " outputclass="bookcopyright" translate="no"/>，归 Arm Limited 或其关联公司所有。保留所有权利。</p>
+            <p class="- topic/p " translate="no">Arm Limited。英格兰注册公司，注册号：02557590。</p>
+            <p class="- topic/p " translate="no">110 Fulbourn Road, Cambridge, England CB1 9NJ。</p>
+            <p class="- topic/p " translate="no">LES-PRE-20349</p>
+        </section>
+        
+    </refbody>
+</reference>

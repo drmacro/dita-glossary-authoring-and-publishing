@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="lau1457099740111" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+	<title class="- topic/title " xtrc="title:1;4:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">DISR_EL1, Deferred Interrupt Status Register, EL1</title><titlealts class="- topic/titlealts "/>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;5:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">The DISR_EL1 records the SError interrupts consumed by an <codeph class="+ topic/ph pr-d/codeph " xtrc="codeph:1;5:138" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">ESB</codeph> instruction. </shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;6:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;9:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+		<section class="- topic/section " xtrc="section:1;10:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+			<title class="- topic/title " xtrc="title:2;11:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Bit field descriptions</title>
+			<p class="- topic/p " xtrc="p:1;12:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">DISR_EL1 is a 64-bit register, and is part of the registers <term class="- topic/term " xtrc="term:1;12:114" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Reliability, Availability, Serviceability</term> (RAS)
+				functional group.</p>
+			
+			<fig class="- topic/fig " xtrc="fig:1;15:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+				<title class="- topic/title " xtrc="title:3;16:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">DISR_EL1 bit assignments, DISR_EL1.IDS is 0</title>
+				
+				<image class="- topic/image " href="lau1464781000550.svg" placement="inline" xtrc="image:1;18:82" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<alt class="- topic/alt " xtrc="alt:1;19:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">DISR_EL1 bit assignments, DISR_EL1.IDS is 0</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl " xtrc="dl:1;22:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:1;23:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:1;24:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0, [63:32]</dt>
+					<dd class="- topic/dd " xtrc="dd:1;25:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:2;25:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:2;27:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:2;28:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">A, [31]</dt>
+					<dd class="- topic/dd " xtrc="dd:2;29:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+						<p class="- topic/p " xtrc="p:2;30:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Set to 1 when ESB defers an asynchronous SError
+							interrupt. If the implementation does not include any synchronizable
+							sources of SError interrupt, this bit is <term class="- topic/term " outputclass="archterm" xtrc="term:3;32:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">res0</term>.</p>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:3;35:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:3;36:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0, [30:25]</dt>
+					<dd class="- topic/dd " xtrc="dd:3;37:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:4;37:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:4;39:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:4;40:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">IDS, [24]</dt>
+					<dd class="- topic/dd " xtrc="dd:4;41:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+						<p class="- topic/p " xtrc="p:3;42:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Indicates the type of format the deferred SError
+							interrupt uses. The value of this bit is:</p>
+						<dl class="- topic/dl " compact="yes" xtrc="dl:2;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:5;45:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+								<dt class="- topic/dt " xtrc="dt:5;46:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:2;46:99" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">0</codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:5;47:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+									<p class="- topic/p " xtrc="p:4;48:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Deferred error uses architecturally-defined
+										format.</p>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:6;55:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:6;56:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0, [23:13]</dt>
+					<dd class="- topic/dd " xtrc="dd:6;57:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:5;57:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0</term>.</dd>
+				</dlentry>
+				
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:7;61:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:7;62:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">AET, [12:10]</dt>
+					<dd class="- topic/dd " xtrc="dd:7;63:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Asynchronous Error Type. Describes the state of the <term class="- topic/term " keyref="core" xtrc="term:6;63:102" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">core</term> after taking an asynchronous <term class="- topic/term " keyref="dataabort" xtrc="term:7;63:168" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Data Abort</term> <term class="- topic/term " keyref="exception" xtrc="term:8;63:211" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">exception</term>. The possible values are: <dl class="- topic/dl " compact="yes" outputclass="termwidthpc12" xtrc="dl:3;63:320" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+						<dlentry class="- topic/dlentry " xtrc="dlentry:8;64:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+							<dt class="- topic/dt " xtrc="dt:8;65:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:3;65:98" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">000</codeph></dt>
+							<dd class="- topic/dd " xtrc="dd:8;66:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Uncontainable error (UC).</dd>
+						</dlentry>
+						<dlentry class="- topic/dlentry " xtrc="dlentry:9;68:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+							<dt class="- topic/dt " xtrc="dt:9;69:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:4;69:98" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">001</codeph></dt>
+							<dd class="- topic/dd " xtrc="dd:9;70:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Unrecoverable error (UEU).</dd>
+						</dlentry>
+						</dl><note class="- topic/note " xtrc="note:1;72:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+						<p class="- topic/p " xtrc="p:5;73:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">The recovery software must also examine any implemented <term class="- topic/term " keyref="fault" xtrc="term:9;73:106" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">fault</term> records to determine the location and extent of the error.</p>
+						</note></dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:10;77:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:10;78:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">EA, [9]</dt>
+					<dd class="- topic/dd " xtrc="dd:10;79:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:10;79:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry " xtrc="dlentry:11;81:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:11;82:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0, [8:6]</dt>
+					<dd class="- topic/dd " xtrc="dd:11;83:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Reserved, <term class="- topic/term " outputclass="archterm" xtrc="term:11;83:91" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">RES0</term>.</dd>
+				</dlentry>
+				
+				<dlentry class="- topic/dlentry " xtrc="dlentry:12;86:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:12;87:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">DFSC, [5:0]</dt>
+					<dd class="- topic/dd " xtrc="dd:12;88:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+						<p class="- topic/p " xtrc="p:6;89:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Data Fault Status Code. The possible values of this field are:</p>
+						<dl class="- topic/dl " compact="yes" xtrc="dl:4;90:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+							<dlentry class="- topic/dlentry " xtrc="dlentry:13;91:42" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+								<dt class="- topic/dt " xtrc="dt:13;92:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:5;92:99" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">010001</codeph></dt>
+								<dd class="- topic/dd " xtrc="dd:13;93:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+									<p class="- topic/p " xtrc="p:7;94:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Asynchronous SError interrupt.</p>
+									<note class="- topic/note " xtrc="note:2;95:38" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">In <term class="- topic/term " keyref="aarch32" xtrc="term:12;95:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">AArch32</term> the <codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any" xtrc="codeph:6;95:149" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">010001</codeph> code previously meant an Asynchronous External Abort on memory access. With the RAS extension, it extends to include any asynchronous SError interrupt. The Parity Error codes are not used in the RAS extension.</note>
+								</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				
+				
+			</dl>
+			
+			<dl class="- topic/dl " xtrc="dl:5;105:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+				<dlentry class="- topic/dlentry " xtrc="dlentry:14;106:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+					<dt class="- topic/dt " xtrc="dt:14;107:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Configurations</dt>
+					<dd class="- topic/dd " xtrc="dd:14;108:30" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+						
+						<p class="- topic/p " xtrc="p:8;110:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">There are no configuration notes.</p>
+						<p class="- topic/p " xtrc="p:9;111:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Bit fields and details not provided in this description
+							are architecturally defined. See the <cite class="- topic/cite " xtrc="cite:1;112:73" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml"><ph class="- topic/ph " xtrc="ph:1;112:97" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">
+                            <keyword class="- topic/keyword " xtrc="keyword:1;113:63" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;113:100" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword " xtrc="keyword:2;113:183" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Arm</keyword>v8, for <keyword class="- topic/keyword " xtrc="keyword:3;113:238" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/lau1457099740111.xml">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

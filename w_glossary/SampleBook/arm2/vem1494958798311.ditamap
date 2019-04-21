@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="vem1494958798311" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+	<title class="- topic/title ">Ares AMU AArch64 registers</title>
+	<topicmeta class="- map/topicmeta ">
+		<shortdesc class="- map/shortdesc "/>
+		<permissions view="nonconfidential" class="- topic/permissions "/>
+	</topicmeta>
+	<topicref href="bpu1483524952193.xml" class="- map/topicref "/>
+	<topicref href="yoh1483534950148.xml" class="- map/topicref " keys="amcntenclrel0"/>
+	<topicref href="lxh1483535755178.xml" class="- map/topicref " keys="amcntensetelo"/>
+	<topicref href="cxj1483536984411.xml" class="- map/topicref " keys="amcfgrel0"/>
+	<topicref href="orf1483602317618.xml" class="- map/topicref " keys="amuserenrel0"/>
+	<topicref href="pak1483604323973.xml" class="- map/topicref " keys="amxevcntrel0"/>
+	<topicref href="xwa1483605345151.xml" class="- map/topicref " keys="amxevtyperel0"/>
+</map>

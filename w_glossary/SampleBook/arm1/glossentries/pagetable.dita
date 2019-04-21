@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="pagetable">
+  <glossterm>page table</glossterm>
+  <glossdef>A table, held in memory, that contains descriptors that define the mapping between a supplied input address and the corresponding output address, and the properties of the memory region at that address.</glossdef>
+</glossentry>

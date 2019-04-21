@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="in_circuitemulator">
+  <glossterm>In-Circuit Emulator</glossterm>
+  <glossdef>A device that provides access to the signals of a circuit while that circuit is operating, and lets you moderate those signals.</glossdef>
+</glossentry>

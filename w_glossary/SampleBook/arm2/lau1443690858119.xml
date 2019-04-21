@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443690858119" xml:lang="en-us">
+  <title class="- topic/title ">PMPIDRn, Performance Monitors Peripheral Identification Register 5-7</title>
+  <shortdesc class="- topic/shortdesc ">No information is held in the Peripheral ID5, Peripheral ID6, and Peripheral ID7
+    Registers.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">They are reserved for future use and are <term class="- topic/term " outputclass="archterm">res0</term>.</p>
+    </section>
+  </refbody>
+</reference>

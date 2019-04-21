@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443445664210" xml:lang="en-us">
+  <title class="- topic/title " id="TitleAArch32InstructionSetAttributeRegister5_EL1">ID_ISAR5_EL1, AArch32 Instruction Set Attribute Register 5, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The ID_ISAR5_EL1 provides information about the instruction sets that
+    the core implements.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ID_ISAR5_EL1 is a 32-bit register, and is part of the Identification
+        registers functional group.</p>
+      <p class="- topic/p ">This register is Read Only.</p>
+      <fig class="- topic/fig " id="fig_npp_nty_nv">
+        <title class="- topic/title ">ID_ISAR5_EL1 bit assignments</title>
+        <image class="- topic/image " href="lau1443445701102.svg" id="image_vrp_nty_nv" placement="inline">
+          <alt class="- topic/alt ">ID_ISAR5_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      
+      
+      
+      
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:28]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc14">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RDM, [27:24]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">VQRDMLAH and VQRDMLSH instructions in <term keyref="aarch32">AArch32</term>. The value is:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">VQRDMLAH and VQRDMLSH instructions are implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">[23:20]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc14">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CRC32, [19:16]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates whether CRC32 instructions are implemented in 
+              state. The value is:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">CRC32B</codeph>, <codeph class="+ topic/ph pr-d/codeph ">CRC32H</codeph>, <codeph class="+ topic/ph pr-d/codeph ">CRC32W</codeph>,
+                    <codeph class="+ topic/ph pr-d/codeph ">CRC32CB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">CRC32CH</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">CRC32CW</codeph> instructions
+                  are implemented.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SHA2, [15:12]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates whether SHA2 instructions are implemented in  state.
+              The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">No SHA2 instructions implemented. This is the value when the
+                  Cryptographic Extensions are not implemented or are disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">SHA256H</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHA256H2</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHA256SU0</codeph>,
+                  and <codeph class="+ topic/ph pr-d/codeph ">SHA256SU1</codeph> instructions are implemented. This
+                  is the value when the Cryptographic Extensions are implemented and enabled.</dd>
+              </dlentry>
+            </dl>
+            
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SHA1, [11:8]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates whether SHA1 instructions are implemented in  state.
+              The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">No SHA1 instructions implemented. This is the value when the
+                  Cryptographic Extensions are not implemented or are disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">SHA1C</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHA1P</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHA1M</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHA1H</codeph>, <codeph class="+ topic/ph pr-d/codeph ">SHA1SU0</codeph>, and <codeph class="+ topic/ph pr-d/codeph ">SHA1SU1</codeph> instructions are implemented. This is the value
+                  when the Cryptographic Extensions are implemented and enabled.</dd>
+              </dlentry>
+            </dl>
+           
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">AES, [7:4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates whether AES instructions are implemented in  state.
+              The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">0</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">No AES instructions implemented. This is the value when the
+                  Cryptographic Extensions are not implemented or are disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">2</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd ">
+                  <ul class="- topic/ul " id="ul_dly_r3n_vw">
+                    <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">AESE</codeph>, <codeph class="+ topic/ph pr-d/codeph ">AESD</codeph>, <codeph class="+ topic/ph pr-d/codeph ">AESMC</codeph>, and
+                        <codeph class="+ topic/ph pr-d/codeph ">AESIMC</codeph> implemented.</li>
+                    <li class="- topic/li "><codeph class="+ topic/ph pr-d/codeph ">PMULL</codeph>  and <codeph class="+ topic/ph pr-d/codeph ">PMULL2</codeph> instructions operating on 64-bit data.</li>
+                  </ul>
+                  <p class="- topic/p ">This is the value when the Cryptographic Extensions are
+                    implemented and enabled.</p>
+                </dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SEVL, [3:0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates whether the <codeph class="+ topic/ph pr-d/codeph ">SEVL</codeph>
+              instruction is implemented:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <codeph class="+ topic/ph pr-d/codeph ">
+                    <ph class="- topic/ph " otherprops="g.number.hex">1</ph>
+                  </codeph>
+                </dt>
+                <dd class="- topic/dd "><codeph class="+ topic/ph pr-d/codeph ">SEVL</codeph> implemented to send
+                  event local.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            
+            
+            <p class="- topic/p ">ID_ISAR5 must be interpreted with ID_ISAR0_EL1, ID_ISAR1_EL1, ID_ISAR2_EL1, ID_ISAR3_EL1, ID_ISAR4_EL1, and ID_ISAR6_EL1. See:</p>
+            <ul class="- topic/ul " id="ul_f41_rmy_2v">
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443437809604.xml" keyref="IdIsar0El1Aarch32InstructionSetAttributeRegister0El1" type="reference">ID_ISAR0_EL1,  Instruction Set Attribute Register 0, EL1<desc class="- topic/desc ">The ID_ISAR0_EL1 provides information about the instruction sets implemented by the <term keyref="core">core</term> in 		.</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443437895509.xml" keyref="IdIsar1El1Aarch32InstructionSetAttributeRegister1El1" type="reference">ID_ISAR1_EL1,  Instruction Set Attribute Register 1, EL1<desc class="- topic/desc ">The ID_ISAR1_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445407754.xml" keyref="IdIsar2El1Aarch32InstructionSetAttributeRegister2El1" type="reference">ID_ISAR2_EL1,  Instruction Set Attribute Register 2, EL1<desc class="- topic/desc ">The ID_ISAR2_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445482819.xml" keyref="IdIsar3El1Aarch32InstructionSetAttributeRegister3El1" type="reference">ID_ISAR3_EL1,  Instruction Set Attribute Register 3, EL1<desc class="- topic/desc ">The ID_ISAR3_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="lau1443445566298.xml" keyref="IdIsar4El1Aarch32InstructionSetAttributeRegister4El1" type="reference">ID_ISAR4_EL1,  Instruction Set Attribute Register 4, EL1<desc class="- topic/desc ">The ID_ISAR4_EL1 provides information about the instruction sets     implemented by the  in .</desc></xref>.</li>
+              <li class="- topic/li "><xref class="- topic/xref " href="nwd1493817464437.xml" keyref="IdIsar6El1Aarch32InstructionSetAttributeRegister6El1" type="reference">ID_ISAR6_EL1,  Instruction Set Attribute Register 6, EL1<desc class="- topic/desc ">The ID_ISAR6_EL1 provides information about the instruction sets that     the  implements.</desc></xref>.</li>
+            </ul>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details that are not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+    </section>
+    
+  </refbody>
+</reference>

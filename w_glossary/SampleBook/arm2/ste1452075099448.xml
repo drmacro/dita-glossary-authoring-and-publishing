@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1452075099448" xml:lang="en-us">
+  <title class="- topic/title ">AArch64 PMU registers</title>
+  <shortdesc class="- topic/shortdesc ">This chapter describes the AArch64 PMU registers and shows examples of
+    how to use them.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "/>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="joh1440673879510.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">AArch64 PMU register summary</linktext><desc class="- topic/desc ">The PMU counters and their       associated control registers are accessible in the AArch64 Execution state with <codeph class="+ topic/ph pr-d/codeph ">MRS</codeph> and <codeph class="+ topic/ph pr-d/codeph ">MSR</codeph>       instructions.</desc></link><link class="- topic/link " format="dita" href="ehx1477942842064.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">PMCEID0_EL0, Performance Monitors Common Event Identification Register 0, EL0 (Ares/Enyo specific)</linktext><desc class="- topic/desc ">The PMCEID0_EL0 defines which common architectural and common     microarchitectural feature events are implemented.</desc></link><link class="- topic/link " format="dita" href="wyw1478113204130.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">PMCEID1_EL0, Performance Monitors Common Event Identification Register 1, EL0 (Ares/Enyo Specific)</linktext><desc class="- topic/desc ">The PMCEID1_EL0 defines which common architectural and common     microarchitectural feature events are implemented.</desc></link><link class="- topic/link " format="dita" href="evu1477587576653.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">PMCR_EL0, Performance Monitors Control Register, EL0</linktext><desc class="- topic/desc ">The PMCR_EL0 provides details of the Performance Monitors     implementation, including the number of counters implemented, and configures and controls the     counters.</desc></link></linkpool></linkpool></related-links></reference>

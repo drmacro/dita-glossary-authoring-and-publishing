@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1457341307460" xml:lang="en-us">
+  <title class="- topic/title ">TTBR1_EL2, Translation Table Base Register 1, EL2</title>
+  <shortdesc class="- topic/shortdesc ">TTBR1_EL2 has the same format and contents as TTBR1_EL1. </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">See <ph class="- topic/ph "><xref class="- topic/xref " href="lau1458646831483.xml" keyref="Ttbr1El1TranslationTableBaseRegister1El1" type="reference">TTBR1_EL1, Translation Table Base Register 1, EL1<desc class="- topic/desc ">The TTBR1_EL1 holds the base address of <term keyref="translationtable">translation table</term> 1, and     information about the memory it occupies. This is one of the s for the stage 1     translation of memory accesses at EL0 and EL1.</desc></xref></ph>.</p>
+    </section>
+  </refbody>
+</reference>

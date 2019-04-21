@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="etz1477585331163" outputclass="nolist" xml:lang="en-us">
+	<title class="- topic/title ">TLB organization</title>
+	<shortdesc class="- topic/shortdesc ">The TLB is a cache of recently executed page translations within the MMU.
+		The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core
+		implements a two-level TLB structure. The TLB stores all page sizes and is responsible for
+		breaking these down in to smaller pages when required for the data or instruction L1
+		TLB.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p "/>
+		</section>
+	</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="fbf1477585445698.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Instruction L1 TLB</linktext><desc class="- topic/desc ">The instruction L1 TLB is implemented as a 48-entry fully associative     structure. This TLB caches entries at the 4KB, 16KB, 64KB, 2MB, and 32MB granularity of VA to PA     mapping only.</desc></link><link class="- topic/link " format="dita" href="clm1477585597992.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Data L1 TLB</linktext><desc class="- topic/desc ">The data L1 TLB is a 48-entry fully associative TLB that is used by load 		and store operations. The cache entries have 4KB, 16KB, 64KB, 2MB, and 512MB granularity of 		VA to PA mappings only. </desc></link><link class="- topic/link " format="dita" href="blh1477585707279.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">L2 TLB</linktext><desc class="- topic/desc ">The L2 TLB structure is shared by instruction and data. It handles     misses from the instruction and data L1 TLBs.</desc></link></linkpool></linkpool></related-links></reference>

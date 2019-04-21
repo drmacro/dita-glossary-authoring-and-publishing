@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="rviss">
+  <glossterm>RVISS</glossterm>
+  <glossdef>One of the Arm simulators supplied with RVDS. RealView Instruction Set Simulator is a collection of programs that simulate the instruction sets and architecture of various Arm processors. This provides instruction-accurate simulation and enables Arm and Thumb executable programs to be run on non-native hardware. RVISS provides modules that model:the Arm processorthe memory used by the processor. There are alternative predefined models for each of these parts. However, you can create your own models if a supplied model does not meet your requirements.See Also Instruction Set System Model (ISSM) and Real Time System Model (RTSM).</glossdef>
+</glossentry>

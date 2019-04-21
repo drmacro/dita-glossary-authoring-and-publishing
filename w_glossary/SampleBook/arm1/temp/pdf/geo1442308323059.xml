@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="geo1442308323059" xml:lang="en-us" xtrc="concept:1;3:182" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+        
+        <title class="- topic/title " xtrc="title:1;5:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Design tasks</title><titlealts class="- topic/titlealts "/>
+        <shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;6:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">The <ph class="- topic/ph " xtrc="ph:1;6:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml"><keyword class="- topic/keyword " xtrc="keyword:1;6:109" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:1;6:146" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Cortex</tm></keyword><keyword class="- topic/keyword " xtrc="keyword:2;6:201" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">‑A76</keyword></ph> core is delivered as a synthesizable <term class="- topic/term " xtrc="term:1;6:286" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Register Transfer Level</term> (RTL) description in Verilog HDL. Before you
+                can use the <ph class="- topic/ph " xtrc="ph:2;7:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml"><keyword class="- topic/keyword " xtrc="keyword:3;7:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml"><tm class="- topic/tm " tmtype="reg" xtrc="tm:2;7:124" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Cortex</tm></keyword><keyword class="- topic/keyword " xtrc="keyword:4;7:179" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">‑A76</keyword></ph> core,
+                you must implement it, integrate it, and program it.</shortdesc>
+        <prolog class="- topic/prolog " xtrc="prolog:1;9:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                <publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+                </prolog>
+        <conbody class="- topic/body  concept/conbody " xtrc="conbody:1;12:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                <p class="- topic/p " xtrc="p:1;13:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">A different party can perform each of the following tasks. Each
+                        task can include implementation and integration choices that affect the
+                        behavior and features of the <term class="- topic/term " keyref="core" xtrc="term:2;15:74" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">core</term>.</p>
+                <dl class="- topic/dl " xtrc="dl:1;16:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                        <dlentry class="- topic/dlentry " xtrc="dlentry:1;17:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                                <dt class="- topic/dt " xtrc="dt:1;18:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Implementation</dt>
+                                <dd class="- topic/dd " xtrc="dd:1;19:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">The implementer configures and synthesizes the
+                                        RTL to produce a hard macrocell. This task includes
+                                        integrating RAMs into the design.</dd>
+                        </dlentry>
+                        <dlentry class="- topic/dlentry " xtrc="dlentry:2;23:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                                <dt class="- topic/dt " xtrc="dt:2;24:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Integration</dt>
+                                <dd class="- topic/dd " xtrc="dd:2;25:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">The integrator connects the macrocell into a
+                                        SoC. This task includes connecting it to a memory system and
+                                        peripherals.</dd>
+                        </dlentry>
+                        <dlentry class="- topic/dlentry " xtrc="dlentry:3;29:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                                <dt class="- topic/dt " xtrc="dt:3;30:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Programming</dt>
+                                <dd class="- topic/dd " xtrc="dd:3;31:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">In the final task, the system programmer
+                                        develops the software to configure and initialize the
+                                         and tests the application software.</dd>
+                        </dlentry>
+                </dl>
+                <p class="- topic/p " xtrc="p:2;36:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">The operation of the final <term class="- topic/term " keyref="device" xtrc="term:3;36:88" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">device</term> depends on the following:</p>
+                <dl class="- topic/dl " xtrc="dl:2;37:41" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                        <dlentry class="- topic/dlentry " xtrc="dlentry:4;38:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                                <dt class="- topic/dt " xtrc="dt:4;39:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Build configuration</dt>
+                                <dd class="- topic/dd " xtrc="dd:4;40:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">The implementer chooses the options that affect
+                                        how the RTL source files are pre-processed. These options
+                                        usually include or exclude logic that affects one or more of
+                                        the area, maximum frequency, and features of the resulting
+                                        macrocell.</dd>
+                        </dlentry>
+                        <dlentry class="- topic/dlentry " xtrc="dlentry:5;46:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                                <dt class="- topic/dt " xtrc="dt:5;47:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Configuration inputs</dt>
+                                <dd class="- topic/dd " xtrc="dd:5;48:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">The integrator configures some features of the
+                                         by tying inputs to specific values. These
+                                        configuration settings affect the start-up behavior before
+                                        any software configuration is made. They can also limit the
+                                        options available to the software.</dd>
+                        </dlentry>
+                        <dlentry class="- topic/dlentry " xtrc="dlentry:6;54:59" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">
+                                <dt class="- topic/dt " xtrc="dt:6;55:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">Software configuration</dt>
+                                <dd class="- topic/dd " xtrc="dd:6;56:57" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/geo1442308323059.xml">The programmer configures the  by
+                                        programming particular values into registers. The
+                                        configuration choices affect the behavior of the
+                                        .</dd>
+                        </dlentry>
+                </dl>
+        </conbody>
+</concept>

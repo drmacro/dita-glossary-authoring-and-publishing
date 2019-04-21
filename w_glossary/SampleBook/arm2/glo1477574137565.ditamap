@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" id="glo1477574137565" xml:lang="en-us">
+    <title class="- topic/title ">Power Management</title><prolog class="- topic/prolog "/>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Technical Overview</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </topicmeta>
+    <topicref class="- map/topicref " href="lau1465393370075.xml"/>
+    <topicref class="- map/topicref " href="xod1473422689416.xml" keys="xod1473422689416"/>
+    <topicref class="- map/topicref " href="lau1465905803414.xml" keys="lau1465905803414"/>
+    <topicref class="- map/topicref " href="cts1473763120148.xml" keys="cts1473763120148">
+        <topicref class="- map/topicref " href="joh1440597046095.xml" keys="joh1440597046095"/>
+        <topicref class="- map/topicref " href="joh1440597048738.xml" keys="joh1440597048738"/>
+    </topicref>
+    <topicref class="- map/topicref " href="joh1441894748225.xml" keys="joh1441894748225"/>
+    <topicref class="- map/topicref " href="lau1466669109003.xml" keys="lau1466669109003">
+        <topicref class="- map/topicref " href="joh1441897107946.xml" keys="joh1441897107946"/>
+        <topicref class="- map/topicref " href="joh1441900294156.xml" keys="joh1441900294156"/>
+        <topicref class="- map/topicref " href="joh1441900491084.xml" keys="joh1441900491084"/>
+        <topicref class="- map/topicref " href="joh1441899604862.xml" keys="joh1441899604862"/>
+        <topicref class="- map/topicref " href="joh1441899904916.xml" keys="joh1441899904916"/>
+    </topicref>
+    <topicref class="- map/topicref " href="xxw1474620333454.xml"/>
+    <topicref class="- map/topicref " href="vyz1474288642391.xml"/>
+    <topicref class="- map/topicref " href="lau1466686034784.xml" keys="joh1443703079810"/>
+    <topicref class="- map/topicref " href="joh1442223924802.xml"/>
+</map>

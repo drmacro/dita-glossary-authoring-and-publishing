@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443434705598" xml:lang="en-us">
+  
+  
+  <title class="- topic/title " id="TitleAuxiliaryControlRegister_EL2">ACTLR_EL2, Auxiliary Control Register, EL2</title>
+  <shortdesc class="- topic/shortdesc ">The ACTLR_EL2 provides <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options for EL2.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">ACTLR_EL2 is a 64-bit register, and is part of:</p>
+      <ul class="- topic/ul " id="ul_w5l_cnd_cv">
+        <li class="- topic/li ">The Virtualization registers functional group.</li>
+        <li class="- topic/li ">The Other system control registers functional group.</li>
+        <li class="- topic/li ">The <term class="- topic/term " outputclass="archterm">IMPLEMENTATION
+            DEFINED</term> functional group.</li>
+      </ul>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">ACTLR_EL2 bit assignments</title>
+        
+        <image class="- topic/image " href="dwp1494429634840.svg" placement="inline">
+          <alt class="- topic/alt ">ACTLR_EL2 bit assignments</alt>
+        </image>
+        
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [63:13]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt ">
+                  <term class="- topic/term " outputclass="archterm">RES0</term>
+                </dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CLUSTERPMUEN, [12]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Performance Management Registers enable. The possible values
+              are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">CLUSTERPM* registers are not write-accessible from a lower
+                  <term keyref="exceptionlevel">Exception level</term>. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">CLUSTERPM* registers are write-accessible from EL1 Non-secure
+                  if they are write-accessible from EL2.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">SMEN, [11]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Scheme Management Registers enable. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Registers CLUSTERACPSID, CLUSTERSTASHSID, CLUSTERPARTCR,
+                  CLUSTERBUSQOS, and CLUSTERTHREADSIDOVR are not write-accessible from EL1
+                  Non-secure. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Registers CLUSTERACPSID, CLUSTERSTASHSID, CLUSTERPARTCR,
+                  CLUSTERBUSQOS, and CLUSTERTHREADSIDOVR are write-accessible from EL1 Non-secure if
+                  they are write-accessible from EL2.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [9:8]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">PWREN, [7]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Power Control Registers enable. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Registers CPUPWRCTLR, CLUSTERPWRCTLR, CLUSTERPWRDN,
+                  CLUSTERPWRSTAT, CLUSTERL3HIT and CLUSTERL3MISS are not write-accessible from EL1
+                  Non-secure. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Registers CPUPWRCTLR, CLUSTERPWRCTLR, CLUSTERPWRDN,
+                  CLUSTERPWRSTAT, CLUSTERL3HIT and CLUSTERL3MISS are write-accessible from EL1
+                  Non-secure if they are write-accessible from EL2.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [6]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ERXPFGEN, [5]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Error Record Registers enable. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">ERXPFG* are not write-accessible from EL1 Non-secure. This is
+                  the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">ERXPFG* are write-accessible from EL1 Non-secure if they are
+                  write-accessible from EL2.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">AMEN, [4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Activity Monitor enable. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Non-secure accesses from EL1 and EL0 to activity monitor registers are trapped to EL2.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Non-secure accesses from EL1 and EL0 to activity monitor registers are not trapped to EL2.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [3:2]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">RES0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">ECTLREN, [1]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Extended Control Registers enable. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">CPUECTLR and CLUSTERECTLR are not write-accessible from EL1
+                  Non-secure. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">CPUECTLR and CLUSTERECTLR are write-accessible from EL1
+                  Non-secure if they are write-accessible from EL2.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        
+        
+        
+        
+        
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            
+            <p class="- topic/p ">Bit fields and details that are not provided in this description
+              are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+  </refbody>
+</reference>

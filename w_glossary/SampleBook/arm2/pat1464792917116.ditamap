@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="pat1464792917116" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Prometheus Debug Memory Mapped registers</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Debug AArch32 registers</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+
+
+    <topicref href="joh1440673283754.xml" class="- map/topicref " keys="MemoryMappedDebugRegisterSummary"/>
+
+
+
+
+    <topicref href="lau1443606317499.xml" class="- map/topicref "/>
+    <topicref href="lau1443606332515.xml" class="- map/topicref "/>
+    <topicref href="lau1443606346197.xml" class="- map/topicref "/>
+    <topicref href="lau1443606367264.xml" class="- map/topicref "/>
+    <topicref href="lau1443606132096.xml" class="- map/topicref "/>
+    <topicref href="lau1443606145293.xml" class="- map/topicref "/>
+  
+    <topicref href="lau1443606199838.xml" class="- map/topicref "/>
+    <topicref href="lau1443606244615.xml" class="- map/topicref "/>
+    <topicref href="lau1443606257755.xml" class="- map/topicref "/>
+    <topicref href="lau1443606277314.xml" class="- map/topicref "/>
+    <topicref href="lau1443606290728.xml" class="- map/topicref "/>
+    <topicref href="lau1443606302857.xml" class="- map/topicref "/>
+
+
+    <topicref href="pat1464890252201.xml" class="- map/topicref " keys="ExternalDebugReserveControlRegister"/>
+
+
+
+
+
+</map>

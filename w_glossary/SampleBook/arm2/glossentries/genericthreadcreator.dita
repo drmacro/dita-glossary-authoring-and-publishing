@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="genericthreadcreator">
+  <glossterm>generic thread creator</glossterm>
+  <glossdef>In a Mali GPU, a functional block that creates and issues threads to the tri-pipe processing unit pipeline. It is used for all non-fragment jobs, including vertex shading, geometry shading, and OpenCL jobs.</glossdef>
+</glossentry>

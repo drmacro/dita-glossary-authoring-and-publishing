@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="embeddedassembler">
+  <glossterm>embedded assembler</glossterm>
+  <glossdef>Embedded assembler is assembler code that is included in a C or C++ file, and is separate from other C or C++ functions.</glossdef>
+</glossentry>

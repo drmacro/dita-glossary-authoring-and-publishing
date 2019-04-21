@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE referable-content
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<referable-content xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="deb1356103466083" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- topic/topic referable-content/referable-content ">
+	<title class="- topic/title ">[ARM STANDARD] Arm Glossary web link referable-content</title>
+	<shortdesc class="- topic/shortdesc ">This fragment gives the correct format for Arm's glossary prepared for
+		reuse.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions view="nonconfidential" class="- topic/permissions "/>
+	</prolog>
+	<rcbody class="- topic/body referable-content/body ">
+		<ph id="g.arm.glossary_link" class="- topic/ph "><xref format="html" href="http://infocenter.arm.com/help/topic/com.arm.doc.aeg0014-/index.html" scope="external" class="- topic/xref "><keyword class="- topic/keyword "><tm tmtype="reg" class="- topic/tm ">Arm</tm></keyword> Glossary</xref></ph>
+	</rcbody>
+</referable-content>

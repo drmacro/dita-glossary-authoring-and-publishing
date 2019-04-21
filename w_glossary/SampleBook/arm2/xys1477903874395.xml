@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="xys1477903874395" xml:lang="en-us">
+	<title class="- topic/title ">Memory system implementation</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Memory system implementation</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">This section describes the implementation of the L1 memory
+		system.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Limited Order Regions</title>
+			<p class="- topic/p ">The <term keyref="core">core</term> offers support for four limited ordering <term keyref="region">region</term>
+				descriptors, as introduced by the Armv8.1 Limited Ordering Regions. </p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Atomic instructions</title>
+			<p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  supports the atomic instructions added in Armv8.1 architecture. </p>
+			<p class="- topic/p ">Atomic instructions to <term keyref="cacheable">cacheable</term> memory can be performed as either
+				near atomics or far atomics, depending on where the cache line containing the data
+				resides. </p>
+			<p class="- topic/p ">When an instruction hits in the L1 data cache in a unique state,
+				then it is performed as a near atomic in the L1 memory system. If the atomic
+				operation misses in the L1 cache, or the line is shared with another , then the
+				atomic is sent as a far atomic on the  CHI interface. </p>
+			<p class="- topic/p ">If the operation misses everywhere within the <term keyref="cluster">cluster</term>, and the
+				interconnect supports far atomics, then the atomic is passed on to the interconnect
+				to perform the operation. </p>
+			<p class="- topic/p ">When the operation hits anywhere inside the , or when an
+				interconnect does not support atomics, the L3 memory system performs the atomic
+				operation. If the line it is not al<term keyref="read">read</term>y there, it allocates the line into the L3
+				cache. This depends on whether the <keyword class="- topic/keyword ">DSU</keyword> is configured with an L3 cache. </p>
+			<p class="- topic/p ">Therefore, if software prefers that the atomic is performed as a
+				near atomic, precede the atomic instruction with a <codeph class="+ topic/ph pr-d/codeph ">PLDW</codeph> or <codeph class="+ topic/ph pr-d/codeph ">PRFM PSTL1KEEP</codeph>
+				instruction.</p>
+			<p class="- topic/p "><ph class="- topic/ph ">Alternatively, the CPUECTLR can be programmed such that different types of atomic instructions attempt to execute as a near atomic.</ph>One cache fill will be made on an atomic. If the cache line is lost before the atomic operation can be made, it will be sent as a far atomic.</p>
+			<p class="- topic/p ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph>  supports atomics to <term keyref="device">device</term> or non- memory, however this relies on
+				the interconnect also supporting atomics. If such an atomic instruction is executed
+				when the interconnect does not support them, it will result in an <term keyref="abort">abort</term>.</p>
+			
+			<p class="- topic/p ">For more information on the CPUECTLR register, see <xref class="- topic/xref " href="vrj1494872408498.xml" keyref="CpuectlrEl1CpuExtendedControlRegisterEl1" type="reference">CPUECTLR_EL1, CPU Extended Control Register, EL1<desc class="- topic/desc ">The CPUECTLR_EL1 provides additional <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> configuration and control options 		for the .</desc></xref>.</p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">LDAPR instructions</title>
+			<p class="- topic/p ">The  supports Load acquire instructions adhering to the RCpc consistency
+				semantic introduced in the Armv8.3 extensions for A profile. This is reflected in
+				register ID_AA64ISAR1_EL1 where bits[23:20] are set to <ph class="- topic/ph " otherprops="g.number.bin">0001</ph> to indicate that the  supports <codeph class="+ topic/ph pr-d/codeph ">LDAPRB</codeph>, <codeph class="+ topic/ph pr-d/codeph ">LDAPRH</codeph>, and
+					<codeph class="+ topic/ph pr-d/codeph ">LDAPR</codeph> instructions implemented in <term keyref="aarch64">AArch64</term>.</p>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Transient memory </title>
+			<p class="- topic/p ">The  has a specific behavior for memory s that are marked as
+				write-back  and transient, as defined in the Armv8.0 architecture. </p>
+			<p class="- topic/p ">For any load or store that is targeted at a memory  that is
+				marked as transient, the following occurs:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">If the memory access misses in the L1 data cache, the returned
+					cache line is allocated in the L1 data cache but is marked as transient.</li>
+				<li class="- topic/li ">When the line is evicted from the L1 data cache, the transient
+					hint is passed to the L2 cache so that the replacement policy will not attempt
+					to retain the line. When the line is subsequently evicted from the L2 cache, it
+					will bypass the next level cache entirely.</li>
+			</ul>
+		</section>
+		<section class="- topic/section ">
+			<title class="- topic/title ">Non-temporal loads</title>
+			<p class="- topic/p ">Non-temporal loads indicate to the caches that the data is likely to
+				be used for only short periods. For example, when streaming single-use  data
+				that is then discarded. In addition to non-temporal loads, there are also
+				prefetch-memory (<codeph class="+ topic/ph pr-d/codeph ">PRFM</codeph>) <term keyref="hintinstruction">hint instruction</term>s with the
+					<codeph class="+ topic/ph pr-d/codeph ">STRM</codeph> qualifier.</p>
+			<p class="- topic/p ">Non-temporal loads to memory which are designated as <term keyref="write">Write</term>-Back are
+				treated the same as loads to Transient memory.</p>
+		</section>
+		
+	</refbody>
+</reference>

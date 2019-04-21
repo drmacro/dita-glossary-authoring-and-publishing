@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="pgr1331716880258" xml:lang="en-us">
+	<title class="- topic/title ">Feedback on content</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Feedback on content</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc ">Information about how to give feedback on the content.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p ">If you have comments on content then send an e-mail to <ph class="- topic/ph "><xref class="- topic/xref " format="html" href="errata@arm.com" scope="external"/></ph>. Give:</p>
+			<ul class="- topic/ul ">
+				<li class="- topic/li ">The title <ph class="- topic/ph " outputclass="mainbooktitle"/> <ph class="- topic/ph " outputclass="booktitlealt"/>.</li>
+				<li class="- topic/li ">The number <ph class="- topic/ph " outputclass="bookpartno"/>.</li>
+				<li class="- topic/li ">If applicable, the page number(s) to which your comments refer.</li>
+				<li class="- topic/li ">A concise explanation of your comments.</li>
+			</ul>
+			<p class="- topic/p "><keyword class="- topic/keyword ">Arm</keyword> also welcomes general suggestions for additions and improvements.</p>
+			<note class="- topic/note "><keyword class="- topic/keyword ">Arm</keyword> tests the PDF only in Adobe Acrobat and Acrobat Reader, and cannot guarantee
+				the quality of the represented document when used with any other PDF reader.</note>
+		</section>
+	</refbody>
+</reference>

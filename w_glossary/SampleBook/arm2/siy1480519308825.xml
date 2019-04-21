@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="siy1480519308825" xml:lang="en-us">
+  <title class="- topic/title ">TLB match process</title>
+  <shortdesc class="- topic/shortdesc ">The Armv8-A architecture provides support for multiple maps from the VA
+    space that are translated differently. </shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p "><term keyref="tlb">TLB</term> entries store the context information required to facilitate a match
+        and avoid the need for a  flush on a context or virtual machine switch. </p>
+      <p class="- topic/p ">Each  entry contains a:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li "><term keyref="va">VA</term>.</li>
+        <li class="- topic/li ">PA.</li>
+        <li class="- topic/li ">Set of memory properties that include type and access permissions.</li>
+      </ul>
+      
+      <p class="- topic/p ">Each entry is either associated with a particular ASID or global. In
+        addition, each  entry contains a field to store the VMID in the entry applicable to
+        accesses from Non-secure EL0 and EL1 <term keyref="exceptionlevel">Exception level</term>s.</p>
+      <p class="- topic/p ">Each entry is associated with a particular translation regime.</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">EL3 in Secure state in <term keyref="aarch64">AArch64</term> state only.</li>
+        <li class="- topic/li ">EL2 or EL0  in Non-secure state.</li>
+        <li class="- topic/li ">EL1 or EL0 in Secure state.</li>
+        <li class="- topic/li ">EL1 or EL0 in Non-secure state.</li>
+      </ul>
+      
+      <p class="- topic/p ">A  match entry occurs when the following conditions are met:</p>
+      <ul class="- topic/ul ">
+          <li class="- topic/li ">Its , moderated by the page size such as the  bits[48:N], where N is
+          log<sub class="+ topic/ph hi-d/sub ">2</sub> of the block size for that translation that is stored in
+          the  entry, matches the requested address.</li>
+          
+        <li class="- topic/li ">Entry translation regime matches the current translation regime.</li>
+        <li class="- topic/li ">The ASID matches the current ASID held in the CONTEXTIDR, TTBR0, or
+          TTBR1 register, or the entry is marked global. </li>
+        <li class="- topic/li ">The VMID matches the current VMID held in the VTTBR_EL2 register. </li>
+        <li class="- topic/li ">The ASID and VMID matches are <term class="- topic/term " outputclass="archterm">ignored</term> when ASID and VMID are not
+          relevant. <p class="- topic/p ">ASID is relevant when the translation regime is: </p><ul class="- topic/ul ">
+            <li class="- topic/li ">EL2 in Non-secure state with HCR_EL2.E2H and HCR_EL2.TGE set to
+              1.</li>
+            <li class="- topic/li ">EL1 or EL0 in Secure state.</li>
+            <li class="- topic/li ">EL1 or EL0 in Non-secure state.</li>
+          </ul><p class="- topic/p ">VMID is relevant for EL1  or EL0 in Non-secure state.</p></li>
+      </ul>
+      
+    </section>
+  </refbody>
+</reference>

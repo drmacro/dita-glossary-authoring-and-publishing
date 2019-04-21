@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="ste1361895918258" xml:lang="en-us">
+    <title class="- topic/title ">Additional reading</title>
+    <titlealts class="- topic/titlealts ">
+        <navtitle class="- topic/navtitle ">Additional reading</navtitle>
+    </titlealts>    
+    <shortdesc class="- topic/shortdesc ">Information published by <keyword class="- topic/keyword ">Arm</keyword> and by third parties.</shortdesc>
+    <prolog class="- topic/prolog ">
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </prolog>
+    <refbody class="- topic/body        reference/refbody ">
+        <section class="- topic/section " id="g.additional-reading-section">
+            <p class="- topic/p " id="g.arm-publications-intro">This book contains information that is specific to this product. See the following
+			documents for other relevant information.</p>
+            <dl class="- topic/dl ">
+                <dlentry class="- topic/dlentry " id="g.arm-publications-definition">
+                    <dt class="- topic/dt ">Arm publications</dt>
+                    <dd class="- topic/dd " id="g.arm-publications">
+			<ul class="- topic/ul " id="ul_uyw_23m_tq">
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> (<ph class="- topic/ph ">DDI 0487</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+                            <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Core Cryptographic
+            Extension Technical Reference Manual</ph></cite> (<ph class="- topic/ph ">100801</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+                    <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+                    <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Core
+                    Configuration and Sign-off Guide</ph></cite> (<ph class="- topic/ph ">100799</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+            <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> Core Integration
+            Manual</ph></cite> (<ph class="- topic/ph ">100800</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+                    <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Integration
+                    Manual</ph></cite> (<ph class="- topic/ph ">100455</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Technical Reference Manual</ph></cite> (<ph class="- topic/ph ">100453</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">DynamIQ</tm>
+                                    Shared Unit</keyword></ph> Configuration and Sign-off Guide</ph></cite> (<ph class="- topic/ph ">100454</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+                    <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">CoreSight</tm></keyword> ELA-500 Embedded Logic
+                Analyzer Technical Reference Manual</ph></cite> (<ph class="- topic/ph ">100127</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">AMBA</tm></keyword> AXI and ACE Protocol Specification AXI3, AXI4, AXI5, ACE and ACE5</ph></cite> (<ph class="- topic/ph ">IHI 0022</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph ">
+            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">AMBA</tm></keyword> APB Protocol Version 2.0 Specification</ph></cite> (<ph class="- topic/ph ">IHI 0024</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+                                <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">AMBA</tm></keyword> 5 CHI Architecture
+                                Specification</ph></cite> (<ph class="- topic/ph ">IHI 0050</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="tm">CoreSight</tm></keyword> Architecture Specification v3.0</ph></cite> (<ph class="- topic/ph ">IHI 0029</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Debug Interface Architecture Specification, ADIv5.0 to ADIv5.2</ph></cite> (<ph class="- topic/ph ">IHI 0031</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">AMBA</tm></keyword> 4 ATB Protocol Specification</ph></cite> (<ph class="- topic/ph ">IHI 0032</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Generic Interrupt Controller Architecture Specification</ph></cite> (<ph class="- topic/ph ">IHI 0069</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Embedded Trace Macrocell Architecture Specification ETMv4</ph></cite> (<ph class="- topic/ph ">IHI 0064</ph>)</ph>.</li>		
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">AMBA</tm></keyword> Low Power Interface Specification <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Q-Channel and P-Channel Interfaces</ph></cite> (<ph class="- topic/ph ">IHI 0068</ph>)</ph>.</li>
+				<li class="- topic/li "><ph class="- topic/ph "><cite class="- topic/cite "><ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Reliability, Availability, and
+                                Serviceability (RAS) Specification, Armv8, for the Armv8-A
+                                architecture profile</ph></cite> (<ph class="- topic/ph ">DDI
+                            0587A</ph>)</ph>.</li>				
+			</ul>
+		</dd>
+                </dlentry>
+                <dlentry class="- topic/dlentry " id="g.other-publications-definition">
+                    <dt class="- topic/dt ">Other publications</dt>
+                    <dd class="- topic/dd " id="g.other-publications">
+			<ul class="- topic/ul " id="ul_mfc_kjm_tq">
+				<li class="- topic/li "><cite class="- topic/cite ">ANSI/IEEE Std 754-2008, IEEE Standard for Binary
+						Floating-Point Arithmetic</cite>.<note class="- topic/note "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword>
+						floating-point terminology is largely based on the earlier ANSI/IEEE Std
+						754-1985 issue of the standard. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>
+						for more information.</note></li>
+			</ul>
+		</dd>
+                </dlentry>
+            </dl>
+            
+            
+            
+           
+        </section>
+    </refbody>
+</reference>

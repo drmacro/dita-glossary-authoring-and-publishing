@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="etv">
+  <glossterm>ETV</glossterm>
+  <glossdef>Extended Target Visibility enables RealView Debugger to access features of the underlying target such as, for example, chip-level information provided by the hardware manufacturer or SoC designer.</glossdef>
+</glossentry>

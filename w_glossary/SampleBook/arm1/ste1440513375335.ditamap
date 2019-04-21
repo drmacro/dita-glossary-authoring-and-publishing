@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="ste1440513375335" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Embedded Trace Macrocell</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Embedded Trace Macrocell</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+    <topicref href="mar1332756338078.xml" class="- map/topicref "/>
+    <topicref href="joh1440674598602.xml" class="- map/topicref "/>
+    <topicref href="joh1440674602784.xml" class="- map/topicref "/> 
+    <topicref href="joh1440674621742.xml" class="- map/topicref "/>
+    <topicref href="joh1440674624053.xml" class="- map/topicref "/> 
+    <topicref href="joh1440674631854.xml" class="- map/topicref "/>
+    <topicref href="joh1440674845060.xml" class="- map/topicref "/>
+
+</map>

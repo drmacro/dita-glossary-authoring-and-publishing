@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="vertexattributes">
+  <glossterm>vertex attributes</glossterm>
+  <glossdef>The data provided by the application, to define a vertex.</glossdef>
+</glossentry>

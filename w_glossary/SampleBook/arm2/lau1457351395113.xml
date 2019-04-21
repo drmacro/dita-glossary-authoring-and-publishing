@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1457351395113" xml:lang="en-us">
+	
+	
+	
+	
+	<title class="- topic/title ">ERR0PFGCTL, Error Pseudo Fault Generation Control Register</title>
+	<shortdesc class="- topic/shortdesc ">The ERR0PFGCTL is the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> node register that enables controlled fault generation.</shortdesc>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<title class="- topic/title ">Bit field descriptions</title>
+			<p class="- topic/p ">ERR0PFGCTL is a 32-bit <term keyref="read">read</term>/write register. </p>
+			<fig class="- topic/fig ">
+				<title class="- topic/title ">ERR0PFGCTL bit assignments</title>
+				<image class="- topic/image " href="lau1457352340581.svg" placement="inline">
+					<alt class="- topic/alt ">ERR0PFGCTL bit assignments</alt>
+				</image>
+			</fig>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">CDNEN, [31]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Count down enable. This bit controls transfers from the value that is held in the ERR0PFGCDN into the Error Generation Counter and enables this counter to start counting down. The possible values are: </p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc15">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">The Error Generation Counter is disabled.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">The value that is held in the ERR0PFGCDN register is transferred into the Error Generation Counter. The Error Generation Counter counts down. </dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">R, [30]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Restartable bit. When it reaches 0, the Error Generation Counter restarts from the ERR0PFGCDN value or stops. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">When it reaches 0, the counter stops.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">When it reaches 0, the counter reloads the value that is stored in ERR0PFGCDN and starts counting down again.</dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">[29:7]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">CE, [6]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Corrected error generation enable. The possible values are: </p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">No corrected error is generated.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">A corrected error might be generated when the Error Generation Counter
+									is triggered. </dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">DE, [5]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Deferred Error generation enable. The possible values
+							are: </p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">No deferred error is generated.</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">A deferred error might be generated when the Error Generation Counter
+									is triggered. </dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">[4:2]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">UC, [1]</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">Uncontainable error generation enable. The possible values are:</p>
+						<dl class="- topic/dl " compact="yes" outputclass="termwidthpc12">
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+								<dd class="- topic/dd ">
+									<p class="- topic/p ">No uncontainable error is generated.</p>
+								</dd>
+							</dlentry>
+							<dlentry class="- topic/dlentry ">
+								<dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+								<dd class="- topic/dd ">An uncontainable error might be generated when the Error Generation
+									Counter is triggered. </dd>
+							</dlentry>
+						</dl>
+					</dd>
+				</dlentry>
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">[0]</dt>
+					<dd class="- topic/dd ">Reserved, <term class="- topic/term " outputclass="archterm">RES0</term>.</dd>
+				</dlentry>
+			</dl>
+			<dl class="- topic/dl ">
+				<dlentry class="- topic/dlentry ">
+					<dt class="- topic/dt ">Configurations</dt>
+					<dd class="- topic/dd ">
+						<p class="- topic/p ">There are no configuration notes.</p>
+						<p class="- topic/p ">ERR0PFGCTL resets to <ph class="- topic/ph " otherprops="g.number.hex">00000000</ph>.</p>
+						<p class="- topic/p ">ERR0PFGCTL is accessible from the following registers when ERRSELR.SEL==0:</p>
+						<ul class="- topic/ul " id="ul_f4m_kvs_2x">
+							
+							<li class="- topic/li "><xref class="- topic/xref " href="joh1460039575404.xml" keyref="ErxpfgctlrEl1SelectedErrorPseudoFaultGenerationControlRegisterEl1" type="reference">ERXPFGCTL_EL1, Selected Error Pseudo Fault Generation Control Register, EL1<desc class="- topic/desc ">Register ERXPFGCTL_EL1 accesses the ERR&lt;n&gt;PFGCTL register for the error record selected by ERRSELR_EL1.SEL.</desc></xref>.</li>
+						</ul>
+					</dd>
+				</dlentry>
+			</dl>
+		</section>
+	</refbody>
+</reference>

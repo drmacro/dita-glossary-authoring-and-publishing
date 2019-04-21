@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="deb1365062553390" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">[ARM STANDARD] Frontmatter information for default bookmap</title>
+    <topicmeta class="- map/topicmeta ">
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+    <topicref href="deb1346331407548.xml" class="- map/topicref " chunk="to-content" collection-type="family" keys="deb1346331407548" outputclass="frontmatter.intro">
+        <topicmeta class="- map/topicmeta ">
+            <navtitle translate="yes" class="- topic/navtitle "><ph outputclass="mainbooktitle" class="- topic/ph "/></navtitle>
+            <shortdesc translate="yes" class="- map/shortdesc "/>
+            <permissions view="nonconfidential" class="- topic/permissions "/>
+        </topicmeta>
+        <topicref href="pet1339776438702.xml" class="- map/topicref " locktitle="yes" outputclass="release.info">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle translate="yes" class="- topic/navtitle ">Release Information</navtitle>
+                <shortdesc translate="yes" class="- map/shortdesc "/>
+                <permissions view="nonconfidential" class="- topic/permissions "/>
+            </topicmeta>
+        </topicref>
+        <topicref href="deb1332948760711.xml" class="- map/topicref " keys="deb1332948760711" locktitle="yes" outputclass="proprietary.notice">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle translate="yes" class="- topic/navtitle ">Proprietary Notice</navtitle>
+                <shortdesc translate="yes" class="- map/shortdesc "/>
+                <permissions view="nonconfidential" class="- topic/permissions "/>
+            </topicmeta>
+        </topicref>
+        <topicref href="deb1332948806296.xml" class="- map/topicref " keys="deb1332948806296" locktitle="yes" outputclass="confidentiality.status">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle translate="yes" class="- topic/navtitle ">Confidentiality Status</navtitle>
+                <shortdesc translate="yes" class="- map/shortdesc "/>
+                <permissions view="nonconfidential" class="- topic/permissions "/>
+            </topicmeta>
+        </topicref>
+        <topicref href="deb1332254789611.xml" class="- map/topicref " keys="deb1332254789611" locktitle="yes" outputclass="product.status">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle translate="yes" class="- topic/navtitle ">Product Status</navtitle>
+                <shortdesc translate="yes" class="- map/shortdesc "/>
+                <permissions view="nonconfidential" class="- topic/permissions "/>
+            </topicmeta>
+        </topicref>
+        <topicref href="pet1343730163542.xml" class="- map/topicref " keys="pet1343730163542" locktitle="yes" outputclass="web.address">
+            <topicmeta class="- map/topicmeta ">
+                <navtitle translate="yes" class="- topic/navtitle ">Web Address</navtitle>
+                <shortdesc translate="yes" class="- map/shortdesc "/>
+                <permissions view="nonconfidential" class="- topic/permissions "/>
+            </topicmeta>
+        </topicref>
+    </topicref>
+    
+</map>

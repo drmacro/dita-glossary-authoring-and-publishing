@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="triggerinterface">
+  <glossterm>Trigger Interface</glossterm>
+  <glossdef>Part of an Embedded Cross Trigger (ECT) device. In an ECT, the CTI provides the interface between a processor or ETM and the CTM.</glossdef>
+</glossentry>

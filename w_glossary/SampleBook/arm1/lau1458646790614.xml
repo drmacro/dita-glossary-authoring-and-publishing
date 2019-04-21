@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1458646790614" xml:lang="en-us">
+  <title class="- topic/title ">TCR_EL2, Translation Control Register, EL2</title>
+  <shortdesc class="- topic/shortdesc ">The TCR_EL2 controls translation table walks required for stage 1
+    translation of a memory access from EL2 and holds cacheability and shareability
+    information.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">TCR_EL2 is a 64-bit register.</p>
+      <p class="- topic/p ">TCR_EL2 is part of:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">The Virtual memory control registers functional group.</li>
+        <li class="- topic/li ">The Hypervisor and virtualization registers functional group.</li>
+      </ul>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TCR_EL2 bit assignments</title>
+        <image class="- topic/image " href="lau1456746296302.svg" placement="inline">
+          <alt class="- topic/alt ">TCR_EL2 bit assignments</alt>
+        </image>
+      </fig>
+      
+      <note class="- topic/note ">
+        <p class="- topic/p ">Bits[28:21], architecturally defined, are implemented in the <term keyref="core">core</term>.</p>
+      </note>
+      <dl class="- topic/dl ">
+       
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">HD, [22]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Dirty bit update. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+                <dd class="- topic/dd ">Dirty bit update is disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+                <dd class="- topic/dd ">Dirty bit update is enabled.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">HA, [21]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Stage 1 Access flag update. The possible values are:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+                <dd class="- topic/dd ">Stage 1 Access flag update is disabled.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+                <dd class="- topic/dd ">Stage 1 Access flag update is enabled.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+      
+      </dl>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">When the Virtualization Host Extension is activated, TCR_EL2 has the same bit
+              assignments as TCR_EL1.</p>
+            <p class="- topic/p ">Bit fields and details that are not provided in this description
+              are architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+   
+  </refbody>
+</reference>

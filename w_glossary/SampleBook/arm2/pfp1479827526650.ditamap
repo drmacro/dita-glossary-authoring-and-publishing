@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" id="pfp1479827526650" xml:lang="en-us">
+    <title class="- topic/title ">Enyo GIC Registers</title><prolog class="- topic/prolog "/>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">GIC Registers</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </topicmeta>
+
+
+        <topicref class="- map/topicref " href="ste1440494027859.xml"/>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+ 
+    <topicref class="- map/topicref " href="lau1467028866637.xml" keys="PhysicalGicCpuInterfaceSystemRegistersSummary"/>
+    <topicref class="- map/topicref " href="pgt1470139323391.xml" keys="IccInterruptControllerActivePrioritiesGroup0Register0EL1"/>
+    <topicref class="- map/topicref " href="zkn1470139413326.xml" keys="IccInterruptControllerActivePrioritiesGroup1Register0EL1"/>
+    <topicref class="- map/topicref " href="lau1469181709121.xml" keys="IccInterruptControllerBinaryPointRegister0EL1"/>
+    <topicref class="- map/topicref " href="lau1469181855355.xml" keys="IccInterruptControllerBinaryPointRegister1EL1"/>
+    <topicref class="- map/topicref " href="lau1469184261367.xml" keys="IccCtlrInterruptControllerControlRegisterEL1"/>
+    <topicref class="- map/topicref " href="lau1469184763973.xml" keys="IccInterruptControllerControlRegisterEL3"/>
+    <topicref class="- map/topicref " href="lau1469184479230.xml" keys="IccInterruptControllerSystemRegisterEnableRegisterEL1"/>
+    <topicref class="- map/topicref " href="lau1469184656964.xml" keys="IccInterruptControllerSystemRegisterEnableregisterEL2"/>
+    <topicref class="- map/topicref " href="lau1469184828168.xml" keys="IccInterruptControllerSystemRegisterEnableRegisterEL3"/>
+    <topicref class="- map/topicref " href="lau1467029066939.xml" keys="VirtualGicCpuInterfaceSystemRegistersSummary"/>
+    <topicref class="- map/topicref " href="iqh1470139554217.xml" keys="IcvInterruptControllerVirtualActivePrioritiesGroup0Register0EL1"/>
+    <topicref class="- map/topicref " href="tpr1470139605772.xml" keys="IcvInterruptControllerVirtualActivePrioritiesGroup1Register0EL1"/>
+    <topicref class="- map/topicref " href="ism1470217229198.xml" keys="IcvInterruptControllerVirtualBinaryPointRegister0EL1"/>
+    <topicref class="- map/topicref " href="jvp1470217252179.xml" keys="IcvInterruptControllerVirtualBinaryPointRegister1EL1"/>
+    <topicref class="- map/topicref " href="lau1469184875468.xml" keys="IcvInterruptControllerVirtualControlRegisterEL1"/>
+    <topicref class="- map/topicref " href="lau1467029132174.xml" keys="VirtualInterfaceControlSystemRegistersSummary"/>
+    <topicref class="- map/topicref " href="qae1470139654006.xml" keys="IchInterruptControllerHypActivePrioritiesGroup0Register0EL1"/>
+    <topicref class="- map/topicref " href="edo1470139751823.xml" keys="IchInterruptControllerHypActivePrioritiesGroup1Register0EL1"/>
+    <topicref class="- map/topicref " href="lau1469184932288.xml" keys="IchInterruptControllerHypControlRegisterEL2"/>
+    <topicref class="- map/topicref " href="lau1469184979712.xml" keys="IchInterruptControllerVirtualMachineControlRegisterEL2"/>
+    <topicref class="- map/topicref " href="lau1469185142151.xml" keys="IchInterruptControllerVGICTypeRegisterEL2"/>
+        
+
+</map>

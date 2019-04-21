@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="baseregister">
+  <glossterm>base register</glossterm>
+  <glossdef>A register specified by a load or store instruction that is used as the base value for the address calculation for the instruction. Depending on the instruction, an offset can be added to or subtracted from the base register value to form the address that is used for the memory access.</glossdef>
+</glossentry>

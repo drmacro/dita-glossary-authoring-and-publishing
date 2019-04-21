@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443697930252" xml:lang="en-us">
+  <title class="- topic/title ">TRCIDR2, ID Register 2</title>
+  <shortdesc class="- topic/shortdesc ">The TRCIDR2 returns the maximum size of six parameters in the trace
+    unit.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">The parameters are:</p>
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">Cycle counter.</li>
+        <li class="- topic/li ">Data value.</li>
+        <li class="- topic/li ">Data address.</li>
+        <li class="- topic/li ">VMID.</li>
+        <li class="- topic/li ">Context ID.</li>
+        <li class="- topic/li ">Instruction address.</li>
+      </ul>
+
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The TRCIDR2 is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCIDR2 bit assignments</title>
+        <image class="- topic/image " href="lau1443697964159.svg" placement="inline">
+          <alt class="- topic/alt ">TRCIDR2 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">VMIDOPT, [30:29]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates the options for observing the Virtual context identifier:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1</ph></codeph></dt>
+                <dd class="- topic/dd ">VMIDOPT is implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CCSIZE, [28:25]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Size of the cycle counter in bits minus 12:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">0</ph></codeph></dt>
+                <dd class="- topic/dd ">The cycle counter is 12 bits in length.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">DVSIZE, [24:20]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Data value size in bytes:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00</ph></codeph></dt>
+                <dd class="- topic/dd ">Data value tracing is not implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">DASIZE, [19:15]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Data address size in bytes:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">00</ph></codeph></dt>
+                <dd class="- topic/dd ">Data address tracing is not implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">VMIDSIZE, [14:10]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Virtual Machine ID size:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">4</ph></codeph></dt>
+                <dd class="- topic/dd ">Maximum of 32-bit Virtual Machine ID size.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CIDSIZE, [9:5]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Context ID size in bytes:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">4</ph></codeph></dt>
+                <dd class="- topic/dd ">Maximum of 32-bit Context ID size.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">IASIZE, [4:0]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Instruction address size in bytes:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">8</ph></codeph></dt>
+                <dd class="- topic/dd ">Maximum of 64-bit address size.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The TRCIDR2 can be accessed through the external <term keyref="debuginterface">debug interface</term>, offset
+          <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1E8</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

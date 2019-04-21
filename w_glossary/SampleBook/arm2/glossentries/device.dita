@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="device">
+  <glossterm>device</glossterm>
+  <glossdef>In the context of an ARM debugger, a component on a target. The device contains the application that you want to debug.</glossdef>
+</glossentry>

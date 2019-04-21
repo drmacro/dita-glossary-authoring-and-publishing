@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf?><?workdir-uri file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/temp/pdf/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" domains="(topic reference) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" id="xkn1476729556026" xml:lang="en-us" xtrc="reference:1;3:194" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+	<title class="- topic/title " xtrc="title:1;4:32" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Main functions</title>
+	<titlealts class="- topic/titlealts " xtrc="titlealts:1;5:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+		<navtitle class="- topic/navtitle " xtrc="navtitle:1;6:39" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Main functions</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc " xtrc="shortdesc:1;8:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">The three main functions of the MMU are to:</shortdesc>
+	<prolog class="- topic/prolog " xtrc="prolog:1;9:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+		<publisherinformation class="- topic/publisher bookmap/publisherinformation " xtrc="publisherinformation:1;29:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <organization class="- topic/data bookmap/organization " xtrc="organization:1;30:70" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"> </organization>
+            <published class="- topic/data bookmap/published " xtrc="published:1;31:64" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <publishtype class="- topic/data bookmap/publishtype " value="final" xtrc="publishtype:1;32:87" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </published>
+        </publisherinformation><permissions class="- topic/permissions " view="nonconfidential" xtrc="permissions:1;35:75" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/><metadata class="- topic/metadata "><prodinfo class="- topic/prodinfo " xtrc="prodinfo:1;44:45" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+            <prodname class="- topic/prodname " xtrc="prodname:1;45:49" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">ARM Cortex-A76 Core</prodname>
+            <vrmlist class="- topic/vrmlist " xtrc="vrmlist:1;46:47" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap">
+                <vrm class="- topic/vrm " otherprops="hardware" version="0400" xtrc="vrm:1;47:81" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/_armA72.ditamap"/>
+            </vrmlist>
+        </prodinfo></metadata>
+		
+	</prolog>
+	<refbody class="- topic/body        reference/refbody " xtrc="refbody:1;13:58" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+		<section class="- topic/section " xtrc="section:1;14:37" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+			<ul class="- topic/ul " xtrc="ul:1;15:28" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+				<li class="- topic/li " xtrc="li:1;16:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Control the table walk hardware that accesses <term class="- topic/term " keyref="translationtable" xtrc="term:1;16:107" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">translation table</term>s in
+					main memory.</li>
+				<li class="- topic/li " xtrc="li:2;18:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Translate <term class="- topic/term " xtrc="term:2;18:67" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Virtual Addresses</term> (VAs) to
+					<term class="- topic/term " xtrc="term:3;19:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Physical Addresses</term> (PAs).</li>
+				<li class="- topic/li " xtrc="li:3;20:29" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Provide fine-grained memory system control through a set of
+					virtual-to-physical address mappings and memory attributes that are held in translation
+					tables.</li>
+			</ul>
+			<p class="- topic/p " xtrc="p:1;24:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Each stage of address translation uses a set of address translations and
+				associated memory properties that are held in memory mapped tables called translation
+				tables. Translation table entries can be cached into a <term class="- topic/term " xtrc="term:4;26:88" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Translation
+					Lookaside Buffer</term> (<term class="- topic/term " keyref="tlb" xtrc="term:5;27:50" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">TLB</term>).</p>
+
+
+			<p class="- topic/p " xtrc="p:2;30:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">The following table describes the components included in the <term class="- topic/term " keyref="mmu" xtrc="term:6;30:106" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">MMU</term>.</p>
+			<table class="- topic/table " xtrc="table:1;31:34" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+				<title class="- topic/title " xtrc="title:2;32:35" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">s and  caches in the </title>
+				<tgroup class="- topic/tgroup " cols="2" xtrc="tgroup:1;33:46" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+					<colspec class="- topic/colspec " colname="col1" colnum="1" xtrc="colspec:1;34:67" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml"/><colspec class="- topic/colspec " colname="col2" colnum="2" xtrc="colspec:2;34:128" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml"/><thead class="- topic/thead " xtrc="thead:1;34:158" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+						<row class="- topic/row " xtrc="row:1;35:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+							<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="1" xtrc="entry:1;36:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Component</entry>
+							<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="1" xtrc="entry:2;37:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Description</entry>
+						</row>
+					</thead>
+					<tbody class="- topic/tbody " xtrc="tbody:1;40:36" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+						<row class="- topic/row " xtrc="row:2;41:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+							<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="2" xtrc="entry:3;42:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Instruction L1 </entry>
+							<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="2" xtrc="entry:4;43:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">48 entries, fully associative.</entry>
+						</row>
+						
+						
+						<row class="- topic/row " xtrc="row:3;47:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+							<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="3" xtrc="entry:5;48:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Data L1 </entry>
+							<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="3" xtrc="entry:6;49:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">48 entries, fully associative.</entry>
+						</row>
+						
+						
+						<row class="- topic/row " xtrc="row:4;53:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+							<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="4" xtrc="entry:7;54:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">L2  cache</entry>
+							<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="4" xtrc="entry:8;55:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">1280 entries, 5-way set associative.</entry>
+						</row>
+						
+						
+						<row class="- topic/row " xtrc="row:5;59:33" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">
+							<entry class="- topic/entry " colname="col1" dita-ot:x="1" dita-ot:y="5" xtrc="entry:9;60:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Translation table prefetcher</entry>
+							<entry class="- topic/entry " colname="col2" dita-ot:x="2" dita-ot:y="5" xtrc="entry:10;61:53" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Detects access to contiguous s and prefetches the next one.
+								This prefetcher can be disabled in the <term class="- topic/term " keyref="ect" xtrc="term:7;62:67" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">ECT</term>LR register.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+			<p class="- topic/p " xtrc="p:3;67:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">The  entries contain either one or both of a global indicator
+				and an <term class="- topic/term " xtrc="term:8;68:40" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Address Space Identifier</term> (ASID) to permit
+				context switches without requiring the  to be <term class="- topic/term " keyref="invalidate" xtrc="term:9;69:77" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">invalidate</term>d.</p>
+			<p class="- topic/p " xtrc="p:4;70:26" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">The  entries contain a <term class="- topic/term " xtrc="term:10;70:77" xtrf="file:/Users/waybri01/gitrepos/dita-glossary-authoring-and-publishing/w_glossary/SampleBook/arm1/xkn1476729556026.xml">Virtual Machine
+				Identifier</term> (VMID) to permit virtual machine switches by the hypervisor
+				without requiring the  to be d.</p>
+		</section>
+	</refbody>
+</reference>

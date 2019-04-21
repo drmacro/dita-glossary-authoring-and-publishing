@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443694852546" xml:lang="en-us">
+  <title class="- topic/title ">TRCPRGCTLR, Programming Control Register</title>
+  <shortdesc class="- topic/shortdesc ">The TRCPRGCTLR enables the ETM trace unit.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The TRCPRGCTLR is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCPRGCTLR bit assignments</title>
+        <image class="- topic/image " href="lau1443694908018.svg" placement="inline">
+          <alt class="- topic/alt ">TRCPRGCTLR bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:1]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">EN, [0]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Trace program enable:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+              <dd class="- topic/dd ">The <term keyref="etm">ETM</term> trace unit interface in the <term keyref="core">core</term> is disabled, and
+                clocks are enabled only when necessary to process <term keyref="apb">APB</term> accesses, or drain any
+                already generated trace. This is the reset value.</dd>
+            </dlentry>
+            <dlentry class="- topic/dlentry ">
+              <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+              <dd class="- topic/dd ">The  trace unit interface in the  is enabled, and
+                clocks are enabled. <term keyref="write">Write</term>s to most trace registers are <term class="- topic/term " outputclass="archterm">ignored</term>.</dd>
+            </dlentry>
+          </dl></dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The TRCPRGCTLR can be accessed through the external <term keyref="debuginterface">debug interface</term>, offset <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">004</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>

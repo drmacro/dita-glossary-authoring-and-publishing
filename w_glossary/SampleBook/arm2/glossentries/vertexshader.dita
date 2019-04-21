@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="vertexshader">
+  <glossterm>vertex shader</glossterm>
+  <glossdef>A program running on a vertex processor or shader core that calculates the position and other characteristics, such as color and texture coordinates, for each vertex.</glossdef>
+</glossentry>

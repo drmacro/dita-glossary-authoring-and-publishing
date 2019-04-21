@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="undefined">
+  <glossterm>UNDEFINED</glossterm>
+  <glossdef><p>Indicates cases where an attempt to execute a particular encoding bit pattern generates
+    an exception, that is taken to the current Exception level, or to the default Exception level
+    for taking exceptions if the UNDEFINED encoding was executed at EL0. This applies to:</p><ul>
+      <li>Any
+    encoding that is not allocated to any instruction.</li>
+      <li>Any encoding that is defined as never
+    accessible at the current Exception level. </li>
+      <li>Some cases where an enable, disable, or trap
+    control means an encoding is not accessible at the current Exception level.</li>
+    </ul><p> If the generated exception is taken to an Exception level that is using AArch32 then it is taken as an Undefined
+    Instruction exception. Note: On reset, the default Exception level for taking exceptions from
+    EL0 is EL1. However, an implementation might include controls that can change this, effectively
+    making EL1 inactive. See the description of the Exception model for more information When
+    UNDEFINED appears in body text, it is written in small capitals.</p></glossdef>
+</glossentry>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1457541801121" xml:lang="en-us">
+  <title class="- topic/title " id="TitlePowerControlRegister_EL1">CPUPWRCTLR_EL1, Power Control Register, EL1</title>
+  <shortdesc class="- topic/shortdesc ">The CPUPWRCTLR_EL1 provides information about power control support for
+    the core.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">CPUPWRCTLR_EL1 is a 32-bit register, and is part of the <term class="- topic/term " outputclass="archterm">IMPLEMENTATION DEFINED</term> registers functional
+        group.</p>
+      
+      <fig class="- topic/fig " id="fig_nbh_dz3_gv">
+        <title class="- topic/title ">CPUPWRCTLR_EL1 bit assignments</title>
+        
+        <image class="- topic/image " href="zti1479749715848.svg" id="image_p2h_dz3_gv" placement="inline">
+          <alt class="- topic/alt ">CPUPWRCTLR_EL1 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:10]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        
+        
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">WFE_RET_CTRL, [9:7]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">CPU WFE retention control:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">000</codeph></dt>
+                <dd class="- topic/dd ">Disable the retention circuit. This is the default value, see
+                    <xref class="- topic/xref " href="joh1457541801121.xml#joh1457541801121/CpupwrctlrRetentionControlField" keyref="CpupwrctlrEl1PowerControlRegisterEl1/CpupwrctlrRetentionControlField" type="table">Table 1</xref>
+                  for more retention control options.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">WFI_RET_CTRL, [6:4]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">CPU WFI retention control:</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">000</codeph></dt>
+                <dd class="- topic/dd ">Disable the retention circuit. This is the default value, see
+                    <xref class="- topic/xref " href="joh1457541801121.xml#joh1457541801121/CpupwrctlrRetentionControlField" keyref="CpupwrctlrEl1PowerControlRegisterEl1/CpupwrctlrRetentionControlField" type="table">Table 1</xref>
+                  for more retention control options.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [3:1]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CORE_PWRDN_EN, [0]</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">Indicates to the power controller using <term keyref="pa">PA</term>CTIVE if the <term keyref="core">core</term> wants
+              to power down when it enters WFI state.</p>
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc8">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">0</codeph></dt>
+                <dd class="- topic/dd ">No power down requested. This is the reset value.</dd>
+              </dlentry>
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">1</codeph></dt>
+                <dd class="- topic/dd ">A power down is requested.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <table class="- topic/table " id="CpupwrctlrRetentionControlField">
+        <title class="- topic/title ">CPUPWRCTLR Retention Control Field</title>
+        <tgroup class="- topic/tgroup " cols="3">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">Encoding</entry>
+              <entry class="- topic/entry " colname="col2">Number of counter ticks<fn class="- topic/fn ">The number of
+                  system counter ticks required before the  signals retention <term keyref="read">read</term>iness on
+                  CTIVE to the power controller. The  does not accept a retention entry
+                  request until this time.</fn></entry>
+              <entry class="- topic/entry " colname="col3"><p class="- topic/p ">Minimum retention entry delay</p><p class="- topic/p ">(System counter at 50MHz-10MHz)</p></entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">000</codeph></entry>
+              <entry class="- topic/entry " colname="col2">Disable the retention circuit</entry>
+              <entry class="- topic/entry " colname="col3">Default Condition.</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">001</codeph></entry>
+              <entry class="- topic/entry " colname="col2">2</entry>
+              <entry class="- topic/entry " colname="col3">40ns-200ns</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">010</codeph></entry>
+              <entry class="- topic/entry " colname="col2">8</entry>
+              <entry class="- topic/entry " colname="col3">160ns-800ns</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">011</codeph></entry>
+              <entry class="- topic/entry " colname="col2">32</entry>
+              <entry class="- topic/entry " colname="col3">640ns – 3,200ns</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">100</codeph></entry>
+              <entry class="- topic/entry " colname="col2">64</entry>
+              <entry class="- topic/entry " colname="col3">1,280ns-6,400ns</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">101</codeph></entry>
+              <entry class="- topic/entry " colname="col2">128</entry>
+              <entry class="- topic/entry " colname="col3">2,560ns-12,800ns</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">110</codeph></entry>
+              <entry class="- topic/entry " colname="col2">256</entry>
+              <entry class="- topic/entry " colname="col3">5,120ns-25,600ns</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"><codeph class="+ topic/ph pr-d/codeph " otherprops="g.number.any">111</codeph></entry>
+              <entry class="- topic/entry " colname="col2">512</entry>
+              <entry class="- topic/entry " colname="col3">10,240ns-51,200ns</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Configurations</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">There are no configuration notes.</p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section class="- topic/section ">
+      <title class="- topic/title ">Usage constraints</title>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Accessing the CPUPWRCTLR_EL1</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">This register can be  using MRS with the following syntax:</p>
+            <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">MRS &lt;Xt&gt;,&lt;systemreg&gt;</codeblock>
+            <p class="- topic/p ">This register can be written using MSR with the following syntax:</p>
+            <codeblock class="+ topic/pre pr-d/codeblock " xml:space="preserve">MSR &lt;systemreg&gt;, &lt;Xt&gt;</codeblock>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">This syntax is encoded with the following settings in the instruction encoding:</p>
+      <table class="- topic/table " id="table_c3j_wfs_cv">
+        <tgroup class="- topic/tgroup " cols="6">
+          <colspec class="- topic/colspec " colname="col1" colnum="1"/><colspec class="- topic/colspec " colname="col2" colnum="2"/><colspec class="- topic/colspec " colname="col3" colnum="3"/><colspec class="- topic/colspec " colname="col4" colnum="4"/><colspec class="- topic/colspec " colname="col5" colnum="5"/><colspec class="- topic/colspec " colname="col6" colnum="6"/><thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">&lt;systemreg&gt;</entry>
+              <entry class="- topic/entry " colname="col2">op0</entry>
+              <entry class="- topic/entry " colname="col3">op1</entry>
+              <entry class="- topic/entry " colname="col4">CRn</entry>
+              <entry class="- topic/entry " colname="col5">CRm</entry>
+              <entry class="- topic/entry " colname="col6">op2</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">S3_0_C15_C2_7</entry>
+              <entry class="- topic/entry " colname="col2">11</entry>
+              <entry class="- topic/entry " colname="col3">000</entry>
+              <entry class="- topic/entry " colname="col4">1111</entry>
+              <entry class="- topic/entry " colname="col5">0010</entry>
+              <entry class="- topic/entry " colname="col6">111</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Accessibility</dt>
+          <dd class="- topic/dd ">
+            <p class="- topic/p ">This register is accessible in software as follows:</p>
+          </dd>
+        </dlentry>
+      </dl>
+      <table class="- topic/table " id="table_br1_4vf_1v">
+        <tgroup class="- topic/tgroup " cols="8">
+          <colspec class="- topic/colspec " colname="col1" colnum="1" colwidth="100pt"/>
+          <colspec class="- topic/colspec " colname="col2" colnum="2" colwidth="30pt"/>
+          <colspec class="- topic/colspec " colname="col3" colnum="3" colwidth="30pt"/>
+          <colspec class="- topic/colspec " colname="col4" colnum="4" colwidth="30pt"/>
+          <colspec class="- topic/colspec " colname="col5" colnum="5" colwidth="30pt"/>
+          <colspec class="- topic/colspec " colname="col6" colnum="6" colwidth="30pt"/>
+          <colspec class="- topic/colspec " colname="col7" colnum="7" colwidth="30pt"/>
+          <colspec class="- topic/colspec " colname="col8" colnum="8" colwidth="30pt"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1" morerows="1">&lt;systemreg&gt;</entry>
+              <entry class="- topic/entry " colname="col2" nameend="col4" namest="col2">Control</entry>
+              <entry class="- topic/entry " colname="col5" nameend="col8" namest="col5">Accessibility</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">E2H</entry>
+              <entry class="- topic/entry " colname="col2">TGE</entry>
+              <entry class="- topic/entry " colname="col3">NS</entry>
+              <entry class="- topic/entry " colname="col4">EL0</entry>
+              <entry class="- topic/entry " colname="col5">EL1</entry>
+              <entry class="- topic/entry " colname="col6">EL2</entry>
+              <entry class="- topic/entry " colname="col7">EL3</entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">S3_0_C15_C2_7</entry>
+              <entry class="- topic/entry " colname="col2">x</entry>
+              <entry class="- topic/entry " colname="col3">x</entry>
+              <entry class="- topic/entry " colname="col4">0</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+              <entry class="- topic/entry " colname="col6">RW</entry>
+              <entry class="- topic/entry " colname="col7">n/a</entry>
+              <entry class="- topic/entry " colname="col8">RW</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">S3_0_C15_C2_7</entry>
+              <entry class="- topic/entry " colname="col2">x</entry>
+              <entry class="- topic/entry " colname="col3">0</entry>
+              <entry class="- topic/entry " colname="col4">1</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+              <entry class="- topic/entry " colname="col6">RW</entry>
+              <entry class="- topic/entry " colname="col7">RW</entry>
+              <entry class="- topic/entry " colname="col8">RW</entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">S3_0_C15_C2_7</entry>
+              <entry class="- topic/entry " colname="col2">x</entry>
+              <entry class="- topic/entry " colname="col3">1</entry>
+              <entry class="- topic/entry " colname="col4">1</entry>
+              <entry class="- topic/entry " colname="col5">-</entry>
+              <entry class="- topic/entry " colname="col6">n/a</entry>
+              <entry class="- topic/entry " colname="col7">RW</entry>
+              <entry class="- topic/entry " colname="col8">RW</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <p class="- topic/p ">'n/a' Not accessible. The <term keyref="pe">PE</term> cannot be executing at this <term keyref="exceptionlevel">Exception level</term>,
+        so this access is not possible.</p>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">Traps and enables</dt>
+          <dd class="- topic/dd ">
+            
+            <p class="- topic/p ">For a description of the prioritization of any generated <term keyref="exception">exception</term>s, see <cite class="- topic/cite ">Synchronous  prioritization</cite> in the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite> for s taken to <term keyref="aarch64">AArch64</term> state. </p>
+            <p class="- topic/p ">Write access to this register from EL1 or EL2 depends on the value
+              of bit[7] of ACTLR_EL2 and ACTLR_EL3.</p>
+            
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="jtaginterfaceunit">
+  <glossterm>JTAG interface unit</glossterm>
+  <glossdef>In the context of ARM RealView tools, a protocol converter that converts low-level commands from RVDS debuggers into JTAG signals to the processor, for example to the EmbeddedICE logic and the ETM.See Also Development Studio 5 (DS-5) and RealView ICE.</glossdef>
+</glossentry>

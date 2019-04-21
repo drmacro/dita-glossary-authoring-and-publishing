@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="deb1353593789871" xml:lang="en-us">
+	<title class="- topic/title ">Preface</title>
+	<titlealts class="- topic/titlealts ">
+		<navtitle class="- topic/navtitle ">Preface</navtitle>
+	</titlealts>
+	<shortdesc class="- topic/shortdesc "/>
+	<prolog class="- topic/prolog ">
+		<permissions class="- topic/permissions " view="nonconfidential"/>
+	</prolog>
+	<refbody class="- topic/body        reference/refbody ">
+		<section class="- topic/section ">
+			<p class="- topic/p "/>
+			
+		</section>
+	</refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="deb1353594352617.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">[ARM STANDARD] Preface topic: About this book</linktext><desc class="- topic/desc "/></link><link class="- topic/link " format="dita" href="pgr1331716423733.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">[ARM STANDARD] Preface topic: Feedback</linktext><desc class="- topic/desc "><keyword class="- topic/keyword ">Arm</keyword> welcomes feedback on this product and its documentation.</desc></link></linkpool></linkpool></related-links></reference>

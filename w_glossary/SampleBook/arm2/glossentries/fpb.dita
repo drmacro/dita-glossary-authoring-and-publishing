@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="fpb">
+  <glossterm>FPB</glossterm>
+  <glossdef>In an ARM M-profile processor, an FPB can:remap sections of ROM, typically Flash memory, to regions of RAMset breakpoints on code in ROM. It can be used for debug, and to provide a code or data patch to an application that requires field updates to a product ROM.</glossdef>
+</glossentry>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="tlblockdown">
+  <glossterm>TLB lockdown</glossterm>
+  <glossdef>Prevents specific translation table walk results being removed from the TLB. This ensures that accesses to the associated memory areas never cause a translation table walk.</glossdef>
+</glossentry>

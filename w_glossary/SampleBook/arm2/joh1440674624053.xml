@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440674624053" xml:lang="en-us">
+  <title class="- topic/title ">Programming and reading ETM trace unit registers</title>
+  <shortdesc class="- topic/shortdesc ">You program and read the ETM trace unit registers using the Debug APB
+    interface.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <p class="- topic/p ">The <term keyref="core">core</term> does not have to be in debug state when you program the <term keyref="etm">ETM</term>
+        trace unit registers.</p>
+      <p class="- topic/p ">When you are programming the  trace unit registers, you must enable all the changes at
+        the same time. Otherwise, if you program the counter, it might start to count based on
+        incorrect events before the correct setup is in place for the trigger condition.</p>
+      <p class="- topic/p ">To disable the  trace unit, use the TRCPRGCTLR.EN bit.</p>
+      
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">Programming  trace unit registers</title>
+        <image class="- topic/image " href="ric1436449427220.svg" placement="inline">
+          <alt class="- topic/alt ">Programming  trace unit registers</alt>
+        </image>
+      </fig>
+      
+    </section>
+  </refbody>
+</reference>

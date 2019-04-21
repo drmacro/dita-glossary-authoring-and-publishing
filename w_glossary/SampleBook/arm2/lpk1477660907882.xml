@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="lpk1477660907882" xml:lang="en-us">
+  <title class="- topic/title ">About the L2 memory system</title>
+
+  <shortdesc class="- topic/shortdesc ">The L2 memory subsystem consists of:</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+
+  </prolog>
+  <conbody class="- topic/body  concept/conbody ">
+    <section class="- topic/section ">
+      <ul class="- topic/ul ">
+        <li class="- topic/li ">An 8-way set associative L2 cache with a configurable size of 128KB, 256KB or 512KB. Cache lines have a fixed length of 64 bytes.</li>
+        
+        
+        
+        
+        <li class="- topic/li ">Optional ECC protection for all RAM structures except <term keyref="victim">victim</term> array.</li>
+        <li class="- topic/li ">Strictly inclusive with L1 data cache. Weakly inclusive with L1 instruction cache.</li>
+        
+        
+        
+        <li class="- topic/li ">Configurable CHI interface to the <keyword class="- topic/keyword ">DSU</keyword> or CHI compliant system with support for 128-bit and 256-bit data widths.</li>
+         <li class="- topic/li ">Dynamic biased replacement policy.</li>
+        <li class="- topic/li ">Modified Exclusive Shared Invalid (MESI) coherency.</li>
+        
+        
+      </ul>
+    </section>
+  </conbody>
+</concept>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept
+  PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic concept/concept " ditaarch:DITAArchVersion="1.2" id="dav1330616213038" xml:lang="en-us">
+   <title class="- topic/title ">Signals</title>
+   <titlealts class="- topic/titlealts ">
+      <navtitle class="- topic/navtitle ">Signals</navtitle>
+   </titlealts>   
+   <shortdesc class="- topic/shortdesc "/>
+   <prolog class="- topic/prolog ">
+      <permissions class="- topic/permissions " view="nonconfidential"/>
+   </prolog>
+   <conbody class="- topic/body  concept/conbody ">
+      <p class="- topic/p ">The signal conventions are:</p>
+      <dl class="- topic/dl " outputclass="wide">
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">Signal level</dt>
+            <dd class="- topic/dd ">
+               <p class="- topic/p ">The level of an asserted signal depends on whether the signal is active-HIGH or
+                  active-LOW. Asserted means:</p>
+               <ul class="- topic/ul " compact="yes">
+                  <li class="- topic/li ">
+                     <p class="- topic/p ">HIGH for active-HIGH signals.</p>
+                  </li>
+                  <li class="- topic/li ">
+                     <p class="- topic/p ">LOW for active-LOW signals.</p>
+                  </li>
+               </ul>
+               <p class="- topic/p "> </p>
+            </dd>
+         </dlentry>
+         <dlentry class="- topic/dlentry ">
+            <dt class="- topic/dt ">Lowercase n</dt>
+            <dd class="- topic/dd ">
+               <p class="- topic/p ">At the start or end of a signal name denotes an active-LOW signal.</p>
+            </dd>
+         </dlentry>
+      </dl>
+   </conbody>
+</concept>

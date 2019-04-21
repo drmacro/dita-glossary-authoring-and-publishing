@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="rao_wi">
+  <glossterm>RAO/WI</glossterm>
+  <glossdef>Read-As-One, Writes Ignored.Hardware must implement the field as Read-as-One, and must ignore writes to the field.Software can rely on the field reading as all 1s, and on writes being ignored.This description can apply to a single bit that reads as 1, or to a field that reads as all 1s.See Also Read-As-One (RAO).</glossdef>
+</glossentry>

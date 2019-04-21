@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" id="fem1477597548265" xml:lang="en-us" ditaarch:DITAArchVersion="1.2" class="- map/map ">
+    <title class="- topic/title ">Performance Monitor Unit</title>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Performance Monitor Unit</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions view="nonconfidential" class="- topic/permissions "/>
+    </topicmeta>
+    <topicref href="joh1440673858173.xml" class="- map/topicref "/>
+    
+    <topicref href="joh1440673861834.xml" class="- map/topicref ">
+        <topicref href="ste1440512904834.xml" class="- map/topicref " keys="ExternalRegisterAccessPermissions"/>
+    </topicref>
+    <topicref href="tgw1477591342487.xml" class="- map/topicref " keys="PmuEvents"/>
+    
+    <topicref href="joh1440673949213.xml" class="- map/topicref "/>
+    <topicref href="joh1440673951565.xml" class="- map/topicref ">
+        
+        
+    </topicref>
+</map>

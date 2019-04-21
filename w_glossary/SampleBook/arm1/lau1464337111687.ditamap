@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map " ditaarch:DITAArchVersion="1.2" id="lau1464337111687" xml:lang="en-us">
+    <title class="- topic/title ">Clocks, Resets, and Input Synchronization</title><prolog class="- topic/prolog "/>
+    <topicmeta class="- map/topicmeta ">
+        <navtitle class="- topic/navtitle ">Clocks, Resets, and Input Synchronization</navtitle>
+        <shortdesc class="- map/shortdesc "/>
+        <permissions class="- topic/permissions " view="nonconfidential"/>
+    </topicmeta>
+    <topicref class="- map/topicref " href="joh1440596976629.xml"/>
+   
+    <topicref class="- map/topicref " href="lau1464337928164.xml"/>
+
+
+</map>

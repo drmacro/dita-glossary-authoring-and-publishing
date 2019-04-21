@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="glossary_entries">
+  <title>Glossary Map</title>
+  <topicref href="glossentries/conspicuous.dita" keys="conspicuous" toc="no"/>
+  <topicref href="glossentries/gaiety.dita" keys="gaiety" toc="no"/>
+  <topicref href="glossentries/fo_c_sle.dita" keys="fo_c_sle" toc="no"/>
+  <topicref href="glossentries/pirate.dita" keys="pirate" toc="no"/>
+</map>

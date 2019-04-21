@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="should_be_one_or_preserved">
+  <glossterm>Should-Be-One-or-Preserved</glossterm>
+  <glossdef>The Armv7 Large Physical Address Extension modified the definition of SBOP to apply to register fields that are SBOP in some but not all contexts. From the introduction of Armv8 such register fields are described as res1, see RES1. The definition of SBOP given here applies only to fields that are SBOP in all contexts. Hardware must ignore writes to the field. When writing this field, software must either write all 1s to this field, or, if the register is being restored from a previously read state, this field must be written previously read value. If this is not done, then the result is UNPREDICTABLE. This description can apply to a single bit that should be written as its preserved value or as 1, or to a field that should be written as its preserved value or as all 1s.</glossdef>
+</glossentry>

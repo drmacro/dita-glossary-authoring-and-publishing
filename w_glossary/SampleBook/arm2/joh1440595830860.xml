@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="joh1440595830860" xml:lang="en-us">
+  
+  <title class="- topic/title ">Technical overview</title>
+  <shortdesc class="- topic/shortdesc ">This chapter describes the structure of the <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+    
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section "/>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " mapkeyref="kqb1476970875925"><linkpool class="- topic/linkpool "><link class="- topic/link " format="dita" href="aki1477563861415.xml" role="child" scope="local" type="reference"><linktext class="- topic/linktext ">Components</linktext><desc class="- topic/desc "><ph class="- topic/ph ">In a standalone configuration, the core consists of up to four cores and     a <keyword class="- topic/keyword ">DSU</keyword> that connects the cores to an external memory system.</ph>       </desc></link><link class="- topic/link " format="dita" href="geo1444398887275.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">Interfaces</linktext><desc class="- topic/desc ">The <ph class="- topic/ph "><keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Cortex</tm></keyword><keyword class="- topic/keyword ">‑A76</keyword></ph> core has several interfaces to connect it to a SoC. The <keyword class="- topic/keyword ">DSU</keyword> manages all         interfaces.</desc></link><link class="- topic/link " format="dita" href="geo1444398940287.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">About system control</linktext><desc class="- topic/desc ">The system registers control and provide status information for the         functions that the core implements.</desc></link><link class="- topic/link " format="dita" href="geo1444399018839.xml" role="child" scope="local" type="concept"><linktext class="- topic/linktext ">About the Generic Timer</linktext><desc class="- topic/desc ">The Generic Timer can schedule events and trigger interrupts that are     based on an incrementing counter value. It generates timer events as active-LOW interrupt     outputs and event streams.</desc></link></linkpool></linkpool></related-links></reference>

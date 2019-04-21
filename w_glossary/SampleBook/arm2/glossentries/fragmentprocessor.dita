@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="fragmentprocessor">
+  <glossterm>fragment processor</glossterm>
+  <glossdef>A programmable processor that performs rendering operations to produce a final image for display. The fragment processor receives completed vertex data from the vertex processor and then runs fragment shader programs.The fragment processor was originally known as a pixel processor.</glossdef>
+</glossentry>

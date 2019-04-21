@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- topic/topic       reference/reference " ditaarch:DITAArchVersion="1.2" id="lau1443697792053" xml:lang="en-us">
+  <title class="- topic/title ">TRCIDR0, ID Register 0</title>
+  <shortdesc class="- topic/shortdesc ">The TRCIDR0 returns the tracing capabilities of the ETM trace
+    unit.</shortdesc>
+  <prolog class="- topic/prolog ">
+    <permissions class="- topic/permissions " view="nonconfidential"/>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody ">
+    <section class="- topic/section ">
+      <title class="- topic/title ">Bit field descriptions</title>
+      <p class="- topic/p ">The TRCIDR0 is a 32-bit register.</p>
+      <fig class="- topic/fig ">
+        <title class="- topic/title ">TRCIDR0 bit assignments</title>
+        <image class="- topic/image " href="lau1443697834136.svg" placement="inline">
+          <alt class="- topic/alt ">TRCIDR0 bit assignments</alt>
+        </image>
+      </fig>
+      <dl class="- topic/dl ">
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [31:30]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">COMMOPT, [29]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates the meaning of the commit field in some
+            packets:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Commit mode 1.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TSSIZE, [28:24]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Global timestamp size field:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b01000</codeph></dt>
+                <dd class="- topic/dd ">Implementation supports a maximum global timestamp of 64
+                  bits.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [23:17]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">QSUPP, [16:15]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates Q element support:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b00</codeph></dt>
+                <dd class="- topic/dd ">Q elements not supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">QFILT, [14]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates Q element filtering support:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b0</codeph></dt>
+                <dd class="- topic/dd ">Q element filtering not supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">CONDTYPE, [13:12]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Indicates how conditional results are
+            traced:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b00</codeph></dt>
+                <dd class="- topic/dd ">Conditional trace not supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">NUMEVENT, [11:10]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Number of events supported in the trace, minus
+            1:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b11</codeph></dt>
+                <dd class="- topic/dd ">Four events supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RETSTACK, [9]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Return stack support:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Return stack implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES0, [8]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res0</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TRCCCI, [7]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Support for cycle counting in the instruction
+            trace:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Cycle counting in the instruction trace is implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TRCCOND, [6]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Support for conditional instruction
+            tracing:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0</codeph></dt>
+                <dd class="- topic/dd ">Conditional instruction tracing is not supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TRCBB, [5]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Support for branch broadcast tracing:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">1</codeph></dt>
+                <dd class="- topic/dd ">Branch broadcast tracing is implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">TRCDATA, [4:3]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">Conditional tracing field:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b00</codeph></dt>
+                <dd class="- topic/dd ">Tracing of data addresses and data values is not
+                  implemented.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">INSTP0, [2:1]</dt>
+          <dd class="- topic/dd "><p class="- topic/p ">P0 tracing support field:</p><dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><codeph class="+ topic/ph pr-d/codeph ">0b00</codeph></dt>
+                <dd class="- topic/dd ">Tracing of load and store instructions as P0 elements is not
+                  supported.</dd>
+              </dlentry>
+            </dl></dd>
+        </dlentry>
+        <dlentry class="- topic/dlentry ">
+          <dt class="- topic/dt ">RES1, [0]</dt>
+          <dd class="- topic/dd ">
+            <dl class="- topic/dl " compact="yes" outputclass="termwidthpc10">
+              <dlentry class="- topic/dlentry ">
+                <dt class="- topic/dt "><term class="- topic/term " outputclass="archterm">res1</term></dt>
+                <dd class="- topic/dd ">Reserved.</dd>
+              </dlentry>
+            </dl>
+          </dd>
+        </dlentry>
+      </dl>
+      <p class="- topic/p ">Bit fields and details not provided in this description are
+        architecturally defined. See the <cite class="- topic/cite "><ph class="- topic/ph ">
+                            <keyword class="- topic/keyword "><tm class="- topic/tm " tmtype="reg">Arm</tm></keyword> Architecture Reference Manual <keyword class="- topic/keyword ">Arm</keyword>v8, for <keyword class="- topic/keyword ">Arm</keyword>v8-A architecture profile</ph></cite>.</p>
+      <p class="- topic/p ">The TRCIDR0 can be accessed through the external <term keyref="debuginterface">debug interface</term>, offset
+          <codeph class="+ topic/ph pr-d/codeph "><ph class="- topic/ph " otherprops="g.number.hex">1E0</ph></codeph>.</p>
+      
+    </section>
+  </refbody>
+</reference>
